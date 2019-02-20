@@ -2,4 +2,4 @@
 
 hosted with GitHub Pages,
 
-try a [link](www.google.com)
+try a [link](https://www.google.com)
