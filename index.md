@@ -3,3 +3,7 @@
 hosted with GitHub Pages,
 
 try a [link](https://www.google.com) (this says https now)
+
+[So this is the Analysis Notes Exported as a HTML](https://ryangreenup.github.io/analysisnoteshtmlex.html)
+
+[This is the Analysis Notes as an MD](ryangreenup.github.io/analysisnotesmdex.md)
