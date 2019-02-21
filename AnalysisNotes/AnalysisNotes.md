@@ -12,7 +12,7 @@
 ---
 
 
-# (1) Sets and Functions![SetTheoryIcon](./SetTheoryIcon.png)
+# (1) Sets and Functions! <img src="./SetTheoryIcon.png" style="height:64px" />
 <a name="antop1"></a>
 
 
@@ -23,8 +23,8 @@
 * [Sets](#an(1)sets)
 * [Functions](#an(1)funcs)
 
-
 ## Sets
+
 <a name="an(1)sets"></a>
 
 A set is a collection of elements, if an element is in that set it is written $x \in A$ and if not it is expressed $x \notin A$
@@ -127,6 +127,70 @@ e.g.
 > $$\mathbb{R} \times \mathbb{R} = \{(a,b) : a \in \mathbb{R}, b \in \mathbb{R} \} $$
 >
 > > <sub> So what that says is that it is every possible ordered pair of real numbers, or every point on a 2D cartesian plane</sub>
+
+### Rigorous Definition of a function
+
+A function $f​$ from a set $A​$ into some set $B​$ :
+
+$$f: A \rightarrow B$$
+
+is a 'rule of correspondence',
+
+That maps from, every element in $A$, to some other element in $B$
+
+> $(\forall x \in A) (!\exists x \in B)​$ 
+
+So the issue with this definition is that it doesn't clearly establish what a rule of correspondence actually is, in order to do that we will leverage set theory.
+
+#### Using Sets
+
+Define a function $f$ as a set of ordered pairs.
+
+> In Discrete Mathematics a set of ordered pairs is typically known as a graph
+
+This might seem arbitrary, but the whole point is to define very unambiguously what a set is before we start trying to play with the mathematics of functions and calculus.
+
+Some function $f$ from $A$ into $B$
+
+> $f: A \rightarrow B$
+
+is defined by a set $f \subsetneq (A\times B)​$:
+
+ 	1. $\forall a \in A, \exists b \in B: (a,b) \in f​$
+      	1. So basically every input value $a \in A$ is assigned to some output
+	2. $(a,b) \in f \enspace \wedge \enspace (a,q) \in f \implies b=q$
+    	1. So this says if an input can only have one output value
+        	1. This is essentially the vertical line test
+
+both of these can be combined into:\
+
+$\forall a \in A, !\exists b \in B: (a,b) \in f​$
+
+where the $!​$ character means that there is a unique value, so this would read:
+
+> for any given value in $a \in A$ there is a single unique value in $b\in B$ such that the ordered pair $(a,b) \in f$
+
+### Domain and Range
+
+* Domain
+  * The Domain is the set of allowable input values, 
+  * The notation $D(f)$ is used to express the domain set
+    * Generally a function is given and the domain restricted after the fact 
+      * (e.g. $f(x) = \frac{1}{x}​$ has a domain $D(f) = \{ x : x \in \mathbb{R}, x \neq 0\}​$ 
+* Codomain
+  * The Codomain is the output set, it is a broad set that is either a superset or equal to the range set
+    * e.g. the codomain of $f(x)$ above would be the reals
+      * The codomain would represent the entire $y-\text{axis}$ whereas the Range would represent the set of all $y-\text{values}$ that the function crosses
+* Range
+  * The range (also known as the image of a set, is the set of all possible output values of a function, given the input,
+  * The notation $R(f)$ is used to express the set of range values
+    * (e.g. $f(x) = \frac{1}{x}$ has a Range $D(f) = \{ x : x \in \mathbb{R}, x \neq 0\}$ 
+
+
+
+![functiondiagram](functiondiagram.png)
+
+
 
 
 
