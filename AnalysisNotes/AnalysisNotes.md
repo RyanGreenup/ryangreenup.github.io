@@ -47,7 +47,7 @@ A set can contain anything and is:
 
 If $A$ is a set for which some or all elements are contained also within some other set $B$ it is written:
 $$
-A \subseteq B
+A \subseteq B \notag
 $$
 This can also be expressed in terms of [supersets](http://mathworld.wolfram.com/Superset.html):[^supsetbrood] 
 
@@ -71,8 +71,9 @@ Just like the symbols $>, \geq, \gneq$ there are equivalent symbols for subsets 
 
 Hence observe the relationship of the number sets:
 
-$$\mathbb{Z^+} \subset \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}​$$
-
+$$
+\mathbb{Z^+} \subset \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}
+$$
 
 
 Consider also, for later, the algebraic structure of these sets:
@@ -102,11 +103,10 @@ An element in some ring is:
 ##### De Morgans Law [1.14 of TB]
 
 De Morgans Law is a good exemplar for the behaviour of operations in set theory:
-
-1. $$A\setminus (B \cup C) =  (A\setminus B) \cap (A \setminus C)​$$
-
-2. $$A\setminus (B \cap C) =  (A\setminus B) \cup (A \setminus C)$$
-
+$$
+\text{a}) \qquad A\setminus (B \cup C) =  (A\setminus B) \cap (A \setminus C) \\
+\text{b}) \qquad A\setminus (B \cap C) =  (A\setminus B) \cup (A \setminus C)
+$$
 
 
 
@@ -118,7 +118,9 @@ De Morgans Law is a good exemplar for the behaviour of operations in set theory:
 
 The Cartesian Product combines elements of two sets:
 
-$$A \times B := \{(a,b) : a \in A, b \in B \}$$
+$$
+A \times B := \{(a,b) : a \in A, b \in B \}
+$$
 
 e.g.
 
@@ -127,6 +129,8 @@ e.g.
 > $$\mathbb{R} \times \mathbb{R} = \mathbb{R}^2 = \{(a,b) : a \in \mathbb{R}, b \in \mathbb{R} \} $$
 >
 > > <sub> So what that says is that it is every possible ordered pair of real numbers, or every point on a 2D cartesian plane</sub>
+
+
 
 ### Rigorous Definition of a function
 
@@ -185,18 +189,59 @@ where the $!​$ character means that there is a unique value, so this would rea
   * The range (also known as the image of a set, is the set of all possible output values of a function, given the input,
   * The notation $R(f)$ is used to express the set of range values
     * (e.g. $f(x) = \frac{1}{x}$ has a Range $D(f) = \{ x : x \in \mathbb{R}, x \neq 0\}$ 
+      
+
+
+<img src="./functiondiagram.png" style="height:250px; float: right" />
+
+
+#### The Machine Analogy
+
+One way to look at this is to consider a function like a machine, where the machine will only accept inputs from the domain and output something different. In this analogy everything that could possibly be output would represent the range value, the set of everything in the outside world might represent the codomain. <img src="function-machine.png" style="height:180px; float: right" />
 
 
 
-<img src="./functiondiagram.png" style="height:250px" />
+### Direct and Inverse Image
+
+Take some arbitrary function $f: A \rightarrow B: ​$, where:
+
+> $$
+> E \subseteq A \\
+> $$
+>
+>$$
+>H \subseteq R(f) \subseteq B
+>$$
 
 
 
+#### Direct Image
 
+The direct image of $E​$ under $f​$ is essientially the range of the function that corresponds only to input values from $E​$.
 
+> *In other words, the direct image of $E$ under $f$ is the range of the function if it was such that $E$ was the domain :*
+>
+> > $$
+> > f(E) = \{f(x) : x \in E\}
+> > $$
+> >
 
+Inverse Image
 
+The inverse image of $H​$ under $f​$ is the set of input values corresponding to the output values of $H​$,
 
+> *In other words, the inverse image of $H​$ under $f​$ is the domain of the function if it was such that $H​$ was the range:*
+>
+> > $$
+> > f^{-1}(H) = \{ x \in A : f(x) \in H\}
+> > $$
+
+<img src="InvImage.png" style="height:100px; float: right" />
+
+### Types of Functions
+#### Injections
+#### Bijections
+#### Surjections
 
 ---
 
