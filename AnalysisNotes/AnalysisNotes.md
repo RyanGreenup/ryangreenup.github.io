@@ -191,13 +191,13 @@ where the $!​$ character means that there is a unique value, so this would rea
     * (e.g. $f(x) = \frac{1}{x}$ has a Range $D(f) = \{ x : x \in \mathbb{R}, x \neq 0\}$ 
       
 
-
-<img src="./functiondiagram.png" style="height:250px; float: right" />
-
+<img src="./functiondiagram.png" style="height:250px; right" />
 
 #### The Machine Analogy
 
-One way to look at this is to consider a function like a machine, where the machine will only accept inputs from the domain and output something different. In this analogy everything that could possibly be output would represent the range value, the set of everything in the outside world might represent the codomain. <img src="function-machine.png" style="height:180px; float: right" />
+<img src="function-machine.png" style="height:180px; float: right" />
+
+One way to look at this is to consider a function like a machine, where the machine will only accept inputs from the domain and output something different. In this analogy everything that could possibly be output would represent the range value, the set of everything in the outside world might represent the codomain. 
 
 
 
@@ -226,7 +226,7 @@ The direct image of $E​$ under $f​$ is essientially the range of the functio
 > > $$
 > >
 
-Inverse Image
+#### Inverse Image
 
 The inverse image of $H​$ under $f​$ is the set of input values corresponding to the output values of $H​$,
 
@@ -236,9 +236,10 @@ The inverse image of $H​$ under $f​$ is the set of input values correspondin
 > > f^{-1}(H) = \{ x \in A : f(x) \in H\}
 > > $$
 
-<img src="InvImage.png" style="height:100px; float: right" />
+<img src="InvImage.png" style="height:100px" align = "bottom" />
 
 ### Types of Functions
+
 #### Injections
 #### Bijections
 #### Surjections
