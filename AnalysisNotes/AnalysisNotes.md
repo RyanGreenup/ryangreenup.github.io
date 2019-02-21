@@ -122,9 +122,9 @@ $$A \times B := \{(a,b) : a \in A, b \in B \}$$
 
 e.g.
 
-> $$ \{ \square, \triangle \} \times \{ a, b, c \} = \{ (\square, a), (\square, b), (\square, c), (\triangle, a), (\triangle, b), (\triangle, c) \} $$
+> $$ \{ \square, \triangle \} \times \{ a, b, c \} = \{ (\square, a), (\square, b), (\square, c), (\triangle, a), (\triangle, b), (\triangle, c) \} ​$$
 >
-> $$\mathbb{R} \times \mathbb{R} = \{(a,b) : a \in \mathbb{R}, b \in \mathbb{R} \} $$
+> $$\mathbb{R} \times \mathbb{R} = \mathbb{R}^2 = \{(a,b) : a \in \mathbb{R}, b \in \mathbb{R} \} $$
 >
 > > <sub> So what that says is that it is every possible ordered pair of real numbers, or every point on a 2D cartesian plane</sub>
 
@@ -188,7 +188,7 @@ where the $!​$ character means that there is a unique value, so this would rea
 
 
 
-![functiondiagram](functiondiagram.png)
+<img src="./functiondiagram.png" style="height:250px" />
 
 
 
