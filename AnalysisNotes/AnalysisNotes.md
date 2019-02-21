@@ -12,7 +12,7 @@
 ---
 
 
-# (1) Sets and Functions![SetTheoryIcon](/Users/ryan/Dropbox/GitPage/ryangreenup.github.io/AnalysisNotes/SetTheoryIcon.png)
+# (1) Sets and Functions![SetTheoryIcon](./SetTheoryIcon.png)
 <a name="antop1"></a>
 
 
