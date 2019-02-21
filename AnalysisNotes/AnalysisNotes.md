@@ -5,59 +5,18 @@
 
 **Author:** *Ryan G; 17805315*
 
+<a name="antoc"></a>
+
 [TOC]
 
 ---
 
 
-## collapsible markdown?
-<details><summary>CLICK ME</summary><p>
-
-#### yes, even hidden code blocks!
-```python
-print("hello world!")
-```
-</p>
-</details>
-
-
-
-
-## (1) Sets and Functions
+# (1) Sets and Functions
 <a name="antop1"></a>
 
 
-* This has the consequence of meaning that I will have to switch to Dropbox rather than OneDrive, 
-    * however I will still need OneDrive for *Sharepoint*
-    * This isn't a big deal because Dropbox Sync much much better anyway
-
-    
-    What I need each app for:
-    
-    I need *MWeb* to compile the Markdown on the iPad (*iaWriter* cannot compile equations)
-    
-    I need *iaWriter* to edit the text because mWeb doesn't even support searching the text...like FFS...
-    
-* MWeb will sync if it is a part of the library and the sync button is pressed
-    * Otherwise just reopen the file from dropbox by pressing the icon in the bottom left
-    * Funnily enough the whole library functionality isn't very useful because you still have to re-export it as a HTML file and point it into Dropbox, this is necessary because PDFExpert is necessary to view the file
-* iaWriter will only sync with dropbox if the app is closed and reopened
-
-    * iaWriter will however save a document being edited to dropbox if it is compiled (i.e. viewed)
-* PDF expert is necessary to view it
-    * Only PDF Expert can search the HTML file, but, frustratingly enough it doesn't support an outline dialog like MWeb does,
-        * So use MWeb when trying to use the dialog, but use PDFExpert when trying to search for a phrase
-
-These Various compromises have the unsavoury consequence that it will be necessary to export a Markdown as PDF and HTML in order to have the maximum capacity to share it.
-
-Also more non-standard wierdness, generally the HTML is rendered very slightly different (for example the RMarkdown HTML is like perfect but the MWeb on iOS comes out small inside PDFExpert on the iPhone);
-In order of preference Typora > MWeb on iOS
-
-Also generally HTML looks better inside the MWeb app than inside PDF Expert.
-
-So write the Markdown however, export as PDF/HTML via Typora and then view it through the MWeb app and/or PDFExpert, if necessary, re-export through MWeb for updates and make a reminder to re-export via Typora.
-
-
+* 
 
 > ***Week 1 Material, Due Thur. 7 March<sub> TB: [1.1], [1.2], [2.1], [2.2] </sub>***
 
@@ -65,11 +24,7 @@ So write the Markdown however, export as PDF/HTML via Typora and then view it th
 * [Functions](#an(1)funcs)
 
 
-
-
-
-
-### Sets
+## Sets
 <a name="an(1)sets"></a>
 
 A set is a collection of elements, if an element is in that set it is written $x \in A$ and if not it is expressed $x \notin A$
@@ -84,11 +39,11 @@ A set can contain anything and is:
 >&\neq \Big{\{}  {1, \{1, 3\}, 3, 8, 9} \Big{\}}
 >&\end{align*}​$$
 
-#### Set Operations
+### Set Operations
 
-##### Subset Notation
+#### Subset Notation
 
-###### Subsets and Supersets
+##### Subsets and Supersets
 
 If $A$ is a set for which some or all elements are contained also within some other set $B$ it is written:
 $$
@@ -102,7 +57,7 @@ $$
 A \subseteq B \iff B \supseteq A
 $$
 
-###### Types of Subsets
+##### Types of Subsets
 
 Just like the symbols $>, \geq, \gneq$ there are equivalent symbols for subsets $\subset, \subseteq, \subsetneq$ :
 
@@ -135,18 +90,43 @@ An element in some ring is:
 
   > $\small 2\cdot 3 = 6 = 0 \in [\mathbb{Z}]_6​$
 
+#### Operations
+
+| Operation              | Definition                                                   | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| _Union_                | $A \cup B := \{ x: x\in A \vee x\in B  \}$                   | Take the elements of both Sets (i.e. a set containing anything that is in either A or B) |
+| *Intersect*            | $A \cap B := \{ x: x\in A \wedge x\in B  \}$                 | Take the elements that both sets have in common (i.e. a set containing anything that is in both A and B) |
+| *Compliment*           | $A \setminus B := \{ x: x\in A \wedge x\notin B  \}$         | So basically everything that's in $A$ but minus whats in $B$ (i.e. a set containing everything in $A$ that isn't also in $B$) |
+| *Symmetric Difference* | $$\begin{align}A \Delta B = B \Delta A :=& (A\setminus B) \cup (B \setminus A) \\ =& (A\cup B) \setminus (A \cup B)\end{align}$$ | Take all the elements, take away what thay both have in common. |
+
+##### De Morgans Law [1.14 of TB]
+
+De Morgans Law is a good exemplar for the behaviour of operations in set theory:
+
+1. $$A\setminus (B \cup C) =  (A\setminus B) \cap (A \setminus C)​$$
+
+2. $$A\setminus (B \cap C) =  (A\setminus B) \cup (A \setminus C)$$
 
 
 
 
-
-### Functions
+## Functions
 
 <a name="an(1)funcs"></a>
-So can I edit this from within here??
 
-So ahhh how robust is this
-So if I compile iawriter then it will sync with Dropbox
+### Cartesian Product
+
+The Cartesian Product combines elements of two sets:
+
+$$A \times B := \{(a,b) : a \in A, b \in B \}$$
+
+e.g.
+
+> $$ \{ \square, \triangle \} \times \{ a, b, c \} = \{ (\square, a), (\square, b), (\square, c), (\triangle, a), (\triangle, b), (\triangle, c) \} $$
+>
+> $$\mathbb{R} \times \mathbb{R} = \{(a,b) : a \in \mathbb{R}, b \in \mathbb{R} \} $$
+>
+> > <sub> So what that says is that it is every possible ordered pair of real numbers, or every point on a 2D cartesian plane</sub>
 
 
 
@@ -156,36 +136,43 @@ So if I compile iawriter then it will sync with Dropbox
 
 ---
 
-## (2) Limits of a Sequence
+# (2) Limits of a Sequence
 > ***Week 1 Material, Due Thur. 14 March<sub> TB: [1.1], [1.2], [2.1], [2.2] </sub>***
 
+[Back to Top](#antoc)
+
 ---
 
 ---
-## (3) Sets and Functions
+# (3) Sets and Functions
 <a name="antop3"></a>
-
 > ***Week 3 Material, Due Thur. 21 March<sub> TB: [3.5], [3.6], [3.7] </sub>***
+
+[Back to Top](#antoc)
 
 * [Sets][4]
 * [Functions][5]
 ---
 
 ---
-## (4) Sets and Functions
+# (4) Sets and Functions
 <a name="antop4"></a>
-
 > ***Week 4 Material, Due Thur. 28 March<sub> TB: [4.1], [4.2], [4.3] </sub>***
+
+[Back to Top](#antoc)
+
 
 * [Sets][6]
 * [Functions][7]
 ---
 
 ---
-## (5) Sets and Functions
+# (5) Sets and Functions
 <a name="antop5"></a>
-
 > ***Week 5 Material, Due Thur. 4 April <sub> TB: [5.1], [5.2] </sub>***
+
+[Back to Top](#antoc)
+
 
 * [Sets][8]
 * [Functions][9]
@@ -194,24 +181,38 @@ So if I compile iawriter then it will sync with Dropbox
 
 
 ---
-## (6) Sets and Functions
+# (6) Sets and Functions
 <a name="antop6"></a>
-
 > ***Week 6 Material, Due Thur. 11 April<sub> TB: [5.3], [5.4] </sub>***
+
+[Back to Top](#antoc)
 
 * [Sets][10]
 * [Functions][11]
 ---
 
 ---
-## (7) Sets and Functions
+# (7) Sets and Functions
 <a name="antop7"></a>
-
 > ***Week 7 Material, Due Thur. 18 April<sub> TB: [5.3], [5.4] </sub>***
+
+[Back to Top](#antoc)
 
 * [Sets][12]
 * [Functions][13]
 ---
+
+
+# collapsible markdown?
+<details><summary>CLICK ME</summary><p>
+#### yes, even hidden code blocks!
+```python
+print("hello world!")
+```
+</p>
+</details>
+
+
 
 
 

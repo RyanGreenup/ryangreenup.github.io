@@ -4,9 +4,8 @@ hosted with GitHub Pages,
 
 try a [link](https://www.google.com) (this says https now)
 
-[So this is the Analysis Notes Exported as a HTML](https://ryangreenup.github.io/analysisnoteshtmlex.html)
 
-[Analysis Summary (200023)](https://ryangreenup.github.io/AnalysisNotes.html)
+[Analysis Summary (200023)](https://ryangreenup.github.io/AnalysisNotes/AnalysisNotes.html)
 
 Put a link here to my Notability PDF's, (be careful they contain only Analysis, use Dropbox over OneDrive???)
 
