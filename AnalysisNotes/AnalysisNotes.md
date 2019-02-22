@@ -162,7 +162,7 @@ is defined by a set $f \subsetneq (A\times B)​$:
 
  	1. $\forall a \in A, \exists b \in B: (a,b) \in f​$
       	1. So basically every input value $a \in A$ is assigned to some output
-	2. $(a,b) \in f \enspace \wedge \enspace (a,q) \in f \implies b=q$
+	2. $(a,b) \in f \enspace \wedge \enspace (a,q) \in f \implies b=q​$
         	1. So this says if an input can only have one output value
         	1. This is essentially the vertical line test
 
@@ -240,20 +240,44 @@ The inverse image of $H​$ under $f​$ is the set of input values correspondin
 
 ### Types of Functions
 
+Injections, surjections and bijections are best illustrated by comparing them to the two necessary properties of functions:
+
 #### Injections
 
-An injection is a one-to-one function, 
+An injection or injective function is also known as a one-to-one function, 
 
-* a function must have only one output value corresponding to an input value,
+* a **function** must have only one output value corresponding to an input value,
 
   * $ f(x) = f(a) \implies x = a$
+  * In terms of the function as a set:
+    * $(a,b) \in f  \enspace \wedge \enspace (a,q) \in f \implies b = p$
 
-  $$
+* an **injection** must have only one input value corresponding to any given output value.
 
-  *  an injective function must have only one input value corresponding to any given output value.
+  * $ f(x) = f(a) \iff x = a$
+  * In terms of the function as a set:
+    * $(a,b) \in f \enspace \wedge \enspace (p, b) \in f \implies a=p$
+
+  #### Surjections
+
+  A surjection or surjective function is also known as an onto function,
+
+  
+
+* A **function** must have a corresponding output for all elements within the domain,
+
+  * $\forall x \in A, \enspace \exists y \in B : f(x) = y$ 
+  * In terms of the function as a set:
+    * $\forall a \in A, \enspace, \exists b \in B : (a,b) \in f$
+
+* A **surjection** must have a corresponding input for any given element within the codomain 
+
+  * which also means that the codomain must be the range
+    *  $B = R(f) $
+  * 
 
 #### Bijections
-#### Surjections
+#### 
 
 ---
 
