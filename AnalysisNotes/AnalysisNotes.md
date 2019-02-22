@@ -241,6 +241,17 @@ The inverse image of $H​$ under $f​$ is the set of input values correspondin
 ### Types of Functions
 
 #### Injections
+
+An injection is a one-to-one function, 
+
+* a function must have only one output value corresponding to an input value,
+
+  * $ f(x) = f(a) \implies x = a$
+
+  $$
+
+  *  an injective function must have only one input value corresponding to any given output value.
+
 #### Bijections
 #### Surjections
 
