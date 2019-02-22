@@ -267,7 +267,9 @@ $$
   (a,b) \in f \enspace \wedge \enspace (p, b) \in f \implies a=p
   $$
 
-  #### Surjections
+  
+
+#### Surjections
 
   A surjection or surjective function is also known as an onto function,
 
