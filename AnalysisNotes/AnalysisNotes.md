@@ -163,7 +163,7 @@ is defined by a set $f \subsetneq (A\times B)​$:
  	1. $\forall a \in A, \exists b \in B: (a,b) \in f​$
       	1. So basically every input value $a \in A$ is assigned to some output
 	2. $(a,b) \in f \enspace \wedge \enspace (a,q) \in f \implies b=q$
-    	1. So this says if an input can only have one output value
+        	1. So this says if an input can only have one output value
         	1. This is essentially the vertical line test
 
 both of these can be combined into:\
@@ -315,13 +315,9 @@ The inverse image of $H​$ under $f​$ is the set of input values correspondin
 
 # collapsible markdown?
 <details><summary>CLICK ME</summary><p>
-#### yes, even hidden code blocks!
-```python
-print("hello world!")
-```
+## Test
 </p>
 </details>
-
 
 
 
