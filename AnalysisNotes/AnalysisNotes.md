@@ -257,10 +257,10 @@ $$
 (a,b) \in f  \enspace \wedge \enspace (a,q) \in f \implies b = q
 $$
 
-* Whereas an **injection** must have only one input value corresponding to any given output value.
+* Whereas an **injection** must *also* have only one input value corresponding to any given output value.
 
   $$
-  f(x) = f(a) \iff x = a
+  f(x) = f(a) \iff x = a \label{injiff}
   $$
   ​		In terms of the function as a set:
   $$
@@ -275,23 +275,49 @@ $$
 
 * A **function** must have a corresponding output for all elements within the domain,
 
-  * $\forall x \in A, \enspace \exists y \in B : f(x) = y$ 
-  * In terms of the function as a set:
-    * $\forall a \in A, \enspace, \exists b \in B : (a,b) \in f$
+  $$
+  \forall x \in A, \enspace \exists y \in B : f(x) = y
+  $$
+  ​		In terms of the function as a set:
+  $$
+  \forall a \in A, \enspace, \exists b \in B : (a,b) \in f
+  $$
 
 * A **surjection** must have a corresponding input for any given element within the codomain 
 
-  * which also means that the codomain must be the range
-    *  $B = R(f) ​$
-  * $\forall y \in B, \enspace \exists x \in A : f(x) = y$
-  * In terms of the function as a set:
-    * $\forall b\in B, \enspace \exists a \in A : (a,b) \in f​$
+  $$
+  \forall y \in B, \enspace \exists x \in A : f(x) = y
+  $$
+  ​		In terms of the function as a set:
+  $$
+  \forall b\in B, \enspace \exists a \in A : (a,b) \in f
+  $$
+
+  > If a function is a surjection, the codomain must also be equal to the range because the range cannot contain any extra elements
+  > $$
+  > B = R(f)
+  > $$
 
 #### Bijections
 
 A Bijection or bijective function is a function that is both injective and surjective, the whole point is that the inverse process of the function satisfies the requirements of a function, 
+$$
+  \forall x \in A, \enspace !\exists y \in B : f(x) = y
+$$
+  ​		In terms of the function as a set:
+$$
+\forall a \in A, \enspace, !\exists b \in B : (a,b) \in f
+$$
 
-#### 
+The ! symbol means unique and hence encompasses also the definition of the injective function, the definition of the injective function provided by equation $(\ref{injiff})$ is however useful for proving that some given function is an injection.
+
+
+
+
+
+
+
+
 
 ---
 
