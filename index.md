@@ -8,16 +8,12 @@
 
 # Ryan's Class Notes 
 
-hosted with GitHub Pages,
+* [Analysis Summary (200023)](https://ryangreenup.github.io/AnalysisNotes/AnalysisNotes.html)
+  * [Tutorial Work](https://studentuwsedu-my.sharepoint.com/:b:/g/personal/17805315_student_westernsydney_edu_au/EU40bNwWQqJHlAXC1yLooWkB5peOaOGzb6eRCpZcyZkKyw?e=axd1lu)
 
-try a [link](https://www.google.com) (this says https now)
+  * [Analysis Handwritten notes](https://studentuwsedu-my.sharepoint.com/:b:/g/personal/17805315_student_westernsydney_edu_au/EdLlCea2Zj5Gi4rGGvCROQ8BKYT0GZ88TwNNUzfvNtXbQA?e=dJZ8bx)
 
-
-[Analysis Summary (200023)](https://ryangreenup.github.io/AnalysisNotes/AnalysisNotes.html)
-
-Put a link here to my Notability PDF's, (be careful they contain only Analysis, use Dropbox over OneDrive???)
-
-[This is a PDF Test](https://ryangreenup.github.io/Waves.pdf)
+    
 
 
 
