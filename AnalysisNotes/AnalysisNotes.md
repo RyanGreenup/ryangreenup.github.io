@@ -395,9 +395,15 @@ The $!$ symbol means unique and hence encompasses also the definition of the inj
 ## Test
 </p>
 </details>
+# Notes on Markdown
 
+* Small MathBlocks on iPhone
 
+  * If numbered equations are used, they will render extremely small on an iPhone, is the trade off worth it?
 
+    * It's relatively easy to enable and disable numbered mathblocks in *Typora* on the fly through the preferences <kbd> Ctrl </kbd> + <kbd> , </kbd>  <sub> on mac <kbd> ⌘ </kbd> + <kbd> , </kbd> </sub>
+
+      
 
 [Topic 1][14]
 
