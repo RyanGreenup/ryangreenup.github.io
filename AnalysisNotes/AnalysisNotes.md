@@ -302,7 +302,7 @@ $$
 
 #### Bijections
 
-A Bijection or bijective function is a function that is both injective and surjective, the whole point is that the inverse process of the function satisfies the requirements of a function, 
+A bijection or bijective function is a function that is both injective and surjective, the whole point is that the inverse process of the function satisfies the requirements of a function, 
 $$
   \forall x \in A, \enspace !\exists y \in B : f(x) = y
 $$
