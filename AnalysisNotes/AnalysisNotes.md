@@ -311,7 +311,7 @@ $$
 \forall a \in A, \enspace, !\exists b \in B : (a,b) \in f
 $$
 
-The ! symbol means unique and hence encompasses also the definition of the injective function, the definition of the injective function provided by equation $(\ref{injiff})$ is however useful for proving that some given function is an injection.
+The $!$ symbol means unique and hence encompasses also the definition of the injective function, the definition of the injective function provided by equation $(\ref{injiff})$ is however useful for proving that some given function is an injection.
 
 
 
