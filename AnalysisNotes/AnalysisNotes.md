@@ -246,17 +246,26 @@ Injections, surjections and bijections are best illustrated by comparing them to
 
 An injection or injective function is also known as a one-to-one function, 
 
-* a **function** must have only one output value corresponding to an input value,
+* a **function** must have only one output value corresponding to an input value:
 
-  * $ f(x) = f(a) \implies x = a​$
-  * In terms of the function as a set:
-    * $(a,b) \in f  \enspace \wedge \enspace (a,q) \in f \implies b = q$
+$$
+f(x) = f(a) \implies x = a
+$$
 
-* an **injection** must have only one input value corresponding to any given output value.
+​		In terms of the function as a set:
+$$
+(a,b) \in f  \enspace \wedge \enspace (a,q) \in f \implies b = q
+$$
 
-  * $ f(x) = f(a) \iff x = a​$
-  * In terms of the function as a set:
-    * $(a,b) \in f \enspace \wedge \enspace (p, b) \in f \implies a=p$
+* Whereas an **injection** must have only one input value corresponding to any given output value.
+
+  $$
+  f(x) = f(a) \iff x = a
+  $$
+  ​		In terms of the function as a set:
+  $$
+  (a,b) \in f \enspace \wedge \enspace (p, b) \in f \implies a=p
+  $$
 
   #### Surjections
 
