@@ -248,13 +248,13 @@ An injection or injective function is also known as a one-to-one function,
 
 * a **function** must have only one output value corresponding to an input value,
 
-  * $ f(x) = f(a) \implies x = a$
+  * $ f(x) = f(a) \implies x = a​$
   * In terms of the function as a set:
     * $(a,b) \in f  \enspace \wedge \enspace (a,q) \in f \implies b = q$
 
 * an **injection** must have only one input value corresponding to any given output value.
 
-  * $ f(x) = f(a) \iff x = a$
+  * $ f(x) = f(a) \iff x = a​$
   * In terms of the function as a set:
     * $(a,b) \in f \enspace \wedge \enspace (p, b) \in f \implies a=p$
 
@@ -274,10 +274,14 @@ An injection or injective function is also known as a one-to-one function,
 
   * which also means that the codomain must be the range
     *  $B = R(f) ​$
-  * $\forall y \in B, \enspace \exists x \in B : f(x) = y​$
-  * 
+  * $\forall y \in B, \enspace \exists x \in A : f(x) = y$
+  * In terms of the function as a set:
+    * $\forall b\in B, \enspace \exists a \in A : (a,b) \in f​$
 
 #### Bijections
+
+A Bijection or bijective function is a function that is both injective and surjective, the whole point is that the inverse process of the function satisfies the requirements of a function, 
+
 #### 
 
 ---
