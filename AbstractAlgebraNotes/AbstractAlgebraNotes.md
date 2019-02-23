@@ -1,6 +1,6 @@
 
 
-# Analysis Topic Summary
+# Abstract Algebra Topic Summary
 > *Abstract Algebra*  <sub> TB: An Introduction to abstract algebra_ by Nicodemi, Sutherland and Towsley </sub>
 
 **Author:** *Ryan G; 17805315*
