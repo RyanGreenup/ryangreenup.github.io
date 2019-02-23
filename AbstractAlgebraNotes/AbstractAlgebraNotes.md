@@ -47,6 +47,11 @@ However, the [Field of Complex Numbers](#aa(5)rings2) has no intuitive order bec
 
 On a line mathematical operations can be seen as a symmetrical transformation of that line, but on a plane order becomes somewhat arbitrary. [*3Blue1Brown](<https://www.youtube.com/watch?v=mvmuCPvRoWQ>) has a great video on this.
 
+## Mathematical Induction
+
+Refer to [these notes](https://ryangreenup.github.io/AnalysisNotes/AnalysisNotes.html#an(1)wop) in Analysis, they overlap entirely.
+
+
 ## Functions
 
 <a name="an(1)funcs"></a>
@@ -79,7 +84,7 @@ is a 'rule of correspondence',
 
 That maps from, every element in $A$, to some other element in $B$
 
-> $(\forall x \in A) (!\exists x \in B)​$ 
+> $(\forall x \in A) (!\exists x \in B)$ 
 
 So the issue with this definition is that it doesn't clearly establish what a rule of correspondence actually is, in order to do that we will leverage set theory.
 

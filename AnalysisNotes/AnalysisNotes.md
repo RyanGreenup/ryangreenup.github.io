@@ -312,7 +312,63 @@ The $!$ symbol means unique and hence encompasses also the definition of the inj
 
 
 
+## Mathematical Induction
 
+Refer to [1.2] of *TB*
+
+### The Well-Ordering Principle
+
+<a name="an(1)wop"></a>
+
+The *Well-Ordering Principle* is an axiom that states:
+
+if a set contains
+
+1. Only Natural Numbers, and
+2. That set is non-empty
+
+Then,
+
+One of those elements within the set must be the smallest
+
+#### The *WOP* and the integers
+
+The *WOP* doesn't necessarily apply to other sets such as the integers, for example:
+$$
+\mathbb{Z} = \{{-\infty, ..., -3, -2, -1, 0, 1, 2,3 ... \infty}\}
+$$
+Take any value $g\in \mathbb{Z}$ , observe that:
+
+$g \in \mathbb{Z} \implies (g-1) \in \mathbb{Z}$ 
+
+This necessarily implies that the set of integers cannot have a least element.
+
+### Mathematical Induction 
+#### In Ordinary English
+
+Mathematical induction is a principle of proofs that provides:
+
+A statement $S(n)$ is true if:
+
+1. The first statement is true,
+2. Given One Statement is true, then so is the next
+
+If both of these conditions are satisfied, then mathematical induction provides that $S(n)$ is true for all positive whole values of $n$
+
+#### In Mathematical Terms
+
+Let $S(n)$ be a statement abount some $n \in \mathbb{N}$, this statement is true $\forall n\in \mathbb{N}$ if the following conditions are satisfied:
+
+1. $S(k)$ is true, and:
+2. $(\forall n \geq k), \left(S\left(n\right) \implies S\left(n+1\right)\right)$
+
+Condition (1) is known typically as the *base* and (2) as the *bridge*. 
+
+##### If/Then Statements
+
+In order to prove the if/then statement of (2), first assume that $S(n)$ is true and then demonstrate that as a consequence of that $S(n+1)$ is true $(\forall n \geq k)$
+
+> Also be aware that it is more that possible that (2) might be true for some or 	all values of $n$ even if (1) is false, there is no necessary connection between these two conditions or logical statements, the truth of one doesn't imply the truth of the other and only together do they establisht the overall truth of $S(n)​$.
 
 
 
