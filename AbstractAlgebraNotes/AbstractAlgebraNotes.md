@@ -36,10 +36,16 @@ This is mostly reproduced in the Topic 1 section on Sets in the [Analysis Notes]
 ## Set Orders
 
 The Natural Numbers have an intuitive order:
-$$
-0 < 1<2<3<4 \dots
-$$
-As to the Real Numbers
+
+$0<1<2<3<4 \dots$
+
+As to the Real Numbers:
+
+$-99<-1<0<e<\pi<e^{4\pi}<\frac{999}{2}​$
+
+However, the [Field of Complex Numbers](#aa(5)rings2) has no intuitive order because the numbers do not exist on a line but on a plane.
+
+On a line mathematical operations can be seen as a symmetrical transformation of that line, but on a plane order becomes somewhat arbitrary. [*3Blue1Brown](<https://www.youtube.com/watch?v=mvmuCPvRoWQ>) has a great video on this.
 
 ## Functions
 
@@ -254,46 +260,99 @@ The $!$ symbol means unique and hence encompasses also the definition of the inj
 
 ---
 
-# (2) Limits of a Sequence
-> ***Week 1 Material, Due Thur. 14 March<sub> TB: [1.1], [1.2], [2.1], [2.2] </sub>***
+# (2) Prime Numbers
+<a name="aatop3"></a>
 
 [Back to Top](#antoc)
+
+## Theorems of Euler and Fermat (ch. [1.7])
+
+<a name="aa(2)euler"></a>
 
 ---
 
 ---
 # (3) Sets and Functions
-<a name="antop3"></a>
-> ***Week 3 Material, Due Thur. 21 March<sub> TB: [3.5], [3.6], [3.7] </sub>***
+<a name="aatop3"></a>
 
 [Back to Top](#antoc)
 
-* [Sets][4]
-* [Functions][5]
+* [Euler-Phi Function](#aa(3)eulphi)
+* [Relations](#aa(3)rel)
+* [Congruence Modulo n](#aa(3)con)
+* [The Ring](#aa(3)ringintro)
+
+## Euler-Phi Function
+
+<a name="aa(3)eulphi"></a>
+
+## Relations
+
+<a name="aa(3)rel"></a>
+
+## Congruence Modulo *n*
+
+<a name="aa(3)con"></a>
+
+## The Ring [2.4]
+
+<a name="aa(3)ringintro"></a>
+
 ---
 
 ---
-# (4) Sets and Functions
-<a name="antop4"></a>
-> ***Week 4 Material, Due Thur. 28 March<sub> TB: [4.1], [4.2], [4.3] </sub>***
+# (4) Rings
+<a name="aatop4"></a>
 
 [Back to Top](#antoc)
 
 
-* [Sets][6]
-* [Functions][7]
----
+* [Linear Congruence Equations](#aa(4)lincon)
+
+* [Divisibility Tests](#aa(4)divtest)
+
+* [The Ring](aa(4)thering)
+
+* [Rings](#aa(4)rings)
+
+  
+
+## Linear Congruence Equations [2.1]
+
+<a name="aa(4)lincon"></a>
+
+## Divisibility Tests [2.2]
+
+<a name="aa(4)divtest"></a>
+
+## The Ring [2.4]
+
+<a name="aa(4)thering"></a>
+
+## Rings [2.5]
+
+<a name="aa(4)rings"></a>
 
 ---
-# (5) Sets and Functions
-<a name="antop5"></a>
-> ***Week 5 Material, Due Thur. 4 April <sub> TB: [5.1], [5.2] </sub>***
+# (5) Fields and Complex Numbers
+<a name="aatop5"></a>
+
+> TB: [2.5], [2.6] </sub>***
 
 [Back to Top](#antoc)
 
 
-* [Sets][8]
-* [Functions][9]
+* [Rings](#aa(5)rings2)
+* [The Field of Complex Numbers](aa(5)fieldc)
+
+## Rings [2.5]
+
+<a name="aa(5)rings2"></a>
+
+## The Field of Complex Numbers
+
+<a name="aa(5)fieldc"></a>
+
 ---
 
 
