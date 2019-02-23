@@ -335,9 +335,9 @@ One of those elements within the set must be the smallest
 
 The *WOP* doesn't necessarily apply to other sets such as the integers, for example:
 $$
-\mathbb{Z} = \{{-\infty, ..., -3, -2, -1, 0, 1, 2,3 ... \infty}\}
+\mathbb{Z} = \{  -\infty, \dots, -2, -1, 0, 1, 2, 3 \dots \infty \}
 $$
-Take any value $g\in \mathbb{Z}$ , observe that:
+Take any value $g\in \mathbb{Z}​$ , observe that:
 
 $g \in \mathbb{Z} \implies (g-1) \in \mathbb{Z}$ 
 
@@ -370,7 +370,7 @@ In order to prove the if/then statement of (2), first assume that $S(n)$ is true
 
 > Also be aware that it is more that possible that (2) might be true for some or 	all values of $n$ even if (1) is false, there is no necessary connection between these two conditions or logical statements, the truth of one doesn't imply the truth of the other and only together do they establisht the overall truth of $S(n)​$.
 
-
+#### Establishing Mathemat
 
 
 
