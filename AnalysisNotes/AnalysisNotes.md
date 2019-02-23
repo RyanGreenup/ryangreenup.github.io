@@ -9,15 +9,12 @@
 
 [TOC]
 
+<a name="antop1"></a>
+
 ---
 
 
 # (1) Sets and Functions! <img src="./SetTheoryIcon.png" style="height:64px" />
-<a name="antop1"></a>
-
-
-* 
-
 > ***Week 1 Material, Due Thur. 7 March<sub> TB: [1.1], [1.2], [2.1], [2.2] </sub>***
 
 * [Sets](#an(1)sets)

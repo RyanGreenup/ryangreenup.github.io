@@ -25,11 +25,13 @@ Alternative/Accessible Textbooks:
 
 * [Numbers and Sets](#aa(1)sets)
 
-## Numbers and Sets
+
 
 <a name="aa(1)sets"></a>
 
-This is mostly reproduced in the Topic 1 section on Sets in the [Analysis Notes](https://ryangreenup.github.io/AnalysisNotes/AnalysisNotes.html#header-n388)
+## Numbers and Sets
+
+This is mostly reproduced in the Topic 1 section on Sets in the [Analysis Notes](https://ryangreenup.github.io/AnalysisNotes/AnalysisNotes.html#an(1)sets)
 
 A set is a collection of elements, if an element is in that set it is written $x \in A$ and if not it is expressed $x \notin A$
 
