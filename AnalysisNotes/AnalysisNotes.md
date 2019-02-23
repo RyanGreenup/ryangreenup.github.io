@@ -364,6 +364,8 @@ Let $P(n)​$ be a statement abount some $n \in \mathbb{N}​$, this statement i
 
 Condition (1) is known typically as the *base* and (2) as the *bridge*. 
 
+> This can be formally proved by contradiction (e.g. suppose $s \neq \mathbb{N}$ hence there must be some $a \in \mathbb{N}$ 
+
 ##### If/Then Statements
 
 In order to prove the if/then statement of (2), first assume that $P(n)$ is true and then demonstrate that as a consequence of that $(P(n)+1)$ is true $(\forall n \geq k)$
