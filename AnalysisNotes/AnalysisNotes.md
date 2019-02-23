@@ -364,13 +364,13 @@ Let $P(n)​$ be a statement abount some $n \in \mathbb{N}​$, this statement i
 
 Condition (1) is known typically as the *base* and (2) as the *bridge*. 
 
-> This can be formally proved by contradiction (e.g. suppose $s \neq \mathbb{N}$ hence there must be some $a \in \mathbb{N}$ 
+> This can be formally proved by contradiction (e.g. suppose $S \neq \mathbb{N}$ hence there must be some $a \in \mathbb{N}$ such that$a \notin S$, but there isn't thus $\mathbb{N} = S$). 
 
 ##### If/Then Statements
 
 In order to prove the if/then statement of (2), first assume that $P(n)$ is true and then demonstrate that as a consequence of that $(P(n)+1)$ is true $(\forall n \geq k)$
 
-> Also be aware that it is more that possible that (2) might be true for some or 	all values of $n​$ even if (1) is false, there is no necessary connection between these two conditions or logical statements, the truth of one doesn't imply the truth of the other and only together do they establisht the overall truth of $S(n)​$.
+> Also be aware that it is more that possible that (2) might be true for some or 	all values of $n$ even if (1) is false, there is no necessary connection between these two conditions or logical statements, the truth of one doesn't imply the truth of the other and only together do they establisht the overall truth of $S(n)$.
 
 #### Establishing a Rigorous foundation for Induction
 
