@@ -348,31 +348,55 @@ This necessarily implies that the set of integers cannot have a least element.
 
 Mathematical induction is a principle of proofs that provides:
 
-A statement $S(n)$ is true if:
+A statement or proposition $P(n)​$ is true if:
 
 1. The first statement is true,
 2. Given One Statement is true, then so is the next
 
-If both of these conditions are satisfied, then mathematical induction provides that $S(n)$ is true for all positive whole values of $n$
+If both of these conditions are satisfied, then mathematical induction provides that $P(n)$ is true for all positive whole values of $n$
 
 #### In Mathematical Terms
 
-Let $S(n)$ be a statement abount some $n \in \mathbb{N}$, this statement is true $\forall n\in \mathbb{N}$ if the following conditions are satisfied:
+Let $P(n)​$ be a statement abount some $n \in \mathbb{N}​$, this statement is true $\forall n\in \mathbb{N}​$ if the following conditions are satisfied:
 
-1. $S(k)$ is true, and:
-2. $(\forall n \geq k), \left(S\left(n\right) \implies S\left(n+1\right)\right)$
+1. $P(k)$ is true, and:
+2. $(\forall n \geq k), \left(P\left(n\right) \implies P\left(n+1\right)\right)​$
 
 Condition (1) is known typically as the *base* and (2) as the *bridge*. 
 
 ##### If/Then Statements
 
-In order to prove the if/then statement of (2), first assume that $S(n)$ is true and then demonstrate that as a consequence of that $S(n+1)$ is true $(\forall n \geq k)$
+In order to prove the if/then statement of (2), first assume that $P(n)$ is true and then demonstrate that as a consequence of that $(P(n)+1)$ is true $(\forall n \geq k)$
 
-> Also be aware that it is more that possible that (2) might be true for some or 	all values of $n$ even if (1) is false, there is no necessary connection between these two conditions or logical statements, the truth of one doesn't imply the truth of the other and only together do they establisht the overall truth of $S(n)​$.
+> Also be aware that it is more that possible that (2) might be true for some or 	all values of $n​$ even if (1) is false, there is no necessary connection between these two conditions or logical statements, the truth of one doesn't imply the truth of the other and only together do they establisht the overall truth of $S(n)​$.
 
-#### Establishing Mathemat
+#### Establishing a Rigorous foundation for Induction
 
+##### Induction for $S \subseteq \mathbb{N}$ <sub> TB: [1.2.2] </sub>
 
+Let $S \subseteq \mathbb{N}$ , if:
+
+1. $1 \in S$ 
+2. $(\forall k \in S), \enspace k \in S \implies (k+1) \in S$
+
+It must be such that the set $S$ is as actually the entire set $\mathbb{N}$
+
+###### Induction for any statement <sub>TB: 1.2.3 </sub>
+
+Take the above form of induction but now change $S$ for some arbitrary proposition $P(n), \enspace \forall n \in \mathbb{N}​$ :
+
+$S = \{n \in \mathbb{N} \enspace : \enspace P(n) \ \text{is true}\}​$
+
+Now if $S$ can be shown to be the set of $\mathbb{N}$ then $P(n)$ must be true $\forall n \in \mathbb{N}$ 
+
+> (or that $S$ contains all $\mathbb{N}$ for values greater than some base $n_0​$)
+
+hence, $P(n)$ is true $\forall n \in \mathbb{N} \enspace : \enspace n \geq n_0$ if the following conditions are satisfied:
+
+1. $n_0 \in S$
+   1. $\because​$ this implies $P(n_0) is true
+2. $(\forall k \geq n_0), \enspace k \in S \implies (k+1) \in S$
+   1. $\because$ this implies if $P(n)$ is true $P(n+1)$ must be true.
 
 ---
 

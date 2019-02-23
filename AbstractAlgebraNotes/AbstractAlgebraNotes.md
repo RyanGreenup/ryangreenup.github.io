@@ -361,30 +361,6 @@ The $!$ symbol means unique and hence encompasses also the definition of the inj
 ---
 
 
-
----
-# (6) Sets and Functions
-<a name="antop6"></a>
-> ***Week 6 Material, Due Thur. 11 April<sub> TB: [5.3], [5.4] </sub>***
-
-[Back to Top](#antoc)
-
-* [Sets][10]
-* [Functions][11]
----
-
----
-# (7) Sets and Functions
-<a name="antop7"></a>
-> ***Week 7 Material, Due Thur. 18 April<sub> TB: [5.3], [5.4] </sub>***
-
-[Back to Top](#antoc)
-
-* [Sets][12]
-* [Functions][13]
----
-
-
 # collapsible markdown?
 <details><summary>CLICK ME</summary><p>
 ## Test
@@ -406,17 +382,3 @@ The $!$ symbol means unique and hence encompasses also the definition of the inj
 
 [^2]:	https://en.wikipedia.org/wiki/Subset
 
-[1]:	#an(1)sets
-[2]:	#an(1)funcs
-[3]:	https://en.m.wikipedia.org/wiki/Semiring
-[4]:	#an(1)sets
-[5]:	#an(1)funcs
-[6]:	#an(1)sets
-[7]:	#an(1)funcs
-[8]:	#an(1)sets
-[9]:	#an(1)funcs
-[10]:	#an(1)sets
-[11]:	#an(1)funcs
-[12]:	#an(1)sets
-[13]:	#an(1)funcs
-[14]:	#antop1
