@@ -265,19 +265,19 @@ $\therefore​$ , the set of all Prime numbers must not be finite (i.e. there ar
 
 <div style="text-align: right">⬛ </div>
 
-### Primes of Multiples
+## Primes of Multiples
 
 If a prime number divides a composite, it must divide one of
 the factors of that composite number
 
-#### Summary
+### Summary
 
 $p$ is a prime number *if and only if*:
 $$
 \forall (a,b \in \mathbb{z}), \enspace p|a\cdot b \implies p|a \enspace \vee \enspace p|b
 $$
 
-#### Proof
+### Proof
 
 Suppose $p​$ is a prime number:
 
@@ -289,7 +289,7 @@ Either $p$ divides $a$ or it does not:
 
 | $p\mid a$                                                    | $p\nmid a$                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $p\mid a$ , thus<br />$$p\mid ab \implies p|a \vee p|b \quad \blacksquare$$ | $p \nmid a$, thus<br />$$gcd(a,p) = 1$$ <br /> because $p|ab$ and $\gcd(a,p) = 1$<br />Then by Euclid's Lemma:<br />$p|b$<br />thus, <br />$p|ab \implies p|a \vee p|b \quad \blacksquare$ |
+| $p\mid a$ , thus<br />$$p\mid ab \implies p|a \vee p|b \quad \blacksquare$$ | $p \nmid a$, thus<br /><br />$$gcd(a,p) = 1$$ <br /><br /> because $p|ab$ and $\gcd(a,p) = 1$<br /><br />Then by Euclid's Lemma:<br />$p|b$<br /><br />thus, <br />$p|ab \implies p|a \vee p|b \quad \blacksquare$ |
 
 
 
