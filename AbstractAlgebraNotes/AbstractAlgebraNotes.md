@@ -55,14 +55,67 @@ Refer to [these notes](https://ryangreenup.github.io/AnalysisNotes/AnalysisNotes
 
 <a name="aa(1)divis"></a>
 
+Whats important here, is the division Algorithm, which states:
+
+> If an integer is divided by some $b \in \mathbb{N} $ , there will always be some remainder  $r \enspace : \enspace 0<r<b$
+
+This is a pretty straightforward proposition, but it underlies all later proofs of abstract algebra.
+
 ### Properties of the Integers
-#### Example application of the integer rules
+
+Investigating the properties of number sets will be important later for considering the algebraic structure of sets, but for now, consider the 6 properties of the integers:
+
+1. **Associative** under addition and multiplication
+   1. $\forall (a,b,c \in \mathbb{Z}), a + (b+c) = (a+b) + c$
+   2. $\forall (a,b,c \in \mathbb{Z}), a \cdot (b\cdot c) = (a\cdot b) + c$
+2. **Commutative** under multiplication and addition
+   1. $\forall (a,b \in \mathbb{Z}),  a + b = b + a$
+   2. $\forall (a,b \in \mathbb{Z}),  a \cdot b = b \cdot a$
+3. There always exists a unique **additive Identity**, $0$
+   1. $\forall x \in \mathbb{z}, !\exists 0 : 0+x=x​$
+4. There always exists a unique **multiplicative identity**, $1$
+   1. $\forall x \in \mathbb{z}, !\exists 1 : 1\cdot x=x$
+5. Every integer has an **additive inverse**\
+   1. $\forall x \in \mathbb{Z}, \exists (-x) : x + (-x) = 0$
+6. Addition and multiplication satisfy the **distributive law**
+   1. $\forall (x,y,z \in \mathbb{Z}), (x\cdot y) + (x\cdot z)$
+
 ### Divisibility Definition
+
+Let $a$ and $b$ be integers with $b \neq 0$:
+$$
+(a,b) \in \mathbb{Z} : b \neq 0
+$$
+it is said that $b$ **divides** $a$ (written $b|a$), if there is some integer $q$ such that $\enspace a = b\cdot q$:
+$$
+b|a \iff \exists q \in \mathbb{Z} : a = b\cdot q
+$$
+This is the same as saying:
+
+* $a$ is **divisible** by $b$
+* $a$ is a **multiple** of $b$
+
 ### Divisibility Properties
-#### $a | b \enspace \wedge \enspace b |c \implies a|c$
+
+1. $a|b \enspace  \wedge \enspace b|c \implies a|c$
+2. $a|b \enspace \wedge \enspace a|c \implies a|(mb + nc)$
+
+#### 
 ##### Proof
 Observe that:
-$a|b \implies b = k\cdot a, \enspace \exists t \in \mathbb{Z} \quad \text{and} \quad b|c \implies c = s \cdot b, \enspace \exists s \in \mathbb{z}​$
+$a|b \implies b = k\cdot a, \enspace \exists t \in \mathbb{Z} \quad \text{and} \quad b|c \implies c = s \cdot b, \enspace \exists s \in \mathbb{z}$
+
+### Division Algorithm
+
+The definition of the algorithm:
+
+Let $a$ and $b$ bey any integers with $b >0$.
+
+There are unique integers $q$ and $r$ such that $a = qb +r$, where $0 \leq r <b$, i.e.:
+$$
+!\exists (q,r \in \mathbb{Z}, \enspace q \neq r)  : (a = qb +r) \wedge (0 \leq r < b)
+$$
+
 
 
 ## Functions
