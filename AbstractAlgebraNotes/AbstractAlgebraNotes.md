@@ -265,7 +265,35 @@ $\therefore​$ , the set of all Prime numbers must not be finite (i.e. there ar
 
 <div style="text-align: right">⬛ </div>
 
-<div style="text-align: right"><b><i> Q.E.D.</i> </b> </div>
+### Primes of Multiples
+
+If a prime number divides a composite, it must divide one of
+the factors of that composite number
+
+#### Summary
+
+$p$ is a prime number *if and only if*:
+$$
+\forall (a,b \in \mathbb{z}), \enspace p|a\cdot b \implies p|a \enspace \vee \enspace p|b
+$$
+
+#### Proof
+
+Suppose $p​$ is a prime number:
+
+$$
+\enspace p | (a \cdot b)
+$$
+
+Either $p$ divides $a$ or it does not:
+
+| $p\mid a$                                                    | $p\nmid a$                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| $p\mid a$ , thus<br />$$p\mid ab \implies p|a \vee p|b \quad \blacksquare$$ | $p \nmid a$, thus<br />$$gcd(a,p) = 1$$ <br /> because $p|ab$ and $\gcd(a,p) = 1$<br />Then by Euclid's Lemma:<br />$p|b$<br />thus, <br />$p|ab \implies p|a \vee p|b \quad \blacksquare$ |
+
+
+
+
 
 ## Theorems of Euler and Fermat (ch. [1.7])
 
