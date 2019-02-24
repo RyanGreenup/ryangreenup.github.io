@@ -289,17 +289,171 @@ Either $p$ divides $a$ or it does not:
 
 | $p\mid a$                                                    | $p\nmid a$                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $p\mid a$ , thus<br />$$p\mid ab \implies p|a \vee p|b \quad \blacksquare$$ | $p \nmid a$, thus<br /><br />$$gcd(a,p) = 1$$ <br /><br /> because $p|ab$ and $\gcd(a,p) = 1$<br /><br />Then by Euclid's Lemma:<br />$p|b$<br /><br />thus, <br />$p|ab \implies p|a \vee p|b \quad \blacksquare$ |
+| $p\mid a$ , thus<br />$$p\mid ab \implies p|a \vee p|b \quad \blacksquare$$ | $p \nmid a$, thus:<br /><br />$$gcd(a,p) = 1$$ <br /><br /> because $p|ab$ and $\gcd(a,p) = 1$<br /><br />Then by Euclid's Lemma:<br />$p|b$<br /><br />thus, <br />$p|ab \implies p|a \vee p|b \quad \blacksquare$ |
 
+Thus:
+$$
+p|ab \implies p|a \vee p|b
+$$
 
+## Prime Factors
 
+### Summary
 
+Suppose $p$ is prime and $p$ divides some number $a_1 \cdot a_2 \cdot a_3 \dots a_n$
+
+Then $p$ divides $a_k \enspace : \enspace 1 \leq k \leq n$
+
+Moreover, if $a_k$ is prime, then $p=a_k$
+
+## The Fundamental Theorem of Arithmetic
+
+### Summary
+
+For any integer $n$:
+
+1. $\enspace n = p^{k_1}_1\cdot p^{k_2}_2 \cdot p^{k_3}_3 \dots p^{k_m}_m$
+2. The above factorisation of $n$ is unique to the value of $n$
+
+This proof is provided on p. 28 of the TB.
+
+### Corollary, Rational Numbers
+
+Every rational number can be expressed in a lowes form of relatively prime integers.
+
+#### Summary
+
+Every rational number can be expressed uniquely as some fraction of integers:
+$$
+\forall r \in \mathbb{Q}, \enspace !\exists m,n \in \mathbb{Z} : r = \frac{m}{n}
+$$
+
+##### $\sqrt{2}$ is not rational
+
+A rational number can be expressed as a ratio, $\sqrt{2}$ cannot be, the proof is in the [Analysis Textbook](http://booksdl.org/get.php?md5=ef3626243a81006414e1f5a67ce694e0) at [2.1.4].
+
+###### Proof
+
+Just refer to the textbook
 
 ## Theorems of Euler and Fermat (ch. [1.7])
 
 <a name="aa(2)euler"></a>
 
----
+### Euler-Phi Function
+
+The *Euler-Phi Function* counts the number of integers relatively prime to $n$ that are less than $n$,
+
+#### Definition
+
+for $n \geq 1$;
+
+$\phi(n)$ is the number of positive integers less than or equal to $n$ that are relatively prime to $n$
+
+> e.g. $2, 3, 7$ are relatively prime to $10$, thus $\phi(10) = 3$
+
+### Powers of Euler-Phi Function
+
+#### Summary
+
+if $p$ is prime and $i \geq 1$,
+$$
+\begin{align}
+\phi(p^i) &= p^i - p^{i-1} \\
+&=p^i(1-frac{1}{p})
+\end{align}
+$$
+
+#### Proof
+
+All the numbers between $1$ and $p-1$ are relatively prime to p, thus $\phi(p)=p-1$.
+
+All integers less than $p^i$ (for $i\geq 1$) are relatively prime to $p^i$ except for multiples of $p$.
+	i.e. all values less than $p^i$ are relatively prime except for $1p,2p,3p \dots p^(i-1) p$.
+
+So there are exactly $p^{i-1}$ multiples of $p$ that are multiples and hence not relatively prime.
+
+Thus there is a total of $p^i-p^{i-1}$ numbers between $1$ and $p^i$ that are relatively prime to $p^i$.
+
+### Euler-Phi Function is Multiplicative
+
+#### Summary
+
+For positive relatively prime integers $m$ and $n$:
+$$
+\gcd(m, n) = 1 \implies \phi(m \cdot n) = \phi(m) \cdot \phi(n)
+$$
+
+#### Proof
+
+Refer to p. 44 of the TB.
+
+#### Corollary
+
+for primes $p, e \in \mathbb{N}$,
+
+Given some $n$ value:
+$$
+n = p^{e_1}_1 \times p^{e_2}_2 \times p^{e_3}_3 \times p^{e_r}_r
+$$
+
+Then the Euler Phi function is:
+
+$$
+\phi(n) = p^{e_1-1}_1 \cdot (p_1-1) \times p^{e_2-1}_2 \cdot (p_2-1) \times p^{e_3-1}_3 \cdot (p_3-1) \dots p^{e_r-1}_r \cdot (p_r-1)
+$$
+
+Further it follows:
+
+$$
+\phi(n) = n \times \frac{p_1 -1}{p_1} \times \frac{p_2 -1}{p_2} \times \frac{p_3 -1}{p_3} \times \frac{p_r -1}{p_r}
+$$
+
+
+
+> <sub>I've merely interchanged $\cdot$ and $\times$ here
+> for want of illustration, there is no significant
+> meaning right here whatsoever (where as maybe
+> later down $\cdot$ may refer to more abstract
+> ideas of multiplication but it's pretty lose as it stands)</sub>
+
+### Eulers Theorem
+
+#### Summary
+
+For relatively prime integers $a$ and $m \geq 1$:
+$$
+m | (a^{\phi(m)} - 1)
+$$
+
+#### Proof
+
+The proof is on page 45 of the TB.
+
+#### Fermats Little Theorem
+
+The special case of *Euler's Theorem*, men $m$ is prime, in known as *Fermat's Little Theorem*.
+
+##### Summary
+
+For some prime $p$ and integer $a$:
+$$
+p \mid (a^p -a)
+$$
+
+##### Proof
+
+It must be such that $p​$ divides $a​$ or $p​$ does not divide $a​$ , hence:
+
+| $p \mid a$                                                   | $ p \nmid a$                                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| if $p \mid a$ <br />$\implies p \mid a^n, \enspace \exists n \in \mathbb{N}$<br /> $\implies p \mid a^{p-1}$ <br /> $\implies p \mid (a^p -a)$ | if $p\nmid a$<br /><br />Then $p$ and $a$ are relatively prime, thus, *Eulers Theorem* applies;<br /><br />By *Euler's Theorem*:<br />$p|(a^{\phi(p)}-1)$<br />$\implies p \mid (a^{(p^1-p^0)}-1)$<br />$\implies p \mid (a^{(p-1)}-1)$<br />$\implies p \mid (a \cdot (a^{(p-1)}-1))$<br />$\implies p \mid (a^p-a)$ |
+
+Thus for a prime $p$ and integer $a$:
+$$
+p \mid (a^p - a)
+$$
+
 
 ---
 # (3) Sets and Functions
