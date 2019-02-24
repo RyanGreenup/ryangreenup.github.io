@@ -210,7 +210,6 @@ $$
 \text{lcm} (a,b) = \frac{a\cdot b}{\gcd(a,b)}
 $$
 
-
 ---
 
 # (2) Prime Numbers
@@ -226,7 +225,47 @@ Prime and composite numbers are any numbers that satisfy the following condition
 | ------------------------------------------------------------ | ----------------------------------------------------------- |
 | $$ 1. \enspace p>1 \\ 2. \enspace p \in \mathbb{z} \\ 3. \enspace  x|p \iff (x =1 \enspace \wedge \enspace x=p)$$ | $$1. \enspace c > 1 \\ 2. \enspace c \text{ is not prime}$$ |
 
-Observe that $1$ is neigher a prime nor a composite number, this is important for later
+Observe that $1$ is neither a prime nor a composite number, this is important for later
+
+## Infinite Primes
+
+### Summary
+
+There are infinite prime numbers
+
+### Proof
+
+Suppose;
+
+$$
+S = \{p_1, p_2, p_3, \dots p_n\}
+$$
+
+is the set of the first $n$ prime numbers,
+
+let:
+$$
+q = (p_1 \cdot p_2 \cdot p_3 \cdot \dots p_n)
+$$
+
+
+
+
+Observe that $q$ would not be a multiple of any value $p \in S$ 
+
+> <sub>Although this does not mean $q$ is necessarily prime (primes can be [much more difficult](https://www.youtube.com/watch?v=tlpYjrbujG0) to generate), $q$ is possible a composite of primes not in $S$, but regardless, $q$ is not divisible by any $p \in S$ </sub>
+
+Thus $S$ cannot contain all prime values.
+
+Observe likewise, no set $S​$ could be constructed such that it contained all the primes
+
+> <sub> or atleast no finite set $S​$ </sub>
+
+$\therefore​$ , the set of all Prime numbers must not be finite (i.e. there are infinite primes). 
+
+<div style="text-align: right">⬛ </div>
+
+<div style="text-align: right"><b><i> Q.E.D.</i> </b> </div>
 
 ## Theorems of Euler and Fermat (ch. [1.7])
 
