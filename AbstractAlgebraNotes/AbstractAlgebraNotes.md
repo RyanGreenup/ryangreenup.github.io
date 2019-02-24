@@ -116,13 +116,46 @@ $$
 !\exists (q,r \in \mathbb{Z}, \enspace q \neq r)  : (a = qb +r) \wedge (0 \leq r < b)
 $$
 
+## Greatest Common Divisors and Euclids Algorithm
+
+### Definition of the GCD
+
+Suppose $a$ and $b$ are nonzero integers, the *greatest common divisor* of $a$ and $b$ is the largest integer that divides both of them and is denoted:
+
+​                   $gcd(a,b)​$
+
+Observe some properties of the gcd
+
+1. $\gcd(0,0)$ is undefined because it would be    
+
+2. $\gcd(a,0) = a$ ; because any number divides     and the largest number that divides     is itself
+   1. unless $a=0​$ in which case it would be like (1) above.
+
+3. $\gcd(b, qb) = b​$ ; because the $b​$ divides both terms and is the largest possible divisor of$b​$
+
+### Theorem 1
+
+The $\gcd(a,b)$ is the smallest positive integer that can be expressed in the form:
+$$
+ma + nb : (m,n \in \mathbb{Z})
+$$
+
+#### Corollary
+
+Observe further, that for $x \in \mathbb{Z}$ , thwse two statements are wholly equivalent:
+
+1. $x = ma+nb$
+2. $\gcd(a,b)|x
+
+> i.e. $x = ma + nb \iff \gcd(a,b) | x$
 
 
-## Functions
 
-<a name="an(1)funcs"></a>
+### Relatively Prime
 
+#### Definition
 
+Suppose
 
 
 
