@@ -155,8 +155,60 @@ Observe further, that for $x \in \mathbb{Z}$ , thwse two statements are wholly e
 
 #### Definition
 
-Suppose
+Suppose $a$ and $b$ are non-zero integers, they are *relatively prime* (i.e. *coprime*) if $\gcd(a,b)=1​$
 
+#### Proposition; Relatively Prime by GCD
+
+Suppose $a$ and $b$ are non-zero integers, and let $\gcd(a,b) =d$
+
+Then $\frac{a}{d}$ and $\frac{b}{d}$ are relatively prime.
+
+### Euclid's Lemma (P.18)
+
+#### Definition
+
+Suppose $a, b, c$ are integers such that $a$ and $b$ are coprime.
+
+if $b\cdot c$ is a multiple of $a$,
+
+Then $c$ must be a multiple of $a$
+
+​	(because $p$ was prime)
+
+### Theorem; GCD becomes Remainder and Factor
+
+Suppose $(a,b,q,r)$ are all integers, such tat:
+$$
+a = qb +r
+$$
+Then, 
+$$
+\gcd(a,b) =\gcd(b,r)
+$$
+
+### Euclid's Algorithm (i.e. Calculating GCD's)
+
+*Euclid's Algorithm* allows for a method to find the *Greatest Common Denominator*:
+
+For two positive natural numbers, $a,b$ such that $a>b$:
+
+1. write in the form of $a=qb+r$,  where $(q,r\in \mathbb{Z})$ with $0<r<b$
+2. If $r=0$, then $a=q\cdot b$ and hence $\gcd(a,b) = \gcd(b,r)$
+3. if $r\neq​$ 0, then $\gcd(a,b) = \gcd(b,r)​$
+   1. Now repeat from step 1 
+
+### Lowest Common Multiples
+
+For two integers $(a,b) \in \mathbb{Z}$, the *Lowest Common Multiple*, is the smallest integer that is a multiple of both $a$ and $b$
+
+The $LCM$ is a number that is the smallest possible multiple of other numbers
+
+#### Finding the *LCM*
+
+In order to find the *LCM* use the formula:
+$$
+\text{lcm} (a,b) = \frac{a\cdot b}{\gcd(a,b)}
+$$
 
 
 ---
@@ -165,6 +217,16 @@ Suppose
 <a name="aatop3"></a>
 
 [Back to Top](#antoc)
+
+## Definitions
+
+Prime and composite numbers are any numbers that satisfy the following conditions:
+
+| Prime Numbers                                                | Composite Numbers                                           |
+| ------------------------------------------------------------ | ----------------------------------------------------------- |
+| $$ 1. \enspace p>1 \\ 2. \enspace p \in \mathbb{z} \\ 3. \enspace  x|p \iff (x =1 \enspace \wedge \enspace x=p)$$ | $$1. \enspace c > 1 \\ 2. \enspace c \text{ is not prime}$$ |
+
+Observe that $1$ is neigher a prime nor a composite number, this is important for later
 
 ## Theorems of Euler and Fermat (ch. [1.7])
 

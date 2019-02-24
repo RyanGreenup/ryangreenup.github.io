@@ -400,7 +400,6 @@ hence, $P(n)$ is true $\forall n \in \mathbb{N} \enspace : \enspace n \geq n_0$ 
 2. $(\forall k \geq n_0), \enspace k \in S \implies (k+1) \in S$
    1. $\because$ this implies if $P(n)$ is true $P(n+1)$ must be true.
 
-
 ---
 
 # (2) Limits of a Sequence
