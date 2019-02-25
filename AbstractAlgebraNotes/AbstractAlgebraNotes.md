@@ -419,6 +419,8 @@ $$
 
 ### Eulers Theorem
 
+<a name="aa(2)eulphi"></a>
+
 #### Summary
 
 For relatively prime integers $a$ and $m \geq 1$:
@@ -454,33 +456,296 @@ $$
 p \mid (a^p - a)
 $$
 
-
 ---
-# (3) Sets and Functions
+# (3) Relations and Congruence
 <a name="aatop3"></a>
 
 [Back to Top](#antoc)
 
-* [Euler-Phi Function](#aa(3)eulphi)
 * [Relations](#aa(3)rel)
 * [Congruence Modulo n](#aa(3)con)
 * [The Ring](#aa(3)ringintro)
-
-## Euler-Phi Function
-
-<a name="aa(3)eulphi"></a>
 
 ## Relations
 
 <a name="aa(3)rel"></a>
 
+A relation on a set $A$ is a subset $R$ of the cartesian product:
+$$
+A\times A = \{(a,b) : a,b \in A\}
+$$
+if $(a,b) \in R$ we write that $\enspace a \enspace R \enspace b$
+
+### Example
+
+If we had the relation $<$ on the set $A$ = \{1,2,3\}.
+
+​	The Cartesian product would be:
+$$
+A \times A = \{(1,1), (1,2), (1,3), (2,1), (2,2), (2, 3), (3, 1), (3, 2), (3,3)\}
+$$
+The set corresponding to the relation $<$ would be:
+$$
+\{(1,2), (1, 3), (2, 3)\}
+$$
+
+### Relation Types
+
+* **Reflexive** relations are relations where
+  * $a \enspace R \enspace a$
+    * $\forall a \enspace \in A$
+* **Symmetric** relations are such that
+  * $a \enspace R \enspace b \implies b \enspace R \enspace a$
+    * $\forall a, b \in A$
+* **Transitive** relations are such that
+  * $a \enspace R \enspace b \quad \wedge \quad  b \enspace R \enspace c \implies  b \enspace R \enspace a$
+    * $\forall a,b,c\in A$
+
+An equivalence relation is a relation that is reflexive, symmetric and transitive.
+
+#### Example 1
+
+Let $S = \{\text{all people}\}$
+
+We will define a relation $R$ as satisfied if thouse people share the same parents
+
+##### Define a relation
+
+$x \enspace R \enspace y$ if $x$ has the same parents as $y$
+
+observe the following properties:
+
+* **Reflexivity**; any person will be related to themselves because they share the same parents
+
+* **symmetry**; If percy is related to Fred, then they share parents and hence then Fred must be related to Percy.
+
+* **Transivity**; If Percy is related to Fred and Fred is Related to Ron, Ron and Percy must share parents, thus Ron and Percy are Related.
+
+#### Example 2
+
+Let $S$ be all real numbers
+
+##### Define a Relation:
+
+$x<y \iff x \enspace R \enspace y$
+
+observe the following properties:
+
+* **Non-Reflexive**; any number is not less than its own value.
+* **Non-Symmetry**
+  * Take 5 and 7, if $5<7$ , then $7 \nless 5$
+* **Transitive**; It is true that if, say, $3<4$ and $4<5$ then $3<5$
+  * This property is why we ordinarily write interval notation in this format, e.g. $x\in (3,5) \iff 3<x<5​$ 
+    * Be careful though, using greater than symbols is not transitive per se and may lead to making transcription errors.
+
+### Equivalence Class 
+
+Given a relation $R$ on some set $A$,
+
+If $[a]$ is the set of all elements of $A$ that satisfy the relation for $a$:
+$$
+[a]_R = [a] = \{b \in A : b\enspace R \enspace a\}
+$$
+This is called the *equivalence class of*  $a$ *with respect to* $R$
+
+#### Example
+
+Let $S$ all real numbers.
+
+**Define a relation:**
+
+$x \enspace R \enspace y \iff x < y$
+
+Let’s find the equivalence class of $[6]$:
+
+$[6]_R = \{1,2,3,4,5\}$
+
+#### Proposition
+
+Let $R$ be an equivalence relation on $A$:
+
+​	if $a,b \in A$, then either,
+
+* $[a] = [b]$, OR
+* $[a]\cap [b] = \emptyset$
+
+So if $a$ and $b$ are both elements of $A$, then their equivalence classes are identical or absolutely different.
+
+   
+
 ## Congruence Modulo *n*
 
 <a name="aa(3)con"></a>
 
+Let $a, b \in \mathbb{Z}$ and $n \in \mathbb{Z}^{+}$
+
+We say that:
+
+$a$ and $b$ are *congruent modulo n$ if $n \mid (a-b)$, and it is expressed:
+
+$$
+a\equiv b \enspace \pmod{n}
+$$
+
+or in other words:
+
+$$
+a\equiv b \enspace (mod n) \iff a = b + q\cdot n : q \in \mathbb{R}
+$$
+
+
+### Further Notation;
+Generally the notation:
+
+$$
+a \mod n = r
+$$
+
+Refers to the remainder after $a$ has been divided by $n$ (i.e. the residue of $a$ modulo $n$)
+
+So be careful:
+
+| **This is a number** | **This is a statement about Divisibility** |
+| -------------------- | ------------------------------------------ |
+| $a \mod n = r$       | $a\equiv b \enspace \pmod{n}$              |
+
+### The Euclidean Algorithm
+
+if $a = q\cdot b +r$ then $a\equiv b \enspace \pmod{n}$ 
+
+Recall from the *Euclidean Algorithm*:
+
+$$
+a = q\cdot b +r \implies \gcd(a,b) = \gcd(b,r)
+$$
+
+This translates to:
+
+$a \equiv r \pmod{b} \implies \gcd(a,b) = \gcd(b,r)$
+
+#### Eulers Theorem
+
+*Euler's Theorem* (and hence *Fermat's Little Theorem) can now be restated in terms of modulos.
+
+For relatively prime integers $a$ and $m \geq 1$:
+
+$$
+\begin{align}
+m \mid (&a^{\phi (m)}-1) \\
+&a^{\phi (m)} \equiv 1 \pmod{m}
+\end{align}
+$$
+
+##### Fermats Little Theorem
+The special case of $Euler's Theorem$, when $m$ is prime, is known as *Fermat's Little Theorem*.
+
+$$
+p \mid (a^p-a) \\
+a^p \equiv a \pmod{p}
+$$
+
+### Residue of $a$ modulo $n$ (i.e. remainder of Division Algorithm)
+If $a,b \in \mathbb{Z}$ and $n \in \mathbb{Z}^+$
+
+Then $a = b \pmod{n}$ if and only if $a$ and $b$ have the same remainder when divided by $n$.
+
+If the remainder is $r$ then:
+
+$$
+a \equiv r \pmod{n}
+$$
+
+> i.e. $a = p\cdot n +r, \enspace \exists p \in \mathbb{R}$
+
+This valur $r$ is known as the *residue of a modulo n$ and can always be found to exist.
+
+### Mod Laws
+Let $n \in \mathbb{Z}^+$ and $ a,b,c,d, k \in \mathbb{Z}
+nd $m \in \mathbb{N}$
+
+1. $a \equiv b \pmod{n} \implies k\cdot a \equiv k\cdot b \pmod{n}​$
+2. $\Big( a \equiv b \pmod{n} \enspace \wedge \enspace c = d \pmod{n} \Big)$
+   1. $\implies (a+c) \equiv (b+d) \pmod{n}$, and also
+   2. $\implies (a\cdot c) \equiv (b\cdot d) \pmod{n}$
+
+### Congruence Class
+
+Let $n \in \mathbb{Z}^+$ and $a \in \mathbb{Z}$
+
+The congruence class of $a$ modulo $n$ is epxressed as $[a]_n$
+
+It is the equivalence class of $a$ whereby the relation is a congruence in modulo $n$.
+
+So in mathematical terms, the congruence class of $a$ is $[a]_n$:
+
+$$
+[a]_n = \{ b \in \mathbb{Z} : b \equiv a \pmod{n} \}
+$$
+
+> e.g. $[10]_3 = \{1,4,7,10,13,16 \dots 3n + r : n \in \mathbb{Z} \}$
+>
+> > Observe here that $r=1$
+
+
 ## The Ring [2.4]
 
 <a name="aa(3)ringintro"></a>
+
+The ring $\mathbb{Z}_m$ is the set of all congruence classes less than $m$ such that:
+
+$$
+\mathbb{Z}_m = \{ [0]_m, [1]_m, [2]_m, [3]_m, \dots [m-1]_m\}, \enspace  \forall m \in \mathbb{Z}^+
+$$
+
+### Example
+We could list all the congruence classes of $\mathbb{Z}_5$:
+
+$$
+\mathbb{Z}_5 = \{[0]_5, [1]_5, [2]_5, [3]_5, [4]_5\}
+$$
+
+Where:
+
+* [0]_5 = \{\dots -5, 0, 5, 10, 15 \dots \}
+* [1]_5 = \{\dots -4, 1, 6, 11, 16 \dots \}
+* [2]_5 = \{ \dots -3, 2, 7, 12, 17, \dots \}
+* [3]_5 = \{ \dots -2, 3, 8, 13, 18 \dots \}
+* [4]_5 = \{\dots -1, 4, 9, 14, 19 \dots \}
+
+Hence $\mathbb{Z}_5$ could be expressed equivalently as:
+
+$$
+ \mathbb{Z}_5 = \{[5]_5, [11]_5, [17]_5, [19]_5, [9]_5\}
+$$
+
+### Operations on Congruence Classes
+The elements of  $\mathbb{Z}_5$ can be manipulated algebraically, they have an algebraic structure, observe the following operations $\forall a,b,c \in \mathbb{Z}$.
+
+#### Addition 
+Addition is commutative and associative:
+
+$$
+\begin{align}
+[a]_m + [b]_m &= [a+b]_m \\
+&= [b]_m + [a]_m
+\end{align}
+$$
+
+#### Multiplication 
+Multiplication is commutative and associative
+
+$$
+\begin{align}
+[a]_m \cdot [b]_m &= [a\cdot b]_m\\
+&= [b]_m \cdot  [a]_m
+\end{align}
+$$
+
+#### Linear Combination
+Addition and Multiplication can be combined:
+$$
+[a]_m \cdot \big( [b]_m + [c]_m \big) = [a]_m \cdot [b]_m + [a]_m \cdot [c]_m
+$$
 
 ---
 
