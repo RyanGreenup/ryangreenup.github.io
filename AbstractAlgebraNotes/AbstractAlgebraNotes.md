@@ -825,7 +825,7 @@ $$
 $3 \neq 0$, thus:
 $$
 \begin{alignat}
-3x \equiv 3 \times 1 \pmod{9} \iff x &\equiv 1 \pmod{{\tiny \frac{9}{\gcd(3,9)}}} \\
+3x \equiv 3 \times 1 \pmod{9} \iff x &\equiv 1 \pmod{ { \tiny{ \frac{9}{\gcd{3,9} } } \\
 \implies x &\equiv 1 \pmod{\small {\frac{9}{3}}}\\
 \implies x & \equiv 1 \pmod{3}
 \end{alignat}
@@ -941,7 +941,7 @@ $$
 
 Thus a soltuion is $x = 5$,
 
-The set of all solutions is $[z]_{\frac{n}{d}}$ ,
+The set of all solutions is $[z]_{\frac{n}{d}}​$ ,
 
 where:
 
@@ -985,7 +985,7 @@ $$
 
 ##### Euclidean Algorithm
 
-
+Now use the **
 
 ## Divisibility Tests [2.2]
 
