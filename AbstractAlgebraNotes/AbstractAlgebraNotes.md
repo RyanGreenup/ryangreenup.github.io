@@ -877,7 +877,7 @@ $$
 8 = 4\times 2 + 0 &\implies \gcd(60, 34) = 2 &
 \end{alignat}
 $$
-Now recall that we are trying to find the values of $x$ and $t$:
+Now recall that we are trying to find the values of $x​$ and $t​$:
 $$
 20 = 34x+60t
 $$
@@ -913,7 +913,7 @@ $$
 \end{align}
 $$
 
-###### Solve for $x$ and $t$ 
+###### Solve for $x$ and $t​$ 
 
 Thus, 
 $$
@@ -985,11 +985,145 @@ $$
 
 ##### Euclidean Algorithm
 
-Now use the **
+Now use the **Euclidean Algorithm** on the numbers $17$ and $29$.
+
+We are concerned with $\gcd(17,29)$, because that's what our variables are multiplied by:
+$$
+\begin{alignat}{2}
+29 = 1 \times 17 + 12 &\implies 12 = 29-17 \qquad &(1) \\
+17 = 1\times 12 + 5 &\implies 5 = 17-12 \qquad &(2) \\
+12 = 1\times 5 + 2 &\implies 2 = 12-2\times 5 \qquad &(3) \\
+5 = 2 \times 2 + 1 & \implies 1 = 5 - 2 \times 2 \qquad & (4) \\
+\ \\
+2 = 2\times 1 + 0 &\implies \gcd(29, 17) = 1 &
+\end{alignat}
+$$
+
+###### Backwards Substitution
+
+So our goal is to find $v$, $w$:
+$$
+17\cdot v + 29 \cdot w =1
+$$
+*state $(4)$*
+$$
+1 = 5 -2\times2
+$$
+*sub $(3)$*
+$$
+\begin{align}
+1 &= 5 - 2 \times (12-2 \times 5) \\
+&= 5 - 2 \times 12 + 4 \times 5 \\
+&= 5 \times 5 - 2 \times 12
+\end{align}
+$$
+*sub $(2)$*
+$$
+\begin{align}
+1 &= 5 \times (17 - 12) - 2 \times 12 \\
+  &= 5 \times 17 - 7 \times 29 + 7 \times 17 \\
+  &= 12 \times 17 - 7 \times 29 \\
+\end{align}
+$$
+*Sub $(1)$*
+$$
+\begin{align}
+1 &= 5 \times 17 - 7 \times (29-17) \\
+  &= 5 \times 17 - 7 \times 29 + 7 \times 17 \\
+  &= 12 \times 17 - 7 \times 29
+\end{align}
+$$
+
+###### Solve for $x$ and $t$ 
+
+Now; 
+$$
+\begin{alignat}{4}
+1 &= 17 \cdot &v      &+ 29 \cdot w& \\
+1 &= 17 \times &12 &+ 29 \times (-7)& \\
+\ \\
+&&&\implies v = 12\\
+&&&\implies w = 1
+\end{alignat}
+$$
+The original question is:
+$$
+\begin{align}
+17x &\equiv 3 \pmod{29} \\
+17x \times 12 &\equiv 3 \times 12 \pmod{29} \\
+(17\times 12) x &\equiv 12 \times 3 \pmod{29} \\
+(1)x &\equiv 12 \times 3 \pmod{29} \\
+x &\equiv 36 \pmod{29}
+\end{align}
+$$
+Thus $x = 36$ is a solution, hence the residue is a solution:
+$$
+\begin{align}
+x &= 36 \pmod{29} \\
+  &= 7
+\end{align}
+$$
+
+##### Conclusion; Solve the set of solutions
+
+The complete set of solutions is the congruence class:
+$$
+[7]_{\frac{n}{d}}
+$$
+Where $n$ is the modulo and $d = \gcd(a, n)$:
+$$
+\begin{align}
+x = [7]_{\frac{n}{d}} = [7]_{\frac{n}{d}}=[7]_{29} &= \left \{ \dots, -22, 7, 36, 65 \dots \right \}\\
+&= 7 + 29 \cdot q \enspace : \enspace q \in \mathbb{Z}
+\end{align}
+$$
+
 
 ## Divisibility Tests [2.2]
 
 <a name="aa(4)divtest"></a>
+
+This isn't a particularly important part of the topic, but a cool algebra trick.
+
+It is possible to test for divisibility by 9 or 3 by summing the components, e.g.:
+$$
+\begin{align}
+9|832005 &\iff 9 \mid (8+3+2+0+0+5) \\
+&\iff 9 \mid (18)
+\end{align}
+$$
+This can be generalised into a theorem:
+
+An integer $x = x_nx_{n-1}x_{n-2} \dots x_2x_1x_0​$ (in decimal notation, <sub> as in each $x​$ represents the a part of the unit value of the number  </sub>) is divisible by 9 if and only if $( x_n + x_{n-1} + x_{n-2} + x_2 + x_1 +x_0)​$ is divisible by 9
+
+### Proof
+
+First observe that any integer can be expressed as a sum of its unit values (e.g. $342 = 3 \times 100 + 4 \times 10 + 1 \times 2$), hence:
+$$
+\begin{align}
+x = (x_n \times 10^n) + (x_{n-1} \times 10^{n-1}) + (x_{n-2} \times 10^{n-2}) \dots (x_2 \times 10^2) + (x_1 \times 10) + x_0
+\end{align}
+$$
+Now utilise the fact that $10 \mod 9=1$ and that the $\mod \ $ operator distributes over addition:
+$$
+\begin{alignat}{2}
+x &\equiv (x_n \times 1^n) + (x_{n-1} \times 1^{n-1}) + (x_{n-2} \times 1^{n-2}) \dots (x_2 \times 1^2) + (x_1 \times 1) + x_0 &\pmod{9}\\
+&\equiv  x_n + x_{n-1} + x_{n-2} + x_2 + x_1 +x_0 &\pmod{9}
+\end{alignat}
+$$
+Now we know that $9 \mid x \iff x \equiv 0 \pmod{9}$, thus
+$$
+\begin{align}
+9 \mid x &\iff  (x_n + x_{n-1} + x_{n-2} + x_2 + x_1 +x_0) \pmod{9} \\
+& \iff  x_n + x_{n-1} + x_{n-2} + x_2 + x_1 +x_0
+\end{align}
+$$
+
+ #### In Terms of 3
+
+Observe that $9= 3 \times 3; hence the same rules apply for the value of 3, and a similar proof.
+
+
 
 ## The Ring [2.4]
 
