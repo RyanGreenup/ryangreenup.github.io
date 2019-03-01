@@ -706,11 +706,11 @@ $$
 
 Where:
 
-* [0]_5 = \{\dots -5, 0, 5, 10, 15 \dots \}
-* [1]_5 = \{\dots -4, 1, 6, 11, 16 \dots \}
-* [2]_5 = \{ \dots -3, 2, 7, 12, 17, \dots \}
-* [3]_5 = \{ \dots -2, 3, 8, 13, 18 \dots \}
-* [4]_5 = \{\dots -1, 4, 9, 14, 19 \dots \}
+* $[0]_5 = \{\dots -5, 0, 5, 10, 15 \dots \}$
+* $[1]_5 = \{\dots -4, 1, 6, 11, 16 \dots \}$
+* $[2]_5 = \{ \dots -3, 2, 7, 12, 17, \dots \}$
+* $[3]_5 = \{ \dots -2, 3, 8, 13, 18 \dots \}$
+* $[4]_5 = \{\dots -1, 4, 9, 14, 19 \dots \}$
 
 Hence $\mathbb{Z}_5$ could be expressed equivalently as:
 
@@ -769,6 +769,223 @@ $$
 ## Linear Congruence Equations [2.1]
 
 <a name="aa(4)lincon"></a>
+
+A linear congruence equation is of the form:
+
+
+$$
+a\cdot x \equiv b \pmod{n}
+$$
+
+where $a,b \in \mathbb{z}$ and $n \in \mathbb{Z}^+$ are fixed numbers and $x \in \mathbb{Z}$ is a variable.
+
+So an example could be:
+
+$$
+3x \equiv 7 \pmod{8}
+$$
+
+The solution to this equation is the set of all x values values for which the expression is true, i.e. the solution is the set $X$ such that:
+
+$$
+X = \{x: 3x \equiv 7 \pmod{8} \}
+$$
+
+### Coingruence Class
+if some $z \in \mathbb{Z}$ is a solution of a linear congruence equation, then all members of the congruence class $[z]_n$ are also solutions as well.
+
+The complete set of solutions is the congruence class $[z]_{\frac{n}{d}}.
+
+### Testing whether a solution exists
+A linear congruence equation only has a solution, if and only if:
+
+$$
+\gcd(a,n) \mid b
+$$
+
+#### Example
+
+* $2x \equiv 1 \pmod{4}$ has **no** solution because $\gcd(2,4) = 2 \nmid 1$
+* $2x \equiv 1 \pmod{3}$ has a solution because $\gcd(2,3) = 1 \mid 1$
+* $ax \equiv b \pmod{p}$ has a solution **only if** $\gcd(a,p) \mid b$ 
+
+### Quick solution for multiples
+
+if $a \neq 0$ then,
+$$
+ax \equiv ab \pmod{n} \iff x \equiv b \pmod{\small\frac{n}{\gcd(a,n)}}
+$$
+
+#### Example
+
+Solve,
+$$
+3x \equiv 3 \pmod{9}
+$$
+$3 \neq 0$, thus:
+$$
+\begin{alignat}
+3x \equiv 3 \times 1 \pmod{9} \iff x &\equiv 1 \pmod{{\tiny \frac{9}{\gcd(3,9)}}} \\
+\implies x &\equiv 1 \pmod{\small {\frac{9}{3}}}\\
+\implies x & \equiv 1 \pmod{3}
+\end{alignat}
+$$
+Thus we know that the difference between $x$ and $1$ is always divisible by $3$, so:
+$$
+x = \{1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, \dots\}
+$$
+So the solution is the congruence class:
+$$
+[1]_3 = \left \{ x : x = 1 + 3n, \enspace n \in \mathbb{Z} \right \}
+$$
+
+### General Method for Solving Linear Congruence Equations
+
+Consider the equation $ax \equiv b \pmod{n}$, where $ d = \gcd(a,n)$ and $ d \mid b$ 
+
+* Is there a solution for $x$?
+  * There is because $\gcd(a,n) \mid b$
+* A solution can thus be found using the *Euclidean Algorithm*
+* If $x=z$ is a solution to the equation, then the complete set of solutions is $[z]_\frac{n}{d}$ 
+  * This is proven on p. 64 of the TB
+  * Although all elements of $[Z]_n$ are solutions, the set may not contain all the solutions.
+
+#### Example 1 (*Euclidean Algorithm*)
+
+Give the complete set of solutions to $34x \equiv 20 \pmod{60}$.
+
+First observe that $\gcd(34, 60) = 2 | 20$, thus there is a solution for $x$.
+
+If $x$ is an integer solution, then:
+$$
+\begin{align}
+60 \mid (34x-20) &\implies 60t = 34x-20 \enspace t \in \mathbb{Z} \\
+&\implies 20 = 34x + 60t
+\end{align}
+$$
+The values of $x$ and $t$ can be solved via the *Euclidean Algorithm by using back substitution
+
+##### Euclidean Algorithm
+
+We are concerned with $\gcd(34,60)$, because that's what our variables are multiplied by:
+$$
+\begin{alignat}{2}
+60 = 1 \times 34 +26 &\implies 26 = 60-1 \times 34 \qquad &(1) \\
+34 = 1\times 26 + 8 &\implies 8 = 34-1\times 26 \qquad &(2) \\
+26 = 3 \times 8 + 2 & \implies 2 = 26 -3 \times 8 \qquad & (3) \\
+\ \\
+8 = 4\times 2 + 0 &\implies \gcd(60, 34) = 2 &
+\end{alignat}
+$$
+Now recall that we are trying to find the values of $x$ and $t$:
+$$
+20 = 34x+60t
+$$
+We will solve for $\gcd(34,60) = 2$ in terms of 34 and 60, because $\gcd(34, 60) = 2 \mid 20$ we will be able to multiply by a factor of $20 \mid 2$ afterwards and have all integer solutions.
+
+###### Backward Substitution
+
+*State $(3)$*
+$$
+2 = 26-3\times 8
+$$
+*Sub $(2)$*
+$$
+\begin{align}
+2 &= 26 -3 \cdot (34-26) \\
+ &= 26 -3 \times 34 -3\times 26 \\
+ &= 4 \times 60 -7 \times 34
+\end{align}
+$$
+*Sub $(1)$*
+$$
+\begin{align}
+2 &= 4 \cdot (60-34)-3\times 34 \\
+ &= 4 \times 60 -4 \times 34 -3 \times 34 \\
+&= 4 \times 60 - 7 \times 34
+\end{align}
+$$
+*Multiply by $\frac{20}{2}$*
+$$
+\begin{align}
+20 &= 40 \times 60 - 70\times 34 \\
+ &= 34 \times (-70) + 60 \times 40
+\end{align}
+$$
+
+###### Solve for $x$ and $t$ 
+
+Thus, 
+$$
+\begin{alignat}{4}
+20 &= 34 \cdot &x      &+ 60 \cdot t& \\
+20 &= 34 \times &(-70) &+ 60 \times 40& \\
+\ \\
+&&&\implies x = -70\\
+&&&\implies t = 40
+\end{alignat}
+$$
+Hence,
+$$
+34 \times (-70) \equiv 20 \pmod{60}
+$$
+And,
+$$
+\begin{align}
+x &= -70 \pmod{60} \\
+  &= 5
+\end{align}
+$$
+
+##### Conclusion
+
+Thus a soltuion is $x = 5$,
+
+The set of all solutions is $[z]_{\frac{n}{d}}$ ,
+
+where:
+
+* $n$ is the modulo
+* $d = \gcd(a,n)​$
+* $z$ is the solution to $x$
+
+Thus the solution set for $x$ is the congruence class:
+$$
+[5]_{\frac{60}{2}} = [5]_{30} = \left \{  \dots -25, 5, 35, 65, 95 \dots \right \}
+$$
+
+
+#### Example 2 (Multiplicative Inverse)
+
+Solve $17x \equiv 3 \pmod{29}$,
+
+In thgis case because $\gcd(a,n) = 1$, we can solve this using a multiplicative inverse as an alternate method (p. 66 of TB).
+
+The multiplicative inverse cannot be solved for when $\gcd(a,n) \neq 1$ (p. 66 of TB).
+
+What we are looking for, is a multiplicative inverse, we will call it $v$, such that:
+$$
+17 \times v \equiv 1 \pmod{29} \\
+$$
+When we find $v$, we expect that:
+$$
+x \equiv 3 \cdot 3v \pmod{29}
+$$
+Now, if:
+$$
+17\cdot v \equiv 1 \pmod{29}
+$$
+Then:
+$$
+\begin{align}
+17\cdot v &= (1-29\cdot w) \enspace : \enspace w \in \mathbb{Z}\\
+1 &= 17\cdot v + 29w
+\end{align}
+$$
+
+##### Euclidean Algorithm
+
+
 
 ## Divisibility Tests [2.2]
 

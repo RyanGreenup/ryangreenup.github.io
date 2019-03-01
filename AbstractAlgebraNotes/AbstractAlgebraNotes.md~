@@ -706,11 +706,11 @@ $$
 
 Where:
 
-* [0]_5 = \{\dots -5, 0, 5, 10, 15 \dots \}
-* [1]_5 = \{\dots -4, 1, 6, 11, 16 \dots \}
-* [2]_5 = \{ \dots -3, 2, 7, 12, 17, \dots \}
-* [3]_5 = \{ \dots -2, 3, 8, 13, 18 \dots \}
-* [4]_5 = \{\dots -1, 4, 9, 14, 19 \dots \}
+* $[0]_5 = \{\dots -5, 0, 5, 10, 15 \dots \}$
+* $[1]_5 = \{\dots -4, 1, 6, 11, 16 \dots \}$
+* $[2]_5 = \{ \dots -3, 2, 7, 12, 17, \dots \}$
+* $[3]_5 = \{ \dots -2, 3, 8, 13, 18 \dots \}$
+* $[4]_5 = \{\dots -1, 4, 9, 14, 19 \dots \}$
 
 Hence $\mathbb{Z}_5$ could be expressed equivalently as:
 
@@ -726,7 +726,7 @@ Addition is commutative and associative:
 
 $$
 \begin{align}
-[a]_m + [b]_m &= [a+b]_m
+[a]_m + [b]_m &= [a+b]_m \\
 &= [b]_m + [a]_m
 \end{align}
 $$
@@ -736,7 +736,7 @@ Multiplication is commutative and associative
 
 $$
 \begin{align}
-[a]_m \cdot [b]_m &= [a\cdot b]_m
+[a]_m \cdot [b]_m &= [a\cdot b]_m\\
 &= [b]_m \cdot  [a]_m
 \end{align}
 $$
@@ -769,6 +769,44 @@ $$
 ## Linear Congruence Equations [2.1]
 
 <a name="aa(4)lincon"></a>
+
+A linear congruence equation is of the form:
+
+
+$$
+a\cdot x \equiv b \pmod{n}
+$$
+
+where $a,b \in \mathbb{z}$ and $n \in \mathbb{Z}^+$ are fixed numbers and $x \in \mathbb{Z}$ is a variable.
+
+So an example could be:
+
+$$
+3x \equiv 7 \pmod{8}
+$$
+
+The solution to this equation is the set of all x values values for which the expression is true, i.e. the solution is the set $X$ such that:
+
+$$
+X = \{x: 3x \equiv 7 \pmod{8} \}
+$$
+
+### Coingruence Class
+if some $z \in \mathbb{Z}$ is a solution of a linear congruence equation, then all members of the congruence class $[z]_n$ are also solutions as well.
+
+The complete set of solutions is the congruence class $[z]_{\frac{n}{d}}.
+
+### Testing whether a solution exists
+A linear congruence equation only has a solution, if and only if:
+
+$$
+gcd(a,n) \mid b
+$$
+
+#### Example
+
+* $2x \equiv 1 \pmod{4}$ has **no** solution because $\gcd(2,4) = 2 \nmid 1$
+* test
 
 ## Divisibility Tests [2.2]
 
