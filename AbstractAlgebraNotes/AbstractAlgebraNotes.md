@@ -913,7 +913,7 @@ $$
 \end{align}
 $$
 
-###### Solve for $x$ and $t​$ 
+###### Solve for $x$ and $t$ 
 
 Thus, 
 $$
@@ -1128,6 +1128,76 @@ Observe that $9= 3 \times 3; hence the same rules apply for the value of 3, and 
 ## The Ring [2.4]
 
 <a name="aa(4)thering"></a>
+
+For $n \in \mathbb{Z}$:
+$$
+\mathbb{Z}_n := \left \{ [0]_n, [1]_n, [2]_n, \dots [n-1]_n  \right \}
+$$
+
+### Example
+
+$$
+\mathbb{Z}_4 =\left \{ [0]_4, [1]_4, [2]_4, [3]_4 \right \}
+$$
+
+Recall that:
+
+$$
+\begin{align}
+[0]_4 &= \left \{  \dots, -4, 0, 4, 8, 12, 16, \dots \right \} \\
+[1]_4 &= \left \{  \dots, -3, 1, 5, 9, 13 \dots \right \} \\
+[2]_4 &= \left \{  \dots, -2, 2, 6, 10, 14 \dots \right \} \\
+[3]_4 &= \left \{  \dots, -1, 7, 11, 15, 19 \dots \right \}
+\end{align}
+$$
+
+Hence,
+
+$$
+\begin{align}
+ \mathbb{Z}_4 &= \left \{ [0]_4, [1]_4, [2]_4, [3]_4 \right \}
+ \mathbb{Z}_4 &= \left \{ [8]_4, [9]_4, [10]_4, [7]_4 \right \}
+\end{align}
+$$
+
+
+### Algebra with Rings
+
+In order to do algebra in \mathbb{Z}_m we need some means by which to manipulate the elements of \mathbb{Z}_m.
+
+Take $a, b, c \in \mathbb{Z}:
+
+$$
+[a]_m, [b]_m, [c]_m \in \mathbb{Z}
+$$
+
+#### Addition
+We define:
+
+$$
+[a]_m + [b]_m := [a+b]_m
+$$
+
+Because:
+
+$$
+\begin{align} 
+[a]_m = \left \{ x: \enspace x = a + qm, \enspace q \in \mathbb{Z} \right \} \\
+[b]_m = \left \{ y: \enspace x = a + pm, \enspace p \in \mathbb{Z} \right \} \\
+\end{align}
+$$
+
+We choose to define:
+
+$$
+\begin{align} 
+[a+b]_m = \left \{ x+y \right \} \\
+\end{align}
+$$
+
+
+
+Addition is commutative
 
 ## Rings [2.5]
 
