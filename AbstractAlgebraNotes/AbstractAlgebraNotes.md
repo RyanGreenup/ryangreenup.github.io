@@ -824,11 +824,11 @@ $$
 $$
 $3 \neq 0$, thus:
 $$
-\begin{alignat}
-3x \equiv 3 \times 1 \pmod{9} \iff x &\equiv 1 \pmod{ { \tiny{ \frac{9}{\gcd{3,9} } } \\
+\begin{align}
+3x \equiv 3 \times 1 \pmod{9} \iff x &\equiv 1 \pmod{ \small{\frac{9}{\gcd(3,9)}} }\\
 \implies x &\equiv 1 \pmod{\small {\frac{9}{3}}}\\
 \implies x & \equiv 1 \pmod{3}
-\end{alignat}
+\end{align}
 $$
 Thus we know that the difference between $x$ and $1$ is always divisible by $3$, so:
 $$
@@ -1163,9 +1163,9 @@ $$
 
 ### Algebra with Rings
 
-In order to do algebra in \mathbb{Z}_m we need some means by which to manipulate the elements of \mathbb{Z}_m.
+In order to do algebra in $\mathbb{Z}_m$ we need some means by which to manipulate the elements of $\mathbb{Z}_m$.
 
-Take $a, b, c \in \mathbb{Z}:
+Take $a, b, c \in \mathbb{Z}$:
 
 $$
 [a]_m, [b]_m, [c]_m \in \mathbb{Z}
@@ -1203,7 +1203,187 @@ Addition is commutative
 
 <a name="aa(4)rings"></a>
 
----
+### Definitions and Axioms
+
+A ring is a set $R$ that has two binary operations:
+
+* One that is associated with Addition 
+  * for which the following symbol is used $(+)$
+* One that is associated with Multiplication $(*)$ 
+  * Occassionally $(\cdot)$ is used as well
+
+
+
+> #### Binary Operations
+>
+> Binary operations are basically an operation between two values, a formal definition of binary operations is:
+>
+> A **Binary Operation** $*$ on some set S is a function $f_*$:
+> $$
+> f_*\enspace : \enspace  S\times S \rightarrow S \enspace  : \enspace (a,b) \mapsto f_*(a,b)
+> $$
+
+
+
+And satisfies the axioms of a ring:
+
+1. ***Associativity of Addition***
+
+   a)  $(\forall a, b, c \in R) (a+b) + c = a + (b+c)$
+
+2. ***Commutativity of Addition***
+
+   a) $(\forall a, b \in R) \enspace a + b = b + a$
+
+3. ***Additive Elements Exists***
+
+   a) $(\forall a, b \in R) \wedge (\exists0 \in R) \enspace a + 0 = 0 + a = 0$
+
+4. ***Associativity of Addition***
+
+   a)  $(\forall a, b, c \in R) (a+b) + c = a + (b+c)$
+
+5. ***Commutativity of Addition***
+
+   a) $(\forall a, b \in R) \enspace a + b = b + a$
+
+6. ***Additive Elements Exists***
+
+   a) $(\forall a, b \in R) \wedge (\exists0 \in R) \enspace a + 0 = 0 + a = 0$
+
+   
+
+   #### Further Axioms
+
+     These further axioms provide different classes of  following axioms are not necessarily exhibited by rings, but if they are the rings
+
+   
+
+   7. **Commutativity of Multiplication***
+      1. $(\forall a,b \in R) a \cdot b = b \cdot a$
+         1. A ring that satisfies this property is called a **commutative Ring**
+   8. **Existence of a Multiplicative identity Element (a ring with Unity)**
+      1. $(\exists1 \in R) (\forall a \in R) \enspace 1 \cdot a = a \cdot 1 = a$
+         1. A ring that satisfies this property is called a **a ring with identity** or equivalently a **a ring with unity**
+
+   ##### Examples of Rings
+
+   * $\mathbb{N}$ is not a ring, because there is no additive inverse
+   * $\mathbb{Z}, \mathbb{R}, \mathbb{Q}, \mathbb{C}$ are all commutative rings with identity/unity
+   * The set of all even integers ($2\mathbb{Z}$) is a ring because
+     * It is closed under addition and multiplicaiton
+     * It satisfies all other axioms
+     * It is a commutative ring
+     * Because 1 is not even there is no multiplicative identity, hence it is NOT a ring with unity.
+   * Square matrices are rings with unity/identity
+     * They are not commutative because the order of multiplication is important.
+
+   
+
+   #### Properties of Rings
+
+   Proofs for these properties are provided in the textbook
+
+   #### Unique Identitities
+
+   * The additive Identity of a ring is always unique
+   * The additive inverse of a ring is always unique
+   * The multiplicative identity of a ring is always unique
+     * (i.e. If the ring has a multiplicative inverse)
+
+   #### Algebraic Rules
+
+   The following rules hold for rings:
+
+   Let $a, b \in R$;
+
+   1. $0a = a0 =0$
+   2. $a(-b)=-(ab)$
+   3. $-(-a)=a$
+   4. $(-a)(-b) = ab$
+   5. $(-1)a=-a$
+      1. Assuming a multiplicative identity exists for the ring $R$
+
+   
+
+   ### Zero Divisors
+
+   An element of some ring $R$ is a **zero divisor** if:
+   $$
+   \begin{align}
+   &a,b \in R: \\
+   \ \\
+   &(\forall a \in R : a \neq 0) (\exists b \in R : b \neq 0) : \\
+   \ \\
+   &\qquad \qquad \qquad ab = 0 \enspace \vee \enspace ba = 0
+   \end{align}
+   $$
+
+   #### Examples
+
+   $$
+   2,3 \in \mathbb{Z}_6 : \\
+   \ \\
+   2 * 3 = [6]_6 = [0]_6
+   $$
+
+
+
+Hence, 2 and 3 are both **Zero Divisors**
+
+### Units
+
+An element $a \in R$ of some ring $R$ is a **unit** if:
+
+The element always has a multiplicative inverse, i.e.
+$$
+a \text{ is a unit} \iff \exists b \in R : ab = ba =1
+$$
+
+* 1 is a unit of all rings
+* Any ring with unity/identity is such that -1 is a unit
+  * Because (-1) \times (-1) = 1
+
+#### Application
+
+If $a \in \mathbb{Z}_n$ is a unit, then the equation:
+$$
+x \equiv b \pmod{n}
+$$
+Can be solved by multiplying both sides by $a^{-1}$ 
+
+##### Example
+
+$$
+3x \equiv 5 \pmod{7}
+$$
+
+For $3\in \mathbb{Z}_7$ there exists an inverse:
+$$
+3 \times 5 = 1 \implies 3^{-1} = 5
+$$
+3 is a unit because there exists 5 such that:
+$$
+3 \times 5 = 5\times 3 = 1 \in \mathbb{Z}_7
+$$
+Hence,
+$$
+\begin{alignat}{2}
+3x &\equiv 5 &\pmod{7} \\ 
+5 \times 3x &\equiv 5 \times 5 &\pmod{7} \\
+15x &\equiv 25 &\pmod{7} \\
+(1x) &\equiv 25 &\pmod{7} \\
+x &\equiv 25 &\pmod{7} \\
+&\equiv 3 &\pmod{7} \\
+&= [3]_7 &\pmod{7} \\
+\end{alignat}
+$$
+
+
+
+
+
+
 # (5) Fields and Complex Numbers
 <a name="aatop5"></a>
 
