@@ -20,5 +20,5 @@
 
 
 
-[Bookdown With Folding](https://ryangreenup.github.io/AnalysisNotes/bookdownfold.html)
+
 
