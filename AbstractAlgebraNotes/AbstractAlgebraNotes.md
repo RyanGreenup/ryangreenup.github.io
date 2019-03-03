@@ -1380,7 +1380,13 @@ x &\equiv 25 &\pmod{7} \\
 $$
 
 
+<a name="notboth"></a>
 
+### Unit or Zero Divisor but not both
+
+an element $a \in R$ cannot be both a zero divisor and a unit
+
+​	Because the prior multiplies to give zero and the latter multiplies to give 1.
 
 
 
@@ -1399,11 +1405,209 @@ $$
 
 <a name="aa(5)rings2"></a>
 
+### Integral Domain
+
+An integral domain is a ring that is:
+
+ 	1. Is commutative
+ 	2. Is with unity/identity
+ 	3. Has no Zero Divisors
+
+#### Properties of Integral Domains
+
+In an integral domain we can cancel, i.e.:
+$$
+(c \neq 0) \enspace \wedge \enspace (ac = bc) \implies a = b
+$$
+
+##### Proof
+
+$$
+\begin{align}
+ac &= bc \\
+ac - bc = 0 \\
+c\cdot (a-b) = 0 \\
+\ \\
+\text{But} \\
+c\neq 0 \\
+\implies a - b = 0 \\
+a=b
+\end{align}
+$$
+
+#### Example
+
+So for example $\mathbb{Z}_5$ is an integral domain because:
+
+1. The elements of $\mathbb{Z}_5$ are commutative
+2. $1 \in \mathbb{Z}_5$, hence it is with unity
+3. There are no non-zero values in $\mathbb{Z}_5$ that multiply to give 0
+
+Further,
+
+Take $\mathbb{Z}_p : p = \left \{ 2,3, 5, 7, 11, 13, 17, \dots \right \}$
+
+​	All $\mathbb{Z}_p$ are integral Domains
+
+
+
+### Fields
+
+A field is:
+
+1. An integral Domain
+2. In which every non-zero element is a unit.
+
+
+
+So for clarity a field is a set $F$ that is:
+
+1. A Ring
+2. A commutative Ring
+3. A Ring with unity/identity
+4. All elements are units
+   1. This necessitates that no elements can be zero-divisors because they are [mutually exclusive](#notboth)
+
+#### Examples
+
+$\mathbb{N}$ is not a Ring because it does not contain an additive identify $0$
+
+$\mathbb{Z}$ is an integral domain because it is commutative, with unity and has no non-zero value that multiply to give 0;
+
+It is NOT a field because not all values have an inverse (e.g. $3^{-1} = \frac{1}{3} \notin \mathbb{Z}$)
+
+$\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ are all fields because every element has a multiplicative identity and are hence units.
+
+
+
 ## The Field of Complex Numbers
 
 <a name="aa(5)fieldc"></a>
 
----
+The field of complex numbers is:
+$$
+\mathbb{C} = \left \{ a + b i : a, b \in \mathbb{R} \right \}
+$$
+Addition is defined by:
+$$
+(a+bi) + (c+di) = (a+c) + (b+d)i
+$$
+Multiplication is defined by:
+$$
+(a+bi)\cdot (c + di) = (ac-bd) + (ad+bc)i
+$$
+More over we represent the real and imaginary parts of a complex number thusly:
+$$
+z = a + bi \\
+\implies \text{Re}(z) = a \enspace ; \enspace \text{Im}(z) =b
+$$
+
+### The set of Complex Numbers is a Field
+
+Remember that a field is:
+
+1. A Ring
+2. A Commutative Ring
+3. A Ring with Identity
+4. All elements are units
+   1. This necessitates that no elements can be zero-divisors, for they are mutually exclusive.
+
+
+
+In this case the complex numbers:
+
+1. Are indeed a ring
+2. Complex Numbers are commutative
+3. There existws a multiplicative Identity ($z = 1 + 0i$)
+4. Every element has an inverse
+   1. $z \times \frac{1}{z} = 1$
+
+### Polar Notation
+
+A complex Number can be represented on the complex Plane:
+
+![1551604985277](1551604985277.png)
+
+And any complex number can be represented also in polar notation:
+$$
+\begin{align}
+z &= a +bi = r \cdot \text{cis}(\theta) \\
+\end{align}
+$$
+Where:
+
+> $r = \sqrt{a^2 +b^2} \\
+> \theta = \text{Atan}(\frac{b}{a})$
+
+And the combination is equivalent because:
+$$
+\begin{align}
+\text{cis}(\theta) & = \cos(\theta) + i \cdot \sin(\theta) \\
+&= \cos{\theta} + i\cdot \sin{\left ( \text{Asin}\left( \frac{b}{a} \right ) \right )} \\
+&=a + bi
+\end{align}
+$$
+Flowing from power series for exponential, cosine and sine functions we have also:
+$$
+z = a + bi = r \text{cis}(\theta) = e^{i\theta}
+$$
+
+
+### Multiplying Complex Numbers
+
+Polar notation makes it far easier to multiply complex numbers
+
+> Remember that multiplying a number on the complex plane is [really a transformative process](https://www.youtube.com/watch?v=mvmuCPvRoWQ) involving scaling and rotating the plane from the point 1 (the multiplicative identity) top the point of the multiplier.
+>
+> Hence it stands to reason that the distance from the origin of the new point will be larger by a factor of the scaling and the rotation on the plane will simply be added.
+
+For:
+$$
+u = r\cdot \text{cis}(\theta) \enspace \text{and} \enspace v = s \cdot \text{cis}(\phi) \\
+\ \\
+u\cdot v = rs \cdot \text{cis}(\phi + \theta)
+$$
+
+
+
+
+ ### Power of Complex Numbers (De Moivre's Theorem)
+
+If follows algebraically that raising complex numbers to the power of some $n$:
+
+
+$$
+\begin{align}
+z &= r \cdot \text{cis}(\theta) \\
+  &\implies z^n = r^n \cdot \text{cis}(n\cdot \theta) \enspace : \enspace n \in \mathbb{Z^*}
+\end{align}
+$$
+
+> Recall that $\mathbb{Z^*}$ is the set of non-negative integers {0, 1, 2, 3, 4 ...}.
+>
+> > This is an important distinction from $\mathbb{N}$ because although many texts provide $0 \notin \mathbb{N}$ using the reasoning that the naturals are the various possible sums of 1, many authors provide $0 \in \mathbb{N}$ where it is convenient, so try not to use $\mathbb{N}$ because it can be ambiguous		
+
+
+
+### Roots of Complex Numbers
+
+Multiple Complex Numbers, when raised to a power, may equal the same end result, hence solutions for $z$ given $z^n$ are:
+$$
+z^{1/n} = r ^{1/n} \cdot \text{cis}\left( \frac{\theta + 2k\pi}{n} \right ), \quad \text{for} k = 1,2,3, \dots (n-1)
+$$
+There are always $n$ roots.
+
+
+
+# Endnotes
+
+Notes on Polynomials and the Fundamental Theorem of Arithmetic are contained in the PDF file.
+
+I don't have any notes whatsoever on anything thereafter.
+
+
+
+
 
 
 # collapsible markdown?
