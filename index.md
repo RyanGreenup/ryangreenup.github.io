@@ -19,7 +19,8 @@
 * [IntroDataSciprac](https://ryangreenup.github.io/IntroDataSci/1_Practical.html)
 
 
-* [IntroDataSciNotes](https://ryangreenup.github.io/IntroDataSciNotes/index.html)
+* [IntroDataSciNotes](https://ryangreenup.github.io/dsnotes/_book/index.html)
+
 
 
 #Added in images
