@@ -1,1 +1,0 @@
-/home/ryan/Dropbox/IntrotoDataSci/Notes/02_Notes.Rmd

@@ -23,9 +23,8 @@
 
 
 
-#Added in images
-So the entire bookdown folder not just the book has to be bought it (or atleast the assets folder needs to preserve it's relative path)
 
+**Added entire folder**
 
 
 
