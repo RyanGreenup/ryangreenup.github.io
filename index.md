@@ -19,12 +19,9 @@
 * [IntroDataSciprac](https://ryangreenup.github.io/IntroDataSci/1_Practical.html)
 
 
-* [IntroDataSciNotes](https://ryangreenup.github.io/IntroDataSci/Topic_1_Notes.html)
+* [IntroDataSciNotes](https://ryangreenup.github.io/IntroDataSciNotes/index.html)
 
-[What a Book would Look LIke](https://ryangreenup.github.io/booktest/index.html)
 
-# Terminal push good
-This is a test of the pushing Capacity
 
 
 
