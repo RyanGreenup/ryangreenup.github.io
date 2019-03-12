@@ -16,7 +16,10 @@
 
 * [Abstract Algebra (MSWord Export)](https://ryangreenup.github.io/AbstractAlgebraNotes\AbstractWordExport\AbstractWordExport.htm)
 
+* [IntroDataSciprac](https://ryangreenup.github.io/IntroDataSci/1_Practical.html)
 
+
+* [IntroDataSciNotes](https://ryangreenup.github.io/IntroDataSci/Topic_1_Notes.html)
 
 [What a Book would Look LIke](https://ryangreenup.github.io/booktest/index.html)
 
