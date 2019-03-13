@@ -21,10 +21,11 @@
 
 * [IntroDataSciNotes](https://ryangreenup.github.io/dsnotes/book/index.html)
 
+[01_Practical](https://ryangreenup.github.io/dsnotes/01_Practical)
 
 
 
-**Added entire folder**
+
 
 
 
