@@ -24,7 +24,7 @@
 [01_Practical](https://ryangreenup.github.io/dsnotes/01_Practical)
 
 
-
+If you can read this the file should say test (if not you need to commit first)
 
 
 
