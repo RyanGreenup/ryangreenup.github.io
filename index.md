@@ -21,7 +21,20 @@
 
 * [IntroDataSciNotes](https://ryangreenup.github.io/dsnotes/book/index.html)
 
-[01_Practical](https://ryangreenup.github.io/dsnotes/01_Practical)
+# Intro to Data Sci Notes
+* [01_Practical](https://ryangreenup.github.io/dsnotes/01_Practical)
+* [02_Practical](https://ryangreenup.github.io/dsnotes/02_Practical)
+* [03_Practical](https://ryangreenup.github.io/dsnotes/03_Practical)
+* [04_Practical](https://ryangreenup.github.io/dsnotes/04_Practical)
+* [05_Practical](https://ryangreenup.github.io/dsnotes/06_Practical)
+* [07_Practical](https://ryangreenup.github.io/dsnotes/07_Practical)
+* [08_Practical](https://ryangreenup.github.io/dsnotes/08_Practical)
+* [09_Practical](https://ryangreenup.github.io/dsnotes/09_Practical)
+* [10_Practical](https://ryangreenup.github.io/dsnotes/10_Practical)
+* [11_Practical](https://ryangreenup.github.io/dsnotes/11_Practical)
+* [12_Practical](https://ryangreenup.github.io/dsnotes/12_Practical)
+* [13_Practical](https://ryangreenup.github.io/dsnotes/13_Practical)
+* [14_Practical](https://ryangreenup.github.io/dsnotes/14_Practical)
 
 
 If you can read this the file should say test (if not you need to commit first)
