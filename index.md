@@ -21,7 +21,7 @@
 
 * [IntroDataSciNotes](https://ryangreenup.github.io/dsnotes/book/index.html)
 
-# Intro to Data Sci Notes
+# Intro to Data Sci Practical 
 * [01_Practical](https://ryangreenup.github.io/dsnotes/01_Practical)
 * [02_Practical](https://ryangreenup.github.io/dsnotes/02_Practical)
 * [03_Practical](https://ryangreenup.github.io/dsnotes/03_Practical)
@@ -35,6 +35,23 @@
 * [12_Practical](https://ryangreenup.github.io/dsnotes/12_Practical)
 * [13_Practical](https://ryangreenup.github.io/dsnotes/13_Practical)
 * [14_Practical](https://ryangreenup.github.io/dsnotes/14_Practical)
+
+
+# Intro to Data Sci Notes 
+* [01_Notes](https://ryangreenup.github.io/dsnotes/01_Notes.html)
+* [02_Notes](https://ryangreenup.github.io/dsnotes/02_Notes.html)
+* [03_Notes](https://ryangreenup.github.io/dsnotes/03_Notes.html)
+* [04_Notes](https://ryangreenup.github.io/dsnotes/04_Notes.html)
+* [05_Notes](https://ryangreenup.github.io/dsnotes/05_Notes.html)
+* [06_Notes](https://ryangreenup.github.io/dsnotes/06_Notes.html)
+* [07_Notes](https://ryangreenup.github.io/dsnotes/07_Notes.html)
+* [08_Notes](https://ryangreenup.github.io/dsnotes/08_Notes.html)
+* [09_Notes](https://ryangreenup.github.io/dsnotes/09_Notes.html)
+* [10_Notes](https://ryangreenup.github.io/dsnotes/10_Notes.html)
+* [11_Notes](https://ryangreenup.github.io/dsnotes/11_Notes.html)
+* [12_Notes](https://ryangreenup.github.io/dsnotes/12_Notes.html)
+* [13_Notes](https://ryangreenup.github.io/dsnotes/13_Notes.html)
+* [14_Notes](https://ryangreenup.github.io/dsnotes/14_Notes.html)
 
 
 If you can read this the file should say test (if not you need to commit first)
