@@ -53,6 +53,13 @@
 * [13_Notes](https://ryangreenup.github.io/dsnotes/13_Notes.html)
 * [14_Notes](https://ryangreenup.github.io/dsnotes/14_Notes.html)
 
+#Intro to Data Sci
+
+|Description| Topic Date | Notes | Practical |
+|---|---|---|---|
+|(1) Introduction to Data Science | 5 March 2019 | * [01_Notes](https://ryangreenup.github.io/dsnotes/01_Notes.html) | 
+* [01_Practical](https://ryangreenup.github.io/dsnotes/01_Practical) |
+
 
 If you can read this the file should say test (if not you need to commit first)
 
