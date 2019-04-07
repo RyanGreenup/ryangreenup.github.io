@@ -414,14 +414,16 @@ I wrote this in `LaTeX` and the `\tag` command doesn't fly in `HTML/Mathjax` so 
 ---
 
 ---
-# (3) Sets and Functions
+# (3) Series
 <a name="antop3"></a>
 > ***Week 3 Material, Due Thur. 21 March<sub> TB: [3.5], [3.6], [3.7] </sub>***
 
 [Back to Top](#antoc)
 
-* [Sets][4]
-* [Functions][5]
+I wrote this in `LaTeX` and the `\tag` command doesn't fly in `HTML/Mathjax` so I'm just going to link the PDF File:
+
+- [Topic #3 ; Week 4 ; Sequences; Notes](
+
 ---
 
 ---
@@ -429,11 +431,10 @@ I wrote this in `LaTeX` and the `\tag` command doesn't fly in `HTML/Mathjax` so 
 <a name="antop4"></a>
 > ***Week 4 Material, Due Thur. 28 March<sub> TB: [4.1], [4.2], [4.3] </sub>***
 
-[Back to Top](#antoc)
+I wrote this in `LaTeX` and the `\tag` command doesn't fly in `HTML/Mathjax` so I'm just going to link the PDF File:
 
+- [Topic #4 ; Week 2 ; Limits; Notes](04_Limits_Wk2_Notes.pdf)
 
-* [Sets][6]
-* [Functions][7]
 ---
 
 ---
