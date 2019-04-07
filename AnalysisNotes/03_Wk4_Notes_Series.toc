@@ -1,0 +1,38 @@
+\contentsline {subsection}{The Cauchy Criterion (3.5)}{1}{section*.2}% 
+\contentsline {subsubsection}{The Cauchy Convergence Criterion}{1}{section*.3}% 
+\contentsline {subsection}{Properly Divergent}{1}{section*.4}% 
+\contentsline {subsection}{Definition of a Series {[}3.7.1{]}}{2}{section*.5}% 
+\contentsline {subsection}{Common Series Types}{2}{section*.6}% 
+\contentsline {subsubsection}{Geometric Series (3.7.6 (a))}{2}{section*.7}% 
+\contentsline {subsubsection}{Harmonic Series (3.7.6(b))}{3}{section*.8}% 
+\contentsline {subsubsection}{\(P\)-Series}{3}{section*.9}% 
+\contentsline {subsection}{Properties of Series}{4}{section*.10}% 
+\contentsline {subsubsection}{The \(n^\text {th}\) term test}{4}{section*.11}% 
+\contentsline {subsubsection}{Cauchy Criterion for series}{4}{section*.12}% 
+\contentsline {subsubsection}{Definitions}{4}{section*.13}% 
+\contentsline {subsection}{Convergence Tests}{5}{section*.14}% 
+\contentsline {subsubsection}{Types of Convergence}{5}{section*.15}% 
+\contentsline {subsubsection}{Choosing a Test}{5}{section*.16}% 
+\contentsline {subsubsection}{Manipulating Series}{5}{section*.17}% 
+\contentsline {paragraph}{Partial Fractions}{6}{section*.18}% 
+\contentsline {paragraph}{Grouping Series}{6}{section*.19}% 
+\contentsline {paragraph}{Rearrangements (9.1.5)}{7}{section*.20}% 
+\contentsline {subsubsection}{Identities to remember}{8}{section*.21}% 
+\contentsline {paragraph}{Limit of \(e^\frac {1}{n}\)}{8}{section*.22}% 
+\contentsline {paragraph}{Dealing with Inequalities}{8}{section*.23}% 
+\contentsline {subsubsection}{Comparison Tests}{9}{section*.24}% 
+\contentsline {paragraph}{Comparison Test (3.7.7)}{9}{section*.25}% 
+\contentsline {paragraph}{Limit Comparison Test (3.7.8)}{9}{section*.26}% 
+\contentsline {subsubsection}{Absolute Convergence Tests}{10}{section*.27}% 
+\contentsline {paragraph}{Limit Comparison Test II (9.2.1) (For Absolute Convergence)}{10}{section*.28}% 
+\contentsline {paragraph}{Ratio Test (9.2.4)}{11}{section*.29}% 
+\contentsline {subparagraph}{Generalised D'Alambert}{11}{section*.30}% 
+\contentsline {paragraph}{Root Test}{12}{section*.31}% 
+\contentsline {subparagraph}{Generalised \emph {Cauchy} Test}{12}{section*.32}% 
+\contentsline {paragraph}{Integral Test}{12}{section*.33}% 
+\contentsline {subsubsection}{Non-Absolute Convergence Tests}{13}{section*.34}% 
+\contentsline {paragraph}{Definition of an Alternating Sequence (9.3.1)}{13}{section*.35}% 
+\contentsline {paragraph}{Alternating Series Test}{13}{section*.36}% 
+\contentsline {paragraph}{Partial Summation Formula (Abel's Lemma)}{14}{section*.37}% 
+\contentsline {paragraph}{Dirichlet's Test}{14}{section*.38}% 
+\contentsline {paragraph}{Abel's Test}{14}{section*.39}% 
