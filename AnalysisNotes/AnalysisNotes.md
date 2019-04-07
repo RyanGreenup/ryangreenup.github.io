@@ -407,6 +407,10 @@ hence, $P(n)$ is true $\forall n \in \mathbb{N} \enspace : \enspace n \geq n_0$ 
 
 [Back to Top](#antoc)
 
+I wrote this in `LaTeX` and the `\tag` command doesn't fly in `HTML/Mathjax` so I'm just going to link the PDF File:
+
+* [Topic #2 ; Week 3 ; Sequences; Notes](02_Sequences_Wk3_Notes.pdf)
+
 ---
 
 ---
