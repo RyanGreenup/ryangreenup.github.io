@@ -7,7 +7,6 @@
 <meta name="theme-color" content="#ffffff">
 
 # Ryan's Class Notes 
-Hi baby the whole fire thing yeah?
 
 [DorsProb](https://ryangreenup.github.io/dormc/dorsprobtoast.html)
 
