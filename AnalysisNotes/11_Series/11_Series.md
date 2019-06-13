@@ -1,9 +1,4 @@
----
-output: 
-  html_document: 
-    toc: yes
----
-# IntegralPower Series and Uniform Continuity
+# Power Series and Uniform Continuity
 
 
 ## Power Series
