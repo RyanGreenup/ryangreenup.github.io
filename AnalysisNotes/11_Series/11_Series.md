@@ -456,7 +456,7 @@ $$
   \left| x- y \right| < \delta  \implies      \left| f\left( x \right) - f\left( y \right)  \right| &\leq     \left| \frac{1}{1+ x^3} - \frac{1}{1+ y^3} \right| \\
   &\leq     \left| y- x  \right| \cdot \left( \frac{    \left| y^2 \right| +     \left| xy \right| +     \left| x^2 \right| }{    \left| 1+ x^3 \right| \cdot     \left| 1+ y^3 \right| } \right) \\
   &\leq     \left| y- x \right| \cdot \left( \frac{y^2}{    \left| 1+ y^3 \right| } +  \frac{    \left| x \right| \cdot     \left| y \right| }{    \left| 1+ x^3 \right| \cdot 1+ y^3} +  \frac{    \left| x^2 \right| }{    \left| 1+ x^3 \right| } \right) \\
-  &leq     \left| y- x \right| \cdot \left( \frac{    \left| y \right| ^2}{    \left| y^3 \right| } +  \frac{    \left| x \right| \cdot     \left| y \right| }{    \left| x \right| ^3\cdot     \left| y \right| ^3} +  \frac{    \left| x \right| ^2}{    \left| x \right| ^3} \right) \\
+&\leq     \left| y- x \right| \cdot \left( \frac{    \left| y \right| ^2}{    \left| y^3 \right| } +  \frac{    \left| x \right| \cdot     \left| y \right| }{    \left| x \right| ^3\cdot     \left| y \right| ^3} +  \frac{    \left| x \right| ^2}{    \left| x \right| ^3} \right) \\
   &\leq     \left| y- x \right| \cdot \left( \frac{1}{    \left| y \right| } + \frac{1}{    \left| x \right| \cdot     \left| y \right| }+ \frac{1}{    \left| x \right| } \right) \\
   &\leq     \left| y- x \right| \cdot \left(\frac{1}{1}+ \frac{1}{1\times 1}+ \frac{1}{1} \right) \\
   &\leq     \left| y- x \right| \cdot 3\\
