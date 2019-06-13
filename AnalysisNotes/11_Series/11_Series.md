@@ -1,5 +1,7 @@
 # Power Series and Uniform Continuity
 
+[TOC]
+
 
 ## Power Series
 ### Convergence
@@ -270,7 +272,7 @@ Such that $f\left( z \right) $ is an analytic function that can also be represen
 $\sum^{\infty}_{n= 0}   \left[ a_n\cdot \left( z- \alpha \right) ^n \right] $ is convergent only for $    \left| z- \alpha \right| <R$ :
 
 * if $R= 0$, the series is only convergent for $z= \alpha$ 
-* if $r = \infty$, the series is convergent $\forallz\in \mathbb{C} $ 
+* if $r = \infty$, the series is convergent $\forall z\in \mathbb{C} $ 
 * if $R \in \mathbb{R} ^+$, the series is convergent on some open disc centred at $\alpha$ of radius R.
 
 
