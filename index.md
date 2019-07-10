@@ -9,7 +9,7 @@
 # Ryan's Class Notes
 
 [DorsProb](https://ryangreenup.github.io/dormc/dorsprobtoast.html)
-[just a test on tex4ht](https://ryangreenup.github.io/MModNotes/10_integrals.html)
+[just a test on tex4ht](https://ryangreenup.github.io/MModNotes/index.html)
 
 
 
