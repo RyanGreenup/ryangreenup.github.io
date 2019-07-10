@@ -6,9 +6,10 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-# Ryan's Class Notes 
+# Ryan's Class Notes
 
 [DorsProb](https://ryangreenup.github.io/dormc/dorsprobtoast.html)
+[just a test on tex4ht](https://ryangreenup.github.io/MModNotes/10_integrals.html)
 
 
 
@@ -47,7 +48,7 @@
 
 * [IntroDataSciNotes](https://ryangreenup.github.io/dsnotes/book/index.html)
 
-## Intro to Data Sci Notes 
+## Intro to Data Sci Notes
 
 - [01_Notes](https://ryangreenup.github.io/dsnotes/01_Notes.html)
 - [02_Notes](https://ryangreenup.github.io/dsnotes/02_Notes.html)
@@ -64,7 +65,7 @@
 - [13_Notes](https://ryangreenup.github.io/dsnotes/13_Notes.html)
 - [14_Notes](
 
-## Intro to Data Sci Practical 
+## Intro to Data Sci Practical
 * [01_Practical](https://ryangreenup.github.io/dsnotes/01_Practical)
 * [02_Practical](https://ryangreenup.github.io/dsnotes/02_Practical)
 * [03_Practical](https://ryangreenup.github.io/dsnotes/03_Practical)
@@ -80,4 +81,3 @@
 * [14_Practical](https://ryangreenup.github.io/dsnotes/14_Practical)
 
 * https://ryangreenup.github.io/dsnotes/14_Notes.html)
-

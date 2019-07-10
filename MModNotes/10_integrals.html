@@ -1,0 +1,2441 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head> <title>(10) Integrals</title> 
+<meta  charset="iso-8859-1" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="10_integrals.css" /> 
+<meta name="src" content="10_integrals.tex" /> 
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"> </script> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                                      
+                                                                                      
+
+<h2 class="titleHead">(10) Integrals</h2>
+<div class="author" ><span 
+class="rm-lmr-12">Analysis (200023)</span></div><br />
+<div class="date" ><span 
+class="rm-lmr-12">July 10, 2019</span></div>
+                                                                                      
+                                                                                      
+   </div>
+                                                                                      
+                                                                                      
+<h2 class="likechapterHead"><a 
+ id="x1-1000"></a></h2>
+   <h2 class="likechapterHead"><a 
+ id="x1-2000"></a>Contents</h2>
+   <div class="tableofcontents">
+   &#x00A0;<span class="sectionToc" ><a 
+href="#x1-3000" id="QQ2-1-3">Integrals from a Real Domain</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="#x1-40001" id="QQ2-1-4">Differentiation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="#x1-50002" id="QQ2-1-5">Integration</a></span>
+<br />   &#x00A0;<span class="sectionToc" ><a 
+href="#x1-8000" id="QQ2-1-8">Contours</a></span>
+<br />   &#x00A0;<span class="sectionToc" ><a 
+href="#x1-12000" id="QQ2-1-13">Contour Integral</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="#x1-140001" id="QQ2-1-15">Notation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="#x1-150002" id="QQ2-1-16">Upper Bounds for Moduli</a></span>
+<br />   &#x00A0;<span class="sectionToc" ><a 
+href="#x1-17000" id="QQ2-1-18">Antiderivatives</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="#x1-180001" id="QQ2-1-19">Basic Antiderivative Theorem</a></span>
+<br />   &#x00A0;<span class="sectionToc" ><a 
+href="#x1-20000" id="QQ2-1-21">Cauchy Goursat Theorem</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="#x1-220001" id="QQ2-1-23">Simply-Connected Domains</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="#x1-230002" id="QQ2-1-24">Multiply Connected Domains</a></span>
+<br />   &#x00A0;<span class="sectionToc" ><a 
+href="#x1-27000" id="QQ2-1-30">Cauchy Integral Formula</a></span>
+<br />   &#x00A0;<span class="sectionToc" ><a 
+href="#x1-30000" id="QQ2-1-33">Extension of the Cauchy Integral Formula</a></span>
+   </div>
+<a 
+ id="x1-2001r1"></a>
+<h3 class="sectionHead"><span class="titlemark"></span><a 
+ id="x1-3000\@currentlabel "></a>Integrals from a Real Domain</h3>
+<!--l. 90--><p class="noindent" >To begin this consider the function:
+</p>
+   <div class="math-display"><!--l. 91--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                             <mi 
+>w</mi> <mo 
+class="MathClass-punc">:</mo> <mi 
+>&#x211D;</mi> <mo 
+class="MathClass-rel">&#x2192;</mo> <mi 
+>&#x2102;</mi>
+</mrow></math></div>
+<!--l. 93--><p class="nopar" > we can decompose such a function into real and imaginary components:
+</p>
+                                                                                      
+                                                                                      
+   <div class="math-display"><!--l. 95--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                        <mi 
+>w</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mi 
+>u</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>v</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced>
+</mrow></math></div>
+<!--l. 97--><p class="nopar" > where <!--l. 98--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>u</mi></math>
+and <!--l. 98--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>v</mi></math> are
+purely real functions.
+<a 
+ id="x1-3001r1"></a>
+</p>
+<h4 class="subsectionHead"><span class="titlemark">  </span> <a 
+ id="x1-40001"></a>Differentiation</h4>
+<!--l. 100--><p class="noindent" >If <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>w</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math>:
+</p>
+   <div class="math-display"><!--l. 101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                     <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>&#x2032;</mi></mrow></msup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>w</mi></mrow> 
+<mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mrow></mfrac> <mspace width="1em" class="quad"/><mstyle 
+class="text"><mtext  >(As&#x00A0;if&#x00A0;</mtext><mstyle 
+class="math"><mi 
+>z</mi></mstyle><mtext  >&#x00A0;was&#x00A0;a&#x00A0;purely&#x00A0;real&#x00A0;operator)</mtext></mstyle>
+</mrow></math></div>
+<!--l. 103--><p class="nopar" > If <!--l. 104--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>g</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mi 
+>u</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>v</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow></mfenced></math>:
+</p><!--l. 106--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 109--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                                    <mtr><mtd 
+columnalign="right" class="align-odd"><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>&#x2032;</mi></mrow></msup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mtd>                                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>&#x2202;</mi><mi 
+>u</mi></mrow> 
+<mrow 
+><mi 
+>&#x2202;</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mi 
+>&#x2202;</mi><mi 
+>v</mi></mrow> 
+<mrow 
+><mi 
+>&#x2202;</mi><mi 
+>x</mi></mrow></mfrac><mspace width="2em"/></mtd>                                    <mtd 
+columnalign="right" class="align-label"></mtd>                                    <mtd 
+class="align-label">
+                                    <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                       <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>w</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>z</mi></mrow></mfrac> <mspace width="2em"/></mtd>                                         <mtd 
+columnalign="right" class="align-label"></mtd>                                    <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<!--l. 111--><p class="indent" >   If <!--l. 111--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>w</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>u</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>v</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></math>:
+</p>
+                                                                                      
+                                                                                      
+   <div class="math-display"><!--l. 112--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                       <msup><mrow 
+><mi 
+>w</mi></mrow><mrow 
+><mi 
+>&#x2032;</mi></mrow></msup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>u</mi></mrow> 
+<mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi></mrow></mfrac> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfrac><mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>v</mi></mrow> 
+<mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi></mrow></mfrac>
+</mrow></math></div>
+<!--l. 114--><p class="nopar" >
+<a 
+ id="x1-4001r4"></a>
+</p>
+<h4 class="subsectionHead"><span class="titlemark">  </span> <a 
+ id="x1-50002"></a>Integration</h4>
+<!--l. 117--><p class="noindent" >If <!--l. 117--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>w</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>u</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>v</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></math>:
+</p>
+   <div class="par-math-display"><!--l. 120--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                          <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>w</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo class="qopname"> &#x222B; 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>u</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo><msubsup><mrow 
+><mo class="qopname">&#x222B; 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>v</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi>
+</mrow></math></div>
+<!--l. 122--><p class="nopar" >
+</p>
+<span class="likeparagraphHead"><a 
+ id="x1-60002"></a>Fundamental Theorem of Calculus</span>
+   &#x00A0;<br 
+class="newline" />The fundamental theorem of calculus applies here:
+<!--tex4ht:inline--><!--l. 129--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+                                 <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>w</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>W</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+>
+<mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+></mtd>                                 <mtd 
+class="align-even"><mspace width="2em"/></mtd>                                 <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-6001r1"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(1)</mtext></mstyle>
+   </mtd></mtr></mtable></math>
+<span class="likesubparagraphHead"><a 
+ id="x1-70002"></a><span 
+class="rm-lmbx-10">Justification</span></span>
+   let <!--l. 132--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>W</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></math> be the
+antiderivative of <!--l. 132--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>w</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></math>:
+                                                                                      
+                                                                                      
+<!--l. 134--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                     <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>w</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi></mtd>                     <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+>
+<mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>v</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+>
+<mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mspace width="2em"/></mtd>                                <mtd 
+columnalign="right" class="align-label"></mtd>                     <mtd 
+class="align-label">
+                     <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced></mrow></mfenced><mspace width="2em"/></mtd>                     <mtd 
+columnalign="right" class="align-label"></mtd>                     <mtd 
+class="align-label">
+                     <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>W</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>W</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced></mrow></mfenced><mspace width="2em"/></mtd>                                    <mtd 
+columnalign="right" class="align-label"></mtd>                     <mtd 
+class="align-label">
+                     <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>W</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mspace width="2em"/></mtd>                                        <mtd 
+columnalign="right" class="align-label"></mtd>                     <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+                                                                                      <div class="flushright" 
+>
+<!--l. 140--><p class="noindent" >
+ __</p></div>
+<a 
+ id="x1-7001r3"></a>
+<h3 class="sectionHead"><span class="titlemark"></span><a 
+ id="x1-8000\@currentlabel "></a>Contours</h3>
+<!--l. 145--><p class="noindent" >Integrals of complex valued functions are of the form:
+</p>
+   <div class="math-display"><!--l. 146--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                 <munder class="msub"><mrow 
+><mo class="qopname">lim</mo> </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">&#x2192;</mo><mi 
+>&#x221E;</mi></mrow></munder 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>&#x2211;</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></munderover 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><msubsup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">*</mo></mrow></msubsup 
+></mrow></mfenced><mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>&#x0394;</mi><mi 
+>z</mi></mrow></mfenced></mrow></mfenced>
+</mrow></math></div>
+<!--l. 148--><p class="nopar" > <!--l. 149--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>&#x0394;</mi><mi 
+>z</mi></math>
+could be along any curve in the complex plane rather than just the axis along which we would
+integrate:
+</p>
+   <figure class="figure"> 
+
+                                                                                      
+                                                                                      
+                                                                                      
+                                                                                      
+<!--l. 153--><p class="noindent" >
+                                                                                      
+                                                                                      
+</p>
+   </figure>
+<!--l. 158--><p class="indent" >   this short curve is what we call a contour, the complex integral will be a line integral along that
+curve:
+</p>
+   <figure class="figure"> 
+
+                                                                                      
+                                                                                      
+<a 
+ id="x1-80011"></a>
+                                                                                      
+                                                                                      
+<!--l. 163--><p class="noindent" >
+</p>
+<figcaption class="caption" ><span class="id">Figure&#x00A0;1:</span><span  
+class="content"></span></figcaption><!--tex4ht:label?: x1-80011 -->
+                                                                                      
+                                                                                      
+   </figure>
+<!--l. 169--><p class="indent" >
+                                                                                      
+                                                                                      
+</p>
+<span class="likeparagraphHead"><a 
+ id="x1-9000\@currentlabel "></a>Define Contours</span>
+   &#x00A0;<br 
+class="newline" />A set of points <!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow></mfenced></math>
+in the complex plane is said to be an <span 
+class="rm-lmbxi-10">arc </span>or a curve that we will call
+<!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>C</mi></math>
+if:
+<!--l. 175--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 178--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+                            <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>y</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced><mspace width="2em" class="qquad"/> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi> <mo 
+class="MathClass-rel">&#x2264;</mo> <mi 
+>t</mi> <mo 
+class="MathClass-rel">&#x2264;</mo> <mi 
+>b</mi></mrow></mfenced></mtd>                            <mtd 
+class="align-even"><mspace width="2em"/></mtd>                            <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-9001r2"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(2)</mtext></mstyle>
+   </mtd></mtr></mtable></math>
+<!--l. 180--><p class="indent" >   where: </p>
+     <ul class="itemize1">
+     <li class="itemize"><!--l. 182--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>x</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></math>
+     and <!--l. 182--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>y</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></math>
+     are continuous functions
+     <!--l. 183--><p class="noindent" >&#x00A0;&#x00A0;      continuous however does not mean smooth/differentiable, sharp points are allowed.
+     </p></li>
+     <li class="itemize">the output values are ordered corresponding to <!--l. 184--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>
+     (as if <!--l. 184--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>
+     represented time)</li></ul>
+<!--l. 187--><p class="indent" >   It is more convenient to describe the curve at (<a 
+href="#x1-9001r2">2<!--tex4ht:ref: arcdef --></a>) as:
+</p><!--l. 189--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 192--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+                                    <mtr><mtd 
+columnalign="right" class="align-odd"><mi 
+>z</mi></mtd>                                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced><mspace width="2em"/></mtd>                                                                               <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-9002r3"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(3)</mtext></mstyle>
+                                    </mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                     <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>x</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>y</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced><mspace width="2em"/></mtd>                                    <mtd 
+columnalign="right" class="align-label"></mtd>                                    <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<span class="likesubparagraphHead"><a 
+ id="x1-10000\@currentlabel "></a><span 
+class="rm-lmbx-10">Types of Arcs</span></span>
+   &#x00A0;<br 
+class="newline" />
+                                                                                      
+                                                                                      
+     <ul class="itemize1">
+     <li class="itemize">A <span 
+class="rm-lmbx-10">Simple Curve </span>does not cross itself
+     </li>
+     <li class="itemize">a <span 
+class="rm-lmbx-10">Closed Curve </span>meets back up with itself
+     </li>
+     <li class="itemize">a <span 
+class="rm-lmbx-10">Simple Closed Curve </span>is closed and does not cross itself (except where it closes)
+     </li>
+     <li class="itemize">a <span 
+class="rm-lmbx-10">Positive Curve </span>moves counter-clockwise as <!--l. 199--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>t</mi></math>
+     increases.</li></ul>
+<figure class="figure"> 
+
+<!--l. 203--><p class="noindent" >
+</p>
+   </figure>
+<span class="likesubparagraphHead"><a 
+ id="x1-11000\@currentlabel "></a><span 
+class="rm-lmbx-10">Parametric Representation not unique</span></span>
+   &#x00A0;<br 
+class="newline" />Also the parametric representation of such a curve is not unique, the same curve could be represented by lots of
+different parametric equations, just like a second degree polynomial can also be modelled by a 3rd degree
+polynomial between intervals.
+<!--l. 211--><p class="indent" >
+                                                                                      
+                                                                                      
+<a 
+ id="x1-11001r8"></a>
+</p>
+<h3 class="sectionHead"><span class="titlemark"></span><a 
+ id="x1-12000\@currentlabel "></a>Contour Integral</h3>
+<!--l. 215--><p class="noindent" >As previously discussed, an integral with respect to
+<!--l. 215--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi></math> will be
+a contour integral:
+</p>
+   <div class="math-display"><!--l. 216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                             <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi>
+</mrow></math></div>
+<!--l. 218--><p class="nopar" > If the value of the integral does not depend on the path of the contour and only depends on the endpoints then
+we would write:
+</p>
+   <div class="par-math-display"><!--l. 221--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                  <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo class="qopname"> &#x222B; 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+>
+        </mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi>
+</mrow></math></div>
+<!--l. 223--><p class="nopar" > We can also put the integral in terms of the contour parameters, This is basically <span 
+class="rm-lmri-10">Integration by</span>
+<span 
+class="rm-lmri-10">Substitution </span>in reverse, there&#8217;s a more rigorous proof in the textbook by <span 
+class="rm-lmri-10">Osbourne</span>, just take it as
+definition.
+</p><!--l. 226--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 229--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+                           <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo class="qopname"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced> <mo 
+class="MathClass-bin">&#x22C5;</mo> <msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mi 
+>&#x2032;</mi></mrow></msup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi></mtd>                           <mtd 
+class="align-even"><mspace width="2em"/></mtd>                           <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-12001r4"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(4)</mtext></mstyle>
+   </mtd></mtr></mtable></math>
+                                                                                      
+                                                                                      
+<span class="likeparagraphHead"><a 
+ id="x1-13000\@currentlabel "></a>Negative Contours</span>
+   &#x00A0;<br 
+class="newline" />If a contour <!--l. 232--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>C</mi></math> is
+given the contour <!--l. 232--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mo 
+class="MathClass-bin">-</mo> <mi 
+>C</mi></math>
+denotes the same contour with the order of the points reversed. Hence we have:
+<!--l. 235--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 239--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                      <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mo 
+class="MathClass-bin">-</mo><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                      <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mo 
+class="MathClass-bin">-</mo><mi 
+>b</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">-</mo><mi 
+>a</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">-</mo><mi 
+>t</mi></mrow></mfenced></mrow></mfenced> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfrac><mrow 
+><mo class="qopname">d</mo><!--nolimits--></mrow> 
+<mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">-</mo><mi 
+>t</mi></mrow></mfenced></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi><mspace width="2em"/></mtd>                      <mtd 
+columnalign="right" class="align-label"></mtd>                      <mtd 
+class="align-label">
+                      <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                  <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">-</mo><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">-</mo><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mi 
+>&#x2032;</mi></mrow></msup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">-</mo><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi><mspace width="2em"/></mtd>                           <mtd 
+columnalign="right" class="align-label"></mtd>                      <mtd 
+class="align-label">
+                      <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                  <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">-</mo><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi><mspace width="2em"/></mtd>                                   <mtd 
+columnalign="right" class="align-label"></mtd>                      <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<!--l. 242--><p class="indent" >   Refer to p. 128 of <span 
+class="rm-lmri-10">Churchill&#8217;s 9th </span>for worked examples.
+<a 
+ id="x1-13001r5"></a>
+</p>
+<h4 class="subsectionHead"><span class="titlemark">  </span> <a 
+ id="x1-140001"></a>Notation</h4>
+<!--l. 245--><p class="noindent" >If we want to basically i want to know does the symbol:
+</p>
+   <div class="math-display"><!--l. 246--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                              <msubsup><mrow 
+><mo mathsize="big" 
+>&#x222E;</mo>
+ <!--nolimits--></mrow><mrow 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi>
+</mrow></math></div>
+<!--l. 248--><p class="nopar" > </p>
+     <ul class="itemize1">
+     <li class="itemize">a contour/line integral of any sort
+     </li>
+     <li class="itemize">a contour/line integral around a closed path
+     </li>
+     <li class="itemize">one of the above but specifically in the anticlockwise direction?</li></ul>
+<a 
+ id="x1-14001r15"></a>
+                                                                                      
+                                                                                      
+<h4 class="subsectionHead"><span class="titlemark">  </span> <a 
+ id="x1-150002"></a>Upper Bounds for Moduli</h4>
+<!--l. 257--><p class="noindent" >Start with the triangle inequality:
+</p>
+   <div class="math-display"><!--l. 258--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                          <mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>&#x03B1;</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>&#x03B2;</mi></mrow></mfenced> <mo 
+class="MathClass-rel">&#x2264;</mo> <mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>&#x03B1;</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>&#x03B2;</mi></mrow></mfenced>
+</mrow></math></div>
+<!--l. 260--><p class="nopar" > We could prove this, or, by similar reasoning:
+</p><!--l. 263--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 265--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                             <mtr><mtd 
+columnalign="right" class="align-odd"><mspace width="2.77695pt" class="tmspace"/><mo 
+class="MathClass-rel">&#x21D2;</mo><mspace width="2.77695pt" class="tmspace"/> <mfenced separators="" 
+open="|"  close="|" ><mrow><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+></mrow><mrow 
+></mrow></msubsup 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>w</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi></mrow></mfenced></mtd>                             <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">&#x2264;</mo><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+></mrow><mrow 
+></mrow></msubsup 
+><mfenced separators="" 
+open="|"  close=")" ><mrow><mi 
+>w</mi> <mfenced separators="" 
+open="("  close="|" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi><mspace width="2em"/></mtd>                             <mtd 
+columnalign="right" class="align-label"></mtd>                             <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<!--l. 267--><p class="indent" >   Now let: </p>
+     <ul class="itemize1">
+     <li class="itemize"><!--l. 269--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>C</mi></math>
+     be a contour of length <!--l. 269--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math>
+     </li>
+     <li class="itemize"><!--l. 270--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced> <mo 
+class="MathClass-rel">&#x2264;</mo> <mi 
+>M</mi></math></li></ul>
+<!--l. 273--><p class="indent" >   Using the inequality above it can be rigorously shown:
+</p>
+   <div class="par-math-display"><!--l. 275--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                       <mfenced separators="" 
+open="|"  close="|" ><mrow><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+></mrow><mrow 
+></mrow></msubsup 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mrow></mfenced> <mo 
+class="MathClass-rel">&#x2264;</mo> <mi 
+>M</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>L</mi>
+</mrow></math></div>
+<!--l. 277--><p class="nopar" >
+                                                                                      
+                                                                                      
+</p><!--l. 279--><p class="indent" >   This can be somewhat visualised if <!--l. 279--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math>
+is taken to be the height of the function along the contour, and
+<!--l. 279--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>L</mi></math> is taken
+to be the length of the contour, although the values will be complex and height might become an odd concept,
+the mathematics should still hold.
+</p>
+<span class="likeparagraphHead"><a 
+ id="x1-160002"></a>Example</span>
+   Evaluate the contour integral:
+   <div class="math-display"><!--l. 282--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                             <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mi 
+>z</mi></mrow></mfrac></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi>
+</mrow></math></div>
+<!--l. 284--><p class="nopar" > Where: </p>
+     <ul class="itemize1">
+     <li class="itemize"><!--l. 287--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>C</mi> <mo 
+class="MathClass-punc">:</mo> <mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></math></li></ul>
+<!--l. 290--><p class="noindent" >Now put the integral in terms of the parametric representation (<a 
+href="#x1-12001r4">4<!--tex4ht:ref: tdef --></a>):
+</p><!--l. 292--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 299--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align">
+                           <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mi 
+>z</mi></mrow></mfrac></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                           <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>&#x03B8;</mi></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfrac><mrow 
+><mo class="qopname">d</mo><!--nolimits--></mrow> 
+<mrow 
+><mo class="qopname">d</mo><!--nolimits--><mi 
+>&#x03B8;</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>&#x03B8;</mi></mrow></msup 
+></mrow></mfenced></mrow></mfenced><mo class="qopname"> d</mo><!--nolimits--><mi 
+>&#x03B8;</mi><mspace width="2em"/></mtd>                           <mtd 
+columnalign="right" class="align-label"></mtd>                           <mtd 
+class="align-label">
+                           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>&#x03B8;</mi></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>i</mi><mi 
+>&#x03B8;</mi></mrow></msup 
+></mrow></mfenced><mo class="qopname"> d</mo><!--nolimits--><mi 
+>&#x03B8;</mi><mspace width="2em"/></mtd>                             <mtd 
+columnalign="right" class="align-label"></mtd>                           <mtd 
+class="align-label">
+                           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow></msubsup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>i</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>&#x03B8;</mi><mspace width="2em"/></mtd>                                     <mtd 
+columnalign="right" class="align-label"></mtd>                           <mtd 
+class="align-label">
+                           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>&#x03B8;</mi></mrow></mfenced></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow><mrow 
+><mi 
+>&#x03C0;</mi></mrow></msubsup 
+><mspace width="2em"/></mtd>                                       <mtd 
+columnalign="right" class="align-label"></mtd>                           <mtd 
+class="align-label">
+                           <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                    <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mspace width="2em"/></mtd>                                                                       <mtd 
+columnalign="right" class="align-label"><mstyle 
+   id="x1-16001r5"  class="label" ></mstyle><!--endlabel--><mstyle 
+class="maketag"><mtext  >(5)</mtext></mstyle>
+   </mtd></mtr></mtable></math>
+<a 
+ id="x1-16002r13"></a>
+<h3 class="sectionHead"><span class="titlemark"></span><a 
+ id="x1-17000\@currentlabel "></a>Antiderivatives</h3>
+<!--l. 302--><p class="noindent" >Generally the value of a contour integral depends on both the path of the contour and the function.<br 
+class="newline" />Some contour intergrals however have values independent of the path, for example consider how many integrals
+over closed paths will have an integral of zero as in the example above.<br 
+class="newline" />
+                                                                                      
+                                                                                      
+</p><!--l. 305--><p class="indent" >   The antiderivative of a complex function is <!--l. 305--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math>
+such that:
+</p>
+   <div class="math-display"><!--l. 306--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                             <msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>&#x2032;</mi></mrow></msup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced>
+</mrow></math></div>
+<!--l. 308--><p class="nopar" > The antiderivative is, of necessity, an analytic function.
+</p><!--l. 311--><p class="indent" >   The antiderivative is uniqe, there is only one antiderivative for a given funciton (other than the additive constant
+<!--l. 311--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">+</mo><mi 
+>C</mi></mrow></mfenced></math>
+component).
+<a 
+ id="x1-17001r16"></a>
+</p>
+<h4 class="subsectionHead"><span class="titlemark">  </span> <a 
+ id="x1-180001"></a>Basic Antiderivative Theorem</h4>
+<!--l. 314--><p class="noindent" >Suppose <!--l. 314--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math>
+is continuous in a domain, if the function has an antiderivative
+<!--l. 314--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math> through
+the domain then:
+</p><!--l. 316--><p class="indent" >   &#x00A0;&#x00A0;
+</p><!--l. 318--><p class="indent" >          </p><div class="minipage">integrals                                                                                                 of
+<!--l. 319--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math>
+along contours lying in the domain depend only on the endpoints of that contour:
+<div class="math-display"><!--l. 320--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                   <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo class="qopname"> &#x222B; 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+>
+        </mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+>
+</mrow></msubsup 
+>
+</mrow></math></div>
+<!--l. 322--><p class="nopar" >
+</p><!--l. 324--><p class="noindent" >This also means that integrals around a closed contour will be 0.
+</p></div> &#x00A0;&#x00A0;
+<span class="likeparagraphHead"><a 
+ id="x1-190001"></a>Proof</span>
+   if <!--l. 330--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mi 
+>F</mi></mrow><mrow 
+><mi 
+>&#x2032;</mi></mrow></msup 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math>
+:
+<!--l. 332--><p class="indent" >
+                                                                                      
+                                                                                      
+</p><!--tex4ht:inline--><!--l. 345--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                       <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                       <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi><mspace width="2em"/></mtd>                                      <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo><msubsup><mrow 
+><mo class="qopname">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mi 
+>b</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>t</mi><mspace width="2em"/></mtd>                       <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+   </mtd></mtr><mtr><mtd columnspan="4" class="intertext"><mstyle 
+class="intertext"><mtext  >Which&#x00A0;means&#x00A0;the&#x00A0;Fundamental&#x00A0;Theorem&#x00A0;of&#x00A0;Calculus&#x00A0;Applies&#x00A0;from&#x00A0;(</mtext><mtext 
+ xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#x1-6001r1"  class="label" >1<!--tex4ht:ref: ftcest --></mtext><mtext 
+class="endlabel">)</mtext></mstyle></mtd></mtr><mtr><mtd>
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced></mrow></mfenced><mspace width="2em"/></mtd>                                     <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow></mfenced><mspace width="2em"/></mtd>                                      <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+>
+        </mrow></msubsup 
+><mspace width="2em"/></mtd>                                          <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>t</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+>
+<mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mspace width="2em"/></mtd>                                  <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced></mrow></mfenced><mspace width="2em"/></mtd>                           <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced> <mo 
+class="MathClass-bin">+</mo> <mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>U</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>V</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced></mrow></mfenced><mspace width="2em"/></mtd>                          <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>b</mi></mrow></mfenced> <mo 
+class="MathClass-bin">-</mo> <mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>a</mi></mrow></mfenced><mspace width="2em"/></mtd>                                        <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>b</mi></mrow></msubsup 
+><mspace width="2em"/></mtd>                                           <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+                       <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                 <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><mi 
+>F</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></mrow></mfenced></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+>
+        </mrow></msubsup 
+><mspace width="2em"/></mtd>                                          <mtd 
+columnalign="right" class="align-label"></mtd>                       <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<a 
+ id="x1-19001r18"></a>
+<h3 class="sectionHead"><span class="titlemark"></span><a 
+ id="x1-20000\@currentlabel "></a>Cauchy Goursat Theorem</h3>
+<!--l. 348--><p class="noindent" >This theorem depends on <span 
+class="rm-lmri-10">Green&#8217;s Theorem </span>which gives the relationship between a line integral around a
+simple-closed curve and the double integral over the corresponding bounded region, for purely real functions.
+Roughly Speaking <span 
+class="rm-lmri-10">Green&#8217;s Theorem </span>is a counterpart of the Fundamental Theorem of Calculus for double
+integrals.<br 
+class="newline" />
+</p><!--l. 350--><p class="indent" >   In establishing the <span 
+class="rm-lmri-10">Cauchy-Goursat Theorem</span>, proving <span 
+class="rm-lmri-10">Green&#8217;s Theorem </span>is the tricky part, the
+<span 
+class="rm-lmri-10">Cauchy-Goursat Theorem </span>more or less falls out of it.
+</p><!--l. 352--><p class="indent" >   &#x00A0;&#x00A0;
+                                                                                      
+                                                                                      
+</p><!--l. 354--><p class="indent" >      </p><div class="minipage">
+<img 
+src="10_integrals0x.png" alt="picture"  />
+</div> &#x00A0;&#x00A0;
+<a 
+ id="x1-21001r19"></a>
+<h4 class="subsectionHead"><span class="titlemark">  </span> <a 
+ id="x1-220001"></a>Simply-Connected Domains</h4>
+<!--l. 370--><p class="noindent" >If <!--l. 370--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced></math> is
+analytic through a simply connected domain:
+</p>
+   <div class="math-display"><!--l. 371--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                             <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi>
+</mrow></math></div>
+<!--l. 373--><p class="nopar" > Where: </p>
+     <ul class="itemize1">
+     <li class="itemize">C is any closed contour in that domain (Simple or not)
+     <!--l. 377--><p class="noindent" >&#x00A0;&#x00A0;      i.e. if the domain is simply connected, the contour can cross itself.</p></li></ul>
+<!--l. 380--><p class="indent" >   From this it follows: </p>
+     <ul class="itemize1">
+     <li class="itemize">If a function is analytic on a simply connected domain, then:
+     <!--l. 383--><p class="noindent" >&#x00A0;&#x00A0;      there will be an anti-derivative:
+     </p><!--l. 384--><p class="noindent" >&#x00A0;&#x00A0;&#x00A0;         The contour integral will be independent of path (i.e.<!--l. 384--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>F</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>b</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">-</mo> <mi 
+>F</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></math>
+     </p></li>
+     <li class="itemize">Entire functions always have an antiderivative
+     <!--l. 386--><p class="noindent" >&#x00A0;&#x00A0;      and will always be independent of path.</p></li></ul>
+<a 
+ id="x1-22001r23"></a>
+                                                                                      
+                                                                                      
+<h4 class="subsectionHead"><span class="titlemark">  </span> <a 
+ id="x1-230002"></a>Multiply Connected Domains</h4>
+<!--l. 390--><p class="noindent" >If <!--l. 390--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>C</mi></math>
+is a closed counter-clockwise contour, inside which are closed Clockwise contours
+<!--l. 390--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><mo 
+class="MathClass-op">&#x2026;</mo><mspace width="0.3em" class="thinspace"/></math> for which the function is analytic
+interior to C but exterior to <!--l. 390--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><mo 
+class="MathClass-op">&#x2026;</mo><mspace width="0.3em" class="thinspace"/></math>
+:
+</p>
+   <figure class="figure"> 
+
+                                                                                      
+                                                                                      
+<a 
+ id="x1-230012"></a>
+                                                                                      
+                                                                                      
+<!--l. 395--><p class="noindent" >
+</p>
+<figcaption class="caption" ><span class="id">Figure&#x00A0;2:</span><span  
+class="content"></span></figcaption><!--tex4ht:label?: x1-230012 -->
+                                                                                      
+                                                                                      
+   </figure>
+<!--l. 402--><p class="indent" >   Then we have:
+</p>
+   <div class="par-math-display"><!--l. 404--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                             <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mi 
+>C</mi></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> &#x2211;</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></munderover 
+> <mfenced separators="" 
+open="["  close="]" ><mrow><msubsup><mrow 
+><mo>&#x222B; 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mrow></mfenced>
+</mrow></math></div>
+<!--l. 406--><p class="nopar" > This is established by drawing a line through all the interior closed contours and applying the <span 
+class="rm-lmri-10">Cauchy-Goursat</span>
+theorem, refer to the <span 
+class="rm-lmri-10">Churchill </span>textbook.
+</p>
+<span class="likeparagraphHead"><a 
+ id="x1-240002"></a>Principle of Deformation</span>
+   If we had Something like this:
+   <figure class="figure"> 
+
+                                                                                      
+                                                                                      
+<a 
+ id="x1-240013"></a>
+                                                                                      
+                                                                                      
+<!--l. 414--><p class="noindent" >
+</p>
+<figcaption class="caption" ><span class="id">Figure&#x00A0;3:</span><span  
+class="content"></span></figcaption><!--tex4ht:label?: x1-240013 -->
+                                                                                      
+                                                                                      
+   </figure>
+<!--l. 420--><p class="indent" >   Then it would follow:
+</p><!--l. 422--><p class="indent" >
+</p><!--tex4ht:inline--><!--l. 426--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                          <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo><msubsup><mrow 
+><mo class="qopname"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                          <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mspace width="2em"/></mtd>                                   <mtd 
+columnalign="right" class="align-label"></mtd>                          <mtd 
+class="align-label">
+                          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-bin">-</mo><msubsup><mrow 
+><mo class="qopname">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                          <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mspace width="2em"/></mtd>                                   <mtd 
+columnalign="right" class="align-label"></mtd>                          <mtd 
+class="align-label">
+                          <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                                      <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></mrow><mrow 
+></mrow></msubsup 
+><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi><mspace width="2em"/></mtd>                          <mtd 
+columnalign="right" class="align-label"></mtd>                          <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<!--l. 428--><p class="indent" >   So if <!--l. 428--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math> can be continuously
+transformed into <!--l. 428--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>C</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+through an analytic region, then the integral is the same.
+</p>
+<span class="likesubparagraphHead"><a 
+ id="x1-250002"></a><span 
+class="rm-lmbx-10">Spacial Case of Deformation</span></span>
+   We Should Probably memorise this special case:
+   <div class="par-math-display"><!--l. 433--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+><msubsup><mrow 
+>
+<mi 
+>&#x2233;</mi>
+  <!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi><mo 
+class="MathClass-bin">-</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> </mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mi 
+>r</mi></mrow><mrow 
+></mrow></msubsup 
+><msup><mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mo 
+class="MathClass-bin">-</mo> <msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow></mfenced> </mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+><mo class="qopname"> d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="{"  close="" ><mrow> <mtable  align="axis" style=""  
+equalrows="false" columnlines="none" equalcolumns="false" class="array"> <mtr><mtd 
+class="array"  columnalign="left"><mn>0</mn><mspace width="2em" class="qquad"/><mi 
+>i</mi><mi 
+>f</mi><mi 
+>n</mi><mo 
+class="MathClass-rel">&#x2260;</mo> <mo 
+class="MathClass-bin">-</mo> <mn>1</mn>     <mspace width="1em" class="quad"/></mtd>
+</mtr>  <mtr><mtd 
+class="array"  columnalign="left"><mn>2</mn><mi 
+>&#x03C0;</mi><mi 
+>i</mi><mspace width="2em" class="qquad"/><mi 
+>i</mi><mi 
+>f</mi><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">-</mo><mn>1</mn><mn>2</mn><mspace width="1em" class="quad"/></mtd></mtr> <!--@{}l@{\quad }l@{}--></mtable>                                                                                                                    </mrow></mfenced>
+</mrow></math></div>
+<!--l. 439--><p class="nopar" >
+</p>
+<span class="likesubparagraphHead"><a 
+ id="x1-260002"></a><span 
+class="rm-lmbx-10">Example</span></span>
+                                                                                      
+                                                                                      
+<!--tex4ht:inline--><!--l. 447--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                  <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+></mrow></msubsup 
+>         <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn></mrow></mfrac><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                  <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> &#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+></mrow></msubsup 
+>                 <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <mi 
+>i</mi></mrow></mfenced></mrow></mfenced> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo> <mfenced separators="" 
+open="("  close=")" ><mrow><mn>1</mn> <mo 
+class="MathClass-bin">-</mo> <mi 
+>i</mi></mrow></mfenced></mrow></mfenced></mrow></mfrac><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi><mspace width="2em"/></mtd>                  <mtd 
+columnalign="right" class="align-label"></mtd>                  <mtd 
+class="align-label">
+   </mtd></mtr><mtr><mtd columnspan="4" class="intertext"><mstyle 
+class="intertext"><mtext  >There&#x00A0;is&#x00A0;a&#x00A0;singularity&#x00A0;at&#x00A0;</mtext><mstyle 
+class="math"><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">-</mo><mn>1</mn> <mo 
+class="MathClass-bin">±</mo><mi 
+>i</mi></mstyle><mtext  >,&#x00A0;which&#x00A0;is&#x00A0;outside&#x00A0;the&#x00A0;closed&#x00A0;countour,&#x00A0;the&#x00A0;function&#x00A0;is&#x00A0;analytic&#x00A0;everwhere
+else&#x00A0;inside&#x00A0;and&#x00A0;on&#x00A0;the&#x00A0;closed&#x00A0;countour&#x00A0;hence&#x00A0;by&#x00A0;the&#x00A0;</mtext><mtext class="textit" mathvariant="italic" >Cauchy-Goursatt&#x00A0;Theorem:</mtext></mstyle></mtd></mtr><mtr><mtd>
+                  <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                    <mtd 
+class="align-even"><mspace width="2em"/></mtd>                                                <mtd 
+columnalign="right" class="align-label">
+                  </mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+></mrow></msubsup 
+>         <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn></mrow></mfrac><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                  <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mspace width="2em"/></mtd>                                            <mtd 
+columnalign="right" class="align-label"></mtd>                  <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<a 
+ id="x1-26001r21"></a>
+<h3 class="sectionHead"><span class="titlemark"></span><a 
+ id="x1-27000\@currentlabel "></a>Cauchy Integral Formula</h3>
+<!--l. 450--><p class="noindent" >This has to be memorised.&#x00A0;<br 
+class="newline" />
+</p><!--l. 452--><p class="indent" >      </p><div class="minipage">
+<img 
+src="10_integrals1x.png" alt="picture"  />
+</div> &#x00A0;&#x00A0;
+<span class="likeparagraphHead"><a 
+ id="x1-29000\@currentlabel "></a>Example</span>
+   Solve :
+                                                                                      
+                                                                                      
+   <div class="math-display"><!--l. 468--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                                        <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+></mrow></msubsup 
+>  <mfrac><mrow 
+><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>z</mi></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>9</mn><mi 
+>z</mi></mrow></mfrac><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi>
+</mrow></math></div>
+<!--l. 470--><p class="nopar" > First simplify the intergrand somewhat:
+</p>
+   <div class="par-math-display"><!--l. 473--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                        <msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+></mrow></msubsup 
+>  <mfrac><mrow 
+><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>z</mi></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>9</mn><mi 
+>z</mi></mrow></mfrac><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo class="qopname"> &#x222B; 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+></mrow></msubsup 
+><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mi 
+>z</mi></mrow></mfrac> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfrac><mrow 
+><mo class="qopname">cos</mo><!--nolimits--><mi 
+>z</mi></mrow> 
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>9</mn><mi 
+>z</mi></mrow></mfrac><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi>
+</mrow></math></div>
+<!--l. 475--><p class="nopar" >
+</p><!--l. 478--><p class="indent" >   Observe that the intergrand <!--l. 478--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mfrac><mrow 
+><mo class="qopname"> cos</mo><!--nolimits--> <mi 
+>z</mi></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+><mo 
+class="MathClass-bin">+</mo><mn>9</mn><mi 
+>z</mi></mrow></mfrac></math>
+is analytic everywhere other than its singularities:
+</p>
+     <ul class="itemize1">
+     <li class="itemize"><!--l. 481--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+     </li>
+     <li class="itemize"><!--l. 482--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mn>3</mn><mi 
+>i</mi></math>
+     </li>
+     <li class="itemize"><!--l. 483--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">-</mo><mn>3</mn><mi 
+>i</mi></math></li></ul>
+<!--l. 487--><p class="indent" >   because <!--l. 487--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+is inside the contour we cannot use the <span 
+class="rm-lmri-10">Cauchy-Goursatt Theorem</span>, however, we can use the <span 
+class="rm-lmri-10">Cauchy-Integral</span>
+<span 
+class="rm-lmri-10">Formula </span>precisely because : </p>
+     <ul class="itemize1">
+     <li class="itemize"><!--l. 489--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></math>
+     is interior to the closed contour
+     </li>
+     <li class="itemize"><!--l. 490--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mo class="qopname"> cos</mo><!--nolimits--> <mi 
+>z</mi></mrow> 
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-bin">+</mo><mn>9</mn></mrow></mfrac></math>
+     is analytic everywhere else interior to the closed contour</li></ul>
+<!--l. 493--><p class="indent" >   So by the Cauchy Integral Formula:
+</p><!--l. 495--><p class="indent" >
+                                                                                      
+                                                                                      
+</p><!--tex4ht:inline--><!--l. 498--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mtable 
+columnalign="left" class="align-star">
+                              <mtr><mtd 
+columnalign="right" class="align-odd"><msubsup><mrow 
+><mo 
+class="MathClass-op">&#x222B;
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mi 
+>z</mi></mrow></mfenced><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+></mrow></msubsup 
+>  <mfrac><mrow 
+> <mfrac><mrow 
+><mo class="qopname"> cos</mo><!--nolimits--> <mi 
+>z</mi></mrow> 
+<mrow 
+><msup><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-bin">+</mo><mn>9</mn></mrow></mfrac></mrow>
+<mrow 
+> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>z</mi> <mo 
+class="MathClass-bin">-</mo> <mn>0</mn></mrow></mfenced></mrow></mfrac><mo class="qopname">d</mo><!--nolimits--><mi 
+>z</mi></mtd>                              <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn><mi 
+>&#x03C0;</mi><mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfrac><mrow 
+><mo class="qopname">cos</mo><!--nolimits--> <mfenced separators="" 
+open="("  close=")" ><mrow><mn>0</mn></mrow></mfenced></mrow> 
+<mrow 
+><msup><mrow 
+><mn>0</mn></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mn>9</mn></mrow></mfrac><mspace width="2em"/></mtd>                              <mtd 
+columnalign="right" class="align-label"></mtd>                              <mtd 
+class="align-label">
+                              <mspace width="2em"/></mtd></mtr><mtr><mtd 
+columnalign="right" class="align-odd"></mtd>                                            <mtd 
+class="align-even"> <mo 
+class="MathClass-rel">=</mo> <mi 
+>i</mi> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mfrac><mrow 
+><mn>2</mn><mi 
+>&#x03C0;</mi></mrow> 
+ <mrow 
+><mn>9</mn></mrow></mfrac> <mspace width="2em"/></mtd>                                   <mtd 
+columnalign="right" class="align-label"></mtd>                              <mtd 
+class="align-label">
+   <mspace width="2em"/></mtd></mtr></mtable></math>
+<a 
+ id="x1-29001r30"></a>
+<h3 class="sectionHead"><span class="titlemark"></span><a 
+ id="x1-30000\@currentlabel "></a>Extension of the Cauchy Integral Formula</h3>
+<!--l. 501--><p class="noindent" >This has to be memorised:
+</p><!--l. 503--><p class="indent" >   &#x00A0;&#x00A0;
+</p><!--l. 505--><p class="indent" >      </p><div class="minipage">
+<img 
+src="10_integrals2x.png" alt="picture"  />
+</div> &#x00A0;&#x00A0;
+    
+</body> 
+</html>
+                                                                                      
+                                                                                      
+                                                                                      
+
+
