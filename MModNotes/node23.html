@@ -31,171 +31,25 @@
 <A
  HREF="node22.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html138"
+<A ID="tex2html145"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node24.html">About this document ...</A>
+ HREF="node24.html">Second Order Differential Equations</A>
 <B> Up:</B> <A
- HREF="node20.html">First Order Linear ODE</A>
+ HREF="node20.html">First Order Exact Equations</A>
 <B> Previous:</B> <A
  HREF="node22.html">Proof</A>
- &nbsp; <B>  <A ID="tex2html139"
+ &nbsp; <B>  <A ID="tex2html146"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION02123000000000000000">
+<H2><A ID="SECTION02163000000000000000">
 Exemplars</A>
 </H2>
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img65.svg"
- ALT="\begin{align}
-\left( x+ 1 \right)\cdot \frac{\operatorname{d}y }{\operatorname{d} x}+ y&amp;= \ln{ \left( x \right) } \enspace ; \qquad y(1)= 10
-\end{align}">
-<BR>
-
-<P>
-<SPAN  CLASS="textbf">(1) Put the equation into the Standard Form:</SPAN>
-
-<P>
-<BR>
-<A ID="stdformex"></A><IMG STYLE=""
- SRC="img66.svg"
- ALT="\begin{align}
-\frac{\operatorname{d}y }{\operatorname{d} x}+ \frac{y}{x+ 1} &amp;= ...
-... \qquad \left( x\in \mathbb{R} \setminus \left\{-1,0\right\} \right)
-\end{align}">
-<BR>
-
-<P>
-<SPAN  CLASS="textbf">(2) Solve the integrating factor</SPAN>
-
-<P>
-<BR>
-<A ID="intfactex"></A><IMG STYLE=""
- SRC="img67.svg"
- ALT="\begin{align}
-u&amp;= e^{\int^{}_{} \frac{1}{x+ 1} \operatorname{d}x }\notag \\
-&amp;...
-...vert } \operatorname{d}x }\notag \\
-&amp;= \left\vert x+ 1 \right\vert
-\end{align}">
-<BR>
-
-<P>
-Assume <SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.21ex; " SRC="img68.svg"
- ALT="$x &gt; 0$"></SPAN>
-
-<P>
-<SPAN  CLASS="textbf">(3) Multiply through by the Integrating Factor</SPAN>
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img69.svg"
- ALT="\begin{align}
-\left( x+ 1 \right)\cdot \frac{\operatorname{d}y }{\operatorname{d...
-...eft( x+ 1 \right)\cdot y \right)&amp;= \ln{ \left( x \right) }\notag \\
-\end{align}">
-<BR>
-<SPAN  CLASS="textbf">(4) Integrate Both Sides</SPAN>
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img70.svg"
- ALT="\begin{align}
-\int^{}_{} \frac{\operatorname{d} }{\operatorname{d} x}\left[ \le...
-...me{d}x&amp;= \int^{}_{} \ln{ \left( x \right) } \operatorname{d}x \notag
-\end{align}">
-<BR>
-
-<P>
-by the chain rule:
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img71.svg"
- ALT="\begin{align}
-\left( x+ 1 \right)\cdot y&amp;= \int^{}_{} \ln{ \left( x \right) } \operatorname{d}x \notag\\
-\end{align}">
-<BR>
-
-<P>
-Let:
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img72.svg"
- ALT="\begin{align*}
-\begin{matrix}
-u&amp;= \ln{ \left( x \right) } &amp;&amp; \operatorname{d} ...
-..._{} u \operatorname{d}v= u\cdot v + \int^{}_{} v \operatorname{d}u
-\end{align*}">
-<BR>
-
-<P>
-integration by substitution provides:
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img73.svg"
- ALT="\begin{align}
-\left( x+ 1 \right)\cdot y &amp;= \ln{ \left( x \right)\cdot x }- \int...
-...ac{x\cdot \left( \ln{ \left( x \right)- 1 }+ c \right)}{x+ 1} \notag
-\end{align}">
-<BR>
-
-<P>
-<SPAN  CLASS="textbf">(5) Consider the Initial Condition</SPAN>
-
-<P>
-Substitute <SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img74.svg"
- ALT="$y(1)= 10$"></SPAN>:
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img75.svg"
- ALT="\begin{align}
-10&amp;= \frac{1\left( \ln{ \left( 1 \right)- 1 }+ c \right)}{2}\notag \\
-20&amp;= 1\left( 0- 1 \right)+ c\notag \\
-c&amp;= 19
-\end{align}">
-<BR>
-
-<P>
-A first order ODE will only have one family of solutions, hence the solution on an interval will be a solution for the entire domain, hence we have:
-
-<P>
-<BR><P></P>
-<DIV CLASS="mathdisplay">
-<!-- MATH
- \begin{displaymath}
-y= \frac{x\left( \ln{ \left( x \right)- 1 }+ 19 \right)}{x+ 1} \enspace ; \qquad \forall x \in \mathbb{C}\setminus\{-1,0\}
-\end{displaymath}
- -->
-
-<IMG STYLE=""
- SRC="img76.svg"
- ALT="\begin{displaymath}
-y= \frac{x\left( \ln{ \left( x \right)- 1 }+ 19 \right)}{x+ 1} \enspace ; \qquad \forall x \in \mathbb{C}\setminus\{-1,0\}
-\end{displaymath}">
-</DIV>
-<BR CLEAR="ALL">
-<P></P>
-
-<P>
-.
 
 <P>
 

@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Equations Reducible to Separable Equations</TITLE>
-<META NAME="description" CONTENT="Equations Reducible to Separable Equations">
+<TITLE>Exemplars</TITLE>
+<META NAME="description" CONTENT="Exemplars">
 <META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,7 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="00_master.css">
 
-<LINK REL="previous" HREF="node17.html">
+<LINK REL="previous" HREF="node18.html">
 <LINK REL="next" HREF="node20.html">
 </HEAD>
 
@@ -26,97 +26,176 @@
  HREF="node20.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node4.html">
+ HREF="node16.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node18.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html127"
+<A ID="tex2html134"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node20.html">First Order Linear ODE</A>
+ HREF="node20.html">First Order Exact Equations</A>
 <B> Up:</B> <A
- HREF="node4.html">Seperation of Variables</A>
+ HREF="node16.html">First Order Linear ODE</A>
 <B> Previous:</B> <A
  HREF="node18.html">Proof</A>
- &nbsp; <B>  <A ID="tex2html128"
+ &nbsp; <B>  <A ID="tex2html135"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION02115000000000000000">
-Equations Reducible to Separable Equations</A>
+<H2><A ID="SECTION02153000000000000000">
+Exemplars</A>
 </H2>
-Some equations can be tricky to deal with, there is a method of <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img31.svg"
- ALT="$u$"></SPAN>-Substitution:
 
 <P>
-Take some equation of the form:
+<BR>
+<IMG STYLE=""
+ SRC="img67.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot \frac{\operatorname{d}y }{\operatorname{d} x}+ y&amp;= \ln{ \left( x \right) } \enspace ; \qquad y(1)= 10
+\end{align}">
+<BR>
+
+<P>
+<SPAN  CLASS="textbf">(1) Put the equation into the Standard Form:</SPAN>
+
+<P>
+<BR>
+<A ID="stdformex"></A><IMG STYLE=""
+ SRC="img68.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x}+ \frac{y}{x+ 1} &amp;= ...
+... \qquad \left( x\in \mathbb{R} \setminus \left\{-1,0\right\} \right)
+\end{align}">
+<BR>
+
+<P>
+<SPAN  CLASS="textbf">(2) Solve the integrating factor</SPAN>
+
+<P>
+<BR>
+<A ID="intfactex"></A><IMG STYLE=""
+ SRC="img69.svg"
+ ALT="\begin{align}
+u&amp;= e^{\int^{}_{} \frac{1}{x+ 1} \operatorname{d}x }\notag \\
+&amp;...
+...vert } \operatorname{d}x }\notag \\
+&amp;= \left\vert x+ 1 \right\vert
+\end{align}">
+<BR>
+
+<P>
+Assume <SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.21ex; " SRC="img70.svg"
+ ALT="$x &gt; 0$"></SPAN>
+
+<P>
+<SPAN  CLASS="textbf">(3) Multiply through by the Integrating Factor</SPAN>
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img71.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot \frac{\operatorname{d}y }{\operatorname{d...
+...eft( x+ 1 \right)\cdot y \right)&amp;= \ln{ \left( x \right) }\notag \\
+\end{align}">
+<BR>
+<SPAN  CLASS="textbf">(4) Integrate Both Sides</SPAN>
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img72.svg"
+ ALT="\begin{align}
+\int^{}_{} \frac{\operatorname{d} }{\operatorname{d} x}\left[ \le...
+...me{d}x&amp;= \int^{}_{} \ln{ \left( x \right) } \operatorname{d}x \notag
+\end{align}">
+<BR>
+
+<P>
+by the chain rule:
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img73.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot y&amp;= \int^{}_{} \ln{ \left( x \right) } \operatorname{d}x \notag\\
+\end{align}">
+<BR>
+
+<P>
+Let:
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img74.svg"
+ ALT="\begin{align*}
+\begin{matrix}
+u&amp;= \ln{ \left( x \right) } &amp;&amp; \operatorname{d} ...
+..._{} u \operatorname{d}v= u\cdot v + \int^{}_{} v \operatorname{d}u
+\end{align*}">
+<BR>
+
+<P>
+integration by substitution provides:
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img75.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot y &amp;= \ln{ \left( x \right)\cdot x }- \int...
+...ac{x\cdot \left( \ln{ \left( x \right)- 1 }+ c \right)}{x+ 1} \notag
+\end{align}">
+<BR>
+
+<P>
+<SPAN  CLASS="textbf">(5) Consider the Initial Condition</SPAN>
+
+<P>
+Substitute <SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img76.svg"
+ ALT="$y(1)= 10$"></SPAN>:
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img77.svg"
+ ALT="\begin{align}
+10&amp;= \frac{1\left( \ln{ \left( 1 \right)- 1 }+ c \right)}{2}\notag \\
+20&amp;= 1\left( 0- 1 \right)+ c\notag \\
+c&amp;= 19
+\end{align}">
+<BR>
+
+<P>
+A first order ODE will only have one family of solutions, hence the solution on an interval will be a solution for the entire domain, hence we have:
+
+<P>
 <BR><P></P>
 <DIV CLASS="mathdisplay">
 <!-- MATH
  \begin{displaymath}
-\frac{\operatorname{d}y }{\operatorname{d} x}= f\left( \frac{x}{y} \right)
+y= \frac{x\left( \ln{ \left( x \right)- 1 }+ 19 \right)}{x+ 1} \enspace ; \qquad \forall x \in \mathbb{C}\setminus\{-1,0\}
 \end{displaymath}
  -->
 
 <IMG STYLE=""
- SRC="img32.svg"
+ SRC="img78.svg"
  ALT="\begin{displaymath}
-\frac{\operatorname{d}y }{\operatorname{d} x}= f\left( \frac{x}{y} \right)
+y= \frac{x\left( \ln{ \left( x \right)- 1 }+ 19 \right)}{x+ 1} \enspace ; \qquad \forall x \in \mathbb{C}\setminus\{-1,0\}
 \end{displaymath}">
 </DIV>
 <BR CLEAR="ALL">
 <P></P>
-We can perform the <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img31.svg"
- ALT="$u$"></SPAN>-substitution:
 
 <P>
-<BR>
-<IMG STYLE=""
- SRC="img33.svg"
- ALT="\begin{align}
-u&amp;= \frac{y}{x}\notag \\
-\implies y &amp;= u\cdot x\notag \\
-\imp...
-...ame{d}u }{\operatorname{d} x}\cdot x+ \left( 1 \right)\cdot u \notag
-\end{align}">
-<BR>
-
-<P>
-Substituting in the terms:
-<BR>
-<IMG STYLE=""
- SRC="img34.svg"
- ALT="\begin{align}
-\frac{\operatorname{d}y }{\operatorname{d} x}&amp;= f\left( \frac{y}{...
-...\right)- u} \operatorname{d}u &amp;= \ln{ \left\vert x \right\vert }+ c
-\end{align}">
-<BR>
-
-<P>
-Now presume <!-- MATH
- $\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \right)- u}  \operatorname{d}u$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.39ex; vertical-align: -1.32ex; " SRC="img35.svg"
- ALT="$\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \right)- u} \operatorname{d}u $"></SPAN>
-
-<P>
-<BR>
-<A ID="redsepfin"></A><IMG STYLE=""
- SRC="img36.svg"
- ALT="\begin{align}
-G\left( u \right)&amp;= \ln{ \left\vert x \right\vert }+ c\notag \\
-...
-...G\left( \frac{y}{x} \right)+ \ln{ \left\vert x \right\vert }+ c &amp;= 0
-\end{align}">
-<BR>
-
-<P>
-Hence by by (<A HREF="#redsepfin">1.18</A>) there must atleast be an implicit solution to the equation assuming that the integral can be solved.
+.
 
 <P>
 

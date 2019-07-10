@@ -4,6 +4,9 @@
 
 
 \usepackage{diffpreamble}
+ %Refer to: https://www.overleaf.com/learn/latex/Management_in_a_large_project
+
+
 
 
 \usepackage{xcolor}
@@ -125,35 +128,73 @@
 \stepcounter{part}
 \stepcounter{chapter}
 \stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
 {\newpage\clearpage
-\lthtmlfigureA{align16}%
+\lthtmlfigureA{align19}%
 \begin{align}
-\frac{\operatorname{d} }{\operatorname{d} x}\left( u\cdot v \right)&= \frac{\operatorname{d} u}{\operatorname{d} v}\cdot v + u \cdot \frac{\operatorname{d} v}{\operatorname{d} x}
+	\frac{\operatorname{d} }{\operatorname{d} x}\left( u\cdot v \right)&= \frac{\operatorname{d} u}{\operatorname{d} v}\cdot v + u \cdot \frac{\operatorname{d} v}{\operatorname{d} x}
 \\
-\ \notag \\
-\frac{\operatorname{d} }{\operatorname{d} x}\left( f\left( x \right)\cdot g\left( x \right) \right)&= f'\left( x \right)\cdot g\left( x \right)+ f\left( x \right)\cdot g'\left( x \right)
+	\ \notag \\
+	\frac{\operatorname{d} }{\operatorname{d} x}\left( f\left( x \right)\cdot g\left( x \right) \right)&= f'\left( x \right)\cdot g\left( x \right)+ f\left( x \right)\cdot g'\left( x \right)
 \end{align}%
 \lthtmlfigureZ
 \lthtmlcheckvsize\clearpage}
 
-\stepcounter{subsubsection}
 {\newpage\clearpage
-\lthtmlfigureA{align30}%
+\lthtmlfigureA{align33}%
 \begin{align}
-  \frac{\operatorname{d}y }{\operatorname{d} x} &= \frac{\operatorname{d} y}{\operatorname{d} u} \cdot \frac{\operatorname{d} u}{\operatorname{d} x}\\
-\ \notag \\
-  \frac{\operatorname{d} }{\operatorname{d} x}\left[ f\left( g\left( x \right) \right) \right]&= f'\left( g\left( x \right) \right)\cdot g\left( x \right) \\
-  \ \notag  
+	\frac{\operatorname{d}y }{\operatorname{d} x} &= \frac{\operatorname{d} y}{\operatorname{d} u} \cdot \frac{\operatorname{d} u}{\operatorname{d} x}\\
+	\ \notag \\
+	\frac{\operatorname{d} }{\operatorname{d} x}\left[ f\left( g\left( x \right) \right) \right]&= f'\left( g\left( x \right) \right)\cdot g\left( x \right) \\
+	\ \notag  
 \end{align}%
 \lthtmlfigureZ
 \lthtmlcheckvsize\clearpage}
 
-\stepcounter{subsection}
-\stepcounter{subsubsection}
 {\newpage\clearpage
 \lthtmlfigureA{align44}%
+\begin{align}
+\int^{}_{} f\left( g\left( x \right) \right)\cdot g'\left( x \right)  \operatorname{d}x &= \int^{}_{} f\left( u \right)  \operatorname{d}u
+\\
+\int^{}_{} f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}  \operatorname{d}x&= \int^{}_{} f\left( u \right)  \operatorname{d}u
+\end{align}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline421}%
+$u= f\left( x \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline423}%
+$\frac{\operatorname{d} }{\operatorname{d} x}\left[ \sin{\left( x \right)} \right]= \cos{\left( x \right)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline425}%
+$\operatorname{d} v= g'\left( x \right) \operatorname{d} x$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline427}%
+$v$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{align70}%
+\begin{align}
+		\int^{}_{} u  \operatorname{d}v &= u\cdot v - \int^{}_{} v  \operatorname{d}u
+\end{align}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{align81}%
 \begin{align}
 \begin{matrix}
 u &= g(x) & \quad F(x): \enspace  F'(x) = f(x) = y \\
@@ -164,7 +205,7 @@ u &= g(x) & \quad F(x): \enspace  F'(x) = f(x) = y \\
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align50}%
+\lthtmlfigureA{align87}%
 \begin{align}
 \frac{\operatorname{d} }{\operatorname{d} x}\left[ F'\left( u \right) \right]&= F'\left( g\left( x \right) \right)\cdot g'\left( x \right)\notag \\
 &= f\left( g\left( x \right) \right)\cdot g'\left( x \right)\notag \\
@@ -175,7 +216,7 @@ u &= g(x) & \quad F(x): \enspace  F'(x) = f(x) = y \\
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align58}%
+\lthtmlfigureA{align95}%
 \begin{align}
 \int^{}_{} f\left( g\left( x \right) \right)\cdot g'\left( x \right)  \operatorname{d}x &= \int^{}_{} \frac{\operatorname{d} }{\operatorname{d} x}\left[ F\left( u \right)+ C \right]  \operatorname{d}x \notag \\
 &= F\left(u  \right) + C\notag \\
@@ -185,50 +226,27 @@ u &= g(x) & \quad F(x): \enspace  F'(x) = f(x) = y \\
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align71}%
-\begin{align}
-\int^{}_{} f\left( g\left( x \right) \right)\cdot g'\left( x \right)  \operatorname{d}x &= \int^{}_{} f\left( u \right)  \operatorname{d}u
-\\
-\int^{}_{} f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}  \operatorname{d}x&= \int^{}_{} f\left( u \right)  \operatorname{d}u
-\end{align}%
+\lthtmlfigureA{alignstar108}%
+\begin{align*}
+% latex2html id marker 108
+
+\int^{}_{} f\left( g\left( x \right) \right)\cdot g'\left( x \right)  \operatorname{d}x &= \int^{}_{} f\left( u \right)  \operatorname{d}u  \tag{\ref{ibysub1} revisited} \\
+\int^{}_{} f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}  \operatorname{d}x&= \int^{}_{} f\left( u \right)  \operatorname{d}u \tag{\ref{ibysubl} revisited}
+\end{align*}%
 \lthtmlfigureZ
 \lthtmlcheckvsize\clearpage}
 
 \stepcounter{subsubsection}
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline387}%
-$u= f\left( x \right)$%
-\lthtmlindisplaymathZ
-\lthtmlcheckvsize\clearpage}
+\lthtmlinlinemathA{tex2html_wrap_inline429}%
 
-{\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline389}%
-$\frac{\operatorname{d} }{\operatorname{d} x}\left[ \sin{\left( x \right)} \right]= \cos{\left( x \right)}$%
-\lthtmlindisplaymathZ
-\lthtmlcheckvsize\clearpage}
-
-{\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline391}%
-$\operatorname{d} v= g'\left( x \right) \operatorname{d} x$%
-\lthtmlindisplaymathZ
-\lthtmlcheckvsize\clearpage}
-
-{\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline393}%
-$v$%
-\lthtmlindisplaymathZ
-\lthtmlcheckvsize\clearpage}
-
-{\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline395}%
-
-% latex2html id marker 395
+% latex2html id marker 429
 $\left( \ref{prodruledefleib} \right)$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align101}%
+\lthtmlfigureA{align130}%
 \begin{align}
 \frac{\operatorname{d} }{\operatorname{d} x}\left[ f\left( x \right)\cdot g\left( x \right) \right]&= f'\left( x \right)\cdot g\left( x \right)+ f\left( x \right)\cdot g'\left( x \right)\notag \\
  \end{align}%
@@ -236,7 +254,7 @@ $\left( \ref{prodruledefleib} \right)$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align105}%
+\lthtmlfigureA{align134}%
 \begin{align}
 \begin{matrix}
   &u = f\left( x \right) &&v = g\left( x \right)\\
@@ -247,7 +265,7 @@ $\left( \ref{prodruledefleib} \right)$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align113}%
+\lthtmlfigureA{align142}%
 \begin{align}
   \int^{}_{} \left( \frac{\operatorname{d}u }{\operatorname{d} x}\cdot v + u\cdot \frac{\operatorname{d}v }{\operatorname{d} x} \right)  \operatorname{d}x &= u\cdot v\notag \\
   \ \notag \\
@@ -257,62 +275,64 @@ $\left( \ref{prodruledefleib} \right)$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline379}%
+\lthtmlinlinemathA{tex2html_wrap_inline413}%
 
-% latex2html id marker 379
+% latex2html id marker 413
 \(\left( \ref{ibysubl} \right)\)%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align133}%
+\lthtmlfigureA{align162}%
 \begin{align}
+% latex2html id marker 162
+
 \int^{}_{} v  \operatorname{d}u +  \int^{}_{} u  \operatorname{d}v &= u\cdot v  \notag \\
-\int^{}_{} u  \operatorname{d}v &= u\cdot v - \int^{}_{} v  \operatorname{d}u
+\int^{}_{} u  \operatorname{d}v &= u\cdot v - \int^{}_{} v  \operatorname{d}u \tag{\ref{ibypartl} revisited} 
 \end{align}%
 \lthtmlfigureZ
 \lthtmlcheckvsize\clearpage}
 
 \stepcounter{paragraph}
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline380}%
+\lthtmlinlinemathA{tex2html_wrap_inline414}%
 \(\int^{}_{} \left[\enspace  \right]  \operatorname{d}x \)%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline381}%
+\lthtmlinlinemathA{tex2html_wrap_inline415}%
 \(\left[ f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}\right] = \left[ f\left( g\left( x \right) \right)\cdot g'\left( x \right) \right]\)%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline382}%
+\lthtmlinlinemathA{tex2html_wrap_inline416}%
 \(\left[ f\left( x \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x} \right]= \left[ f\left( x \right)\cdot g'\left( x \right) \right]\)%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
-\stepcounter{subsection}
+\stepcounter{section}
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline397}%
+\lthtmlinlinemathA{tex2html_wrap_inline431}%
 $\operatorname{d} y$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline399}%
+\lthtmlinlinemathA{tex2html_wrap_inline433}%
 $\operatorname{d} x$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline401}%
+\lthtmlinlinemathA{tex2html_wrap_inline435}%
 $\frac{\operatorname{d}y }{\operatorname{d} x}$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline403}%
+\lthtmlinlinemathA{tex2html_wrap_inline437}%
 $\frac{\partial u }{\partial x}$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
@@ -321,7 +341,7 @@ $\frac{\partial u }{\partial x}$%
 \stepcounter{paragraph}
 \stepcounter{paragraph}
 {\newpage\clearpage
-\lthtmlfigureA{align180}%
+\lthtmlfigureA{align209}%
 \begin{align}
   \sum^{n}_{0}   \left[ a_0\left( x \right)\cdot \left( \frac{\operatorname{d}^ny }{\operatorname{d} x^n} \right) \right]
 \end{align}%
@@ -330,20 +350,20 @@ $\frac{\partial u }{\partial x}$%
 
 \stepcounter{paragraph}
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline405}%
+\lthtmlinlinemathA{tex2html_wrap_inline439}%
 $y$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline407}%
+\lthtmlinlinemathA{tex2html_wrap_inline441}%
 $x$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
-\stepcounter{subsection}
+\stepcounter{section}
 {\newpage\clearpage
-\lthtmlfigureA{tcolorbox193}%
+\lthtmlfigureA{tcolorbox222}%
 \begin{tcolorbox}
 \par
 A differential equation of the form:
@@ -361,7 +381,7 @@ Is a seperable Ordinary Differential Equation and has a solution:
 
 \stepcounter{paragraph}
 {\newpage\clearpage
-\lthtmlfigureA{align211}%
+\lthtmlfigureA{align240}%
 \begin{align}
 g\left( y \right)\cdot \frac{\operatorname{d}y }{\operatorname{d} x} &= f\left( x \right)\notag \\
  \implies  \int^{}_{} g\left( y \right)\frac{\operatorname{d}y }{\operatorname{d} x}  \operatorname{d}x &= \int^{}_{} f\left( x \right)  \operatorname{d}x\notag \\
@@ -370,30 +390,30 @@ g\left( y \right)\cdot \frac{\operatorname{d}y }{\operatorname{d} x} &= f\left( 
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline409}%
+\lthtmlinlinemathA{tex2html_wrap_inline443}%
 
-% latex2html id marker 409
+% latex2html id marker 443
 $\ref{ibysubl}$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align224}%
+\lthtmlfigureA{align253}%
 \begin{align}
 \int^{}_{} g\left( y \right)   \operatorname{d}y &= \int^{}_{} f\left( x \right)  \operatorname{d}x  
 \end{align}%
 \lthtmlfigureZ
 \lthtmlcheckvsize\clearpage}
 
-\stepcounter{subsection}
+\stepcounter{section}
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline411}%
+\lthtmlinlinemathA{tex2html_wrap_inline445}%
 $u$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmldisplayA{displaymath413}%
+\lthtmldisplayA{displaymath447}%
 \begin{displaymath}
 \frac{\operatorname{d}y }{\operatorname{d} x}= f\left( \frac{x}{y} \right)
 \end{displaymath}%
@@ -401,7 +421,7 @@ $u$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align237}%
+\lthtmlfigureA{align266}%
 \begin{align}
   u&= \frac{y}{x}\notag \\
    \implies   y &= u\cdot x\notag \\
@@ -411,7 +431,7 @@ $u$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align245}%
+\lthtmlfigureA{align274}%
 \begin{align}
   \frac{\operatorname{d}y }{\operatorname{d} x}&= f\left( \frac{y}{x} \right)\notag \\
   \frac{\operatorname{d}u }{\operatorname{d} x}\cdot x + u&= f\left( u \right)\notag \\
@@ -425,13 +445,13 @@ $u$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline417}%
+\lthtmlinlinemathA{tex2html_wrap_inline451}%
 $\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \right)- u}  \operatorname{d}u $%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align291}%
+\lthtmlfigureA{align320}%
 \begin{align}
   G\left( u \right)&= \ln{ \left| x \right| }+ c\notag \\
  G\left( \frac{y}{x} \right)&= \ln{ \left| x \right| }+ c\notag \\
@@ -443,7 +463,7 @@ $\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \ri
 \stepcounter{section}
 \stepcounter{subsection}
 {\newpage\clearpage
-\lthtmlfigureA{alignstar537}%
+\lthtmlfigureA{alignstar571}%
 \begin{align*}
 &\sum^{n}_{0}   \left[ a_n\left( x \right)\cdot f^{\left( n \right)} \left( x \right)\right] = g\left( x \right)\\
 &\qquad  \qquad {\footnotesize\text{If $g\left( x \right)= 0$\  it is said to be homogenous}}
@@ -452,7 +472,7 @@ $\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \ri
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align543}%
+\lthtmlfigureA{align577}%
 \begin{align}
   &a_1\left( x \right)\cdot \frac{\operatorname{d}y }{\operatorname{d} x}+ a_0\left( x \right)\cdot y= g\left( x \right)\notag \\
   & \qquad  \qquad    {\footnotesize\text{Where $a\left( x \right)$\  is a function } }
@@ -461,7 +481,7 @@ $\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \ri
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{tcolorbox550}%
+\lthtmlfigureA{tcolorbox584}%
 \begin{tcolorbox}
 \par
 \textbf{Linear First Order ODE:}
@@ -474,31 +494,31 @@ if $f\left( x \right)= 0$\  the equation is said to be homogenous
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1001}%
+\lthtmlinlinemathA{tex2html_wrap_inline1034}%
 $y_h$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1003}%
+\lthtmlinlinemathA{tex2html_wrap_inline1036}%
 $y_p$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1005}%
+\lthtmlinlinemathA{tex2html_wrap_inline1038}%
 $y_h: \quad \frac{\operatorname{d}y_h }{\operatorname{d} x}+ p\left( x \right)\cdot y_h= 0$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1007}%
+\lthtmlinlinemathA{tex2html_wrap_inline1040}%
 $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\cdot y_p= f\left( x \right)$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{tcolorbox566}%
+\lthtmlfigureA{tcolorbox600}%
 \begin{tcolorbox}
 \par
 \begin{itemize}
@@ -534,7 +554,7 @@ $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\c
 
 \stepcounter{subsection}
 {\newpage\clearpage
-\lthtmlfigureA{align596}%
+\lthtmlfigureA{align630}%
 \begin{align}
 \frac{\operatorname{d}y }{\operatorname{d} x} +  p\left( x \right)\cdot  y= f\left( x \right)
 \end{align}%
@@ -542,7 +562,7 @@ $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\c
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{alignat601}%
+\lthtmlfigureA{alignat635}%
 \begin{alignat}{2}
   \frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \right)\cdot  y&= 0 &\implies  y= y_h
 \\
@@ -552,7 +572,7 @@ $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\c
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align610}%
+\lthtmlfigureA{align644}%
 \begin{align}
 \frac{\operatorname{d} }{\operatorname{d} x}\left( y_h+ y_p \right)+ p\left( x \right)\cdot  \left( y_h+ y_p \right)&= f\left( x \right)\notag \\
 \frac{\operatorname{d}y_h }{\operatorname{d} x}+ \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\cdot  y_h + p\left( x \right)\cdot  y_p   &= f\left( x \right)\notag \\
@@ -563,7 +583,7 @@ $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\c
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align624}%
+\lthtmlfigureA{align658}%
 \begin{align}
 \frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \right) \cdot  y &= 0\notag \\
 \frac{1}{y}\cdot  \frac{\operatorname{d}y }{\operatorname{d} x}&= - p\left( x \right)\notag \\
@@ -574,13 +594,13 @@ $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\c
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1023}%
+\lthtmlinlinemathA{tex2html_wrap_inline1056}%
 $y>0$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align640}%
+\lthtmlfigureA{align674}%
 \begin{align}
 \implies y_h&= e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x }\cdot  c \notag
 \end{align}%
@@ -588,13 +608,13 @@ $y>0$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1025}%
+\lthtmlinlinemathA{tex2html_wrap_inline1058}%
 $y_1= e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x }$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align648}%
+\lthtmlfigureA{align682}%
 \begin{align}
   y_h&= y_1(x) \cdot  c
 \end{align}%
@@ -602,37 +622,37 @@ $y_1= e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x }$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1027}%
+\lthtmlinlinemathA{tex2html_wrap_inline1060}%
 $p\left( x \right)$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1029}%
+\lthtmlinlinemathA{tex2html_wrap_inline1062}%
 $c$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1031}%
+\lthtmlinlinemathA{tex2html_wrap_inline1064}%
 $f \left( x \right) $%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1033}%
+\lthtmlinlinemathA{tex2html_wrap_inline1066}%
 $c = u\left( x \right)$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1035}%
+\lthtmlinlinemathA{tex2html_wrap_inline1068}%
 $u\left( x \right)$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align651}%
+\lthtmlfigureA{align685}%
 \begin{align}
 y_p&= u\left( x \right)\times y_h\left( x \right)\notag \\
 &= e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x } \cdot  u\left( x \right)
@@ -641,7 +661,7 @@ y_p&= u\left( x \right)\times y_h\left( x \right)\notag \\
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align659}%
+\lthtmlfigureA{align693}%
 \begin{align}
   y_p &= e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x } \cdot  u\left( x \right)\notag \\
 \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\cdot  &= f\left( x \right)\notag \\
@@ -658,7 +678,7 @@ u&= \int^{}_{} f \left( x \right) /y_1\left( x \right)  \operatorname{d}x
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align703}%
+\lthtmlfigureA{align737}%
 \begin{align}
   u= \int^{}_{} f\left( x \right)\cdot  e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }  \operatorname{d}x 
 \end{align}%
@@ -666,13 +686,13 @@ u&= \int^{}_{} f \left( x \right) /y_1\left( x \right)  \operatorname{d}x
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1041}%
+\lthtmlinlinemathA{tex2html_wrap_inline1074}%
 $y_p = u \cdot  y_1$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align712}%
+\lthtmlfigureA{align746}%
 \begin{align}
   y_p&= \frac{1}{y_1}\cdot  \int^{}_{} f\left( x \right)\cdot  e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }  \notag \\
   y_p&= e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x } \int^{}_{} f\left( x \right)\cdot  e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }  
@@ -681,15 +701,15 @@ $y_p = u \cdot  y_1$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1043}%
+\lthtmlinlinemathA{tex2html_wrap_inline1076}%
 $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align732}%
+\lthtmlfigureA{align766}%
 \begin{align}
-% latex2html id marker 732
+% latex2html id marker 766
 
   e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }\cdot  y_p&= e^{\int^{}_{} p\left( x \right)  \operatorname{d}x } \cdot  e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x } \int^{}_{} f\left( x \right)\cdot  e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }  \notag \\
   e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }\cdot  y_p&=  \int^{}_{} f\left( x \right)\cdot  e^{\int^{}_{} p\left( x \right)  \operatorname{d}x } \notag \\
@@ -704,7 +724,7 @@ $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$%
 
 \stepcounter{subsection}
 {\newpage\clearpage
-\lthtmlfigureA{align795}%
+\lthtmlfigureA{align829}%
 \begin{align}
   \left( x+ 1 \right)\cdot  \frac{\operatorname{d}y }{\operatorname{d} x}+ y&= \ln{ \left( x \right) } \enspace ; \qquad y(1)= 10
 \end{align}%
@@ -712,7 +732,7 @@ $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align801}%
+\lthtmlfigureA{align835}%
 \begin{align}
   \frac{\operatorname{d}y }{\operatorname{d} x}+ \frac{y}{x+ 1} &=  \frac{\ln{ \left( x \right) }}{x+ 1} \enspace : \qquad \left( x\in \mathbb{R} \setminus \left\{-1,0\right\} \right)
 \end{align}%
@@ -720,7 +740,7 @@ $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align812}%
+\lthtmlfigureA{align846}%
 \begin{align}
   u&= e^{\int^{}_{} \frac{1}{x+ 1}  \operatorname{d}x }\notag \\
   &= e^{\int^{}_{} \ln{ \left| x+ 1 \right| }  \operatorname{d}x }\notag \\
@@ -730,13 +750,13 @@ $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1049}%
+\lthtmlinlinemathA{tex2html_wrap_inline1082}%
 $x > 0$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align825}%
+\lthtmlfigureA{align859}%
 \begin{align}
 \left( x+ 1 \right)\cdot  \frac{\operatorname{d}y }{\operatorname{d} x}+ y&= \ln{ \left( x \right) }\notag \\
  \implies  \frac{\operatorname{d} }{\operatorname{d} x}\left( \left( x+ 1 \right)\cdot  y \right)&= \ln{ \left( x \right) }\notag \\
@@ -745,7 +765,7 @@ $x > 0$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align834}%
+\lthtmlfigureA{align868}%
 \begin{align}
  \int^{}_{} \frac{\operatorname{d} }{\operatorname{d} x}\left[ \left( x+ 1 \right)\cdot  y \right]  \operatorname{d}x&= \int^{}_{} \ln{ \left( x \right) }  \operatorname{d}x  \notag
 \end{align}%
@@ -753,7 +773,7 @@ $x > 0$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align845}%
+\lthtmlfigureA{align879}%
 \begin{align}
 \left( x+ 1 \right)\cdot  y&= \int^{}_{} \ln{ \left( x \right) }  \operatorname{d}x \notag\\
 \end{align}%
@@ -761,7 +781,7 @@ $x > 0$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{alignstar851}%
+\lthtmlfigureA{alignstar885}%
 \begin{align*}
   \begin{matrix}
     u&= \ln{ \left( x \right) } && \operatorname{d} v&= \operatorname{d} x\\
@@ -773,7 +793,7 @@ $x > 0$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align868}%
+\lthtmlfigureA{align902}%
 \begin{align}
 \left( x+ 1 \right)\cdot  y &= \ln{ \left( x \right)\cdot  x }- \int^{}_{}   \operatorname{d}x\notag \\
 &= x\cdot  \left( \ln{ \left( x \right)- 1 } \right)+ c \notag \\
@@ -783,13 +803,13 @@ $x > 0$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline1051}%
+\lthtmlinlinemathA{tex2html_wrap_inline1084}%
 $y(1)= 10$%
 \lthtmlindisplaymathZ
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmlfigureA{align878}%
+\lthtmlfigureA{align912}%
 \begin{align}
   10&= \frac{1\left( \ln{ \left( 1 \right)- 1 }+ c \right)}{2}\notag \\
   20&= 1\left( 0- 1 \right)+ c\notag \\
@@ -799,12 +819,21 @@ $y(1)= 10$%
 \lthtmlcheckvsize\clearpage}
 
 {\newpage\clearpage
-\lthtmldisplayA{displaymath1053}%
+\lthtmldisplayA{displaymath1086}%
 \begin{displaymath}
 y= \frac{x\left( \ln{ \left( x \right)- 1 }+ 19 \right)}{x+ 1} \enspace ; \qquad \forall x \in \mathbb{C}\setminus\{-1,0\}
 \end{displaymath}%
 \lthtmldisplayZ
 \lthtmlcheckvsize\clearpage}
 
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
 
 \end{document}

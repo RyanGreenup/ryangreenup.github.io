@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.9)  10 JUL 2019 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.9)  10 JUL 2019 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,41 +725,45 @@ Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 \lthtmlCropMarkHeight=\dimen169
 \lthtmlCropMarkDepth=\dimen170
 ! Too many }'s.
-l.72 ...preview}\copy\lthtmlPageBox\end{preview}}}
+l.75 ...preview}\copy\lthtmlPageBox\end{preview}}}
                                                   %
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 (./images.aux (/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/01_
 SepTex.aux)
-(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/02_2.3_linear.aux
-))
+(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/W02-Ch2.3-FOLin.a
+ux)
+(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/W02-Ch2.4-FOExact
+.aux)
+(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/W0-Ch4.1-GenLin.a
+ux))
 \openout1 = `images.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 106.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 103.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 106.
 (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -833,7 +837,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 103.
+LaTeX Info: Redefining \microtypecontext on input line 106.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -847,7 +851,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 103.
+Package hyperref Info: Link coloring OFF on input line 106.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -855,9 +859,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 (./images.out) (./images.out)
 \@outlinefile=\write7
 \openout7 = `images.out'.
@@ -877,22 +881,19 @@ LaTeX Warning: Label `prodruledefleib' multiply defined.
 LaTeX Warning: Label `header-n2898' multiply defined.
 
 
-LaTeX Warning: Label `header-n2901' multiply defined.
-
-
-LaTeX Warning: Label `header-n2902' multiply defined.
-
-
 LaTeX Warning: Label `ibysub1' multiply defined.
 
 
 LaTeX Warning: Label `ibysubl' multiply defined.
 
 
-LaTeX Warning: Label `header-n2914' multiply defined.
-
-
 LaTeX Warning: Label `ibypartl' multiply defined.
+
+
+LaTeX Warning: Label `header-n2902' multiply defined.
+
+
+LaTeX Warning: Label `header-n2914' multiply defined.
 
 
 LaTeX Warning: Label `header-n2936' multiply defined.
@@ -910,7 +911,8 @@ LaTeX Warning: Label `sepdiffsol' multiply defined.
 LaTeX Warning: Label `redsepfin' multiply defined.
 
 )
-(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/02_2.3_linear.aux
+(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/W02-Ch2.3-FOLin.a
+ux
 
 LaTeX Warning: Label `linform' multiply defined.
 
@@ -941,7 +943,18 @@ LaTeX Warning: Label `stdformex' multiply defined.
 
 LaTeX Warning: Label `intfactex' multiply defined.
 
-)) (/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/01_SepTex.aux
+)
+(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/W02-Ch2.4-FOExact
+.aux)
+(/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/W0-Ch4.1-GenLin.a
+ux)
+
+LaTeX Warning: Label `difftb' multiply defined.
+
+
+LaTeX Warning: Label `bigredtb' multiply defined.
+
+) (/home/ryan/Dropbox/Studies/MathModelling/Notes/latex_working/01_SepTex.aux
 
 LaTeX Warning: Label `header-n2896' multiply defined.
 
@@ -955,22 +968,19 @@ LaTeX Warning: Label `prodruledefleib' multiply defined.
 LaTeX Warning: Label `header-n2898' multiply defined.
 
 
-LaTeX Warning: Label `header-n2901' multiply defined.
-
-
-LaTeX Warning: Label `header-n2902' multiply defined.
-
-
 LaTeX Warning: Label `ibysub1' multiply defined.
 
 
 LaTeX Warning: Label `ibysubl' multiply defined.
 
 
-LaTeX Warning: Label `header-n2914' multiply defined.
-
-
 LaTeX Warning: Label `ibypartl' multiply defined.
+
+
+LaTeX Warning: Label `header-n2902' multiply defined.
+
+
+LaTeX Warning: Label `header-n2914' multiply defined.
 
 
 LaTeX Warning: Label `header-n2936' multiply defined.
@@ -1013,451 +1023,106 @@ latex2htmlLength oddsidemargin=0.0pt
 
 latex2htmlLength evensidemargin=0.0pt
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 138.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 139.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 138.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 139.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 138
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 139
 .
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 138
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 139
 .
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 138.
+(Font)              <10> on input line 139.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 138.
+(Font)              <7> on input line 139.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 138.
-LaTeX Font Info:    Try loading font information for U+msa on input line 138.
+(Font)              <5> on input line 139.
+LaTeX Font Info:    Try loading font information for U+msa on input line 139.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 138.
+LaTeX Font Info:    Try loading font information for U+msb on input line 139.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
-:align16:lthtmlCropMarkHeight:=68.02667pt
+:align19:lthtmlCropMarkHeight:=68.02667pt
 
-:align16:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+:align19:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 Preview: Tightpage -32891 -32891 32891 32891
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-:align30:lthtmlCropMarkHeight:=84.02667pt
+:align33:lthtmlCropMarkHeight:=84.02667pt
 
-:align30:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+:align33:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 [2]
 
-:align44:lthtmlCropMarkHeight:=31.39845pt
+:align44:lthtmlCropMarkHeight:=56.48749pt
 
 :align44:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 [3]
 
-:align50:lthtmlCropMarkHeight:=108.54001pt
+:tex2html_wrap_inline421:lthtmlCropMarkHeight:=13.5pt
 
-:align50:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+:tex2html_wrap_inline421:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
 [4]
 
-:align58:lthtmlCropMarkHeight:=72.48749pt
+:tex2html_wrap_inline423:lthtmlCropMarkHeight:=14.75948pt
 
-:align58:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+:tex2html_wrap_inline423:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
 [5]
 
-:align71:lthtmlCropMarkHeight:=56.48749pt
+:tex2html_wrap_inline425:lthtmlCropMarkHeight:=13.51782pt
 
-:align71:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+:tex2html_wrap_inline425:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
 [6]
 
-:tex2html_wrap_inline387:lthtmlCropMarkHeight:=13.5pt
+:tex2html_wrap_inline427:lthtmlCropMarkHeight:=10.30554pt
 
-:tex2html_wrap_inline387:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+:tex2html_wrap_inline427:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 [7]
 
-:tex2html_wrap_inline389:lthtmlCropMarkHeight:=14.75948pt
+:align70:lthtmlCropMarkHeight:=29.72244pt
 
-:tex2html_wrap_inline389:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
+:align70:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 [8]
 
-:tex2html_wrap_inline391:lthtmlCropMarkHeight:=13.51782pt
+:align81:lthtmlCropMarkHeight:=31.39845pt
 
-:tex2html_wrap_inline391:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+:align81:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 [9]
 
-:tex2html_wrap_inline393:lthtmlCropMarkHeight:=10.30554pt
+:align87:lthtmlCropMarkHeight:=108.54001pt
 
-:tex2html_wrap_inline393:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+:align87:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 [10]
 
-:tex2html_wrap_inline395:lthtmlCropMarkHeight:=13.5pt
+:align95:lthtmlCropMarkHeight:=72.48749pt
 
-:tex2html_wrap_inline395:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+:align95:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
 [11]
-
-:align101:lthtmlCropMarkHeight:=43.51334pt
-
-:align101:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[12]
-
-:align105:lthtmlCropMarkHeight:=31.35951pt
-
-:align105:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[13]
-
-:align113:lthtmlCropMarkHeight:=75.00046pt
-
-:align113:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[14]
-
-:tex2html_wrap_inline379:lthtmlCropMarkHeight:=13.5pt
-
-:tex2html_wrap_inline379:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
-[15]
-
-:align133:lthtmlCropMarkHeight:=56.44489pt
-
-:align133:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[16]
-
-:tex2html_wrap_inline380:lthtmlCropMarkHeight:=14.0556pt
-
-:tex2html_wrap_inline380:lthtmlCropMarkDepth:=3.5556pt:1ex:=4.3055pt
-[17]
-
-:tex2html_wrap_inline381:lthtmlCropMarkHeight:=14.75948pt
-
-:tex2html_wrap_inline381:lthtmlCropMarkDepth:=3.50006pt:1ex:=4.3055pt
-[18]
-
-:tex2html_wrap_inline382:lthtmlCropMarkHeight:=14.75948pt
-
-:tex2html_wrap_inline382:lthtmlCropMarkDepth:=3.50006pt:1ex:=4.3055pt
-[19]
-
-:tex2html_wrap_inline397:lthtmlCropMarkHeight:=12.88875pt
-
-:tex2html_wrap_inline397:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
-[20]
-
-:tex2html_wrap_inline399:lthtmlCropMarkHeight:=12.88875pt
-
-:tex2html_wrap_inline399:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[21]
-
-:tex2html_wrap_inline401:lthtmlCropMarkHeight:=15.28323pt
-
-:tex2html_wrap_inline401:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
-[22]
-
-:tex2html_wrap_inline403:lthtmlCropMarkHeight:=14.79842pt
-
-:tex2html_wrap_inline403:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
-[23]
-
-:align180:lthtmlCropMarkHeight:=36.19165pt
-
-:align180:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[24]
-
-:tex2html_wrap_inline405:lthtmlCropMarkHeight:=10.30554pt
-
-:tex2html_wrap_inline405:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
-[25]
-
-:tex2html_wrap_inline407:lthtmlCropMarkHeight:=10.30554pt
-
-:tex2html_wrap_inline407:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[26]
-
-:tcolorbox193:lthtmlCropMarkHeight:=99.87454pt
-
-:tcolorbox193:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[27]
-
-:align211:lthtmlCropMarkHeight:=70.27838pt
-
-:align211:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[28]
-
-:tex2html_wrap_inline409:lthtmlCropMarkHeight:=12.29724pt
-
-:tex2html_wrap_inline409:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[29]
-
-:align224:lthtmlCropMarkHeight:=29.72244pt
-
-:align224:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[30]
-
-:tex2html_wrap_inline411:lthtmlCropMarkHeight:=10.30554pt
-
-:tex2html_wrap_inline411:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[31]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.400 \lthtmldisplayZ
-                     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.400 \lthtmldisplayZ
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.400 \lthtmldisplayZ
-                     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.400 \lthtmldisplayZ
-                     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.400 \lthtmldisplayZ
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.400 \lthtmldisplayZ
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-:displaymath413:lthtmlCropMarkHeight:=12.88875pt
-
-:displaymath413:lthtmlCropMarkDepth:=8.23169pt:1ex:=4.3055pt
-[32]
-
-:align237:lthtmlCropMarkHeight:=65.37285pt
-
-:align237:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[33]
-
-:align245:lthtmlCropMarkHeight:=184.55075pt
-
-:align245:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[34]
-
-:tex2html_wrap_inline417:lthtmlCropMarkHeight:=14.44832pt
-
-:tex2html_wrap_inline417:lthtmlCropMarkDepth:=5.19841pt:1ex:=4.3055pt
-[35]
-
-:align291:lthtmlCropMarkHeight:=66.31921pt
-
-:align291:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[36]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 45
-1.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 451.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 451.
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 45
-1.
-
-
-:alignstar537:lthtmlCropMarkHeight:=49.69164pt
-
-:alignstar537:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[37]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 46
-0.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 46
-0.
-
-
-:align543:lthtmlCropMarkHeight:=41.86336pt
-
-:align543:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[38]
-
-:tcolorbox550:lthtmlCropMarkHeight:=65.42065pt
-
-:tcolorbox550:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[39]
-
-:tex2html_wrap_inline1001:lthtmlCropMarkHeight:=10.30554pt
-
-:tex2html_wrap_inline1001:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
-[40]
-
-:tex2html_wrap_inline1003:lthtmlCropMarkHeight:=10.30554pt
-
-:tex2html_wrap_inline1003:lthtmlCropMarkDepth:=2.86108pt:1ex:=4.3055pt
-[41]
-
-:tex2html_wrap_inline1005:lthtmlCropMarkHeight:=15.28323pt
-
-:tex2html_wrap_inline1005:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
-[42]
-
-:tex2html_wrap_inline1007:lthtmlCropMarkHeight:=15.89435pt
-
-:tex2html_wrap_inline1007:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
-[43]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 532.
-
-(/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-:tcolorbox566:lthtmlCropMarkHeight:=165.5622pt
-
-:tcolorbox566:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[44]
-
-:align596:lthtmlCropMarkHeight:=27.51334pt
-
-:align596:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[45]
-
-:alignat601:lthtmlCropMarkHeight:=52.02667pt
-
-:alignat601:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[46]
-
-:align610:lthtmlCropMarkHeight:=92.54001pt
-
-:align610:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[47]
-
-:align624:lthtmlCropMarkHeight:=102.25897pt
-
-:align624:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[48]
-
-:tex2html_wrap_inline1023:lthtmlCropMarkHeight:=12.29724pt
-
-:tex2html_wrap_inline1023:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
-[49]
-
-:align640:lthtmlCropMarkHeight:=23.28764pt
-
-:align640:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[50]
-
-:tex2html_wrap_inline1025:lthtmlCropMarkHeight:=18.6876pt
-
-:tex2html_wrap_inline1025:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
-[51]
-
-:align648:lthtmlCropMarkHeight:=21.60004pt
-
-:align648:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[52]
-
-:tex2html_wrap_inline1027:lthtmlCropMarkHeight:=13.5pt
-
-:tex2html_wrap_inline1027:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
-[53]
-
-:tex2html_wrap_inline1029:lthtmlCropMarkHeight:=10.30554pt
-
-:tex2html_wrap_inline1029:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[54]
-
-:tex2html_wrap_inline1031:lthtmlCropMarkHeight:=13.5pt
-
-:tex2html_wrap_inline1031:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
-[55]
-
-:tex2html_wrap_inline1033:lthtmlCropMarkHeight:=13.5pt
-
-:tex2html_wrap_inline1033:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
-[56]
-
-:tex2html_wrap_inline1035:lthtmlCropMarkHeight:=13.5pt
-
-:tex2html_wrap_inline1035:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
-[57]
-
-:align651:lthtmlCropMarkHeight:=41.88768pt
-
-:align651:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[58]
-
-:align659:lthtmlCropMarkHeight:=254.06448pt
-
-:align659:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[59]
-
-:align703:lthtmlCropMarkHeight:=29.72244pt
-
-:align703:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[60]
-
-:tex2html_wrap_inline1041:lthtmlCropMarkHeight:=10.44444pt
-
-:tex2html_wrap_inline1041:lthtmlCropMarkDepth:=2.86108pt:1ex:=4.3055pt
-[61]
-
-:align712:lthtmlCropMarkHeight:=56.44489pt
-
-:align712:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[62]
-
-:tex2html_wrap_inline1043:lthtmlCropMarkHeight:=18.6876pt
-
-:tex2html_wrap_inline1043:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[63]
 Runaway argument?
  
-! Paragraph ended before \align was complete.
+! Paragraph ended before \align* was complete.
 <to be read again> 
                    \par 
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1466,7 +1131,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1474,7 +1139,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1485,7 +1150,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -1493,75 +1158,15 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-<argument> ...ght ) \operatorname {d}x }\cdot y_p&
-                                                  = e^{\int ^{}_{} p\left ( ...
-l.702 \lthtmlfigureZ
-                    
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> ...ght ) \operatorname {d}x }\cdot y_p&
-                                                  = \int ^{}_{} f\left ( x \...
-l.702 \lthtmlfigureZ
-                    
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> ...ratorname {d}x }\cdot y_p \right ) &
-                                                  = \frac {\operatorname {d}...
-l.702 \lthtmlfigureZ
-                    
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.702 \lthtmlfigureZ
-                    
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> ...ght ) \operatorname {d}x } \cdot y &
-                                                  = e^{\int ^{}_{} p\left ( ...
-l.702 \lthtmlfigureZ
-                    
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> ...d} x} + p\left ( x \right )\cdot y &
-                                                  = f \left ( x \right ) \ta...
-l.702 \lthtmlfigureZ
+<argument> ...ft ( x \right ) \operatorname {d}x &
+                                                  = \int ^{}_{} f\left ( u \...
+l.236 \lthtmlfigureZ
                     
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1577,7 +1182,32 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
+                    
+\tag cannot be used at this point. If you don't understand why
+you should consult the documentation.
+But don't worry: just continue, and I'll forget what happened. 
+
+! Misplaced alignment tab character &.
+<argument> ...ratorname {d} x} \operatorname {d}x&
+                                                  = \int ^{}_{} f\left ( u \...
+l.236 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! Package amsmath Error: \tag not allowed here.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 \lthtmlfigureZ
                     
 \tag cannot be used at this point. If you don't understand why
 you should consult the documentation.
@@ -1586,7 +1216,7 @@ But don't worry: just continue, and I'll forget what happened.
 ! Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1597,7 +1227,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1605,7 +1235,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1613,7 +1243,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1624,7 +1254,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
                                                   
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1635,20 +1265,20 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (153.21904pt too wide) detected at line 702
+Overfull \hbox (198.57906pt too wide) detected at line 236
 []
  []
 
 ! Extra }, or forgotten \endgroup.
 \endalign ->\math@cr \black@ \totwidth@ \egroup 
                                                 \ifingather@ \restorealignst...
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1659,7 +1289,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1670,75 +1300,300 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.702 \lthtmlfigureZ
+l.236 \lthtmlfigureZ
                     
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-:align732:lthtmlCropMarkHeight:=169.0935pt
+:alignstar108:lthtmlCropMarkHeight:=91.31508pt
 
-:align732:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[64]
+:alignstar108:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[12]
 
-:align795:lthtmlCropMarkHeight:=27.51334pt
+:tex2html_wrap_inline429:lthtmlCropMarkHeight:=13.5pt
 
-:align795:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[65]
+:tex2html_wrap_inline429:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+[13]
 
-:align801:lthtmlCropMarkHeight:=28.95459pt
+:align130:lthtmlCropMarkHeight:=43.51334pt
 
-:align801:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[66]
+:align130:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[14]
 
-:align812:lthtmlCropMarkHeight:=58.57529pt
+:align134:lthtmlCropMarkHeight:=31.35951pt
 
-:align812:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[67]
+:align134:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[15]
 
-:tex2html_wrap_inline1049:lthtmlCropMarkHeight:=12.29724pt
+:align142:lthtmlCropMarkHeight:=75.00046pt
 
-:tex2html_wrap_inline1049:lthtmlCropMarkDepth:=0.39098pt:1ex:=4.3055pt
-[68]
+:align142:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[16]
 
-:align825:lthtmlCropMarkHeight:=68.02667pt
+:tex2html_wrap_inline413:lthtmlCropMarkHeight:=13.5pt
 
-:align825:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[69]
+:tex2html_wrap_inline413:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+[17]
+Runaway argument?
+ 
+! Paragraph ended before \align was complete.
+<to be read again> 
+                   \par 
+l.293 \lthtmlfigureZ
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-:align834:lthtmlCropMarkHeight:=29.76505pt
-
-:align834:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[70]
-
-:align845:lthtmlCropMarkHeight:=45.72244pt
-
-:align845:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[71]
-
-:alignstar851:lthtmlCropMarkHeight:=57.7708pt
-
-:alignstar851:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[72]
-
-:align868:lthtmlCropMarkHeight:=71.67703pt
-
-:align868:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[73]
-
-:tex2html_wrap_inline1051:lthtmlCropMarkHeight:=13.5pt
-
-:tex2html_wrap_inline1051:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
-[74]
-
-:align878:lthtmlCropMarkHeight:=59.12459pt
-
-:align878:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
-[75]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.806 \lthtmldisplayZ
+l.293 \lthtmlfigureZ
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.293 \lthtmlfigureZ
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.293 \lthtmlfigureZ
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.293 \lthtmlfigureZ
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+<argument> ...+ \int ^{}_{} u \operatorname {d}v &
+                                                  = u\cdot v \notag \\ \int ...
+l.293 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...\ \int ^{}_{} u \operatorname {d}v &
+                                                  = u\cdot v - \int ^{}_{} v...
+l.293 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! Package amsmath Error: \tag not allowed here.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.293 \lthtmlfigureZ
+                    
+\tag cannot be used at this point. If you don't understand why
+you should consult the documentation.
+But don't worry: just continue, and I'll forget what happened. 
+
+! Misplaced \cr.
+\math@cr@@@ ->\cr 
+                  
+l.293 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
+                                                  {\vskip #1\relax }
+l.293 \lthtmlfigureZ
+                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.293 \lthtmlfigureZ
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.293 \lthtmlfigureZ
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
+                                                  
+l.293 \lthtmlfigureZ
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced \noalign.
+\black@ #1->\noalign 
+                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
+l.293 \lthtmlfigureZ
+                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (182.75325pt too wide) detected at line 293
+[]
+ []
+
+! Extra }, or forgotten \endgroup.
+\endalign ->\math@cr \black@ \totwidth@ \egroup 
+                                                \ifingather@ \restorealignst...
+l.293 \lthtmlfigureZ
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.293 \lthtmlfigureZ
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.293 \lthtmlfigureZ
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+:align162:lthtmlCropMarkHeight:=90.0pt
+
+:align162:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[18]
+
+:tex2html_wrap_inline414:lthtmlCropMarkHeight:=14.0556pt
+
+:tex2html_wrap_inline414:lthtmlCropMarkDepth:=3.5556pt:1ex:=4.3055pt
+[19]
+
+:tex2html_wrap_inline415:lthtmlCropMarkHeight:=14.75948pt
+
+:tex2html_wrap_inline415:lthtmlCropMarkDepth:=3.50006pt:1ex:=4.3055pt
+[20]
+
+:tex2html_wrap_inline416:lthtmlCropMarkHeight:=14.75948pt
+
+:tex2html_wrap_inline416:lthtmlCropMarkDepth:=3.50006pt:1ex:=4.3055pt
+[21]
+
+:tex2html_wrap_inline431:lthtmlCropMarkHeight:=12.88875pt
+
+:tex2html_wrap_inline431:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
+[22]
+
+:tex2html_wrap_inline433:lthtmlCropMarkHeight:=12.88875pt
+
+:tex2html_wrap_inline433:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[23]
+
+:tex2html_wrap_inline435:lthtmlCropMarkHeight:=15.28323pt
+
+:tex2html_wrap_inline435:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
+[24]
+
+:tex2html_wrap_inline437:lthtmlCropMarkHeight:=14.79842pt
+
+:tex2html_wrap_inline437:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
+[25]
+
+:align209:lthtmlCropMarkHeight:=36.19165pt
+
+:align209:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[26]
+
+:tex2html_wrap_inline439:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline439:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
+[27]
+
+:tex2html_wrap_inline441:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline441:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[28]
+
+:tcolorbox222:lthtmlCropMarkHeight:=99.87454pt
+
+:tcolorbox222:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[29]
+
+:align240:lthtmlCropMarkHeight:=70.27838pt
+
+:align240:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[30]
+
+:tex2html_wrap_inline443:lthtmlCropMarkHeight:=12.29724pt
+
+:tex2html_wrap_inline443:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[31]
+
+:align253:lthtmlCropMarkHeight:=29.72244pt
+
+:align253:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[32]
+
+:tex2html_wrap_inline445:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline445:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[33]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.420 \lthtmldisplayZ
                      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1746,7 +1601,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.806 \lthtmldisplayZ
+l.420 \lthtmldisplayZ
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1757,7 +1612,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.806 \lthtmldisplayZ
+l.420 \lthtmldisplayZ
                      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1765,7 +1620,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \frac  #1#2->{\begingroup #1\endgroup \@@over #2}
                                                  
-l.806 \lthtmldisplayZ
+l.420 \lthtmldisplayZ
                      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1776,7 +1631,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.806 \lthtmldisplayZ
+l.420 \lthtmldisplayZ
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1787,7 +1642,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.806 \lthtmldisplayZ
+l.420 \lthtmldisplayZ
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1796,15 +1651,543 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-:displaymath1053:lthtmlCropMarkHeight:=13.5pt
+:displaymath447:lthtmlCropMarkHeight:=12.88875pt
 
-:displaymath1053:lthtmlCropMarkDepth:=5.19841pt:1ex:=4.3055pt
+:displaymath447:lthtmlCropMarkDepth:=8.23169pt:1ex:=4.3055pt
+[34]
+
+:align266:lthtmlCropMarkHeight:=65.37285pt
+
+:align266:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[35]
+
+:align274:lthtmlCropMarkHeight:=184.55075pt
+
+:align274:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[36]
+
+:tex2html_wrap_inline451:lthtmlCropMarkHeight:=14.44832pt
+
+:tex2html_wrap_inline451:lthtmlCropMarkDepth:=5.19841pt:1ex:=4.3055pt
+[37]
+
+:align320:lthtmlCropMarkHeight:=66.31921pt
+
+:align320:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[38]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 47
+1.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 471.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 471.
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 47
+1.
+
+
+:alignstar571:lthtmlCropMarkHeight:=49.69164pt
+
+:alignstar571:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[39]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 48
+0.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 48
+0.
+
+
+:align577:lthtmlCropMarkHeight:=41.86336pt
+
+:align577:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[40]
+
+:tcolorbox584:lthtmlCropMarkHeight:=65.42065pt
+
+:tcolorbox584:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[41]
+
+:tex2html_wrap_inline1034:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline1034:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
+[42]
+
+:tex2html_wrap_inline1036:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline1036:lthtmlCropMarkDepth:=2.86108pt:1ex:=4.3055pt
+[43]
+
+:tex2html_wrap_inline1038:lthtmlCropMarkHeight:=15.28323pt
+
+:tex2html_wrap_inline1038:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
+[44]
+
+:tex2html_wrap_inline1040:lthtmlCropMarkHeight:=15.89435pt
+
+:tex2html_wrap_inline1040:lthtmlCropMarkDepth:=3.44841pt:1ex:=4.3055pt
+[45]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 552.
+
+(/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+:tcolorbox600:lthtmlCropMarkHeight:=165.5622pt
+
+:tcolorbox600:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[46]
+
+:align630:lthtmlCropMarkHeight:=27.51334pt
+
+:align630:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[47]
+
+:alignat635:lthtmlCropMarkHeight:=52.02667pt
+
+:alignat635:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[48]
+
+:align644:lthtmlCropMarkHeight:=92.54001pt
+
+:align644:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[49]
+
+:align658:lthtmlCropMarkHeight:=102.25897pt
+
+:align658:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[50]
+
+:tex2html_wrap_inline1056:lthtmlCropMarkHeight:=12.29724pt
+
+:tex2html_wrap_inline1056:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
+[51]
+
+:align674:lthtmlCropMarkHeight:=23.28764pt
+
+:align674:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[52]
+
+:tex2html_wrap_inline1058:lthtmlCropMarkHeight:=18.6876pt
+
+:tex2html_wrap_inline1058:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.3055pt
+[53]
+
+:align682:lthtmlCropMarkHeight:=21.60004pt
+
+:align682:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[54]
+
+:tex2html_wrap_inline1060:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline1060:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+[55]
+
+:tex2html_wrap_inline1062:lthtmlCropMarkHeight:=10.30554pt
+
+:tex2html_wrap_inline1062:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[56]
+
+:tex2html_wrap_inline1064:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline1064:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+[57]
+
+:tex2html_wrap_inline1066:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline1066:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+[58]
+
+:tex2html_wrap_inline1068:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline1068:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
+[59]
+
+:align685:lthtmlCropMarkHeight:=41.88768pt
+
+:align685:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[60]
+
+:align693:lthtmlCropMarkHeight:=254.06448pt
+
+:align693:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[61]
+
+:align737:lthtmlCropMarkHeight:=29.72244pt
+
+:align737:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[62]
+
+:tex2html_wrap_inline1074:lthtmlCropMarkHeight:=10.44444pt
+
+:tex2html_wrap_inline1074:lthtmlCropMarkDepth:=2.86108pt:1ex:=4.3055pt
+[63]
+
+:align746:lthtmlCropMarkHeight:=56.44489pt
+
+:align746:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[64]
+
+:tex2html_wrap_inline1076:lthtmlCropMarkHeight:=18.6876pt
+
+:tex2html_wrap_inline1076:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[65]
+Runaway argument?
+ 
+! Paragraph ended before \align was complete.
+<to be read again> 
+                   \par 
+l.722 \lthtmlfigureZ
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.722 \lthtmlfigureZ
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.722 \lthtmlfigureZ
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.722 \lthtmlfigureZ
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.722 \lthtmlfigureZ
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+<argument> ...ght ) \operatorname {d}x }\cdot y_p&
+                                                  = e^{\int ^{}_{} p\left ( ...
+l.722 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...ght ) \operatorname {d}x }\cdot y_p&
+                                                  = \int ^{}_{} f\left ( x \...
+l.722 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...ratorname {d}x }\cdot y_p \right ) &
+                                                  = \frac {\operatorname {d}...
+l.722 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.722 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...ght ) \operatorname {d}x } \cdot y &
+                                                  = e^{\int ^{}_{} p\left ( ...
+l.722 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...d} x} + p\left ( x \right )\cdot y &
+                                                  = f \left ( x \right ) \ta...
+l.722 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! Package amsmath Error: \tag not allowed here.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.722 \lthtmlfigureZ
+                    
+\tag cannot be used at this point. If you don't understand why
+you should consult the documentation.
+But don't worry: just continue, and I'll forget what happened. 
+
+! Misplaced \cr.
+\math@cr@@@ ->\cr 
+                  
+l.722 \lthtmlfigureZ
+                    
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
+                                                  {\vskip #1\relax }
+l.722 \lthtmlfigureZ
+                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.722 \lthtmlfigureZ
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.722 \lthtmlfigureZ
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
+                                                  
+l.722 \lthtmlfigureZ
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced \noalign.
+\black@ #1->\noalign 
+                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
+l.722 \lthtmlfigureZ
+                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (153.21904pt too wide) detected at line 722
+[]
+ []
+
+! Extra }, or forgotten \endgroup.
+\endalign ->\math@cr \black@ \totwidth@ \egroup 
+                                                \ifingather@ \restorealignst...
+l.722 \lthtmlfigureZ
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.722 \lthtmlfigureZ
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.722 \lthtmlfigureZ
+                    
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+:align766:lthtmlCropMarkHeight:=169.0935pt
+
+:align766:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[66]
+
+:align829:lthtmlCropMarkHeight:=27.51334pt
+
+:align829:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[67]
+
+:align835:lthtmlCropMarkHeight:=28.95459pt
+
+:align835:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[68]
+
+:align846:lthtmlCropMarkHeight:=58.57529pt
+
+:align846:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[69]
+
+:tex2html_wrap_inline1082:lthtmlCropMarkHeight:=12.29724pt
+
+:tex2html_wrap_inline1082:lthtmlCropMarkDepth:=0.39098pt:1ex:=4.3055pt
+[70]
+
+:align859:lthtmlCropMarkHeight:=68.02667pt
+
+:align859:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[71]
+
+:align868:lthtmlCropMarkHeight:=29.76505pt
+
+:align868:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[72]
+
+:align879:lthtmlCropMarkHeight:=45.72244pt
+
+:align879:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[73]
+
+:alignstar885:lthtmlCropMarkHeight:=57.7708pt
+
+:alignstar885:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[74]
+
+:align902:lthtmlCropMarkHeight:=71.67703pt
+
+:align902:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[75]
+
+:tex2html_wrap_inline1084:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline1084:lthtmlCropMarkDepth:=2.5pt:1ex:=4.3055pt
 [76]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 810.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 810.
+
+:align912:lthtmlCropMarkHeight:=59.12459pt
+
+:align912:lthtmlCropMarkDepth:=0.0pt:1ex:=4.3055pt
+[77]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.826 \lthtmldisplayZ
+                     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.826 \lthtmldisplayZ
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.826 \lthtmldisplayZ
+                     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.826 \lthtmldisplayZ
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.826 \lthtmldisplayZ
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.826 \lthtmldisplayZ
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+:displaymath1086:lthtmlCropMarkHeight:=13.5pt
+
+:displaymath1086:lthtmlCropMarkDepth:=5.19841pt:1ex:=4.3055pt
+[78]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 839.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 839.
 (./images.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 810.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 810.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 839.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 839.
 Package rerunfilecheck Info: File `images.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1812,14 +2195,14 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22490 strings out of 492623
- 392639 string characters out of 6135670
- 489545 words of memory out of 5000000
- 25940 multiletter control sequences out of 15000+600000
+ 22503 strings out of 492623
+ 393373 string characters out of 6135670
+ 490531 words of memory out of 5000000
+ 25943 multiletter control sequences out of 15000+600000
  40654 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,15n,75p,840b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.1.0.8} has been referenced but does not 
+pdfTeX warning (dest): name{equation.1.0.6} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{equation.1.0.2} has been referenced but does not ex
@@ -1840,10 +2223,10 @@ fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr
 -dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public
 /lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on images.pdf (76 pages, 189801 bytes).
+Output written on images.pdf (78 pages, 190529 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
+ 385 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
  38 named destinations out of 1000 (max. 500000)
  8205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

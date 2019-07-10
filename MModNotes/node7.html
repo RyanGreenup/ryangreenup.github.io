@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Chain Rule</TITLE>
-<META NAME="description" CONTENT="Chain Rule">
+<TITLE>Application</TITLE>
+<META NAME="description" CONTENT="Application">
 <META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -26,42 +26,83 @@
  HREF="node8.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node5.html">
+ HREF="node6.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node6.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html94"
+<A ID="tex2html102"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node8.html">Integration Rules</A>
+ HREF="node8.html">Introduction to Ordinary Differential</A>
 <B> Up:</B> <A
- HREF="node5.html">Differentiation Rules</A>
+ HREF="node6.html">Integration by Parts</A>
 <B> Previous:</B> <A
- HREF="node6.html">Product Rule</A>
- &nbsp; <B>  <A ID="tex2html95"
+ HREF="node6.html">Integration by Parts</A>
+ &nbsp; <B>  <A ID="tex2html103"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H3><A ID="SECTION02111200000000000000"></A><A ID="header-n2898"></A>
+<H4><A ID="SECTION02110210000000000000"></A><A ID="header-n2936"></A>
 <BR>
-Chain Rule
-</H3>
+Application
+</H4>
 
 <P>
-<BR>
-<IMG STYLE=""
- SRC="img2.svg"
- ALT="\begin{align}
-\frac{\operatorname{d}y }{\operatorname{d} x} &amp;= \frac{\operatorn...
-...eft( g\left( x \right) \right)\cdot g\left( x \right) \\
-\ \notag
-\end{align}">
-<BR>
+These are really the only two rules we've got (other than manipulation
+with partial fractions if possible) so the only trick is choosing when
+to use which one:
+
+<P>
+
+<UL>
+<LI>Look at the intergrand
+  <!-- MATH
+ $\int^{}_{} \left[\enspace  \right]  \operatorname{d}x$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.92ex; vertical-align: -0.94ex; " SRC="img19.svg"
+ ALT="\(\int^{}_{} \left[\enspace \right] \operatorname{d}x \)"></SPAN> :
+
+<P>
+
+<UL>
+<LI>If it's of the
+    form<!-- MATH
+ $\left[ f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}\right] = \left[ f\left( g\left( x \right) \right)\cdot g'\left( x \right) \right]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.07ex; vertical-align: -0.93ex; " SRC="img20.svg"
+ ALT="\(\left[ f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}\right] = \left[ f\left( g\left( x \right) \right)\cdot g'\left( x \right) \right]\)"></SPAN>
+
+<P>
+
+<UL>
+<LI>Use Integration by Substitution
+    
+</LI>
+</UL>
+</LI>
+<LI>If it's of the form:
+    <!-- MATH
+ $\left[ f\left( x \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x} \right]= \left[ f\left( x \right)\cdot g'\left( x \right) \right]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.07ex; vertical-align: -0.93ex; " SRC="img21.svg"
+ ALT="\(\left[ f\left( x \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x} \right]= \left[ f\left( x \right)\cdot g'\left( x \right) \right]\)"></SPAN>
+
+<P>
+
+<UL>
+<LI>Use Integration by Parts
+    
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
 
 <P>
 <BR><HR>

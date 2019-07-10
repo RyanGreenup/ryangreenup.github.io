@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Seperation of Variables</TITLE>
-<META NAME="description" CONTENT="Seperation of Variables">
+<TITLE>Preliminary Calculus Rules</TITLE>
+<META NAME="description" CONTENT="Preliminary Calculus Rules">
 <META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,7 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="00_master.css">
 
-<LINK REL="next" HREF="node20.html">
+<LINK REL="next" HREF="node8.html">
 <LINK REL="previous" HREF="node3.html">
 <LINK REL="next" HREF="node5.html">
 </HEAD>
@@ -32,25 +32,109 @@
 <A
  HREF="node3.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html71"
+<A ID="tex2html92"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node5.html">Differentiation Rules</A>
+ HREF="node5.html">Integration by Substitution Proof</A>
 <B> Up:</B> <A
  HREF="node3.html">First Order Differential Equations</A>
 <B> Previous:</B> <A
  HREF="node3.html">First Order Differential Equations</A>
- &nbsp; <B>  <A ID="tex2html72"
+ &nbsp; <B>  <A ID="tex2html93"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
 <H1><A ID="SECTION02110000000000000000">
-Seperation of Variables</A>
+Preliminary Calculus Rules</A>
 </H1>
+
+<P>
+The Chain Rule and Product Rule can be established visually fairly
+easily <A ID="tex2html1"
+  HREF="footnode.html#foot331"><SUP><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN></SUP></A> and the proofs are fairly
+straightforward. <A ID="tex2html2"
+  HREF="footnode.html#foot332"><SUP><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN></SUP></A>
+<P>
+<SPAN  CLASS="textbf">Product Rule</SPAN><A ID="header-n2896"></A>
+<P>
+<BR>
+<A ID="prodruledefleib"></A><A ID="rule_11"></A><IMG STYLE=""
+ SRC="img1.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d} }{\operatorname{d} x}\left( u\cdot v \righ...
+...t)\cdot g\left( x \right)+ f\left( x \right)\cdot g'\left( x \right)
+\end{align}">
+<BR>
+
+<P>
+<SPAN  CLASS="textbf">Chain Rule</SPAN><A ID="header-n2898"></A>
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img2.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x} &amp;= \frac{\operatorn...
+...eft( g\left( x \right) \right)\cdot g\left( x \right) \\
+\ \notag
+\end{align}">
+<BR>
+
+<P>
+<SPAN  CLASS="textbf">Integration by Substitution</SPAN>
+
+<P>
+The chain rule can be used for integration with some clever
+substitution:
+
+<P>
+<BR>
+<A ID="ibysubl"></A><A ID="ibysub1"></A><IMG STYLE=""
+ SRC="img3.svg"
+ ALT="\begin{align}
+\int^{}_{} f\left( g\left( x \right) \right)\cdot g'\left( x \righ...
+...} \operatorname{d}x&amp;= \int^{}_{} f\left( u \right) \operatorname{d}u
+\end{align}">
+<BR>
+
+<P>
+The product rule can be used for integration, but it's only fruitful
+when:
+
+<P>
+
+<OL>
+<LI>You can choose some <!-- MATH
+ $u= f\left( x \right)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img4.svg"
+ ALT="$u= f\left( x \right)$"></SPAN> that simplifies when differentiated
+	Or atleast stays the same e.g. <!-- MATH
+ $\frac{\operatorname{d} }{\operatorname{d} x}\left[ \sin{\left( x \right)} \right]= \cos{\left( x \right)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.06ex; vertical-align: -0.92ex; " SRC="img5.svg"
+ ALT="$\frac{\operatorname{d} }{\operatorname{d} x}\left[ \sin{\left( x \right)} \right]= \cos{\left( x \right)}$"></SPAN> 
+</LI>
+<LI><!-- MATH
+ $\operatorname{d} v= g'\left( x \right) \operatorname{d} x$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img6.svg"
+ ALT="$\operatorname{d} v= g'\left( x \right) \operatorname{d} x$"></SPAN> can be chosen such that the differential can be readily integrated to give <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img7.svg"
+ ALT="$v$"></SPAN>.
+</LI>
+</OL>
+
+<P>
+<BR>
+<A ID="ibypartl"></A><IMG STYLE=""
+ SRC="img8.svg"
+ ALT="\begin{align}
+\int^{}_{} u \operatorname{d}v &amp;= u\cdot v - \int^{}_{} v \operatorname{d}u
+\end{align}">
+<BR>
 
 <P>
 <BR><HR>
@@ -58,51 +142,15 @@ Seperation of Variables</A>
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html73"
-  HREF="node5.html">Differentiation Rules</A>
+<LI><UL>
+<LI><A ID="tex2html94"
+  HREF="node5.html">Integration by Substitution Proof</A>
+<LI><A ID="tex2html95"
+  HREF="node6.html">Integration by Parts</A>
 <UL>
-<LI><A ID="tex2html74"
-  HREF="node6.html">Product Rule</A>
-<LI><A ID="tex2html75"
-  HREF="node7.html">Chain Rule</A>
-</UL>
-<BR>
-<LI><A ID="tex2html76"
-  HREF="node8.html">Integration Rules</A>
-<UL>
-<LI><A ID="tex2html77"
-  HREF="node9.html">Integration by Substitution</A>
-<LI><A ID="tex2html78"
-  HREF="node10.html">Integration by Parts</A>
-<UL>
-<LI><A ID="tex2html79"
-  HREF="node11.html">Application</A>
-</UL>
-</UL>
-<BR>
-<LI><A ID="tex2html80"
-  HREF="node12.html">Introduction to Ordinary Differential Equations</A>
-<UL>
-<LI><A ID="tex2html81"
-  HREF="node13.html">Classifying Differential Equations</A>
-<LI><A ID="tex2html82"
-  HREF="node14.html">Order and Degree</A>
-<LI><A ID="tex2html83"
-  HREF="node15.html">Linearity</A>
-<LI><A ID="tex2html84"
-  HREF="node16.html">Solutions to Differential Equations</A>
-</UL>
-<BR>
-<LI><A ID="tex2html85"
-  HREF="node17.html">Seperable Differential Equations</A>
-<UL>
-<LI><A ID="tex2html86"
-  HREF="node18.html">Proof</A>
-</UL>
-<BR>
-<LI><A ID="tex2html87"
-  HREF="node19.html">Equations Reducible to Separable Equations</A>
-</UL>
+<LI><A ID="tex2html96"
+  HREF="node7.html">Application</A>
+</UL></UL></UL>
 <!--End of Table of Child-Links-->
 <BR><HR>
 

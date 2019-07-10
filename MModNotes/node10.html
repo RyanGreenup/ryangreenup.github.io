@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Integration by Parts</TITLE>
-<META NAME="description" CONTENT="Integration by Parts">
+<TITLE>Order and Degree</TITLE>
+<META NAME="description" CONTENT="Order and Degree">
 <META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,6 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="00_master.css">
 
+<LINK REL="next" HREF="node11.html">
 <LINK REL="previous" HREF="node9.html">
 <LINK REL="next" HREF="node11.html">
 </HEAD>
@@ -31,129 +32,32 @@
 <A
  HREF="node9.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html103"
+<A ID="tex2html112"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node11.html">Application</A>
+ HREF="node11.html">Linearity</A>
 <B> Up:</B> <A
- HREF="node8.html">Integration Rules</A>
+ HREF="node8.html">Introduction to Ordinary Differential</A>
 <B> Previous:</B> <A
- HREF="node9.html">Integration by Substitution</A>
- &nbsp; <B>  <A ID="tex2html104"
+ HREF="node9.html">Classifying Differential Equations</A>
+ &nbsp; <B>  <A ID="tex2html113"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H3><A ID="SECTION02112200000000000000"></A><A ID="header-n2914"></A>
-<BR>
-Integration by Parts
-</H3>
+<H4><A ID="SECTION02120020000000000000">
+Order and Degree</A>
+</H4>
 
-<P>
-The product rule can be used for integration, but it's only fruitful
-when:
-
-<P>
-
-<OL>
-<LI>You can choose some <!-- MATH
- $u= f\left( x \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img7.svg"
- ALT="$u= f\left( x \right)$"></SPAN> that simplifies when differentiated
-      Or atleast stays the same e.g. <!-- MATH
- $\frac{\operatorname{d} }{\operatorname{d} x}\left[ \sin{\left( x \right)} \right]= \cos{\left( x \right)}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.06ex; vertical-align: -0.92ex; " SRC="img8.svg"
- ALT="$\frac{\operatorname{d} }{\operatorname{d} x}\left[ \sin{\left( x \right)} \right]= \cos{\left( x \right)}$"></SPAN> 
+<UL>
+<LI>The Order of a differential corresponds to the higest derivative taken
 </LI>
-<LI><!-- MATH
- $\operatorname{d} v= g'\left( x \right) \operatorname{d} x$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img9.svg"
- ALT="$\operatorname{d} v= g'\left( x \right) \operatorname{d} x$"></SPAN> can be chosen such that the differential can be readily integrated to give <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img10.svg"
- ALT="$v$"></SPAN>.
+<LI>The Degree is the highest power of the highest order derivative of the <SPAN  CLASS="textit">ODE</SPAN>
 </LI>
-</OL>
- 
-<BR>
-<P>
-Consider the Product Rule <!-- MATH
- $\left( \ref{prodruledefleib} \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img11.svg"
- ALT="% latex2html id marker 395
-$\left( \ref{prodruledefleib} \right)$"></SPAN>:
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img12.svg"
- ALT="\begin{align}
-\frac{\operatorname{d} }{\operatorname{d} x}\left[ f\left( x \righ...
-...eft( x \right)+ f\left( x \right)\cdot g'\left( x \right)\notag \\
-\end{align}">
-<BR>
-
-<P>
-Let,
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img13.svg"
- ALT="\begin{align}
-\begin{matrix}
-&amp;u = f\left( x \right) &amp;&amp;v = g\left( x \right)\\
-...
-...ratorname{d}v }{\operatorname{d} x} = g'\left( x \right)
-\end{matrix}\end{align}">
-<BR>
-
-<P>
-Now we have:
-
-<P>
-<BR>
-<IMG STYLE=""
- SRC="img14.svg"
- ALT="\begin{align}
-\int^{}_{} \left( \frac{\operatorname{d}u }{\operatorname{d} x}\c...
-...v }{\operatorname{d} x} \right) \operatorname{d}x&amp;= u\cdot v \notag
-\end{align}">
-<BR>
-
-<P>
-By Rule <!-- MATH
- $\left( \ref{ibysubl} \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img15.svg"
- ALT="% latex2html id marker 379
-\(\left( \ref{ibysubl} \right)\)"></SPAN> we have:
-
-<P>
-<BR>
-<A ID="ibypartl"></A><IMG STYLE=""
- SRC="img16.svg"
- ALT="\begin{align}
-\int^{}_{} v \operatorname{d}u + \int^{}_{} u \operatorname{d}v &amp;=...
-..._{} u \operatorname{d}v &amp;= u\cdot v - \int^{}_{} v \operatorname{d}u
-\end{align}">
-<BR>
-
-<P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html105"
-  HREF="node11.html">Application</A>
 </UL>
-<!--End of Table of Child-Links-->
 <BR><HR>
 
 </BODY>

@@ -3,3 +3,5 @@ No implementation found for style `diffpreamble'
 Substitution of arg to newlabelxx delayed.
 
 ? brace missing for \oldcontentsline
+
+00_master.tex is newer than 00_master.bbl: Please rerun latex and bibtex.
