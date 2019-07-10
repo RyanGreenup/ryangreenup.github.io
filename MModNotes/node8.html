@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Define Contours</TITLE>
-<META NAME="description" CONTENT="Define Contours">
-<META NAME="keywords" CONTENT="10_integrals">
+<TITLE>Integration Rules</TITLE>
+<META NAME="description" CONTENT="Integration Rules">
+<META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,9 +13,10 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019">
 
-<LINK REL="STYLESHEET" HREF="10_integrals.css">
+<LINK REL="STYLESHEET" HREF="00_master.css">
 
-<LINK REL="previous" HREF="node7.html">
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node5.html">
 <LINK REL="next" HREF="node9.html">
 </HEAD>
 
@@ -26,91 +27,31 @@
  HREF="node9.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node7.html">
+ HREF="node4.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node7.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html67"
+<A ID="tex2html96"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node9.html">Types of Arcs</A>
+ HREF="node9.html">Integration by Substitution</A>
 <B> Up:</B> <A
- HREF="node7.html">Contours</A>
+ HREF="node4.html">Seperation of Variables</A>
 <B> Previous:</B> <A
- HREF="node7.html">Contours</A>
- &nbsp; <B>  <A ID="tex2html68"
+ HREF="node7.html">Chain Rule</A>
+ &nbsp; <B>  <A ID="tex2html97"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H4><A ID="SECTION00030010000000000000">
-Define Contours</A>
-</H4> 
+<H2><A ID="SECTION02112000000000000000"></A><A ID="header-n2901"></A>
 <BR>
-A set of points <!-- MATH
- $z =  \left( x,y \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img27.svg"
- ALT="$z = \left( x,y \right)$"></SPAN> in the complex plane is said to be an <SPAN  CLASS="textbf"><SPAN  CLASS="textit">arc</SPAN></SPAN> or a curve that we will call <SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img28.svg"
- ALT="$C$"></SPAN> if:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
-<TR >
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img29.svg"
- ALT="$\displaystyle x = x\left( t \right), \quad y = y\left( t \right) \qquad \left( a \leq t \leq b \right)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-<A ID="arcdef">(<SPAN CLASS="arabic">2</SPAN>)</A></TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-where:
-
-<UL>
-<LI><!-- MATH
- $x\left( t \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img30.svg"
- ALT="$x\left( t \right)$"></SPAN> and <!-- MATH
- $y\left( t \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img31.svg"
- ALT="$y\left( t \right) $"></SPAN> are continuous functions 
-    continuous however does not mean smooth/differentiable, sharp points are allowed.
-</LI>
-<LI>the output values are ordered corresponding to <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.12ex; " SRC="img32.svg"
- ALT="$t$"></SPAN> (as if <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.12ex; " SRC="img32.svg"
- ALT="$t$"></SPAN> represented time)
-</LI>
-</UL>
-
-<P>
-It is more convenient to describe the curve at (<A HREF="#arcdef">:autorefequation2</A>) as:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
-<TR >
-<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img33.svg"
- ALT="$\displaystyle z$"></SPAN></TD>
-<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img34.svg"
- ALT="$\displaystyle = z\left( t \right)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-<A ID="arccompdef">(<SPAN CLASS="arabic">3</SPAN>)</A></TD></TR>
-<TR >
-<TD>&nbsp;</TD>
-<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img35.svg"
- ALT="$\displaystyle = x\left( t \right) + i\cdot y\left( t \right)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
+Integration Rules
+</H2>
 
 <P>
 <BR><HR>
@@ -118,11 +59,14 @@ It is more convenient to describe the curve at (<A HREF="#arcdef">:autorefequati
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html69"
-  HREF="node9.html">Types of Arcs</A>
-<LI><A ID="tex2html70"
-  HREF="node10.html">Parametric Representation not unique</A>
-</UL>
+<LI><A ID="tex2html98"
+  HREF="node9.html">Integration by Substitution</A>
+<LI><A ID="tex2html99"
+  HREF="node10.html">Integration by Parts</A>
+<UL>
+<LI><A ID="tex2html100"
+  HREF="node11.html">Application</A>
+</UL></UL>
 <!--End of Table of Child-Links-->
 <BR><HR>
 

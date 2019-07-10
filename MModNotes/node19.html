@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Cauchy Goursat Theorem</TITLE>
-<META NAME="description" CONTENT="Cauchy Goursat Theorem">
-<META NAME="keywords" CONTENT="10_integrals">
+<TITLE>Equations Reducible to Separable Equations</TITLE>
+<META NAME="description" CONTENT="Equations Reducible to Separable Equations">
+<META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,10 +13,9 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019">
 
-<LINK REL="STYLESHEET" HREF="10_integrals.css">
+<LINK REL="STYLESHEET" HREF="00_master.css">
 
-<LINK REL="next" HREF="node26.html">
-<LINK REL="previous" HREF="node16.html">
+<LINK REL="previous" HREF="node17.html">
 <LINK REL="next" HREF="node20.html">
 </HEAD>
 
@@ -27,72 +26,101 @@
  HREF="node20.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="10_integrals.html">
+ HREF="node4.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node18.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html99"
+<A ID="tex2html127"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node20.html">the Cauchy-Goursat Theorem</A>
+ HREF="node20.html">First Order Linear ODE</A>
 <B> Up:</B> <A
- HREF="10_integrals.html">(10) Integrals</A>
+ HREF="node4.html">Seperation of Variables</A>
 <B> Previous:</B> <A
  HREF="node18.html">Proof</A>
- &nbsp; <B>  <A ID="tex2html100"
+ &nbsp; <B>  <A ID="tex2html128"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00060000000000000000">
-Cauchy Goursat Theorem</A>
-</H1>
-   This theorem depends on <SPAN  CLASS="textit">Green's Theorem</SPAN> which gives the relationship between a line integral around a simple-closed curve and the double integral over the corresponding bounded region, for purely real functions. Roughly Speaking <SPAN  CLASS="textit">Green's Theorem</SPAN> is a counterpart of the Fundamental Theorem of Calculus for double integrals.
+<H2><A ID="SECTION02115000000000000000">
+Equations Reducible to Separable Equations</A>
+</H2>
+Some equations can be tricky to deal with, there is a method of <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img31.svg"
+ ALT="$u$"></SPAN>-Substitution:
+
+<P>
+Take some equation of the form:
+<BR><P></P>
+<DIV CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\frac{\operatorname{d}y }{\operatorname{d} x}= f\left( \frac{x}{y} \right)
+\end{displaymath}
+ -->
+
+<IMG STYLE=""
+ SRC="img32.svg"
+ ALT="\begin{displaymath}
+\frac{\operatorname{d}y }{\operatorname{d} x}= f\left( \frac{x}{y} \right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+We can perform the <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img31.svg"
+ ALT="$u$"></SPAN>-substitution:
+
+<P>
 <BR>
-<P>
-In establishing the <SPAN  CLASS="textit">Cauchy-Goursat Theorem</SPAN>, proving <SPAN  CLASS="textit">Green's Theorem</SPAN> is the tricky part, the <SPAN  CLASS="textit">Cauchy-Goursat Theorem</SPAN>  more or less falls out of it. 
-
-<P>
-  
-<P>
-<TABLE   STYLE="width:2;">
-<TR><TD>
-
-<P>
-</TD></TR>
-</TABLE>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><UL>
-<LI><UL>
-<LI><UL>
-<LI><A ID="tex2html101"
-  HREF="node20.html">the <SPAN  CLASS="textit">Cauchy-Goursat Theorem</SPAN></A>
-</UL>
-</UL>
-</UL>
+<IMG STYLE=""
+ SRC="img33.svg"
+ ALT="\begin{align}
+u&amp;= \frac{y}{x}\notag \\
+\implies y &amp;= u\cdot x\notag \\
+\imp...
+...ame{d}u }{\operatorname{d} x}\cdot x+ \left( 1 \right)\cdot u \notag
+\end{align}">
 <BR>
-<LI><A ID="tex2html102"
-  HREF="node21.html">Simply-Connected Domains</A>
-<LI><A ID="tex2html103"
-  HREF="node22.html">Multiply Connected Domains</A>
-<UL>
-<LI><A ID="tex2html104"
-  HREF="node23.html">Principle of Deformation</A>
-<UL>
-<LI><A ID="tex2html105"
-  HREF="node24.html">Spacial Case of Deformation</A>
-<LI><A ID="tex2html106"
-  HREF="node25.html">Example</A>
-</UL></UL></UL>
-<!--End of Table of Child-Links-->
+
+<P>
+Substituting in the terms:
+<BR>
+<IMG STYLE=""
+ SRC="img34.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x}&amp;= f\left( \frac{y}{...
+...\right)- u} \operatorname{d}u &amp;= \ln{ \left\vert x \right\vert }+ c
+\end{align}">
+<BR>
+
+<P>
+Now presume <!-- MATH
+ $\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \right)- u}  \operatorname{d}u$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.39ex; vertical-align: -1.32ex; " SRC="img35.svg"
+ ALT="$\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \right)- u} \operatorname{d}u $"></SPAN>
+
+<P>
+<BR>
+<A ID="redsepfin"></A><IMG STYLE=""
+ SRC="img36.svg"
+ ALT="\begin{align}
+G\left( u \right)&amp;= \ln{ \left\vert x \right\vert }+ c\notag \\
+...
+...G\left( \frac{y}{x} \right)+ \ln{ \left\vert x \right\vert }+ c &amp;= 0
+\end{align}">
+<BR>
+
+<P>
+Hence by by (<A HREF="#redsepfin">1.18</A>) there must atleast be an implicit solution to the equation assuming that the integral can be solved.
+
+<P>
+
+<P>
 <BR><HR>
 
 </BODY>

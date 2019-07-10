@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Upper Bounds for Moduli</TITLE>
-<META NAME="description" CONTENT="Upper Bounds for Moduli">
-<META NAME="keywords" CONTENT="10_integrals">
+<TITLE>Order and Degree</TITLE>
+<META NAME="description" CONTENT="Order and Degree">
+<META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,8 +13,9 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019">
 
-<LINK REL="STYLESHEET" HREF="10_integrals.css">
+<LINK REL="STYLESHEET" HREF="00_master.css">
 
+<LINK REL="next" HREF="node15.html">
 <LINK REL="previous" HREF="node13.html">
 <LINK REL="next" HREF="node15.html">
 </HEAD>
@@ -26,108 +27,37 @@
  HREF="node15.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node11.html">
+ HREF="node12.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node13.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html85"
+<A ID="tex2html116"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node15.html">Example</A>
+ HREF="node15.html">Linearity</A>
 <B> Up:</B> <A
- HREF="node11.html">Contour Integral</A>
+ HREF="node12.html">Introduction to Ordinary Differential</A>
 <B> Previous:</B> <A
- HREF="node13.html">Notation</A>
- &nbsp; <B>  <A ID="tex2html86"
+ HREF="node13.html">Classifying Differential Equations</A>
+ &nbsp; <B>  <A ID="tex2html117"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION00042000000000000000">
-Upper Bounds for Moduli</A>
-</H2>
+<H4><A ID="SECTION02113020000000000000">
+Order and Degree</A>
+</H4>
 
-<P>
-Start with the triangle inequality:
-<P><!-- MATH
- \begin{displaymath}
-\left| \alpha + \beta \right| \leq     \left| \alpha \right| +     \left| \beta \right|
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img45.svg"
- ALT="$\displaystyle \left\vert \alpha + \beta \right\vert \leq \left\vert \alpha \right\vert + \left\vert \beta \right\vert
-$">
-</DIV><P></P>
-We could prove this, or, by similar reasoning:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
-<TR >
-<TD  style="text-align:right;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.79ex; vertical-align: -2.32ex; " SRC="img46.svg"
- ALT="$\displaystyle \implies \left\vert \int^{}_{}\left( w\left( t \right) \right) \operatorname{d}t \right\vert$"></SPAN></TD>
-<TD  style="text-align:left;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.49ex; vertical-align: -2.23ex; " SRC="img47.svg"
- ALT="$\displaystyle \leq \int^{}_{} \left\vert w\left( t \right\vert \right) \operatorname{d}t$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Now let:
-   
 <UL>
-<LI><SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img28.svg"
- ALT="$C$"></SPAN> be a contour of length <SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img48.svg"
- ALT="$L$"></SPAN>
+<LI>The Order of a differential corresponds to the higest derivative taken
 </LI>
-<LI><!-- MATH
- $\left| f\left( z \right)  \right| \leq M$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img49.svg"
- ALT="$\left\vert f\left( z \right) \right\vert \leq M$"></SPAN>
+<LI>The Degree is the highest power of the highest order derivative of the <SPAN  CLASS="textit">ODE</SPAN>
 </LI>
 </UL>
-
-<P>
-Using the inequality above it can be rigorously shown:
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\left| \int^{}_{}\left( f\left( z \right)  \right) \operatorname{d}z  \right| \leq M\cdot L
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.79ex; vertical-align: -2.32ex; " SRC="img50.svg"
- ALT="$\displaystyle \left\vert \int^{}_{}\left( f\left( z \right) \right) \operatorname{d}z \right\vert \leq M\cdot L
-$">
-</DIV><P></P>
-
-<P>
-This can be somewhat visualised if <!-- MATH
- $f\left( z \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img51.svg"
- ALT="$f\left( z \right) $"></SPAN> is taken to be the height of the function along the contour, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img48.svg"
- ALT="$L$"></SPAN> is taken to be the length of the contour, although the values will be complex and height might become an odd concept, the mathematics should still hold.
-   <BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><UL>
-<LI><A ID="tex2html87"
-  HREF="node15.html">Example</A>
-</UL></UL>
-<!--End of Table of Child-Links-->
 <BR><HR>
 
 </BODY>

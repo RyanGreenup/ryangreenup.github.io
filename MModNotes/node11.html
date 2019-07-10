@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Contour Integral</TITLE>
-<META NAME="description" CONTENT="Contour Integral">
-<META NAME="keywords" CONTENT="10_integrals">
+<TITLE>Application</TITLE>
+<META NAME="description" CONTENT="Application">
+<META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,10 +13,9 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019">
 
-<LINK REL="STYLESHEET" HREF="10_integrals.css">
+<LINK REL="STYLESHEET" HREF="00_master.css">
 
-<LINK REL="next" HREF="node16.html">
-<LINK REL="previous" HREF="node7.html">
+<LINK REL="previous" HREF="node10.html">
 <LINK REL="next" HREF="node12.html">
 </HEAD>
 
@@ -27,93 +26,85 @@
  HREF="node12.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="10_integrals.html">
+ HREF="node10.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node10.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html75"
+<A ID="tex2html106"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node12.html">Negative Contours</A>
+ HREF="node12.html">Introduction to Ordinary Differential</A>
 <B> Up:</B> <A
- HREF="10_integrals.html">(10) Integrals</A>
+ HREF="node10.html">Integration by Parts</A>
 <B> Previous:</B> <A
- HREF="node10.html">Parametric Representation not unique</A>
- &nbsp; <B>  <A ID="tex2html76"
+ HREF="node10.html">Integration by Parts</A>
+ &nbsp; <B>  <A ID="tex2html107"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00040000000000000000">
-Contour Integral</A>
-</H1>
-As previously discussed, an integral with respect to <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img7.svg"
- ALT="$z$"></SPAN> will be a contour integral:
-<P><!-- MATH
- \begin{displaymath}
-\int^{}_{C} f \left(z \right)   \operatorname{d}z
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.49ex; vertical-align: -2.23ex; " SRC="img36.svg"
- ALT="$\displaystyle \int^{}_{C} f \left(z \right) \operatorname{d}z
-$">
-</DIV><P></P>
-If the value of the integral does not depend on the path of the contour and only depends on the endpoints then we would write:
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\int^{}_{C} f \left(z \right)   \operatorname{d}z = \int^{z_2}_{z_1} f\left( z   \right) \operatorname{d}z
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.85ex; vertical-align: -2.46ex; " SRC="img37.svg"
- ALT="$\displaystyle \int^{}_{C} f \left(z \right) \operatorname{d}z = \int^{z_2}_{z_1} f\left( z \right) \operatorname{d}z
-$">
-</DIV><P></P>
-We can also put the integral in terms of the contour parameters, This is basically <SPAN  CLASS="textit">Integration by Substitution</SPAN> in reverse, there's a more rigorous proof in the textbook by <SPAN  CLASS="textit">Osbourne</SPAN>, just take it as definition.
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><TABLE CLASS="equation" >
-<TR >
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="img38.svg"
- ALT="$\displaystyle \int^{}_{C}\left( f\left( z \right) \right) \operatorname{d}z = \...
-...ft[ z\left( t \right) \right]\cdot z'\left( t \right) \right) \operatorname{d}t$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-<A ID="tdef">(<SPAN CLASS="arabic">4</SPAN>)</A></TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><UL>
-<LI><UL>
-<LI><A ID="tex2html77"
-  HREF="node12.html">Negative Contours</A>
-</UL>
-</UL>
+<H4><A ID="SECTION02112210000000000000"></A><A ID="header-n2936"></A>
 <BR>
-<LI><A ID="tex2html78"
-  HREF="node13.html">Notation</A>
-<LI><A ID="tex2html79"
-  HREF="node14.html">Upper Bounds for Moduli</A>
+Application
+</H4>
+
+<P>
+These are really the only two rules we've got (other than manipulation
+with partial fractions if possible) so the only trick is choosing when
+to use which one:
+
+<P>
+
 <UL>
-<LI><A ID="tex2html80"
-  HREF="node15.html">Example</A>
-</UL></UL>
-<!--End of Table of Child-Links-->
+<LI>Look at the intergrand
+  <!-- MATH
+ $\int^{}_{} \left[\enspace  \right]  \operatorname{d}x$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.92ex; vertical-align: -0.94ex; " SRC="img17.svg"
+ ALT="\(\int^{}_{} \left[\enspace \right] \operatorname{d}x \)"></SPAN> :
+
+<P>
+
+<UL>
+<LI>If it's of the
+    form<!-- MATH
+ $\left[ f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}\right] = \left[ f\left( g\left( x \right) \right)\cdot g'\left( x \right) \right]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.07ex; vertical-align: -0.93ex; " SRC="img18.svg"
+ ALT="\(\left[ f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}\right] = \left[ f\left( g\left( x \right) \right)\cdot g'\left( x \right) \right]\)"></SPAN>
+
+<P>
+
+<UL>
+<LI>Use Integration by Substitution
+    
+</LI>
+</UL>
+</LI>
+<LI>If it's of the form:
+    <!-- MATH
+ $\left[ f\left( x \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x} \right]= \left[ f\left( x \right)\cdot g'\left( x \right) \right]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.07ex; vertical-align: -0.93ex; " SRC="img19.svg"
+ ALT="\(\left[ f\left( x \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x} \right]= \left[ f\left( x \right)\cdot g'\left( x \right) \right]\)"></SPAN>
+
+<P>
+
+<UL>
+<LI>Use Integration by Parts
+    
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+
+<P>
 <BR><HR>
 
 </BODY>

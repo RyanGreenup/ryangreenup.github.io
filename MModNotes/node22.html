@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Multiply Connected Domains</TITLE>
-<META NAME="description" CONTENT="Multiply Connected Domains">
-<META NAME="keywords" CONTENT="10_integrals">
+<TITLE>Proof</TITLE>
+<META NAME="description" CONTENT="Proof">
+<META NAME="keywords" CONTENT="00_master">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,8 +13,9 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019">
 
-<LINK REL="STYLESHEET" HREF="10_integrals.css">
+<LINK REL="STYLESHEET" HREF="00_master.css">
 
+<LINK REL="next" HREF="node23.html">
 <LINK REL="previous" HREF="node21.html">
 <LINK REL="next" HREF="node23.html">
 </HEAD>
@@ -26,89 +27,262 @@
  HREF="node23.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node19.html">
+ HREF="node20.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node21.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html111"
+<A ID="tex2html136"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node23.html">Principle of Deformation</A>
+ HREF="node23.html">Exemplars</A>
 <B> Up:</B> <A
- HREF="node19.html">Cauchy Goursat Theorem</A>
+ HREF="node20.html">First Order Linear ODE</A>
 <B> Previous:</B> <A
- HREF="node21.html">Simply-Connected Domains</A>
- &nbsp; <B>  <A ID="tex2html112"
+ HREF="node21.html">Summary</A>
+ &nbsp; <B>  <A ID="tex2html137"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION00062000000000000000">
-Multiply Connected Domains</A>
+<H2><A ID="SECTION02122000000000000000">
+Proof</A>
 </H2>
-If <SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="img28.svg"
- ALT="$C$"></SPAN> is a closed counter-clockwise contour, inside which are closed Clockwise contours <!-- MATH
- $c_1, c_2, c_3 \dots$
+
+<P>
+<BR>
+<A ID="linform"></A><IMG STYLE=""
+ SRC="img45.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x} + p\left( x \right)\cdot y= f\left( x \right)
+\end{align}">
+<BR>
+
+<P>
+Consider the homogenous and particular solution:
+
+<P>
+<BR>
+<A ID="partform"></A><A ID="homform"></A><IMG STYLE=""
+ SRC="img46.svg"
+ ALT="\begin{alignat}{2}
+\frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \ri...
+...eratorname{d} x}+ p\left( x \right)\cdot y&amp;= f(x) &amp;\implies y= y_p
+\end{alignat}">
+<BR>
+
+<P>
+Observe that the sum of these solutions is a valid solution:
+
+<P>
+<BR>
+<A ID="fineqdem"></A><IMG STYLE=""
+ SRC="img47.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d} }{\operatorname{d} x}\left( y_h+ y_p \right...
+...\left( x \right)\notag \\
+0 + f\left( x \right)&amp;= f\left( x \right)
+\end{align}">
+<BR>
+
+<P>
+The point of showing (<A HREF="#fineqdem"><IMG  ALT="[*]" SRC="crossref.png"></A>) is that we need <SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img40.svg"
+ ALT="$y_h$"></SPAN> to find <SPAN CLASS="MATH"><IMG STYLE="height: 1.89ex; vertical-align: -0.78ex; " SRC="img41.svg"
+ ALT="$y_p$"></SPAN> anyway:
+
+<P>
+<BR>
+<A ID="posasumpt"></A><IMG STYLE=""
+ SRC="img48.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \right) \...
+...ert&amp;= e^{\int^{- p\left( x \right)x}_{} \operatorname{d}x }\cdot e^c
+\end{align}">
+<BR>
+
+<P>
+assume <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.57ex; " SRC="img49.svg"
+ ALT="$y&gt;0$"></SPAN>:
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img50.svg"
+ ALT="\begin{align}
+\implies y_h&amp;= e^{- \int^{}_{} p\left( x \right) \operatorname{d}x }\cdot c \notag
+\end{align}">
+<BR>
+
+<P>
+Let <!-- MATH
+ $y_1= e^{- \int^{}_{} p\left( x \right)  \operatorname{d}x }$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img77.svg"
- ALT="$c_1, c_2, c_3 \dots$"></SPAN> for which the function is analytic interior to C but exterior to <!-- MATH
- $c_1, c_2, c_3 \dots$
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.62ex; vertical-align: -0.57ex; " SRC="img51.svg"
+ ALT="$y_1= e^{- \int^{}_{} p\left( x \right) \operatorname{d}x }$"></SPAN> :
+
+<P>
+<BR>
+<A ID="homsol"></A><IMG STYLE=""
+ SRC="img52.svg"
+ ALT="\begin{align}
+y_h&amp;= y_1(x) \cdot c
+\end{align}">
+<BR>
+
+<P>
+The homogenous solution involves only the parameters  <!-- MATH
+ $p\left( x \right)$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="img77.svg"
- ALT="$c_1, c_2, c_3 \dots$"></SPAN> :
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:s1"></A><A ID="294"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure:</STRONG>
-</CAPTION>
-<TR><TD>
-<DIV class="CENTER">	<IMG STYLE=""
- SRC="./s1.png"
- ALT="Image s1">
-	</DIV></TD></TR>
-</TABLE>
-</DIV>
-
-<P>
-Then we have:
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\int^{}_{C} f\left( z \right)   \operatorname{d}z + \sum^{k}_{n= 1} \left[ \int^{}_{c_n} f\left( z \right)   \operatorname{d}z  \right]
-\end{displaymath}
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img53.svg"
+ ALT="$p\left( x \right)$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="img54.svg"
+ ALT="$c$"></SPAN>, if the 0 value was changed to  <!-- MATH
+ $f \left( x \right)$
  -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 7.41ex; vertical-align: -3.06ex; " SRC="img78.svg"
- ALT="$\displaystyle \int^{}_{C} f\left( z \right) \operatorname{d}z + \sum^{k}_{n= 1} \left[ \int^{}_{c_n} f\left( z \right) \operatorname{d}z \right]
-$">
-</DIV><P></P>
-This is established by drawing a line through all the interior closed contours and applying the <SPAN  CLASS="textit">Cauchy-Goursat</SPAN> theorem, refer to the <SPAN  CLASS="textit">Churchill</SPAN> textbook.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img55.svg"
+ ALT="$f \left( x \right) $"></SPAN>, the solution would have to reflect this change as <!-- MATH
+ $c = u\left( x \right)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img56.svg"
+ ALT="$c = u\left( x \right)$"></SPAN> and hence we assume that their is an integrating factor <!-- MATH
+ $u\left( x \right)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img57.svg"
+ ALT="$u\left( x \right)$"></SPAN> :
 
 <P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+<BR>
+<A ID="intfactor"></A><IMG STYLE=""
+ SRC="img58.svg"
+ ALT="\begin{align}
+y_p&amp;= u\left( x \right)\times y_h\left( x \right)\notag \\
+&amp;= e^{...
+...^{}_{} p\left( x \right) \operatorname{d}x } \cdot u\left( x \right)
+\end{align}">
+<BR>
 
-<UL CLASS="ChildLinks">
-<LI><UL>
-<LI><A ID="tex2html113"
-  HREF="node23.html">Principle of Deformation</A>
-<UL>
-<LI><A ID="tex2html114"
-  HREF="node24.html">Spacial Case of Deformation</A>
-<LI><A ID="tex2html115"
-  HREF="node25.html">Example</A>
-</UL></UL></UL>
-<!--End of Table of Child-Links-->
-<BR><HR>
+<P>
+Now in order to solve this <!-- MATH
+ $u\left( x \right)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img57.svg"
+ ALT="$u\left( x \right)$"></SPAN> substitute (<A HREF="#intfactor"><IMG  ALT="[*]" SRC="crossref.png"></A>) into (<A HREF="#linform"><IMG  ALT="[*]" SRC="crossref.png"></A>):
+
+<P>
+<BR>
+<A ID="inftactval"></A><IMG STYLE=""
+ SRC="img59.svg"
+ ALT="\begin{align}
+y_p &amp;= e^{- \int^{}_{} p\left( x \right) \operatorname{d}x } \cdo...
+...\int^{}_{} f \left( x \right) /y_1\left( x \right) \operatorname{d}x
+\end{align}">
+<BR>
+
+<P>
+This is more or less where 
+
+<P>
+If we susbstitute in the value of <!-- MATH
+ $y_1= e^{-  \int^{}_{} p\left( x \right)  \operatorname{d}x }$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.62ex; vertical-align: -0.57ex; " SRC="img51.svg"
+ ALT="$y_1= e^{- \int^{}_{} p\left( x \right) \operatorname{d}x }$"></SPAN> at (<A HREF="#homsol"><IMG  ALT="[*]" SRC="crossref.png"></A>) into (<A HREF="#inftactval"><IMG  ALT="[*]" SRC="crossref.png"></A>):
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img60.svg"
+ ALT="\begin{align}
+u= \int^{}_{} f\left( x \right)\cdot e^{\int^{}_{} p\left( x \right) \operatorname{d}x } \operatorname{d}x
+\end{align}">
+<BR>
+
+<P>
+Now if we substitute in <!-- MATH
+ $y_p = u \cdot  y_1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.92ex; vertical-align: -0.78ex; " SRC="img61.svg"
+ ALT="$y_p = u \cdot y_1$"></SPAN> from (<A HREF="#intfactor"><IMG  ALT="[*]" SRC="crossref.png"></A>):
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img62.svg"
+ ALT="\begin{align}
+y_p&amp;= \frac{1}{y_1}\cdot \int^{}_{} f\left( x \right)\cdot e^{\in...
+... x \right)\cdot e^{\int^{}_{} p\left( x \right) \operatorname{d}x }
+\end{align}">
+<BR>
+
+<P>
+So that gives a formula for the value of the particular solution to a linear first-order ODE, however that should not be memorised, instead observe if we use the factor <!-- MATH
+ $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.17ex; vertical-align: -0.12ex; " SRC="img63.svg"
+ ALT="$e^{\int^{}_{} p\left( x \right) \operatorname{d}x }$"></SPAN>:
+
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img64.svg"
+ ALT="\begin{align}
+% latex2html id marker 732e^{\int^{}_{} p\left( x \right) \oper...
+...+ p\left( x \right)\cdot y &amp;= f \left( x \right) \tag{\ref{linform}}
+\end{align}">
+<BR>
+
+<P>
+This gives us a technique to follow each time we see an equation of this form:
+
+<P>
+
+<OL>
+<LI>get it into the form in (<A HREF="#linform"><IMG  ALT="[*]" SRC="crossref.png"></A>) 
+</LI>
+<LI>multiply through by <!-- MATH
+ $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.17ex; vertical-align: -0.12ex; " SRC="img63.svg"
+ ALT="$e^{\int^{}_{} p\left( x \right) \operatorname{d}x }$"></SPAN> 
+</LI>
+<LI>The LHS of the resulting equation is automatically the derivative of y and <!-- MATH
+ $e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.17ex; vertical-align: -0.12ex; " SRC="img63.svg"
+ ALT="$e^{\int^{}_{} p\left( x \right) \operatorname{d}x }$"></SPAN> 
+</LI>
+<LI>Integrate both sides
+</LI>
+</OL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html136"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node23.html">Exemplars</A>
+<B> Up:</B> <A
+ HREF="node20.html">First Order Linear ODE</A>
+<B> Previous:</B> <A
+ HREF="node21.html">Summary</A>
+ &nbsp; <B>  <A ID="tex2html137"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
 
 </BODY>
 </HTML>

@@ -2,450 +2,497 @@
 # Associate images original text with physical files.
 
 
-$key = q/-C;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.01ex; vertical-align: -0.31ex; " SRC="|."$dir".q|img39.svg"
- ALT="$- C$">|; 
-
-$key = q/C:left|zright|=1;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img53.svg"
- ALT="$C: \left\vert z \right\vert = 1$">|; 
-
-$key = q/C;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img28.svg"
- ALT="$C$">|; 
-
-$key = q/C_1;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.16ex; vertical-align: -0.46ex; " SRC="|."$dir".q|img84.svg"
- ALT="$C_1$">|; 
-
-$key = q/Deltaz;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.89ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img25.svg"
- ALT="$\Delta z$">|; 
-
-$key = q/F'left(zright)=fleft(zright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img63.svg"
- ALT="$F'\left( z \right) = f\left( z \right) $">|; 
-
-$key = q/F(b)-F(a);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img76.svg"
- ALT="$F(b) - F(a)$">|; 
-
-$key = q/Fleft(zright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img59.svg"
- ALT="$F\left( z \right) $">|; 
-
-$key = q/L;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.81ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img48.svg"
- ALT="$L$">|; 
-
-$key = q/Wleft(tright)=Uleft(tright)+icdotVleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img17.svg"
- ALT="$W\left( t \right) = U\left( t \right) + i \cdot V\left( t \right) $">|; 
-
-$key = q/c_1,c_2,c_3dots;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="|."$dir".q|img77.svg"
- ALT="$c_1, c_2, c_3 \dots$">|; 
-
-$key = q/c_2;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.58ex; vertical-align: -0.46ex; " SRC="|."$dir".q|img83.svg"
- ALT="$c_2$">|; 
-
-$key = q/displaystyle;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 0.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img8.svg"
- ALT="$\displaystyle $">|; 
-
-$key = q/displaystyle=-int^{b}_{a}left(fleft[zleft(-tright)right]z'left(-tright)right)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img42.svg"
- ALT="$\displaystyle = - \int^{b}_{a}\left( f\left[ z\left( - t \right) \right] z'\left( - t \right) \right) \operatorname{d}t$">|; 
-
-$key = q/displaystyle=-int^{}_{C}left(fleft(zright)right)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.49ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img43.svg"
- ALT="$\displaystyle = - \int^{}_{C}\left( f\left( z \right) \right) \operatorname{d}z$">|; 
-
-$key = q/displaystyle=0;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.69ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img58.svg"
- ALT="$\displaystyle = 0$">|; 
-
-$key = q/displaystyle=2piicdotfrac{cos{left(0right)}}{0^2+9};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.31ex; vertical-align: -1.90ex; " SRC="|."$dir".q|img100.svg"
- ALT="$\displaystyle = 2\pi i \cdot \frac{\cos{\left( 0 \right) }}{0^2+ 9}$">|; 
-
-$key = q/displaystyle=Fleft(bright)-Fleft(aright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img72.svg"
- ALT="$\displaystyle = F\left( b \right) - F\left( a \right)$">|; 
-
-$key = q/displaystyle=Fleft(z_2right)-Fleft(z_1right);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img67.svg"
- ALT="$\displaystyle = F\left( z_2 \right) - F\left( z_1 \right)$">|; 
-
-$key = q/displaystyle=Fleft(zleft(bright)right)-Fleft(zleft(aright)right);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img66.svg"
- ALT="$\displaystyle = F\left( z\left( b \right) \right) - F\left( z\left( a \right) \right)$">|; 
-
-$key = q/displaystyle=Uleft(bright)-Uleft(aright)+icdotleft[Vleft(bright)-Vleft(aright)right];MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img70.svg"
- ALT="$\displaystyle = U\left( b \right) - U\left( a \right) + i \cdot \left[ V\left( b \right) - V\left( a \right) \right]$">|; 
-
-$key = q/displaystyle=frac{dw}{dz};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="|."$dir".q|img12.svg"
- ALT="$\displaystyle = \frac{dw}{dz}$">|; 
-
-$key = q/displaystyle=frac{partialu}{partialx}+frac{partialv}{partialx};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 4.99ex; vertical-align: -1.71ex; " SRC="|."$dir".q|img11.svg"
- ALT="$\displaystyle = \frac{\partial u }{\partial x}+ \frac{\partial v }{\partial x}$">|; 
-
-$key = q/displaystyle=icdotfrac{2pi}{9};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 4.84ex; vertical-align: -1.71ex; " SRC="|."$dir".q|img101.svg"
- ALT="$\displaystyle = i\cdot \frac{2\pi}{9}$">|; 
-
-$key = q/displaystyle=int^{-a}_{-b}left(fleft[zleft(-tright)right]cdotfrac{operatorname{d}}{operatorname{d}t}left(zleft(-tright)right)right)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.11ex; vertical-align: -2.43ex; " SRC="|."$dir".q|img41.svg"
- ALT="$\displaystyle = \int^{- a}_{- b}\left( f\left[ z\left( - t \right) \right] \cdo...
-...\operatorname{d} t}\left( z\left( - t \right) \right) \right) \operatorname{d}t$">|; 
-
-$key = q/displaystyle=int^{b}_{a}Uleft(zleft(tright)right)operatorname{d}t+icdotint^{b}_{a}bleft(zleft(tright)right)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img65.svg"
- ALT="$\displaystyle = \int^{b}_{a} U\left( z\left( t \right) \right) \operatorname{d}t + i\cdot \int^{b}_{a} b\left( z\left( t \right) \right) \operatorname{d}t$">|; 
-
-$key = q/displaystyle=int^{b}_{a}fleft(zleft(tright)right)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img64.svg"
- ALT="$\displaystyle = \int^{b}_{a} f\left( z\left( t \right) \right) \operatorname{d}t$">|; 
-
-$key = q/displaystyle=int^{pi}_{pi}left(frac{1}{e^{itheta}}cdotfrac{operatorname{d}}{operatorname{d}theta}left(e^{itheta}right)right)operatorname{d}theta;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.79ex; vertical-align: -2.32ex; " SRC="|."$dir".q|img54.svg"
- ALT="$\displaystyle = \int^{\pi}_{\pi}\left( \frac{1}{e^{i\theta}} \cdot \frac{\opera...
-...peratorname{d} \theta}\left( e^{i\theta} \right) \right) \operatorname{d}\theta$">|; 
-
-$key = q/displaystyle=int^{pi}_{pi}left(frac{1}{e^{itheta}}cdoticdote^{itheta}right)operatorname{d}theta;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.79ex; vertical-align: -2.32ex; " SRC="|."$dir".q|img55.svg"
- ALT="$\displaystyle = \int^{\pi}_{\pi}\left( \frac{1}{e^{i\theta}} \cdot i\cdot e^{i\theta} \right) \operatorname{d}\theta$">|; 
-
-$key = q/displaystyle=int^{pi}_{pi}left(iright)operatorname{d}theta;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.62ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img56.svg"
- ALT="$\displaystyle = \int^{\pi}_{\pi}\left( i \right) \operatorname{d}\theta$">|; 
-
-$key = q/displaystyle=int^{}_{c_2}fleft(zright)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.72ex; vertical-align: -2.46ex; " SRC="|."$dir".q|img82.svg"
- ALT="$\displaystyle = \int^{}_{c_2} f\left( z \right) \operatorname{d}z$">|; 
-
-$key = q/displaystyle=int^{}_{left|zright|=1}frac{1}{left(z+left(1+iright)right)cdotleft(z+left(1-iright)right)}operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.90ex; vertical-align: -2.64ex; " SRC="|."$dir".q|img87.svg"
- ALT="$\displaystyle = \int^{}_{ \left\vert z \right\vert = 1} \frac{1}{\left( z + \le...
-...ight) \right) \cdot \left( z + \left( 1 - i \right) \right) } \operatorname{d}z$">|; 
-
-$key = q/displaystyle=left[Fleft(zright)right]^{b}_{a};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 3.21ex; vertical-align: -0.81ex; " SRC="|."$dir".q|img73.svg"
- ALT="$\displaystyle = \left[ F\left( z \right) \right]^{b}_{a}$">|; 
-
-$key = q/displaystyle=left[Fleft(zright)right]^{z_2}_{z_1};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 3.02ex; vertical-align: -1.05ex; " SRC="|."$dir".q|img68.svg"
- ALT="$\displaystyle = \left[ F\left( z \right) \right]^{z_2}_{z_1}$">|; 
-
-$key = q/displaystyle=left[Uleft(bright)+Vleft(bright)right]-icdotleft[Uleft(aright)-Vleft(bright)right];MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img71.svg"
- ALT="$\displaystyle = \left[ U\left( b \right)+ V\left( b \right) \right] - i \cdot \left[ U\left( a \right) - V\left( b \right) \right]$">|; 
-
-$key = q/displaystyle=left[Uleft(bright)+icdotVleft(bright)right]-left[Uleft(aright)+icdotVleft(aright)right];MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img21.svg"
- ALT="$\displaystyle = \left[ U\left( b \right) + i\cdot V\left( b \right) \right] -\left[ U\left( a \right) + i \cdot V\left( a \right) \right]$">|; 
-
-$key = q/displaystyle=left[Uleft(tright)right]^b_a+icdotleft[vleft(tright)right]^b_a;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 3.21ex; vertical-align: -0.81ex; " SRC="|."$dir".q|img20.svg"
- ALT="$\displaystyle = \left[ U\left( t \right) \right]^b_a + i\cdot \left[ v\left( t \right) \right]^b_a$">|; 
-
-$key = q/displaystyle=left[Uleft(tright)right]^{b}_{a}+icdotleft[Vleft(tright)right]^{b}_{a};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 3.21ex; vertical-align: -0.81ex; " SRC="|."$dir".q|img69.svg"
- ALT="$\displaystyle = \left[ U\left( t \right) \right]^{b}_{a} + i \cdot \left[ V\left( t \right) \right]^{b}_{a}$">|; 
-
-$key = q/displaystyle=left[Wleft(bright)-Wleft(aright)right];MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img22.svg"
- ALT="$\displaystyle = \left[ W\left( b \right) - W\left( a \right) \right]$">|; 
-
-$key = q/displaystyle=left[Wleft(tright)right]^b_a;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 3.21ex; vertical-align: -0.81ex; " SRC="|."$dir".q|img23.svg"
- ALT="$\displaystyle = \left[ W\left( t \right) \right]^b_a$">|; 
-
-$key = q/displaystyle=left[icdotthetaright]^{pi}_{pi};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.79ex; vertical-align: -0.81ex; " SRC="|."$dir".q|img57.svg"
- ALT="$\displaystyle = \left[ i \cdot \theta \right]^{\pi}_{\pi}$">|; 
-
-$key = q/displaystyle=xleft(tright)+icdotyleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img35.svg"
- ALT="$\displaystyle = x\left( t \right) + i\cdot y\left( t \right)$">|; 
-
-$key = q/displaystyle=zleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img34.svg"
- ALT="$\displaystyle = z\left( t \right)$">|; 
-
-$key = q/displaystyleF'left(zright)=fleft(zright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.67ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img60.svg"
- ALT="$\displaystyle F'\left( z \right) = f\left( z \right)
-$">|; 
-
-$key = q/displaystylef'left(zright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.67ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img10.svg"
- ALT="$\displaystyle f'\left( z \right)$">|; 
-
-$key = q/displaystylef'left(zright)=frac{operatorname{d}w}{operatorname{d}z};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 4.98ex; vertical-align: -1.71ex; " SRC="|."$dir".q|img6.svg"
- ALT="$\displaystyle f' \left( z \right) = \frac{\operatorname{d}w }{\operatorname{d} z}$">|; 
-
-$key = q/displaystyleimpliesleft|int^{}_{}left(wleft(tright)right)operatorname{d}tright|;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.79ex; vertical-align: -2.32ex; " SRC="|."$dir".q|img46.svg"
- ALT="$\displaystyle \implies \left\vert \int^{}_{}\left( w\left( t \right) \right) \operatorname{d}t \right\vert$">|; 
-
-$key = q/displaystyleint^{b}_{a}left(wleft(tright)right)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img19.svg"
- ALT="$\displaystyle \int^{b}_{a}\left( w \left( t \right) \right) \operatorname{d}t$">|; 
-
-$key = q/displaystyleint^{b}_{a}left(wleft(tright)right)operatorname{d}t=int^{b}_{a}left(uright)operatorname{d}t+icdotint^{b}_{a}left(vright)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img15.svg"
- ALT="$\displaystyle \int^{b}_{a}\left( w \left( t \right) \right) \operatorname{d}t =...
-... \operatorname{d}t + i \cdot \int^{ b}_{a}\left( v \right) \operatorname{d}t
-$">|; 
-
-$key = q/displaystyleint^{b}_{a}left(wleft(tright)right)operatorname{d}t=left[Wleft(tright)right]^b_a;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img16.svg"
- ALT="$\displaystyle \int^{b}_{a}\left( w\left( t \right) \right) \operatorname{d}t = \left[ W\left( t \right) \right]^b_a$">|; 
-
-$key = q/displaystyleint^{}_{-C}left(fleft(zright)right)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.68ex; vertical-align: -2.43ex; " SRC="|."$dir".q|img40.svg"
- ALT="$\displaystyle \int^{}_{-C}\left( f\left( z \right) \right) \operatorname{d}z$">|; 
-
-$key = q/displaystyleint^{}_{C_1}fleft(zright)operatorname{d}z+int^{}_{c_2}fleft(zright)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.72ex; vertical-align: -2.46ex; " SRC="|."$dir".q|img79.svg"
- ALT="$\displaystyle \int^{}_{C_1} f\left( z \right) \operatorname{d}z + \int^{}_{c_2} f\left( z \right) \operatorname{d}z$">|; 
-
-$key = q/displaystyleint^{}_{C_1}fleft(zright)operatorname{d}z-int^{}_{c_2}fleft(zright)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.72ex; vertical-align: -2.46ex; " SRC="|."$dir".q|img80.svg"
- ALT="$\displaystyle \int^{}_{C_1} f\left( z \right) \operatorname{d}z - \int^{}_{c_2} f\left( z \right) \operatorname{d}z$">|; 
-
-$key = q/displaystyleint^{}_{C_1}fleft(zright)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.72ex; vertical-align: -2.46ex; " SRC="|."$dir".q|img81.svg"
- ALT="$\displaystyle \int^{}_{C_1} f\left( z \right) \operatorname{d}z$">|; 
-
-$key = q/displaystyleint^{}_{C}fleft(zright)operatorname{d}z+sum^{k}_{n=1}left[int^{}_{c_n}fleft(zright)operatorname{d}zright];MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 7.41ex; vertical-align: -3.06ex; " SRC="|."$dir".q|img78.svg"
- ALT="$\displaystyle \int^{}_{C} f\left( z \right) \operatorname{d}z + \sum^{k}_{n= 1} \left[ \int^{}_{c_n} f\left( z \right) \operatorname{d}z \right]
-$">|; 
-
-$key = q/displaystyleint^{}_{C}fleft(zright)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.49ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img36.svg"
- ALT="$\displaystyle \int^{}_{C} f \left(z \right) \operatorname{d}z
-$">|; 
-
-$key = q/displaystyleint^{}_{C}fleft(zright)operatorname{d}z=int^{z_2}_{z_1}fleft(zright)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.85ex; vertical-align: -2.46ex; " SRC="|."$dir".q|img37.svg"
- ALT="$\displaystyle \int^{}_{C} f \left(z \right) \operatorname{d}z = \int^{z_2}_{z_1} f\left( z \right) \operatorname{d}z
-$">|; 
-
-$key = q/displaystyleint^{}_{C}fleft(zright)operatorname{d}z=int^{z_2}_{z_1}fleft(zright)operatorname{d}z=left[Fleft(zright)right]^{z_2}_{z_1};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.85ex; vertical-align: -2.46ex; " SRC="|."$dir".q|img62.svg"
- ALT="$\displaystyle \int^{}_{C}f\left( z \right) \operatorname{d}z = \int^{z_2}_{z_1}...
-...( z \right) \operatorname{d}z = \left[ F\left( z \right) \right]^{z_2}_{z_1}
-$">|; 
-
-$key = q/displaystyleint^{}_{C}frac{fleft(zright)}{left(z-z_0right)^{n+1}}operatorname{d}z=f^{n}left(z_0right)cdotfrac{2pii}{n!};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.06ex; vertical-align: -2.66ex; " SRC="|."$dir".q|img102.svg"
- ALT="$\displaystyle \int^{}_{C} \frac{f\left( z \right) }{\left( z- z_0 \right) ^{n+ 1}} \operatorname{d}z = f^{n}\left( z_0 \right) \cdot \frac{2\pi i}{n!}
-$">|; 
-
-$key = q/displaystyleint^{}_{C}frac{fleft(zright)}{z-z_0}operatorname{d}z=2piicdotfleft(z_0right);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.64ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img90.svg"
- ALT="$\displaystyle \int^{}_{C} \frac{f\left( z \right) }{z - z_0} \operatorname{d}z = 2\pi i \cdot f \left( z_0 \right)
-$">|; 
-
-$key = q/displaystyleint^{}_{C}left(fleft(zright)right)operatorname{d}z=int^{b}_{a}left(fleft[zleft(tright)right]cdotz'left(tright)right)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.04ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img38.svg"
- ALT="$\displaystyle \int^{}_{C}\left( f\left( z \right) \right) \operatorname{d}z = \...
-...ft[ z\left( t \right) \right]\cdot z'\left( t \right) \right) \operatorname{d}t$">|; 
-
-$key = q/displaystyleint^{}_{C}left(frac{1}{z}right)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.79ex; vertical-align: -2.32ex; " SRC="|."$dir".q|img52.svg"
- ALT="$\displaystyle \int^{}_{C}\left( \frac{1}{z} \right) \operatorname{d}z
-$">|; 
-
-$key = q/displaystyleint^{}_{left|zright|=1}frac{1}{z^2+2z+2}operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.90ex; vertical-align: -2.64ex; " SRC="|."$dir".q|img86.svg"
- ALT="$\displaystyle \int^{}_{ \left\vert z \right\vert = 1} \frac{1}{z^2 + 2z+2 } \operatorname{d}z$">|; 
-
-$key = q/displaystyleint^{}_{left|zright|=1}frac{cos{z}}{z^3+9z}operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.90ex; vertical-align: -2.64ex; " SRC="|."$dir".q|img91.svg"
- ALT="$\displaystyle \int^{}_{ \left\vert z \right\vert = 1} \frac{\cos{z}}{z^3 + 9z} \operatorname{d}z
-$">|; 
-
-$key = q/displaystyleint^{}_{left|zright|=1}frac{cos{z}}{z^3+9z}operatorname{d}z=int^{}_{left|zright|=1}frac{1}{z}cdotfrac{cos{z}}{z^2+9z}operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.90ex; vertical-align: -2.64ex; " SRC="|."$dir".q|img92.svg"
- ALT="$\displaystyle \int^{}_{ \left\vert z \right\vert = 1} \frac{\cos{z}}{z^3 + 9z} ...
-...\right\vert = 1} \frac{1}{z} \cdot \frac{\cos{z}}{z^2 + 9z} \operatorname{d}z
-$">|; 
-
-$key = q/displaystyleint^{}_{left|zright|=1}frac{frac{cos{z}}{z^2+9}}{left(z-0right)}operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 6.25ex; vertical-align: -2.64ex; " SRC="|."$dir".q|img99.svg"
- ALT="$\displaystyle \int^{}_{ \left\vert z \right\vert = 1} \frac{\frac{\cos{z}}{z^2+ 9}}{\left( z- 0 \right) } \operatorname{d}z$">|; 
-
-$key = q/displaystyleleft|alpha+betaright|leqleft|alpharight|+left|betaright|;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img45.svg"
- ALT="$\displaystyle \left\vert \alpha + \beta \right\vert \leq \left\vert \alpha \right\vert + \left\vert \beta \right\vert
-$">|; 
-
-$key = q/displaystyleleft|int^{}_{}left(fleft(zright)right)operatorname{d}zright|leqMcdotL;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.79ex; vertical-align: -2.32ex; " SRC="|."$dir".q|img50.svg"
- ALT="$\displaystyle \left\vert \int^{}_{}\left( f\left( z \right) \right) \operatorname{d}z \right\vert \leq M\cdot L
-$">|; 
-
-$key = q/displaystyleleqint^{}_{}left|wleft(tright|right)operatorname{d}t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.49ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img47.svg"
- ALT="$\displaystyle \leq \int^{}_{} \left\vert w\left( t \right\vert \right) \operatorname{d}t$">|; 
-
-$key = q/displaystylelim_{nrightarrowinfty}left(sum^{n}_{i=1}left[fleft(z^*_iright)cdotDeltazright]right);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 7.24ex; vertical-align: -3.09ex; " SRC="|."$dir".q|img24.svg"
- ALT="$\displaystyle \lim_{n \rightarrow \infty}\left( \sum^{n}_{i= 1}\left[ f\left( z^*_i \right) \cdot \Delta z \right] \right)
-$">|; 
-
-$key = q/displaystyleoint^{}_{C}fleft(zright)operatorname{d}z=0;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.49ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img75.svg"
- ALT="$\displaystyle \oint^{}_{C} f\left( z \right) \operatorname{d}z = 0
-$">|; 
-
-$key = q/displaystyleoint^{}_{}fleft(zright)operatorname{d}z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 5.49ex; vertical-align: -2.23ex; " SRC="|."$dir".q|img44.svg"
- ALT="$\displaystyle \oint^{}_{} f\left( z \right) \operatorname{d}z
-$">|; 
-
-$key = q/displaystylew'left(tright)=frac{operatorname{d}u}{operatorname{d}t}+icdotfrac{operatorname{d}v}{operatorname{d}t};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 4.98ex; vertical-align: -1.71ex; " SRC="|."$dir".q|img14.svg"
- ALT="$\displaystyle w'\left( t \right) = \frac{\operatorname{d}u }{\operatorname{d} t} + i \cdot \frac{\operatorname{d} v}{\operatorname{d} t}
-$">|; 
-
-$key = q/displaystylew:mathbb{R}rightarrowmathbb{C};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.83ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img1.svg"
- ALT="$\displaystyle w: \mathbb{R} \rightarrow \mathbb{C}
-$">|; 
-
-$key = q/displaystylewleft(tright)=uleft(tright)+icdotvleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img2.svg"
- ALT="$\displaystyle w \left( t \right) = u \left( t \right) + i \cdot v \left( t \right)
-$">|; 
-
-$key = q/displaystylex=xleft(tright),quady=yleft(tright)qquadleft(aleqtleqbright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img29.svg"
- ALT="$\displaystyle x = x\left( t \right), \quad y = y\left( t \right) \qquad \left( a \leq t \leq b \right)$">|; 
-
-$key = q/displaystylez;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img33.svg"
- ALT="$\displaystyle z$">|; 
-
-$key = q/f;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.29ex; vertical-align: -0.57ex; " SRC="|."$dir".q|img74.svg"
- ALT="$f$">|; 
-
-$key = q/fleft(zright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img51.svg"
- ALT="$f\left( z \right) $">|; 
-
-$key = q/fleft(zright)=frac{cos{z}}{z^2+9};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.96ex; vertical-align: -1.11ex; " SRC="|."$dir".q|img98.svg"
- ALT="$f\left( z \right) = \frac{\cos{z}}{z^2+ 9} $">|; 
-
-$key = q/frac{cos{z}}{z^3+9z};MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.83ex; vertical-align: -1.11ex; " SRC="|."$dir".q|img93.svg"
- ALT="$\frac{\cos{z}}{z^3 + 9z}$">|; 
-
-$key = q/gleft(x,yright)=uleft(x,yright)+icdotvleft(x,yright);MSF=1.6;AAT/;
+$key = q/%latex2htmlidmarker379(left(ref{ibysubl}right));MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img15.svg"
+ ALT="% latex2html id marker 379
+\(\left( \ref{ibysubl} \right)\)">|; 
+
+$key = q/%latex2htmlidmarker395left(ref{prodruledefleib}right);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img11.svg"
+ ALT="% latex2html id marker 395
+$\left( \ref{prodruledefleib} \right)$">|; 
+
+$key = q/%latex2htmlidmarker409ref{ibysubl};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.69ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img29.svg"
+ ALT="% latex2html id marker 409
+$\ref{ibysubl}$">|; 
+
+$key = q/(int^{}_{}left[enspaceright]operatorname{d}x);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.92ex; vertical-align: -0.94ex; " SRC="|."$dir".q|img17.svg"
+ ALT="\(\int^{}_{} \left[\enspace \right] \operatorname{d}x \)">|; 
+
+$key = q/(left[fleft(uright)cdotfrac{operatorname{d}u}{operatorname{d}x}right]=left[fleft(gleft(xright)right)cdotg'left(xright)right]);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.07ex; vertical-align: -0.93ex; " SRC="|."$dir".q|img18.svg"
+ ALT="\(\left[ f\left( u \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x}\right] = \left[ f\left( g\left( x \right) \right)\cdot g'\left( x \right) \right]\)">|; 
+
+$key = q/(left[fleft(xright)cdotfrac{operatorname{d}u}{operatorname{d}x}right]=left[fleft(xright)cdotg'left(xright)right]);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.07ex; vertical-align: -0.93ex; " SRC="|."$dir".q|img19.svg"
+ ALT="\(\left[ f\left( x \right)\cdot \frac{\operatorname{d}u }{\operatorname{d} x} \right]= \left[ f\left( x \right)\cdot g'\left( x \right) \right]\)">|; 
+
+$key = q/c;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img54.svg"
+ ALT="$c$">|; 
+
+$key = q/c=uleft(xright);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img56.svg"
+ ALT="$c = u\left( x \right)$">|; 
+
+$key = q/e^{int^{}_{}pleft(xright)operatorname{d}x};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.17ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img63.svg"
+ ALT="$e^{\int^{}_{} p\left( x \right) \operatorname{d}x }$">|; 
+
+$key = q/existsGleft(uright):Gleft(uright)=int^{}_{}frac{1}{fleft(uright)-u}operatorname{d}u;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.39ex; vertical-align: -1.32ex; " SRC="|."$dir".q|img35.svg"
+ ALT="$\exists G\left( u \right): G\left( u \right)= \int^{}_{} \frac{1}{f\left( u \right)- u} \operatorname{d}u $">|; 
+
+$key = q/fleft(xright);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img55.svg"
+ ALT="$f \left( x \right) $">|; 
+
+$key = q/frac{operatorname{d}y}{operatorname{d}x};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.18ex; vertical-align: -0.92ex; " SRC="|."$dir".q|img22.svg"
+ ALT="$\frac{\operatorname{d}y }{\operatorname{d} x}$">|; 
+
+$key = q/frac{operatorname{d}}{operatorname{d}x}left[sin{left(xright)}right]=cos{left(xright)};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.06ex; vertical-align: -0.92ex; " SRC="|."$dir".q|img8.svg"
+ ALT="$\frac{\operatorname{d} }{\operatorname{d} x}\left[ \sin{\left( x \right)} \right]= \cos{\left( x \right)}$">|; 
+
+$key = q/frac{partialu}{partialx};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.07ex; vertical-align: -0.92ex; " SRC="|."$dir".q|img23.svg"
+ ALT="$\frac{\partial u }{\partial x}$">|; 
+
+$key = q/operatorname{d}v=g'left(xright)operatorname{d}x;MSF=1.6;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img9.svg"
- ALT="$g\left( x,y \right) = u\left( x,y \right) + i \cdot v \left( x, y \right) $">|; 
+ ALT="$\operatorname{d} v= g'\left( x \right) \operatorname{d} x$">|; 
 
-$key = q/includegraphics[width=0.3linewidth]{"handwriting2"};AAT/;
-$cached_env_img{$key} = q|<IMG STYLE=""
- SRC="|."$dir".q|img26.svg"
- ALT="\includegraphics[width=0.3\linewidth]{''handwriting2''}">|; 
+$key = q/operatorname{d}x;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.83ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img21.svg"
+ ALT="$\operatorname{d} x$">|; 
 
-$key = q/includegraphics[width=0.7linewidth]{test};AAT/;
-$cached_env_img{$key} = q|<IMG STYLE=""
- SRC="|."$dir".q|img103.svg"
- ALT="\includegraphics[width=0.7\linewidth]{test}">|; 
+$key = q/operatorname{d}y;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.28ex; vertical-align: -0.57ex; " SRC="|."$dir".q|img20.svg"
+ ALT="$\operatorname{d} y$">|; 
 
-$key = q/left(+Cright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img61.svg"
- ALT="$\left( + C \right) $">|; 
-
-$key = q/left|fleft(zright)right|leqM;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img49.svg"
- ALT="$\left\vert f\left( z \right) \right\vert \leq M$">|; 
-
-$key = q/t;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.66ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img32.svg"
- ALT="$t$">|; 
+$key = q/pleft(xright);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img53.svg"
+ ALT="$p\left( x \right)$">|; 
 
 $key = q/u;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img3.svg"
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img31.svg"
  ALT="$u$">|; 
 
+$key = q/u=fleft(xright);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img7.svg"
+ ALT="$u= f\left( x \right)$">|; 
+
+$key = q/uleft(xright);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img57.svg"
+ ALT="$u\left( x \right)$">|; 
+
 $key = q/v;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img4.svg"
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img10.svg"
  ALT="$v$">|; 
 
-$key = q/w=fleft(zright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img5.svg"
- ALT="$w = f \left( z \right) $">|; 
+$key = q/x;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img26.svg"
+ ALT="$x$">|; 
 
-$key = q/w=uleft(tright)+icdotvleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img13.svg"
- ALT="$w = u\left( t \right) + i \cdot v \left( t \right) $">|; 
+$key = q/x>0;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.78ex; vertical-align: -0.21ex; " SRC="|."$dir".q|img68.svg"
+ ALT="$x &gt; 0$">|; 
 
-$key = q/wleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img18.svg"
- ALT="$w\left( t \right) $">|; 
+$key = q/y(1)=10;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img74.svg"
+ ALT="$y(1)= 10$">|; 
 
-$key = q/xleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img30.svg"
- ALT="$x\left( t \right)$">|; 
+$key = q/y;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="|."$dir".q|img25.svg"
+ ALT="$y$">|; 
 
-$key = q/yleft(tright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img31.svg"
- ALT="$y\left( t \right) $">|; 
+$key = q/y>0;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.14ex; vertical-align: -0.57ex; " SRC="|."$dir".q|img49.svg"
+ ALT="$y&gt;0$">|; 
 
-$key = q/z;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.23ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img7.svg"
- ALT="$z$">|; 
+$key = q/y_1=e^{-int^{}_{}pleft(xright)operatorname{d}x};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.62ex; vertical-align: -0.57ex; " SRC="|."$dir".q|img51.svg"
+ ALT="$y_1= e^{- \int^{}_{} p\left( x \right) \operatorname{d}x }$">|; 
 
-$key = q/z=-1pmi;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.95ex; vertical-align: -0.31ex; " SRC="|."$dir".q|img88.svg"
- ALT="$z = - 1 \pm i$">|; 
+$key = q/y_h:quadfrac{operatorname{d}y_h}{operatorname{d}x}+pleft(xright)cdoty_h=0;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.18ex; vertical-align: -0.92ex; " SRC="|."$dir".q|img42.svg"
+ ALT="$y_h: \quad \frac{\operatorname{d}y_h }{\operatorname{d} x}+ p\left( x \right)\cdot y_h= 0$">|; 
 
-$key = q/z=-3i;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.95ex; vertical-align: -0.31ex; " SRC="|."$dir".q|img96.svg"
- ALT="$z = - 3i$">|; 
+$key = q/y_h;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.68ex; vertical-align: -0.57ex; " SRC="|."$dir".q|img40.svg"
+ ALT="$y_h$">|; 
 
-$key = q/z=0;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.69ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img94.svg"
- ALT="$z = 0$">|; 
+$key = q/y_p:quadfrac{operatorname{d}y_p}{operatorname{d}x}+pleft(xright)cdoty_p=fleft(xright);MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.32ex; vertical-align: -0.92ex; " SRC="|."$dir".q|img43.svg"
+ ALT="$y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\cdot y_p= f\left( x \right)$">|; 
 
-$key = q/z=3i;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.76ex; vertical-align: -0.12ex; " SRC="|."$dir".q|img95.svg"
- ALT="$z = 3i$">|; 
+$key = q/y_p;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.89ex; vertical-align: -0.78ex; " SRC="|."$dir".q|img41.svg"
+ ALT="$y_p$">|; 
 
-$key = q/z=left(x,yright);MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="|."$dir".q|img27.svg"
- ALT="$z = \left( x,y \right)$">|; 
+$key = q/y_p=ucdoty_1;MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 1.92ex; vertical-align: -0.78ex; " SRC="|."$dir".q|img61.svg"
+ ALT="$y_p = u \cdot y_1$">|; 
 
-$key = q/z_0;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 1.58ex; vertical-align: -0.46ex; " SRC="|."$dir".q|img89.svg"
- ALT="$z_0$">|; 
-
-$key = q/z_0=0;MSF=1.6;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.04ex; vertical-align: -0.46ex; " SRC="|."$dir".q|img97.svg"
- ALT="$z_0 = 0$">|; 
-
-$key = q/{displaymath}ointctrclockwise^{}_{left|z-z_0right|=r}left(z-z_0right)^noperatorname{d}z={cases}0qquadifnneq-12piiqquadifn=-12{cases}{displaymath};MSF=1.6;AAT/;
+$key = q/{align*}&sum^{n}_{0}left[a_nleft(xright)cdotf^{left(nright)}left(xright)right]=gootnotesize{text{If{gleft(xright)=0{itissaidtobehomogenous}}{align*};MSF=1.6;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE=""
- SRC="|."$dir".q|img85.svg"
+ SRC="|."$dir".q|img37.svg"
+ ALT="\begin{align*}
+&amp;\sum^{n}_{0} \left[ a_n\left( x \right)\cdot f^{\left( n \right)...
+...esize\text{If $g\left( x \right)= 0$ it is said to be homogenous}}
+\end{align*}">|; 
+
+$key = q/{align*}matrix{u&=ln{left(xright)}&&operatorname{d}v&=operatorname{d}xoperatorna{impliesint^{}_{}uoperatorname{d}v=ucdotv+int^{}_{}voperatorname{d}u{align*};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img72.svg"
+ ALT="\begin{align*}
+\begin{matrix}
+u&amp;= \ln{ \left( x \right) } &amp;&amp; \operatorname{d} ...
+..._{} u \operatorname{d}v= u\cdot v + \int^{}_{} v \operatorname{d}u
+\end{align*}">|; 
+
+$key = q/{alignat}{2}frac{operatorname{d}y}{operatorname{d}x}+pleft(xright)cdoty&=0&impliorname{d}y}{operatorname{d}x}+pleft(xright)cdoty&=f(x)&impliesy=y_p{alignat};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img46.svg"
+ ALT="\begin{alignat}{2}
+\frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \ri...
+...eratorname{d} x}+ p\left( x \right)\cdot y&amp;= f(x) &amp;\implies y= y_p
+\end{alignat}">|; 
+
+$key = q/{align}%latex2htmlidmarker732e^{int^{}_{}pleft(xright)operatorname{d}x}cdoty_p&={operatorname{d}x}+pleft(xright)cdoty&=fleft(xright)tag{ref{linform}}{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img64.svg"
+ ALT="\begin{align}
+% latex2html id marker 732e^{\int^{}_{} p\left( x \right) \oper...
+...+ p\left( x \right)\cdot y &amp;= f \left( x \right) \tag{\ref{linform}}
+\end{align}">|; 
+
+$key = q/{align}&a_1left(xright)cdotfrac{operatorname{d}y}{operatorname{d}x}+a_0left(xriguadqquad{{footnotesize{text{Where{aleft(xright){isafunction}}{align};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img38.svg"
+ ALT="\begin{align}
+&amp;a_1\left( x \right)\cdot \frac{\operatorname{d}y }{\operatorname...
+...uad {\footnotesize\text{Where $a\left( x \right)$ is a function } }
+\end{align}">|; 
+
+$key = q/{align}10&=frac{1left(ln{left(1right)-1}+cright)}{2}notag20&=1left(0-1right)+cnotagc&=19{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img75.svg"
+ ALT="\begin{align}
+10&amp;= \frac{1\left( \ln{ \left( 1 \right)- 1 }+ c \right)}{2}\notag \\\\
+20&amp;= 1\left( 0- 1 \right)+ c\notag \\\\
+c&amp;= 19
+\end{align}">|; 
+
+$key = q/{align}Gleft(uright)&=ln{left|xright|}+cnotagGleft(frac{y}{x}right)&=ln{left|xright|}+cnotagGleft(frac{y}{x}right)+ln{left|xright|}+c&=0{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img36.svg"
+ ALT="\begin{align}
+G\left( u \right)&amp;= \ln{ \left\vert x \right\vert }+ c\notag \\\\
+...
+...G\left( \frac{y}{x} \right)+ \ln{ \left\vert x \right\vert }+ c &amp;= 0
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}y}{operatorname{d}x}&=fleft(frac{y}{x}right)notagfracint^{}_{}frac{1}{fleft(uright)-u}operatorname{d}u&=ln{left|xright|}+c{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img34.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x}&amp;= f\left( \frac{y}{...
+...\right)- u} \operatorname{d}u &amp;= \ln{ \left\vert x \right\vert }+ c
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}y}{operatorname{d}x}&=frac{operatorname{d}y}{operatorxright)right)right]&=f'left(gleft(xright)right)cdotgleft(xright)notag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img2.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x} &amp;= \frac{\operatorn...
+...eft( g\left( x \right) \right)\cdot g\left( x \right) \\\\
+ \notag
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}y}{operatorname{d}x}+frac{y}{x+1}&=frac{ln{left(xright)}}{x+1}enspace:qquadleft(xinmathbb{R}setminusleft{-1,0right}right){align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img66.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x}+ \frac{y}{x+ 1} &amp;= ...
+... \qquad \left( x\in \mathbb{R} \setminus \left\{-1,0\right\} \right)
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}y}{operatorname{d}x}+pleft(xright)cdoty&=0notagfrac{1otagleft|yright|&=e^{int^{-pleft(xright)x}_{}operatorname{d}x}cdote^c{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img48.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \right) \...
+...ert&amp;= e^{\int^{- p\left( x \right)x}_{} \operatorname{d}x }\cdot e^c
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}y}{operatorname{d}x}+pleft(xright)cdoty=fleft(xright){align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img45.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d}y }{\operatorname{d} x} + p\left( x \right)\cdot y= f\left( x \right)
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}}{operatorname{d}x}left(ucdotvright)&=frac{operatornaght)&=f'left(xright)cdotgleft(xright)+fleft(xright)cdotg'left(xright){align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img1.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d} }{\operatorname{d} x}\left( u\cdot v \right...
+...t)\cdot g\left( x \right)+ f\left( x \right)\cdot g'\left( x \right)
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}}{operatorname{d}x}left(y_h+y_pright)+pleft(xright)cdleft(xright)cdoty_p&=fleft(xright)notag0+fleft(xright)&=fleft(xright){align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img47.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d} }{\operatorname{d} x}\left( y_h+ y_p \right...
+...\left( x \right)\notag \\\\
+0 + f\left( x \right)&amp;= f\left( x \right)
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}}{operatorname{d}x}left[F'left(uright)right]&=F'left(rac{operatorname{d}}{operatorname{d}x}left[Fleft(uright)+Cright]notag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img4.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d} }{\operatorname{d} x}\left[ F'\left( u \rig...
+...} }{\operatorname{d} x}\left[ F\left( u \right) +C \right]\notag \\\\
+\end{align}">|; 
+
+$key = q/{align}frac{operatorname{d}}{operatorname{d}x}left[fleft(xright)cdotgleft(xright=f'left(xright)cdotgleft(xright)+fleft(xright)cdotg'left(xright)notag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img12.svg"
+ ALT="\begin{align}
+\frac{\operatorname{d} }{\operatorname{d} x}\left[ f\left( x \righ...
+...eft( x \right)+ f\left( x \right)\cdot g'\left( x \right)\notag \\\\
+\end{align}">|; 
+
+$key = q/{align}gleft(yright)cdotfrac{operatorname{d}y}{operatorname{d}x}&=fleft(xright)name{d}x}operatorname{d}x&=int^{}_{}fleft(xright)operatorname{d}xnotag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img28.svg"
+ ALT="\begin{align}
+g\left( y \right)\cdot \frac{\operatorname{d}y }{\operatorname{d} ...
+...name{d}x &amp;= \int^{}_{} f\left( x \right) \operatorname{d}x\notag \\\\
+\end{align}">|; 
+
+$key = q/{align}impliesy_h&=e^{-int^{}_{}pleft(xright)operatorname{d}x}cdotcnotag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img50.svg"
+ ALT="\begin{align}
+\implies y_h&amp;= e^{- \int^{}_{} p\left( x \right) \operatorname{d}x }\cdot c \notag
+\end{align}">|; 
+
+$key = q/{align}int^{}_{}fleft(gleft(xright)right)cdotg'left(xright)operatorname{d}x&=intag&=Fleft(uright)+Cnotag&=int^{}_{}fleft(uright)operatorname{d}unotag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img5.svg"
+ ALT="\begin{align}
+\int^{}_{} f\left( g\left( x \right) \right)\cdot g'\left( x \righ...
+...C\notag \\\\
+&amp;= \int^{}_{} f\left( u \right) \operatorname{d}u\notag
+\end{align}">|; 
+
+$key = q/{align}int^{}_{}fleft(gleft(xright)right)cdotg'left(xright)operatorname{d}x&=intatorname{d}x}operatorname{d}x&=int^{}_{}fleft(uright)operatorname{d}u{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img6.svg"
+ ALT="\begin{align}
+\int^{}_{} f\left( g\left( x \right) \right)\cdot g'\left( x \righ...
+...} \operatorname{d}x&amp;= \int^{}_{} f\left( u \right) \operatorname{d}u
+\end{align}">|; 
+
+$key = q/{align}int^{}_{}frac{operatorname{d}}{operatorname{d}x}left[left(x+1right)cdotyright]operatorname{d}x&=int^{}_{}ln{left(xright)}operatorname{d}xnotag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img70.svg"
+ ALT="\begin{align}
+\int^{}_{} \frac{\operatorname{d} }{\operatorname{d} x}\left[ \le...
+...me{d}x&amp;= \int^{}_{} \ln{ \left( x \right) } \operatorname{d}x \notag
+\end{align}">|; 
+
+$key = q/{align}int^{}_{}gleft(yright)operatorname{d}y&=int^{}_{}fleft(xright)operatorname{d}x{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img30.svg"
+ ALT="\begin{align}
+\int^{}_{} g\left( y \right) \operatorname{d}y &amp;= \int^{}_{} f\left( x \right) \operatorname{d}x
+\end{align}">|; 
+
+$key = q/{align}int^{}_{}left(frac{operatorname{d}u}{operatorname{d}x}cdotv+ucdotfrac{opeperatorname{d}v}{operatorname{d}x}right)operatorname{d}x&=ucdotvnotag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img14.svg"
+ ALT="\begin{align}
+\int^{}_{} \left( \frac{\operatorname{d}u }{\operatorname{d} x}\c...
+...v }{\operatorname{d} x} \right) \operatorname{d}x&amp;= u\cdot v \notag
+\end{align}">|; 
+
+$key = q/{align}int^{}_{}voperatorname{d}u+int^{}_{}uoperatorname{d}v&=ucdotvnotagint^{}_{}uoperatorname{d}v&=ucdotv-int^{}_{}voperatorname{d}u{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img16.svg"
+ ALT="\begin{align}
+\int^{}_{} v \operatorname{d}u + \int^{}_{} u \operatorname{d}v &amp;=...
+..._{} u \operatorname{d}v &amp;= u\cdot v - \int^{}_{} v \operatorname{d}u
+\end{align}">|; 
+
+$key = q/{align}left(x+1right)cdotfrac{operatorname{d}y}{operatorname{d}x}+y&=ln{left(xright)}enspace;qquady(1)=10{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img65.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot \frac{\operatorname{d}y }{\operatorname{d} x}+ y&amp;= \ln{ \left( x \right) } \enspace ; \qquad y(1)= 10
+\end{align}">|; 
+
+$key = q/{align}left(x+1right)cdotfrac{operatorname{d}y}{operatorname{d}x}+y&=ln{left(xriperatorname{d}x}left(left(x+1right)cdotyright)&=ln{left(xright)}notag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img69.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot \frac{\operatorname{d}y }{\operatorname{d...
+...eft( x+ 1 \right)\cdot y \right)&amp;= \ln{ \left( x \right) }\notag \\\\
+\end{align}">|; 
+
+$key = q/{align}left(x+1right)cdoty&=int^{}_{}ln{left(xright)}operatorname{d}xnotag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img71.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot y&amp;= \int^{}_{} \ln{ \left( x \right) } \operatorname{d}x \notag\\\\
+\end{align}">|; 
+
+$key = q/{align}left(x+1right)cdoty&=ln{left(xright)cdotx}-int^{}_{}operatorname{d}xnotag+cnotagimpliesy&=frac{xcdotleft(ln{left(xright)-1}+cright)}{x+1}notag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img73.svg"
+ ALT="\begin{align}
+\left( x+ 1 \right)\cdot y &amp;= \ln{ \left( x \right)\cdot x }- \int...
+...ac{x\cdot \left( \ln{ \left( x \right)- 1 }+ c \right)}{x+ 1} \notag
+\end{align}">|; 
+
+$key = q/{align}matrix{&u=fleft(xright)&&v=gleft(xright)&frac{operatorname{d}u}{operatornight)&&frac{operatorname{d}v}{operatorname{d}x}=g'left(xright)matrix{{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img13.svg"
+ ALT="\begin{align}
+\begin{matrix}
+&amp;u = f\left( x \right) &amp;&amp;v = g\left( x \right)\\\\
+...
+...ratorname{d}v }{\operatorname{d} x} = g'\left( x \right)
+\end{matrix}\end{align}">|; 
+
+$key = q/{align}matrix{u&=g(x)&quadF(x):enspaceF'(x)=f(x)=yfrac{du}{dx}&=g'(x)matrix{{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img3.svg"
+ ALT="\begin{align}
+\begin{matrix}
+u &amp;= g(x) &amp; \quad F(x): \enspace F'(x) = f(x) = y \\\\
+\frac{du}{dx} &amp;= g'(x)
+\end{matrix}\end{align}">|; 
+
+$key = q/{align}sum^{n}_{0}left[a_0left(xright)cdotleft(frac{operatorname{d}^ny}{operatorname{d}x^n}right)right]{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img24.svg"
+ ALT="\begin{align}
+\sum^{n}_{0} \left[ a_0\left( x \right)\cdot \left( \frac{\operatorname{d}^ny }{\operatorname{d} x^n} \right) \right]
+\end{align}">|; 
+
+$key = q/{align}u&=e^{int^{}_{}frac{1}{x+1}operatorname{d}x}notag&=e^{int^{}_{}ln{left|x+1right|}operatorname{d}x}notag&=left|x+1right|{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img67.svg"
+ ALT="\begin{align}
+u&amp;= e^{\int^{}_{} \frac{1}{x+ 1} \operatorname{d}x }\notag \\\\
+&amp;...
+...vert } \operatorname{d}x }\notag \\\\
+&amp;= \left\vert x+ 1 \right\vert
+\end{align}">|; 
+
+$key = q/{align}u&=frac{y}{x}notagimpliesy&=ucdotxnotagimpliesfrac{operatorname{d}y}{oper=frac{operatorname{d}u}{operatorname{d}x}cdotx+left(1right)cdotunotag{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img33.svg"
+ ALT="\begin{align}
+u&amp;= \frac{y}{x}\notag \\\\
+\implies y &amp;= u\cdot x\notag \\\\
+\imp...
+...ame{d}u }{\operatorname{d} x}\cdot x+ \left( 1 \right)\cdot u \notag
+\end{align}">|; 
+
+$key = q/{align}u=int^{}_{}fleft(xright)cdote^{int^{}_{}pleft(xright)operatorname{d}x}operatorname{d}x{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img60.svg"
+ ALT="\begin{align}
+u= \int^{}_{} f\left( x \right)\cdot e^{\int^{}_{} p\left( x \right) \operatorname{d}x } \operatorname{d}x
+\end{align}">|; 
+
+$key = q/{align}y_h&=y_1(x)cdotc{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img52.svg"
+ ALT="\begin{align}
+y_h&amp;= y_1(x) \cdot c
+\end{align}">|; 
+
+$key = q/{align}y_p&=e^{-int^{}_{}pleft(xright)operatorname{d}x}cdotuleft(xright)notagfrad}xnotagu&=int^{}_{}fleft(xright)slashy_1left(xright)operatorname{d}x{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img59.svg"
+ ALT="\begin{align}
+y_p &amp;= e^{- \int^{}_{} p\left( x \right) \operatorname{d}x } \cdo...
+...\int^{}_{} f \left( x \right) /y_1\left( x \right) \operatorname{d}x
+\end{align}">|; 
+
+$key = q/{align}y_p&=frac{1}{y_1}cdotint^{}_{}fleft(xright)cdote^{int^{}_{}pleft(xright)o}int^{}_{}fleft(xright)cdote^{int^{}_{}pleft(xright)operatorname{d}x}{align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img62.svg"
+ ALT="\begin{align}
+y_p&amp;= \frac{1}{y_1}\cdot \int^{}_{} f\left( x \right)\cdot e^{\in...
+... x \right)\cdot e^{\int^{}_{} p\left( x \right) \operatorname{d}x }
+\end{align}">|; 
+
+$key = q/{align}y_p&=uleft(xright)timesy_hleft(xright)notag&=e^{-int^{}_{}pleft(xright)operatorname{d}x}cdotuleft(xright){align};AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img58.svg"
+ ALT="\begin{align}
+y_p&amp;= u\left( x \right)\times y_h\left( x \right)\notag \\\\
+&amp;= e^{...
+...^{}_{} p\left( x \right) \operatorname{d}x } \cdot u\left( x \right)
+\end{align}">|; 
+
+$key = q/{displaymath}frac{operatorname{d}y}{operatorname{d}x}=fleft(frac{x}{y}right){displaymath};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img32.svg"
  ALT="\begin{displaymath}
-\ointctrclockwise^{}_{ \left\vert z - z_0 \right\vert = r} \...
-... \qquad if n \neq - 1\\\\
-2\pi i \qquad if n = - 12
-\end{cases}\end{displaymath}">|; 
+\frac{\operatorname{d}y }{\operatorname{d} x}= f\left( \frac{x}{y} \right)
+\end{displaymath}">|; 
+
+$key = q/{displaymath}y=frac{xleft(ln{left(xright)-1}+19right)}{x+1}enspace;qquadforallxinmathbb{C}setminus{-1,0}{displaymath};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img76.svg"
+ ALT="\begin{displaymath}
+y= \frac{x\left( \ln{ \left( x \right)- 1 }+ 19 \right)}{x+ 1} \enspace ; \qquad \forall x \in \mathbb{C}\setminus\{-1,0\}
+\end{displaymath}">|; 
+
+$key = q/{tcolorbox}{par{Adifferentialequationoftheform:align{gleft(yright)cdotfrac{operae{d}y=int^{}_{}fleft(xright)operatorname{d}xalign{{tcolorbox};MSF=1.6;TAGS=R;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img27.svg"
+ ALT="\begin{tcolorbox}
+\par
+A differential equation of the form:
+\begin{align}
+g\left...
+...{d}y = \int^{}_{} f\left( x \right) \operatorname{d}x
+\end{align}\end{tcolorbox}">|; 
+
+$key = q/{tcolorbox}{par{itemize{itemRewritetheEquationinthestandardform:displaymath{frace{{par{itemIntegratebothsidesinordertosolve:itemize{{par{{tcolorbox};MSF=1.6;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img44.svg"
+ ALT="\begin{tcolorbox}
+\par
+\begin{itemize}
+\item Rewrite the Equation in the standa...
+...\item Integrate both sides in order to solve:
+\end{itemize}\par
+\end{tcolorbox}">|; 
+
+$key = q/{tcolorbox}{par{textbf{LinearFirstOrderODE:}align{frac{operatorname{d}y}{operatoif{fleft(xright)=0{theequationissaidtobehomogenous{tcolorbox};MSF=1.6;TAGS=R;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE=""
+ SRC="|."$dir".q|img39.svg"
+ ALT="\begin{tcolorbox}
+\par
+\textbf{Linear First Order ODE:}
+\begin{align}
+\frac{\ope...
+...if $f\left( x \right)= 0$ the equation is said to be homogenous
+\end{tcolorbox}">|; 
 
 1;
 
