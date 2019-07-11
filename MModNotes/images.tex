@@ -1,11 +1,11 @@
 \batchmode
-\documentclass[18pt]{report}
+\documentclass[20pt]{report}
 \RequirePackage{ifthen}
 
-
+ 
 \usepackage{diffpreamble}
 %
-\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault} %Set sans Serif
 
 
 
@@ -522,18 +522,22 @@ $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\c
 \lthtmlfigureA{tcolorbox604}%
 \begin{tcolorbox}
 \par
-\begin{itemize}
+\begin{enumerate}
     \item Rewrite the Equation in the standard form:
       \begin{displaymath}
+      \ \\
       \frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \right)\cdot y = f \left( x \right)  
       \end{displaymath}
     \item Identify $p\left( x \right)$\  and find the integrating factor: 
       \begin{displaymath}
+      \ \\
       e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }
       \end{displaymath} 
       \item Multiply through by the integrating factor:
         \begin{displaymath}
+        \ \\
     e^{\int^{}_{} p\left( x \right)  \operatorname{d}x } \left(  \frac{\operatorname{d}y }{\operatorname{d} x}+ p\left( x \right)\cdot y \right) = e^{\int^{}_{} p\left( x \right)  \operatorname{d}x }f \left( x \right)  
+        \ \\
         \end{displaymath}
 \par
 \subitem It may be concluded:
@@ -541,13 +545,15 @@ $y_p: \quad \frac{\operatorname{d}y_p }{\operatorname{d} x}+ p\left( x \right)\c
 \par
 \hfill\begin{minipage}{\dimexpr\textwidth-3cm}
         \begin{displaymath}
+        \ \\
         \frac{\operatorname{d} }{\operatorname{d} x}\left[ e^{\int^{}_{} p\left( x \right)  \operatorname{d}x \cdot  } \cdot y\right] = e^{\int^{}_{} p\left( x \right)  \operatorname{d}x } \cdot f \left( x \right) 
+        \ \\
         \end{displaymath}
         \end{minipage}
         \ \
 \par
 \item Integrate both sides in order to solve:
-  \end{itemize}
+  \end{enumerate}
 \par
 \end{tcolorbox}%
 \lthtmlfigureZ
