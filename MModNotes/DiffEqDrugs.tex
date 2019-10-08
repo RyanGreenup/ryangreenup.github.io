@@ -1,0 +1,296 @@
+%%\documentclass[]{article}
+%%\usepackage{diffpreamble}
+%
+%
+%\begin{document}
+
+
+%%%%%%%Comment above here when making master
+
+\section{Modelling Drug Concentrations}
+\subsection{Worked Example}
+\subsubsection{Section 11.2, Question 2}
+
+If $k = 0.05 \text{ hr}^{-1}$ and the highest safe concentration is $e$ times the lowest effective
+concentration, find the length of the time between repeated doses that will
+ensure safe but effective concentrations.
+
+\paragraph{Solve the Decay Model}
+
+let:
+
+
+
+
+
+
+%\begin{table}
+%  \centering
+\begin{tabular}{|cp{0.8\linewidth}}
+  $t$ &  be the time (variable) since the last dose was administered \\
+    $T$ & be the constant time between doses \\
+    $c_n\left( t \right)$ & be the blood concentration, after a period of $t$, following the $n $th dose \\
+     $c_0$ & be the initial dose administered, which will also be the constant dosage and initial blood concentration at $t= 0$ \\
+     $H= r\cdot L,  $ & be the maximum safe dosage, {\scriptsize $\quad \exists ! r \in \mathbb{R^+}$ }  \\
+     $L$ & be the minimum effective dosage\\
+     $C_n$ & be the drug level immediately following administration\\
+     $R_n$ & be the drug level remainining immediately preceeding administration.
+  \end{tabular}
+%  \caption{assignment values}
+%  \label{tab:assignment}
+%\end{table}
+  \ \\
+
+
+
+
+Presume  that  the rate of  drug metabolism  is  proportional to the drug levels $c\left( t \right)$:
+
+
+\begin{align*}
+  \frac{\operatorname{d}c }{\operatorname{d} t} &\propto c\left( t \right) \\
+  \ln{ \left| c\left( t \right) \right| } &= -kt+ \lambda, \quad \exists  \lambda \in \mathbb{R}
+\end{align*}
+
+blood levels will be positive and so the absolute value may be dispenced with:
+
+\begin{align}
+  \ln{ \left( c\left( t \right) \right) } &= -kt + \kappa \notag\\
+  \implies  c\left( t \right) &= \lambda^*\cdot  e^{-kt}, \quad \exists \lambda^* \in \mathbb{R}
+\end{align}
+
+Applying the initial condition that $c\left( 0 \right)= c_0$:
+
+\begin{align}
+  c\left( 0 \right)= c_0 &= \lambda^*\cdot  e^{-k0} \notag \\
+   \implies \lambda^* &= c_0 
+\end{align}
+
+Hence the blood concentration levels, as a function of time will be:
+
+\begin{align}
+  c\left( t \right)&= c_0\cdot  e^{-kt} 
+\end{align}
+
+\paragraph{Solve the Time between doses}
+
+Presume when a dose is applied that the level instantaneously reaches the higher level as shown in the diagram at \ref{fig:Concentration Plot}.
+
+\begin{figure}[h!]
+\begin{tikzpicture}[domain = 0:10, scale = (2/3)]
+  \clip (-1,-1) rectangle (12,12);
+  \draw[->, thick] (0,0) -- (0,10) node[right] {$C$ {\scriptsize nmol $\cdot  $ L$^{-1}$}};
+  \draw[->, thick] (0,0) -- (10, 0) node[right] {$t$ };
+  \draw[] [out=270, in = 180]  (0,5) to (3,2) node[right] {\scriptsize $\left( t_{\textit{min}}, c_{\textit{min}} \right)$};
+  \draw[dashed] (3,2)--(3,5);
+  \draw[] [out=270, in=180] (3,5) to (6,3) ;
+  \draw[dashed] (6,3)--(6,6);
+  \draw[] [out=270, in=180] (6,6) to (9,4) ;
+  \draw[dashed] (9,4)--(9, 7);
+  \draw[ ] [out=270, in=180] (9,7) to (12,4);
+  \draw[dotted]  (0,7)--(12,7) node[below left] {$C_n = H$};
+  \draw[dotted]  (0,4)--(12,4) node[below left] {$R_\infty = L$};
+  \node [left] at (0,5) {$C_0$};
+  \draw[<-> ] (0.4,4)--(0.4,7) node[below right] {\tiny $C_0 = H-L$};
+\end{tikzpicture}
+  \caption{Diagram of Blood Levels over time}
+  \label{fig:Concentration Plot}
+\end{figure}
+
+The blood concentration will not necessarily reach the overdose threshold $H$ or the minimum effective threshold $L$ following the first dose, as shown in the figure at \ref{fig:Concentration Plot}, there will however be a maximum  $\left( t_{\textit{max}}, c_\textit{max}  \right)$ and a minimum concentration $\left( t_{\textit{min}}, c_{\textit{min}} \right)$:
+
+\begin{align}
+  c&= c_0e^{-kt}\notag \\ 
+  e^{-kt} &= \frac{c}{c_0}\notag \\ 
+  -kt &=  \ln{  \left( \frac{c}{c_0} \right)}\notag \\ 
+  t &= \frac{1}{-k} \cdot   \ln{  \left( \frac{c}{c_0} \right)}\notag \\ 
+\end{align}
+
+The time between dosages, if the dosages are constant, must be the difference between the maximum concentration and the minimum concentration, if the minimum concentration is limited by the effective minimum dosage $L$ and the maximum effective dosage is limited by the safe threshod $H= r\cdot  L$ then we have:
+
+\begin{align}
+  T &= t\left( c_{\text{max}}  \right) - t\left( c_{\text{min}} \right)\notag \\ 
+  &= \frac{1}{-k}\left[ \ln{ \left( \frac{c_{\text{max}}}{c_0} \right) - \ln{ \left( \frac{c_{\text{min}}}{c_0} \right) } } \right]\notag \\ 
+  &= \frac{1}{-k}\left[ \ln{ \left( \frac{L\cdot  r}{c_0} \right) - \ln{ \left( \frac{L}{c_0} \right) } } \right]\notag \\ 
+  &= \frac{1}{-k}\cdot  \ln{ \left( r \right) } \label{eq:T Defininition}
+\end{align}
+
+
+Thus the time between repeated doses must be less than $T$, where $T$ is defined as above at \eqref{eq:T Defininition}.
+
+
+
+\paragraph{What is the size of the dose}
+It is not possible to determine the size of each dose, we would need to know the upper/lower limits or, in this case, $r$.
+
+\subsubsection{Section 11.2, Question 3}
+Suppose $k = 0.05 \text{ hr}^{- 1}$ and $T = 10 \text{ hr}$; what is the smallest $n$ such that $R_n>0.5\cdot  R$
+
+\paragraph{Solve the Decay Function}
+
+\begin{align}
+\frac{\operatorname{d}C }{\operatorname{d} t} \propto C\notag \\ 
+\implies  \frac{1}{C}\cdot  \frac{\operatorname{d}C }{\operatorname{d} t}&= -k, \quad \exists k\in \mathbb{R}^{- } \notag \\ 
+\implies  \ln{ \left| C \right| }&= -k\cdot  t+ \lambda, \quad \exists \lambda \in \mathbb{R}\notag \\ 
+\implies  C\left( t \right)&= \lambda^*\cdot  e^{-k\cdot  t}, \quad \exists \lambda^* \in \mathbb{R}
+\end{align}
+
+Now by using the initial condition that $C\left( 0 \right)= C_0$:
+\begin{align}
+  C\left( 0 \right)&= \lambda^*\cdot  e^{0} \notag \\ 
+   \implies  \lambda^* &= C_0 \notag \\ 
+    \implies  C\left( t \right)&= C_0\cdot  e^{-k\cdot  t} 
+\end{align}
+
+
+
+
+\paragraph{Solve the levles for repeated doses}
+The function $C_n\left( t \right)$ that describes drug levels, given the simplifying assumption that drug levels immediately rise following administration of the drug, is described by a sequence of seperate functions, $\left( C_1\left( t \right), C_2\left( t \right), C_3\left( t \right) \dots C_n\left( t \right) \right)$ corresponding to the domain $\left( \left( n- 1 \right)\cdot  T , T \right)$ respectively.
+\subparagraph{Solve the value of $C_n$}
+Following the initial dose of $C_0$, a subsequent dose will need to be administered after a period of time $T$, which correspoonds to the constant dosing schedule, at this time the blood levels will be:
+
+\begin{align*}
+  R_1&= C\left( T \right) \\
+  &= C_0\cdot  e^{-k\cdot  t}
+\end{align*}
+
+At this time, the simplifying assumption is made that the levels rise immediately to reach $C_2$, which is given by the initial value pluse the dose $C_0$ (which is also assumed constant):
+
+\begin{align}
+C_1&= C_0+ R_1 \notag \\ 
+&= C_0+ C_0\cdot  e^{-k\cdot  t}
+\end{align}
+
+Following this the levles will again decrease up until the time of the next dose, after a period of $t= T$, but this time they will fall from an initial value of $C_1$:
+
+\begin{align}
+  R_2&= C_1\cdot  e^{- kT}\notag \\ 
+  &= \left( C_0 +  C_0\cdot  e^{- kT} \right)\cdot  e^{- kT}\notag \\ 
+  &= C_0e^{- kT} +  C_0\cdot  e^{- 2kT}
+\end{align}
+
+
+following the preceeding logic:
+
+\begin{align}
+C_2 &=  R_2 +  C_0 \notag \\ 
+&= C_0 +  C_0 \cdot  e^{- kT} +  C_0 \cdot   e^{- 2kT}
+\end{align}
+
+now by the geometric series we have $\sum^{n- 1}_{i= 0}   \left[ r^n \right]= \frac{1- r^n}{1- r}$ so:
+
+\begin{align}
+R_3 &=  C_2 \cdot  e^{- kT}\notag \\ 
+&=  \left( C_0 po C_0 \cdot  e^{- kT} +  C_0 \cdot  e^{- 2kT} \right) \cdot   e^{- kT}\notag \\ 
+&= c)e^{- kT} +  C_0 e^{- 2kT} +  C_0 e^{- 3kT}\notag \\ 
+\dots \notag \\ 
+R_n &= C_0\cdot  \sum^{n}_{i= 1}   \left[ \left( e^{- kT} \right)^i \right] \notag\\
+&= \frac{C_0\cdot  e^{- kT} \cdot  \left( 1- e^{- kTn} \right)}{\left( 1- e^{- kT} \right)}
+\end{align}
+
+
+The long term behaviour of the concentration levels will be:
+
+\begin{align}
+  R= R_{\infty} &= \lim_{n     \rightarrow \infty}\left[ R_n \right]\notag \\ 
+&= \lim_{n     \rightarrow \infty}\left[ \frac{C_0 - e^{- kTn}}{\left( e^{- kT} - 1\right)} \right]\notag \\ 
+&=  \frac{C_0 - \lim_{n     \rightarrow \infty}\left[ e^{- kTn} \right]}{\left( e^{- kT} - 1\right)} \notag\\
+&=  \frac{C_0 - 0}{\left( e^{- kT} - 1\right)} \notag \\
+&=  \frac{C_0 }{\left( e^{- kT} - 1\right)} 
+\end{align}
+
+The concentration level is hence given by:
+
+\begin{align}
+C_n &= C_0+R_n \notag \\
+&= c_0 +   1 + \frac{1 - e^{- kTn}}{\left( e^{- kT} - 1 \right)}  \notag\\
+c_\infty &= \lim_{n     \rightarrow \infty}\left[ C_n\left( t \right) \right] \notag\\
+&= C_0 + R_\infty \notag\\
+&= c_0\left( 1 + \frac{1}{\left( e^{- kT} - 1 \right)} \right) \notag\\
+\end{align}
+
+
+\paragraph{Substitute the Dose Schedule}
+From above we have that the dose schedule is:
+
+\begin{align}
+T&= \ln{ \left( r \right) }\cdot  \frac{1}{k} \notag
+\end{align}
+
+hence by substitution:
+
+\begin{align*}
+  10 = 100\cdot  \ln{ \left( r \right) } \\
+  r= e^{\frac{1}{10}}
+\end{align*}
+
+Hence we may conclude:
+\begin{align}
+  H= e^{\frac{1}{10}}
+\end{align}
+
+Now in order to solve $n$ :
+
+
+\begin{align*}
+  r_n &> 0.5\cdot  R \\
+  \frac{C_0 \cdot  e^{- kT}\left( 1- e^{- kTn} \right)}{1- e^{- kt}} &> \frac{C_0}{2\left( e^{kt} - 1 \right)}  \notag \\ 
+\end{align*}
+
+multiply the RHS by $\frac{e^{- kt}}{e^{- kt}}$
+
+\begin{align}
+  \frac{C_0 \cdot  e^{- kT}\left( 1- e^{- kTn} \right)}{1- e^{- kt}} &> \frac{C_0\cdot  e^{- kt}}{2\left(1- e^{-kt}  \right)}  \notag \\ 
+\end{align}
+
+because $\left( 1- e^{- kt} \right)>1$:
+
+\begin{align}
+  C_0\cdot  e^{- kT}\left( 1- e^{- kTn} \right)  &> C_0\cdot  e^{- kT} \cdot  \frac{1}{2}\notag \\ 
+  1- e^{- kTn}&>\frac{1}{2} \notag \\ 
+  \frac{1}{2}&>e^{- kTn} \notag \\ 
+  -\ln{ \left( 2 \right) } &> - kTn\notag \\ 
+  \ln{ \left( 2 \right) }&<kTn\notag \\ 
+  \frac{\ln{ \left( 2 \right) }}{kT} &< n\notag \\ 
+  n&>\frac{\ln{ \left( 2 \right) }}{kT}\notag \\ 
+  n&>10\times \ln{ \left( 2 \right) } \notag \\ 
+  n&>6.9
+\end{align}
+
+$\therefore$  $n = 7$ is the minimum value of  $n$ that satisfies that condition.
+
+
+
+
+
+\subsubsection{Section 11.2, Question 5a}
+
+  Suppose that $k= 0.2 \text{ hr^{-1}}$ and that the smallest concentration is $0.03 \text{mg}/\text{ml}$. A single dose that produces a concentration of $ 0.1 \frac{\text{mg}}{\text{ml}}$  is administered. Approximately how many hours will the drug remain effective?
+
+  From before we have:
+
+  \begin{align*}
+    \frac{\operatorname{d}C }{\operatorname{d} t}= C\left( t \right)  \implies  c\left( t \right)= C_0e_^{k\cdot  t}
+  \end{align*}
+
+ The question gives:
+ \begin{align}
+   c_0&= 0.1 \notag \\ 
+   l&= 0.03
+ \end{align}
+
+ find $t$ for $C\left( t \right)= L$:
+
+$$
+\begin{align*}
+L= C\left( t \right)\notag \\ 
+&= c_0\cdot  e^{k\cdot  t}\notag \\ 
+k\cdot  t &=  \ln{ \left( \frac{C_0}{L} \right) }\\
+&= \frac{1}{k}\cdot  \ln{ \left( \frac{C_0}{L} \right) }\\
+&= 5\cdot  \ln{ \left( \frac{10}{3} \right) }\\
+&= 6 \text{ hours; } 1 \text{ min }
+\end{align*}
+$$
+
+
