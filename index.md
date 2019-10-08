@@ -9,7 +9,7 @@
 # Ryan's Class Notes
 
 [DorsProb](https://ryangreenup.github.io/toastflip/toastflip.html)
-[Modelling Dosages](MModNotes/doseReport.html) 
+[Modelling Dosages](MModNotes/DiffEqDrugs.html) 
 
 
 
