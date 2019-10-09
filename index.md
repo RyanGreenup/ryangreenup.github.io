@@ -11,6 +11,8 @@
 [DorsProb](https://ryangreenup.github.io/toastflip/toastflip.html)
 [Modelling Dosages](MModNotes/DiffEqDrugs.html) 
 
+[Look Dor; More Notes](https://ryangreenup.github.io//Notable/Notable - Export 7e94/Assigning Solve Solutions in Mathematica.html) 
+
 
 
 
