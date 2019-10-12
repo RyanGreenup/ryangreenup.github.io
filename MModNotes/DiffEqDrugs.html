@@ -11,7 +11,7 @@
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <link rel="stylesheet" href="github-pandoc.css" />
+  <link rel="stylesheet" href="3github-pandoc.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -21,17 +21,18 @@
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#modelling-drug-concentrations">Modelling Drug Concentrations</a><ul>
-<li><a href="#worked-example">Worked Example</a><ul>
+<li><a href="#worked-examples-tutorial-of-week-11">Worked Examples, Tutorial of Week 11</a><ul>
 <li><a href="#section-11.2-question-2">Section 11.2, Question 2</a></li>
 <li><a href="#section-11.2-question-3">Section 11.2, Question 3</a></li>
 <li><a href="#section-11.2-question-5">Section 11.2, Question 5</a></li>
-<li><a href="#next-question-like-7-i-think">next question like 7 I think</a></li>
+<li><a href="#section-11.2-question-8">Section 11.2, Question 8</a></li>
 </ul></li>
 </ul></li>
 </ul>
 </nav>
+<p>j</p>
 <h1 id="modelling-drug-concentrations">Modelling Drug Concentrations</h1>
-<h2 id="worked-example">Worked Example</h2>
+<h2 id="worked-examples-tutorial-of-week-11">Worked Examples, Tutorial of Week 11</h2>
 <h3 id="section-11.2-question-2">Section 11.2, Question 2</h3>
 <p>If <span class="math inline">\(k = 0.05 \text{ hr}^{-1}\)</span> and the highest safe concentration is <span class="math inline">\(e\)</span> times the lowest effective concentration, find the length of the time between repeated doses that will ensure safe but effective concentrations.</p>
 <h4 id="solve-the-decay-model">Solve the Decay Model</h4>
@@ -467,7 +468,108 @@ t&amp;= \frac{1}{k}\cdot  \ln{ \left( \frac{C_0}{L} \right) }\notag \\
 &amp;= 5\cdot  \ln{ \left( \frac{10}{3} \right) }\notag \\ 
 &amp;= 6 \text{ hours, } 1 \text{ min }\end{aligned}\]</span></p>
 <p><span class="math inline">\(\therefore\)</span> the dosage will be effective for only six hours</p>
-<h3 id="next-question-like-7-i-think">next question like 7 I think</h3>
+<h3 id="section-11.2-question-8">Section 11.2, Question 8</h3>
+<p>A patient is given a dosage of <span class="math inline">\(Q\)</span> of a drug at regular intervals of time <span class="math inline">\(T\)</span>. The concentration of the drug in the blood behaves differently in this scenario, and it has been found that the concentration level <span class="math inline">\(C\)</span> is given by:</p>
+<p><span class="math display">\[\begin{aligned}
+  \frac{\operatorname{d}C }{\operatorname{d} t}&amp;= - ke^C, \qquad \exists k \in \mathbb{R^+}\end{aligned}\]</span></p>
+<h4 id="a-solve-the-first-residual">(a) Solve the First Residual</h4>
+<p>The first dose is administered at <span class="math inline">\(t= 0\)</span>, after <span class="math inline">\(T\)</span> hours the residual in the blood is:</p>
+<p><span class="math display">\[\begin{aligned}
+  R_1= - \ln{ \left( kT+ e^{- Q} \right) }\end{aligned}\]</span></p>
+<p>In order to show this consider that The residual corresponds to <span class="math inline">\(t= T\)</span> and solve <span class="math inline">\(C\left( t \right)\)</span> :</p>
+<p><span class="math display">\[\begin{aligned}
+  e^{- C}\cdot  \frac{\operatorname{d}C }{\operatorname{d} t}&amp;= - k \notag \\
+  \int^{}_{} e^{- C} dC  \operatorname{d}C &amp;= - kt+ A_1, \qquad \exists  A_i \in \mathbb{R}, \forall i in \mathbb{Z^+} \notag \\
+  - e^{- C}&amp;= - kt +  A_1\notag \\
+  e^{- C}&amp;= kt+ A_2 \notag \\
+  - C&amp;= \ln{ \left( kt+ A_2 \right) } \notag \\
+  C&amp;= - \ln{ \left( kt+ A_2 \right) } \label{standardConstForm}\end{aligned}\]</span></p>
+<p>Consider the initial condition:</p>
+<p><span class="math display">\[\begin{aligned}
+C\left( 0 \right)= Q &amp;= - \ln{ \left( kt+ A_2 \right) } \\
+- Q &amp;=  \ln{  \left( A_2 \right) } \\
+A_2 &amp;= e^{- Q}\end{aligned}\]</span></p>
+<p>hence, given this model, we may conclude: <span class="math display">\[\begin{aligned}
+C\left( t \right)&amp;= - \ln{ \left( kt+ C_2 \right) } \\
+&amp;= - \ln{ \left( kt+ e^{- Q} \right) } \end{aligned}\]</span></p>
+<p>Now that we have solved the exponential model corresponding to the time following the initial dose and before the subsequent dose, i.e. <span class="math inline">\(t\in \left[ 0, T \right]\)</span>, in order to solve the first residual:</p>
+<p><span class="math display">\[\begin{aligned}
+  R_1&amp;= C\left( T \right)\\
+  &amp;= - \ln{ \left( kT+ e^{- Q} \right) }\end{aligned}\]</span></p>
+<h4 id="b-solve-the-second-residual">(b) Solve the Second Residual</h4>
+<p>Assume an instantanous rise in concentration whenever the drug is administrated, show that after the second dose and another <span class="math inline">\(T\)</span> hours have elapsed that the residual concetration in the blood will be given by:</p>
+<p><span class="math display">\[\begin{aligned}
+  R_2 =  -  \ln{ \left[ kT\left( 1+ e^{- Q} \right)+ e^{- 2Q} \right] }\end{aligned}\]</span></p>
+<p>The first thing to be mindful of here is that, owing to the subsequent readministration of the drug and the simplifying assumption that the readministration will lead to an instantaneous rise in blood concentration, the blood concentration will be described by a sequence of function <span class="math inline">\(\left( C_i\left( t \right) \right)\)</span> corresponding to the domain <span class="math inline">\(\left( t \in \left[ \left( i- 1 \right)\cdot  T, i\cdot  T \right] \right)\)</span> wherein <span class="math inline">\(\frac{\operatorname{d} }{\operatorname{d} t}\left( C_i \right)= - k\cdot  e^{C}\)</span> and the constant dose is the initial dose <span class="math inline">\(C_0\)</span>.<br />
+As described above, <span class="math inline">\(\left( C_i\left( t \right) \right)\)</span> is a sequence of functoins describing the blood level over the applicable domain, while <span class="math inline">\(\left( R_i\left( t \right) \right)\)</span> is a sequence of values describing the blood level at remaining in the blood immediately preceeding the upcoming dose.<br />
+Following a subsequent dose, the blood levels will rise to <span class="math inline">\(C_1\)</span> :</p>
+<p><span class="math display">\[\begin{aligned}
+C_1&amp;= R_1+ Q \\
+&amp;= Q - \ln{ \left( kT+ e^{- Q} \right) }\end{aligned}\]</span></p>
+<p><span class="math inline">\(R_2= C_1\left( T \right)\)</span> will be such that <span class="math inline">\(\frac{\operatorname{d} }{\operatorname{d} t}\left( C_i\left( t \right) \right) \propto C_i, \enspace \forall i \in \mathbb{Z^+}\)</span> with the initial condition now being that <span class="math inline">\(C_1\left( 0 \right)= R_1+ Q\)</span>, this change in initial condition being how the seqence of functions evolves over iteration.</p>
+<p><span class="math display">\[\begin{aligned}
+  C_1\left( 0 \right)= C_1&amp;= R_1+ Q\\
+&amp;= Q- \ln{ \left( kT+ e^{- Q} \right) }\\\end{aligned}\]</span></p>
+<p>Now we have from earlier in  that:</p>
+<p><span class="math display">\[\begin{aligned}
+{2}
+ &amp; \frac{\operatorname{d} }{\operatorname{d} t}\left( C_i\left( t \right) \right)&amp; \implies C_i(t)= -\ln{ \left( kt  + A_2 \right) } \quad \\
+% \implies    C&amp;= - \ln{ \left( kt&amp;+ A_2 \right) } \quad  \\
+&amp;&amp; \qquad \exists A_i \in \mathbb{R},  \forall \enspace i \in \mathbb{Z^+} \notag\end{aligned}\]</span></p>
+<p>so by applying this new initial condition:</p>
+<p><span class="math display">\[\begin{aligned}
+C_1\left( 0 \right)= C_1&amp;= R_1+Q \notag\\
+&amp; \implies  - \ln{ \left( k \times 0 + A_2 \right) }= R_1+ Q \notag \\
+&amp; \implies  A_2 = -e^{R_1}\cdot  e^{Q}  \label{eq:firstconcconst}\end{aligned}\]</span></p>
+<p>Now by substituting the value from above  into the solution from  we have:</p>
+<p><span class="math display">\[\begin{aligned}
+  C_1\left( t \right)= - \ln{ \left( kt+ e^{R_1}\cdot  e^{Q} \right) }\end{aligned}\]</span></p>
+<h5 id="find-r_2">Find <span class="math inline">\(R_2\)</span></h5>
+<p>The residual <span class="math inline">\(R_2\)</span> will correspond to <span class="math inline">\(C_1\left( T \right)\)</span>:</p>
+<p><em>I may have made a mistake with negatives here</em></p>
+<p><span class="math display">\[\begin{aligned}
+  R_2= C_1\left( T \right)&amp;= - \ln{  \left( kTe^{R_1}\cdot  e^Q \right) }\notag \\ 
+  &amp;= - \ln{ \left( kt + e^{- Q}\left( kT+ e^{- Q} \right) \right) }\notag \\ 
+  &amp;= - \ln{ \left( kt\left( 1+ e^{- Q} \right)+ e^{- 2Q} \right) }\end{aligned}\]</span></p>
+<h4 id="c-solve-the-residual-limit">(c) Solve the Residual Limit</h4>
+<p>Given that the residual in the bloodstreamafter <span class="math inline">\(nT\)</span> hours is given by</p>
+<p><span class="math display">\[R_{n}=-\ln \left[k T\left(1+e^{-Q}+e^{-2 Q}+\cdots+e^{-(n-1) Q}\right)+e^{-n Q}\right]\]</span></p>
+<p>Show that the limiting value R of the residual concentration for doses of <span class="math inline">\(Q\)</span> mg/ml repeated at intervals <span class="math inline">\(T\)</span> hours is given by the formula</p>
+<p><span class="math display">\[R=-\ln \left(\frac{k T}{1-e^{-Q}}\right) \mathrm{mg} / \mathrm{ml}\]</span></p>
+<h5 id="apply-the-geometric-series">Apply the Geometric Series</h5>
+<p>by continuing this pattern we would find that:</p>
+<p><span class="math display">\[\begin{aligned}
+  R_n &amp;=  - \ln{ \left( kT\cdot  \sum^{n- 1}_{i= 0}   \left[ \left( e^{- Q} \right)^n \right]+ e^{- nQ} \right) } \notag \\ 
+  &amp;= - \ln{ \left( kT\cdot  \frac{1- e^{- Qn}}{1- e^{- Q}} +  e^{- nQ} \right) }\notag \\ 
+  \lim_{n     \rightarrow \infty}\left[ R_n \right]&amp;= \lim_{n     \rightarrow \infty}\left[ - \ln{ \left( kT \cdot  \frac{1- e^{- Qn}}{1- e^{- Q}}+ e^{- nQ} \right) } \right]\notag \\ \end{aligned}\]</span></p>
+<p>by the definition of continuity</p>
+<p><span class="math display">\[\begin{aligned}
+   \lim_{n     \rightarrow \infty}\left[ R_n \right]&amp;= - \ln{ \left( kT \cdot  \lim_{n     \rightarrow \infty}\left[ \frac{1- e^{- Qn}}{1- e^{- Q}} +  e^{- nQ} \right] \right) }\notag \\ 
+   &amp;= - \ln{ \left( kT\cdot  \frac{1- 0}{1- e^{- Q}} +  0 \right) }\notag \\ 
+   &amp;= - \ln{ \left( kT\cdot  \frac{1}{1- e^{- Q}} \right) }
+ \end{aligned}\]</span></p>
+<h4 id="d-solve-the-dose-period-t">(d) Solve the Dose Period <span class="math inline">\(T\)</span></h4>
+<p>Assuming the drugis ineffective below a concentration of L mg/ml and can be harmful above concentrations of H mg/ml. Show that the dose schedule T for a safe and effective concentration of the drug in the bloodsatisfies the formula</p>
+<p><span class="math display">\[\begin{aligned}
+T=\frac{1}{k}\left(e^{-L}-e^{-H}\right)\end{aligned}\]</span></p>
+<p>If the drug is effective only above L and inneffective below ht we would want</p>
+<p><span class="math display">\[\begin{aligned}
+   T&amp;= C_n- R_n \quad \exists n \in \mathbb{Z^+}:
+   \qquad C_n \leq H \enspace \wedge \enspace R_n \geq L
+ \end{aligned}\]</span> Setting <span class="math inline">\(C_0\)</span> as <span class="math inline">\(H\)</span> would not be appropriate, instead: <span class="math display">\[C_0 =  H - L\]</span> That if the dose is taken when it is not effective at L way the blood levels will i’mediately reach the threshold avoiding an overdose and maximising the dosage schedule</p>
+<p><span class="math display">\[\begin{aligned}
+ C_0= H- L  &amp;\implies  C_n: \notag \\ 
+ \ \notag \\
+ c_n &amp;=  - \ln{ \left( kt +  e^{L- H} \right) }\notag \\ 
+ \end{aligned}\]</span></p>
+<p>and we would hence have <span class="math inline">\(R_1 = L\)</span> :</p>
+<p><span class="math display">\[\begin{aligned} R_{\infty} &amp;=-\ln \left(k T \times \frac{1}{1-e^{-Q} }\right) \\
+ R_{\infty} &amp;=-\ln \left(k T \times \frac{1}{1-e^{L-H}}\right) \\
+ -L &amp;=\ln \left(k T \times \frac{1}{1-e^{L-H}}\right) \\
+  e^{-L} &amp;=e^{-L}\left(1-e^{L-H}\right) \\
+   &amp;=e^{-L}-e^{-H} \\
+    T &amp;=1 / k\left(e^{-L}-e^{-H}\right) \end{aligned}\]</span></p>
+<p><span class="math inline">\(\therefore\)</span> the dosage schedule must be exactly <span class="math inline">\(T\)</span>.</p>
 </body>
 </html>
 
