@@ -7,6 +7,7 @@
 <meta name="theme-color" content="#ffffff">
 
 # Ryan's Class Notes
+[Vim Notes](https://ryangreenup.github.io//MiscNotes/Vim Tutorial.html)
 
 [DorsProb](https://ryangreenup.github.io/toastflip/toastflip.html)
 
