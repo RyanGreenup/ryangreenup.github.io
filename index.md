@@ -7,6 +7,8 @@
 <meta name="theme-color" content="#ffffff">
 
 # Ryan's Class Notes
+[I've been Playing with org look](https://ryangreenup.github.io/orgtest.html)
+
 [Vim Notes](https://ryangreenup.github.io//MiscNotes/Vim Tutorial.html)
 
 [DorsProb](https://ryangreenup.github.io/toastflip/toastflip.html)

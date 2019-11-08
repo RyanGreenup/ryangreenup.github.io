@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-11-09 Sat 09:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>This is the title of the document</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ryan" />
+<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.go-top {
+position: fixed;
+bottom: 2em;
+right: 2em;
+text-decoration: none;
+background-color: #E0E0E0;
+font-size: 12px;
+padding: 1em;
+display: inline;
+}
+
+/* Github css */
+
+html,body{        margin: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    max-width: 44em; color:black;}*:not('#mkdbuttons'){margin:0;padding:0}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:subpixel-antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}body{background-color:#fff;padding:30px;margin:15px;font-size:14px;line-height:1.6}body>*:first-child{margin-top:0!important}body>*:last-child{margin-bottom:0!important}@media screen{body{box-shadow:0 0 0 1px #cacaca,0 0 0 4px #eee}}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:subpixel-antialiased;cursor:text}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px;color:#333}h4{font-size:16px;color:#333}h5{font-size:14px;color:#333}h6{color:#777;font-size:14px}p,blockquote,table,pre{margin:15px 0}ul{padding-left:30px}ol{padding-left:30px}ol li ul:first-of-type{margin-top:0}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0}body>h2:first-child{margin-top:0;padding-top:0}body>h1:first-child{margin-top:0;padding-top:0}body>h1:first-child+h2{margin-top:0;padding-top:0}body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold;border:1px solid #ccc;padding:6px 13px}table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;font-family:Consolas,'Liberation Mono',Courier,monospace;font-size:12px;color:#333}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}.highlight pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}body{background:#fff;border:0}code{background-color:#fff;color:#333!important;padding:0 .2em;border:1px solid #dedede}pre{background:#fff}pre code{background-color:white!important;overflow:visible}}@media screen{body.inverted{color:#eee!important;border-color:#555;box-shadow:none}.inverted body,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted body{background:#252a2a}.inverted a{color:#acd1d5}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne,.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#a31515}
+
+
+/*]]>*/-->
+</style>
+
+<script type="text/javascript" src="https://orgmode.org/org-info.js">
+/**
+ *
+ * @source: https://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in https://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2019 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in https://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">This is the title of the document</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgc5cf482">1. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</a>
+<ul>
+<li><a href="#org27a707c">1.1. <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</a></li>
+<li><a href="#orgc567e31">1.2. <span class="done DONE">DONE</span> How do I deal with headlines?</a>
+<ul>
+<li><a href="#org08eb9fc">1.2.1. Moving Headlines</a></li>
+<li><a href="#org3992829">1.2.2. Demoting and promoting headlines</a></li>
+</ul>
+</li>
+<li><a href="#org9f3befe">1.3. <span class="todo TODO">TODO</span> Using Emacs for Notes</a>
+<ul>
+<li><a href="#org0bc3904">1.3.1. <span class="todo TODO">TODO</span> Navigating a file</a></li>
+<li><a href="#orgf83dc2f">1.3.2. <span class="todo TODO">TODO</span> Attaching files</a></li>
+<li><a href="#orge572835">1.3.3. <span class="todo TODO">TODO</span> Reading an Emacs File</a></li>
+<li><a href="#orgea3a672">1.3.4. <span class="todo TODO">TODO</span> Use Vim</a></li>
+<li><a href="#org3ace1d4">1.3.5. <span class="todo TODO">TODO</span> Navigating Files</a></li>
+<li><a href="#org373fb15">1.3.6. Browsing all TODO item</a></li>
+<li><a href="#org645b0b4">1.3.7. Browsing by tags</a></li>
+<li><a href="#org8157a90">1.3.8. <span class="todo TODO">TODO</span> Exporting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga58ccac">2. Tips and Tricks with Org Mode</a>
+<ul>
+<li><a href="#org227cd3c">2.1. Working with TODO/headline/list items</a>
+<ul>
+<li><a href="#orga52ec6d">2.1.1. Folding</a></li>
+</ul>
+</li>
+<li><a href="#org0a4cb2f">2.2. Note Taking Guidlines</a>
+<ul>
+<li><a href="#orge834f1f">2.2.1. Links</a></li>
+</ul>
+</li>
+<li><a href="#org96ac4cf">2.3. Exporting Org to Markdown</a></li>
+<li><a href="#org3d1b215">2.4. Including LaTeX Fragments</a>
+<ul>
+<li><a href="#orgaa0607f">2.4.1. Example LaTeX</a></li>
+</ul>
+</li>
+<li><a href="#org854e8f4">2.5. Zooming in and out</a>
+<ul>
+<li><a href="#org026eba8">2.5.1. Auto Render Math</a></li>
+</ul>
+</li>
+<li><a href="#org4d7451c">2.6. Setting Line Wrap</a></li>
+<li><a href="#orgb2c5ae6">2.7. Cancelling a Command</a></li>
+<li><a href="#orga8c70d8">2.8. Org Mode To Do List</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+LEARNING EMACS AND ORG -<b>- mode: org -</b>-
+</p>
+<p>
+These are the tutorials that I've used:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://orgmode.org/worg/org-tutorials/org4beginners.html">Org-Mode for beginners</a></li>
+<li>The built in Tutorial for Emacs</li>
+</ul>
+
+
+<div id="outline-container-orgc5cf482" class="outline-2">
+<h2 id="orgc5cf482"><span class="section-number-2">1</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+you can add a todo tag by calling <code>org-insert-todo-heading</code> which is mapped to <code>M-Shift-RET</code>
+</p>
+</div>
+<div id="outline-container-org27a707c" class="outline-3">
+<h3 id="org27a707c"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</h3>
+</div>
+<div id="outline-container-orgc567e31" class="outline-3">
+<h3 id="orgc567e31"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> How do I deal with headlines?</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+use <code>M-left/right</code> to demote and promote them, use <code>M-up/down</code> to move them.
+To do items may be cycled by using =S-left/right.
+</p>
+</div>
+
+<div id="outline-container-org08eb9fc" class="outline-4">
+<h4 id="org08eb9fc"><span class="section-number-4">1.2.1</span> Moving Headlines</h4>
+</div>
+<div id="outline-container-org3992829" class="outline-4">
+<h4 id="org3992829"><span class="section-number-4">1.2.2</span> Demoting and promoting headlines</h4>
+</div>
+</div>
+<div id="outline-container-org9f3befe" class="outline-3">
+<h3 id="org9f3befe"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Using Emacs for Notes</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org0bc3904" class="outline-4">
+<h4 id="org0bc3904"><span class="section-number-4">1.3.1</span> <span class="todo TODO">TODO</span> Navigating a file</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+How do I jump to the top of a headline so that I can use <code>TAB</code> to fold it ?
+</p>
+</div>
+</div>
+<div id="outline-container-orgf83dc2f" class="outline-4">
+<h4 id="orgf83dc2f"><span class="section-number-4">1.3.2</span> <span class="todo TODO">TODO</span> Attaching files</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+Is this practical? Like what if I want to attach any of the following?
+</p>
+<ul class="org-ul">
+<li>Previous notes</li>
+<li>Textbook</li>
+<li>Learning guide</li>
+<li>Code/Script/Snippets etc?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge572835" class="outline-4">
+<h4 id="orge572835"><span class="section-number-4">1.3.3</span> <span class="todo TODO">TODO</span> Reading an Emacs File</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<ul class="org-ul">
+<li>How do I fold a section rather than the whole thing?</li>
+<li>To fold the whole thing I can use <code>S+TAB+</code> which is analogous to <code>zr</code> and <code>zm</code> in vim but it cycles through</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgea3a672" class="outline-4">
+<h4 id="orgea3a672"><span class="section-number-4">1.3.4</span> <span class="todo TODO">TODO</span> Use Vim</h4>
+<div class="outline-text-4" id="text-1-3-4">
+<ul class="org-ul">
+<li>Can I create a keybinding to open the file or buffer in <i>Vim</i>?</li>
+<li>I sthere a way to bring my bindings into space macs?
+<ul class="org-ul">
+<li>For Reference Sake the binding <code>C-c v</code> is empty</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3ace1d4" class="outline-4">
+<h4 id="org3ace1d4"><span class="section-number-4">1.3.5</span> <span class="todo TODO">TODO</span> Navigating Files</h4>
+<div class="outline-text-4" id="text-1-3-5">
+</div>
+<ol class="org-ol">
+<li><a id="orged09fea"></a>Moving to a previous location<br />
+<div class="outline-text-5" id="text-1-3-5-1">
+<p>
+If you are following an internal link (i.e. a link to a target in the
+org-mode file), then org-mode automatically pushes the position in the
+mark-ring before jumping.
+</p>
+
+<p>
+So, you follow a link with <code>C-c C-o</code>, then you can jump back with
+<code>C-c &amp;</code>.<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org373fb15" class="outline-4">
+<h4 id="org373fb15"><span class="section-number-4">1.3.6</span> Browsing all TODO item</h4>
+<div class="outline-text-4" id="text-1-3-6">
+<p>
+<a href="https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html">This tutorial by David O'Toole</a> says I can use a global TODO list with <code>C-c a t</code>, I could view the items only in the current document by using <code>C-c t</code> and the pop up window may be closed by focusing on it with <code>C-x o</code>
+</p>
+</div>
+</div>
+<div id="outline-container-org645b0b4" class="outline-4">
+<h4 id="org645b0b4"><span class="section-number-4">1.3.7</span> Browsing by tags</h4>
+</div>
+<div id="outline-container-org8157a90" class="outline-4">
+<h4 id="org8157a90"><span class="section-number-4">1.3.8</span> <span class="todo TODO">TODO</span> Exporting</h4>
+<div class="outline-text-4" id="text-1-3-8">
+</div>
+<ol class="org-ol">
+<li><a id="org8219efa"></a>In Line References<br />
+<div class="outline-text-5" id="text-1-3-8-1">
+<p>
+In order to reference code blocks <a href="https://emacs.stackexchange.com/questions/20947/how-to-reference-source-blocks-in-org-text">using org-ref</a>  you need to install the <code>org-ref</code> package by following the instructions on their <a href="https://github.com/jkitchin/org-ref">GitHub</a>, you need to add a line to your <code>.emacs.d/.init.el</code> but then you should be able to do <code>M-x package-list-packages</code> and find <code>org-ref</code> in order to install it.
+</p>
+
+<p>
+<a href="https://emacs.stackexchange.com/questions/38457/name-is-ignored-unless-running-emacs-with-q">According to this post</a> you need to set <code>org-latex-prefer-user-labels</code> to <code>non-nil</code> in order to use the custom ID given in <code>#+NAME</code>. Refer to the help with <code>C-h v org-latex-prefer-user-labels</code> and the setting can be toggled from there, the reason for the default is if you multiply define a label or use wrong syntax the latex won't generate.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org6249195"></a><span class="todo TODO">TODO</span> I haven't figured out how to fix labels with HTML though<br />
+<div class="outline-text-6" id="text-1-3-8-1-1">
+<p>
+I tried looking for <code>org-HTML-prefer-user-labels</code> but no luck, there might be something in the <a href="https://orgmode.org/manual/HTML-Export.html#HTML-Export">Manual</a>.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org0bcd177"></a><span class="todo TODO">TODO</span> Markdown<br />
+<div class="outline-text-5" id="text-1-3-8-2">
+<p>
+I need to figure how to export as markdown without breaking the dam thing
+</p>
+</div>
+</li>
+<li><a id="org0f0d0df"></a><span class="todo TODO">TODO</span> Styles<br />
+<div class="outline-text-5" id="text-1-3-8-3">
+<ul class="org-ul">
+<li>I need to figure out how to specify a css for html export</li>
+</ul>
+<p>
+I found this nice Trick <a href="https://www.reddit.com/r/emacs/comments/3pvbag/is_there_a_collection_of_css_styles_for_org/https://www.reddit.com/r/emacs/comments/3pvbag/is_there_a_collection_of_css_styles_for_org/">on Reddit</a> (insert a link with <code>C-c C-l</code>)<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>, in order to have inline CSS upon export (rather than two files) put CSS files in <code>~/.emacs.d/org-css/ and run =toggle-org-custom-inline-style</code> in an org buffer associated with a file, it should now prompt you for a theme on the next HTML export if you use this code shown in ref:some-source-code <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc3a53a3"></a>\(LaTeX\) Styles upon Export.<br />
+<div class="outline-text-6" id="text-1-3-8-3-1">
+<p>
+I can, I believe, set up a custom package for a template (of course that means that I'll have to fix the style that I've been using from Computer algebra) by specifying a header of the form #+LATEX<sub>HEADER</sub>: \usepackage{mystyle.sty}=
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orge8cb4cd"></a>JavaScript<br />
+<div class="outline-text-5" id="text-1-3-8-4">
+<p>
+A tonne of options for exporting with extended javascript are also at my disposal, look at the <a href="https://orgmode.org/manual/JavaScript-support.html#JavaScript-support">Manual</a>, most importantly is <code>view:content</code> and <code>view:info</code>, so for example:
+</p>
+
+<p>
+<code>view:info toc:nil</code>
+</p>
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Emacs LISP code to inline custom CSS</label><pre class="src src-emacs-lisp" id="orgd635bc0"><span style="color: #5F7F5F;">;; </span><span style="color: #7F9F7F;">Put your css files there</span>
+(<span style="color: #F0DFAF; font-weight: bold;">defvar</span> <span style="color: #DFAF8F;">org-theme-css-dir</span> <span style="color: #CC9393;">"~/.emacs.d/org-css/"</span>)
+
+(<span style="color: #F0DFAF; font-weight: bold;">defun</span> <span style="color: #93E0E3;">toggle-org-custom-inline-style</span> ()
+  (<span style="color: #F0DFAF; font-weight: bold;">interactive</span>)
+  (<span style="color: #F0DFAF; font-weight: bold;">let</span> ((hook 'org-export-before-parsing-hook)
+        (fun 'set-org-html-style))
+    (<span style="color: #F0DFAF; font-weight: bold;">if</span> (memq fun (eval hook))
+        (<span style="color: #F0DFAF; font-weight: bold;">progn</span>
+          (remove-hook hook fun 'buffer-local)
+          (message <span style="color: #CC9393;">"Removed %s from %s"</span> (symbol-name fun) (symbol-name hook)))
+      (add-hook hook fun nil 'buffer-local)
+      (message <span style="color: #CC9393;">"Added %s to %s"</span> (symbol-name fun) (symbol-name hook)))))
+
+(<span style="color: #F0DFAF; font-weight: bold;">defun</span> <span style="color: #93E0E3;">org-theme</span> ()
+  (<span style="color: #F0DFAF; font-weight: bold;">interactive</span>)
+  (<span style="color: #F0DFAF; font-weight: bold;">let*</span> ((cssdir org-theme-css-dir)
+         (css-choices (directory-files cssdir nil <span style="color: #CC9393;">".css$"</span>))
+         (css (completing-read <span style="color: #CC9393;">"theme: "</span> css-choices nil t)))
+    (concat cssdir css)))
+
+(<span style="color: #F0DFAF; font-weight: bold;">defun</span> <span style="color: #93E0E3;">set-org-html-style</span> (<span style="color: #7CB8BB;">&amp;optional</span> backend)
+  (<span style="color: #F0DFAF; font-weight: bold;">interactive</span>)
+  (<span style="color: #F0DFAF; font-weight: bold;">when</span> (<span style="color: #F0DFAF; font-weight: bold;">or</span> (null backend) (eq backend 'html))
+ (<span style="color: #F0DFAF; font-weight: bold;">let</span> ((f (<span style="color: #F0DFAF; font-weight: bold;">or</span> (<span style="color: #F0DFAF; font-weight: bold;">and</span> (boundp 'org-theme-css) org-theme-css) (org-theme))))
+      (<span style="color: #F0DFAF; font-weight: bold;">if</span> (file-exists-p f)
+          (<span style="color: #F0DFAF; font-weight: bold;">progn</span>
+            (set (make-local-variable 'org-theme-css) f)
+            (set (make-local-variable 'org-html-head)
+                 (<span style="color: #F0DFAF; font-weight: bold;">with-temp-buffer</span>
+                   (insert <span style="color: #CC9393;">"&lt;style type=\"text/css\"&gt;\n&lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/\n"</span>)
+                   (insert-file-contents f)
+                   (goto-char (point-max))
+                   (insert <span style="color: #CC9393;">"\n/*]]&gt;*/--&gt;\n&lt;/style&gt;\n"</span>)
+                   (buffer-string)))
+            (set (make-local-variable 'org-html-head-include-default-style)
+                 nil)
+            (message <span style="color: #CC9393;">"Set custom style from %s"</span> f))
+        (message <span style="color: #CC9393;">"Custom header file %s doesnt exist"</span>)))))
+
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>How to specify a template for \(\LaTeX\)</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orga58ccac" class="outline-2">
+<h2 id="orga58ccac"><span class="section-number-2">2</span> Tips and Tricks with Org Mode</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org227cd3c" class="outline-3">
+<h3 id="org227cd3c"><span class="section-number-3">2.1</span> Working with TODO/headline/list items</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+You can add a new <code>TODO</code> item with <code>M-S RET</code>.
+Using <code>M-up/down</code> a headlines may be moved, they may be demoted with <code>M-left/right</code>
+Using <code>S-left/right</code> will toggle to do list items.
+</p>
+</div>
+<div id="outline-container-orga52ec6d" class="outline-4">
+<h4 id="orga52ec6d"><span class="section-number-4">2.1.1</span> Folding</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+You can fold a headline by using TAB if you are on a headline, the fold level of the entire document may be toggled with <code>S-TAB</code>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0a4cb2f" class="outline-3">
+<h3 id="org0a4cb2f"><span class="section-number-3">2.2</span> Note Taking Guidlines</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-orge834f1f" class="outline-4">
+<h4 id="orge834f1f"><span class="section-number-4">2.2.1</span> Links</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+You can create a link by using <code>C-c C-l</code> and I think <code>C-u C-c C-l</code> will attach an internal link
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org96ac4cf" class="outline-3">
+<h3 id="org96ac4cf"><span class="section-number-3">2.3</span> Exporting Org to Markdown</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+You should customize org-export-backends and enable the markdown backend.
+That's: M-x customize-option and then org-export-backends and then arrow down to the checkbox to the left of 'md' and press enter to enable it (or just click on it, if running emacs grqAphically). Then arrow back up and over to 'Apply and Save' (or click on it)
+</p>
+</div>
+</div>
+<div id="outline-container-org3d1b215" class="outline-3">
+<h3 id="org3d1b215"><span class="section-number-3">2.4</span> Including LaTeX Fragments</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+To preview LaTeX documents install <code>dvipng</code>, <code>dvisvgm</code> or <code>conver</code>.
+</p>
+
+<p>
+In order to customise the preview customise the variables <code>org-format-latex-options</code> and <code>org-format-latex-header</code>.
+</p>
+
+<p>
+(in order to enable the inline preview use the following press <code>&lt;s TAB&gt;</code> to insert a code block.)
+As hown in \eqref{Quad}
+</p>
+
+
+<pre class="example">
+C-c C-x C-l (org-toggle-latex-fragment)
+</pre>
+</div>
+<div id="outline-container-orgaa0607f" class="outline-4">
+<h4 id="orgaa0607f"><span class="section-number-4">2.4.1</span> Example LaTeX</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<p>
+\[\begin{align}
+      x&= \frac{- b \pm \sqrt{b^2- 4ac} }{2a} \label{Quad} \tag{Eg. 1}
+\end{align}\]
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org854e8f4" class="outline-3">
+<h3 id="org854e8f4"><span class="section-number-3">2.5</span> Zooming in and out</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+this is mapped to <code>&lt;C-x&gt; &lt;C-+&gt;</code> and <code>&lt;C-x&gt; &lt;C--&gt;, after one combination
+successive =+</code> or <code>-</code> will increase or decrease.
+</p>
+
+<p>
+the functions are <code>text-scale-increase</code> and <code>text-scale-decrease</code> so you can
+add this to the configuration file:
+</p>
+
+<pre class="example">
+(global-set-key [C-mouse-4] 'text-scale-increase)
+(global-set-key [C-mouse-5] 'text-scale-decrease)
+</pre>
+</div>
+<div id="outline-container-org026eba8" class="outline-4">
+<h4 id="org026eba8"><span class="section-number-4">2.5.1</span> Auto Render Math</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<p>
+The Following code can be used to auto render math upon saving:
+</p>
+
+<pre class="example">
+(Defun my/org-render-latex-fragments ()
+  (if (org--list-latex-overlays)
+      (progn (org-toggle-latex-fragment)
+             (org-toggle-latex-fragment))
+    (org-toggle-latex-fragment)))
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (add-hook 'after-save-hook 'my/org-render-latex-fragments nil 'make-the-hook-local)))
+</pre>
+
+<p>
+however it's simpler to merely append <code>#+STARTUP: latexpreview</code> to the file and have it preview all code blocks by default.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4d7451c" class="outline-3">
+<h3 id="org4d7451c"><span class="section-number-3">2.6</span> Setting Line Wrap</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+In order to wrap lines use <code>visual-line-mode</code>, this can be added to the config at <code>~/emacs.d/init.el</code> by appending the line  <code>(visual-line-mode t)</code> or by using <code>M-x visual-line-mode</code> in the buffer, or by changing the setting globally with <code>M-x customize option RET global-visual-line-mode</code>
+</p>
+</div>
+</div>
+<div id="outline-container-orgb2c5ae6" class="outline-3">
+<h3 id="orgb2c5ae6"><span class="section-number-3">2.7</span> Cancelling a Command</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+If you get stuck in the mini-buffer you can cancel the command by using <code>&lt;C-g&gt;</code>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga8c70d8" class="outline-3">
+<h3 id="orga8c70d8"><span class="section-number-3">2.8</span> Org Mode To Do List</h3>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+Refer to the documentation <a href="http://orgmode.org/manual/Handling-links.html#Handling-links">here</a>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+The shortcut for footnotes is <code>C-c C-x f</code> as described in <a href="https://orgmode.org/manual/Footnotes.html">the manual</a> and the shortcut for links is <code>C-c C-l</code>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+having <code>emacs-lisp</code> after means it will be (atleast-partially) evaluated upon HTML export, you will need to install <a href="https://github.com/hniksic/emacs-htmlize/blob/master/htmlize.el"><code>emacs-htmlize</code></a> in order to export it, this can be done by typing in the following <code>M-x package-install RET htmlize</code>; confusing that it isn't <code>emacs-htmlize</code>, maybe that's a standard?
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: ryan</p>
+<p class="date">Created: 2019-11-09 Sat 09:10</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
