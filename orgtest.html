@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-11-09 Sat 09:15 -->
+<!-- 2019-11-09 Sat 09:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>This is the title of the document</title>
@@ -14,8 +14,668 @@
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 /* ==========================================================================
-   HTML5 display definitions
+ * Taken from [Github](https://raw.githubusercontent.com/gongzhitaao/orgcss/master/src/css/org.css)
    ========================================================================== */
+
+@import "normalize";
+@import "htmlize";
+
+$sans: Helvetica, sans-serif;
+$serif: Georgia, serif;
+$monospace: Lucida Console, monospace;
+$code-size: 80%;
+$smaller: 90%;
+$max-width: 710px;
+
+body {
+    width: 95%;
+    margin: 2% auto;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: $serif;
+    color: #333;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 910px) {
+    body {
+        width: 900px;
+    }
+}
+
+::selection {
+    background: #D6EDFF;
+}
+
+p {
+    margin: 1em auto;
+}
+
+ol,ul {
+    margin: 0 auto;
+}
+
+dl {
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin: 0.8em auto;
+    color: black;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: 1em auto;
+}
+
+.abstract {
+    margin: auto;
+    width: 80%;
+    font-style: italic;
+}
+
+.abstract p:last-of-type:before {
+    content: "    ";
+    white-space: pre;
+}
+
+.status {
+    font-size: $smaller;
+    margin: 2em auto;
+}
+
+[class^="section-number-"] {
+    margin-right: .5em;
+}
+
+[id^="orgheadline"] {
+    clear: both;
+}
+
+#footnotes {
+    font-size: $smaller;
+}
+
+.footpara {
+    display: inline;
+    margin: .2em auto;
+}
+
+.footdef {
+    margin-bottom: 1em;
+}
+
+.footdef sup {
+    padding-right: .5em;
+}
+
+a {
+    color: #527d9a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003355;
+    border-bottom: 1px dotted;
+}
+
+figure {
+    padding: 0px;
+    margin: 1em auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.MathJax_Display {
+    margin: 0!important;
+    width: $smaller!important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #A5573E;
+    line-height: 1em;
+    font-family: $sans;
+}
+
+h1,h2,h3 {
+    line-height: 1.4em;
+}
+
+h4,h5,h6 {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    h1,h2,h3 {
+        line-height: 1.4em;
+    }
+    h4,h5,h6 {
+        font-size: 1.1em;
+    }
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* table */
+
+table {
+    margin: 1em auto;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 2px solid;
+}
+
+table td + td, table th + th {
+    border-left: 1px solid gray;
+}
+
+table tr {
+    border-top: 1px solid lightgray;
+}
+
+td,th {
+    padding: 0.3em 0.6em;
+    vertical-align: middle;
+}
+
+caption.t-above {
+    caption-side: top;
+}
+
+caption.t-bottom {
+    caption-side: bottom;
+}
+
+caption {
+    margin-bottom: 0.3em;
+}
+
+figcaption {
+    margin-top: 0.3em;
+}
+
+th.org-right {
+    text-align: center;
+}
+
+th.org-left {
+    text-align: center;
+}
+
+th.org-center {
+    text-align: center;
+}
+
+td.org-right {
+    text-align: right;
+}
+
+td.org-left {
+    text-align: left;
+}
+
+td.org-center {
+    text-align: center;
+}
+
+blockquote {
+    margin: 1em 2em;
+    padding-left: 1em;
+    border-left: 3px solid #ccc;
+}
+
+kbd {
+    background-color: #f7f7f7;
+    font-size: $code-size;
+    margin: 0 .1em;
+    padding: .1em .6em;
+}
+
+.todo {
+    background-color: red;
+    color: white;
+    padding: .1em 0.3em;
+    border-radius: 3px;
+    background-clip: padding-box;
+    font-size: $code-size;
+    font-family: $monospace;
+    line-height: 1;
+}
+
+.done {
+    background-color: green;
+    color: white;
+    padding: .1em 0.3em;
+    border-radius: 3px;
+    background-clip: padding-box;
+    font-size: $code-size;
+    font-family: $monospace;
+    line-height: 1;
+}
+
+.priority {
+    color: orange;
+    font-family: $monospace;
+}
+
+/* Because tag span is set to float.  This is more like a hacking.  Maybe we
+   need a cleaner solution. */
+#table-of-contents li {
+    clear: both;
+}
+
+.tag {
+    font-family: $monospace;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+.tag span {
+    padding: 0.3em 0.3em;
+    float: right;
+    margin-right: .5em;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background-clip: padding-box;
+    color: #333;
+    background-color: #eee;
+    line-height: 1;
+}
+
+.timestamp {
+    color: #bebebe;
+    font-size: $smaller;
+}
+
+.timestamp-kwd {
+    color: #5f9ea0;
+}
+
+.org-right {
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+}
+
+.org-left {
+    margin-left: 0px;
+    margin-right: auto;
+    text-align: left;
+}
+
+.org-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#postamble p, #preamble p {
+    font-size: $smaller;
+    margin: .2em;
+}
+
+p.verse {
+    margin-left: 3%;
+}
+
+:not(pre) > code {
+    padding: 2px 5px;
+    margin: auto 1px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    background-clip: padding-box;
+    color: #333;
+    font-size: $code-size;
+}
+
+.org-src-container {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    font-family: $monospace;
+    font-size: $code-size;
+    margin: 1em auto;
+    padding: 0.1em 0.5em;
+    position: relative;
+}
+
+.org-src-container>pre {
+    overflow: auto;
+}
+
+.org-src-container>pre:before {
+    display: block;
+    position: absolute;
+    background-color: #b3b3b3;
+    top: 0;
+    right: 0;
+    padding: 0 0.5em;
+    border-bottom-left-radius: 8px;
+    border: 0;
+    color: white;
+    font-size: $code-size;
+}
+
+/* from http://demo.thi.ng/org-spec/ */
+
+.org-src-container>pre.src-sh:before {
+    content: 'sh';
+}
+.org-src-container>pre.src-bash:before {
+    content: 'bash';
+}
+.org-src-container>pre.src-emacs-lisp:before {
+    content: 'Emacs Lisp';
+}
+.org-src-container>pre.src-R:before {
+    content: 'R';
+}
+.org-src-container>pre.src-org:before {
+    content: 'Org';
+}
+.org-src-container>pre.src-cpp:before {
+    content: 'C++';
+}
+.org-src-container>pre.src-c:before {
+    content: 'C';
+}
+.org-src-container>pre.src-html:before {
+    content: 'HTML'
+}
+.org-src-container>pre.src-js:before {
+    content: 'Javascript'
+}
+.org-src-container>pre.src-javascript:before {
+    content: 'Javascript'
+}
+
+// More languages from http://orgmode.org/worg/org-contrib/babel/languages.html
+
+.org-src-container>pre.src-abc:before {
+    content: 'ABC';
+}
+.org-src-container>pre.src-asymptote:before {
+    content: 'Asymptote';
+}
+.org-src-container>pre.src-awk:before {
+    content: 'Awk';
+}
+.org-src-container>pre.src-C:before {
+    content: 'C';
+}
+.org-src-container>pre.src-calc:before {
+    content: 'Calc';
+}
+.org-src-container>pre.src-clojure:before {
+    content: 'Clojure';
+}
+.org-src-container>pre.src-comint:before {
+    content: 'comint';
+}
+.org-src-container>pre.src-css:before {
+    content: 'CSS';
+}
+.org-src-container>pre.src-D:before {
+    content: 'D';
+}
+.org-src-container>pre.src-ditaa:before {
+    content: 'Ditaa';
+}
+.org-src-container>pre.src-dot:before {
+    content: 'Dot';
+}
+.org-src-container>pre.src-ebnf:before {
+    content: 'ebnf';
+}
+.org-src-container>pre.src-forth:before {
+    content: 'Forth';
+}
+.org-src-container>pre.src-F90:before {
+    content: 'Fortran';
+}
+.org-src-container>pre.src-gnuplot:before {
+    content: 'Gnuplot';
+}
+.org-src-container>pre.src-haskell:before {
+    content: 'Haskell';
+}
+.org-src-container>pre.src-io:before {
+    content: 'Io';
+}
+.org-src-container>pre.src-java:before {
+    content: 'Java';
+}
+.org-src-container>pre.src-latex:before {
+    content: 'LaTeX';
+}
+.org-src-container>pre.src-ledger:before {
+    content: 'Ledger';
+}
+.org-src-container>pre.src-ly:before {
+    content: 'Lilypond';
+}
+.org-src-container>pre.src-lisp:before {
+    content: 'Lisp';
+}
+.org-src-container>pre.src-makefile:before {
+    content: 'Make';
+}
+.org-src-container>pre.src-matlab:before {
+    content: 'Matlab';
+}
+.org-src-container>pre.src-max:before {
+    content: 'Maxima';
+}
+.org-src-container>pre.src-mscgen:before {
+    content: 'Mscgen';
+}
+.org-src-container>pre.src-Caml:before {
+    content: 'Objective';
+}
+.org-src-container>pre.src-octave:before {
+    content: 'Octave';
+}
+.org-src-container>pre.src-org:before {
+    content: 'Org';
+}
+.org-src-container>pre.src-perl:before {
+    content: 'Perl';
+}
+.org-src-container>pre.src-picolisp:before {
+    content: 'Picolisp';
+}
+.org-src-container>pre.src-plantuml:before {
+    content: 'PlantUML';
+}
+.org-src-container>pre.src-python:before {
+    content: 'Python';
+}
+.org-src-container>pre.src-ruby:before {
+    content: 'Ruby';
+}
+.org-src-container>pre.src-sass:before {
+    content: 'Sass';
+}
+.org-src-container>pre.src-scala:before {
+    content: 'Scala';
+}
+.org-src-container>pre.src-scheme:before {
+    content: 'Scheme';
+}
+.org-src-container>pre.src-screen:before {
+    content: 'Screen';
+}
+.org-src-container>pre.src-sed:before {
+    content: 'Sed';
+}
+.org-src-container>pre.src-shell:before {
+    content: 'shell';
+}
+.org-src-container>pre.src-shen:before {
+    content: 'Shen';
+}
+.org-src-container>pre.src-sql:before {
+    content: 'SQL';
+}
+.org-src-container>pre.src-sqlite:before {
+    content: 'SQLite';
+}
+.org-src-container>pre.src-stan:before {
+    content: 'Stan';
+}
+.org-src-container>pre.src-vala:before {
+    content: 'Vala';
+}
+.org-src-container>pre.src-axiom:before {
+    content: 'Axiom';
+}
+.org-src-container>pre.src-browser:before {
+    content: 'HTML';
+}
+.org-src-container>pre.src-cypher:before {
+    content: 'Neo4j';
+}
+.org-src-container>pre.src-elixir:before {
+    content: 'Elixir';
+}
+.org-src-container>pre.src-request:before {
+    content: 'http';
+}
+.org-src-container>pre.src-ipython:before {
+    content: 'iPython';
+}
+.org-src-container>pre.src-kotlin:before {
+    content: 'Kotlin';
+}
+.org-src-container>pre.src-Flavored Erlang  lfe:before {
+    content: 'Lisp';
+}
+.org-src-container>pre.src-mongo:before {
+    content: 'MongoDB';
+}
+.org-src-container>pre.src-prolog:before {
+    content: 'Prolog';
+}
+.org-src-container>pre.src-rec:before {
+    content: 'rec';
+}
+.org-src-container>pre.src-ML  sml:before {
+    content: 'Standard';
+}
+.org-src-container>pre.src-Translate  translate:before {
+    content: 'Google';
+}
+.org-src-container>pre.src-typescript:before {
+    content: 'Typescript';
+}
+.org-src-container>pre.src-rust:before {
+    content: 'Rust';
+}
+
+.inlinetask {
+    background: #ffffcc;
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+#org-div-home-and-up {
+    font-size: 70%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.linenr {
+    font-size: $smaller;
+}
+
+.code-highlighted {
+    background-color: #ffff00;
+}
+
+#bibliography {
+    font-size: $smaller;
+}
+
+#bibliography table {
+    width: 100%;
+}
+
+.creator {
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    .creator {
+        display: inline;
+        float: right;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+The typical Github Style:
+   ========================================================================== */
+
+
+
+
 
 /**
  * Correct `block` display not defined in IE 8/9.
@@ -587,55 +1247,55 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc1b0ab6">1. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</a>
+<li><a href="#org585324f">1. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</a>
 <ul>
-<li><a href="#org1181507">1.1. <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</a></li>
-<li><a href="#orgef40e0a">1.2. <span class="done DONE">DONE</span> How do I deal with headlines?</a>
+<li><a href="#org036673b">1.1. <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</a></li>
+<li><a href="#org5899601">1.2. <span class="done DONE">DONE</span> How do I deal with headlines?</a>
 <ul>
-<li><a href="#orga4d4f1f">1.2.1. Moving Headlines</a></li>
-<li><a href="#org6dcd536">1.2.2. Demoting and promoting headlines</a></li>
+<li><a href="#org1d07230">1.2.1. Moving Headlines</a></li>
+<li><a href="#org35c8312">1.2.2. Demoting and promoting headlines</a></li>
 </ul>
 </li>
-<li><a href="#org9b31b70">1.3. <span class="todo TODO">TODO</span> Using Emacs for Notes</a>
+<li><a href="#orgfd302db">1.3. <span class="todo TODO">TODO</span> Using Emacs for Notes</a>
 <ul>
-<li><a href="#org8db5878">1.3.1. <span class="todo TODO">TODO</span> Navigating a file</a></li>
-<li><a href="#orgb2653a1">1.3.2. <span class="todo TODO">TODO</span> Attaching files</a></li>
-<li><a href="#org0792819">1.3.3. <span class="todo TODO">TODO</span> Reading an Emacs File</a></li>
-<li><a href="#orge96659a">1.3.4. <span class="todo TODO">TODO</span> Use Vim</a></li>
-<li><a href="#orgc2d1228">1.3.5. <span class="todo TODO">TODO</span> Navigating Files</a></li>
-<li><a href="#orgdc68c0e">1.3.6. Browsing all TODO item</a></li>
-<li><a href="#org623be85">1.3.7. Browsing by tags</a></li>
-<li><a href="#orgd9948f7">1.3.8. <span class="todo TODO">TODO</span> Exporting</a></li>
+<li><a href="#org402178f">1.3.1. <span class="todo TODO">TODO</span> Navigating a file</a></li>
+<li><a href="#org2fbeadd">1.3.2. <span class="todo TODO">TODO</span> Attaching files</a></li>
+<li><a href="#orgefc5056">1.3.3. <span class="todo TODO">TODO</span> Reading an Emacs File</a></li>
+<li><a href="#orgb9e2f3c">1.3.4. <span class="todo TODO">TODO</span> Use Vim</a></li>
+<li><a href="#orge22c6ab">1.3.5. <span class="todo TODO">TODO</span> Navigating Files</a></li>
+<li><a href="#org096e75a">1.3.6. Browsing all TODO item</a></li>
+<li><a href="#orgd5f82a2">1.3.7. Browsing by tags</a></li>
+<li><a href="#org1b13d67">1.3.8. <span class="todo TODO">TODO</span> Exporting</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga4f90bd">2. Tips and Tricks with Org Mode</a>
+<li><a href="#org34f957a">2. Tips and Tricks with Org Mode</a>
 <ul>
-<li><a href="#org14b577a">2.1. Working with TODO/headline/list items</a>
+<li><a href="#org6dbaf67">2.1. Working with TODO/headline/list items</a>
 <ul>
-<li><a href="#orgd879097">2.1.1. Folding</a></li>
+<li><a href="#org8b39e9a">2.1.1. Folding</a></li>
 </ul>
 </li>
-<li><a href="#org78e1e89">2.2. Note Taking Guidlines</a>
+<li><a href="#org0dcddbf">2.2. Note Taking Guidlines</a>
 <ul>
-<li><a href="#orga50ec6d">2.2.1. Links</a></li>
+<li><a href="#org8f385d4">2.2.1. Links</a></li>
 </ul>
 </li>
-<li><a href="#orgf100a59">2.3. Exporting Org to Markdown</a></li>
-<li><a href="#org18df9ae">2.4. Including LaTeX Fragments</a>
+<li><a href="#orgba8ede5">2.3. Exporting Org to Markdown</a></li>
+<li><a href="#org29456d3">2.4. Including LaTeX Fragments</a>
 <ul>
-<li><a href="#orgd4b7a4d">2.4.1. Example LaTeX</a></li>
+<li><a href="#org6d68673">2.4.1. Example LaTeX</a></li>
 </ul>
 </li>
-<li><a href="#org9b5bd29">2.5. Zooming in and out</a>
+<li><a href="#orgb796fb1">2.5. Zooming in and out</a>
 <ul>
-<li><a href="#org64ff0ce">2.5.1. Auto Render Math</a></li>
+<li><a href="#orgd8c081e">2.5.1. Auto Render Math</a></li>
 </ul>
 </li>
-<li><a href="#org8f295bd">2.6. Setting Line Wrap</a></li>
-<li><a href="#orgcacf3c2">2.7. Cancelling a Command</a></li>
-<li><a href="#orge1d6d1a">2.8. Org Mode To Do List</a></li>
+<li><a href="#org26a432a">2.6. Setting Line Wrap</a></li>
+<li><a href="#org4973f29">2.7. Cancelling a Command</a></li>
+<li><a href="#org6cb57cb">2.8. Org Mode To Do List</a></li>
 </ul>
 </li>
 </ul>
@@ -644,6 +1304,10 @@ for the JavaScript code in this tag.
 <p>
 LEARNING EMACS AND ORG -<b>- mode: org -</b>-
 </p>
+<p>
+Toggle the TOC with <code>i</code>; toggle the view with the link to flatten it out
+</p>
+
 <p>
 These are the tutorials that I've used:
 </p>
@@ -654,18 +1318,18 @@ These are the tutorials that I've used:
 </ul>
 
 
-<div id="outline-container-orgc1b0ab6" class="outline-2">
-<h2 id="orgc1b0ab6"><span class="section-number-2">1</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</h2>
+<div id="outline-container-org585324f" class="outline-2">
+<h2 id="org585324f"><span class="section-number-2">1</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 you can add a todo tag by calling <code>org-insert-todo-heading</code> which is mapped to <code>M-Shift-RET</code>
 </p>
 </div>
-<div id="outline-container-org1181507" class="outline-3">
-<h3 id="org1181507"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</h3>
+<div id="outline-container-org036673b" class="outline-3">
+<h3 id="org036673b"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</h3>
 </div>
-<div id="outline-container-orgef40e0a" class="outline-3">
-<h3 id="orgef40e0a"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> How do I deal with headlines?</h3>
+<div id="outline-container-org5899601" class="outline-3">
+<h3 id="org5899601"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> How do I deal with headlines?</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 use <code>M-left/right</code> to demote and promote them, use <code>M-up/down</code> to move them.
@@ -673,27 +1337,27 @@ To do items may be cycled by using =S-left/right.
 </p>
 </div>
 
-<div id="outline-container-orga4d4f1f" class="outline-4">
-<h4 id="orga4d4f1f"><span class="section-number-4">1.2.1</span> Moving Headlines</h4>
+<div id="outline-container-org1d07230" class="outline-4">
+<h4 id="org1d07230"><span class="section-number-4">1.2.1</span> Moving Headlines</h4>
 </div>
-<div id="outline-container-org6dcd536" class="outline-4">
-<h4 id="org6dcd536"><span class="section-number-4">1.2.2</span> Demoting and promoting headlines</h4>
+<div id="outline-container-org35c8312" class="outline-4">
+<h4 id="org35c8312"><span class="section-number-4">1.2.2</span> Demoting and promoting headlines</h4>
 </div>
 </div>
-<div id="outline-container-org9b31b70" class="outline-3">
-<h3 id="org9b31b70"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Using Emacs for Notes</h3>
+<div id="outline-container-orgfd302db" class="outline-3">
+<h3 id="orgfd302db"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Using Emacs for Notes</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-org8db5878" class="outline-4">
-<h4 id="org8db5878"><span class="section-number-4">1.3.1</span> <span class="todo TODO">TODO</span> Navigating a file</h4>
+<div id="outline-container-org402178f" class="outline-4">
+<h4 id="org402178f"><span class="section-number-4">1.3.1</span> <span class="todo TODO">TODO</span> Navigating a file</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <p>
 How do I jump to the top of a headline so that I can use <code>TAB</code> to fold it ?
 </p>
 </div>
 </div>
-<div id="outline-container-orgb2653a1" class="outline-4">
-<h4 id="orgb2653a1"><span class="section-number-4">1.3.2</span> <span class="todo TODO">TODO</span> Attaching files</h4>
+<div id="outline-container-org2fbeadd" class="outline-4">
+<h4 id="org2fbeadd"><span class="section-number-4">1.3.2</span> <span class="todo TODO">TODO</span> Attaching files</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <p>
 Is this practical? Like what if I want to attach any of the following?
@@ -706,8 +1370,8 @@ Is this practical? Like what if I want to attach any of the following?
 </ul>
 </div>
 </div>
-<div id="outline-container-org0792819" class="outline-4">
-<h4 id="org0792819"><span class="section-number-4">1.3.3</span> <span class="todo TODO">TODO</span> Reading an Emacs File</h4>
+<div id="outline-container-orgefc5056" class="outline-4">
+<h4 id="orgefc5056"><span class="section-number-4">1.3.3</span> <span class="todo TODO">TODO</span> Reading an Emacs File</h4>
 <div class="outline-text-4" id="text-1-3-3">
 <ul class="org-ul">
 <li>How do I fold a section rather than the whole thing?</li>
@@ -715,8 +1379,8 @@ Is this practical? Like what if I want to attach any of the following?
 </ul>
 </div>
 </div>
-<div id="outline-container-orge96659a" class="outline-4">
-<h4 id="orge96659a"><span class="section-number-4">1.3.4</span> <span class="todo TODO">TODO</span> Use Vim</h4>
+<div id="outline-container-orgb9e2f3c" class="outline-4">
+<h4 id="orgb9e2f3c"><span class="section-number-4">1.3.4</span> <span class="todo TODO">TODO</span> Use Vim</h4>
 <div class="outline-text-4" id="text-1-3-4">
 <ul class="org-ul">
 <li>Can I create a keybinding to open the file or buffer in <i>Vim</i>?</li>
@@ -727,12 +1391,12 @@ Is this practical? Like what if I want to attach any of the following?
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc2d1228" class="outline-4">
-<h4 id="orgc2d1228"><span class="section-number-4">1.3.5</span> <span class="todo TODO">TODO</span> Navigating Files</h4>
+<div id="outline-container-orge22c6ab" class="outline-4">
+<h4 id="orge22c6ab"><span class="section-number-4">1.3.5</span> <span class="todo TODO">TODO</span> Navigating Files</h4>
 <div class="outline-text-4" id="text-1-3-5">
 </div>
 <ol class="org-ol">
-<li><a id="orgde55d51"></a>Moving to a previous location<br />
+<li><a id="org9ff01bb"></a>Moving to a previous location<br />
 <div class="outline-text-5" id="text-1-3-5-1">
 <p>
 If you are following an internal link (i.e. a link to a target in the
@@ -749,23 +1413,23 @@ So, you follow a link with <code>C-c C-o</code>, then you can jump back with
 </ol>
 </div>
 
-<div id="outline-container-orgdc68c0e" class="outline-4">
-<h4 id="orgdc68c0e"><span class="section-number-4">1.3.6</span> Browsing all TODO item</h4>
+<div id="outline-container-org096e75a" class="outline-4">
+<h4 id="org096e75a"><span class="section-number-4">1.3.6</span> Browsing all TODO item</h4>
 <div class="outline-text-4" id="text-1-3-6">
 <p>
 <a href="https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html">This tutorial by David O'Toole</a> says I can use a global TODO list with <code>C-c a t</code>, I could view the items only in the current document by using <code>C-c t</code> and the pop up window may be closed by focusing on it with <code>C-x o</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org623be85" class="outline-4">
-<h4 id="org623be85"><span class="section-number-4">1.3.7</span> Browsing by tags</h4>
+<div id="outline-container-orgd5f82a2" class="outline-4">
+<h4 id="orgd5f82a2"><span class="section-number-4">1.3.7</span> Browsing by tags</h4>
 </div>
-<div id="outline-container-orgd9948f7" class="outline-4">
-<h4 id="orgd9948f7"><span class="section-number-4">1.3.8</span> <span class="todo TODO">TODO</span> Exporting</h4>
+<div id="outline-container-org1b13d67" class="outline-4">
+<h4 id="org1b13d67"><span class="section-number-4">1.3.8</span> <span class="todo TODO">TODO</span> Exporting</h4>
 <div class="outline-text-4" id="text-1-3-8">
 </div>
 <ol class="org-ol">
-<li><a id="org03b321d"></a>In Line References<br />
+<li><a id="orgfe8263f"></a>In Line References<br />
 <div class="outline-text-5" id="text-1-3-8-1">
 <p>
 In order to reference code blocks <a href="https://emacs.stackexchange.com/questions/20947/how-to-reference-source-blocks-in-org-text">using org-ref</a>  you need to install the <code>org-ref</code> package by following the instructions on their <a href="https://github.com/jkitchin/org-ref">GitHub</a>, you need to add a line to your <code>.emacs.d/.init.el</code> but then you should be able to do <code>M-x package-list-packages</code> and find <code>org-ref</code> in order to install it.
@@ -777,7 +1441,7 @@ In order to reference code blocks <a href="https://emacs.stackexchange.com/quest
 </div>
 
 <ol class="org-ol">
-<li><a id="org382321e"></a><span class="todo TODO">TODO</span> I haven't figured out how to fix labels with HTML though<br />
+<li><a id="org2d5daa6"></a><span class="todo TODO">TODO</span> I haven't figured out how to fix labels with HTML though<br />
 <div class="outline-text-6" id="text-1-3-8-1-1">
 <p>
 I tried looking for <code>org-HTML-prefer-user-labels</code> but no luck, there might be something in the <a href="https://orgmode.org/manual/HTML-Export.html#HTML-Export">Manual</a>.
@@ -787,14 +1451,14 @@ I tried looking for <code>org-HTML-prefer-user-labels</code> but no luck, there 
 </ol>
 </li>
 
-<li><a id="orgc8d948d"></a><span class="todo TODO">TODO</span> Markdown<br />
+<li><a id="org1662e3d"></a><span class="todo TODO">TODO</span> Markdown<br />
 <div class="outline-text-5" id="text-1-3-8-2">
 <p>
 I need to figure how to export as markdown without breaking the dam thing
 </p>
 </div>
 </li>
-<li><a id="orge830c98"></a><span class="todo TODO">TODO</span> Styles<br />
+<li><a id="orgd3e12ce"></a><span class="todo TODO">TODO</span> Styles<br />
 <div class="outline-text-5" id="text-1-3-8-3">
 <ul class="org-ul">
 <li>I need to figure out how to specify a css for html export</li>
@@ -805,24 +1469,26 @@ I found this nice Trick <a href="https://www.reddit.com/r/emacs/comments/3pvbag/
 </div>
 
 <ol class="org-ol">
-<li><a id="org8b624d9"></a>\(LaTeX\) Styles upon Export.<br />
+<li><a id="org9833262"></a>\(LaTeX\) Styles upon Export.<br />
 <div class="outline-text-6" id="text-1-3-8-3-1">
 <p>
 I can, I believe, set up a custom package for a template (of course that means that I'll have to fix the style that I've been using from Computer algebra) by specifying a header of the form #+LATEX<sub>HEADER</sub>: \usepackage{mystyle.sty}=
 </p>
 </div>
 </li>
-</ol>
-</li>
-<li><a id="orga3ca3ce"></a>JavaScript<br />
-<div class="outline-text-5" id="text-1-3-8-4">
+<li><a id="org2d24e7d"></a>JavaScript<br />
+<div class="outline-text-6" id="text-1-3-8-3-2">
 <p>
 A tonne of options for exporting with extended javascript are also at my disposal, look at the <a href="https://orgmode.org/manual/JavaScript-support.html#JavaScript-support">Manual</a>, most importantly is <code>view:content</code> and <code>view:info</code>, so for example:
 </p>
 
-<p>
-<code>view:info toc:nil</code>
-</p>
+<pre class="example">
+view:info toc:nil
+#+INFOJS_OPT: view:info toc:nil
+</pre>
+
+
+
 <p>
 Once your in the html, use <code>i</code> to toggle the <i>Table of Contents</i>.
 </p>
@@ -830,7 +1496,7 @@ Once your in the html, use <code>i</code> to toggle the <i>Table of Contents</i>
 
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>Emacs LISP code to inline custom CSS</label><pre class="src src-emacs-lisp" id="org4370e58"><span style="color: #5F7F5F;">;; </span><span style="color: #7F9F7F;">Put your css files there</span>
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Emacs LISP code to inline custom CSS</label><pre class="src src-emacs-lisp" id="orgc7c7114"><span style="color: #5F7F5F;">;; </span><span style="color: #7F9F7F;">Put your css files there</span>
 (<span style="color: #F0DFAF; font-weight: bold;">defvar</span> <span style="color: #DFAF8F;">org-theme-css-dir</span> <span style="color: #CC9393;">"~/.emacs.d/org-css/"</span>)
 
 (<span style="color: #F0DFAF; font-weight: bold;">defun</span> <span style="color: #93E0E3;">toggle-org-custom-inline-style</span> ()
@@ -878,21 +1544,29 @@ Once your in the html, use <code>i</code> to toggle the <i>Table of Contents</i>
 </ul>
 </div>
 </li>
+
+
+
+
+<li><a id="org9d3e15c"></a><span class="todo TODO">TODO</span> Create CSS files<br />
+<div class="outline-text-6" id="text-1-3-8-3-3">
+<p>
+Take the CSS files and merge them with something bare bones to colour the ToDO tags
+</p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 </div>
 </div>
 </div>
-
-
-
-
-
-<div id="outline-container-orga4f90bd" class="outline-2">
-<h2 id="orga4f90bd"><span class="section-number-2">2</span> Tips and Tricks with Org Mode</h2>
+<div id="outline-container-org34f957a" class="outline-2">
+<h2 id="org34f957a"><span class="section-number-2">2</span> Tips and Tricks with Org Mode</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org14b577a" class="outline-3">
-<h3 id="org14b577a"><span class="section-number-3">2.1</span> Working with TODO/headline/list items</h3>
+<div id="outline-container-org6dbaf67" class="outline-3">
+<h3 id="org6dbaf67"><span class="section-number-3">2.1</span> Working with TODO/headline/list items</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 You can add a new <code>TODO</code> item with <code>M-S RET</code>.
@@ -900,8 +1574,8 @@ Using <code>M-up/down</code> a headlines may be moved, they may be demoted with 
 Using <code>S-left/right</code> will toggle to do list items.
 </p>
 </div>
-<div id="outline-container-orgd879097" class="outline-4">
-<h4 id="orgd879097"><span class="section-number-4">2.1.1</span> Folding</h4>
+<div id="outline-container-org8b39e9a" class="outline-4">
+<h4 id="org8b39e9a"><span class="section-number-4">2.1.1</span> Folding</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 You can fold a headline by using TAB if you are on a headline, the fold level of the entire document may be toggled with <code>S-TAB</code>
@@ -909,12 +1583,12 @@ You can fold a headline by using TAB if you are on a headline, the fold level of
 </div>
 </div>
 </div>
-<div id="outline-container-org78e1e89" class="outline-3">
-<h3 id="org78e1e89"><span class="section-number-3">2.2</span> Note Taking Guidlines</h3>
+<div id="outline-container-org0dcddbf" class="outline-3">
+<h3 id="org0dcddbf"><span class="section-number-3">2.2</span> Note Taking Guidlines</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orga50ec6d" class="outline-4">
-<h4 id="orga50ec6d"><span class="section-number-4">2.2.1</span> Links</h4>
+<div id="outline-container-org8f385d4" class="outline-4">
+<h4 id="org8f385d4"><span class="section-number-4">2.2.1</span> Links</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 You can create a link by using <code>C-c C-l</code> and I think <code>C-u C-c C-l</code> will attach an internal link
@@ -922,8 +1596,8 @@ You can create a link by using <code>C-c C-l</code> and I think <code>C-u C-c C-
 </div>
 </div>
 </div>
-<div id="outline-container-orgf100a59" class="outline-3">
-<h3 id="orgf100a59"><span class="section-number-3">2.3</span> Exporting Org to Markdown</h3>
+<div id="outline-container-orgba8ede5" class="outline-3">
+<h3 id="orgba8ede5"><span class="section-number-3">2.3</span> Exporting Org to Markdown</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 You should customize org-export-backends and enable the markdown backend.
@@ -931,8 +1605,8 @@ That's: M-x customize-option and then org-export-backends and then arrow down to
 </p>
 </div>
 </div>
-<div id="outline-container-org18df9ae" class="outline-3">
-<h3 id="org18df9ae"><span class="section-number-3">2.4</span> Including LaTeX Fragments</h3>
+<div id="outline-container-org29456d3" class="outline-3">
+<h3 id="org29456d3"><span class="section-number-3">2.4</span> Including LaTeX Fragments</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 To preview LaTeX documents install <code>dvipng</code>, <code>dvisvgm</code> or <code>conver</code>.
@@ -952,8 +1626,8 @@ As hown in \eqref{Quad}
 C-c C-x C-l (org-toggle-latex-fragment)
 </pre>
 </div>
-<div id="outline-container-orgd4b7a4d" class="outline-4">
-<h4 id="orgd4b7a4d"><span class="section-number-4">2.4.1</span> Example LaTeX</h4>
+<div id="outline-container-org6d68673" class="outline-4">
+<h4 id="org6d68673"><span class="section-number-4">2.4.1</span> Example LaTeX</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <p>
 \[\begin{align}
@@ -963,8 +1637,8 @@ C-c C-x C-l (org-toggle-latex-fragment)
 </div>
 </div>
 </div>
-<div id="outline-container-org9b5bd29" class="outline-3">
-<h3 id="org9b5bd29"><span class="section-number-3">2.5</span> Zooming in and out</h3>
+<div id="outline-container-orgb796fb1" class="outline-3">
+<h3 id="orgb796fb1"><span class="section-number-3">2.5</span> Zooming in and out</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 this is mapped to <code>&lt;C-x&gt; &lt;C-+&gt;</code> and <code>&lt;C-x&gt; &lt;C--&gt;, after one combination
@@ -981,8 +1655,8 @@ add this to the configuration file:
 (global-set-key [C-mouse-5] 'text-scale-decrease)
 </pre>
 </div>
-<div id="outline-container-org64ff0ce" class="outline-4">
-<h4 id="org64ff0ce"><span class="section-number-4">2.5.1</span> Auto Render Math</h4>
+<div id="outline-container-orgd8c081e" class="outline-4">
+<h4 id="orgd8c081e"><span class="section-number-4">2.5.1</span> Auto Render Math</h4>
 <div class="outline-text-4" id="text-2-5-1">
 <p>
 The Following code can be used to auto render math upon saving:
@@ -1006,16 +1680,16 @@ however it's simpler to merely append <code>#+STARTUP: latexpreview</code> to th
 </div>
 </div>
 </div>
-<div id="outline-container-org8f295bd" class="outline-3">
-<h3 id="org8f295bd"><span class="section-number-3">2.6</span> Setting Line Wrap</h3>
+<div id="outline-container-org26a432a" class="outline-3">
+<h3 id="org26a432a"><span class="section-number-3">2.6</span> Setting Line Wrap</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 In order to wrap lines use <code>visual-line-mode</code>, this can be added to the config at <code>~/emacs.d/init.el</code> by appending the line  <code>(visual-line-mode t)</code> or by using <code>M-x visual-line-mode</code> in the buffer, or by changing the setting globally with <code>M-x customize option RET global-visual-line-mode</code>
 </p>
 </div>
 </div>
-<div id="outline-container-orgcacf3c2" class="outline-3">
-<h3 id="orgcacf3c2"><span class="section-number-3">2.7</span> Cancelling a Command</h3>
+<div id="outline-container-org4973f29" class="outline-3">
+<h3 id="org4973f29"><span class="section-number-3">2.7</span> Cancelling a Command</h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 If you get stuck in the mini-buffer you can cancel the command by using <code>&lt;C-g&gt;</code>
@@ -1024,8 +1698,8 @@ If you get stuck in the mini-buffer you can cancel the command by using <code>&l
 </div>
 
 
-<div id="outline-container-orge1d6d1a" class="outline-3">
-<h3 id="orge1d6d1a"><span class="section-number-3">2.8</span> Org Mode To Do List</h3>
+<div id="outline-container-org6cb57cb" class="outline-3">
+<h3 id="org6cb57cb"><span class="section-number-3">2.8</span> Org Mode To Do List</h3>
 </div>
 </div>
 <div id="footnotes">
@@ -1049,7 +1723,7 @@ having <code>emacs-lisp</code> after means it will be (atleast-partially) evalua
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: ryan</p>
-<p class="date">Created: 2019-11-09 Sat 09:15</p>
+<p class="date">Created: 2019-11-09 Sat 09:30</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
