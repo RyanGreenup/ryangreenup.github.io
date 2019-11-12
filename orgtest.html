@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-11-11 Mon 19:04 -->
+<!-- 2019-11-12 Tue 22:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notes on Emacs and Org-mode</title>
@@ -1247,107 +1247,125 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0687b0e">1. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</a>
+<li><a href="#orgbf354bc">1. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</a>
 <ul>
-<li><a href="#org6ea296b">1.1. <span class="done DONE">DONE</span> How do attach external files that I can follow?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></a></li>
+<li><a href="#org3ecc7ec">1.1. <span class="done DONE">DONE</span> Images&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span></span></a>
+<ul>
+<li><a href="#org5a66e2d">1.1.1. Images may be inserted as links</a></li>
 </ul>
 </li>
-<li><a href="#org7241ecf">2. <span class="done DONE">DONE</span> Tag Filtering&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tagging">tagging</span></span></a>
-<ul>
-<li><a href="#org835f927">2.1. General Informagion</a></li>
-<li><a href="#orgbdcdb25">2.2. TimeStapms</a></li>
-<li><a href="#org33bc81a">2.3. Keyboard Shortcuts</a></li>
-<li><a href="#orgf8cf814">2.4. Tags</a></li>
-<li><a href="#orge6ea933">2.5. <span class="done DONE">DONE</span> Including Tikz Plots&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span>&#xa0;<span class="Buffers">Buffers</span></span></a>
-<ul>
-<li><a href="#orgb703a10">2.5.1. Using a tikz picture</a></li>
+<li><a href="#orgabd8663">1.2. <span class="done DONE">DONE</span> How do attach external files that I can follow?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></a></li>
 </ul>
 </li>
+<li><a href="#orgcea2382">2. <span class="done DONE">DONE</span> Tag Filtering&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tagging">tagging</span></span></a>
+<ul>
+<li><a href="#org5e7b0b7">2.1. General Informagion</a></li>
+<li><a href="#orge4f05b9">2.2. TimeStapms</a></li>
+<li><a href="#orgc3f7133">2.3. Keyboard Shortcuts</a></li>
+<li><a href="#orgb807eec">2.4. Tags</a></li>
 </ul>
 </li>
-<li><a href="#org3fd42e5">3. Inline Code</a>
+<li><a href="#org8ab00b8">3. Inline Code</a>
+<ul>
+<li><a href="#orgf3db712">3.1. First Steps</a></li>
+<li><a href="#orgdad4a34">3.2. Execute External Language</a></li>
+<li><a href="#orgcfe0714">3.3. Working with R&#xa0;&#xa0;&#xa0;<span class="tag"><span class="R">R</span>&#xa0;<span class="diagrams">diagrams</span></span></a>
+<ul>
+<li><a href="#org5f13400">3.3.1. Integrating ESS Auto Complete</a></li>
+<li><a href="#orgb522b3f">3.3.2. Plotting</a></li>
+</ul>
+</li>
+<li><a href="#orga40f4d1">3.4. <span class="done DONE">DONE</span> Syntax Highlighting</a>
+<ul>
+<li><a href="#orgc4a7bf6">3.4.1. Would it be worth using org-mode to manage code notes over boostnote?</a></li>
+</ul>
+</li>
+<li><a href="#org2aca5fb">3.5. <span class="done DONE">DONE</span> How do I include ggplot inline?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="R">R</span></span></a></li>
+<li><a href="#org92948ec">3.6. <span class="todo TODO">TODO</span> Java Example</a></li>
+</ul>
+</li>
+<li><a href="#org5af4ee2">4. <span class="done DONE">DONE</span> Including Tikz Plots&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span>&#xa0;<span class="Buffers">Buffers</span></span></a>
 <ul>
 <li>
 <ul>
-<li><a href="#orgb42e604">3.0.1. Execute External Language</a></li>
-<li><a href="#orgf9355d7">3.0.2. Producing Plots&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span></span></a></li>
+<li><a href="#orgc5397da">4.0.1. <span class="done DONE">DONE</span> Using a tikz picture</a></li>
 </ul>
 </li>
-<li><a href="#orgf245be6">3.1. <span class="done DONE">DONE</span> How do I include ggplot inline?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="R">R</span></span></a></li>
 </ul>
 </li>
-<li><a href="#orgc7e78b3">4. <span class="done DONE">DONE</span> How do I use \(LaTeX\) snippets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Snippets">Snippets</span></span></a>
+<li><a href="#org1db99f2">5. <span class="done DONE">DONE</span> How do I use LaTeX) snippets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Snippets">Snippets</span></span></a>
 <ul>
-<li><a href="#org09c2f00">4.1. <span class="done DONE">DONE</span> Images&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span></span></a>
+<li><a href="#org745cece">5.1. Example LaTeX</a>
 <ul>
-<li><a href="#orgad810f0">4.1.1. Images may be inserted as links</a></li>
+<li><a href="#org7b4825f">5.1.1. previewing latex</a></li>
+<li><a href="#org800c13e">5.1.2. Using the snippets</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org95ffaf8">5. Set up a workflow</a>
+<li><a href="#org47b7b22">6. Set up a workflow</a>
 <ul>
-<li><a href="#org4913309">5.1. <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</a></li>
-<li><a href="#org6675a58">5.2. <span class="done DONE">DONE</span> How do I deal with headlines?</a>
+<li><a href="#orgfd46470">6.1. <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</a></li>
+<li><a href="#orgcbcc52b">6.2. <span class="done DONE">DONE</span> How do I deal with headlines?</a>
 <ul>
-<li><a href="#orge01fa17">5.2.1. Moving Headlines</a></li>
-<li><a href="#org5d4b515">5.2.2. Demoting and promoting headlines</a></li>
+<li><a href="#org13ea090">6.2.1. Moving Headlines</a></li>
+<li><a href="#org87e0136">6.2.2. Demoting and promoting headlines</a></li>
 </ul>
 </li>
-<li><a href="#org8ec5bf9">5.3. <span class="done DONE">DONE</span> Can I Hide all the ToDo Tags from export?</a></li>
-<li><a href="#org45b13f4">5.4. <span class="done DONE">DONE</span> Using Emacs for Notes</a>
+<li><a href="#orge6e1e92">6.3. <span class="done DONE">DONE</span> Can I Hide all the ToDo Tags from export?</a></li>
+<li><a href="#org1322de2">6.4. <span class="done DONE">DONE</span> Using Emacs for Notes</a>
 <ul>
-<li><a href="#org6c4ff3a">5.4.1. <span class="done DONE">DONE</span> Browsing all ToDO item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Todo">Todo</span></span></a></li>
-<li><a href="#org41ac09b">5.4.2. <span class="done DONE">DONE</span> Navigating a file</a></li>
-<li><a href="#orgbe8b033">5.4.3. <span class="done DONE">DONE</span> Attaching files&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></a></li>
-<li><a href="#org3da0faa">5.4.4. <span class="done DONE">DONE</span> Reading an Emacs File</a></li>
-<li><a href="#orgbd0d81d">5.4.5. <span class="done DONE">DONE</span> Use Vim Can I create a keybinding to open the file or buffer in <i>Vim</i>?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="vim">vim</span></span></a></li>
-<li><a href="#org23fe5cd">5.4.6. <span class="done DONE">DONE</span> How to mark lines just like in vim?</a></li>
+<li><a href="#org566ee26">6.4.1. <span class="done DONE">DONE</span> Browsing all ToDO item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Todo">Todo</span></span></a></li>
+<li><a href="#orgaac011e">6.4.2. <span class="done DONE">DONE</span> Navigating a file</a></li>
+<li><a href="#orgf1a01e6">6.4.3. <span class="done DONE">DONE</span> Attaching files&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></a></li>
+<li><a href="#org5f0862d">6.4.4. <span class="done DONE">DONE</span> Reading an Emacs File</a></li>
+<li><a href="#orgbdbc17e">6.4.5. <span class="done DONE">DONE</span> Use Vim Can I create a keybinding to open the file or buffer in <i>Vim</i>?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="vim">vim</span></span></a></li>
+<li><a href="#org80b8bd8">6.4.6. <span class="done DONE">DONE</span> How to mark lines just like in vim?</a></li>
 </ul>
 </li>
-<li><a href="#orgee4ba92">5.5. <span class="done DONE">DONE</span> Opening Current File in vim</a>
+<li><a href="#org5290b50">6.5. <span class="done DONE">DONE</span> Opening Current File in vim</a>
 <ul>
-<li><a href="#org48cd886">5.5.1. <span class="done DONE">DONE</span> Navigating Files</a></li>
-<li><a href="#org0041031">5.5.2. <span class="todo WAITING">WAITING</span> Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Style">Style</span></span></a></li>
+<li><a href="#org87cc671">6.5.1. <span class="done DONE">DONE</span> Navigating Files</a></li>
+<li><a href="#orga36fd6a">6.5.2. <span class="todo WAITING">WAITING</span> Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Style">Style</span></span></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org8c61a6c">6. Tips and Tricks with Org Mode</a>
+<li><a href="#org84d11e9">7. Tips and Tricks with Org Mode</a>
 <ul>
-<li><a href="#org6e541f6">6.1. Folding</a></li>
-<li><a href="#orgdb46e44">6.2. Working with ToDo/HeadLine/list items</a>
+<li><a href="#org3e7ab50">7.1. Folding</a></li>
+<li><a href="#orgb45befb">7.2. Working with ToDo/HeadLine/list items</a>
 <ul>
-<li><a href="#org1433991">6.2.1. Folding</a></li>
-<li><a href="#orgd388b1b">6.2.2. Trees </a></li>
+<li><a href="#org6e41834">7.2.1. Folding</a></li>
+<li><a href="#orge1614b9">7.2.2. Trees</a></li>
 </ul>
 </li>
-<li><a href="#org83a0481">6.3. Note Taking Guidlines&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span></a>
+<li><a href="#org78bb6cd">7.3. Note Taking Guidlines&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span></a>
 <ul>
-<li><a href="#org36fea27">6.3.1. Links</a></li>
+<li><a href="#org8164ebd">7.3.1. Links</a></li>
 </ul>
 </li>
-<li><a href="#org6e3eedf">6.4. Exporting Org to Markdown</a></li>
-<li><a href="#org3f903e4">6.5. Including LaTeX Fragments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LaTeX">LaTeX</span></span></a>
+<li><a href="#org2679ca5">7.4. Exporting Org to Markdown</a></li>
+<li><a href="#orgd450003">7.5. Including LaTeX Fragments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LaTeX">LaTeX</span></span></a>
 <ul>
-<li><a href="#org3ac8ed9">6.5.1. Example LaTeX</a></li>
+<li><a href="#org0e932cb">7.5.1. Example LaTeX</a></li>
 </ul>
 </li>
-<li><a href="#org6bd5481">6.6. <span class="done DONE">DONE</span> Tables&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tables">Tables</span></span></a>
+<li><a href="#org70aeb80">7.6. <span class="done DONE">DONE</span> Tables&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tables">Tables</span></span></a>
 <ul>
-<li><a href="#org5ac7505">6.6.1. Multi-Column Cells</a></li>
+<li><a href="#org8ab6fa9">7.6.1. Multi-Column Cells</a></li>
 </ul>
 </li>
-<li><a href="#orgf44cdc9">6.7. Drawers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawers">Drawers</span></span></a></li>
-<li><a href="#org585ae7c">6.8. <span class="done DONE">DONE</span> How to include links to files</a>
+<li><a href="#org29230f8">7.7. Drawers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawers">Drawers</span></span></a></li>
+<li><a href="#org4136073">7.8. <span class="done DONE">DONE</span> How to include links to files</a>
 <ul>
-<li><a href="#org8cb671b">6.8.1. <span class="done DONE">DONE</span> Internal links</a></li>
-<li><a href="#org4559808">6.8.2. <span class="done DONE">DONE</span> External Files</a></li>
+<li><a href="#org5c7d81c">7.8.1. <span class="done DONE">DONE</span> Internal links</a></li>
+<li><a href="#org01ea150">7.8.2. <span class="done DONE">DONE</span> External Files</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org999e059">7. <span class="done DONE">DONE</span> Can I tag a specific lines</a></li>
+<li><a href="#org76a71f1">8. <span class="done DONE">DONE</span> Can I tag a specific lines</a></li>
 </ul>
 </div>
 </div>
@@ -1355,8 +1373,9 @@ for the JavaScript code in this tag.
 #+LEARNING EMACS AND ORG -<b>- mode: org -</b>-
 </p>
 
-<div id="outline-container-org0687b0e" class="outline-2">
-<h2 id="org0687b0e"><span class="section-number-2">1</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</h2>
+
+<div id="outline-container-orgbf354bc" class="outline-2">
+<h2 id="orgbf354bc"><span class="section-number-2">1</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Emacs for notes</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 you can add a todo tag by calling <code>org-insert-todo-heading</code> which is mapped to <code>M-Shift-RET</code>, in <i>SpaceMacs</i> it appears to be <code>SPC m :</code>
@@ -1366,15 +1385,42 @@ you can add a todo tag by calling <code>org-insert-todo-heading</code> which is 
 Consider adding extra states to the for todo <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> something like:
 </p>
 
-<div class="org-src-container">
-<pre class="src src-orgmode">#+TODO: TODO IN-PROGRESS WAITING DONE
+<pre class="example">
+#+TODO: TODO IN-PROGRESS WAITING DONE
 </pre>
+</div>
+
+<div id="outline-container-org3ecc7ec" class="outline-3">
+<h3 id="org3ecc7ec"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Images&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span></span></h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org5a66e2d" class="outline-4">
+<h4 id="org5a66e2d"><span class="section-number-4">1.1.1</span> Images may be inserted as links</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+Look at the following example:
+</p>
+
+<p>
+The documentation implies that <code>[[ ]]</code> are required but it seems that the export works fine without that and the inline preview is fine without it as well:
+</p>
+
+
+<div class="figure">
+<p><img src="file:///home/ryan/gitpage/ryangreenup.github.io/AbstractAlgebraNotes/1551604985277.png" alt="1551604985277.png" />
+</p>
+</div>
+
+<p>
+This may be inline previewed with <code>C-c C-x C-v</code>
+</p>
+</div>
 </div>
 </div>
 
-<div id="outline-container-org6ea296b" class="outline-3">
-<h3 id="org6ea296b"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> How do attach external files that I can follow?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-orgabd8663" class="outline-3">
+<h3 id="orgabd8663"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> How do attach external files that I can follow?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 Does the filetype matter? like markdown pdf whatever?
 This <a href="https://orgmode.org/manual/Handling-links.html#Handling-links">Link to the manual</a> suggests that any file can be linked to be using <code>C-u C-c C-l</code><a href="./1.pdf"> PDF to this doc, pretend it's a tutorial sheet or a learning guide or something</a> 
@@ -1387,12 +1433,12 @@ You may also want to consider using the insert menu  <code>, i a</code> / <code>
 </div>
 </div>
 
-<div id="outline-container-org7241ecf" class="outline-2">
-<h2 id="org7241ecf"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> Tag Filtering&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tagging">tagging</span></span></h2>
+<div id="outline-container-orgcea2382" class="outline-2">
+<h2 id="orgcea2382"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> Tag Filtering&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tagging">tagging</span></span></h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org835f927" class="outline-3">
-<h3 id="org835f927"><span class="section-number-3">2.1</span> General Informagion</h3>
+<div id="outline-container-org5e7b0b7" class="outline-3">
+<h3 id="org5e7b0b7"><span class="section-number-3">2.1</span> General Informagion</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>According to the documentation on <a href="https://orgmode.org/manual/Tag-Inheritance.html#Tag-Inheritance">Tag Inheritance</a>, Tags respect the heirachy of the document.</li>
@@ -1400,7 +1446,7 @@ You may also want to consider using the insert menu  <code>, i a</code> / <code>
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orgd96a642"></a>Global Tags<br />
+<li><a id="org001d285"></a>Global Tags<br />
 <div class="outline-text-5" id="text-2-1-0-1">
 <p>
 In order for tags to appear in the agenda buffer they must be added to the  <code>org-agenda-files</code> variable, Files can be added /removed from this variable with <code>C-c [</code> / <code>C-c ]</code> respectively.
@@ -1440,10 +1486,18 @@ In order to have all the global tags listed, you need to <a href="https://emacs.
 (setq org-complete-tags-always-offer-all-agenda-tags t)
 </pre>
 </div>
+
+<ol class="org-ol">
+<li><a id="org47ab565"></a>Progressive Filtering<br />
+<div class="outline-text-6" id="text-2-1-0-1-1">
+<p>
+I haven't found anyway to do do this, but  <code>org-global-tags-completion-table</code> might be a start.  
+</p>
+</div>
 </li>
-
-
-<li><a id="org6530924"></a>LocalTags<br />
+</ol>
+</li>
+<li><a id="org04ca193"></a>LocalTags<br />
 <div class="outline-text-5" id="text-2-1-0-2">
 <p>
 Local tags are managed by <i>Sparse Trees</i> which collapses and flattens the tree but for matching tags, certainly preferable for a local document.
@@ -1478,7 +1532,7 @@ First you need to list the org-file in the variable <code>org-agenda-files</code
 </div>
 </li>
 
-<li><a id="org2b1e033"></a>Listing Empty Headlines<br />
+<li><a id="org275d7f8"></a>Listing Empty Headlines<br />
 <div class="outline-text-5" id="text-2-1-0-3">
 <p>
 use the <a href="https://orgmode.org/manual/Property-syntax.html">special property</a> TAGS like so:
@@ -1490,7 +1544,7 @@ TAGS=""
 </div>
 </li>
 
-<li><a id="org4e97d11"></a>Tag Heirachy<br />
+<li><a id="orgd40f630"></a>Tag Heirachy<br />
 <div class="outline-text-5" id="text-2-1-0-4">
 <p>
 If you list tags in the preamble or <code>org-tag-alist</code> like this:
@@ -1541,8 +1595,7 @@ It's probably better to set these up in the <code>org-tag-alist</code> variable 
 
 
 
-
-<li><a id="org4bf604d"></a><span class="done DONE">DONE</span> Capture Templates<br />
+<li><a id="org40b416f"></a><span class="done DONE">DONE</span> Capture Templates<br />
 <div class="outline-text-5" id="text-2-1-0-5">
 <p>
 Say I want to take a math note, can I just use <code>&lt;SPC a o c&gt;</code> and open the right template? There is some info in the <a href="https://orgmode.org/manual/Setting-up-capture.html#Setting-up-capture">Manual</a> and on <a href="https://sachachua.com/blog/2015/02/learn-take-notes-efficiently-org-mode/">This Site</a>.
@@ -1551,8 +1604,8 @@ Say I want to take a math note, can I just use <code>&lt;SPC a o c&gt;</code> an
 </li>
 </ol>
 </div>
-<div id="outline-container-orgbdcdb25" class="outline-3">
-<h3 id="orgbdcdb25"><span class="section-number-3">2.2</span> TimeStapms</h3>
+<div id="outline-container-orge4f05b9" class="outline-3">
+<h3 id="orge4f05b9"><span class="section-number-3">2.2</span> TimeStapms</h3>
 <div class="outline-text-3" id="text-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1590,8 +1643,8 @@ Say I want to take a math note, can I just use <code>&lt;SPC a o c&gt;</code> an
 </div>
 </div>
 
-<div id="outline-container-org33bc81a" class="outline-3">
-<h3 id="org33bc81a"><span class="section-number-3">2.3</span> Keyboard Shortcuts</h3>
+<div id="outline-container-orgc3f7133" class="outline-3">
+<h3 id="orgc3f7133"><span class="section-number-3">2.3</span> Keyboard Shortcuts</h3>
 <div class="outline-text-3" id="text-2-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1733,8 +1786,8 @@ there are way more more shortcuts inside this drawer <sup><a id="fnr.2" class="f
 <p>
  
 </p>
-<div class="org-src-container">
-<pre class="src src-txt">================================================================================
+<pre class="example">
+================================================================================
 Org-Mode Reference Card (for version 7.8.11)
 ================================================================================
 
@@ -2033,8 +2086,8 @@ insert DEADLINE timestamp                         C-c C-d
 insert SCHEDULED timestamp                        C-c C-s
 create sparse tree with all deadlines due         C-c / d
 the time between 2 dates in a time range          C-c C-y
-change timestamp at cursor Â±1 day                S-RIGHT/LEFT\notetwo
-change year/month/day at cursor by Â±1            S-UP/DOWN\notetwo
+change timestamp at cursor A+/-1 day                S-RIGHT/LEFT\notetwo
+change year/month/day at cursor by A+/-1            S-UP/DOWN\notetwo
 access the calendar for the current date          C-c &gt;
 insert timestamp matching date in calendar        C-c &lt;
 access agenda for current date                    C-c C-o
@@ -2202,15 +2255,13 @@ your own key as shown under ACTIVATION.
 </pre>
 </div>
 </div>
-</div>
 
 
 
 
 
-
-<div id="outline-container-orgf8cf814" class="outline-3">
-<h3 id="orgf8cf814"><span class="section-number-3">2.4</span> Tags</h3>
+<div id="outline-container-orgb807eec" class="outline-3">
+<h3 id="orgb807eec"><span class="section-number-3">2.4</span> Tags</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 There are two types of tags, <code>todo</code> tags and <code>:patt1:</code> tags, working with them is essentailly the difference between using <code>t</code> and <code>m</code> respectively.
@@ -2225,79 +2276,20 @@ You can also merely specify any tag in the headline using <code>:patt1:</code> w
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-orge6ea933" class="outline-3">
-<h3 id="orge6ea933"><span class="section-number-3">2.5</span> <span class="done DONE">DONE</span> Including Tikz Plots&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span>&#xa0;<span class="Buffers">Buffers</span></span></h3>
-<div class="outline-text-3" id="text-2-5">
-</div>
-<div id="outline-container-orgb703a10" class="outline-4">
-<h4 id="orgb703a10"><span class="section-number-4">2.5.1</span> Using a tikz picture</h4>
-<div class="outline-text-4" id="text-2-5-1">
-<p>
-So I think the best way is to simply evaluate the latex using babel?
-</p>
-</div>
-<ol class="org-ol">
-<li><a id="org69f8ed9"></a>An attempt <a href="https://www.homepages.ucl.ac.uk/~ucahjde/blog/tikz.html">from UCL</a><br />
-<div class="outline-text-5" id="text-2-5-1-1">
-<p>
-then it will be your job to manually insert the line:
-</p>
-<pre class="example">
-[[./img/contour.svg]]
-</pre>
-
-<p>
-and by typing <code>C-c C-x C-v</code> over that the tikz will render
-<object type="image/svg+xml" data="./img/contour.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
-</p>
 </div>
 
-
-<ol class="org-ol">
-<li><a id="org95a1223"></a>My drugs example<br />
-<div class="outline-text-6" id="text-2-5-1-1-1">
-
-<div class="figure">
-<p><object type="image/svg+xml" data="./img/dosage.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
-</p>
-</div>
-</div>
-
-<ol class="org-ol">
-<li><a id="orgc5dd7ed"></a>Snippet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Snippets">Snippets</span></span><br />
-<div class="outline-text-7" id="text-2-5-1-1-1-1">
-<p>
-Using the tutorial <a href="https://jaketrent.com/post/code-snippets-spacemacs/">here</a> and the <a href="http://joaotavora.github.io/yasnippet/snippet-expansion.html"><i>YaSnippets</i> manual</a> I turned this into a snippet in <a href="file:///home/ryan/.emacs./private/snippets/orgmode/plot">orgmode/plot</a>. The snippet can be triggered by typing in <code>plot</code> and positinioning the cursor over and then running <code>M-x yas-expand</code> / <code>:yas-expand</code> / <code>&lt;SPC&gt; &lt;SPC&gt; yas-expand</code>.
-</p>
-
-<ul class="org-ul">
-<li>If the minor mode is enabled with <code>M-x yas-minor-mode</code> then I think you could just press <code>TAB</code> / <code>M-/</code> after plot and then jumping to the next field with <code>M-s-/</code></li>
-</ul>
-</div>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</div>
-</div>
-</div>
-
-
-
-<div id="outline-container-org3fd42e5" class="outline-2">
-<h2 id="org3fd42e5"><span class="section-number-2">3</span> Inline Code</h2>
+<div id="outline-container-org8ab00b8" class="outline-2">
+<h2 id="org8ab00b8"><span class="section-number-2">3</span> Inline Code</h2>
 <div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgf3db712" class="outline-3">
+<h3 id="orgf3db712"><span class="section-number-3">3.1</span> First Steps</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 First you have to activate languages, this is what I used:
 </p>
 <div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">Active Babel languages</span>
+<pre class="src src-lisp"><span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">Active Babel languages</span>
 <span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">Active Babel languages</span>
 <span style="color: #4f97d7;">(</span>org-babel-do-load-languages
    'org-babel-load-languages
@@ -2339,14 +2331,15 @@ You need to specify how you want the code block to behave:
 If you don't want something to evauluate set <code>:exports none</code>
 </p>
 </div>
-<div id="outline-container-orgb42e604" class="outline-4">
-<h4 id="orgb42e604"><span class="section-number-4">3.0.1</span> Execute External Language</h4>
-<div class="outline-text-4" id="text-3-0-1">
+</div>
+<div id="outline-container-orgdad4a34" class="outline-3">
+<h3 id="orgdad4a34"><span class="section-number-3">3.2</span> Execute External Language</h3>
+<div class="outline-text-3" id="text-3-2">
 <p>
 External languages can be executed by pressing <code>C-c C-c</code> and then pressing <code>y</code> for yes
 </p>
 <div class="org-src-container">
-<pre class="src src-R">print(rnorm(3))
+<pre class="src src-R">print<span style="color: #4f97d7;">(</span>rnorm<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">3</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
 </pre>
 </div>
 
@@ -2358,15 +2351,15 @@ External languages can be executed by pressing <code>C-c C-c</code> and then pre
 </colgroup>
 <tbody>
 <tr>
-<td class="org-right">0.731276458791228</td>
+<td class="org-right">-1.0983654591016</td>
 </tr>
 
 <tr>
-<td class="org-right">-0.559130039948078</td>
+<td class="org-right">-0.95587377920224</td>
 </tr>
 
 <tr>
-<td class="org-right">1.0422030602516</td>
+<td class="org-right">-0.329583305530361</td>
 </tr>
 </tbody>
 </table>
@@ -2376,8 +2369,8 @@ This can be handy for complicated things like:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">words &lt;- tolower(scan("1.org", what="", na.strings=c("|",":")))
-t(sort(table(words[nchar(words) &gt; 3]), decreasing=TRUE)[1:3])
+<pre class="src src-R">words <span style="color: #a45bad;">&lt;-</span> tolower<span style="color: #4f97d7;">(</span>scan<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"1.org"</span>, what=<span style="color: #2d9574;">""</span>, na.strings=c<span style="color: #2d9574;">(</span><span style="color: #2d9574;">"|"</span>,<span style="color: #2d9574;">":"</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+t<span style="color: #4f97d7;">(</span>sort<span style="color: #bc6ec5;">(</span>table<span style="color: #2d9574;">(</span>words<span style="color: #67b11d;">[</span>nchar<span style="color: #b1951d;">(</span>words<span style="color: #b1951d;">)</span> &gt; <span style="color: #a45bad;">3</span><span style="color: #67b11d;">]</span><span style="color: #2d9574;">)</span>, decreasing=<span style="color: #ce537a; font-weight: bold;">TRUE</span><span style="color: #bc6ec5;">)[</span><span style="color: #a45bad;">1</span>:<span style="color: #a45bad;">3</span><span style="color: #bc6ec5;">]</span><span style="color: #4f97d7;">)</span>
 </pre>
 </div>
 
@@ -2395,49 +2388,118 @@ t(sort(table(words[nchar(words) &gt; 3]), decreasing=TRUE)[1:3])
 <tr>
 <th scope="col" class="org-right">with</th>
 <th scope="col" class="org-right">current</th>
-<th scope="col" class="org-right">=c-c</th>
+<th scope="col" class="org-right">that</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-right">60</td>
+<td class="org-right">71</td>
 <td class="org-right">51</td>
-<td class="org-right">39</td>
+<td class="org-right">51</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
+<div id="outline-container-orgcfe0714" class="outline-3">
+<h3 id="orgcfe0714"><span class="section-number-3">3.3</span> Working with R&#xa0;&#xa0;&#xa0;<span class="tag"><span class="R">R</span>&#xa0;<span class="diagrams">diagrams</span></span></h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org5f13400" class="outline-4">
+<h4 id="org5f13400"><span class="section-number-4">3.3.1</span> Integrating ESS Auto Complete</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<p>
+first you need to add ESS to the spacemacs layers<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org7a1f46b"></a>Using ESS<br />
+<div class="outline-text-5" id="text-3-3-1-1">
+<p>
+once it's installed load any <code>.R</code> file (preferably in a new frame with <code>C-x 5 C-f</code> and it should just work<sup>tm</sup> and be in <code>ESS[R]</code> mode, if not activate that mode by using <code>M-x r-mode</code>.
+</p>
 
-<div id="outline-container-orgf9355d7" class="outline-4">
-<h4 id="orgf9355d7"><span class="section-number-4">3.0.2</span> Producing Plots&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span></span></h4>
-<div class="outline-text-4" id="text-3-0-2">
+<p>
+Next you will want to opon a REPL console underneath, which should be in <code>iESS</code> mode with the name <b>R</b>, do this by using <code>M-x R</code>, it will ask for a project location / directory, this is annoying and 90% of the time you're happy to have that as the working directory location of the original file, in order for that to happen put the following in your <code>.emacs.d/init.el</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-lisp"><span style="color: #2aa1ae; background-color: #292e34;">;</span><span style="color: #2aa1ae; background-color: #292e34;">R Binding for &lt;-</span>
+<span style="color: #4f97d7;">(</span>setq-default dotspacemacs-configuration-layers '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>ess <span style="color: #4f97d7;">:variables</span>
+                                                       ess-assign-key <span style="color: #2d9574;">"\M--"</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">;</span><span style="color: #2aa1ae; background-color: #292e34;">Set starting project directory to location of buffer =M-x pwd=</span>
+<span style="color: #2aa1ae; background-color: #292e34;">;</span><span style="color: #2aa1ae; background-color: #292e34;">https://ess.r-project.org/Manual/ess.html#Customizing-startup</span>
+<span style="color: #4f97d7;">(</span>setq ess-ask-for-ess-directory nil<span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+<p>
+if you want to open a seperate frame use <code>SPC w F</code> (remember a frame is an external X window and a window inisde by the Emacs language) and if you want to have the source code scroll over multiple panes use <code>follow-mode</code> by typing <code>SPC w f</code>
+</p>
+</div>
+</li>
+<li><a id="orgfd01e3b"></a>Using ESS inside Org<br />
+<div class="outline-text-5" id="text-3-3-1-2">
+<p>
+So one way is to just open an indirect buffer and/or change the mode, but that's a little painful because sometimes the point will be moved away and <code>C-o</code> / <code>g;</code> don't always work.
+</p>
+
+<p>
+another way is to switch to the buffer for that chunk using <code>org-edit-special</code> which is mapped to <code>C-c '</code> / <code>, '</code> , this works for other environments (read <code>C-h f org-edit-special</code>), when it's used in src code it will take copy code to a seperate buffer and when you finish by using <code>M-Ret '</code> it will copy it back, so here I've used it to make a plot of <i>MtCars</i>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span><span style="color: #4f97d7;">(</span>tidyverse<span style="color: #4f97d7;">)</span>
+mtcars <span style="color: #a45bad;">&lt;-</span> as_tibble<span style="color: #4f97d7;">(</span>mtcars<span style="color: #4f97d7;">)</span>
+ggplot<span style="color: #4f97d7;">(</span>mtcars, aes<span style="color: #bc6ec5;">(</span>x = disp, y = mpg, col = hp, shape = as.factor<span style="color: #2d9574;">(</span>cyl<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span> +
+  geom_point<span style="color: #4f97d7;">()</span> +
+  theme_classic<span style="color: #4f97d7;">()</span> +
+  labs<span style="color: #4f97d7;">(</span>col = <span style="color: #2d9574;">"HorsePower"</span>, shape = <span style="color: #2d9574;">"Cylinders"</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="test.png" alt="test.png" />
+</p>
+</div>
+
+<p>
+The best part is you can even split the window up to get an <b><i>R</i></b> <code>iESS</code> console underneath, follow mode on the right and the <code>org-edit-src-code</code> in one of the corners.
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb522b3f" class="outline-4">
+<h4 id="orgb522b3f"><span class="section-number-4">3.3.2</span> Plotting</h4>
+<div class="outline-text-4" id="text-3-3-2">
 <p>
 You can produce plots as well, but what gets complicated is using the correct options in the header, they are reasonably self explanatory though, for example the following code:
 (You need to include <code>output</code> if you want to use ggplot2 etc., look at <a href="https://emacs.stackexchange.com/a/21267">this answer</a> and <a href="http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-R.html#orgheadline4">the docs</a>
 )
 </p>
 
-<div class="org-src-container">
-<pre class="src src-orgmode">#+BEGIN_SRC R :cache yes :exports both :results output graphics :file test.png
+<pre class="example">
+#+BEGIN_SRC R :cache yes :exports both :results output graphics :file test.png
   library("ggplot2")
   ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
   geom_point() +
   theme_bw()
 \#+END_SRC
 </pre>
-</div>
 
 <p>
 will produce the following plot and list the code appropriately: 
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">library("ggplot2")
-ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
-geom_point() +
-theme_bw()
+<pre class="src src-R"><span style="color: #a45bad;">library</span><span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"ggplot2"</span><span style="color: #4f97d7;">)</span>
+ggplot<span style="color: #4f97d7;">(</span>iris, aes<span style="color: #bc6ec5;">(</span>x = Sepal.Width, y = Sepal.Length, color = Species<span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span> +
+geom_point<span style="color: #4f97d7;">()</span> +
+theme_bw<span style="color: #4f97d7;">()</span>
 </pre>
 </div>
 
@@ -2448,15 +2510,88 @@ theme_bw()
 </div>
 </div>
 </div>
+</div>
+
+<div id="outline-container-orga40f4d1" class="outline-3">
+<h3 id="orga40f4d1"><span class="section-number-3">3.4</span> <span class="done DONE">DONE</span> Syntax Highlighting</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+By default the r-code doesn't have synatx highlighting.
+In order to get syntax highlighting in LaTeX export you need to either use the <i>minted</i> or <i>listings</i> package, to use the minted package specify the following in your <code>~/.emacs.d/init.el</code>:
+</p>
 
 
-<div id="outline-container-orgf245be6" class="outline-3">
-<h3 id="orgf245be6"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> How do I include ggplot inline?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="R">R</span></span></h3>
-<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre class="src src-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">require</span> '<span style="color: #a45bad;">org-latex</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>setq org-export-latex-listings 'minted<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'org-export-latex-packages-alist '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">""</span> <span style="color: #2d9574;">"minted"</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgc4a7bf6" class="outline-4">
+<h4 id="orgc4a7bf6"><span class="section-number-4">3.4.1</span> Would it be worth using org-mode to manage code notes over boostnote?</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<p>
+Because boostnote is just open source <code>*.md</code> files, switching out is no drama, given how good <code>org-mode</code> is i'd probably be better off just abandoning <i>Notable</i> all togethr and using <i>Boostnote</i> for want of the features (and hey open source) and use org-mode for everything else.
+</p>
 </div>
 <ol class="org-ol">
-<li><a id="org944a0a4"></a>ESS or R-org<br />
-<div class="outline-text-5" id="text-3-1-0-1">
+<li><a id="orgf98d6e3"></a>Using Org-Mode to replace Boostnote<br />
+<div class="outline-text-5" id="text-3-4-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Pros</td>
+<td class="org-left">cons</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Closer to Terminal and Code</td>
+<td class="org-left">+ Less User Friendly</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Easier to switch into because always open and bookmarks/recents</td>
+<td class="org-left">+ tags aren't as nice/usable</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Way better text editing</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Can open fles externally</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Brings all notes together</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2aca5fb" class="outline-3">
+<h3 id="org2aca5fb"><span class="section-number-3">3.5</span> <span class="done DONE">DONE</span> How do I include ggplot inline?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="R">R</span></span></h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<ol class="org-ol">
+<li><a id="org365fc50"></a>ESS or R-org<br />
+<div class="outline-text-5" id="text-3-5-0-1">
 <p>
 A really good tutorial on using <b><i>R</i></b> in org-mode is <a href="https://orgmode.org/worg/org-tutorials/org-R/org-R.html">org-mode <i>Worg</i></a> tutorials
 </p>
@@ -2464,11 +2599,189 @@ A really good tutorial on using <b><i>R</i></b> in org-mode is <a href="https://
 </li>
 </ol>
 </div>
+<div id="outline-container-org92948ec" class="outline-3">
+<h3 id="org92948ec"><span class="section-number-3">3.6</span> <span class="todo TODO">TODO</span> Java Example</h3>
+<div class="outline-text-3" id="text-3-6">
+<p>
+Write an example of java code
+</p>
+</div>
+</div>
 </div>
 
-<div id="outline-container-orgc7e78b3" class="outline-2">
-<h2 id="orgc7e78b3"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> How do I use \(LaTeX\) snippets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Snippets">Snippets</span></span></h2>
+
+<div id="outline-container-org5af4ee2" class="outline-2">
+<h2 id="org5af4ee2"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> Including Tikz Plots&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span>&#xa0;<span class="Buffers">Buffers</span></span></h2>
 <div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgc5397da" class="outline-4">
+<h4 id="orgc5397da"><span class="section-number-4">4.0.1</span> <span class="done DONE">DONE</span> Using a tikz picture</h4>
+<div class="outline-text-4" id="text-4-0-1">
+<p>
+I could only get this to work in HTML following the example from <a href="https://www.homepages.ucl.ac.uk/~ucahjde/blog/tikz.html">UCL</a> there's reference to this <a href="https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-LaTeX.html#orgad1adb5">orgmode.org/worg</a> tutorial on LaTeX in org where the idea is:
+</p>
+
+<ul class="org-ul">
+<li>If it's exported to HTML
+<ul class="org-ul">
+<li>then convert the tikz to zvg and insert the svg's</li>
+</ul></li>
+<li>else if it's exported to LaTeX 
+<ul class="org-ul">
+<li>just include the LaTeX</li>
+</ul></li>
+<li>else just leave it raw</li>
+<li>the <code>t</code> backend refers to the inline org-mode <i>toggling</i>
+<ul class="org-ul">
+<li>I just remember it as <i>toggling</i> because I can find no documentation on it.</li>
+<li>it is always triggered so you must put it at the end or it won't work properly</li>
+</ul></li>
+</ul>
+
+<p>
+but it only works in HTML so far. The <code>+#_Header: = arguments are the same as putting them on the line =#+BEGIN_SRC</code>, but that would be a really long line.
+</p>
+
+
+<p>
+In order to use the if then statements as I have add the following to the <code>~/.emacs.d/init.el</code> file:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">setq</span> org-babel-latex-htlatex <span style="color: #2d9574;">"htlatex"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">defmacro</span> <span style="color: #bc6ec5; font-weight: bold;">by-backend</span> <span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">&amp;rest</span> body<span style="color: #bc6ec5;">)</span>
+  `<span style="color: #bc6ec5;">(</span><span style="color: #4f97d7; font-weight: bold;">case</span> <span style="color: #2d9574;">(</span><span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #67b11d;">(</span>boundp 'backend<span style="color: #67b11d;">)</span> <span style="color: #67b11d;">(</span>org-export-backend-name backend<span style="color: #67b11d;">)</span> nil<span style="color: #2d9574;">)</span> ,@body<span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="org791a4f4"></a>Making it work across formats<br />
+<div class="outline-text-5" id="text-4-0-1-1">
+<p>
+So the trick is, execute this tikz like this with <code>C-c C-c</code>:
+</p>
+
+<pre class="example">
+#+LATEX_HEADER: \usepackage{tikz}
+#+HEADER: :headers '("\\usepackage{tikz}")
+#+HEADER: :fit yes :imoutoptions -geometry 400 :iminoptions -density 600
+#+header: :file (by-backend (html "./img/dosage.svg") ) :imagemagick yes
+#+header: :results (by-backend (pdf "latex")  (html "raw") (t "raw"))
+\#+BEGIN_SRC latex  :file (by-backend (t "./img/dosage.svg") ) :imagemagick yes 
+\begin{tikzpicture}[domain = 0:10, scale = (2/3)]
+  \clip (-1,-1) rectangle (12,12);
+  \draw[-&gt;, thick] (0,0) -- (0,10) node[right] {$C$ {\scriptsize nmol $\cdot  $ L$^{-1}$}};
+  \draw[-&gt;, thick] (0,0) -- (10, 0) node[right] {$t$ };
+  \draw[] [out=270, in = 180]  (0,5) to (3,2); 
+  \draw[dashed] (3,2)--(3,5);
+  \draw[] [out=270, in=180] (3,5) to (6,3) ;
+  \draw[dashed] (6,3)--(6,6);
+  \draw[] [out=270, in=180] (6,6) to (9,4) ;
+  \draw[dashed] (9,4)--(9, 7);
+  \draw[ ] [out=270, in=180] (9,7) to (12,4);
+  \draw[dotted]  (0,7)--(12,7) node[below left] {$C_n = H$};
+  \draw[dotted]  (0,4)--(12,4) node[below left] {$R_\infty = L$};
+  \node [left] at (0,5) {$C_0$};
+  \draw[&lt;-&gt; ] (0.4,4)--(0.4,7) node[below right] {\tiny $C_0 = H-L$};
+\end{tikzpicture}
+\#+END_SRC
+</pre>
+
+<p>
+Then that should create, below it a section that looks like this:
+</p>
+<pre class="example">
+#+RESULTS:
+[[file:./img/dosage.svg]]
+</pre>
+
+<p>
+This results section will inline preview but it won't get pulled in by an export process, so now that the inline preview is done we can take the line immediately preceeding the code fence and <del>'comment it out'</del> delete it (comments, either <code>#_</code> or = or whatever DO NOT WORK between header and source so do not use it. you should delete the line after <code>latex</code> that matches:
+</p>
+
+<pre class="example">
+:file (by-backend (t "./img/dosage.svg") ) :imagemagick yes
+</pre>
+
+<p>
+And then we have tikz that compiles in LaTeX and an SVG that will 'just work<sup>tm</sup>' when exporting to HTML and that can be leveraged for other exports.
+</p>
+</div>
+</li>
+
+<li><a id="orgdd146cd"></a>Example Tikz Export&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tikz">Tikz</span></span><br />
+<div class="outline-text-5" id="text-4-0-1-2">
+\begin{tikzpicture}[domain = 0:10, scale = (2/3)]
+  \clip (-1,-1) rectangle (12,12);
+  \draw[->, thick] (0,0) -- (0,10) node[right] {$C$ {\scriptsize nmol $\cdot  $ L$^{-1}$}};
+  \draw[->, thick] (0,0) -- (10, 0) node[right] {$t$ };
+  \draw[] [out=270, in = 180]  (0,5) to (3,2); % node[right] {\scriptsize \(\left( t_{\textit{min}}, c_{\textit{min}} \right)\)};
+  \draw[dashed] (3,2)--(3,5);
+  \draw[] [out=270, in=180] (3,5) to (6,3) ;
+  \draw[dashed] (6,3)--(6,6);
+  \draw[] [out=270, in=180] (6,6) to (9,4) ;
+  \draw[dashed] (9,4)--(9, 7);
+  \draw[ ] [out=270, in=180] (9,7) to (12,4);
+  \draw[dotted]  (0,7)--(12,7) node[below left] {$C_n = H$};
+  \draw[dotted]  (0,4)--(12,4) node[below left] {$R_\infty = L$};
+  \node [left] at (0,5) {$C_0$};
+  \draw[<-> ] (0.4,4)--(0.4,7) node[below right] {\tiny $C_0 = H-L$};
+\end{tikzpicture}
+
+
+
+<p>
+and it will create below something that says <code>#+RESULTS: file:./img</code> which should also inline display the image, now you can freely delete everything after <code>latex</code> in the header and it will work in all exports and you'll get to have the inline display, just copy it back if you want it again.
+</p>
+</div>
+</li>
+
+<li><a id="orgefcc315"></a>Example 2<br />
+<div class="outline-text-5" id="text-4-0-1-3">
+\begin{tikzpicture}
+\draw[->] (-3,0) -- (-2,0) arc[radius=0.5cm,start angle=-180,end angle=0] (-1,0) -- (1,0) arc[radius=0.5cm,start angle=180,end angle=0] (2,0) -- (3,0);
+\filldraw (-1.5,0) circle[radius=1mm];
+\filldraw (1.5,0) circle[radius=1mm];
+\end{tikzpicture}
+</div>
+
+
+
+<ol class="org-ol">
+<li><a id="org4b42868"></a>Snippet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Snippets">Snippets</span></span><br />
+<div class="outline-text-6" id="text-4-0-1-3-1">
+<p>
+Using the tutorial <a href="https://jaketrent.com/post/code-snippets-spacemacs/">here</a> and the <a href="http://joaotavora.github.io/yasnippet/snippet-expansion.html"><i>YaSnippets</i> manual</a> I turned this into a snippet in <a href="file:///home/ryan/.emacs./private/snippets/orgmode/plot">orgmode/plot</a>. The snippet can be triggered by typing in <code>plot</code> and positinioning the cursor over and then running <code>M-x yas-expand</code> / <code>:yas-expand</code> / <code>&lt;SPC&gt; &lt;SPC&gt; yas-expand</code>.
+</p>
+
+<ul class="org-ul">
+<li>If the minor mode is enabled with <code>M-x yas-minor-mode</code> then I think you could just press <code>TAB</code> / <code>M-/</code> after plot and then jumping to the next field with <code>M-s-/</code></li>
+<li></li>
+</ul>
+</div>
+</li>
+
+
+
+<li><a id="orgdd27d24"></a>Exporting Guidelines<br />
+<div class="outline-text-6" id="text-4-0-1-3-2">
+<p>
+If the svg files get deleted, they won't show up in exports, but they can be regenerated by moving the line back up and recompiling the tikz, the thing is, this code was intended to be fool-proof automatic, but it's not, and it might be more complicated that it needs to be, maybe just let sleeping dogs lie though.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1db99f2" class="outline-2">
+<h2 id="org1db99f2"><span class="section-number-2">5</span> <span class="done DONE">DONE</span> How do I use LaTeX) snippets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Snippets">Snippets</span></span></h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>Is there anything built into spacemacs?
 <ul class="org-ul">
@@ -2485,38 +2798,105 @@ A really good tutorial on using <b><i>R</i></b> in org-mode is <a href="https://
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org09c2f00" class="outline-3">
-<h3 id="org09c2f00"><span class="section-number-3">4.1</span> <span class="done DONE">DONE</span> Images&#xa0;&#xa0;&#xa0;<span class="tag"><span class="diagrams">diagrams</span></span></h3>
-<div class="outline-text-3" id="text-4-1">
+
+<div id="outline-container-org745cece" class="outline-3">
+<h3 id="org745cece"><span class="section-number-3">5.1</span> Example LaTeX</h3>
+<div class="outline-text-3" id="text-5-1">
 </div>
-<div id="outline-container-orgad810f0" class="outline-4">
-<h4 id="orgad810f0"><span class="section-number-4">4.1.1</span> Images may be inserted as links</h4>
-<div class="outline-text-4" id="text-4-1-1">
+<div id="outline-container-org7b4825f" class="outline-4">
+<h4 id="org7b4825f"><span class="section-number-4">5.1.1</span> previewing latex</h4>
+<div class="outline-text-4" id="text-5-1-1">
 <p>
-Look at the following example:
+Write, let's take a math problem, in this case I'll use something from <i>Mathematical Modelling</i>:
 </p>
-
-<p>
-The documentation implies that <code>[[ ]]</code> are required but it seems that the export works fine without that and the inline preview is fine without it as well:
-</p>
-
-
-<div class="figure">
-<p><img src="file:///home/ryan/gitpage/ryangreenup.github.io/AbstractAlgebraNotes/1551604985277.png" alt="1551604985277.png" />
-</p>
-</div>
 
 <p>
-This may be inline previewed with <code>C-c C-x C-v</code>
+In order to change the defaults of the image preview, use <code>M-x customize RET org-format-latex-options</code>:
+</p>
+<ul class="org-ul">
+<li>set foreground to 'auto'
+<ul class="org-ul">
+<li>this is single <code>'</code></li>
+</ul></li>
+<li>set background to "transparent"
+<ul class="org-ul">
+<li>this is double <code>"</code></li>
+</ul></li>
+<li>in order to reset the images use rm <code>./ltximg/*</code>
+<ul class="org-ul">
+<li>be careful, I deleted everything by putting <code>*</code> in the wrong place, don't do that.</li>
+</ul></li>
+</ul>
+
+\begin{align}
+  \frac{1}{x^2} \times \left[2x \cdot   \frac{\operatorname{d}y
+  }{\operatorname{d} x} + x^2 \frac{\operatorname{d} }{\operatorname{d}
+x}\left( \frac{\operatorname{d}y }{\operatorname{d} x}  \right) \ight] 
+\end{align}
+
+<p>
+This<a href="https://emacs.stackexchange.com/a/44693"> answer</a> fixed all previews (however it makes them ann png rather than svg which means they are a little blurry) put this in <code>.emacs.d/init.el</code>, and make sure you leave <code>org-format-latex-options</code> as default.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-lisp"><span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">fix color handling in org-preview-latex-fragment</span>
+<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">let</span> <span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>dvipng--plist <span style="color: #67b11d;">(</span>alist-get 'dvipng org-preview-latex-process-alist<span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>
+  <span style="color: #bc6ec5;">(</span>plist-put dvipng--plist <span style="color: #4f97d7;">:use-xcolor</span> t<span style="color: #bc6ec5;">)</span>
+  <span style="color: #bc6ec5;">(</span>plist-put dvipng--plist <span style="color: #4f97d7;">:image-converter</span> '<span style="color: #2d9574;">(</span><span style="color: #2d9574;">"dvipng -D %D -T tight -o %O %f"</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+<p>
+I've left it disabled for the moment (you can just run it from within emacs) because i'd rather svg's to just start working again and I feel like it has something to do with themes and desktop session files).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org800c13e" class="outline-4">
+<h4 id="org800c13e"><span class="section-number-4">5.1.2</span> Using the snippets</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<p>
+Take the equation and open it in <code>org-edit-special</code> mode with <code>, '</code> :
+</p>
+
+\begin{align}
+  \frac{1}{x^2} \times \left[2x \cdot   \frac{\operatorname{d}y
+  }{\operatorname{d} x} + x^2 \frac{\operatorname{d} }{\operatorname{d}
+x}\left( \frac{\operatorname{d}y }{\operatorname{d} x}  \right) \ight] \\
+x &= \frac{- b \pm \sqrt{b^2 - 4ac} }{2a}
+\end{align}
+
+<p>
+Doing that though, the LaTeX environment just wasn't that amazing really, I might just be better off staying with vim externally?
+</p>
+
+<p>
+honestly, if you need fast vim with a preview, and/or tikz, this might be the simplest way:
+</p>
+<ol class="org-ol">
+<li>open a new destkop in i3/cinnamon</li>
+<li>open a terminal and create a new directory</li>
+<li>Either use vim to create a <code>temp.tex</code> and have the default template be pulled in (or use the older <code>texnote</code> command)</li>
+<li>edit in that window leveraging the almost live preview offered by vimtex</li>
+<li>use zf to fold and <code>&lt;Spc&gt; y</code> to copy relevant things to the clipboard.</li>
+<li>paste it back into emacs
+<ul class="org-ul">
+<li>if you get better with i3 you could probably have a really elegant way to do this on one desktop, may <code>mod a</code> a couple times and <code>mod enter</code> works pretty well tbh.</li>
+</ul></li>
+</ol>
+
+<p>
+I don't see any much need to re invent the wheel with snippets when vim works well and I can't sync them between so I'm just going to leave it.
 </p>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org95ffaf8" class="outline-2">
-<h2 id="org95ffaf8"><span class="section-number-2">5</span> Set up a workflow</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org47b7b22" class="outline-2">
+<h2 id="org47b7b22"><span class="section-number-2">6</span> Set up a workflow</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 Images 
 </p>
@@ -2527,27 +2907,27 @@ Images
 <li>How do I just do outright tikz?</li>
 </ul>
 </div>
-<div id="outline-container-org4913309" class="outline-3">
-<h3 id="org4913309"><span class="section-number-3">5.1</span> <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</h3>
+<div id="outline-container-orgfd46470" class="outline-3">
+<h3 id="orgfd46470"><span class="section-number-3">6.1</span> <span class="done DONE">DONE</span> Install the /Prelude/Starter Kit.</h3>
 </div>
-<div id="outline-container-org6675a58" class="outline-3">
-<h3 id="org6675a58"><span class="section-number-3">5.2</span> <span class="done DONE">DONE</span> How do I deal with headlines?</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-orgcbcc52b" class="outline-3">
+<h3 id="orgcbcc52b"><span class="section-number-3">6.2</span> <span class="done DONE">DONE</span> How do I deal with headlines?</h3>
+<div class="outline-text-3" id="text-6-2">
 <p>
 use <code>M-left/right</code> to demote and promote them, use <code>M-up/down</code> to move them.
 To do items may be cycled by using =S-left/right.
 </p>
 </div>
-<div id="outline-container-orge01fa17" class="outline-4">
-<h4 id="orge01fa17"><span class="section-number-4">5.2.1</span> Moving Headlines</h4>
+<div id="outline-container-org13ea090" class="outline-4">
+<h4 id="org13ea090"><span class="section-number-4">6.2.1</span> Moving Headlines</h4>
 </div>
-<div id="outline-container-org5d4b515" class="outline-4">
-<h4 id="org5d4b515"><span class="section-number-4">5.2.2</span> Demoting and promoting headlines</h4>
+<div id="outline-container-org87e0136" class="outline-4">
+<h4 id="org87e0136"><span class="section-number-4">6.2.2</span> Demoting and promoting headlines</h4>
 </div>
 </div>
-<div id="outline-container-org8ec5bf9" class="outline-3">
-<h3 id="org8ec5bf9"><span class="section-number-3">5.3</span> <span class="done DONE">DONE</span> Can I Hide all the ToDo Tags from export?</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-orge6e1e92" class="outline-3">
+<h3 id="orge6e1e92"><span class="section-number-3">6.3</span> <span class="done DONE">DONE</span> Can I Hide all the ToDo Tags from export?</h3>
+<div class="outline-text-3" id="text-6-3">
 <p>
 Let's say that I use the todo tags to manage my notes and dates etc.
 Could I hide that from an export?
@@ -2555,21 +2935,21 @@ Could I hide that from an export?
 </p>
 </div>
 </div>
-<div id="outline-container-org45b13f4" class="outline-3">
-<h3 id="org45b13f4"><span class="section-number-3">5.4</span> <span class="done DONE">DONE</span> Using Emacs for Notes</h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-org1322de2" class="outline-3">
+<h3 id="org1322de2"><span class="section-number-3">6.4</span> <span class="done DONE">DONE</span> Using Emacs for Notes</h3>
+<div class="outline-text-3" id="text-6-4">
 </div>
-<div id="outline-container-org6c4ff3a" class="outline-4">
-<h4 id="org6c4ff3a"><span class="section-number-4">5.4.1</span> <span class="done DONE">DONE</span> Browsing all ToDO item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Todo">Todo</span></span></h4>
-<div class="outline-text-4" id="text-5-4-1">
+<div id="outline-container-org566ee26" class="outline-4">
+<h4 id="org566ee26"><span class="section-number-4">6.4.1</span> <span class="done DONE">DONE</span> Browsing all ToDO item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Todo">Todo</span></span></h4>
+<div class="outline-text-4" id="text-6-4-1">
 <p>
 If you've added a file to the agenda-variable with <code>C-c [</code> all todo items in the agenda can be searched using <code>&lt;Spc&gt; m a t</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org41ac09b" class="outline-4">
-<h4 id="org41ac09b"><span class="section-number-4">5.4.2</span> <span class="done DONE">DONE</span> Navigating a file</h4>
-<div class="outline-text-4" id="text-5-4-2">
+<div id="outline-container-orgaac011e" class="outline-4">
+<h4 id="orgaac011e"><span class="section-number-4">6.4.2</span> <span class="done DONE">DONE</span> Navigating a file</h4>
+<div class="outline-text-4" id="text-6-4-2">
 <p>
 How do I jump to the top of a headline so that I can use <code>TAB</code> to fold it ?
 You can use <code>C-c C-f=/=C-c C-n</code> / <code>gj</code> / <code>gl</code> will go forward headlines and <code>C-c C-b</code> / <code>gk</code> / <code>g;</code> / <code>C-c C-p</code> will go back headlines.
@@ -2577,29 +2957,29 @@ I have remapped these to <code>z k</code> and <code>z j</code> respectively
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgcc26582"></a>Folding<br />
-<div class="outline-text-5" id="text-5-4-2-1">
+<li><a id="orga2f176a"></a>Folding<br />
+<div class="outline-text-5" id="text-6-4-2-1">
 <p>
 How do I fold and unfold the entire document?
 </p>
 </div>
 </li>
-<li><a id="orgc1e0609"></a>Marking Location<br />
-<div class="outline-text-5" id="text-5-4-2-2">
+<li><a id="org4d36d32"></a>Marking Location<br />
+<div class="outline-text-5" id="text-6-4-2-2">
 <p>
 Can I still use <code>m CHAR</code> to mark a location and jump back to it?
 </p>
 </div>
 </li>
-<li><a id="org11205aa"></a>Frames and windows<br />
-<div class="outline-text-5" id="text-5-4-2-3">
+<li><a id="orge447dd3"></a>Frames and windows<br />
+<div class="outline-text-5" id="text-6-4-2-3">
 <p>
 often you will want to use <code>&lt;SPC&gt; m b</code> | <code>, b</code> to open an indirect buffer for items beneath a headline, it will then open a second window below that is out of focus <code>C-w C-w</code> / <code>C-x o</code> / <code>&lt;SPC&gt; w w</code> / <code>M-m w w</code> can be used to pull that window into focus (or any window with <code>SPC &lt;NUM&gt;</code> and then that window can be maximized with <code>C-x 1</code> / <code>&lt;SPC&gt; w m</code>
 </p>
 </div>
 </li>
-<li><a id="org1f8315d"></a>Finding Shortcuts&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Buffers">Buffers</span></span><br />
-<div class="outline-text-5" id="text-5-4-2-4">
+<li><a id="org9713ba4"></a>Finding Shortcuts&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Buffers">Buffers</span></span><br />
+<div class="outline-text-5" id="text-6-4-2-4">
 <p>
 If you're using spacemacs and you know a single shortcut it isn't usually difficult to find more shortcuts:
 </p>
@@ -2629,9 +3009,9 @@ press <code>&lt;SPC&gt; &lt;SPC&gt;</code> / <code>M-x</code>
 </li>
 </ol>
 </div>
-<div id="outline-container-orgbe8b033" class="outline-4">
-<h4 id="orgbe8b033"><span class="section-number-4">5.4.3</span> <span class="done DONE">DONE</span> Attaching files&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></h4>
-<div class="outline-text-4" id="text-5-4-3">
+<div id="outline-container-orgf1a01e6" class="outline-4">
+<h4 id="orgf1a01e6"><span class="section-number-4">6.4.3</span> <span class="done DONE">DONE</span> Attaching files&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Attachments">Attachments</span></span></h4>
+<div class="outline-text-4" id="text-6-4-3">
 <p>
 Attachments are really cool, they can be copied or symlinked using  <code>&lt;SPC&gt; m i a</code>, that's even cause to give up on dropbox, the file can also just be linked to.
 </p>
@@ -2646,28 +3026,28 @@ fzf can be enabled in spacemacs using the  <a href="https://github.com/AshyIsMe/
 </div>
 </div>
 
-<div id="outline-container-org3da0faa" class="outline-4">
-<h4 id="org3da0faa"><span class="section-number-4">5.4.4</span> <span class="done DONE">DONE</span> Reading an Emacs File</h4>
-<div class="outline-text-4" id="text-5-4-4">
+<div id="outline-container-org5f0862d" class="outline-4">
+<h4 id="org5f0862d"><span class="section-number-4">6.4.4</span> <span class="done DONE">DONE</span> Reading an Emacs File</h4>
+<div class="outline-text-4" id="text-6-4-4">
 <ul class="org-ul">
 <li>How do I fold a section rather than the whole thing?</li>
 <li>To fold the whole thing I can use <code>S+TAB+</code> which is analogous to <code>zr</code> and <code>zm</code> in vim but it cycles through</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbd0d81d" class="outline-4">
-<h4 id="orgbd0d81d"><span class="section-number-4">5.4.5</span> <span class="done DONE">DONE</span> Use Vim Can I create a keybinding to open the file or buffer in <i>Vim</i>?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="vim">vim</span></span></h4>
+<div id="outline-container-orgbdbc17e" class="outline-4">
+<h4 id="orgbdbc17e"><span class="section-number-4">6.4.5</span> <span class="done DONE">DONE</span> Use Vim Can I create a keybinding to open the file or buffer in <i>Vim</i>?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="vim">vim</span></span></h4>
 </div>
-<div id="outline-container-org23fe5cd" class="outline-4">
-<h4 id="org23fe5cd"><span class="section-number-4">5.4.6</span> <span class="done DONE">DONE</span> How to mark lines just like in vim?</h4>
-<div class="outline-text-4" id="text-5-4-6">
+<div id="outline-container-org80b8bd8" class="outline-4">
+<h4 id="org80b8bd8"><span class="section-number-4">6.4.6</span> <span class="done DONE">DONE</span> How to mark lines just like in vim?</h4>
+<div class="outline-text-4" id="text-6-4-6">
 <p>
 Using the bookmarks shortcuts are amazing, refer to them
 in<a href="https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#buffers-and-files"> <i>Spacemacs</i> Documentation</a>, basically hit <code>&lt;SPC&gt; f b</code> and you can create and jump to bookmarks across and within files.
 </p>
 
 <ul class="org-ul">
-<li>Bookmarks can be deleted with ,<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
+<li>Bookmarks can be deleted with ,<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>
 <ul class="org-ul">
 <li><code>C-d</code></li>
 </ul></li>
@@ -2683,9 +3063,9 @@ in<a href="https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.o
 </div>
 </div>
 </div>
-<div id="outline-container-orgee4ba92" class="outline-3">
-<h3 id="orgee4ba92"><span class="section-number-3">5.5</span> <span class="done DONE">DONE</span> Opening Current File in vim</h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-org5290b50" class="outline-3">
+<h3 id="org5290b50"><span class="section-number-3">6.5</span> <span class="done DONE">DONE</span> Opening Current File in vim</h3>
+<div class="outline-text-3" id="text-6-5">
 <ul class="org-ul">
 <li>Is there a way to bring my bindings into space macs?
 <ul class="org-ul">
@@ -2726,13 +3106,13 @@ Actually it might have been <code>C-u C-c o</code>
 Also to open a new line (i.e. <code>o</code> in vim) use <code>S-Enter</code>
 </p>
 </div>
-<div id="outline-container-org48cd886" class="outline-4">
-<h4 id="org48cd886"><span class="section-number-4">5.5.1</span> <span class="done DONE">DONE</span> Navigating Files</h4>
-<div class="outline-text-4" id="text-5-5-1">
+<div id="outline-container-org87cc671" class="outline-4">
+<h4 id="org87cc671"><span class="section-number-4">6.5.1</span> <span class="done DONE">DONE</span> Navigating Files</h4>
+<div class="outline-text-4" id="text-6-5-1">
 </div>
 <ol class="org-ol">
-<li><a id="orgc811baa"></a><span class="done DONE">DONE</span> Moving to a previous location<br />
-<div class="outline-text-5" id="text-5-5-1-1">
+<li><a id="orge7a7bfc"></a><span class="done DONE">DONE</span> Moving to a previous location<br />
+<div class="outline-text-5" id="text-6-5-1-1">
 <p>
 If you are following an internal link (i.e. a link to a target in the
 org-mode file), then org-mode automatically pushes the position in the
@@ -2741,12 +3121,12 @@ mark-ring before jumping.
 
 <p>
 So, you follow a link with <code>C-c C-o</code>, then you can jump back with
-<code>C-c &amp;</code>.<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>
+<code>C-c &amp;</code>.<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>
 </p>
 </div>
 </li>
-<li><a id="org9514a44"></a>Recently closed<br />
-<div class="outline-text-5" id="text-5-5-1-2">
+<li><a id="orge528116"></a>Recently closed<br />
+<div class="outline-text-5" id="text-6-5-1-2">
 <p>
 Use the key sequence <code>SPC f r</code> for <i>*<sub>F</sub><sub>*</sub>ind</i> <i>*<sub>R</sub><sub>*</sub>ecent</i> file.
 </p>
@@ -2754,16 +3134,16 @@ Use the key sequence <code>SPC f r</code> for <i>*<sub>F</sub><sub>*</sub>ind</i
 </li>
 </ol>
 </div>
-<div id="outline-container-org0041031" class="outline-4">
-<h4 id="org0041031"><span class="section-number-4">5.5.2</span> <span class="todo WAITING">WAITING</span> Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Style">Style</span></span></h4>
-<div class="outline-text-4" id="text-5-5-2">
+<div id="outline-container-orga36fd6a" class="outline-4">
+<h4 id="orga36fd6a"><span class="section-number-4">6.5.2</span> <span class="todo WAITING">WAITING</span> Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Style">Style</span></span></h4>
+<div class="outline-text-4" id="text-6-5-2">
 <p>
-<a id="org4129244"></a>
+<a id="orgc84c329"></a>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org3952f0d"></a><span class="todo WAITING">WAITING</span> In Line References<br />
-<div class="outline-text-5" id="text-5-5-2-1">
+<li><a id="orge2cdf26"></a><span class="todo WAITING">WAITING</span> In Line References<br />
+<div class="outline-text-5" id="text-6-5-2-1">
 <p>
 In order to reference code blocks <a href="https://emacs.stackexchange.com/questions/20947/how-to-reference-source-blocks-in-org-text">using org-ref</a>  you need to install the <code>org-ref</code> package by following the instructions on their <a href="https://github.com/jkitchin/org-ref">GitHub</a>, you need to add a line to your <code>.emacs.d/.init.el</code> but then you should be able to do <code>M-x package-list-packages</code> and find <code>org-ref</code> in order to install it.
 </p>
@@ -2777,18 +3157,18 @@ I can't find a simple way to easily reference figures and source code cross-refe
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org6823b43"></a>Dedicated targets<br />
-<div class="outline-text-6" id="text-5-5-2-1-1">
+<li><a id="org782849e"></a>Dedicated targets<br />
+<div class="outline-text-6" id="text-6-5-2-1-1">
 <p>
-maybe an easier way to figure this out is by using a <a href="#org4129244">Dedicated target (go to top)</a>, and you can reference sections by using <code>[[Section Name]]</code>
+maybe an easier way to figure this out is by using a <a href="#orgc84c329">Dedicated target (go to top)</a>, and you can reference sections by using <code>[[Section Name]]</code>
 </p>
 </div>
 </li>
 
 
 
-<li><a id="orgec452e1"></a><span class="todo WAITING">WAITING</span> I haven't figured out how to fix labels with HTML though<br />
-<div class="outline-text-6" id="text-5-5-2-1-2">
+<li><a id="orgbb5d2b5"></a><span class="todo WAITING">WAITING</span> I haven't figured out how to fix labels with HTML though<br />
+<div class="outline-text-6" id="text-6-5-2-1-2">
 <p>
 I tried looking for <code>org-HTML-prefer-user-labels</code> but no luck, there might be something in the <a href="https://orgmode.org/manual/HTML-Export.html#HTML-Export">Manual</a>.
 </p>
@@ -2796,15 +3176,15 @@ I tried looking for <code>org-HTML-prefer-user-labels</code> but no luck, there 
 </li>
 </ol>
 </li>
-<li><a id="orgd880bed"></a><span class="done DONE">DONE</span> Markdown<br />
-<div class="outline-text-5" id="text-5-5-2-2">
+<li><a id="org286f277"></a><span class="done DONE">DONE</span> Markdown<br />
+<div class="outline-text-5" id="text-6-5-2-2">
 <p>
 I need to figure how to export as markdown without breaking the dam thing
 </p>
 </div>
 </li>
-<li><a id="orgd6ca2db"></a><span class="done DONE">DONE</span> Export as eMail with Math<br />
-<div class="outline-text-5" id="text-5-5-2-3">
+<li><a id="org7075a62"></a><span class="done DONE">DONE</span> Export as eMail with Math<br />
+<div class="outline-text-5" id="text-6-5-2-3">
 <p>
 The easiest way is to take the exported html and download it using an add on (<i>SingleFile</i> Export) and then copy that html, which is now mathml, into thunderbird, trying to convert mathjax to mathml without losing the inline css is like trying to pull out teeth.
 </p>
@@ -2819,8 +3199,8 @@ Telling Org to use math-ml doesn't work, Using SVG's don't get embedded inline, 
 </div>
 </div>
 <ol class="org-ol">
-<li><a id="org797a686"></a>Test Email<br />
-<div class="outline-text-6" id="text-5-5-2-3-1">
+<li><a id="org1773f6a"></a>Test Email<br />
+<div class="outline-text-6" id="text-6-5-2-3-1">
 <p>
 So the quadratic formula is given by:
 </p>
@@ -2840,30 +3220,68 @@ S_n &= \sum^{n - 1}_{i = 0 }   \left[ a\cdot  r^n \right] \\
  \infty}\left[ r^n \right]}{1- r}  
 \end{align}
 </div>
+</li>
+</ol>
+</li>
 
+<li><a id="org4539576"></a><span class="todo WAITING">WAITING</span> Styles<br />
 <ol class="org-ol">
-<li><a id="orgbf92dfd"></a><span class="todo WAITING">WAITING</span> Styles<br />
-<ol class="org-ol">
-<li><a id="org2913216"></a><span class="done DONE">DONE</span> HTML Styles<br />
-<div class="outline-text-10" id="text-5-5-2-3-1-0-0-1-1">
+<li><a id="org6ffcc0b"></a><span class="done DONE">DONE</span> HTML Styles<br />
+<div class="outline-text-6" id="text-6-5-2-4-1">
 <p>
-I found this nice Trick <a href="https://www.reddit.com/r/emacs/comments/3pvbag/is_there_a_collection_of_css_styles_for_org/https://www.reddit.com/r/emacs/comments/3pvbag/is_there_a_collection_of_css_styles_for_org/">on Reddit</a> (insert a link with <code>C-c C-l</code>)<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>, in order to have inline CSS upon export (rather than two files) put CSS files in <code>~/.emacs.d/org-css/ and run =toggle-org-custom-inline-style</code> in an org buffer associated with a file, it should now prompt you for a theme on the next HTML export if you use this code shown in ref:some-source-code <sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup>
+I found this nice Trick <a href="https://www.reddit.com/r/emacs/comments/3pvbag/is_there_a_collection_of_css_styles_for_org/https://www.reddit.com/r/emacs/comments/3pvbag/is_there_a_collection_of_css_styles_for_org/">on Reddit</a> (insert a link with <code>C-c C-l</code>)<sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup>, in order to have inline CSS upon export (rather than two files) put CSS files in <code>~/.emacs.d/org-css/ and run =toggle-org-custom-inline-style</code> in an org buffer associated with a file, it should now prompt you for a theme on the next HTML export if you use this code shown in ref:some-source-code <sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup>
 </p>
 </div>
 </li>
-<li><a id="org039bba5"></a><span class="todo WAITING">WAITING</span> \(LaTeX\) Styles upon Export.<br />
-<div class="outline-text-10" id="text-5-5-2-3-1-0-0-1-2">
+<li><a id="org699b261"></a><span class="todo IN_PROGRESS">IN-PROGRESS</span> LaTeX Styles upon Export.<br />
+<div class="outline-text-6" id="text-6-5-2-4-2">
 <p>
-I can, I believe, set up a custom package for a template (of course that means that I'll have to fix the style that I've been using from Computer algebra) by specifying a header of the form #+LATEX<sub>HEADER</sub>: \usepackage{mystyle.sty}=.
+I can, I believe, set up a custom package for a template (of course that means that I'll have to fix the style that I've been using from Computer algebra) by specifying a header of the form <code>#+LATEX_HEADER: \usepackage{mystyle.sty}</code>.
 </p>
 
 <p>
 I need to fix my LaTeX file so it will play ball externally
 </p>
+
+<p>
+When exporting to latex you need to be careful with loading in svg's, you will need to load a corresponding package
+</p>
+
+<p>
+In order to enable the listings package in a pdf export use the following in your <code>~/.emacs.d/init.el</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">require</span> '<span style="color: #a45bad;">ox-latex</span><span style="color: #4f97d7;">)</span>
+
+<span style="color: #4f97d7;">(</span>setq org-latex-listings t<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'org-latex-packages-alist '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">""</span> <span style="color: #2d9574;">"listings"</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>add-to-list 'org-latex-packages-alist '<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">""</span> <span style="color: #2d9574;">"color"</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+<p>
+It's also important never to include footnotes or hyperlinks in headings, even math should be avoided because LaTeX will throw non-descriptive errors, also I believe you need to be careful using the word <code>LaTeX</code> and this should perhaps be enclosed in code tags or deilberately lowercased.
+</p>
+
+<p>
+the command <code>\LaTeX</code> should never be wrapped in <code>$$</code> or <code>\( \)</code> because otherwise LaTeX will crash and because it automatically changes upon export..
+</p>
+
+<p>
+Never include multi-line math in tables, that's another thing latex really doesn't like
+</p>
+
+<p>
+Try to avoid unicode because while it can maybe work with XeLaTeX, it doesn't work with listings and is simply not worth the headache.
+</p>
 </div>
 </li>
-<li><a id="org36f378a"></a>JavaScript<br />
-<div class="outline-text-10" id="text-5-5-2-3-1-0-0-1-3">
+
+
+
+<li><a id="org4abcf3a"></a>JavaScript<br />
+<div class="outline-text-6" id="text-6-5-2-4-3">
 <p>
 A tonne of options for exporting with extended javascript are also at my disposal, look at the <a href="https://orgmode.org/manual/JavaScript-support.html#JavaScript-support">Manual</a>, most importantly is <code>view:content</code> and <code>view:info</code>, so for example:
 </p>
@@ -2882,7 +3300,7 @@ Once your in the html, use <code>i</code> to toggle the <i>Table of Contents</i>
 
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>Emacs LISP code to inline custom CSS</label><pre class="src src-emacs-lisp" id="org731279a"><span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">Put your css files there</span>
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Emacs LISP code to inline custom CSS</label><pre class="src src-emacs-lisp" id="org39c1576"><span style="color: #2aa1ae; background-color: #292e34;">;; </span><span style="color: #2aa1ae; background-color: #292e34;">Put your css files there</span>
 <span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">defvar</span> <span style="color: #7590db;">org-theme-css-dir</span> <span style="color: #2d9574;">"~/.emacs.d/org-css/"</span><span style="color: #4f97d7;">)</span>
 
 <span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">defun</span> <span style="color: #bc6ec5; font-weight: bold;">toggle-org-custom-inline-style</span> <span style="color: #bc6ec5;">()</span>
@@ -2926,38 +3344,35 @@ Once your in the html, use <code>i</code> to toggle the <i>Table of Contents</i>
 </div>
 
 <ul class="org-ul">
-<li>How to specify a template for \(\LaTeX\)</li>
+<li>How to specify a template for LaTeX</li>
 </ul>
 
 <p>
-So turn my typical LaTeX template into a \usepackage{}
+So turn my typical <code>LaTeX</code> template into a <code>\usepackage{}</code>
 </p>
 </div>
 </li>
-<li><a id="org64a9432"></a><span class="done DONE">DONE</span> Create CSS files<br />
-<div class="outline-text-10" id="text-5-5-2-3-1-0-0-1-4">
+<li><a id="org63d2a3f"></a><span class="done DONE">DONE</span> Create CSS files<br />
+<div class="outline-text-6" id="text-6-5-2-4-4">
 <p>
 Take the CSS files and merge them with something bare bones to colour the ToDO tags
 </p>
 </div>
 </li>
-</ol>
-</li>
-<li><a id="org5191a2d"></a>Shortcuts<br />
-<div class="outline-text-9" id="text-5-5-2-3-1-0-0-2">
+<li><a id="org9035e9b"></a>Shortcuts<br />
+<div class="outline-text-6" id="text-6-5-2-4-5">
 <p>
 Exporting can be performed by using the shortcut <code>&lt;SPC&gt; m e e=/=C-c C-e</code>.
 </p>
 </div>
 </li>
-</ol>
 
 
 
 
 
-<li><a id="orga1f4956"></a><span class="done DONE">DONE</span> use spacemacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span><br />
-<div class="outline-text-8" id="text-5-5-2-3-1-0-1">
+<li><a id="orgff18b64"></a><span class="done DONE">DONE</span> use spacemacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span><br />
+<div class="outline-text-6" id="text-6-5-2-4-6">
 <p>
 when using spacemacs the config file remains as <code>~/.emacs.d/init.el</code>, the default
  config for all <i>spacemacs</i> settings however becomes the <code>~/.spacemacs</code> file, which,
@@ -2966,8 +3381,8 @@ it's well worth <a href="http://spacemacs.org/layers/+emacs/org/README.html">Rea
 </p>
 </div>
 </li>
-<li><a id="org3a1dee7"></a>Changing Themes<br />
-<div class="outline-text-8" id="text-5-5-2-3-1-0-2">
+<li><a id="org24c1a7a"></a>Changing Themes<br />
+<div class="outline-text-6" id="text-6-5-2-4-7">
 <p>
 You can install a bunch of themes by installing the <code>themes-megapack</code> as documented <a href="https://github.com/syl20bnr/spacemacs/blob/master/layers/+themes/themes-megapack/README.org">on the GitHub repo</a>, but the only way to change a theme that I've found is to use <code>&lt;M-x spacemacs/helm-themes&gt;</code>.
 </p>
@@ -2981,15 +3396,15 @@ If however you go to the <code>.spacemacs</code> file and locate the string <cod
 </p>
 </div>
 </li>
-<li><a id="orgcd7653b"></a><span class="done DONE">DONE</span> Toggle status of <code>ToDo</code><br />
-<div class="outline-text-8" id="text-5-5-2-3-1-0-3">
+<li><a id="org2bac91f"></a><span class="done DONE">DONE</span> Toggle status of <code>ToDo</code><br />
+<div class="outline-text-6" id="text-6-5-2-4-8">
 <p>
 So this will still work with <code>&lt;s-Right&gt;</code> but preferably do it with just <code>t</code>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org0ec6325"></a>dealing with fonts<br />
-<div class="outline-text-9" id="text-5-5-2-3-1-0-3-1">
+<li><a id="org344a408"></a>dealing with fonts<br />
+<div class="outline-text-7" id="text-6-5-2-4-8-1">
 <p>
 you will likely need to fix the font, there is a bug <a href="https://github.com/syl20bnr/spacemacs/issues/501#issuecomment-534865654">Described here on <i>Github</i></a> that requires the font size listed at approximately line 135 as:
 </p>
@@ -3007,8 +3422,8 @@ to <code>13.0</code> otherwise it doesn't set the font to <i>point</i> like it s
 </p>
 </div>
 </li>
-<li><a id="org8c40808"></a>Enabling layers<br />
-<div class="outline-text-9" id="text-5-5-2-3-1-0-3-2">
+<li><a id="org15a9d8a"></a>Enabling layers<br />
+<div class="outline-text-7" id="text-6-5-2-4-8-2">
 <p>
 You will need to uncomment lines in order to enable modes like <code>org</code> and <code>markdown</code>
 </p>
@@ -3016,27 +3431,42 @@ You will need to uncomment lines in order to enable modes like <code>org</code> 
 </li>
 </ol>
 </li>
-<li><a id="org22ac99b"></a><span class="todo TODO">TODO</span> ReWrite Documents in Org-Mode&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span><br />
+<li><a id="org153f889"></a><span class="todo TODO">TODO</span> ReWrite Documents in Org-Mode&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span><br />
 <ol class="org-ol">
-<li><a id="org6793114"></a><span class="todo TODO">TODO</span> All Stats<br /></li>
-<li><a id="org869443c"></a>Convert and import all R-Work<br /></li>
-<li><a id="orgd89bcbe"></a><span class="todo TODO">TODO</span> All NMR<br /></li>
-<li><a id="org1665725"></a><span class="done DONE">DONE</span> All Abstract Algebra<br />
-<div class="outline-text-9" id="text-5-5-2-3-1-0-4-4">
+<li><a id="orgad354ba"></a><span class="todo TODO">TODO</span> All Stats<br /></li>
+<li><a id="orga27409e"></a>Convert and import all R-Work<br /></li>
+<li><a id="orgd2aabf8"></a><span class="todo TODO">TODO</span> All NMR<br /></li>
+<li><a id="orgeb643bf"></a><span class="done DONE">DONE</span> All Abstract Algebra<br />
+<div class="outline-text-7" id="text-6-5-2-4-9-4">
 </div>
 </li>
-<li><a id="org626f04a"></a><span class="todo TODO">TODO</span> All Continuous Mathematical Modelling<br /></li>
-</ol>
+<li><a id="org42f366b"></a><span class="todo TODO">TODO</span> All Continuous Mathematical Modelling<br /></li>
+<li><a id="org540d395"></a><span class="todo WAITING">WAITING</span> All R DataSci Work<br />
+<div class="outline-text-7" id="text-6-5-2-4-9-6">
+<p>
+This is important, I don't think it's going to work until after I've set up ESS, because the source code doesn't seem to want to install packages or remember things (or maybe I needed to set up <code>:cache yes</code>?? no I idea, didn't have time.
+</p>
+</div>
 </li>
 </ol>
-<li><a id="org1548690"></a><span class="todo TODO">TODO</span> Set up an ESS workflow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span>&#xa0;<span class="R">R</span></span><br />
+</li>
+<li><a id="orgc50549b"></a><span class="todo TODO">TODO</span> Set up an ESS workflow&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span>&#xa0;<span class="R">R</span></span><br />
 <ol class="org-ol">
-<li><a id="orgadab0eb"></a><span class="todo TODO">TODO</span> Install ESS<br /></li>
-<li><a id="org42d5b0d"></a>Compare ESS to RMD<br />
+<li><a id="org34e4007"></a><span class="todo TODO">TODO</span> Install ESS<br /></li>
+<li><a id="org1cd4958"></a>Compare ESS to RMD<br />
 <ol class="org-ol">
-<li><a id="org3fca5ef"></a>Is there a way II could integrate org mode with my current workflow?<br /></li>
-</ol>
+<li><a id="orgb5dcaa7"></a>Is there a way I could integrate org mode with my current workflow?<br />
+<div class="outline-text-8" id="text-6-5-2-4-10-2-1">
+<p>
+Well I like how my notes are all RMD files inside R Studio, I like how I can search them all with <code>C-s-f</code>, but clearly, moving toward using org-mode for that would be better.
+</p>
+
+<p>
+For the time being I can just use pandoc to take the <code>.rmd</code> into <code>.org</code>, or, if that doesn't work, I can use <i>RStudio</i> to take the <code>.rmd</code> &#x2013;&gt; <code>.md</code> and then use pandoc to go to <code>.org</code>
+</p>
+</div>
 </li>
+<li><a id="org3969a97"></a>Convert RMD notes into org.<br /></li>
 </ol>
 </li>
 </ol>
@@ -3047,14 +3477,14 @@ You will need to uncomment lines in order to enable modes like <code>org</code> 
 </div>
 </div>
 </div>
-<div id="outline-container-org8c61a6c" class="outline-2">
-<h2 id="org8c61a6c"><span class="section-number-2">6</span> Tips and Tricks with Org Mode</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org84d11e9" class="outline-2">
+<h2 id="org84d11e9"><span class="section-number-2">7</span> Tips and Tricks with Org Mode</h2>
+<div class="outline-text-2" id="text-7">
 </div>
 
-<div id="outline-container-org6e541f6" class="outline-3">
-<h3 id="org6e541f6"><span class="section-number-3">6.1</span> Folding</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-org3e7ab50" class="outline-3">
+<h3 id="org3e7ab50"><span class="section-number-3">7.1</span> Folding</h3>
+<div class="outline-text-3" id="text-7-1">
 <p>
 Open a second window with <code>C-x 2</code> and swap between the windows with <code>C-x o</code> (for *O*ther), the other window can be scrolled by using <code>C-M v</code>, this is handy for having a second reference window.
 </p>
@@ -3064,26 +3494,30 @@ The second window can be closed by using <code>C-x 1</code> (as in keep <b>1</b>
 </p>
 </div>
 </div>
-<div id="outline-container-orgdb46e44" class="outline-3">
-<h3 id="orgdb46e44"><span class="section-number-3">6.2</span> Working with ToDo/HeadLine/list items</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-orgb45befb" class="outline-3">
+<h3 id="orgb45befb"><span class="section-number-3">7.2</span> Working with ToDo/HeadLine/list items</h3>
+<div class="outline-text-3" id="text-7-2">
 <p>
 You can add a new <code>TODO</code> item with <code>M-S RET</code>.
 Using <code>M-up/down</code> a headlines may be moved, they may be demoted with <code>M-left/right</code>
 Using <code>S-left/right</code> will toggle to do list items.
 </p>
 </div>
-<div id="outline-container-org1433991" class="outline-4">
-<h4 id="org1433991"><span class="section-number-4">6.2.1</span> Folding</h4>
-<div class="outline-text-4" id="text-6-2-1">
+<div id="outline-container-org6e41834" class="outline-4">
+<h4 id="org6e41834"><span class="section-number-4">7.2.1</span> Folding</h4>
+<div class="outline-text-4" id="text-7-2-1">
 <p>
 You can fold a headline by using TAB if you are on a headline, the fold level of the entire document may be toggled with <code>S-TAB</code>
 </p>
 </div>
 </div>
-<div id="outline-container-orgd388b1b" class="outline-4">
-<h4 id="orgd388b1b"><span class="section-number-4">6.2.2</span> Trees <sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup></h4>
-<div class="outline-text-4" id="text-6-2-2">
+<div id="outline-container-orge1614b9" class="outline-4">
+<h4 id="orge1614b9"><span class="section-number-4">7.2.2</span> Trees</h4>
+<div class="outline-text-4" id="text-7-2-2">
+<p>
+Refer to <sup><a id="fnr.8" class="footref" href="#fn.8">8</a></sup>
+</p>
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -3133,31 +3567,31 @@ You can fold a headline by using TAB if you are on a headline, the fold level of
 </div>
 </div>
 </div>
-<div id="outline-container-org83a0481" class="outline-3">
-<h3 id="org83a0481"><span class="section-number-3">6.3</span> Note Taking Guidlines&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span></h3>
-<div class="outline-text-3" id="text-6-3">
+<div id="outline-container-org78bb6cd" class="outline-3">
+<h3 id="org78bb6cd"><span class="section-number-3">7.3</span> Note Taking Guidlines&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Workflow">Workflow</span></span></h3>
+<div class="outline-text-3" id="text-7-3">
 </div>
-<div id="outline-container-org36fea27" class="outline-4">
-<h4 id="org36fea27"><span class="section-number-4">6.3.1</span> Links</h4>
-<div class="outline-text-4" id="text-6-3-1">
+<div id="outline-container-org8164ebd" class="outline-4">
+<h4 id="org8164ebd"><span class="section-number-4">7.3.1</span> Links</h4>
+<div class="outline-text-4" id="text-7-3-1">
 <p>
 You can create a link by using <code>C-c C-l</code> and I think <code>C-u C-c C-l</code> will attach an internal link
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org6e3eedf" class="outline-3">
-<h3 id="org6e3eedf"><span class="section-number-3">6.4</span> Exporting Org to Markdown</h3>
-<div class="outline-text-3" id="text-6-4">
+<div id="outline-container-org2679ca5" class="outline-3">
+<h3 id="org2679ca5"><span class="section-number-3">7.4</span> Exporting Org to Markdown</h3>
+<div class="outline-text-3" id="text-7-4">
 <p>
 You should customize org-export-backends and enable the markdown backend.
 That's: M-x customize-option and then org-export-backends and then arrow down to the checkbox to the left of 'md' and press enter to enable it (or just click on it, if running emacs grqAphically). Then arrow back up and over to 'Apply and Save' (or click on it)
 </p>
 </div>
 </div>
-<div id="outline-container-org3f903e4" class="outline-3">
-<h3 id="org3f903e4"><span class="section-number-3">6.5</span> Including LaTeX Fragments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LaTeX">LaTeX</span></span></h3>
-<div class="outline-text-3" id="text-6-5">
+<div id="outline-container-orgd450003" class="outline-3">
+<h3 id="orgd450003"><span class="section-number-3">7.5</span> Including LaTeX Fragments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LaTeX">LaTeX</span></span></h3>
+<div class="outline-text-3" id="text-7-5">
 <p>
 To preview LaTeX documents install <code>dvipng</code>, <code>dvisvgm</code> or <code>conver</code>.
 </p>
@@ -3176,9 +3610,9 @@ As hown in \eqref{Quad}
 C-c C-x C-l (org-toggle-latex-fragment)
 </pre>
 </div>
-<div id="outline-container-org3ac8ed9" class="outline-4">
-<h4 id="org3ac8ed9"><span class="section-number-4">6.5.1</span> Example LaTeX</h4>
-<div class="outline-text-4" id="text-6-5-1">
+<div id="outline-container-org0e932cb" class="outline-4">
+<h4 id="org0e932cb"><span class="section-number-4">7.5.1</span> Example LaTeX</h4>
+<div class="outline-text-4" id="text-7-5-1">
 \begin{align}
   \sum^{n- 1}_{n= 0} \left[ ar^n \right] &= a \cdot \frac{1-r^n}{1-r} \\
   \implies \sum^{\infty}_{n=0}\left[ ar^n \right]    &= a\cdot  \frac{1- \lim_{n \rightarrow \infty}\left[
@@ -3189,9 +3623,9 @@ C-c C-x C-l (org-toggle-latex-fragment)
 </div>
 </div>
 </div>
-<div id="outline-container-org6bd5481" class="outline-3">
-<h3 id="org6bd5481"><span class="section-number-3">6.6</span> <span class="done DONE">DONE</span> Tables&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tables">Tables</span></span></h3>
-<div class="outline-text-3" id="text-6-6">
+<div id="outline-container-org70aeb80" class="outline-3">
+<h3 id="org70aeb80"><span class="section-number-3">7.6</span> <span class="done DONE">DONE</span> Tables&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tables">Tables</span></span></h3>
+<div class="outline-text-3" id="text-7-6">
 <p>
 Let's make a table of key bindings, first we need to insert a table, we'll do this wit a tamplate by typing in <code>SPC-m-t-n</code> for *M*ajor mode command, *T*able, *N*ew.
 </p>
@@ -3264,15 +3698,8 @@ Let's make a table of key bindings, first we need to insert a table, we'll do th
 </tbody>
 <tbody>
 <tr>
-<td class="org-left">Including \( \LaTeX \) should work</td>
+<td class="org-left">Including LaTeX should work</td>
 <td class="org-left">\(\oint z \operatorname{d}x = {\scriptsize 1} {\big /}_{2} \cdot z^2 + C\)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="org-left">Including \( \LaTeX \) should work</td>
-<td class="org-left">\[\begin{aligned} \oint z \operatorname{d}x &= 0.5 \cdot z^2 + C \\ &= z^2/2 \end{aligned} \]</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
@@ -3293,11 +3720,11 @@ Let's make a table of key bindings, first we need to insert a table, we'll do th
 <li></li>
 </ul>
 </div>
-<div id="outline-container-org5ac7505" class="outline-4">
-<h4 id="org5ac7505"><span class="section-number-4">6.6.1</span> Multi-Column Cells</h4>
-<div class="outline-text-4" id="text-6-6-1">
+<div id="outline-container-org8ab6fa9" class="outline-4">
+<h4 id="org8ab6fa9"><span class="section-number-4">7.6.1</span> Multi-Column Cells</h4>
+<div class="outline-text-4" id="text-7-6-1">
 <p>
-If you want to merge cells etc. that's also doable, but it's real finnicky <sup><a id="fnr.8" class="footref" href="#fn.8">8</a></sup> and it doesn't work in <i>BeOrg</i>.
+If you want to merge cells etc. that's also doable, but it's real finnicky <sup><a id="fnr.9" class="footref" href="#fn.9">9</a></sup> and it doesn't work in <i>BeOrg</i>.
 </p>
 
 
@@ -3417,9 +3844,9 @@ If you want to merge cells etc. that's also doable, but it's real finnicky <sup>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf44cdc9" class="outline-3">
-<h3 id="orgf44cdc9"><span class="section-number-3">6.7</span> Drawers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawers">Drawers</span></span></h3>
-<div class="outline-text-3" id="text-6-7">
+<div id="outline-container-org29230f8" class="outline-3">
+<h3 id="org29230f8"><span class="section-number-3">7.7</span> Drawers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Drawers">Drawers</span></span></h3>
+<div class="outline-text-3" id="text-7-7">
 <p>
 Insert a drawer with <code>SPC m a</code> / <code>, D</code>.
 </p>
@@ -3436,17 +3863,17 @@ Insert a drawer with <code>SPC m a</code> / <code>, D</code>.
 </p>
 </div>
 </div>
-<div id="outline-container-org585ae7c" class="outline-3">
-<h3 id="org585ae7c"><span class="section-number-3">6.8</span> <span class="done DONE">DONE</span> How to include links to files</h3>
-<div class="outline-text-3" id="text-6-8">
+<div id="outline-container-org4136073" class="outline-3">
+<h3 id="org4136073"><span class="section-number-3">7.8</span> <span class="done DONE">DONE</span> How to include links to files</h3>
+<div class="outline-text-3" id="text-7-8">
 </div>
-<div id="outline-container-org8cb671b" class="outline-4">
-<h4 id="org8cb671b"><span class="section-number-4">6.8.1</span> <span class="done DONE">DONE</span> Internal links</h4>
-<div class="outline-text-4" id="text-6-8-1">
+<div id="outline-container-org5c7d81c" class="outline-4">
+<h4 id="org5c7d81c"><span class="section-number-4">7.8.1</span> <span class="done DONE">DONE</span> Internal links</h4>
+<div class="outline-text-4" id="text-7-8-1">
 </div>
 <ol class="org-ol">
-<li><a id="org7c58dac"></a>Anchors<br />
-<div class="outline-text-5" id="text-6-8-1-1">
+<li><a id="orgb1f3987"></a>Anchors<br />
+<div class="outline-text-5" id="text-7-8-1-1">
 <p>
 Anchors can be created by using <code>&lt;&lt;TargetLandingText&gt;&gt;</code> and then accessed by using <code>[[TargetLandingText][Display Text]]</code>.
 </p>
@@ -3454,19 +3881,19 @@ Anchors can be created by using <code>&lt;&lt;TargetLandingText&gt;&gt;</code> a
 </li>
 </ol>
 </div>
-<div id="outline-container-org4559808" class="outline-4">
-<h4 id="org4559808"><span class="section-number-4">6.8.2</span> <span class="done DONE">DONE</span> External Files</h4>
-<div class="outline-text-4" id="text-6-8-2">
+<div id="outline-container-org01ea150" class="outline-4">
+<h4 id="org01ea150"><span class="section-number-4">7.8.2</span> <span class="done DONE">DONE</span> External Files</h4>
+<div class="outline-text-4" id="text-7-8-2">
 <p>
-External files can be linked to by using the syntax <code>[[./myfile.ext]]</code> and they can be jumped to with <code>Enter</code>, which would be <code>gf=/=gx</code> in <i>Vim</i>. 
+External files can be linked to by using the syntax <code>[[./myfile.ext]]</code> and they can be jumped to with <code>Enter</code>, which would be <code>gf</code> / <code>gx</code> in <i>Vim</i>. 
 </p>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-org999e059" class="outline-2">
-<h2 id="org999e059"><span class="section-number-2">7</span> <span class="done DONE">DONE</span> Can I tag a specific lines</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org76a71f1" class="outline-2">
+<h2 id="org76a71f1"><span class="section-number-2">8</span> <span class="done DONE">DONE</span> Can I tag a specific lines</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 OK so i have all these notes in here now, like for example multi-column tables, can I tag the specific line or subtree so that I can just jump straight to it??
 </p>
@@ -3497,26 +3924,30 @@ I got this from the<a href="https://orgmode.org/worg/org-tutorials/org4beginners
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
-<a href="https://github.com/emacs-helm/helm/blob/master/helm-bookmark.el">Helm-bookmark manual</a> 
+<a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/html">Look at the <i>GitHub</i> for the ESS layer</a> 
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
-Refer to the documentation <a href="http://orgmode.org/manual/Handling-links.html#Handling-links">here</a>.
+<a href="https://github.com/emacs-helm/helm/blob/master/helm-bookmark.el">Helm-bookmark manual</a> 
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><p class="footpara">
-The shortcut for footnotes is <code>C-c C-x f</code> as described in <a href="https://orgmode.org/manual/Footnotes.html">the manual</a> and the shortcut for links is <code>C-c C-l</code>
+Refer to the documentation <a href="http://orgmode.org/manual/Handling-links.html#Handling-links">here</a>.
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6">6</a></sup> <div class="footpara"><p class="footpara">
-having <code>emacs-lisp</code> after means it will be (atleast-partially) evaluated upon HTML export, you will need to install <a href="https://github.com/hniksic/emacs-htmlize/blob/master/htmlize.el"><code>emacs-htmlize</code></a> in order to export it, this can be done by typing in the following <code>M-x package-install RET htmlize</code>; confusing that it isn't <code>emacs-htmlize</code>, maybe that's a standard?
+The shortcut for footnotes is <code>C-c C-x f</code> as described in <a href="https://orgmode.org/manual/Footnotes.html">the manual</a> and the shortcut for links is <code>C-c C-l</code>
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7">7</a></sup> <div class="footpara"><p class="footpara">
-Most of this is taken from the <a href="https://www.spacemacs.org/layers/+emacs/org/README.html#tree"><i>ReadTheDocs</i></a> Spacemacs link
+having <code>emacs-lisp</code> after means it will be (atleast-partially) evaluated upon HTML export, you will need to install <a href="https://github.com/hniksic/emacs-htmlize/blob/master/htmlize.el"><code>emacs-htmlize</code></a> in order to export it, this can be done by typing in the following <code>M-x package-install RET htmlize</code>; confusing that it isn't <code>emacs-htmlize</code>, maybe that's a standard?
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8">8</a></sup> <div class="footpara"><p class="footpara">
+Most of this is taken from the <a href="https://www.spacemacs.org/layers/+emacs/org/README.html#tree"><i>ReadTheDocs</i></a> Spacemacs link
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.9" class="footnum" href="#fnr.9">9</a></sup> <div class="footpara"><p class="footpara">
 Refer to the<a href="https://lists.gnu.org/archive/html/emacs-orgmode/2010-08/msg00882.html"> Mailing List</a> for <code>org-mode</code>
 </p></div></div>
 
@@ -3525,7 +3956,7 @@ Refer to the<a href="https://lists.gnu.org/archive/html/emacs-orgmode/2010-08/ms
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: ryan</p>
-<p class="date">Created: 2019-11-11 Mon 19:04</p>
+<p class="date">Created: 2019-11-12 Tue 22:24</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
