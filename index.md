@@ -7,9 +7,19 @@
 <meta name="theme-color" content="#ffffff">
 
 # Ryan's Class Notes
+
+
+!!! Note
+> TODO
+>> dedicate this to a static site that is al HTML, probably my org notes, possibly with some pandocced latex or md. 
+
+
 [I've been Playing with org look](https://ryangreenup.github.io/orgtest.html)
 
 [Vim Notes](https://ryangreenup.github.io//MiscNotes/Vim Tutorial.html)
+
+[Note Taking Manual](https://ryangreenup.github.io//MiscNotes/manual.html)
+
 
 [DorsProb](https://ryangreenup.github.io/toastflip/toastflip.html)
 
