@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#ffffff">
 
 # Ryan's Class Notes
-
+[Visual Analytics Tutorial](https://ryangreenup.github.io/VisualAnalytics.html)
 
 !!! Note
 > TODO

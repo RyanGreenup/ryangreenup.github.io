@@ -1,0 +1,2126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-24 Tue 18:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Visual Analytics</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ryan G" />
+<style type="text/css">
+<!-- [CDATA] -->
+* Gong
+Found this on github
+#+BEGIN_SRC css
+
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}body{color:#000;background-color:#fff}.org-alert-high{color:#ff8c00;font-weight:700}.org-alert-low{color:#00008b}.org-alert-moderate{color:gold;font-weight:700}.org-alert-saved-fringe{background-color:#f2f2f2}.org-alert-trivial{color:Dark purple}.org-alert-urgent{color:red;font-weight:700}.org-anzu-match-1{color:#000;background-color:#7fffd4}.org-anzu-match-2{color:#000;background-color:#00ff7f}.org-anzu-match-3{color:#000;background-color:#ff0}.org-anzu-mode-line,.org-anzu-mode-line-no-match{color:#008b00;font-weight:700}.org-anzu-replace-highlight{color:#b0e2ff;background-color:#cd00cd}.org-anzu-replace-to{color:red}.org-bbdb-field-name{color:sienna}.org-bbdb-name{color:#00f}.org-bbdb-organization{color:#b22222}.org-beacon-fallback-background{background-color:#000}.org-biblio-results-header{color:#483d8b;font-size:150%;font-weight:700}.org-bold{font-weight:700}.org-bold-italic{font-weight:700;font-style:italic}.org-bookmark-menu-bookmark{font-weight:700}.org-bookmark-menu-heading{color:#228b22}.org-buffer-menu-buffer{font-weight:700}.org-builtin{color:#483d8b}.org-button{color:#3a5fcd;text-decoration:underline}.org-c-annotation{color:#008b8b}.org-cal-china-x-general-holiday{background-color:#228b22}.org-cal-china-x-important-holiday{background-color:#8b0000}.org-calendar-iso-week{color:pink;font-weight:700}.org-calendar-iso-week-header{color:#0ff}.org-calendar-month-header{color:#00f}.org-calendar-today{text-decoration:underline}.org-calendar-weekday-header{color:#008b8b}.org-calendar-weekend-header{color:#b22222}.org-comint-highlight-input{font-weight:700}.org-comint-highlight-prompt{color:#0000cd}.org-comment,.org-comment-delimiter{color:#b22222}.org-compilation-column-number{color:#8b2252}.org-compilation-error{color:red;font-weight:700}.org-compilation-info{color:#228b22;font-weight:700}.org-compilation-line-number{color:#a020f0}.org-compilation-mode-line-exit{color:#228b22;font-weight:700}.org-compilation-mode-line-fail{color:red;font-weight:700}.org-compilation-mode-line-run,.org-compilation-warning{color:#ff8c00;font-weight:700}.org-completions-annotations{font-style:italic}.org-completions-first-difference{font-weight:700}.org-constant{color:#008b8b}.org-cursor{background-color:#eead0e}.org-custom-button{color:#000;background-color:#d3d3d3}.org-custom-button-mouse{color:#000;background-color:#e5e5e5}.org-custom-button-pressed{color:#000;background-color:#d3d3d3}.org-custom-button-pressed-unraised{color:#8b008b;text-decoration:underline}.org-custom-button-unraised{text-decoration:underline}.org-custom-changed{color:#fff;background-color:#00f}.org-custom-comment{background-color:#d9d9d9}.org-custom-comment-tag{color:#00008b}.org-custom-face-tag{color:#00f;font-weight:700}.org-custom-group-subtitle{font-weight:700}.org-custom-group-tag{color:#00f;font-size:120%;font-weight:700}.org-custom-group-tag-1{color:red;font-size:120%;font-weight:700}.org-custom-invalid{color:#ff0;background-color:red}.org-custom-link{color:#3a5fcd;text-decoration:underline}.org-custom-modified{color:#fff;background-color:#00f}.org-custom-rogue{color:pink;background-color:#000}.org-custom-saved{text-decoration:underline}.org-custom-set{color:#00f;background-color:#fff}.org-custom-state{color:#006400}.org-custom-themed{color:#fff;background-color:#00f}.org-custom-variable-button{font-weight:700;text-decoration:underline}.org-custom-variable-tag{color:#00f;font-weight:700}.org-custom-visibility{color:#3a5fcd;font-size:80%;text-decoration:underline}.org-diary{color:red}.org-diary-anniversary{color:#a020f0}.org-diary-time{color:sienna}.org-dired-async-failures{color:red}.org-dired-async-message{color:#ff0}.org-dired-async-mode-message{color:gold}.org-dired-directory{color:#00f}.org-dired-flagged{color:red;font-weight:700}.org-dired-header{color:#228b22}.org-dired-ignored{color:#7f7f7f}.org-dired-mark{color:#008b8b}.org-dired-marked{color:#ff8c00;font-weight:700}.org-dired-perm-write{color:#b22222}.org-dired-symlink{color:#a020f0}.org-dired-warning{color:red;font-weight:700}.org-doc{color:#8b2252}.org-eldoc-highlight-function-argument{font-weight:700}.org-epa-field-body{font-style:italic}.org-epa-field-name,.org-epa-mark{font-weight:700}.org-epa-mark{color:red}.org-epa-string{color:#00008b}.org-epa-validity-disabled{font-style:italic}.org-epa-validity-high{font-weight:700}.org-epa-validity-low,.org-epa-validity-medium{font-style:italic}.org-error{color:red;font-weight:700}.org-escape-glyph{color:brown}.org-evil-ex-commands{font-style:italic;text-decoration:underline}.org-evil-ex-info{color:red;font-style:italic}.org-evil-ex-lazy-highlight{background-color:#afeeee}.org-evil-ex-search{color:#b0e2ff;background-color:#cd00cd}.org-evil-ex-substitute-matches{background-color:#afeeee}.org-evil-ex-substitute-replacement{color:red;text-decoration:underline}.org-ffap{background-color:#b4eeb4}.org-file-name-shadow{color:#7f7f7f}.org-flycheck-error{text-decoration:underline}.org-flycheck-error-list-checker-name{color:#00f}.org-flycheck-error-list-column-number{color:#008b8b}.org-flycheck-error-list-error{color:red;font-weight:700}.org-flycheck-error-list-filename{color:sienna}.org-flycheck-error-list-highlight{background-color:#b4eeb4}.org-flycheck-error-list-id,.org-flycheck-error-list-id-with-explainer{color:#228b22}.org-flycheck-error-list-info{color:#228b22;font-weight:700}.org-flycheck-error-list-line-number{color:#008b8b}.org-flycheck-error-list-warning{color:#ff8c00;font-weight:700}.org-flycheck-fringe-error{color:red;font-weight:700}.org-flycheck-fringe-info{color:#228b22;font-weight:700}.org-flycheck-fringe-warning{color:#ff8c00;font-weight:700}.org-flycheck-info,.org-flycheck-warning,.org-flyspell-duplicate,.org-flyspell-incorrect{text-decoration:underline}.org-fringe{background-color:#f2f2f2}.org-function-name{color:#00f}.org-glyphless-char{font-size:60%}.org-golden-ratio-scroll-highlight-line{color:#fff;background-color:#53868b;font-weight:700}.org-header-line{color:#333;background-color:#e5e5e5}.org-helm-action{text-decoration:underline}.org-helm-bookmark-addressbook{color:tomato}.org-helm-bookmark-directory{color:#8b0000;background-color:#d3d3d3}.org-helm-bookmark-file{color:#00b2ee}.org-helm-bookmark-file-not-found{color:#6c7b8b}.org-helm-bookmark-gnus{color:#f0f}.org-helm-bookmark-info{color:#0f0}.org-helm-bookmark-man{color:#8b5a00}.org-helm-bookmark-w3m{color:#ff0}.org-helm-buffer-archive{color:gold}.org-helm-buffer-directory{color:#8b0000;background-color:#d3d3d3}.org-helm-buffer-file{color:#483d8b}.org-helm-buffer-modified{color:#b22222}.org-helm-buffer-not-saved{color:#ee6363}.org-helm-buffer-process{color:#cd6839}.org-helm-buffer-saved-out{color:red;background-color:#000}.org-helm-buffer-size{color:#708090}.org-helm-candidate-number,.org-helm-candidate-number-suspended{color:#000;background-color:#faffb5}.org-helm-delete-async-message{color:#ff0}.org-helm-etags-file{color:#8b814c;text-decoration:underline}.org-helm-ff-denied{color:red;background-color:#000}.org-helm-ff-directory{color:#8b0000;background-color:#d3d3d3}.org-helm-ff-dirs{color:#00f}.org-helm-ff-dotted-directory{color:#000;background-color:#696969}.org-helm-ff-dotted-symlink-directory{color:#ff8c00;background-color:#696969}.org-helm-ff-executable{color:#0f0}.org-helm-ff-file{color:#483d8b}.org-helm-ff-invalid-symlink{color:#000;background-color:red}.org-helm-ff-pipe{color:#ff0;background-color:#000}.org-helm-ff-prefix{color:#000;background-color:#ff0}.org-helm-ff-socket{color:#ff1493}.org-helm-ff-suid{color:#fff;background-color:red}.org-helm-ff-symlink{color:#b22222}.org-helm-ff-truename{color:#8b2252}.org-helm-grep-cmd-line{color:#228b22}.org-helm-grep-file{color:#8a2be2;text-decoration:underline}.org-helm-grep-finish{color:#0f0}.org-helm-grep-lineno{color:#ff7f00}.org-helm-grep-match{color:#b00000}.org-helm-header{color:#333;background-color:#e5e5e5}.org-helm-header-line-left-margin{color:#000;background-color:#ff0}.org-helm-helper{color:#333;background-color:#e5e5e5}.org-helm-history-deleted{color:#000;background-color:red}.org-helm-history-remote{color:#ff6a6a}.org-helm-lisp-completion-info{color:red}.org-helm-lisp-show-completion{background-color:#2f4f4f}.org-helm-locate-finish{color:#0f0}.org-helm-m-x-key{color:orange;text-decoration:underline}.org-helm-match{color:#b00000}.org-helm-match-item{color:#b0e2ff;background-color:#cd00cd}.org-helm-minibuffer-prompt{color:#0000cd}.org-helm-moccur-buffer{color:#00ced1;text-decoration:underline}.org-helm-non-file-buffer{font-style:italic}.org-helm-prefarg{color:red}.org-helm-resume-need-update{background-color:red}.org-helm-selection{background-color:#097209}.org-helm-selection-line{background-color:#b4eeb4}.org-helm-separator{color:#ffbfb5}.org-helm-source-header{color:#000;background-color:#abd7f0;font-size:130%;font-weight:700}.org-helm-visible-mark{background-color:#d1f5ea}.org-help-argument-name{font-style:italic}.org-highlight{background-color:#b4eeb4}.org-highlight-indent-guides-character{color:#e6e6e6}.org-highlight-indent-guides-even{background-color:#e6e6e6}.org-highlight-indent-guides-odd{background-color:#f3f3f3}.org-highlight-indent-guides-stack-character{color:#ccc}.org-highlight-indent-guides-stack-even{background-color:#ccc}.org-highlight-indent-guides-stack-odd{background-color:#d9d9d9}.org-highlight-indent-guides-top-character{color:#b3b3b3}.org-highlight-indent-guides-top-even{background-color:#b3b3b3}.org-highlight-indent-guides-top-odd{background-color:silver}.org-highlight-numbers-number{color:#008b8b}.org-hl-line{background-color:#b4eeb4}.org-holiday{background-color:pink}.org-hydra-face-amaranth{color:#e52b50;font-weight:700}.org-hydra-face-blue{color:#00f;font-weight:700}.org-hydra-face-pink{color:#ff6eb4;font-weight:700}.org-hydra-face-red{color:red;font-weight:700}.org-hydra-face-teal{color:#367588;font-weight:700}.org-ido-first-match{font-weight:700}.org-ido-incomplete-regexp{color:red;font-weight:700}.org-ido-indicator{color:#ff0;background-color:red}.org-ido-only-match{color:#228b22}.org-ido-subdir{color:red}.org-ido-virtual{color:#483d8b}.org-info-header-node{color:brown;font-weight:700;font-style:italic}.org-info-header-xref{color:#3a5fcd;text-decoration:underline}.org-info-index-match{background-color:#ff0}.org-info-menu-header{font-weight:700}.org-info-menu-star{color:red}.org-info-node{color:brown;font-weight:700;font-style:italic}.org-info-title-1{font-size:172%;font-weight:700}.org-info-title-2{font-size:144%;font-weight:700}.org-info-title-3{font-size:120%;font-weight:700}.org-info-title-4{font-weight:700}.org-info-xref{color:#3a5fcd;text-decoration:underline}.org-isearch{color:#b0e2ff;background-color:#cd00cd}.org-isearch-fail{background-color:#ffc1c1}.org-italic{font-style:italic}.org-keyword{color:#a020f0}.org-lazy-highlight{background-color:#afeeee}.org-link{color:#3a5fcd;text-decoration:underline}.org-link-visited{color:#8b008b;text-decoration:underline}.org-lv-separator{background-color:#ccc}.org-match{background-color:#ff0}.org-mcXcursor-bar{background-color:#000}.org-mcXregion{background-color:gtk_selection_bg_color}.org-me-dired-dim-0{color:#b3b3b3}.org-me-dired-dim-1{color:#7f7f7f}.org-me-dired-executable{color:#0f0}.org-message-cited-text{color:red}.org-message-header-cc{color:#191970}.org-message-header-name{color:#6495ed}.org-message-header-newsgroups{color:#00008b;font-weight:700;font-style:italic}.org-message-header-other{color:#4682b4}.org-message-header-subject{color:navy;font-weight:700}.org-message-header-to{color:#191970;font-weight:700}.org-message-header-xheader{color:#00f}.org-message-mml{color:#228b22}.org-message-separator{color:brown}.org-minibuffer-prompt{color:#0000cd}.org-mm-command-output{color:#cd0000}.org-mode-line{color:#000;background-color:#bfbfbf}.org-mode-line-buffer-id,.org-mode-line-buffer-id-inactive,.org-mode-line-emphasis{font-weight:700}.org-mode-line-inactive{color:#333;background-color:#e5e5e5}.org-mu4e-attach-number{color:sienna;font-weight:700}.org-mu4e-cited-1{color:#483d8b;font-style:italic}.org-mu4e-cited-2{color:#5cacee;font-style:italic}.org-mu4e-cited-3{color:sienna;font-style:italic}.org-mu4e-cited-4{color:#a020f0;font-style:italic}.org-mu4e-cited-5,.org-mu4e-cited-6{color:#b22222;font-style:italic}.org-mu4e-cited-7{color:#228b22;font-style:italic}.org-mu4e-compose-header,.org-mu4e-compose-separator{color:brown;font-style:italic}.org-mu4e-contact{color:sienna}.org-mu4e-context{color:#006400;font-weight:700}.org-mu4e-draft{color:#8b2252}.org-mu4e-flagged{color:#008b8b;font-weight:700}.org-mu4e-footer{color:#b22222}.org-mu4e-forwarded{color:#483d8b}.org-mu4e-header{color:#000;background-color:#fff}.org-mu4e-header-highlight{background-color:#000;font-weight:700;text-decoration:underline}.org-mu4e-header-key{color:#6495ed;font-weight:700}.org-mu4e-header-marks{color:#483d8b}.org-mu4e-header-title,.org-mu4e-header-value{color:#228b22}.org-mu4e-highlight{background-color:#b4eeb4}.org-mu4e-link{color:#3a5fcd;text-decoration:underline}.org-mu4e-modeline{color:#8b4500;font-weight:700}.org-mu4e-moved{color:#b22222;font-style:italic}.org-mu4e-ok{color:#b22222;font-weight:700}.org-mu4e-region-code{background-color:#2f4f4f}.org-mu4e-replied,.org-mu4e-special-header-value{color:#483d8b}.org-mu4e-system{color:#b22222;font-style:italic}.org-mu4e-title{color:#228b22;font-weight:700}.org-mu4e-trashed{color:#b22222;text-decoration:line-through}.org-mu4e-unread{color:#a020f0;font-weight:700}.org-mu4e-url-number{color:#008b8b;font-weight:700}.org-mu4e-view-body{color:#000;background-color:#fff}.org-mu4e-warning{color:red;font-weight:700}.org-next-error{background-color:gtk_selection_bg_color}.org-nobreak-space{color:brown;text-decoration:underline}.org-org-agenda-calendar-event,.org-org-agenda-calendar-sexp{color:#000;background-color:#fff}.org-org-agenda-clocking{background-color:#ff0}.org-org-agenda-column-dateline{background-color:#e5e5e5}.org-org-agenda-current-time{color:#b8860b}.org-org-agenda-date{color:#00f}.org-org-agenda-date-today{color:#00f;font-weight:700;font-style:italic}.org-org-agenda-date-weekend{color:#00f;font-weight:700}.org-org-agenda-diary{color:#000;background-color:#fff}.org-org-agenda-dimmed-todo{color:#7f7f7f}.org-org-agenda-done{color:#228b22}.org-org-agenda-filter-category,.org-org-agenda-filter-effort,.org-org-agenda-filter-regexp,.org-org-agenda-filter-tags{color:#000;background-color:#bfbfbf}.org-org-agenda-restriction-lock{background-color:#eee}.org-org-agenda-structure{color:#00f}.org-org-archived{color:#7f7f7f}.org-org-block{color:#7f7f7f}.org-org-block-begin-line,.org-org-block-end-line{color:#b22222}.org-org-checkbox{font-weight:700}.org-org-checkbox-statistics-done{color:#228b22;font-weight:700}.org-org-checkbox-statistics-todo{color:red;font-weight:700}.org-org-clock-overlay{color:#000;background-color:#d3d3d3}.org-org-code{color:#7f7f7f}.org-org-column,.org-org-column-title{background-color:#e5e5e5}.org-org-column-title{font-weight:700;text-decoration:underline}.org-org-date{color:#bfaf87;text-decoration:underline}.org-org-date-selected{color:red}.org-org-default{color:#000;background-color:#fff}.org-org-document-info{color:#191970}.org-org-document-info-keyword{color:#7f7f7f}.org-org-document-title{color:#191970;font-weight:700}.org-org-done{color:#228b22;font-weight:700}.org-org-drawer{color:#00f}.org-org-ellipsis{color:#b8860b;text-decoration:underline}.org-org-footnote{color:#96b4cd;text-decoration:underline}.org-org-formula{color:#b22222}.org-org-habit-alert{background-color:#f5f946}.org-org-habit-alert-future{background-color:#fafca9}.org-org-habit-clear{background-color:#8270f9}.org-org-habit-clear-future{background-color:#d6e4fc}.org-org-habit-overdue{background-color:#f9372d}.org-org-habit-overdue-future{background-color:#fc9590}.org-org-habit-ready{background-color:#4df946}.org-org-habit-ready-future{background-color:#acfca9}.org-org-headline-done{color:#bc8f8f}.org-org-hide{color:#fff}.org-org-latex-and-related{color:#8b4513}.org-org-level-1{color:#edd1c5}.org-org-level-2{color:#ebebb7}.org-org-level-3{color:#cce8cc}.org-org-level-4{color:#c9deec}.org-org-level-5{color:#dce3e8}.org-org-level-6{color:#dde6dd}.org-org-level-7{color:#e8e8ce}.org-org-level-8{color:#e8dedb}.org-org-link{color:#c5d2dc;text-decoration:underline}.org-org-list-dt{font-weight:700}.org-org-macro{color:#8b4513}.org-org-meta-line{color:#b22222}.org-org-mode-line-clock{color:#000;background-color:#bfbfbf}.org-org-mode-line-clock-overrun{color:#000;background-color:red}.org-org-priority{color:#a020f0}.org-org-quote{color:#7f7f7f}.org-org-ref-acronym{color:#ee7600;text-decoration:underline}.org-org-ref-cite{color:#c3d5c3;text-decoration:underline}.org-org-ref-glossary{color:#8968cd;text-decoration:underline}.org-org-ref-label{color:#8b008b;text-decoration:underline}.org-org-ref-ref{color:#e1cc96;text-decoration:underline}.org-org-scheduled{color:#006400}.org-org-scheduled-previously{color:#b22222}.org-org-scheduled-today{color:#006400}.org-org-sexp-date{color:#a020f0}.org-org-special-keyword{color:#88949f}.org-org-table{color:#00f}.org-org-tag,.org-org-tag-group{font-weight:700}.org-org-target{text-decoration:underline}.org-org-time-grid{color:#b8860b}.org-org-todo{color:red;font-weight:700}.org-org-upcoming-deadline{color:#b22222}.org-org-verbatim,.org-org-verse{color:#7f7f7f}.org-org-warning{color:red;font-weight:700}.org-outline-1{color:#00f}.org-outline-2{color:sienna}.org-outline-3{color:#a020f0}.org-outline-4{color:#b22222}.org-outline-5{color:#228b22}.org-outline-6{color:#008b8b}.org-outline-7{color:#483d8b}.org-outline-8{color:#8b2252}.org-package-description{color:#000;background-color:#fff}.org-package-name{color:#3a5fcd;text-decoration:underline}.org-package-status-avail-obso{color:#b22222}.org-package-status-available{color:#000;background-color:#fff}.org-package-status-built-in{color:#483d8b}.org-package-status-dependency{color:#b22222}.org-package-status-disabled{color:red;font-weight:700}.org-package-status-external{color:#483d8b}.org-package-status-held{color:#008b8b}.org-package-status-incompat,.org-package-status-installed{color:#b22222}.org-package-status-unsigned{color:red;font-weight:700}.org-pdf-isearch-batch{background-color:#ff0}.org-pdf-isearch-lazy{background-color:#afeeee}.org-pdf-isearch-match{color:#b0e2ff;background-color:#cd00cd}.org-pdf-occur-document{color:#8b2252}.org-pdf-occur-page{color:#228b22}.org-pdf-view-rectangle{background-color:#b4eeb4}.org-pdf-view-region{background-color:gtk_selection_bg_color}.org-powerline-active0{color:#000;background-color:#bfbfbf}.org-powerline-active1{color:#fff;background-color:#2b2b2b}.org-powerline-active2{color:#fff;background-color:#666}.org-powerline-inactive0{color:#333;background-color:#e5e5e5}.org-powerline-inactive1{color:#333;background-color:#1c1c1c}.org-powerline-inactive2{color:#333;background-color:#333}.org-preprocessor{color:#483d8b}.org-query-replace{color:#b0e2ff;background-color:#cd00cd}.org-rainbow-delimiters-depth-1{color:#ffdead}.org-rainbow-delimiters-depth-2{color:#00bfff}.org-rainbow-delimiters-depth-3{color:#ffdead}.org-rainbow-delimiters-depth-4{color:#00bfff}.org-rainbow-delimiters-depth-5{color:#ffdead}.org-rainbow-delimiters-depth-6{color:#00bfff}.org-rainbow-delimiters-depth-7{color:#ffdead}.org-rainbow-delimiters-depth-8{color:#00bfff}.org-rainbow-delimiters-depth-9{color:#ffdead}.org-rainbow-delimiters-unmatched{color:#88090b}.org-reb-match-0{background-color:#add8e6}.org-reb-match-1{background-color:#7fffd4}.org-reb-match-2{background-color:#00ff7f}.org-reb-match-3{background-color:#ff0}.org-rectangle-preview{background-color:gtk_selection_bg_color}.org-regexp-grouping-backslash,.org-regexp-grouping-construct{font-weight:700}.org-region{background-color:gtk_selection_bg_color}.org-secondary-selection{background-color:#ff0}.org-semantic-highlight-edits,.org-semantic-highlight-func-current-tag{background-color:#e5e5e5}.org-semantic-unmatched-syntax{text-decoration:underline}.org-sgml-namespace{color:#483d8b}.org-sh-escaped-newline{color:#8b2252}.org-sh-heredoc{color:#ee0}.org-sh-quoted-exec{color:#f0f}.org-shadow{color:#7f7f7f}.org-show-paren-match{background-color:#40e0d0}.org-show-paren-mismatch{color:#fff;background-color:#a020f0}.org-sp-pair-overlay,.org-sp-show-pair-enclosing{background-color:#b4eeb4}.org-sp-show-pair-match{background-color:#40e0d0}.org-sp-show-pair-mismatch{color:#fff;background-color:#a020f0}.org-sp-wrap-overlay{background-color:#b4eeb4}.org-sp-wrap-overlay-closing-pair{color:red;background-color:#b4eeb4}.org-sp-wrap-overlay-opening-pair{color:#0f0;background-color:#b4eeb4}.org-sp-wrap-tag-overlay{background-color:#b4eeb4}.org-spaceline-flycheck-error{color:#fc5c94;background-color:#333}.org-spaceline-flycheck-info{color:#8de6f7;background-color:#333}.org-spaceline-flycheck-warning{color:#f3ea98;background-color:#333}.org-spaceline-python-venv{color:#fbf}.org-speedbar-button{color:#008b00}.org-speedbar-directory{color:#00008b}.org-speedbar-file{color:#008b8b}.org-speedbar-highlight{background-color:#0f0}.org-speedbar-selected{color:red;text-decoration:underline}.org-speedbar-separator{color:#fff;background-color:#00f;text-decoration:overline}.org-speedbar-tag{color:brown}.org-string{color:#8b2252}.org-success{color:#228b22;font-weight:700}.org-table-cell{color:#e5e5e5;background-color:#00f}.org-tex-math{color:#8b2252}.org-tool-bar{color:#000;background-color:#bfbfbf}.org-tooltip{color:#000;background-color:#ffffe0}.org-trailing-whitespace{background-color:red}.org-tty-menu-disabled{color:#d3d3d3;background-color:#00f}.org-tty-menu-enabled{color:#ff0;background-color:#00f;font-weight:700}.org-tty-menu-selected{background-color:red}.org-type{color:#228b22}.org-underline{text-decoration:underline}.org-undo-tree-visualizer-active-branch{color:#000;font-weight:700}.org-undo-tree-visualizer-current{color:red}.org-undo-tree-visualizer-default{color:#bebebe}.org-undo-tree-visualizer-register{color:#ff0}.org-undo-tree-visualizer-unmodified{color:#0ff}.org-variable-name{color:sienna}.org-vhlXdefault{background-color:#ff0}.org-warning{color:#ff8c00;font-weight:700}.org-warning-1{color:red;font-weight:700}.org-wgrep{color:#fff;background-color:#228b22}.org-wgrep-delete{color:pink;background-color:#228b22}.org-wgrep-done{color:#00f}.org-wgrep-file{color:#fff;background-color:#228b22}.org-wgrep-reject{color:red;font-weight:700}.org-which-key-command-description{color:#00f}.org-which-key-docstring{color:#b22222}.org-which-key-group-description{color:#a020f0}.org-which-key-highlighted-command{color:#00f;text-decoration:underline}.org-which-key-key{color:#008b8b}.org-which-key-local-map-description{color:#00f}.org-which-key-note,.org-which-key-separator{color:#b22222}.org-which-key-special-key{color:#008b8b;font-weight:700}.org-whitespace-big-indent{color:#b22222;background-color:red}.org-whitespace-empty{color:#b22222;background-color:#ff0}.org-whitespace-hspace{color:#d3d3d3;background-color:#cdc9a5}.org-whitespace-indentation{color:#b22222;background-color:#ff0}.org-whitespace-line{color:violet;background-color:#333}.org-whitespace-newline{color:#d3d3d3}.org-whitespace-space{color:#d3d3d3;background-color:#ffffe0}.org-whitespace-space-after-tab{color:#b22222;background-color:#ff0}.org-whitespace-space-before-tab{color:#b22222;background-color:#ff8c00}.org-whitespace-tab{color:#d3d3d3;background-color:beige}.org-whitespace-trailing{color:#ff0;background-color:red;font-weight:700}.org-widget-button{font-weight:700}.org-widget-button-pressed{color:red}.org-widget-documentation{color:#006400}.org-widget-field{background-color:#d9d9d9}.org-widget-inactive{color:#7f7f7f}.org-widget-single-line-field{background-color:#d9d9d9}.org-window-divider{color:#999}.org-window-divider-first-pixel{color:#ccc}.org-window-divider-last-pixel{color:#666}a{color:inherit;background-color:inherit;font:inherit;text-decoration:inherit}a:hover{text-decoration:underline}body{width:95%;margin:2% auto;font-size:14px;line-height:1.4em;font-family:Georgia,serif;color:#333}@media screen and (min-width:600px){body{font-size:18px}}@media screen and (min-width:910px){body{width:900px}}::selection{background:#d6edff}p{margin:1em auto}dl,ol,ul{margin:0 auto}.title{text-align:center;margin:.8em auto;color:#000}.subtitle{text-align:center;font-size:1.1em;line-height:1.4;font-weight:700;margin:1em auto}.abstract{margin:auto;width:80%;font-style:italic}.abstract p:last-of-type:before{content:"    ";white-space:pre}.status{font-size:90%;margin:2em auto}[class^=section-number-]{margin-right:.5em}[id^=orgheadline]{clear:both}#footnotes{font-size:90%}.footpara{display:inline;margin:.2em auto}.footdef{margin-bottom:1em}.footdef sup{padding-right:.5em}a{color:#527d9a;text-decoration:none}a:hover{color:#035;border-bottom:1px dotted}figure{padding:0;margin:1em auto;text-align:center}img{max-width:100%;vertical-align:middle}.MathJax_Display{margin:0!important;width:90%!important}h1,h2,h3,h4,h5,h6{color:#a5573e;line-height:1em;font-family:Helvetica,sans-serif}h1,h2,h3{line-height:1.4em}h4,h5,h6{font-size:1em}@media screen and (min-width:600px){h1{font-size:2em}h2{font-size:1.5em}h3{font-size:1.3em}h1,h2,h3{line-height:1.4em}h4,h5,h6{font-size:1.1em}}dt{font-weight:700}table{margin:1em auto;border-top:2px solid;border-bottom:2px solid;border-collapse:collapse}thead{border-bottom:2px solid}table td+td,table th+th{border-left:1px solid grey}table tr{border-top:1px solid #d3d3d3}td,th{padding:.3em .6em;vertical-align:middle}caption.t-above{caption-side:top}caption.t-bottom{caption-side:bottom}caption{margin-bottom:.3em}figcaption{margin-top:.3em}th.org-center,th.org-left,th.org-right{text-align:center}td.org-right{text-align:right}td.org-left{text-align:left}td.org-center{text-align:center}blockquote{margin:1em 2em;padding-left:1em;border-left:3px solid #ccc}kbd{background-color:#f7f7f7;font-size:80%;margin:0 .1em;padding:.1em .6em}.todo{background-color:red;color:#fff;padding:.1em .3em;border-radius:3px;background-clip:padding-box;font-size:80%;font-family:Lucida Console,monospace;line-height:1}.done{background-color:green;color:#fff;padding:.1em .3em;border-radius:3px;background-clip:padding-box;font-size:80%;font-family:Lucida Console,monospace;line-height:1}.priority{color:orange;font-family:Lucida Console,monospace}#table-of-contents li{clear:both}.tag{font-family:Lucida Console,monospace;font-size:.7em;font-weight:400}.tag span{padding:.3em;float:right;margin-right:.5em;border:1px solid #bbb;border-radius:3px;background-clip:padding-box;color:#333;background-color:#eee;line-height:1}.timestamp{color:#bebebe;font-size:90%}.timestamp-kwd{color:#5f9ea0}.org-right{margin-left:auto;margin-right:0;text-align:right}.org-left{margin-left:0;margin-right:auto;text-align:left}.org-center{margin-left:auto;margin-right:auto;text-align:center}.underline{text-decoration:underline}#postamble p,#preamble p{font-size:90%;margin:.2em}p.verse{margin-left:3%}:not(pre)>code{padding:2px 5px;margin:auto 1px;border:1px solid #ddd;border-radius:3px;background-clip:padding-box;color:#333;font-size:80%}.org-src-container{border:1px solid #ccc;box-shadow:3px 3px 3px #eee;font-family:Lucida Console,monospace;font-size:80%;margin:1em auto;padding:.1em .5em;position:relative}.org-src-container>pre{overflow:auto}.org-src-container>pre:before{display:block;position:absolute;background-color:#b3b3b3;top:0;right:0;padding:0 .5em;border-bottom-left-radius:8px;border:0;color:#fff;font-size:80%}.org-src-container>pre.src-sh:before{content:"sh"}.org-src-container>pre.src-bash:before{content:"bash"}.org-src-container>pre.src-emacs-lisp:before{content:"Emacs Lisp"}.org-src-container>pre.src-R:before{content:"R"}.org-src-container>pre.src-cpp:before{content:"C++"}.org-src-container>pre.src-c:before{content:"C"}.org-src-container>pre.src-html:before{content:"HTML"}.org-src-container>pre.src-javascript:before,.org-src-container>pre.src-js:before{content:"Javascript"}// More languages 0% http://orgmode.org/worg/org-contrib/babel/languages.html .org-src-container>pre.src-abc:before{content:"ABC"}.org-src-container>pre.src-asymptote:before{content:"Asymptote"}.org-src-container>pre.src-awk:before{content:"Awk"}.org-src-container>pre.src-C:before{content:"C"}.org-src-container>pre.src-calc:before{content:"Calc"}.org-src-container>pre.src-clojure:before{content:"Clojure"}.org-src-container>pre.src-comint:before{content:"comint"}.org-src-container>pre.src-css:before{content:"CSS"}.org-src-container>pre.src-D:before{content:"D"}.org-src-container>pre.src-ditaa:before{content:"Ditaa"}.org-src-container>pre.src-dot:before{content:"Dot"}.org-src-container>pre.src-ebnf:before{content:"ebnf"}.org-src-container>pre.src-forth:before{content:"Forth"}.org-src-container>pre.src-F90:before{content:"Fortran"}.org-src-container>pre.src-gnuplot:before{content:"Gnuplot"}.org-src-container>pre.src-haskell:before{content:"Haskell"}.org-src-container>pre.src-io:before{content:"Io"}.org-src-container>pre.src-java:before{content:"Java"}.org-src-container>pre.src-latex:before{content:"LaTeX"}.org-src-container>pre.src-ledger:before{content:"Ledger"}.org-src-container>pre.src-ly:before{content:"Lilypond"}.org-src-container>pre.src-lisp:before{content:"Lisp"}.org-src-container>pre.src-makefile:before{content:"Make"}.org-src-container>pre.src-matlab:before{content:"Matlab"}.org-src-container>pre.src-max:before{content:"Maxima"}.org-src-container>pre.src-mscgen:before{content:"Mscgen"}.org-src-container>pre.src-Caml:before{content:"Objective"}.org-src-container>pre.src-octave:before{content:"Octave"}.org-src-container>pre.src-org:before{content:"Org"}.org-src-container>pre.src-perl:before{content:"Perl"}.org-src-container>pre.src-picolisp:before{content:"Picolisp"}.org-src-container>pre.src-plantuml:before{content:"PlantUML"}.org-src-container>pre.src-python:before{content:"Python"}.org-src-container>pre.src-ruby:before{content:"Ruby"}.org-src-container>pre.src-sass:before{content:"Sass"}.org-src-container>pre.src-scala:before{content:"Scala"}.org-src-container>pre.src-scheme:before{content:"Scheme"}.org-src-container>pre.src-screen:before{content:"Screen"}.org-src-container>pre.src-sed:before{content:"Sed"}.org-src-container>pre.src-shell:before{content:"shell"}.org-src-container>pre.src-shen:before{content:"Shen"}.org-src-container>pre.src-sql:before{content:"SQL"}.org-src-container>pre.src-sqlite:before{content:"SQLite"}.org-src-container>pre.src-stan:before{content:"Stan"}.org-src-container>pre.src-vala:before{content:"Vala"}.org-src-container>pre.src-axiom:before{content:"Axiom"}.org-src-container>pre.src-browser:before{content:"HTML"}.org-src-container>pre.src-cypher:before{content:"Neo4j"}.org-src-container>pre.src-elixir:before{content:"Elixir"}.org-src-container>pre.src-request:before{content:"http"}.org-src-container>pre.src-ipython:before{content:"iPython"}.org-src-container>pre.src-kotlin:before{content:"Kotlin"}.org-src-container>pre.src-Flavored Erlang lfe:before{content:"Lisp"}.org-src-container>pre.src-mongo:before{content:"MongoDB"}.org-src-container>pre.src-prolog:before{content:"Prolog"}.org-src-container>pre.src-rec:before{content:"rec"}.org-src-container>pre.src-ML sml:before{content:"Standard"}.org-src-container>pre.src-Translate translate:before{content:"Google"}.org-src-container>pre.src-typescript:before{content:"Typescript"}.org-src-container>pre.src-rust:before{content:"Rust"}.inlinetask{background:#ffc;border:2px solid grey;margin:10px;padding:10px}#org-div-home-and-up{font-size:70%;text-align:right;white-space:nowrap}.linenr{font-size:90%}.code-highlighted{background-color:#ff0}#bibliography{font-size:90%}#bibliography table{width:100%}.creator{display:block}@media screen and (min-width:600px)
+
+
+
+
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+pre,
+code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+pre {
+  padding: .5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
+}
+
+a,
+a:visited {
+  color: #3498db;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #2980b9;
+}
+
+.modest-no-decoration {
+  text-decoration: none;
+}
+
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  line-height: 1.85;
+}
+
+p,
+.modest-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+h1,
+.modest-h1,
+h2,
+.modest-h2,
+h3,
+.modest-h3,
+h4,
+.modest-h4 {
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+h1,
+.modest-h1 {
+  margin-top: 0;
+  font-size: 3.998rem;
+}
+
+h2,
+.modest-h2 {
+  font-size: 2.827rem;
+}
+
+h3,
+.modest-h3 {
+  font-size: 1.999rem;
+}
+
+h4,
+.modest-h4 {
+  font-size: 1.414rem;
+}
+
+h5,
+.modest-h5 {
+  font-size: 1.121rem;
+}
+
+h6,
+.modest-h6 {
+  font-size: .88rem;
+}
+
+small,
+.modest-small {
+  font-size: .707em;
+}
+
+/* https://github.com/mrmrs/fluidity */
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+
+@import url(http://fonts.googleapis.com/css?family=Arimo:700,700italic);
+
+html {
+  font-size: 18px;
+  max-width: 100%;
+}
+
+body {
+  color: #444;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 48rem;
+  line-height: 1.45;
+  padding: .25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arimo, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 2px solid #fafafa;
+  margin-bottom: 1.15rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+blockquote {
+  border-left: 8px solid #fafafa;
+  padding: 1rem;
+}
+
+pre,
+code {
+  background-color: #fafafa;
+}
+
+
+/;]]>;/-->
+</style>
+
+<script type="text/javascript" src="https://orgmode.org/org-info.js">
+/**
+ *
+ * @source: https://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in https://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in https://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "3");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Visual Analytics</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orged59f5d">1. HouseKeeping</a></li>
+<li><a href="#org0af6ce5">2. Textbooks</a></li>
+<li><a href="#org7c83921">3. (Wk 1) Introduction to Data Visualisation</a>
+<ul>
+<li><a href="#orgc2749c1">3.1. Lecture</a></li>
+<li><a href="#org267475c">3.2. Tutorial</a>
+<ul>
+<li><a href="#org61fd65e">3.2.1. Using <i>Zathura</i></a></li>
+<li><a href="#org0ba00d8">3.2.2. Question 1</a></li>
+<li><a href="#org80927e3">3.2.3. Question 2</a></li>
+<li><a href="#orgb95c6fc">3.2.4. Question 3</a></li>
+<li><a href="#orge5df9bc">3.2.5. Question 4</a></li>
+<li><a href="#org23fee91">3.2.6. Question 5</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org06d3904">4. (Wk 2) Human Visual Perception</a>
+<ul>
+<li><a href="#org71b0d83">4.1. Lecture&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#org0f8df6b">4.2. Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></a>
+<ul>
+<li><a href="#org990880d">4.2.1. All Exercises</a></li>
+<li><a href="#org286e58a">4.2.2. Question 1</a></li>
+<li><a href="#orgb51f495">4.2.3. Question 2</a></li>
+<li><a href="#orge36a5ff">4.2.4. Question 3</a></li>
+<li><a href="#orgdb1421e">4.2.5. Question 4</a></li>
+<li><a href="#orgcf137c5">4.2.6. Question 5</a></li>
+<li><a href="#orgb419ad7">4.2.7. Question 6</a></li>
+<li><a href="#org96a79dc">4.2.8. Question 7</a></li>
+<li><a href="#org829ef46">4.2.9. Question 8</a></li>
+<li><a href="#orgc02e33f">4.2.10. Question 9</a></li>
+<li><a href="#org3a34819">4.2.11. Question 10</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9d9bc07">5. (Wk 3) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a>
+<ul>
+<li><a href="#orge587601">5.1. Relational Data Visualisation – Part I</a></li>
+<li><a href="#orgf69811f">5.2. Introduction to Graph Visualisation</a></li>
+<li><a href="#org7424376">5.3. Tree Visualisation</a></li>
+<li><a href="#org64c6dbe">5.4. <span class="todo TODO">TODO</span> Tutorial</a>
+<ul>
+<li><a href="#orgf4f9e5d">5.4.1. Trees in Org Mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8f5506f">6. (Wk 4) Relational Data Visualisation (Part I)</a>
+<ul>
+<li><a href="#orgc662012">6.1. <span class="todo TODO">TODO</span> Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org8f0a56c">7. Exporting HTML Files&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a></li>
+<li><a href="#org7a59784">8. References</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orged59f5d" class="outline-2">
+<h2 id="orged59f5d"><span class="section-number-2">1</span> HouseKeeping</h2>
+</div>
+<div id="outline-container-org0af6ce5" class="outline-2">
+<h2 id="org0af6ce5"><span class="section-number-2">2</span> Textbooks</h2>
+</div>
+<div id="outline-container-org7c83921" class="outline-2">
+<h2 id="org7c83921"><span class="section-number-2">3</span> (Wk 1) Introduction to Data Visualisation</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgc2749c1" class="outline-3">
+<h3 id="orgc2749c1"><span class="section-number-3">3.1</span> Lecture</h3>
+</div>
+<div id="outline-container-org267475c" class="outline-3">
+<h3 id="org267475c"><span class="section-number-3">3.2</span> Tutorial</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/01_Tutorial.pdf">01. Tutorial Sheet</a></li>
+</ul>
+</div>
+<div id="outline-container-org61fd65e" class="outline-4">
+<h4 id="org61fd65e"><span class="section-number-4">3.2.1</span> Using <i>Zathura</i></h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+When using <i>Zathura</i> the copied text will be placed in the primary <code>*</code> register
+not the <code>+</code> register, so paste it in with <code>" * p</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-org0ba00d8" class="outline-4">
+<h4 id="org0ba00d8"><span class="section-number-4">3.2.2</span> Question 1</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org5c9cf6d"></a>Problem<br />
+<div class="outline-text-5" id="text-3-2-2-1">
+<p>
+Visit the website: <a href="http://www.visualcomplexity.com/vc/">http://www.visualcomplexity.com/vc/</a>. Have a close look at the
+available visualisation techniques. In your opinion, which techniques are among
+the most useful? Or which one is the most pretty visual display? Explain and
+justify your preference. Note: there is no right or wrong answer in this question.
+</p>
+</div>
+</li>
+<li><a id="orgee1bbb8"></a>Working<br />
+<div class="outline-text-5" id="text-3-2-2-2">
+<p>
+<a href="http://www.visualcomplexity.com/vc/project.cfm?id=970">This Visual</a> from the <i><a href="https://ai.googleblog.com/2015/07/deepdream-code-example-for-visualizing.html">Google AI</a></i> blog highlighting the important features
+detected by a neural network is a unique insight into the <i>predictive modelling</i>
+technique. It is not easy to understand the behaviour of a Neural Network and
+this visual offers a uniqe insight that could not easily be understood:
+</p>
+
+
+
+<div class="figure">
+<p><img src="Introduction_to_Data_Visualisation_(Wk_1)/2020-03-04_20-04-32_image00.jpg" alt="2020-03-04_20-04-32_image00.jpg" width="400px" />
+</p>
+</div>
+
+
+
+
+
+<p>
+<a href="http://www.visualcomplexity.com/vc/project.cfm?id=9">This Visual</a> however is arguably one of the most visually striking because of the
+vibrant colour choice:
+</p>
+
+
+
+<div class="figure">
+<p><img src="Introduction_to_Data_Visualisation_(Wk_1)/2020-03-04_18-59-10_9_big02.jpg" alt="2020-03-04_18-59-10_9_big02.jpg" width="400px" />
+</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org80927e3" class="outline-4">
+<h4 id="org80927e3"><span class="section-number-4">3.2.3</span> Question 2</h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org31b2b27"></a>Problem<br />
+<div class="outline-text-5" id="text-3-2-3-1">
+<p>
+Explore the online demo: <a href="http://graphs.gapminder.org/world/">http://graphs.gapminder.org/world/</a>. What have you
+discovered or found from the visualization of the “Wealth and Health of Nations
+data set”? E.g. is there any correlation between GDP and Life Expectancy? etc.
+</p>
+</div>
+</li>
+<li><a id="org4c1647b"></a>Working<br />
+<div class="outline-text-5" id="text-3-2-3-2">
+<p>
+There is a clear positive correlation between income and life expectancy, other
+features that are readily observable are:
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org9b44d45"></a>Regions<br />
+<div class="outline-text-6" id="text-3-2-3-2-1">
+<p>
+It can be observed that Europe is a wealthy region (Yellow)  while Africa and
+Asia are poor regions (cyan, red))
+</p>
+
+<p>
+This could be further observed to be a function of distance from the
+equator, generally regions lose to the equator like Europe, UK, USA are quite
+wealthy where as regions nearer the equator are more likely to be impovrished.
+</p>
+
+<p>
+Exceptions to this are:
+</p>
+
+<ul class="org-ul">
+<li>Australia due to the rich resources such as coal/uranium and the head start in
+education owing to the European Descent.</li>
+<li>Russia is impovrished because the October Revolutions that followed the first</li>
+</ul>
+<p>
+World War greatly modified there economy relative to the rest of Europe, this
+decayed into authoritarianism and eventually extreme wealth inequality (with the
+rise of homelessness and oligarchs) following the collapse of the Soviet Union
+at the end of the cold-war.
+</p>
+
+<p>
+This could be a functoin of temperature, a higher temperature may lead to :
+</p>
+
+<ul class="org-ul">
+<li>increased spread of bacterial disease</li>
+<li>increased perishability of food</li>
+</ul>
+</div>
+</li>
+<li><a id="orge17c080"></a>Population<br />
+<div class="outline-text-6" id="text-3-2-3-2-2">
+<p>
+It isn't possible to say much about the influence population has because the
+population is measured by region without taking account of size (e.g. China is
+quite large while Vietnam is relatively small) or habitability (e.g. Japan is
+very mountainous and hard to farm or ranch on).
+</p>
+
+<p>
+This is made more difficult because the income is measured per
+person but the population is not the relative space that person might enjoy
+(i.e. the population density), the GDP per country rather than capita might be
+more instructive.
+</p>
+</div>
+</li>
+<li><a id="org89bc0f9"></a>Time Trends<br />
+<div class="outline-text-6" id="text-3-2-3-2-3">
+<p>
+It appears that Europe (and Japan) have always enjoyed a higher GDP per capita
+while asia and Africa appear to lag in this respect.
+</p>
+
+<p>
+Other than the "reshuffling" caused by the Great Depression, WW I, WW II and the
+collapse of the soviet union Europe has always enjoyed a higher GDP hence a
+higher life expectancy.
+</p>
+
+<p>
+During the first two world wars (with the exception of Russia and Poland
+respectively, for obvious reasons) it appears that the influence of currency on
+life expectancy became even stronger, somewhat unfortunate for other regions
+given that these were European wars. The great depression also showed a similar
+effect on this correlation, going from a linear trend to an exponential.
+</p>
+</div>
+</li>
+<li><a id="orgd463583"></a>China as an Exception<br />
+<div class="outline-text-6" id="text-3-2-3-2-4">
+<p>
+China appears to not follow a correlation between GDP and Life Expectancy until
+the new milennia, life expectancy rises following the second world war despite
+no change in GDP per Capita.
+</p>
+
+<p>
+In the 70's China begins to follow this trend moving in a diagonal fashion
+indicative of a correlation, this is presumably due to manufacturing exported to
+China perhaps due to the development of the micro-processor in the US.
+</p>
+
+<p>
+In the 2000's China began to improve GDP per capita  more significantly, perhaps
+due to free market policies, and followed a trend where GDP per capita would
+strongly correlated with life expectancy.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb95c6fc" class="outline-4">
+<h4 id="orgb95c6fc"><span class="section-number-4">3.2.4</span> Question 3</h4>
+<div class="outline-text-4" id="text-3-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgd6f3216"></a>Problem<br />
+<div class="outline-text-5" id="text-3-2-4-1">
+<p>
+Using a search engine, explore 3 applications/projects/tools that use
+visualisations. You are required to write a short summary about the
+applications/projects/tools. Why do you think they are significant? What are good
+and bad about these applications/projects/tools? Etc.
+</p>
+</div>
+</li>
+<li><a id="org3d4ff98"></a>Working<br />
+<ol class="org-ol">
+<li><a id="org6e085d9"></a>Gnome's Baobab / WinDirStat / KDirStat<br />
+<div class="outline-text-6" id="text-3-2-4-2-1">
+<p>
+<a href="https://wiki.gnome.org/action/show/Apps/DiskUsageAnalyzer?action=show&amp;redirect=Apps%2FBaobab">Gnome' <i>Baobab</i></a>, <a href="http://kdirstat.sourceforge.net/"><i>KDirStat</i></a> and <a href="https://bitbucket.org/windirstat/windirstat/src/default/"><i>WinDirStat</i></a> are disk usage analysers for <a href="https://www.gnome.org/">Gnome</a>,
+<a href="https://kde.org/">KDE</a> and <i>Windows</i> respectively. <a id="org69f611d"></a>
+</p>
+
+
+
+<div class="figure">
+<p><img src="Attachments/VisualAnalytics/BaobabRing.png" alt="BaobabRing.png" width="400px" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="Attachments/VisualAnalytics/BaobabTreemap.png" alt="BaobabTreemap.png" width="400px" />
+</p>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="orga47a8eb"></a>Significance<br />
+<div class="outline-text-7" id="text-3-2-4-2-1-1">
+<p>
+All three tools use a descending list of directories with a bar chart indicating
+the proportion of disk space consumed by that directory, to the right is a
+graphic shosing this distribution.
+</p>
+</div>
+</li>
+<li><a id="org9bc829b"></a>Good Design<br />
+<div class="outline-text-7" id="text-3-2-4-2-1-2">
+<p>
+All three tools have correctly implement an ordered list and bar chart, making
+it easy to understand and manage disk space on a system.
+</p>
+
+<p>
+Gnome's Baobab uses a ring chart with a popup overlay to describe the
+corresponding directory.
+</p>
+
+<p>
+This choice of graph makes it easy to understand which directories are consuming
+the most space while still having an overview of the structure of the
+directories, the popup prevents the graph from becoming too busy and showing
+unnecessary information.
+</p>
+
+<p>
+The ring chart will also re-centre following a selection of a directory allowing
+deeply nested structures to be understood easily.
+</p>
+</div>
+</li>
+<li><a id="orgede37c5"></a>Bad Design<br />
+<div class="outline-text-7" id="text-3-2-4-2-1-3">
+<p>
+Unfourtunately KDirstat and Windirstat only offer treemap visualisations, this
+choice of graph is vastly inferior to a ring chart because it can only clearly
+show a certain amount of information at an overview, it is difficult do
+understand deeply nested folder structures they won't re-generate the plot
+without rescanning the drive.
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org42b9f83"></a>GitHub Visualizer<br />
+<div class="outline-text-6" id="text-3-2-4-2-2">
+<p>
+<a href="http://ghv.artzub.com/#repo=ranger-assets&amp;climit=100&amp;user=ranger">http://ghv.artzub.com/#repo=ranger-assets&amp;climit=100&amp;user=ranger</a>
+</p>
+
+<p>
+The <a href="http://ghv.artzub.com/#repo=ranger-assets&amp;climit=100&amp;user=ranger">Github Visualiser </a>is a way of visualising the proportionate activity of
+various repositiories of various projects.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org273422d"></a>Significance<br />
+<div class="outline-text-7" id="text-3-2-4-2-2-1">
+<p>
+This provides a novel way to understand the:
+</p>
+
+<ul class="org-ul">
+<li>relative popularity of repos</li>
+<li>The language most composing a repo / project</li>
+<li>How Active a project is generally and over time.</li>
+</ul>
+</div>
+</li>
+<li><a id="org34d0219"></a>Good Design<br />
+<div class="outline-text-7" id="text-3-2-4-2-2-2">
+<p>
+Using Bubbles to illustrate the is the overall share of a repo in a project
+provides a quick understanding at a glance.
+</p>
+
+<p>
+Using a Time Series Chart over time is an easy way to show trends.
+</p>
+</div>
+</li>
+<li><a id="org48c33f3"></a>Bad Design<br />
+<div class="outline-text-7" id="text-3-2-4-2-2-3">
+<p>
+The visualisation is far too busy to understand what is going on, for instance
+the size of the bubbles are not made clear, are they popularity, size,
+frequency of commits or frequency of clones / pulls of the repo?
+</p>
+
+<p>
+For instance <a href="http://ghv.artzub.com/#repo=ranger-assets&amp;climit=100&amp;user=ranger">the visualisatoin</a> of one of my favourite pieces of software <a href="https://github.com/ranger/ranger">Ranger</a>
+is such that I can infer nothing from it other than the fact that the web page
+is written in HTML and the project is written in python, which is totally
+obvious and not particularly helpful to get a deeper understanding of the
+<i>Ranger</i> project as opposed to say the <a href="https://midnight-commander.org/">Midnight Commander Project</a>, although the
+<a href="http://ghv.artzub.com/#repo=mc&amp;climit=100&amp;user=MidnightCommander">visualisation for Midnight Commander</a> is significantly better and so this may be
+a scaling issue.
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org7a116d3"></a>Cancer Graphic<br />
+<div class="outline-text-6" id="text-3-2-4-2-3">
+<p>
+<a href="http://web.archive.org/web/20140526084103/http://www.cancerresearchuk.org:80/cancer-info/cancerstats/causes/attributable-risk/visualisation/">http://web.archive.org/web/20140526084103/http://www.cancerresearchuk.org:80/cancer-info/cancerstats/causes/attributable-risk/visualisation/</a>
+</p>
+
+<p>
+<a href="http://web.archive.org/web/20140801035734/http://publications.cancerresearchuk.org/downloads/product/CS_POSTER_ATTRIB.pdf">This Plot</a> <a href="Attachments/Statistics/CS_POSTER_ATTRIB.pdf">attached here</a> shows the attributes most likely to cause cancer:
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #4f97d7;">cd</span> /tmp
+<span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">wget "http://web.archive.org/web/20140801035734/http://publications.cancerresearchuk.org/downloads/product/CS_POSTER_ATTRIB.pdf"</span>
+command -v pdftoppm &gt;/dev/null 2&gt;&amp;1 || { <span style="color: #4f97d7;">echo</span> &gt;&amp;2 <span style="color: #2d9574;">"command -v foo &gt;/dev/null 2&gt;&amp;1 || { echo &gt;&amp;2 "</span>I require pdftoppm but its not installed.  Aborting.<span style="color: #2d9574;">"; exit 1; }I require foo but it's not installed.  Aborting."</span>; <span style="color: #4f97d7; font-weight: bold;">exit</span> 1; }
+pdftoppm CS_POSTER_ATTRIB.pdf  CS_POSTER_ATTRIB -png
+mv CS_POSTER*png ~/Notes/Org/Attachments/Statistics/
+ls ~/Notes/Org/Attachments/Statistics/CS_POSTER_ATT*png
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="Attachments/Statistics/CS_POSTER_ATTRIB-1.png" alt="CS_POSTER_ATTRIB-1.png" width="400px" />
+</p>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="org53a496f"></a>Significance<br />
+<div class="outline-text-7" id="text-3-2-4-2-3-1">
+<p>
+This visualisation is significant because it effectively describes both the magnitude
+and interaction of various risk factors and behaviours on the probability of
+developing cancer.
+</p>
+
+<p>
+Statistically this can be a very difficult thing to describe and explain but
+this graphic very clearly shows what to look out or
+</p>
+</div>
+</li>
+<li><a id="org69aef90"></a>Good Design<br />
+<div class="outline-text-7" id="text-3-2-4-2-3-2">
+<p>
+Having a key in the centre of the graph makes it very easy to determine what the
+individual elements of the visualisation mean.
+</p>
+
+<p>
+The relative size of individual risk factors means that at a galnce it is very
+easy to determine risk factors for cancer.
+</p>
+</div>
+</li>
+<li><a id="org583f538"></a>Bad Design<br />
+<div class="outline-text-7" id="text-3-2-4-2-3-3">
+<p>
+The graph unfourtunately is a little busy but this doesn't appear to be in a way
+that is disproportionate to the amount of information conveyed.
+</p>
+</div>
+</li>
+<li><a id="orge74f994"></a>Inferences<br />
+<div class="outline-text-7" id="text-3-2-4-2-3-4">
+<p>
+An interesting component of this visualisation is that it clearly shows
+interactions of various items, for example the following are large to moderate
+risk factors for cancer generaly:
+</p>
+
+<ul class="org-ul">
+<li>Overweight (BMI &gt; 25 kg / m\(^2\), distninct from obesity which is $&asymp; &gt; 30)</li>
+<li>Inactivity</li>
+</ul>
+
+<p>
+While HRT is a very small risk factor for all types of cancer.
+</p>
+
+<p>
+This clearly illustrates that HRT may be medically appropriate in men despite
+the historical belive that such treamtent was correlated with prostate cancer in
+men (<a href="#citeproc_bib_item_1">Bell et al. 2018</a>) . Recent studies suggest that this might not be the case
+(<a href="#citeproc_bib_item_2">Loeb et al. 2017</a>)  and HRT is (somewhat obviously) correlated with increased
+physical activity, weight loss (<a href="#citeproc_bib_item_4">Traish 2014</a>) and general health metrics
+(<a href="#citeproc_bib_item_3">Saad et al. 2020</a>) .
+</p>
+
+<p>
+This visualisation clearly shows that this treatment might generally lower
+the risk of cancer in men and provides a simple way to convey
+complex interactions between attributes and the complex statistics involved in
+this type of research in a way that clearly shows the important facts of the matter..
+</p>
+
+<p>
+Moreover this plot also only shows HRT as a risk factor in cancers that
+tend to overwhelmingly affect women, a distinction that is very important
+in that area of medical science.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orge5df9bc" class="outline-4">
+<h4 id="orge5df9bc"><span class="section-number-4">3.2.5</span> Question 4</h4>
+<div class="outline-text-4" id="text-3-2-5">
+</div>
+<ol class="org-ol">
+<li><a id="org20f6264"></a>Problem<br />
+<div class="outline-text-5" id="text-3-2-5-1">
+<p>
+For the following visualisations, in your opinion, are they good or bad; Justify
+the answer:
+</p>
+</div>
+</li>
+<li><a id="org6e0cfa3"></a>Working<br />
+<ol class="org-ol">
+<li><a id="org80731c6"></a>Plot A<br />
+<div class="outline-text-6" id="text-3-2-5-2-1">
+
+<div class="figure">
+<p><img src="Attachments/VisualAnalytics/PlotATut1.png" alt="PlotATut1.png" width="400px" />
+</p>
+</div>
+
+
+<p>
+This plot is overly busy but also not very descriptive, meaning at a glance it
+is not possible to determine what the differences between different regions
+actually are.
+</p>
+
+<p>
+Upon closer inspection it is not clear what the bar charts are trying to
+illustrate, clearly the venn diagram is trying to illustrate the proportion of
+communication and overlap, relative to thhe number of users. This is an
+interesting way to try and show the interactions between the different
+communication strategies but the choice of a Venn diagram was misguided. A venn
+diagram can only represent 3 sets with circles <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> and this has seemingly
+artificially restricted the number of potential behavriou types that
+the plot has tried to convey to such an extent that they may as well be
+disregarded entirely because they are just not descriptive enough to understand.
+</p>
+
+<p>
+Interestingly Eastern countries use a combination of content/messges while
+western countries tend to use or the other, this could be related to the
+pictographical written laguage implemented by Eastern / Asian Countries and
+could lead to insights on human behaviour, unfourtunately the plot does not
+clearly describe the meaning of the colours and so no inferences can be easily made.
+</p>
+
+<p>
+Moreover the size of the circles are relative to the total number of users, this
+is somewhat misleading because the plot shows that 33% of the USA uses Social
+Media while only 15% of China uses social media, countries/regions are not
+uniformally distributed or constructed so choosing to use regions as a delimiter
+when using absolute size of users is potentially misleading. This is partially
+addressed however by the <i>Global Social Network penetration</i> bar chart below the plot.
+</p>
+</div>
+</li>
+<li><a id="org78e861d"></a>Plot B<br />
+<div class="outline-text-6" id="text-3-2-5-2-2">
+
+<div class="figure">
+<p><img src="Attachments/VisualAnalytics/PlotBTut1.png" alt="PlotBTut1.png" width="400px" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>The amount of text overlayed on this graph makes it difficult to read.</li>
+<li>The Growth rate of the publication should not be represented as a line because</li>
+</ul>
+<p>
+it indicates some type of continuous connection between the universities, it
+should be represented as either another column or ideally a seperate time series
+plot should be produced:
+</p>
+<ul class="org-ul">
+<li>Such a plot should show the market share and allow the growth rate to be</li>
+</ul>
+<p>
+interpreted from the slope of the line in an organic fashion, that way the
+different universities could have both market share and growth rate compared
+between each other without trying to mentally visualise a cumullative summation.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org23fee91" class="outline-4">
+<h4 id="org23fee91"><span class="section-number-4">3.2.6</span> Question 5</h4>
+<div class="outline-text-4" id="text-3-2-6">
+<p>
+Visualisation of the CoronaVirus:
+</p>
+<ul class="org-ul">
+<li><a href="http://rocs.hu-berlin.de/viz/sgb/">http://rocs.hu-berlin.de/viz/sgb/</a></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgd5e807d"></a>Problem<br />
+<div class="outline-text-5" id="text-3-2-6-1">
+<p>
+Optional: If you still have time, play around this website to see how visualization
+help to find patterns: <a href="http://rocs.hu-berlin.de/viz/sgb/">http://rocs.hu-berlin.de/viz/sgb/</a> (Coronavirus Geographic
+and Network visualisations)
+</p>
+</div>
+</li>
+<li><a id="orge70c71d"></a>Working<br />
+<div class="outline-text-5" id="text-3-2-6-2">
+<p>
+:HideRef:
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org06d3904" class="outline-2">
+<h2 id="org06d3904"><span class="section-number-2">4</span> (Wk 2) Human Visual Perception</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Refer to:
+</p>
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/02_Human_Perception.pdf">Lecture #2</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/02_Tutorial.pdf">Tutorial #2</a></li>
+</ul>
+</div>
+<div id="outline-container-org71b0d83" class="outline-3">
+<h3 id="org71b0d83"><span class="section-number-3">4.1</span> Lecture&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
+</div>
+<div id="outline-container-org0f8df6b" class="outline-3">
+<h3 id="org0f8df6b"><span class="section-number-3">4.2</span> Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+The Tutorial is <a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/02_Human_Perception.pdf">here</a>
+</p>
+</div>
+<div id="outline-container-org990880d" class="outline-4">
+<h4 id="org990880d"><span class="section-number-4">4.2.1</span> All Exercises</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<p>
+Tutorial Exercises:
+</p>
+<ol class="org-ol">
+<li>What are the differences between perception and cognition?</li>
+<li>Why human vision is important for data analysis? What are the pros and cons
+of using human visual system versus machine or automated analysis?</li>
+<li>Why colours are important in visualisation?</li>
+<li>List at least 5 main things that we should be aware when using colours in
+visualisation.</li>
+<li>Using a search engine, explore 3 good visualisations that use colours to
+represent information. Why are the colours used effectively in these
+visualisations?</li>
+<li>Test your eye with colours: <a href="http://enchroma.com/test/instructions/">http://enchroma.com/test/instructions/</a></li>
+<li>Why do you think pre-attentive processing is important in visualisation? Can
+we combine features (e.g. colour, size and shape) to enhance pre-attentive
+analysis?</li>
+<li>What are the main aspects of Gestalt Laws?</li>
+<li>Read the slide “Effective Encoding of Data” in Lecture Note 2
+(<a href="https://www.lucypark.kr/courses/2015-ba/visualization1.html">https://www.lucypark.kr/courses/2015-ba/visualization1.html</a>), if a dataset
+has quantitative value, what 5 most important attributes or encoding should
+we consider? Similarly, if a dataset has nominal value, what 5 most important
+attributes or encoding should we consider?</li>
+<li>Read the following article: <a href="http://www.csc.ncsu.edu/faculty/healey/PP/index.html">http://www.csc.ncsu.edu/faculty/healey/PP/index.html</a></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org286e58a" class="outline-4">
+<h4 id="org286e58a"><span class="section-number-4">4.2.2</span> Question 1</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<blockquote>
+<ul class="org-ul">
+<li>1. What are the differences between perception and cognition?</li>
+</ul>
+</blockquote>
+
+<p>
+That basic distinction between pereption and cognition is that perception is
+tied to observation and sensation whereas cognition is related to information is
+related to the understanding and processing of ideas.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org3bad2b5"></a>Perception<br />
+<div class="outline-text-5" id="text-4-2-2-1">
+<p>
+Perception is identifying and understanding a sensory input, such as perceiving:
+</p>
+
+<ul class="org-ul">
+<li>an angle as obtuse or acute</li>
+<li>an object to be round or sharp by touch or sight</li>
+<li>an accent to be British, German, Chinese etc. by sound.</li>
+<li>an object to be falling off the table.</li>
+</ul>
+
+<p>
+Perception is inherently dependent on <i>experience</i>, for example a person without
+exposure may not be able to perceive differences in accent.
+</p>
+
+<p>
+It is unlikely that two different people will perceive things in the exact same way.
+</p>
+
+<p>
+Generally perception is not something done consciously.
+</p>
+</div>
+</li>
+<li><a id="org9d3aa67"></a>Cognition<br />
+<div class="outline-text-5" id="text-4-2-2-2">
+<p>
+Cognition is processing information in an analytical way, working through a
+problem using prior training, it is done consciously.
+</p>
+
+<p>
+Examples of cognition include:
+</p>
+
+<ul class="org-ul">
+<li>Determing the shape of a plot follows a certain model (e.g. polynomial,
+exponential/logarithmic, ARIMA, White Noise, etc.)</li>
+<li>Recognising an object to be a 12 mm nut from brake caliper as opposed to a
+small metallic object.</li>
+<li>Deciding that a person probably spent time in particular countries or regions
+given the languages they speak and accent they have.</li>
+<li>Determining that an object that is falling can be modelled with calculus.</li>
+</ul>
+
+<p>
+Cognition depends on training, the majority of people can learn to work through
+a problem in a particular way.
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb51f495" class="outline-4">
+<h4 id="orgb51f495"><span class="section-number-4">4.2.3</span> Question 2</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<blockquote>
+<ul class="org-ul">
+<li>2. Why human vision is important for data analysis? What are the pros and cons
+of using human visual system versus machine or automated analysis?</li>
+</ul>
+</blockquote>
+
+
+<p>
+Human vision is important for data analysis because often times there is too
+much data to understand just by looking at it. More over inferences from that
+data often cannot be made without visualising or summarising it.
+</p>
+
+<p>
+Often it is possible to perceive change by looking at a visualisation but not
+possible when looking at raw data, for example look at the following plot:
+than trying to analytically derive a process, for example the following is easy
+to perceive:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(tidyverse)
+x <span style="color: #a45bad;">&lt;-</span> 1:20
+y <span style="color: #a45bad;">&lt;-</span> x*3+2 + rnorm(length(x), 0, 15)
+data <span style="color: #a45bad;">&lt;-</span> data.frame(x,y)
+
+
+ggplot(data, aes(x = x, y = y, col = y)) +
+             geom_point() +
+             guides(col = <span style="color: #ce537a; font-weight: bold;">FALSE</span>) +
+             theme_classic() +
+             stat_smooth(method = <span style="color: #2d9574;">"lm"</span>, lty = 2, col = <span style="color: #2d9574;">"purple"</span>) +
+             labs(title = <span style="color: #2d9574;">"Arbitrary time Series"</span>, x = <span style="color: #2d9574;">"Time"</span>, y = <span style="color: #2d9574;">"Response"</span>)
+
+
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="wk3TimeSeries.png" alt="wk3TimeSeries.png" width="250px" />
+</p>
+</div>
+
+<p>
+An individual can clearly perceive that there is a linear trend with a rate of
+about 3 and upon closer inspection the standard error
+shading shows that the data is roughly \(\pm\) 15.
+</p>
+
+<p>
+Looking at the raw data however:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">-0.3</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">-8.5</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">8.5</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">23.7</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-right">23.1</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-right">30.1</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+It would only be possible to determine that the rate is indeed linear as opposed
+to polynomial by performing a statistical test and the rate would need be determined
+Analytically by considering the residual:
+</p>
+
+
+\begin{align}
+w_0&=\frac{\sum_{i=1}^{n}[y_i]}{n}+\frac{w_1\sum_{i=1}^{n}[x_i]}{n} \label{valw0}\\
+w_1&=\frac{\sum_{i=1}^{n}[x_iy_i]-\frac{\sum_{n}^{i=1}[x_i]\sum_{n}^{i=1}[y_i]}{n}}{[\sum_{i=1}^{n}[(x_i)^2]+\frac{(\sum_{i=1}^{n}[x_i])^2}{n}]}
+\end{align}
+
+
+<p>
+Humans are good at relative value judgements but poor at absolute judgements,
+whereas computers are the opposite, our goal is to leverage those differences to
+our advantage.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgc5ff843"></a>Human Visual System and Automated Analysis<br />
+<div class="outline-text-5" id="text-4-2-3-1">
+<p>
+The pros and cons of Human Perception and Automated Analysis are best
+highlighted by considering the difficulties of unsupervised learning in the
+realm of Machine Learning.
+</p>
+
+<p>
+Unsupervised Machine Learning algorithms such as clustering and PCA (in 2 and 3
+dimensions obviously) are very easily performed by humans, but implementing such
+algorithms  automatically and analytically can be quite complex and in some
+cases resource intensive.
+</p>
+
+<p>
+This is very similar to the proximity <i>Gestalt</i> law discussed in question 8
+below at <a href="#org48bd23a">4.2.9</a>.
+</p>
+
+<p>
+An advantage to the Human visual system is that the analysis can be done rapidly
+and requires no prior programming and maybe to a degree a human can be
+influenced quite rapidly in how the data is analysed or perceived whereas
+programming a machine learning algorithm or even a deductive algorithm can be
+complex and time consuming.
+</p>
+
+<p>
+The advantage to using Automated analysis and algorithms is that an algorithm:
+</p>
+<ul class="org-ul">
+<li>is unbiased to the origins or nature of the data</li>
+<li>can be extended to disjoint, large data that might have patterns outside what
+humans would be expected to recognise</li>
+<li>can be extended to multiple dimensions
+<ul class="org-ul">
+<li>For example using KNN analysis might involve computing distances in higher dimensions</li>
+<li>Or interpreting data with many variables, PCA can `flatten` out variables
+that don't significantly contribute to the variance of the response.</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org145b3ec"></a>Summary<br />
+<div class="outline-text-6" id="text-4-2-3-1-1">
+<ul class="org-ul">
+<li>Humans can make rapid and accurate relative judgements but these judements are</li>
+</ul>
+<p>
+susceptible to bias and influence.
+</p>
+<ul class="org-ul">
+<li>Machines can make unbiased consistent judgements based on an algorithm (or</li>
+</ul>
+<p>
+atleast a machine learning algorithm) but cannot out of the box make a relative
+value judgement without human guidance.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orge36a5ff" class="outline-4">
+<h4 id="orge36a5ff"><span class="section-number-4">4.2.4</span> Question 3</h4>
+<div class="outline-text-4" id="text-4-2-4">
+<blockquote>
+<ul class="org-ul">
+<li>3. Why colours are important in visualisation?</li>
+</ul>
+</blockquote>
+
+<p>
+Colours are important because they can be used to illustrate a discrete or
+continuous dimension of data, this is particularly useful for comparing
+different relationships as they relate to different populations.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdb1421e" class="outline-4">
+<h4 id="orgdb1421e"><span class="section-number-4">4.2.5</span> Question 4</h4>
+<div class="outline-text-4" id="text-4-2-5">
+<blockquote>
+<ul class="org-ul">
+<li>4. List at least 5 main things that we should be aware when using colours in
+visualisation.</li>
+</ul>
+</blockquote>
+</div>
+<ol class="org-ol">
+<li><a id="org016996d"></a>(1) Number of Colours<br />
+<div class="outline-text-5" id="text-4-2-5-1">
+<p>
+Humans can only identify about 8 colours on a plot, so try to use \(7\pm2\) and
+less than 10.
+</p>
+</div>
+</li>
+<li><a id="orga0ddad7"></a>(2) Data Type<br />
+<div class="outline-text-5" id="text-4-2-5-2">
+<p>
+Data may be ordered and may be continuous or discrete:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Ordered</td>
+<td class="org-left">Unordered</td>
+</tr>
+
+<tr>
+<td class="org-left">Continuous</td>
+<td class="org-left">Colours should use a smooth divergent/sequential pallet</td>
+<td class="org-left">NA</td>
+</tr>
+
+<tr>
+<td class="org-left">Discrete</td>
+<td class="org-left">Colours should use a small number of sequential colours</td>
+<td class="org-left">Colour</td>
+</tr>
+</tbody>
+</table>
+<p>
+pallet should be a small number of distinct colours |
+</p>
+
+<p>
+If data is continuous (and / or ordinal) then colours that follow a pattern
+should be used in order to illustrate that pattern, for example:
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(RColorBrewer)
+<span style="color: #a45bad;">library</span>(tidyverse)
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">colorRampPalette(brewer.pal(9, "Blues"))(100) %&gt;% plot()</span>
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">my_cols &lt;- brewer.pal(7,"Greens")</span>
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">par(pty = "s", mai = c(0.1, 0.1, 0.4, 0.1))</span>
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">display.brewer.pal(3,"Accent")</span>
+ display.brewer.pal(9,<span style="color: #2d9574;">"Blues"</span>)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="wk3colCont.png" alt="wk3colCont.png" width="400px" />
+</p>
+</div>
+
+<p>
+If data is discrete then discrete and distinct colours should be used, if that
+data is also non-ordinal then those colours should avoid having a pattern, for example:
+</p>
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(RColorBrewer)
+<span style="color: #a45bad;">library</span>(tidyverse)
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">colorRampPalette(brewer.pal(9, "Blues"))(100) %&gt;% plot()</span>
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">my_cols &lt;- brewer.pal(7,"Greens")</span>
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">par(pty = "s", mai = c(0.1, 0.1, 0.4, 0.1))</span>
+display.brewer.pal(3,<span style="color: #2d9574;">"Accent"</span>)
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">display.brewer.pal(9,"Blues")</span>
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="wk3colDisc.png" alt="wk3colDisc.png" width="400px" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org2f06185"></a>(3) Viewing Medium<br />
+<div class="outline-text-5" id="text-4-2-5-3">
+<p>
+A visualisation may have different levels of perceived brightness depending on
+how it's viewed, for example a visualisation made on a pc with a black
+background (i.e. dark mode)  may lead to a plot looking overly saturated, if
+that plot was printed the distinction between various factors may not be clear
+in graph.
+</p>
+</div>
+</li>
+<li><a id="org90c7d81"></a>(4) Contrast<br />
+<div class="outline-text-5" id="text-4-2-5-4">
+<p>
+If a plot is converted to greyscale in order to print, there may be insufficient
+contrast to perceive differences, this can be avoided if attention is paid to
+ensure good 'seperation' between elements regardless of contrast.
+</p>
+</div>
+</li>
+<li><a id="org4e7c5df"></a>(5) edge enhancement<br />
+<div class="outline-text-5" id="text-4-2-5-5">
+<p>
+using colours to highlight edges may make a plot harder or easier to read, for
+example consider the following histograms:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(tidyverse)
+<span style="color: #a45bad;">library</span>(gridExtra)
+a <span style="color: #a45bad;">&lt;-</span> rnorm(1000, 3, 300)
+b <span style="color: #a45bad;">&lt;-</span> rbinom(length(a), size = 1, prob = 0.3)
+birthwt <span style="color: #a45bad;">&lt;-</span> data.frame(<span style="color: #2d9574;">"A"</span> = a, <span style="color: #2d9574;">"B"</span> = b )
+birthwt_pretty <span style="color: #a45bad;">&lt;-</span> birthwt
+birthwt_pretty$B <span style="color: #a45bad;">&lt;-</span> ifelse(birthwt$B, <span style="color: #2d9574;">"A"</span>, <span style="color: #2d9574;">"B"</span>)
+
+hist <span style="color: #a45bad;">&lt;-</span> ggplot(birthwt_pretty, aes(x = A, fill = B,  y = ..density..)) +
+         theme_classic() +
+         labs(x = <span style="color: #2d9574;">"Birth Weight"</span>, y = <span style="color: #2d9574;">"Density"</span>) +
+         guides(fill = guide_legend(<span style="color: #2d9574;">"Factor"</span>))
+
+plots <span style="color: #a45bad;">&lt;-</span> list()
+
+plots[[1]] <span style="color: #a45bad;">&lt;-</span> hist + geom_histogram(position = <span style="color: #2d9574;">"dodge2"</span>, col = <span style="color: #2d9574;">"blue"</span>, binwidth = 300, lwd = 1)
+plots[[2]] <span style="color: #a45bad;">&lt;-</span> hist + geom_histogram(position = <span style="color: #2d9574;">"dodge2"</span>, col = <span style="color: #2d9574;">"red"</span>, binwidth = 300, lwd = 1)
+plots[[3]] <span style="color: #a45bad;">&lt;-</span> hist + geom_histogram(position = <span style="color: #2d9574;">"dodge2"</span>, col = <span style="color: #2d9574;">"black"</span>, binwidth = 300, lwd = 1)
+plots[[4]] <span style="color: #a45bad;">&lt;-</span> hist + geom_histogram(position = <span style="color: #2d9574;">"dodge2"</span>, binwidth = 300, lwd = 1)
+
+
+layout <span style="color: #a45bad;">&lt;-</span> matrix(c(1:4), byrow = <span style="color: #ce537a; font-weight: bold;">TRUE</span>, nrow = 2)
+grid.arrange(grobs = plots, layout_matrix = layout)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="wk3HistEdges.png" alt="wk3HistEdges.png" width="300px" />
+</p>
+</div>
+
+<p>
+This effect can be made more pronounced when the plots have different scales an
+are arranged relative to each other:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">a <span style="color: #a45bad;">&lt;-</span> rnorm(1000, 3, 300)
+b <span style="color: #a45bad;">&lt;-</span> rbinom(length(a), size = 1, prob = 0.3)
+birthwt <span style="color: #a45bad;">&lt;-</span> data.frame(<span style="color: #2d9574;">"A"</span> = a, <span style="color: #2d9574;">"B"</span> = b )
+birthwt_pretty <span style="color: #a45bad;">&lt;-</span> birthwt
+birthwt_pretty$B <span style="color: #a45bad;">&lt;-</span> ifelse(birthwt$B, <span style="color: #2d9574;">"A"</span>, <span style="color: #2d9574;">"B"</span>)
+
+hist <span style="color: #a45bad;">&lt;-</span> ggplot(birthwt_pretty, aes(x = A, fill = B,  y = ..density..)) +
+         theme_classic() +
+         labs(x = <span style="color: #2d9574;">"Birth Weight"</span>, y = <span style="color: #2d9574;">"Density"</span>) +
+         guides(fill = guide_legend(<span style="color: #2d9574;">"Factor"</span>))
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">hist + geom_histogram(position = "dodge2", col = "blue", binwidth = 300)</span>
+
+plots <span style="color: #a45bad;">&lt;-</span> list()
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Dodge</span>
+plots[[1]] <span style="color: #a45bad;">&lt;-</span> hist + geom_histogram(position = <span style="color: #2d9574;">"dodge2"</span>, col = <span style="color: #2d9574;">"blue"</span>, binwidth = 300, lwd = 2)
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Overlay</span>
+plots[[2]] <span style="color: #a45bad;">&lt;-</span>  hist + geom_histogram(binwidth = 300, col = <span style="color: #2d9574;">"black"</span>, lwd = 2)
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Single Histogram</span>
+plots[[3]] <span style="color: #a45bad;">&lt;-</span> hist + geom_histogram(binwidth = 300, col = <span style="color: #2d9574;">"green"</span>, aes(group = 1), fill = <span style="color: #2d9574;">"lightblue"</span>, lwd = 2)
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Facet Grid</span>
+ plots[[4]] <span style="color: #a45bad;">&lt;-</span> hist + geom_histogram(binwidth = 300, col = <span style="color: #2d9574;">"purple"</span>, lwd = 2) +
+         facet_grid(. ~ B) +
+         guides(fill = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+
+layout <span style="color: #a45bad;">&lt;-</span> matrix(c(1, 1, 2, 3, 4, 4), byrow = <span style="color: #ce537a; font-weight: bold;">TRUE</span>, nrow = 3)
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">arrangeGrob(grobs = plots, layout_matrix = layout)</span>
+grid.arrange(grobs = plots, layout_matrix = layout)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="wk3HistEdges2.png" alt="wk3HistEdges2.png" width="300px" />
+</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgcf137c5" class="outline-4">
+<h4 id="orgcf137c5"><span class="section-number-4">4.2.6</span> Question 5</h4>
+<div class="outline-text-4" id="text-4-2-6">
+<blockquote>
+<ul class="org-ul">
+<li>5. Using a search engine, explore 3 good visualisations that use colours to
+represent information. Why are the colours used effectively in these
+visualisations?</li>
+</ul>
+</blockquote>
+
+<p>
+Further Information on correct colour choice in plots can be located:
+</p>
+<ul class="org-ul">
+<li><a href="https://www.dataquest.io/blog/what-to-consider-when-choosing-colors-for-data-visualization/">DataQuest</a></li>
+<li><a href="https://blog.graphiq.com/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283">GraphiQ</a></li>
+<li><a href="https://blog.datawrapper.de/colorguide/">DataWrapper</a></li>
+</ul>
+
+<p>
+And many good examples can be found on the <i><a href="https://rmarkdown.rstudio.com/flexdashboard/examples.html">RStudio Shiny Dashboard</a></i> homepage.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgcc97873"></a>Pokemon dashboard<br />
+<div class="outline-text-5" id="text-4-2-6-1">
+<p>
+The <a href="http://jkunst.com/flexdashboard-highcharter-examples/pokemon/">Pokemon type dashboard</a> uses colours effectively because it uses discrete and
+distinct colours to represent discrete variables.
+</p>
+
+<p>
+The colour choices are an intelligent choice of sufficiently distinct colours
+that are also differently related to the information to make the plot easy to interpret.
+</p>
+
+<p>
+The colours choses are also saturated enough to allow transperancy to be mapped
+to frequency and for the treemap to be sufficiently distinct.
+</p>
+
+
+<div class="figure">
+<p><img src="(Wk_2)_Human_Visual_Perception/2020-03-18_17-55-18_screenshot.png" alt="2020-03-18_17-55-18_screenshot.png" width="400px" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="orgc775464"></a>Nuclear Waste Sites<br />
+<div class="outline-text-5" id="text-4-2-6-2">
+<p>
+The <a href="https://beta.rstudioconnect.com/jjallaire/htmlwidgets-waste-sites/htmlwidgets-waste-sites.html">Nuclear Waste Dashboard</a> uses colour effectively because it uses a different
+colour pallette for the two types of plots which represent the number of sites
+in each category and the geographical location of any such site in that category.
+</p>
+
+<p>
+Tying a colour to a variable is important to visualise data without confusing
+the intended audience.
+</p>
+
+
+<div class="figure">
+<p><img src="./Attachments/VisualAnalytics/Nuclear_Waste_Dashboard.png" alt="Nuclear_Waste_Dashboard.png" width="400px" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org692fe3d"></a>Neighbourhood Diversity<br />
+<div class="outline-text-5" id="text-4-2-6-3">
+<p>
+The <a href="https://walkerke.shinyapps.io/neighborhood_diversity/">Neighbourhood Diversity</a> visualisation uses colour effectively because the
+colour choses is a continous sequential pallete increasing in saturation, this makes
+interpreting continuous data easier because the pallete has a one-to-one
+correspondence with the density of the observation.
+</p>
+
+
+
+<div class="figure">
+<p><img src="./Attachments/VisualAnalytics/Diversity.png" alt="Diversity.png" width="400px" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org4d75d57"></a>Using Colours<br />
+<div class="outline-text-5" id="text-4-2-6-4">
+<p>
+The following graphic is an exemplar graphic from <i>DataQuest</i> but it shows how
+it is often desirable to restructure a visualisation based on the data as
+opposed to overusing colours which can be difficult to interpret in high amounts.
+</p>
+
+
+<div class="figure">
+<p><img src="(Wk_2)_Human_Visual_Perception/2020-03-18_17-25-37_full-180529_considercolor6.png" alt="2020-03-18_17-25-37_full-180529_considercolor6.png" width="400px" />
+</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb419ad7" class="outline-4">
+<h4 id="orgb419ad7"><span class="section-number-4">4.2.7</span> Question 6</h4>
+<div class="outline-text-4" id="text-4-2-7">
+<blockquote>
+<ul class="org-ul">
+<li>6. Test your eye with colours: <a href="http://enchroma.com/test/instructions/">http://enchroma.com/test/instructions/</a></li>
+</ul>
+</blockquote>
+
+<p>
+I already know I'm slightly red-green colourblind, (Mild Protan), the test only
+confirms it, for instance  I don't see
+any number here:
+</p>
+
+
+<div class="figure">
+<p><img src="(Wk_2)_Human_Visual_Perception/2020-03-18_18-17-19_screenshot.png" alt="2020-03-18_18-17-19_screenshot.png" width="200px" />
+</p>
+</div>
+
+<p>
+or here:
+</p>
+
+
+<div class="figure">
+<p><img src="(Wk_2)_Human_Visual_Perception/2020-03-18_18-17-58_screenshot.png" alt="2020-03-18_18-17-58_screenshot.png" width="200px" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org96a79dc" class="outline-4">
+<h4 id="org96a79dc"><span class="section-number-4">4.2.8</span> Question 7</h4>
+<div class="outline-text-4" id="text-4-2-8">
+<blockquote>
+<ul class="org-ul">
+<li>7. Why do you think pre-attentive processing is important in visualisation? Can
+we combine features (e.g. colour, size and shape) to enhance pre-attentive
+analysis?</li>
+</ul>
+</blockquote>
+
+<p>
+Pre-Attentive processing is important because it allows for a plot to be
+interpreted immediately.
+</p>
+
+<p>
+A visualisation may be rendered less effective or not effective at all if it is
+unable to convey certain amounts of information rapidly, for instance if the
+cognitive load to interpret a pattern is too high, sub patterns or more complex
+patterns may be lost in the noise of the data.
+</p>
+</div>
+</div>
+<div id="outline-container-org829ef46" class="outline-4">
+<h4 id="org829ef46"><span class="section-number-4">4.2.9</span> Question 8</h4>
+<div class="outline-text-4" id="text-4-2-9">
+<blockquote>
+<ul class="org-ul">
+<li>8. What are the main aspects of Gestalt Laws?</li>
+</ul>
+</blockquote>
+
+<p>
+<a id="org48bd23a"></a>
+The Gestalt Laws provide that:
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orge12effb"></a>Grouping<br />
+<div class="outline-text-5" id="text-4-2-9-1">
+<ul class="org-ul">
+<li>Objects close together will be perceived as groups
+<ul class="org-ul">
+<li>This is an example of humans performing something simple that is quite
+complex for machines.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orge75bf65"></a>Like Elements<br />
+<div class="outline-text-5" id="text-4-2-9-2">
+<ul class="org-ul">
+<li>If elements are similar in features such as shape, colour or size they will
+people are more ready to consider the data as grouped together
+<ul class="org-ul">
+<li>This means it can be important to use techniques such as blurring and
+desaturating visualisations in order to remove or enhance such
+distinctions as appropriate.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org51163be"></a>Connected Elements<br />
+<div class="outline-text-5" id="text-4-2-9-3">
+<ul class="org-ul">
+<li>Data That is connected in some way (by a line, curve or border) will give
+the effect of creating clusters or groups in data</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgc02e33f" class="outline-4">
+<h4 id="orgc02e33f"><span class="section-number-4">4.2.10</span> Question 9</h4>
+<div class="outline-text-4" id="text-4-2-10">
+<blockquote>
+<ul class="org-ul">
+<li>9. Read the slide “Effective Encoding of Data” in Lecture Note 2
+(<a href="https://www.lucypark.kr/courses/2015-ba/visualization1.html">https://www.lucypark.kr/courses/2015-ba/visualization1.html</a>), if a dataset
+has quantitative value, what 5 most important attributes or encoding should
+we consider? Similarly, if a dataset has nominal value, what 5 most important
+attributes or encoding should we consider?</li>
+</ul>
+</blockquote>
+</div>
+<ol class="org-ol">
+<li><a id="orgc68cbcc"></a>Quantitative Value<br />
+<div class="outline-text-5" id="text-4-2-10-1">
+<p>
+If data has a quantitative value, the attributes that should be considered are
+</p>
+
+<ol class="org-ol">
+<li>Position</li>
+<li>Length</li>
+<li>Angle</li>
+<li>Area</li>
+<li>Volume</li>
+</ol>
+</div>
+</li>
+<li><a id="orgda9022c"></a>Nominal Value<br />
+<div class="outline-text-5" id="text-4-2-10-2">
+<p>
+If data has a nominal value, the five most important attributes to consider are:
+</p>
+
+<ol class="org-ol">
+<li>Position of the Data</li>
+<li>Hue</li>
+<li>Texture</li>
+<li>Connection</li>
+<li>Containment</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org3a34819" class="outline-4">
+<h4 id="org3a34819"><span class="section-number-4">4.2.11</span> Question 10</h4>
+<div class="outline-text-4" id="text-4-2-11">
+<blockquote>
+<ul class="org-ul">
+<li>10. Read the following article: <a href="http://www.csc.ncsu.edu/faculty/healey/PP/index.html">http://www.csc.ncsu.edu/faculty/healey/PP/index.html</a></li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9d9bc07" class="outline-2">
+<h2 id="org9d9bc07"><span class="section-number-2">5</span> (Wk 3) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Refer to:
+</p>
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Lecture.pdf">Lecture #3</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Tutorial">Tutorial #3</a></li>
+</ul>
+</div>
+<div id="outline-container-orge587601" class="outline-3">
+<h3 id="orge587601"><span class="section-number-3">5.1</span> Relational Data Visualisation – Part I</h3>
+</div>
+<div id="outline-container-orgf69811f" class="outline-3">
+<h3 id="orgf69811f"><span class="section-number-3">5.2</span> Introduction to Graph Visualisation</h3>
+</div>
+<div id="outline-container-org7424376" class="outline-3">
+<h3 id="org7424376"><span class="section-number-3">5.3</span> Tree Visualisation</h3>
+</div>
+<div id="outline-container-org64c6dbe" class="outline-3">
+<h3 id="org64c6dbe"><span class="section-number-3">5.4</span> <span class="todo TODO">TODO</span> Tutorial</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-orgf4f9e5d" class="outline-4">
+<h4 id="orgf4f9e5d"><span class="section-number-4">5.4.1</span> Trees in Org Mode</h4>
+<div class="outline-text-4" id="text-5-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgd2e3f2a"></a><span class="todo TODO">TODO</span> Make Headline Tree<br />
+<div class="outline-text-5" id="text-5-4-1-1">
+<p>
+<a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">https://en.wikipedia.org/wiki/DOT_(graph_description_language)</a>
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Graphviz">https://en.wikipedia.org/wiki/Graphviz</a>
+</p>
+
+<p>
+<a href="https://orgmode.org/worg/org-tutorials/org-dot-diagrams.html">https://orgmode.org/worg/org-tutorials/org-dot-diagrams.html</a>
+</p>
+</div>
+</li>
+<li><a id="org09890c3"></a>Mermaid<br />
+<div class="outline-text-5" id="text-5-4-1-2">
+<ol class="org-ol">
+<li><p>
+Install <code>mermaid.cli</code> , refer to the <a href="https://github.com/mermaidjs/mermaid.cli">GitHub</a>:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">npm install -g mermaid.cli
+</pre>
+</div></li>
+<li><p>
+Install the Spacemacs layer by cloning <a href="https://github.com/arnm/mermaid-layer">this repo</a>
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">git clone https://github.com/arnm/mermaid-layer ~/.emacs.d/private/mermaid
+</pre>
+</div>
+<ul class="org-ul">
+<li>If not using <a href="https://www.spacemacs.org/"><i>Spacemacs</i></a> it may be necessary to install <code>ob-mermaid</code> and</li>
+</ul>
+<p>
+<code>mermaid-mode</code> from MELPA using <code>M-x package-install</code>. as described <a href="https://github.com/arnm/ob-mermaid">here.</a>
+</p></li>
+<li><p>
+Add <code>ob-mermaid</code> to the org list <a href="file:///home/ryan/.emacs.d/init.el#MissingReference">here:</a>
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(org-babel-do-load-languages
+  'org-babel-load-languages
+  '((R          . t)
+    (latex       . t)
+    (python      . t)
+    (dot         . t)
+    (mermaid     . t)
+    (gnuplot     . t)
+    (java        . t)
+    (sed         . t)
+    (shell       . t)
+    (mathematica . t)
+    (emacs-lisp  . t)))
+</pre>
+</div></li>
+<li>Add the <a href="https://github.com/arnm/mermaid-layer">mermaid layer</a> to spacemacs</li>
+<li><p>
+Find out where the mermaid command line tool (i.e. <code>mmdc</code>)  is installed:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">which mmdc
+sudo ln (which mmdc) /bin/mmdc
+</pre>
+</div></li>
+<li><p>
+Tell <code>org-mode</code> where  <code>mmdc</code> is installed:
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #4f97d7; font-weight: bold;">setq</span> ob-mermaid-cli-path <span style="color: #2d9574;">"/bin/mmdc"</span>)
+</pre>
+</div></li>
+<li>Test Mermaid using the following syntax</li>
+</ol>
+
+<ol class="org-ol">
+<li>Or another example</li>
+</ol>
+
+
+<div class="figure">
+<p><img src="./delmedslkfj.png" alt="delmedslkfj.png" />
+</p>
+</div>
+</div>
+
+
+<ol class="org-ol">
+<li><a id="orgedf77f8"></a>Supported properties<br />
+<div class="outline-text-6" id="text-5-4-1-2-1">
+<p>
+<code>file</code> - Output file. It should be either svg, png or pdf.
+</p>
+
+<p>
+<code>width</code> - Width of the page. Optional.
+</p>
+
+<p>
+<code>height</code> - Height of the page. Optional.
+</p>
+
+<p>
+<code>theme</code> - Theme of the chart, could be default, forest, dark or neutral. Optional.
+</p>
+
+<p>
+<code>background-color</code> - Background color. Example: transparent, red, '#F0F0F0'. Optional.
+</p>
+
+<p>
+<code>mermaid-config-file</code> - JSON configuration file for mermaid. Optional.
+</p>
+
+<p>
+<code>css-file</code> - CSS file for the page. Optional.
+</p>
+
+<p>
+<code>pupeteer-config-file</code> - JSON configuration file for puppeteer. Optional.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org2541d0a"></a>FlowchartJS<br /></li>
+<li><a id="org0854c56"></a>PlantUML<br />
+<div class="outline-text-5" id="text-5-4-1-4">
+<p>
+I'm looking at <a href="https://nasseralkmim.github.io/notes/2016/08/14/using-dot-to-make-diagrams-in-org-mode/">this resource</a>, there is also <a href="https://plantuml.com/emacs">Official Documentation</a>
+</p>
+
+<ol class="org-ol">
+<li><p>
+Add <code>plantuml</code> to the babel list
+</p>
+<ol class="org-ol">
+<li>annoyingly in vnote it is referred to as <code>puml</code></li>
+</ol>
+<div class="org-src-container">
+<pre class="src src-elisp">(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((plantuml . t))) <span style="color: #2aa1ae; background-color: #292e34;">; </span><span style="color: #2aa1ae; background-color: #292e34;">this line activates dot</span>
+</pre>
+</div></li>
+<li>Download the latest <code>plantuml.jar</code> <a href="https://plantuml.com/download">from here</a>
+<ul class="org-ul">
+<li>Make sure to make it executable and to save it somewhere executable</li>
+</ul></li>
+<li>Install <code>plantuml-mode</code> mode from MELPA</li>
+<li><p>
+Add the following to your <code>~/.emacs.d/init.el</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #4f97d7; font-weight: bold;">setq</span> org-plantuml-jar-path (expand-file-name <span style="color: #2d9574;">"/bin/plantuml.jar"</span>))
+(add-to-list 'org-src-lang-modes '(<span style="color: #2d9574;">"plantuml"</span> . plantuml))
+(org-babel-do-load-languages 'org-babel-load-languages '((plantuml . t)))
+</pre>
+</div></li>
+<li><p>
+Test the output
+</p>
+
+<div class="figure">
+<p><img src="my-diagram.png" alt="my-diagram.png" />
+</p>
+</div></li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8f5506f" class="outline-2">
+<h2 id="org8f5506f"><span class="section-number-2">6</span> (Wk 4) Relational Data Visualisation (Part I)</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgc662012" class="outline-3">
+<h3 id="orgc662012"><span class="section-number-3">6.1</span> <span class="todo TODO">TODO</span> Tutorial</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+</div>
+</div>
+<div id="outline-container-org8f0a56c" class="outline-2">
+<h2 id="org8f0a56c"><span class="section-number-2">7</span> Exporting HTML Files&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h2>
+<div class="outline-text-2" id="text-7">
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">!/bin/</span><span style="color: #4f97d7; font-weight: bold;">bash</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">svgfile=9d9af7b10ca33c3d1bf4e525a1e32af0a2dc5a9a.svg</span>
+<span style="color: #7590db;">htmlfile</span>=$<span style="color: #7590db;">1</span>
+
+
+<span style="color: #4f97d7; font-weight: bold;">if</span> [ <span style="color: #2d9574;">"$1"</span> == <span style="color: #2d9574;">"-h"</span> ]; <span style="color: #4f97d7; font-weight: bold;">then</span>
+  <span style="color: #4f97d7;">echo</span> <span style="color: #2d9574;">"`basename $0` &lt;SVG&gt; &lt;HTML&gt;"</span>
+  <span style="color: #4f97d7; font-weight: bold;">exit</span> 0
+<span style="color: #4f97d7; font-weight: bold;">fi</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">for consistency recreate the html file</span>
+t2h doseReport.tex github-pandoc.css &gt; t2h.log 2&gt; /dev/null
+rm -f t2h.log
+
+ls *svg &gt;&gt; pics.txt
+<span style="color: #4f97d7; font-weight: bold;">for</span> value<span style="color: #4f97d7; font-weight: bold;"> in</span> $(cat pics.txt)
+<span style="color: #4f97d7; font-weight: bold;">do</span>
+  <span style="color: #7590db;">svgfile</span>=$<span style="color: #7590db;">value</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">Specify the specific Regex to remove</span>
+<span style="color: #7590db;">oldtext</span>=<span style="color: #2d9574;">"&lt;p&gt;&lt;img src=\"$svgfile\" \/&gt;&lt;\/p&gt;"</span> <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">This might have been causing issues</span>
+<span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">oldtext="$svgfile"</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">capture the text of the svg</span>
+<span style="color: #7590db;">svtext</span>=<span style="color: #2d9574;">"$(cat $svgfile)"</span> <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">This won't work</span>
+<span style="color: #4f97d7;">echo</span> $(sed <span style="color: #2d9574;">''</span> $<span style="color: #7590db;">svgfile</span>) <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">this won't work either, we</span>
+                            <span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">need to escape special characters</span>
+<span style="color: #7590db;">newtext</span>=$(sed <span style="color: #2d9574;">'s@[/\&amp;]@\\&amp;@g;$!s/$/\\/'</span> $<span style="color: #7590db;">svgfile</span>)
+<span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">newtext="=========="</span>
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">https://unix.stackexchange.com/a/152192</span>
+    <span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">basically the 's@[/\&amp;]@\\&amp;@g;$!s/$/\\/' is necessary to</span>
+      <span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">escape all the misbehaved characters</span>
+
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Identify the line in the html</span>
+     <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">sed -i -e "s/$oldtext/====/g" doseReport.html</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Replace the line</span>
+ sed -i -e <span style="color: #2d9574;">"s/$oldtext/$newtext/g"</span> $<span style="color: #7590db;">htmlfile</span>
+
+ <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Remove the svg</span>
+ rm $<span style="color: #7590db;">svgfile</span>
+<span style="color: #4f97d7; font-weight: bold;">done</span>
+rm pics.txt
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7a59784" class="outline-2">
+<h2 id="org7a59784"><span class="section-number-2">8</span> References</h2>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://math.stackexchange.com/a/1508">combinatorics - Why can a Venn diagram for \(4+\) sets not be constructed using circles? - Mathematics Stack Exchange</a>
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Ryan G</p>
+<p class="date">Created: 2020-03-24 Tue 18:08</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
