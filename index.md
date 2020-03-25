@@ -9,6 +9,9 @@
 # Ryan's Class Notes
 [Visual Analytics Tutorial](https://ryangreenup.github.io/VisualAnalytics.html)
 
+
+[Visual Analytics Tutorial (3)](https://ryangreenup.github.io/VisualAnalyticstut3.html)
+
 !!! Note
 > TODO
 >> dedicate this to a static site that is al HTML, probably my org notes, possibly with some pandocced latex or md. 
