@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-26 Thu 21:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Index of Notes</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ryan G" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet"
+           href="./style.css" type="text/css"/>
+
+<script type="text/javascript" src="https://orgmode.org/org-info.js">
+/**
+ *
+ * @source: https://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in https://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in https://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "3");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Index of Notes</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org318fa68">2020 Autumn</a>
+<ul>
+<li><a href="#org65a2a02"><span class="todo TODO">TODO</span> Email Stephen about NMR for Project</a></li>
+<li><a href="#org8be20d5">Current Work</a>
+<ul>
+<li><a href="#org9002bc6"><span class="todo TODO">TODO</span> Overheads</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1c54b9c">Startup</a>
+<ul>
+<li><a href="#orgaef9c80">Startup Programs</a></li>
+<li><a href="#org4f5a073">Preliminary</a></li>
+</ul>
+</li>
+<li><a href="#org8b85b1d">Using Org</a></li>
+<li><a href="#org525f3d7">Data Science Notes</a>
+<ul>
+<li><a href="#org5c63600">Introduction to data science&#xa0;&#xa0;&#xa0;<span class="tag"><span class="IntroDataSci">IntroDataSci</span></span></a>
+<ul>
+<li><a href="#orgc8aa63b">Supervised Learning</a></li>
+<li><a href="#org92f3506">Unsupervised Learning</a></li>
+</ul>
+</li>
+<li><a href="#orgc5116bd">Data Visualisation</a></li>
+<li><a href="#org272fbbe">Predictive Modelling</a></li>
+</ul>
+</li>
+<li><a href="#org7e43fdf">Mathematics</a>
+<ul>
+<li><a href="#org76f3cff">Abstract Algebra</a></li>
+<li><a href="#org620729c">Calculus&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a>
+<ul>
+<li><a href="#org8188c4f">preliminary</a></li>
+<li><a href="#org1726d0b">PDF Notes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#orgd265066">Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org6b245b6">Statistics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a>
+<ul>
+<li><a href="#orgcbf646e">Time Series Analysis</a></li>
+<li><a href="#orga5865a1"><span class="done DONE">DONE</span> add the Statistics Word Doc, PDF and Org Conversion</a></li>
+</ul>
+</li>
+<li><a href="#org47af8eb">Note Taking Manual</a>
+<ul>
+<li><a href="#org55fd9b8">The manual for my strategy</a></li>
+</ul>
+</li>
+<li><a href="#org5e40f5d">Journal</a>
+<ul>
+<li><a href="#org82cb958">Correspondence</a></li>
+</ul>
+</li>
+<li><a href="#org36b7246">Current Interests&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Evening">Evening</span></span></a>
+<ul>
+<li><a href="#org885b390"><span class="todo TODO">TODO</span> Learn Python</a></li>
+<li><a href="#org3b72dac"><span class="todo TODO">TODO</span> Learn Bash</a></li>
+<li><a href="#orgc7d4e5f"><span class="todo TODO">TODO</span> Finish Data Camp</a></li>
+<li><a href="#org6f96025">Start a Kaggle Problem</a></li>
+<li><a href="#orgf750ea2"><span class="todo TODO">TODO</span> Dial in org-mode</a>
+<ul>
+<li><a href="#orgbc474af"><span class="todo TODO">TODO</span> Live Preview</a></li>
+<li><a href="#org53fa7d0"><span class="todo TODO">TODO</span> Org-Roam</a></li>
+<li><a href="#org9aeeda2"><span class="todo TODO">TODO</span> Live Equation Preview</a></li>
+<li><a href="#org0bec7c5"><span class="done DONE">DONE</span> Try org-sidebar</a></li>
+</ul>
+</li>
+<li><a href="#org7f15039"><span class="todo TODO">TODO</span> Learn VNOTE</a></li>
+<li><a href="#org3b5b420"><span class="todo TODO">TODO</span> Reading List</a></li>
+</ul>
+</li>
+<li><a href="#org79398a1">Appendx</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="scratch.html">Org Scratch Space</a>
+<a href="./Template.html">Template</a>
+</p>
+<div id="outline-container-org318fa68" class="outline-2">
+<h2 id="org318fa68">2020 Autumn</h2>
+<div class="outline-text-2" id="text-org318fa68">
+<ul class="org-ul">
+<li><a href="ThinkingAboutData.html">Thinking About Data ()</a></li>
+<li><a href="VisualAnalytics.html">Visual Analytics ()</a></li>
+<li><a href="Social_Web_Analytics.html">Social Web Analytics ()</a></li>
+<li><a href="Analytic_Programming.html">Analytics Programming ()</a></li>
+<li><a href="delme/nmr.html">NMR</a></li>
+</ul>
+</div>
+
+<div id="outline-container-org65a2a02" class="outline-3">
+<h3 id="org65a2a02"><span class="todo TODO">TODO</span> Email Stephen about NMR for Project</h3>
+<div class="outline-text-3" id="text-org65a2a02">
+</div>
+</div>
+
+<div id="outline-container-org8be20d5" class="outline-3">
+<h3 id="org8be20d5">Current Work</h3>
+<div class="outline-text-3" id="text-org8be20d5">
+</div>
+<div id="outline-container-org9002bc6" class="outline-4">
+<h4 id="org9002bc6"><span class="todo TODO">TODO</span> Overheads</h4>
+<div class="outline-text-4" id="text-org9002bc6">
+</div>
+<ul class="org-ul">
+<li><a id="org20e937a"></a>Finding Material<br />
+<div class="outline-text-5" id="text-org20e937a">
+<p>
+Ok so now I have a few <code>html</code> and <code>md</code> files, how do I actually search them?
+</p>
+
+<ul class="org-ul">
+<li>Trying to search them through <b><b><i>R</i></b></b> <i>Studio</i> is next to hopeless</li>
+<li>I can use =fzf<sub>rga</sub>=<sub>search</sub> in ranger
+<ul class="org-ul">
+<li>This isn't bad but I'd really like a live search preview set-up</li>
+</ul></li>
+<li><i>Notable</i>
+<ul class="org-ul">
+<li><p>
+So I know I switched to <i>Vnote</i>, but one of the problems is the searching:
+</p>
+<ul class="org-ul">
+<li>It's not a live search which makes refining search terms difficult</li>
+<li>I can't flick through searched items / notes with the keyboard, I have to
+individually click each item (and the preview takes a few seconds).</li>
+<li>I'll stick with VNote because it's more organised, but, what works really
+well is copying all the <code>md</code> files to <code>/tmp/datasci/notes</code> and then
+using <code>C-S-x</code> to set the <i>Notable</i> data directory to look there, then you
+can search for code as you like.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-bash">mkdir /tmp/DataSci
+mkdir /tmp/DataSci/notes
+ln -s ~/Notes/DataSci/ /tmp/DataSci/notes
+</pre>
+</div></li>
+</ul></li>
+<li><i>HTML</i>
+<ul class="org-ul">
+<li><p>
+There must be a way to fuzzy ripgrep thHeadingrough HTML, I should look into that:
+</p>
+<ul class="org-ul">
+<li>yep I can use the following to return all search results with the term <code>geom_bar</code>:</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #4f97d7;">cd</span> ~/Notes/DataSci/
+rg -t html geom_barHeading
+sag -G html geom_bar
+</pre>
+</div></li>
+<li>There might also be a firefox plugin
+<ul class="org-ul">
+<li>You can use nautilus to open all HTML files easily enough</li>
+<li>using <code>% 03</code> in the URL bar will let you jump to a file with 03 in the
+name for example
+<ul class="org-ul">
+<li>you can use the <a href="https://addons.mozilla.org/en-US/firefox/addon/search-multi-tabs/">Search Multi Tabs</a> extension, but, the searching is
+basically only one term
+<ul class="org-ul">
+<li>Compare this with <code>org-mode</code> where <code>helm-rifle</code> will return searches
+below headlines, <i>Notable</i> where searches are fuzzy per document or
+VNote where they are also fuzzy per document, you're better off using
+one of those.
+<ul class="org-ul">
+<li>You might be able to work with html files inside vnote actually.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1c54b9c" class="outline-2">
+<h2 id="org1c54b9c">Startup</h2>
+<div class="outline-text-2" id="text-org1c54b9c">
+</div>
+<div id="outline-container-orgaef9c80" class="outline-3">
+<h3 id="orgaef9c80">Startup Programs</h3>
+<div class="outline-text-3" id="text-orgaef9c80">
+<ol class="org-ol">
+<li><p>
+Execute the following:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">vmtouch -vt ~/Notes/Org/
+vmtouch -vt ~/.emacs.d/
+</pre>
+</div></li>
+<li><p>
+Load all agenda Files
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(open-all-org-agenda-files)
+</pre>
+</div></li>
+<li><p>
+Copy the Data Science stuff to <code>/tmp</code> so I can search it in notable
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">ln -s ~/Notes/DataSci/ /tmp/notes
+</pre>
+</div></li>
+</ol>
+
+
+
+<ol class="org-ol">
+<li></li>
+</ol>
+<blockquote>
+nil</blockquote>
+</div>
+</div>
+<div id="outline-container-org4f5a073" class="outline-3">
+<h3 id="org4f5a073">Preliminary</h3>
+<div class="outline-text-3" id="text-org4f5a073">
+<p>
+<a href="file:///home/ryan/Notes/MD/notes/LinkToOrg/0index.html">you might want this one</a>
+</p>
+
+<p>
+!!! Important
+In order to save on export just use a vim-macro
+<code>@s</code> is save and git export, this is way easier
+</p>
+
+<p>
+Then you can just use F4 to execute the last macro over and over.
+</p>
+
+<p>
+so do <code>&lt;Esc&gt; q s SPC f s SPC m e h h Enter</code> then use <code>F4</code> to save
+</p>
+
+<p>
+just append a 0 to the name of the default CSS
+!!!
+</p>
+
+<p>
+TODO Write up notes on good coding style <a href="file:///home/ryan/Dropbox/Notable/notes/Coding_Style_Correctly.md">here</a>
+</p>
+
+
+
+<p>
+<a href="file:///home/ryan/Dropbox/Notable/notes/index.md">The Markdown Wiki</a>
+</p>
+
+<ul class="org-ul">
+<li>Searching
+<ul class="org-ul">
+<li>Through Notes</li>
+</ul></li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">SEARCH ~/Notes</td>
+<td class="org-left">emacs</td>
+<td class="org-left">vim</td>
+<td class="org-left">Bash</td>
+</tr>
+
+<tr>
+<td class="org-left">Filename</td>
+<td class="org-left">Not that I'm aware of</td>
+<td class="org-left"><code>:FZF &lt;CR&gt; ~/Notes</code></td>
+<td class="org-left"><code>cd ~/Notes ; =fzf</code> ; find <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></td>
+</tr>
+
+<tr>
+<td class="org-left">File Contents (by Line ONLY!)</td>
+<td class="org-left"><code>Spc a o /</code> ; (occur-in-agenda-files)</td>
+<td class="org-left"><code>:Rg</code></td>
+<td class="org-left"><code>cd ~/Notes</code> ; <code>rg</code> / (<code>s</code>) <code>sg</code> / <code>ack</code> / <code>grep</code></td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>You Could also use <code>Spc a o m</code> to get tags</li>
+</ul>
+<ul class="org-ul">
+<li>Across Drive:</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">SEARCH ~/</td>
+<td class="org-left">emacs</td>
+<td class="org-left">vim</td>
+<td class="org-left">Bash</td>
+</tr>
+
+<tr>
+<td class="org-left">Filename</td>
+<td class="org-left"><code>helm-locate</code> ; <code>SPC f L</code></td>
+<td class="org-left"><code>:FZF</code></td>
+<td class="org-left"><code>fzf</code></td>
+</tr>
+
+<tr>
+<td class="org-left">File Contents</td>
+<td class="org-left"><code>helm-ag</code></td>
+<td class="org-left"><code>:Rg</code></td>
+<td class="org-left"><code>rg</code> / (<code>s</code>) <code>sg</code> / <code>ack</code> / <code>grep</code></td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>If you know exactly where the file is you could also use  <code>helm-find-files</code> ; <code>SPC f f</code></li>
+</ul>
+
+
+<p>
+To search only agenda files use <code>SPC a o /</code>
+To search all files use <code>helm-ag</code> or use vim <code>C-p</code>, vim <code>:rg</code>
+To search all file names use <code>helm-locate</code> which is <code>SPC f L</code> or use  <code>fzf</code>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8b85b1d" class="outline-2">
+<h2 id="org8b85b1d">Using Org</h2>
+<div class="outline-text-2" id="text-org8b85b1d">
+<p>
+<a href="1.html">Main Org Notes</a>
+</p>
+
+
+<p>
+TODO All these links point to `org` files for some reason, I can't make the links behave.
+</p>
+</div>
+</div>
+<div id="outline-container-org525f3d7" class="outline-2">
+<h2 id="org525f3d7">Data Science Notes</h2>
+<div class="outline-text-2" id="text-org525f3d7">
+</div>
+<div id="outline-container-org5c63600" class="outline-3">
+<h3 id="org5c63600">Introduction to data science&#xa0;&#xa0;&#xa0;<span class="tag"><span class="IntroDataSci">IntroDataSci</span></span></h3>
+<div class="outline-text-3" id="text-org5c63600">
+</div>
+<div id="outline-container-orgc8aa63b" class="outline-4">
+<h4 id="orgc8aa63b">Supervised Learning</h4>
+<div class="outline-text-4" id="text-orgc8aa63b">
+</div>
+<ul class="org-ul">
+<li><a id="org75f8a85"></a>Regression<br />
+<div class="outline-text-5" id="text-org75f8a85">
+<ul class="org-ul">
+<li><a href="02_Practical_org.html">(02/03) Simple and Multiple Linear Regression</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org07eb24e"></a>Classification<br />
+<div class="outline-text-5" id="text-org07eb24e">
+</div>
+</li>
+<li><a id="org4fd3633"></a>Re-sampling Methods<br />
+<div class="outline-text-5" id="text-org4fd3633">
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org92f3506" class="outline-4">
+<h4 id="org92f3506">Unsupervised Learning</h4>
+<div class="outline-text-4" id="text-org92f3506">
+</div>
+<ul class="org-ul">
+<li><a id="org9150a0b"></a>Principal Component Analysis (PCA)<br />
+<div class="outline-text-5" id="text-org9150a0b">
+</div>
+</li>
+<li><a id="org30f8f01"></a>Clustering<br />
+<div class="outline-text-5" id="text-org30f8f01">
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc5116bd" class="outline-3">
+<h3 id="orgc5116bd">Data Visualisation</h3>
+<div class="outline-text-3" id="text-orgc5116bd">
+<p>
+Using Data Visualization with ggplot2 (Part 2)
+</p>
+</div>
+</div>
+<div id="outline-container-org272fbbe" class="outline-3">
+<h3 id="org272fbbe">Predictive Modelling</h3>
+<div class="outline-text-3" id="text-org272fbbe">
+<ul class="org-ul">
+<li><a target="_blank" href="PredictiveModellingAllNotes.pdf">All the PDF Notes</a>
+<ul class="org-ul">
+<li><a href="Attachments/Statistics/PredictiveModellingAllNotes.pdf">RelativeLink</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7e43fdf" class="outline-2">
+<h2 id="org7e43fdf">Mathematics</h2>
+<div class="outline-text-2" id="text-org7e43fdf">
+</div>
+<div id="outline-container-org76f3cff" class="outline-3">
+<h3 id="org76f3cff">Abstract Algebra</h3>
+<div class="outline-text-3" id="text-org76f3cff">
+<p>
+<a href="abs2delme.html">Abstract Algebra</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org620729c" class="outline-3">
+<h3 id="org620729c">Calculus&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
+<div class="outline-text-3" id="text-org620729c">
+</div>
+<div id="outline-container-org8188c4f" class="outline-4">
+<h4 id="org8188c4f">preliminary</h4>
+<div class="outline-text-4" id="text-org8188c4f">
+<ul class="org-ul">
+<li><a href="./Fundamental_Theorem_of_Calculus.html">Fundamental Theorem of Calculus</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1726d0b" class="outline-4">
+<h4 id="org1726d0b">PDF Notes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-org1726d0b">
+<ul class="org-ul">
+<li><a target="_blank" href="MathModNotes.pdf">Math Modelling Notes</a>
+<ul class="org-ul">
+<li><a href="CalculusAttachments/MathModNotes.tex">LaTeX Source</a></li>
+</ul></li>
+<li><a href="../../Dropbox/Notes/Org/data/b5/a63daa-ad4f-4a99-a841-8188a47713e8/zztemp.pdf">Calculus Rules</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd265066" class="outline-4">
+<h4 id="orgd265066">Analysis</h4>
+<div class="outline-text-4" id="text-orgd265066">
+</div>
+<ul class="org-ul">
+<li><a id="orgb227e75"></a>Notes<br />
+<div class="outline-text-5" id="text-orgb227e75">
+<p>
+All the notes I took in class are:
+ Tex Source Files are Currently <a href="file:///home/ryan/Dropbox/Studies/Calculus/Analysis/LaTeX_Working_Directory/08_vars/08_vars.tex">In This Directory</a>
+</p>
+
+<ul class="org-ul">
+<li><a href="Attachments/Calculus/Analysis/01_Sets_Wk1_Notes.pdf">1. Sets</a></li>
+<li><a href="Attachments/Calculus/Analysis/01_Sets_Wk1_Notes.pdf">1. Sets</a></li>
+<li></li>
+
+<li><a href="./Attachments/Calculus/Analysis/02_Sequences_Wk3_Notes.pdf">2. Sequences</a>
+<ul class="org-ul">
+<li><a href="./Attachments/Calculus/Analysis/02_Sequences_Wk3_CauchyCriterion.pdf">1. Sequences (Cauchy Criterion)</a></li>
+</ul></li>
+<li><a href="./Attachments/Calculus/Analysis/03_Wk4_Notes_Series.pdf">3. Series</a>
+<ul class="org-ul">
+<li><a target="_blank" href="03_Wk4_Notes_Series_Old.pdf">1. Series (Old)</a></li>
+<li><a target="_blank" href="Stewart Calculus Series.pdf">2. Series (Stewart Calculus Excerpt)</a></li>
+</ul></li>
+<li><a href="./Attachments/Calculus/Analysis/04_Limits_Wk2_Notes.pdf">4. Limits</a>
+<ul class="org-ul">
+<li><a href="./Attachments/Calculus/Analysis/AnalysisLimitsFirstPrinciples.pdf">4. Limits</a></li>
+</ul></li>
+<li><a target="_blank" href="05_Wk5_Notes_Continuity.pdf">5. Continuity</a></li>
+<li>6. Stu-vac</li>
+<li><a href="./Attachments/Calculus/Analysis/07_Complex.pdf">7. Complex Values</a></li>
+<li><a href="./Attachments/Calculus/Analysis/08_vars.pdf">8. Complex Variables</a></li>
+<li>9. <a href="./Attachments/Calculus/Analysis/09_functions.pdf">Elementary Functions</a></li>
+<li>10. <a href="./Attachments/Calculus/Analysis/10_integrals.pdf">Complex Integrals</a></li>
+<li>11. <a href="./Attachments/Calculus/Analysis/11_StewartPowerSeries.pdf">Power Series (MD)</a>
+<ul class="org-ul">
+<li>1. <a href="./Attachments/Calculus/Analysis/11_StewartPowerSeries.pdf">Power Series Excerpt</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org98457a4"></a>Working<br />
+<div class="outline-text-5" id="text-org98457a4">
+<p>
+The working is all handwritten so I couldn't attach it,
+there <a href="file:///home/ryan/Dropbox/Studies/Calculus/Analysis/CourseWork/TutWork">linked here in Dropbox</a>.
+</p>
+</div>
+</li>
+<li><a id="org9cc6684"></a>TextBooks<br />
+<div class="outline-text-5" id="text-org9cc6684">
+<p>
+The textbooks can be found <a href="file:///home/ryan/Studies/Calculus/Analysis/Textbooks ">here in Dropbox</a> Textbooks
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6b245b6" class="outline-2">
+<h2 id="org6b245b6">Statistics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
+<div class="outline-text-2" id="text-org6b245b6">
+</div>
+<div id="outline-container-orgcbf646e" class="outline-3">
+<h3 id="orgcbf646e">Time Series Analysis</h3>
+<div class="outline-text-3" id="text-orgcbf646e">
+<ul class="org-ul">
+<li><a href="./TSANotes.html">Time Series Analysis</a>
+<ul class="org-ul">
+<li><a href="./Attachments/Statistics/TimeSeriesNotes.pdf">Original PDF</a>
+<ul class="org-ul">
+<li><a target="_blank" href="TSANotes.docx">Word Document</a></li>
+<li>(02) <a href="Attachments/Statistics/Exercise_2.pdf">Confidence and Prediction Intervals TimeSeries</a>
+<ul class="org-ul">
+<li><a href="Attachments/Statistics/Exercise_2.tex">LaTeX Source</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga5865a1" class="outline-3">
+<h3 id="orga5865a1"><span class="done DONE">DONE</span> add the Statistics Word Doc, PDF and Org Conversion</h3>
+<div class="outline-text-3" id="text-orga5865a1">
+<ul class="org-ul">
+<li><a href="StatsExport2.html">Stats Export</a>
+<ul class="org-ul">
+<li><a href="./Attachments/Statistics/AppliedStatsNotes.pdf">Original PDF</a>
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/#Notes/Applied Statistics/AppliedStatsNotes.pdf">Link to Location</a></li>
+</ul></li>
+</ul></li>
+<li><a href="Attachments/Statistics/Simple Linear Regression.pdf">Simple Linear Regression</a></li>
+</ul>
+<p>
+<a href="./Attachments/Statistics/BiometryFormulaSheet.pdf">+ Biometry Formula Sheet</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org47af8eb" class="outline-2">
+<h2 id="org47af8eb">Note Taking Manual</h2>
+<div class="outline-text-2" id="text-org47af8eb">
+<ul class="org-ul">
+<li><a href="./NoteTaking.html">NoteTaking</a></li>
+</ul>
+</div>
+<div id="outline-container-org55fd9b8" class="outline-3">
+<h3 id="org55fd9b8"><a href="./manual.html">The manual for my strategy</a></h3>
+</div>
+</div>
+<div id="outline-container-org5e40f5d" class="outline-2">
+<h2 id="org5e40f5d">Journal</h2>
+<div class="outline-text-2" id="text-org5e40f5d">
+</div>
+<div id="outline-container-org82cb958" class="outline-3">
+<h3 id="org82cb958">Correspondence</h3>
+<div class="outline-text-3" id="text-org82cb958">
+</div>
+<ul class="org-ul">
+<li><a id="orgb1008cd"></a>Zheng<br />
+<ul class="org-ul">
+<li><a id="email-to-zheng-related-to-damping"></a>Email to Zheng Related to Damping<br />
+<div class="outline-text-6" id="text-email-to-zheng-related-to-damping">
+<p>
+Dear Dr Zheng,
+</p>
+
+<p>
+Sorry for the late reply, I've been really busy with Christmas.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="should-k-always-be-positive"></a>Should \(k\) always be positive?<br />
+<div class="outline-text-7" id="text-should-k-always-be-positive">
+<p>
+I wasn't able to clearly interpret what the <i>Bloom</i> paper was trying to
+express with regard to any values for damping, it just wasn't clear to
+me.
+</p>
+
+<p>
+Instead what i did was:
+</p>
+
+<ol class="org-ol">
+<li>Solve the Cross Product to given the Bloch Equations</li>
+<li>Numerically Solve the Bloch Equations</li>
+<li>Generate a Plot</li>
+<li>Reduce the domain of the plot until the plot has a reasonable number
+of periods</li>
+<li>Create a dynamic Plot allowing me to sweep a range of \(k\) values that
+produce any change.</li>
+</ol>
+</div>
+<ul class="org-ul">
+<li><a id="laboratory-frame"></a>Laboratory Frame<br />
+<div class="outline-text-8" id="text-laboratory-frame">
+</div>
+<ul class="org-ul">
+<li><a id="math"></a>Math<br />
+<div class="outline-text-9" id="text-math">
+<p>
+So in the laboratory frame:
+</p>
+
+<p>
+\[\begin{aligned}
+        \mathbf{B}&= \begin{pmatrix}
+    B_{\mathrm{RF}}\cdot  \cos\left( \omega_{\mathrm{RF}}\cdot  t + \phi_{0} \right) - k\cdot  M_y \\
+    B_{\mathrm{RF}}\cdot  \sin\left( \omega_{\mathrm{RF}}\cdot  t+ \phi_0 \right)+ k\cdot  M_x \\
+    B_0 \\
+    \end{pmatrix} \\
+    \mathbf{M}&= \begin{pmatrix}
+    M_x \\ M_y \\ M_z\\\end{pmatrix} \\
+    \end{aligned}\]
+</p>
+
+<p>
+and hence:
+</p>
+
+<p>
+\[\begin{aligned}
+    \frac{\mathrm{d}\mathbf{M} }{\mathrm{d} t}&= M\times B - \mathbf{R}\left( \mathbf{M} - M_0 \right)\\
+                          &= \begin{pmatrix}
+    \gamma\left[ B_0 y -  k x z +  B_{\mathrm{RF}} z \sin\left( \phi +  t \omega \right) \right] - R_2 x  \\
+    \gamma\left[ - B_0 x -  k y z +  B_{\mathrm{RF}} z \cos \left( \phi +  t \omega \right) \right] - R_2 y \\
+    \gamma\left[ kx^2 +  k y^2 -  B_{\mathrm{RF}}y \cos\left( \phi +  t \omega \right)- B_{\mathrm{RF}} x \sin\left( \phi +  t \omega \right) \right]  - R_1\left( z- M_0 \right) \\
+     \end{pmatrix}
+    \end{aligned}\]
+</p>
+
+<p>
+If I solve this Differential Equation Numerically, I have no problem
+getting solutions for an arbitrarily long time period, although if we
+were to do something like a binomial pulse then the pulse duration would
+have to be much smaller in order to generate points corresponding to
+different IC's.
+</p>
+
+<p>
+So for example using the following code I could solve for an entire 1 ms
+pulse, but because there are so many periods it isn't very useful:
+</p>
+</div>
+</li>
+<li><a id="code"></a>Code<br />
+<div class="outline-text-9" id="text-code">
+<pre class="example">
+In[321]:= Clear["Global`*"]
+Remove["Global`*"]
+Clear[Derivative]
+
+T1=4;
+R1=1/T1;
+R2=1/2;
+M0=1;
+
+ϕ=Pi;
+IC={0,0,1};
+length =0.1*10^-6;
+γ=42.65*10^8;
+γ=42.65*10^6;
+Brf = 2*10^-3;
+k=200*Brf
+B0=11.7; (*11.7 Tesla Corresponding to 500 Mhz at-resonance Pulse *)
+ω=γ*B0*1.000(* 2 N[Pi] *);
+
+
+
+(*length=α/ω;*)
+BlochX=x'[t]==-R2 x[t]+γ (B0 y[t]-k x[t] z[t]+Brf z[t] Sin[ϕ+t ω]);
+BlochY=y'[t]==-R2 y[t]+γ (-B0 x[t]-k y[t] z[t]+Brf z[t] Cos[ϕ+t ω]);
+BlochZ=z'[t]==-R1 (-M0+z[t])+γ (k (x[t])^2+k (y[t])^2-Brf y[t] Cos[ϕ+t ω]-Brf x[t] Sin[ϕ+t ω]);
+(s=NDSolve[{BlochX, BlochY, BlochZ, x[0]==IC[[1]], y[0]==IC[[2]], z[0]==IC[[3]]},{x, y, z},{t,0,length}, MaxSteps-&gt;∞][[1]]) // AbsoluteTiming
+x[t_] = x[t] /. s[[1]];
+y[t_] = y[t] /. s[[2]];
+z[t_] = z[t] /. s[[3]];
+
+{x[length], y[length], z[length]}
+
+Plot[x[t],{t,0,length}]
+Plot[y[t],{t,0,length}]
+Plot[z[t],{t,0,length}, PlotRange-&gt;Full]
+z[ Range[0,length,length/100]]
+
+</pre>
+</div>
+</li>
+<li><a id="results"></a>Results<br />
+<div class="outline-text-9" id="text-results">
+
+<div class="figure">
+<p><img src="file:///home/ryan/Dropbox/Notable/notes/2019-12-25T00-05-00.assets/image-20191225113857809.png" alt="image-20191225113857809.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>image-20191225113857809</p>
+</div>
+</div>
+</li>
+<li><a id="smaller-domain"></a>Smaller Domain<br />
+<div class="outline-text-9" id="text-smaller-domain">
+<p>
+By reducing this to a 0.1 $&mu;$s pulse the results become more
+meaningful:
+</p>
+
+<p>
+<img src="file:///home/ryan/Dropbox/Notable/notes/2019-12-25T00-05-00.assets/image-20191225114208563.png" alt="image-20191225114208563.png" />
+##### Choosing a $k$-value
+</p>
+
+<p>
+For a pulse of 0.1 \(\mu\) s, I tried a variety of \(k\) values, I found
+that only \(k\) values from -50 to about 5 made any significant
+difference, this is shown in the animation
+<a href="https://ryangreenup.github.io/NMR-Project/Working/RadiationDamping/RadiationDamping.html#laboratory-frame">here</a>
+</p>
+
+<blockquote>
+<p>
+<a href="https://ryangreenup.github.io/NMR-Project/Working/RadiationDamping/RadiationDamping.html#laboratory-frame">https://ryangreenup.github.io/NMR-Project/Working/RadiationDamping/RadiationDamping.html#laboratory-frame</a>
+</p>
+</blockquote>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="rotating-frame"></a>Rotating Frame<br />
+<div class="outline-text-8" id="text-rotating-frame">
+</div>
+<ul class="org-ul">
+<li><a id="math-1"></a>Math<br />
+<div class="outline-text-9" id="text-math-1">
+<p>
+So in the rotating Frame:
+</p>
+
+<p>
+\[\begin{aligned}
+        \mathbf{B}&= \begin{pmatrix}
+    B_{\mathrm{RF}}\cdot  \cos\left( 0 \times t + \phi_{0} \right) - k\cdot  M_y \\
+    B_{\mathrm{RF}}\cdot  \sin\left( 0 \times  t+ \phi_0 \right)+ k\cdot  M_x \\
+    \Delta B_0 \\
+    \end{pmatrix} \\
+    &= \begin{pmatrix}
+    B_{\mathrm{RF}}\cdot  \cos\left(\phi_0 \right) - k\cdot  M_y \\
+    B_{\mathrm{RF}}\cdot  \sin\left( \phi_0\right)+ k\cdot  M_x \\
+    \frac{\Omega}{\gamma} \\
+    \end{pmatrix} \\
+    \mathbf{M}&= \begin{pmatrix} M_x \\ M_y \\ M_z \\ \end{pmatrix}
+    \end{aligned}\]
+</p>
+
+<p>
+and hence:
+</p>
+
+<p>
+\[\begin{aligned}
+    \frac{\mathrm{d}\mathbf{M} }{\mathrm{d} t}&= M\times B - \mathbf{R}\left( \mathbf{M} - M_0 \right)\\
+    &= \begin{pmatrix}
+    \gamma\left[ - k x z +  \frac{y\Omega}{\gamma} +  B_{\mathrm{RF}} z \sin\left( \phi \right) \right] - R_2 y \\
+    \gamma \left[ -  k y z -  \frac{x\Omega}{\gamma}+  B_{\mathrm{RF}} z \cos\left( \phi \right) \right] - R_2 y \\
+    \gamma\left[ k x^2 +  k y^2t - B_{\mathrm{RF}} y \cos\left( \phi \right)- B_{\mathrm{RF}} x \sin\left( \phi \right) \right] - R_1\left( z - M_0 \right)
+    \end{pmatrix}
+    \end{aligned}\]
+</p>
+
+<p>
+This can just as easily be solved numerically and plotted
+</p>
+</div>
+</li>
+<li><a id="code-1"></a>Code<br />
+<div class="outline-text-9" id="text-code-1">
+<pre class="example">
+
+Clear["Global`*"]
+Remove["Global`*"]
+Clear[Derivative]
+
+T1=4;
+R1=1/T1;
+R2=1/2;
+M0=1;
+
+ϕ=0;
+IC={0,0,1};
+length =1*10^-3;
+γ=42.65*10^6;
+Brf = 2*10^-3;
+k=0.0001;
+Ω=5000;
+
+(*length=α/ω;*)
+BlochX=x'[t]==-R2 x[t]+γ (-k x[t]* z[t]+(y[t] Ω)/γ+Brf z[t] Sin[ϕ]);
+BlochY=y'[t]==-R2 y[t]+γ (-k y[t]*z[t]-(x[t] Ω)/γ+Brf z[t] Cos[ϕ]);
+BlochZ=z'[t]==-R1 (-M0+z[t])+γ (k (x[t])^2+k (y[t])^2-Brf y[t] Cos[ϕ]-Brf x[t] Sin[ϕ]);
+(s=NDSolve[{BlochX, BlochY, BlochZ, x[0]==IC[[1]], y[0]==IC[[2]], z[0]==IC[[3]]},{x, y, z},{t,0,length}, MaxSteps-&gt;∞][[1]]);
+x[t_] = x[t] /. s[[1]];
+y[t_] = y[t] /. s[[2]];
+z[t_] = z[t] /. s[[3]];
+
+{x[length], y[length], z[length]};
+
+
+Plot[x[t],{t,0,length}, PlotRange-&gt;Full, PlotLabel-&gt;"X-Value of Magnetic Moment Given Lenth of Pulse (s)"]
+Plot[y[t],{t,0,length}, PlotRange-&gt;Full, PlotLabel-&gt;"X-Value of Magnetic Moment Given Lenth of Pulse (s)"]
+Plot[z[t],{t,0,length}, PlotRange-&gt;Full,PlotLabel-&gt;"X-Value of Magnetic Moment Given Lenth of Pulse (s)"]
+
+(*z[ Range[0,length,length/100]]*)
+</pre>
+</div>
+</li>
+<li><a id="results-1"></a>Results<br />
+<div class="outline-text-9" id="text-results-1">
+
+<div class="figure">
+<p><img src="file:///home/ryan/Dropbox/Notable/notes/2019-12-25T00-05-00.assets/image-20191225120345717.png" alt="image-20191225120345717.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>image-20191225120345717</p>
+</div>
+</div>
+</li>
+<li><a id="longer-pulse"></a>Longer Pulse<br />
+<div class="outline-text-9" id="text-longer-pulse">
+<p>
+I could have also pulsed this longer in the rotating frame, a 100 s
+pulse returned:
+</p>
+
+
+<div class="figure">
+<p><img src="file:///home/ryan/Dropbox/Notable/notes/2019-12-25T00-05-00.assets/image-20191225121305034.png" alt="image-20191225121305034.png" />
+</p>
+<p><span class="figure-number">Figure 3: </span>image-20191225121305034</p>
+</div>
+</div>
+</li>
+<li><a id="choosing-a-k-value"></a>Choosing a \(k\) value<br />
+<div class="outline-text-9" id="text-choosing-a-k-value">
+<p>
+In this case I only found that \(k\) values from -0.1 to 0.1 made any
+significant difference, the varying \(k\) values are shown in the
+animation
+<a href="https://ryangreenup.github.io/NMR-Project/Working/RadiationDamping/RadiationDamping.html#rotating-frame">here</a>.
+</p>
+
+<blockquote>
+<p>
+<a href="https://ryangreenup.github.io/NMR-Project/Working/RadiationDamping/RadiationDamping.html#rotating-frame">https://ryangreenup.github.io/NMR-Project/Working/RadiationDamping/RadiationDamping.html#rotating-frame</a>
+</p>
+</blockquote>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="length-of-pulse"></a>Length of Pulse<br />
+<div class="outline-text-7" id="text-length-of-pulse">
+<ul class="org-ul">
+<li>I set the phase of the pulse to \(0^o\) rather than \(90^o\) but I don't
+think that should make a significant difference</li>
+<li>The strength of the RF-Pulse is 1 mT.
+
+<ul class="org-ul">
+<li>i.e. \(B_{\mathrm{RF}}= 10^{-3}\) T
+
+<ul class="org-ul">
+<li>I was able to practically solve the System for:
+
+<ul class="org-ul">
+<li>1 ms in the lab frame</li>
+<li>100 s in the rotating frame</li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li>The length of the pulse wasn't really an issue, this issue was more so
+trying to interpret the solution, in the plots above the $x$-axis
+represents the number of seconds passed, so I found that a reasonable
+pulse length to visualise was:
+
+<ul class="org-ul">
+<li>0.1 $&mu;$s in the laboratory frame</li>
+<li>1 ms in the laboratory frame</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="skype"></a>Skype<br />
+<div class="outline-text-7" id="text-skype">
+<p>
+I'm a little preocupied with Christmas, would we be able to schedule a
+Skype following Boxing Day other than that any time works for me so how
+about?
+</p>
+
+<blockquote>
+<p>
+6:30 PM Sydney Time sounds good on the \(27^{\mathrm{th}}\)?
+</p>
+</blockquote>
+
+<p>
+This was converted from `md` to `org` using `pandoc -f gfm` at time:
+2020-02-09T05-26-42
+</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org36b7246" class="outline-2">
+<h2 id="org36b7246">Current Interests&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Evening">Evening</span></span></h2>
+<div class="outline-text-2" id="text-org36b7246">
+</div>
+<div id="outline-container-org885b390" class="outline-3">
+<h3 id="org885b390"><span class="todo TODO">TODO</span> Learn Python</h3>
+<div class="outline-text-3" id="text-org885b390">
+<p>
+<a href="MathAdventuresWithPython.html">Finish This Work <i>Math Adventures with Python</i></a>
+</p>
+</div>
+</div>
+<div id="outline-container-org3b72dac" class="outline-3">
+<h3 id="org3b72dac"><span class="todo TODO">TODO</span> Learn Bash</h3>
+<div class="outline-text-3" id="text-org3b72dac">
+<ul class="org-ul">
+<li>Finish 
+<ul class="org-ul">
+<li>Also Checkout <a href="file:///home/ryan/Calibre_Books/Wicked Cool Shell Scripts 101 Scripts for Linux, OS X/Dave Taylor, Brandon Perry (674)">Wicked Cool Shell Scripts</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc7d4e5f" class="outline-3">
+<h3 id="orgc7d4e5f"><span class="todo TODO">TODO</span> Finish Data Camp</h3>
+<div class="outline-text-3" id="text-orgc7d4e5f">
+<p>
+<a href="https://learn.datacamp.com/">Data Camp</a>
+</p>
+<ul class="org-ul">
+<li>Finish Data Viz</li>
+<li>Finish Social Web Data</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6f96025" class="outline-3">
+<h3 id="org6f96025">Start a Kaggle Problem</h3>
+<div class="outline-text-3" id="text-org6f96025">
+<ul class="org-ul">
+<li>Model some Data Set</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf750ea2" class="outline-3">
+<h3 id="orgf750ea2"><span class="todo TODO">TODO</span> Dial in org-mode</h3>
+<div class="outline-text-3" id="text-orgf750ea2">
+<ul class="org-ul">
+<li>How do I use Capture Templates</li>
+<li>How do I manage all the files in my agenda / al the files in my Org directory?
+<ul class="org-ul">
+<li>Like there will eventually be a lot of files, does it matter if I can rifle
+ugh them?</li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-orgbc474af" class="outline-4">
+<h4 id="orgbc474af"><span class="todo TODO">TODO</span> Live Preview</h4>
+<div class="outline-text-4" id="text-orgbc474af">
+<p>
+Get a live preview of <code>org-mode</code> documents using <a href="https://github.com/manateelazycat/emacs-application-framework">Emacs application framework</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org53fa7d0" class="outline-4">
+<h4 id="org53fa7d0"><span class="todo TODO">TODO</span> Org-Roam</h4>
+<div class="outline-text-4" id="text-org53fa7d0">
+<p>
+So I couldn't really figure out <code>org-brain</code>, it was cute but too complicated and
+didn't bring a lot more to the table than <code>org-wiki</code> and simply creating links,
+what does <a href="https://github.com/jethrokuan/org-roam">org-roam</a> bring to the table?
+</p>
+</div>
+</div>
+<div id="outline-container-org9aeeda2" class="outline-4">
+<h4 id="org9aeeda2"><span class="todo TODO">TODO</span> Live Equation Preview</h4>
+<div class="outline-text-4" id="text-org9aeeda2">
+<p>
+I used something like <a href="https://github.com/guanyilun/org-equation-live-preview/blob/master/readme.org">this?</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org0bec7c5" class="outline-4">
+<h4 id="org0bec7c5"><span class="done DONE">DONE</span> Try org-sidebar</h4>
+<div class="outline-text-4" id="text-org0bec7c5">
+<p>
+<a href="https://github.com/alphapapa/org-sidebar/blob/master/README.org">https://github.com/alphapapa/org-sidebar/blob/master/README.org</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7f15039" class="outline-3">
+<h3 id="org7f15039"><span class="todo TODO">TODO</span> Learn VNOTE</h3>
+<div class="outline-text-3" id="text-org7f15039">
+<ul class="org-ul">
+<li>Just Investigate the <code>C-g</code> Bindings etc.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3b5b420" class="outline-3">
+<h3 id="org3b5b420"><span class="todo TODO">TODO</span> Reading List</h3>
+<div class="outline-text-3" id="text-org3b5b420">
+<ul class="org-ul">
+<li>Org-Mode Manual</li>
+<li><a href="https://ess.r-project.org/Manual/ess.html#Features">ESS manual</a></li>
+<li>Emacs Book</li>
+<li><a href="file:///home/ryan/Calibre_Books/William Shotts/The Linux Command Line_ A Complete Introduction, 2nd Edition (661)/The Linux Command Line_ A Complete Introdu - William Shotts.pdf">Bash Book</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org79398a1" class="outline-2">
+<h2 id="org79398a1">Appendx</h2>
+<div class="outline-text-2" id="text-org79398a1">
+<p>
+You may need to configure <code>customize RET org-export-html-extension</code>
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #4f97d7; font-weight: bold;">setq</span> org-html-extension <span style="color: #2d9574;">"html"</span>)
+</pre>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+<code>find ~/Notes -name KEYWORD</code>
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Ryan G</p>
+<p class="date">Created: 2020-03-26 Thu 21:20</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

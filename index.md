@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#ffffff">
 
 # Ryan's Class Notes
-[Visual Analytics Tutorial](https://ryangreenup.github.io/VisualAnalytics.html)
+[Visual Analytics Tutorial_old](https://ryangreenup.github.io/VisualAnalytics_old.html)
 
 
 [Visual Analytics Tutorial (3)](https://ryangreenup.github.io/VisualAnalyticstut3.html)
@@ -24,13 +24,13 @@
 [Note Taking Manual](https://ryangreenup.github.io//MiscNotes/manual.html)
 
 
-[DorsProb](https://ryangreenup.github.io/toastflip/toastflip.html)
+[Sampling Distribution](https://ryangreenup.github.io/toastflip/toastflip.html)
 
 [Ben's Marks](https://ryangreenup.github.io/benmark.html)
 
 [Modelling Dosages](MModNotes/DiffEqDrugs.html) 
 
-[Look Dor; More Notes](https://ryangreenup.github.io//Notable/Notable - Export 7e94/Assigning Solve Solutions in Mathematica.html) 
+[Assigning Solve Solutions in Mathematica](https://ryangreenup.github.io//Notable/Notable - Export 7e94/Assigning Solve Solutions in Mathematica.html) 
 
 
 

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-26 Thu 21:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Data Visualisation</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ryan G" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet"
+           href="./style.css" type="text/css"/>
+
+<script type="text/javascript" src="https://orgmode.org/org-info.js">
+/**
+ *
+ * @source: https://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in https://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in https://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "4");
+org_html_manager.set("VIEW", "showall");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Data Visualisation</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org39d9306">Using <code>ggplot2</code> with <code>org-mode</code></a></li>
+<li><a href="#org9cf091f">Data Visualisation with <code>ggplot2</code></a>
+<ul>
+<li><a href="#orgaaef86c">using RColorBrewer</a></li>
+</ul>
+</li>
+<li><a href="#org417ef2e">Direct pandoc Copy</a>
+<ul>
+<li><a href="#specifying-groups">Specifying <code>groups</code></a>
+<ul>
+<li><a href="#load-packages">Load Packages</a></li>
+<li><a href="#example-plot">Example Plot</a></li>
+<li><a href="#seperate-models">Seperate Models</a></li>
+</ul>
+</li>
+<li><a href="#orgc75cda2">Modifying</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org39d9306" class="outline-2">
+<h2 id="org39d9306">Using <code>ggplot2</code> with <code>org-mode</code></h2>
+<div class="outline-text-2" id="text-org39d9306">
+<p>
+In order to use <code>ggplot2</code> with <code>org-mode</code> the header of the source-code blocks need to be very carefully set up:
+</p>
+
+<ul class="org-ul">
+<li>you need to specify = :dir ../ =
+<ul class="org-ul">
+<li>I don't know why, but if another directory is used or this isn't specified it simply does not work</li>
+</ul></li>
+<li>you need to specify = graphics :file org/PlotName.png = In order to save the plot.</li>
+</ul>
+
+<p>
+Try setting the following in the header:
+</p>
+
+<pre class="example">
+# Babel settings
+#+PROPERTY: session *R*
+#+PROPERTY: cache yes 
+#+PROPERTY: exports both
+#+PROPERTY: tangle yes
+</pre>
+
+
+
+<p>
+When using ggplot2 with <code>org-babel</code>, you need to use the following header:
+</p>
+
+
+<pre class="example">
+
+_SRC R :exports both :results output graphics :file test.png
+
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-org9cf091f" class="outline-2">
+<h2 id="org9cf091f">Data Visualisation with <code>ggplot2</code></h2>
+<div class="outline-text-2" id="text-org9cf091f">
+<p>
+This is a course from the <a href="https://campus.datacamp.com/courses/data-visualization-with-ggplot2-2/chapter-1-statistics?ex=1">Data Visualisation Stream</a>.
+</p>
+
+<p>
+First investigate the structure of the data set and load the necessary packages:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(tidyverse)
+mtcars <span style="color: #a45bad;">%&gt;%</span> str()
+</pre>
+</div>
+
+<pre class="example">
+
+'data.frame':	32 obs. of  11 variables:
+ $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+ $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+ $ disp: num  160 160 108 258 360 ...
+ $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+ $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+ $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+ $ qsec: num  16.5 17 18.6 19.4 17 ...
+ $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+ $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+ $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+ $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
+</pre>
+</div>
+
+<div id="outline-container-orgaaef86c" class="outline-3">
+<h3 id="orgaaef86c">using RColorBrewer</h3>
+<div class="outline-text-3" id="text-orgaaef86c">
+<p>
+Create a directory for the plots:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">mkdir img/DataVizPlots
+</pre>
+</div>
+
+<p>
+So the following will produce  plot
+</p>
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Plot 1: change the LOESS span</span>
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Add span below</span>
+  geom_smooth(se = <span style="color: #ce537a; font-weight: bold;">FALSE</span>, span = 0.7)
+</pre>
+</div>
+
+<p>
+blah blah blah
+</p>
+
+<p>
+Hey Check out this image:
+</p>
+
+
+
+<div class="figure">
+<p><img src="img/DataVizPlots/FirstDVPlot.png" alt="FirstDVPlot.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org417ef2e" class="outline-2">
+<h2 id="org417ef2e">Direct pandoc Copy</h2>
+<div class="outline-text-2" id="text-org417ef2e">
+</div>
+<div id="outline-container-orgaf91166" class="outline-3">
+<h3 id="specifying-groups">Specifying <code>groups</code></h3>
+<div class="outline-text-3" id="text-specifying-groups">
+</div>
+
+<div id="outline-container-org2a92f68" class="outline-4">
+<h4 id="load-packages">Load Packages</h4>
+<div class="outline-text-4" id="text-load-packages">
+<p>
+So first load any useful packages:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #bc6ec5; font-weight: bold;">load.pac</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>() {
+
+  <span style="color: #4f97d7; font-weight: bold;">if</span>(<span style="color: #a45bad;">require</span>(<span style="color: #2d9574;">'pacman'</span>)){
+    <span style="color: #a45bad;">library</span>(<span style="color: #2d9574;">'pacman'</span>)
+  }<span style="color: #4f97d7; font-weight: bold;">else</span>{
+    install.packages(<span style="color: #2d9574;">'pacman'</span>)
+    <span style="color: #a45bad;">library</span>(<span style="color: #2d9574;">'pacman'</span>)
+  }
+
+  pacman::p_load(tidyverse, rmarkdown, plotly, colorspace, RColorBrewer, mise, formatR)
+
+}
+
+<span style="color: #4f97d7; font-weight: bold;">if</span> (!exists(<span style="color: #2d9574;">"execFlag"</span>)) {
+ load.pac()
+  execFlag <span style="color: #a45bad;">&lt;-</span> <span style="color: #ce537a; font-weight: bold;">FALSE</span>
+}
+
+mise()
+</pre>
+</div>
+
+<pre class="example">
+
+Loading required package: pacman
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org153068a" class="outline-4">
+<h4 id="example-plot">Example Plot</h4>
+<div class="outline-text-4" id="text-example-plot">
+<p>
+So take a fairly ordinary plot from <code>mtcars</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(colorspace)
+<span style="color: #a45bad;">library</span>(tidyverse)
+<span style="color: #a45bad;">library</span>(RColorBrewer)
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Plot 1: change the LOESS span</span>
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Add span below</span>
+  geom_smooth(se = <span style="color: #ce537a; font-weight: bold;">FALSE</span>, span = 0.7) + 
+  theme_bw()
+
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="Intro02AdvPlotLinMod.png" alt="Intro02AdvPlotLinMod.png" />
+</p>
+</div>
+</div>
+
+<ul class="org-ul">
+<li><a id="clustering"></a>Clustering<br />
+<div class="outline-text-5" id="text-clustering">
+<p>
+By looking at this plot it seems fairly obvious that there are three
+clusters, this could be visualised using Heirarchical Clustering:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">mcars <span style="color: #a45bad;">&lt;-</span> as_tibble(mtcars)
+mcars$cyl <span style="color: #a45bad;">&lt;-</span> factor(mcars$cyl, levels = c(4,6,8), ordered = <span style="color: #ce537a; font-weight: bold;">TRUE</span> )
+dst <span style="color: #a45bad;">&lt;-</span> mcars <span style="color: #a45bad;">%&gt;%</span> dist()
+hc.iris.complete <span style="color: #a45bad;">&lt;-</span> hclust(dst, method = <span style="color: #2d9574;">'complete'</span>)
+
+<span style="color: #2aa1ae; background-color: #292e34;">#### </span><span style="color: #2aa1ae; background-color: #292e34;">2. Cluster the observations using average and single linkage.</span>
+hc.iris.average  <span style="color: #a45bad;">&lt;-</span> hclust(dst, method = <span style="color: #2d9574;">'average'</span>)
+hc.iris.single   <span style="color: #a45bad;">&lt;-</span> hclust(dst, method = <span style="color: #2d9574;">'single'</span>)
+
+<span style="color: #2aa1ae; background-color: #292e34;">##### </span><span style="color: #2aa1ae; background-color: #292e34;">Plot the Predictions</span>
+<span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">Now that the models have been made, by specifying the number of groups required, the function `cutree` will determine at what height to cut off the dendogram:</span>
+
+hcPreds <span style="color: #a45bad;">&lt;-</span> cutree(hc.iris.complete, k = 3)
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Make the Data</span>
+groupPred <span style="color: #a45bad;">&lt;-</span> factor(hcPreds, levels = c(1,2,3), ordered = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+mcars$KMpred <span style="color: #a45bad;">&lt;-</span> groupPred
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Plot the Data</span>
+ggplot(mcars, aes(y = mpg, x = wt, col = KMpred)) +
+  geom_point() +
+  labs(col = <span style="color: #2d9574;">"Predicted\nGroup"</span>, caption = <span style="color: #2d9574;">"Ellipses represent 90% Normal confidence levels,\n</span>
+<span style="color: #2d9574;">       predictions made using K-means algorithm with 3 classes"</span>) +
+  stat_ellipse(level = 0.9) +
+  theme_bw()
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="ClusterExample.png" alt="ClusterExample.png" />
+</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org7470569" class="outline-4">
+<h4 id="seperate-models">Seperate Models</h4>
+<div class="outline-text-4" id="text-seperate-models">
+<p>
+In order to accomodate the multiple models it would be desirable to make
+seperate plots for the clusters, this could be acheived by simply asking
+<code>ggplot</code> to:
+</p>
+
+<ul class="org-ul">
+<li>make a linear model when the <code>col</code> variable is specified</li>
+</ul>
+
+<p>
+But if we still wanted to fit a loess model across the entire model then
+we would need to set the group to 1:
+</p>
+
+<ul class="org-ul">
+<li><code>stat_smooth(aes(group=1))</code></li>
+</ul>
+
+<p>
+So putting all that together (and substituting cylinder instead of
+clustering):
+</p>
+
+<pre class="example">
+
+# Plot 2: Set the second stat_smooth() to use LOESS with a span of 0.7
+ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
+  geom_point() +
+  stat_smooth(method = "lm", se = FALSE) +
+  stat_smooth(method = "loess", aes(group = 1), se = FALSE, col = "black", span = 0.7) +
+  theme_bw()
+
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><a id="adding-all-to-the-legend-and-colours"></a>Adding 'All' to the legend and colours<br />
+<div class="outline-text-5" id="text-adding-all-to-the-legend-and-colours">
+<p>
+The problem with the plot now however is that the loess model isn't
+considered it's own group which means:
+</p>
+
+<ul class="org-ul">
+<li>it won't appear in the legend</li>
+<li>it won't behave when feeding colours to the plot</li>
+</ul>
+
+<p>
+In order to address this:
+</p>
+
+<ul class="org-ul">
+<li>Don't specify the colour in the call of the loess model</li>
+<li>inside the aesthetics component of the <code>stat_smooth()</code> layer specify
+the name of this new group
+
+<ul class="org-ul">
+<li>In this case we've specified only 1 group may exist with <code>group=1</code>,
+hence we just need to give it a name, in this case <code>Everything!!!</code>.</li>
+</ul></li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Plot 3: Set col to "All", inside the aes layer of stat_smooth()</span>
+ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
+  geom_point() +
+  stat_smooth(method = <span style="color: #2d9574;">"lm"</span>, se = <span style="color: #ce537a; font-weight: bold;">FALSE</span>) +
+  stat_smooth(method = <span style="color: #2d9574;">"loess"</span>,
+              <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Add col inside aes()</span>
+              aes(group = 1, col = <span style="color: #2d9574;">"All"</span>),
+              <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Remove the col argument below</span>
+              se = <span style="color: #ce537a; font-weight: bold;">FALSE</span>, span = 0.7)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="mtcarsGroups.png" alt="mtcarsGroups.png" />
+</p>
+</div>
+</div>
+
+<ul class="org-ul">
+<li><a id="custom-colours"></a>Custom Colours<br />
+<div class="outline-text-6" id="text-custom-colours">
+<p>
+Now the colours look about right we will specify our own colours with by
+using <code>RColorBrewer</code>
+</p>
+
+<p>
+First Generate the Vector of colours:
+</p>
+
+<pre class="example">
+library(RColorBrewer)
+myColors &lt;- brewer.pal(4, "Dark2")
+</pre>
+
+<p>
+Now give those colours to the plut by adding a <code>scale_colour_manual()</code>
+layer and specify the name for the colour variable. (The name for the
+colour variale could also be specified using <code>labs(col = "Cylinders"))</code>
+</p>
+
+<pre class="example">
+# Plot 4: Add scale_color_manual to change the colors
+TheMTCarsPlot &lt;- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
+  geom_point() +
+  stat_smooth(method = "lm", se = FALSE, span = 0.7) +
+  stat_smooth(method = "loess", 
+              aes(group = 1, col="All"), 
+              se = FALSE, span = 0.7)+
+  theme_bw()
+</pre>
+
+<pre class="example">
+TheMTCarsPlot +
+  scale_color_manual("Cylinders", values = myColors)
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><a id="seperate-colour-for-loess"></a>Seperate Colour for Loess<br />
+<div class="outline-text-7" id="text-seperate-colour-for-loess">
+<p>
+If we wanted to specify a particular colour for the loess mode, say for
+example a blue/grey colour, we could acheive that by adding it to the
+very end of the colour vector:
+</p>
+
+<pre class="example">
+myColors &lt;- c(brewer.pal(n = 3, name = "Accent"), "blue")
+
+
+TheMTCarsPlot +
+  scale_color_manual("Cylinders", values = myColors)
+</pre>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc75cda2" class="outline-3">
+<h3 id="orgc75cda2">Modifying</h3>
+<div class="outline-text-3" id="text-orgc75cda2">
+<p>
+<a href="https://campus.datacamp.com/courses/data-visualization-with-ggplot2-2/chapter-1-statistics?ex=4"><code>stat_smooth</code></a>
+</p>
+<p>
+:CUSTOM<sub>ID</sub>: modifying-stat<sub>smooth</sub>
+</p>
+
+<p>
+LOESS smoothing is a non-parametric (Refer to Time Series Analysis) form
+of regression that uses a weighted, sliding-window, average to calculate
+a line of best fit, We can control the size of this window with the span
+argument, by default <code>stat_smooth</code> uses the LOESS model.
+</p>
+
+<p>
+The span of the LOESS model can be changed to some arbitrary number, say
+0.7923 by specifying the <code>span</code> argument as <code>span = 0.7923</code>:
+</p>
+
+<pre class="example">
+library(ggplot2)
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  # Add span below
+  geom_smooth(se = FALSE, span = 0.7923)
+</pre>
+
+<p>
+This was converted from `md` to `org` using `pandoc -f gfm` at time: 
+2020-01-01T00-45-54
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Ryan G</p>
+<p class="date">Created: 2020-03-26 Thu 21:20</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
