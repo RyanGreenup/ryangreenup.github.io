@@ -7,6 +7,11 @@
 <meta name="theme-color" content="#ffffff">
 
 # Ryan's Class Notes
+
+[Visual Analytics](https://ryangreenup.github.io/Org-Publish/VisualAnalytics.html
+)
+
+
 [Visual Analytics Tutorial_old](https://ryangreenup.github.io/VisualAnalytics_old.html)
 
 

@@ -1,0 +1,2515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-26 Thu 23:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thinking About Data</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ryan G" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet"
+           href="./style.css" type="text/css"/>
+
+<script type="text/javascript" src="https://orgmode.org/org-info.js">
+/**
+ *
+ * @source: https://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in https://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in https://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "3");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Thinking About Data</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org3c82afe"><span class="todo TODO">TODO</span> Overheads</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org80918b6"><span class="todo TODO">TODO</span> Install Emacs Application Framework</a></li>
+<li><a href="#org13cc137"><span class="todo TODO">TODO</span> Install a live preview for equations in org-mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5ce2a5e">Deriving the Normal Distribution</a>
+<ul>
+<li><a href="#power-series">Power Series&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Series">Series</span></span></a>
+<ul>
+<li><a href="#example">Example</a></li>
+<li><a href="#representing-a-function-as-a-power-series">Representing a function as a Power Series</a></li>
+<li><a href="#calculus-rules-and-series">Calculus Rules and Series</a></li>
+<li><a href="#taylor-series">Taylor Series</a></li>
+</ul>
+</li>
+<li><a href="#orgff0435b">Modelling Normal Distribution</a>
+<ul>
+<li><a href="#orgf282939">what is the $y$-axis in a Density curve?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ggplot2">ggplot2</span>&#xa0;<span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#orgad898be">Defining the Normal Distribution</a></li>
+<li><a href="#org95fcce0">Modelling only distance from the mean</a></li>
+<li><a href="#org6c30671">Incorporating Proportional to Frequency</a></li>
+<li><a href="#orga9cc5fb">Putting both Conditions together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc4cc560">Understanding the p-value</a>
+<ul>
+<li><a href="#org05fef9b">False Positive Rate</a></li>
+<li><a href="#org25d8c7a">False Discovery Rate</a></li>
+<li><a href="#org4881ce2">Measuring Probability</a></li>
+<li><a href="#org4fa2a53">Comparing \(\alpha\) and the p-value</a></li>
+<li><a href="#orgbc3b8d7">Wikipedia Links</a></li>
+</ul>
+</li>
+<li><a href="#orga2d1547">Calculating Power</a>
+<ul>
+<li><a href="#orgae14de3">Example</a>
+<ul>
+<li><a href="#orge417d14">Problem</a></li>
+<li><a href="#org30ab5b7">Solution</a></li>
+<li><a href="#orgc9b4f02">Step 1; Find the Critical Sample Mean (\(\bar{x}_\mathsf{crit}\))</a></li>
+<li><a href="#orga8ea00d">Step 2: Find the Difference between the Critical and True Means as a Z-Value (prob of Type II)</a></li>
+<li><a href="#org6e5299d">Step 3: State the value of \(\beta\)</a></li>
+<li><a href="#orga22fe38">Step 4: State the Power Value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org00e2018">Weekly Material</a>
+<ul>
+<li><a href="#org3ca1ce8">Wk 3; Smoking and Birth Weight</a>
+<ul>
+<li><a href="#org32b37e1">Boxplots</a></li>
+<li><a href="#org0c1b0ce">Lecture Announcements</a></li>
+<li><a href="#org5c60627">Naming Variables</a></li>
+<li><a href="#org3bdf8d4"><span class="done DONE">DONE</span> Review Chi Distribution,</a></li>
+<li><a href="#orgf30ed43"><span class="done DONE">DONE</span> Fix YAML Headers in <code>rmd</code> to play ball with Notable</a></li>
+<li><a href="#org2fc861e">Calculalating mean</a></li>
+<li><a href="#org3e11a36">Calculating Range</a></li>
+<li><a href="#org63fb459">Calculating Variance</a></li>
+<li><a href="#orga17ff48">InterQuartile Data</a></li>
+<li><a href="#org28a0d73"><span class="todo WAITING">WAITING</span> Push Quiz to Github</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0cfa075">Central Limit Theorem</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3c82afe" class="outline-2">
+<h2 id="org3c82afe"><span class="todo TODO">TODO</span> Overheads</h2>
+<div class="outline-text-2" id="text-org3c82afe">
+</div>
+<div id="outline-container-org80918b6" class="outline-4">
+<h4 id="org80918b6"><span class="todo TODO">TODO</span> Install Emacs Application Framework</h4>
+<div class="outline-text-4" id="text-org80918b6">
+<p>
+This is going to be necessary to deal with not just equations but links, tables
+and other quirks
+</p>
+
+<p>
+<a href="https://github.com/manateelazycat/emacs-application-framework">Install it from here</a>
+</p>
+
+<p>
+The reason for this is that generating latex preview fragments is just far too
+slow to be useful in any meaningful fashion.
+</p>
+</div>
+</div>
+<div id="outline-container-org13cc137" class="outline-4">
+<h4 id="org13cc137"><span class="todo TODO">TODO</span> Install a live preview for equations in org-mode</h4>
+<div class="outline-text-4" id="text-org13cc137">
+<p>
+<a href="https://github.com/fuxialexander/emacs-webkit-katex-render">Here is one example</a> but there was a better one I was using
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ce2a5e" class="outline-2">
+<h2 id="org5ce2a5e">Deriving the Normal Distribution</h2>
+<div class="outline-text-2" id="text-org5ce2a5e">
+</div>
+<div id="outline-container-orgfd070ec" class="outline-3">
+<h3 id="power-series">Power Series&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Series">Series</span></span></h3>
+<div class="outline-text-3" id="text-power-series">
+<p>
+A function \(f\) :
+</p>
+
+
+<p>
+\[\begin{aligned}
+     f\left( j \right)= \sum^{\infty}_{i= 0}   \left[ C_n\left( z- a \right)^n \right], \enspace \exists z \in \mathbb{C} 
+ \end{aligned}\]
+</p>
+
+<p>
+\[\begin{aligned}
+     f\left( z \right)= \sum^{\infty}_{i= 0}   \left[ C_n\left( z- a \right)^n \right], \enspace \exists z \in \mathbb{C} 
+ \end{aligned}\]
+</p>
+
+<p>
+Is a <a href="./11_Series.md">Power Series</a> a and will either:
+</p>
+
+<ul class="org-ul">
+<li>Converge only for \(x= a\),</li>
+<li>converge \(\forall x\)</li>
+<li>converge in the circle \(\left| z- a \right| <R\)</li>
+</ul>
+</div>
+
+<div id="outline-container-org7f76a4d" class="outline-4">
+<h4 id="example">Example</h4>
+<div class="outline-text-4" id="text-example">
+<p>
+Take some function equal to the following power series:
+</p>
+
+<p>
+\(f\left( x \right) = \sum_{n=0}^{\infty} \left[ n! \cdot x^n \right]\)
+</p>
+
+<p>
+Because the terms inside the power series has a factorial the only test
+that will work is the limit ratio test so we use that to evaluate
+convergence. <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+</p>
+
+<p>
+let \(a_n= n!\cdot x^n\):
+</p>
+
+<p>
+\[\begin{aligned}
+ \frac{\lim_{n \rightarrow \infty }\left| a_{n+ 1} \right|}{\lim_{n     \rightarrow  \infty}\left| a_n  \right| } &= \lim_{n     \rightarrow \infty}\left| \frac{\left( n+  1 \right) !\cdot x^n \cdot x}{n! \cdot x^n}  \right| \\
+ &= \left( n+  1 \right) \cdot \left| x \right| \\
+ &=  0 \iff x =0
+ \end{aligned}\]
+</p>
+
+<p>
+\(\therefore\) The power series converges if and only \(x= 0\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d529c1" class="outline-4">
+<h4 id="representing-a-function-as-a-power-series">Representing a function as a Power Series</h4>
+<div class="outline-text-4" id="text-representing-a-function-as-a-power-series">
+<p>
+Ordinary functions can be represented as power series, this can be
+useful to deal with integrals that don't have an elementary
+anti-derivative.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="geometric-series"></a>Geometric Series<br />
+<div class="outline-text-5" id="text-geometric-series">
+<p>
+First take the Series:
+</p>
+
+<p>
+\[\begin{aligned}
+ S_n &= \sum_{n=0}^{n} r^k \\
+ &= 1 +  r +  r^2 +  r^3 \ldots +  r^{n-1} +  r^n \\
+  \implies   r \cdot S_n &= r +  r^2 +  r^3 +  r^4 \ldots r^n +  r^{n+  1} \\
+  \implies   S_n - r \cdot  C_n &= 1 +  r^{n+  1} \\
+   \implies  S_n &= \frac{1+  r^{n+  1}}{1- r}
+ \end{aligned}\]
+</p>
+
+<p>
+So now consider the geometric series:
+</p>
+
+<p>
+\[\begin{aligned}
+     \sum^{\infty}_{k= 0}   \left[ x^k \right] &= \lim_{n \rightarrow  \infty}\left[ \sum^{n}_{k= 0}   x^k \right]\\
+ &= \lim_{n \rightarrow  \infty}\left[ \frac{1+  x^{n+  1}}{1- x} \right]\\
+ &= \frac{1+  \lim_{n \rightarrow  \infty}\left[ x^{n+  1} \right]}{1 -  x} \\
+ &= \frac{1+  0}{1-  x}\\
+ &=  \frac{1}{1-  x}
+ \end{aligned}\]
+</p>
+</div>
+</li>
+
+<li><a id="using-the-geometric-series-to-create-a-power-series"></a>Using The Geometric Series to Create a Power Series<br />
+<div class="outline-text-5" id="text-using-the-geometric-series-to-create-a-power-series">
+<p>
+Take for example the function:
+</p>
+
+<p>
+\[\begin{aligned}
+ g\left( x \right)&= \frac{1}{1 +  x^2}
+ \end{aligned}\]
+</p>
+
+<p>
+This could be represented as a power series by observing that:
+</p>
+
+<p>
+\[\begin{aligned}
+ \frac{1}{1- \#_1} = \sum_{n=0}^{\infty} \left[ \#_1^n \right] 
+ \end{aligned}\]
+</p>
+
+<p>
+And then simply putting in the value of \(\#_1 = \left( - x^2 \right)\) :
+</p>
+
+<p>
+\[\begin{aligned}
+ \frac{1}{1- \left( - x^2 \right) } = \sum_{n=0}^{\infty} \left[ \left( - x^2 \right) ^n \right] 
+ \end{aligned}\]
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org4c1cb8e" class="outline-4">
+<h4 id="calculus-rules-and-series">Calculus Rules and Series</h4>
+<div class="outline-text-4" id="text-calculus-rules-and-series">
+<p>
+The laws of differentiation allow the following relationships:
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="differentiation"></a>Differentiation<br />
+<div class="outline-text-5" id="text-differentiation">
+<p>
+\[\frac{\mathrm{d} }{\mathrm{d} x}\left( \sum_{n=1}^{\infty} c_n\left( z- a \right) ^n \right) = \sum_{n=1}^{\infty} \left[ \frac{\mathrm{d} }{\mathrm{d} x}\left( c_n\left( z- a \right) ^n \right) \right] \]
+</p>
+</div>
+</li>
+
+<li><a id="integration"></a>Integration<br />
+<div class="outline-text-5" id="text-integration">
+<p>
+\[\int  \left( \sum_{n=1}^{\infty} c_n \left( z- a \right) ^n\right) \mathrm{d}x = \sum_{n=1}^{\infty} \left[ c_n \left( z- a \right) ^n \right] \]
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orge4d5366" class="outline-4">
+<h4 id="taylor-series">Taylor Series</h4>
+<div class="outline-text-4" id="text-taylor-series">
+<p>
+This is the important one, the idea being that you can use this to
+easily represent any function as an infinite series:
+</p>
+
+<p>
+Consider the pattern formed by taking derivatives of
+\(f\left( z \right)= \sum_{n=1}^{\infty} c_n \left( z- a \right)^n\):
+</p>
+
+<p>
+\[\begin{aligned}
+ f\left( z \right)&= c_0 +  c_1\left( x- a \right)+  c_2\left( x- a \right)^2 +  c_3\left( x- a \right)^3 +  \ldots\\
+ &  \implies   f\left( a \right)=  c_0\\
+ f'\left( z \right)&=  c_1 +  2c_2\left( z- a \right) +  3c_3\left( z- a \right)^2 +  4c_4\left( z- a \right)^3 \\
+ &  \implies   f'\left( a \right)= c_1\\
+ f''\left( z \right)&= 2c_2+  3\times 2\times c_3\left( z- a \right)+  4 \times  3 c_4\left( z- a \right)^2 +  \ldots \\
+ &  \implies   f''\left( a \right)= 2 \cdot c_2 \\
+ f'''\left( z \right)&=  3 \times  2 \times  1 \cdot c_3 +  4 \times  3 \times  2 c_4 \left(  z -  a  \right) + \ldots \\
+ &  \implies   f'''\left( a \right)= 3! c_3
+ \end{aligned}\]
+</p>
+
+<p>
+Following this pattern forward:
+</p>
+
+<p>
+\[\begin{aligned}
+     f^{\left( n \right)}\left( a \right)&= n!\cdot  c_n \\
+      \implies  c_n &= \frac{f^{\left( n \right)}\left( a \right)}{n!}
+ \end{aligned}\]
+</p>
+
+<p>
+Hence, if there exists a power series to represent the function \(f\),
+then it must be:
+</p>
+
+<p>
+\[\begin{aligned}
+ f\left( z \right)=  \sum^{\infty}_{n= 0}   \left[ \frac{f^{\left( n \right)}\left( a \right)}{n!}\left( x- a \right)^n \right] 
+ \end{aligned}\]
+</p>
+
+<p>
+If the power series is centred around 0, it is then called a <i>Mclaurin
+Series</i>.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="power-series-expansion-of-e"></a>Power Series Expansion of \(e\)<br />
+<div class="outline-text-5" id="text-power-series-expansion-of-e">
+<p>
+\[\begin{aligned}
+     f\left( z \right)= e^z&= \sum^{\infty}_{n= 0}   \left[ \frac{f^{\left( n \right)}\left( 0 \right)}{n!}\cdot  x^n \right]\\
+     &= \sum^{\infty}_{n= 0}   \left[ \frac{e^0}{n!}x^n \right] \\
+     &= \sum^{\infty}_{n= 0}   \left[ \frac{x^n}{n!} \right] 
+ \end{aligned}\]
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgff0435b" class="outline-3">
+<h3 id="orgff0435b">Modelling Normal Distribution</h3>
+<div class="outline-text-3" id="text-orgff0435b">
+<p>
+The Normal Distribution is a probability density function that is essentially
+modelled after observation.<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+</p>
+</div>
+<div id="outline-container-orgf282939" class="outline-4">
+<h4 id="orgf282939">what is the $y$-axis in a Density curve?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ggplot2">ggplot2</span>&#xa0;<span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-orgf282939">
+<p>
+Consider a histogram of some continuous normally distributed data:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">layout(mat = matrix(1:6, nrow = 3))
+
+x <span style="color: #a45bad;">&lt;-</span> rnorm(10000, mean = 0, sd = 1)
+sd(x)
+hist(rnorm(10000), breaks = 5, freq = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">curve(dnorm(x, 0, 1), add = TRUE, lwd = 3, col = "royalblue")</span>
+
+hist(rnorm(10000), breaks = 10, freq = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">curve(dnorm(x, 0, 1), add = TRUE, lwd = 3, col = "royalblue")</span>
+
+hist(rnorm(10000), breaks = 15, freq = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">curve(dnorm(x, 0, 1), add = TRUE, lwd = 3, col = "royalblue")</span>
+
+hist(rnorm(10000), breaks = 20, freq = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">curve(dnorm(x, 0, 1), add = TRUE, lwd = 3, col = "royalblue")</span>
+
+hist(rnorm(10000), breaks = 25, freq = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">curve(dnorm(x, 0, 1), add = TRUE, lwd = 3, col = "royalblue")</span>
+
+hist(x, breaks = 30, freq = <span style="color: #ce537a; font-weight: bold;">FALSE</span>, col = <span style="color: #2d9574;">"lightblue"</span>)
+curve(dnorm(x, 0, 1), add = <span style="color: #ce537a; font-weight: bold;">TRUE</span>, lwd = 3, col = <span style="color: #2d9574;">"royalblue"</span>)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="HistogramDensityExample.png" alt="HistogramDensityExample.png" />
+</p>
+</div>
+
+<p>
+(Or in ggplot2):
+</p>
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(tidyverse)
+<span style="color: #a45bad;">library</span>(gridExtra)
+x <span style="color: #a45bad;">&lt;-</span> rnorm(10000)
+x <span style="color: #a45bad;">&lt;-</span> tibble::enframe(x)
+head(x)
+PlotList <span style="color: #a45bad;">&lt;-</span> list()
+<span style="color: #4f97d7; font-weight: bold;">for</span> (i <span style="color: #4f97d7; font-weight: bold;">in</span> seq(from = 5, to = 30, by = 5)) {
+  PlotList[[i/5]] <span style="color: #a45bad;">&lt;-</span> ggplot(data = x, mapping = aes(x = value)) +
+    geom_histogram(aes(y = ..density..), col = <span style="color: #2d9574;">"royalblue"</span>, fill = <span style="color: #2d9574;">"lightblue"</span>, bins = i) +
+    stat_function(fun = dnorm, args = list(mean = 0, sd = 1))+
+    theme_classic()
+}
+
+                                        <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">arrangeGrob(grobs = PlotList, layout_matrix = matrix(1:6, nrow = 3))</span>
+grid.arrange(grobs = PlotList, layout_matrix = matrix(1:6, nrow = 3))
+
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="HistogramDensityExampleggplot2.png" alt="HistogramDensityExampleggplot2.png" />
+</p>
+</div>
+
+<p>
+Observe that the outline of the frequencies can be made arbitrarily close to a
+curve given that the bin-width is made sufficiently small. This curve, known as
+the probability density function,  represents
+the frequency of observation around that value, or more accurately the
+area beneath the curve around that point on the $x$-axis will
+be the probability of observing values within that corresponding interval.
+</p>
+
+<p>
+Strictly speaking the curve is the rate of change of the probability at that
+ point as well.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad898be" class="outline-4">
+<h4 id="orgad898be">Defining the Normal Distribution</h4>
+<div class="outline-text-4" id="text-orgad898be">
+<p>
+Data are said to be normally distributed if, the plot of the frequency density
+curve is such that:
+</p>
+
+<ul class="org-ul">
+<li>The rate of change is proportional to:
+<ul class="org-ul">
+<li>The distance of the score from the mean
+<ul class="org-ul">
+<li>\(\frac{\mathrm{d} }{\mathrm{d} x}\left( f \right) \propto - \left( x- \mu \right)\)</li>
+</ul></li>
+<li>The frequencies themselves.
+<ul class="org-ul">
+<li>\(\frac{\mathrm{d} }{\mathrm{d} x} \propto f\)</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+If the Normal Distribution was only proportional to the distance from the mean
+(i.e. \((x\propto-(x-\mu)\)) the model would be a parabola that dips below zero, as
+shown in <a href="#org41bc771">No description for this link</a>, so it is necessary to provide the restriction that the rate of
+change is also proportional to the frequency (i.e. \(y \propto y\)).
+</p>
+
+<p>
+let \(f\) be the frequency of observation around \(x\), following these rules the
+plot would come to look something like:
+</p>
+
+
+<div class="figure">
+<p><img src="./Attachments/Statistics/BellCurve.png" alt="BellCurve.png" width="400px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org95fcce0" class="outline-4">
+<h4 id="org95fcce0">Modelling only distance from the mean</h4>
+<div class="outline-text-4" id="text-org95fcce0">
+<p>
+If we presumed the frequency (which we will call \(f\) on the $y$-axis) was proportional only to the distance from the
+mean the model would be a parabola: <a id="org41bc771"></a>
+</p>
+
+<p>
+\[\begin{aligned}
+\frac{\mathrm{d}f }{\mathrm{d} x} &\propto - \left( x- \mu \right)\\
+\frac{\mathrm{d}f }{\mathrm{d} x}&= - k\left( x- \mu \right), \quad  \exists k
+\in \mathbb{R}\\
+\int \frac{\mathrm{d}f }{\mathrm{d} x} \mathrm{d}x &=  - \int \left( x- \mu
+\right) \mathrm{d}x 
+\end{aligned}\]
+</p>
+
+<p>
+Using integration by substitution:
+</p>
+
+<p>
+\[\begin{aligned}
+      \text{let:} \quad v&= x- \mu\\
+       \implies  \frac{\mathrm{d}v }{\mathrm{d} x}&= 1\\
+        \implies  \mathrm{d}v &= \mathrm{d}x
+\end{aligned}\]
+</p>
+
+<p>
+and hence
+</p>
+
+<p>
+\[\begin{aligned}
+\int \frac{\mathrm{d}f }{\mathrm{d} x} \mathrm{d}x &=  - \int \left( x- \mu
+\right) \mathrm{d}x \\
+ \implies  \int  \mathrm{d}p &= - \int v \mathrm{d}v \\  
+ p&= - \frac{1}{2}v^2\cdot  k +  C \\
+ p&=  - \frac{1}{2}\left( x- \mu \right)^2\cdot  k +  C
+\end{aligned}\]
+</p>
+
+<p>
+Clearly the problem with this model is that it allows for probabilities less
+than zero, hence the model needs to be refined to:
+</p>
+
+<ul class="org-ul">
+<li>incorporate a slower rate of change for smaller values of \(f\) (approaching 0)</li>
+<li>incorporate a faster rate of change for larger values of \(f\)
+<ul class="org-ul">
+<li>offset by the the condition that \(\frac{\mathrm{d}f }{\mathrm{d} x}\propto -\left( x- \mu \right)\)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6c30671" class="outline-4">
+<h4 id="org6c30671">Incorporating Proportional to Frequency</h4>
+<div class="outline-text-4" id="text-org6c30671">
+<p>
+In order to make the curve bevel out for smaller values of \(f\) it is sufficient
+to implement the condition that \(\frac{\mathrm{d}f }{\mathrm{d} x} \propto  f\):
+</p>
+
+<p>
+\[\begin{aligned}
+      \frac{\mathrm{d}f }{\mathrm{d} x} &\propto f\\
+      \int \frac{1}{f}\cdot  \frac{\mathrm{d}f }{\mathrm{d} x} \mathrm{d}x&=
+      k\cdot  \int  \mathrm{d}x \\
+      \ln{ \left| f \right| }&= k\cdot  x\\
+      f&= C \cdot  e^{\pm x} \\
+      f & \propto e^{\pm x}
+\end{aligned}\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9cc5fb" class="outline-4">
+<h4 id="orga9cc5fb">Putting both Conditions together</h4>
+<div class="outline-text-4" id="text-orga9cc5fb">
+<p>
+So in order to model the bell-curve we need:
+</p>
+
+<p>
+\[\begin{aligned}
+      f \propto  f \wedge f &\propto - \left( x- \mu \right)\\
+      \implies  \frac{\mathrm{d}f }{\mathrm{d} x} &\propto - f\left( x -  \mu
+       \right)\\
+\int \frac{1}{f} \mathrm{d}f &= - k \cdot   \int \left( x- \mu \right)
+\mathrm{d}x \\
+\ln{ \left| f \right| }&= - k \int \left( x-  \mu \right) \mathrm{d}x
+\end{aligned}\]
+</p>
+
+<p>
+because \(f>0\) by definition, the absolute value operators may be dispensed
+with: 
+</p>
+
+<p>
+\[\begin{aligned}
+\ln{ \left( f \right) }&= - k\cdot  \frac{1}{2}\left( x- \mu \right)^2 +  C \\
+f & \propto e^{\frac{\left( x - \mu \right)^2}{2}}
+\end{aligned}\]
+</p>
+
+<p>
+Now that the function has been solved it is necessary to apply the IC's in
+order to further simplify it.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org534a684"></a>IC, Probability Adds to 1<br />
+<div class="outline-text-5" id="text-org534a684">
+<p>
+The area bound by the curve must be 1 because it represents probability,
+hence:
+</p>
+
+<p>
+\[\begin{aligned}
+1&= \int_{-\infty}^{\infty} f \mathrm{d}f \\ 
+1&= - C \int_{-\infty}^{\infty} e^{\frac{k}{2} \left( x- \mu \right)^2}
+\mathrm{d}f \\
+\end{aligned}\]
+</p>
+
+<p>
+Using integration by substitution:
+</p>
+
+<p>
+\[\begin{aligned}
+\text{let:}  \quad u^2&= \frac{k}{2}\left( x - \mu \right)^2\\
+u&= \sqrt{\frac{k}{2}} \left( x- \mu \right) \\
+\frac{\mathrm{d}u }{\mathrm{d} x}&= \sqrt{\frac{k}{2}} 
+\end{aligned}\]
+</p>
+
+<p>
+hence:
+</p>
+
+<p>
+\[\begin{aligned}
+1&= - C \int_{-\infty}^{\infty} e^{\frac{k}{2} \left( x- \mu \right)^2}\\
+1&= \sqrt{\frac{2}{k}} \cdot  C \int_{-\infty}^{\infty} e^{- u^2} \mathrm{d}u \\
+1^2&= \left( \sqrt{\frac{2}{k}} \cdot  C \int_{-\infty}^{\infty} e^{- u^2} \mathrm{d}u \right)^2\\
+1^2&= \left( \sqrt{\frac{2}{k}} \cdot  C \int_{-\infty}^{\infty} e^{- u^2} \mathrm{d}u \right) \times \left( \sqrt{\frac{2}{k}} \cdot  C \int_{-\infty}^{\infty} e^{- u^2} \mathrm{d}u \right)
+\end{aligned}\]
+</p>
+
+<p>
+Because this is a definite integral \(u\) is merely a dummy variable and
+instead we can make the substitution of \(x\) and \(y\) for clarity sake.
+</p>
+
+<p>
+\[\begin{aligned}
+1^2&= \left( \sqrt{\frac{2}{k}} \cdot  C \int_{-\infty}^{\infty} e^{- x^2} \mathrm{d}x \right) \times \left( \sqrt{\frac{2}{k}} \cdot  C \int_{-\infty}^{\infty} e^{- y^2} \mathrm{d}y \right)
+\end{aligned}\]
+</p>
+
+<p>
+Now presume that the definite integral is equal to some real constant \(\beta
+\in \mathbb{R}\):
+</p>
+
+
+<p>
+\[\begin{aligned}
+1&= \frac{2}{k}\cdot  C^2 \int_{-\infty}^{\infty} e^{- y^2} \mathrm{d}y \times \beta \\ 
+&= \frac{2}{k}\cdot  C^2 \int_{-\infty}^{\infty} \beta\cdot  e^{- y^2} \mathrm{d}y \\ 
+&= \frac{2}{k}\cdot  C^2 \cdot  \int_{-\infty}^{\infty} \left( \int_{-\infty}^{\infty} e^{- x^2} \mathrm{d}x  \right)e^{- y^2} \mathrm{d}y\\ 
+&= \frac{2}{k}\cdot  C^2 \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{- \left( x^2+ y^2 \right)} \mathrm{d}x  \mathrm{d}y 
+\end{aligned}\]
+</p>
+
+<p>
+This integral will be easier to evaluate in polar co-ordinates, a double
+integral may be evaluated  in polar co-ordinates using the following
+relationship: <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> 
+</p>
+
+<p>
+\[\begin{aligned}
+\iint_D f\left( x,y \right) dA = \int_{\alpha}^{\beta} \int_{h_1\left( \phi
+\right)}^{h_2\left( \phi \right)} f\left( r \cdot  \cos{\left( \phi \right)}
+, r \cdot   \sin \left(  \phi \right)\right) \mathrm{d}r  \mathrm{d}\phi 
+\end{aligned}\]
+</p>
+
+<p>
+hence this simplifies to:
+</p>
+
+<p>
+\[\begin{aligned}
+      1&= \frac{2}{k} c ^2 \int_{0}^{2 \pi } \int_{0}^{r} r \cdot   e^{\left(
+      r \cdot  \cos{\theta}\right)^2+  \left(  r \cdot   \sin{\theta}
+      \right)^2} \mathrm{d}r  \mathrm{d}\theta \\
+      1&=  \frac{2}{k} c ^2 \int_{0}^{2 \pi} \int_{0}^{r} r \cdot   e^{r^2} \mathrm{d}r  \mathrm{d}\theta 
+\end{aligned}\]
+</p>
+
+<p>
+Because the integrand is of the form \(f'\left( x \right)\times g\left(
+f\left( x \right) \right)\) we may use integration by substitution:
+</p>
+
+<p>
+\[\begin{aligned}
+\text{let:} \quad u&=  - r^2\\
+\frac{\mathrm{d}u }{\mathrm{d} r} &= - 2 r \\
+\mathrm{d} r &=  - \frac{1}{2r} \mathrm{d} u
+\end{aligned}\]
+</p>
+
+<p>
+and hence:
+</p>
+
+<p>
+\[\begin{aligned}
+      1&=  \frac{2}{k} c ^2 \int_{0}^{2 \pi} \int_{0}^{r} r \cdot   e^{r^2}
+      \mathrm{d}r  \mathrm{d}\theta \\
+       \implies  1&=  - \frac{2}{k}c^2 \int_{0}^{2 \pi} \int_{0}^{\infty} r
+       \cdot   e^{r^2} \mathrm{d}r \mathrm{d}\theta
+\end{aligned}\]
+</p>
+
+<p>
+\[\begin{aligned}
+      1&=  \frac{2}{k} c ^2 \int_{0}^{2 \pi} \int_{0}^{r} r \cdot   e^{r^2}
+      \mathrm{d}r  \mathrm{d}\theta \\
+       \implies  1&= - \frac{2}{k}c^2 \int_{0}^{2\pi} \int_{0}^{\infty} - \frac{1}{2}e^{- u} \mathrm{d}u  \mathrm{d}\theta \\
+       &= \frac{1}{k}c^2 \int_{0}^{2\pi} \int_{0}^{\infty} e^{- u} \mathrm{d}u  \mathrm{d}\theta \\
+       &= \frac{1}{k} c^2 \int_{0}^{2\pi} \left[ - e^{- u} \right]_{0}^{\infty}\mathrm{d}\theta \\
+       1&= \frac{1}{k}c^2 2 \pi  \\
+        \implies  C^2&= \frac{k}{2\pi}
+\end{aligned}\]
+</p>
+
+<p>
+So from before:
+</p>
+
+<p>
+\[\begin{aligned}
+f&= - C \cdot   e^{k\cdot  \frac{\left( x- \mu \right)^2}{2}} \\
+&= - \sqrt{\frac{k}{2\pi}}  \cdot   e^{k\cdot  \frac{\left( x- \mu \right)^2}{2}}
+\end{aligned}\]
+</p>
+
+<p>
+so now we simply need to apply the next initial condition.
+</p>
+</div>
+</li>
+
+<li><a id="org03e7017"></a>IC, Mean Value and Standard Deviation<br />
+<ul class="org-ul">
+<li><a id="orgdf90c8d"></a>Definitions<br />
+<div class="outline-text-6" id="text-orgdf90c8d">
+<p>
+The definition of the expected value, where \(f(x)\) is a probability function
+is: <sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup> 
+</p>
+
+<p>
+\[\begin{aligned}
+\mu= E(x) = \int^{b}_{a} x \cdot f\left( x \right)   \mathrm{d}x 
+\end{aligned}\]
+</p>
+
+<p>
+That is, roughly, the sum of the expected proportion of occurence.
+</p>
+
+<p>
+The definition of the variance is:
+</p>
+
+<p>
+\[\begin{aligned}
+V\left( x \right)= \int_{a}^{b} \left( x- \mu \right)^2 f\left( x \right) \mathrm{d}x 
+\end{aligned}\]
+</p>
+
+<p>
+which can be roughly interpreted as the sum of the proportion of squared
+distance units from the mean. The standard deviation is \(\sigma = \sqrt{V(x)}\).
+</p>
+</div>
+</li>
+
+<li><a id="orgf5f0983"></a>Expected Value of the Normal Distribution<br />
+<div class="outline-text-6" id="text-orgf5f0983">
+<p>
+The expected value of the normal distribution is \(\mu\), this can be shown rigorously:
+</p>
+
+<p>
+\[\begin{aligned}
+\text{let:} \quad v&= x- \mu \\
+ \implies  \mathrm{d} v&= \mathrm{d} x
+\end{aligned}\]
+</p>
+
+<p>
+Observe that the limits of integration will also remain as \(\pm \infty\) following the substitution:
+</p>
+
+<p>
+\[\begin{aligned}
+ E\left( v \right)&= \int_{-\infty}^{\infty} v\times f\left( v \right)  \mathrm{d}v \\
+ &= k\cdot  \int_{-\infty}^{\infty} v\cdot  e^{v^2} \mathrm{d}v \\
+ &= \frac{1}{2} \left[ e^{x^2} \right]^{\infty}_{\infty}\\
+ &= \frac{1}{2} \lim_{b \rightarrow \infty} \left[\left[ e^{x^2} \right]^{b}_{-b} \right] \\
+ &= \frac{1}{2} \lim_{b \rightarrow \infty} \left[ e^{b^2} - e^{\left( - b \right)^2} \right]\\
+ &= \lim_{b \rightarrow \infty}\left[ 0 \right] \times \frac{1}{2}\\
+ &= \frac{1}{2} \times  0 \\
+&= 0
+\end{aligned}\]
+</p>
+
+<p>
+Hence the Expected value of the standard normal distribution is \(0=x-\mu\) and so \(E(x)=\mu\).
+</p>
+</div>
+</li>
+
+<li><a id="org564eecd"></a>Variance of the Normal Distribution<br />
+<div class="outline-text-6" id="text-org564eecd">
+<p>
+Now that the expected value has been confirmed, consider the variance of the distribution:
+</p>
+
+
+<p>
+\[\begin{aligned}
+\sigma^2 &= \int_{-\infty}^{\infty} \left( x- \mu \right) ^2 \times f \left( x \right) \mathrm{d}x \\
+\end{aligned}\]
+</p>
+
+
+
+<p>
+Now observe that  \(\left( x- \mu \right)\) appears as an exponential and as a factor if this is redefined as \(w= x- \mu  \implies  \mathrm{d} x= \mathrm{d} w\) we have:
+</p>
+
+<p>
+\[\begin{aligned}
+\sigma^2&= \sqrt{\frac{k}{2}} \int_{-\infty}^{\infty} w^2e^{-\frac{k}{2}w^2} \mathrm{d}w 
+\end{aligned}\]
+</p>
+
+<p>
+Now the integrand is of the form \(f\left( x \right)\times g\left( x \right)\) meaning that the only strategy to potentially deal with it is integration by parts:
+</p>
+
+<p>
+\[\begin{aligned}
+    \int u \mathrm{d}v&= u\cdot  v- \int v \mathrm{d}u  
+\end{aligned}\]
+where:
+</p>
+
+<ul class="org-ul">
+<li>\(u\) is a function that simplifies with differentiation</li>
+<li>\(\mathrm{d} v\) is something that can be integrated</li>
+</ul>
+
+\begin{matrix}
+    u= w & \enspace & \mathrm{d}v = w \cdot   e^{- \frac{k}{2}w^2}\mathrm{d} w \\
+     \implies  \mathrm{d}u =  \mathrm{d}w & \enspace &  \implies  v= \int w\cdot   e^{\frac{k}{2} w^2} \mathrm{d}w \\
+     & \enspace &  \implies  v=\frac{1}{k} e^{\frac{k}{2}w^2}
+\end{matrix}
+
+
+<p>
+Hence the value of the variance may be solved:
+</p>
+
+
+<p>
+Now that the expected value has been confirmed, consider the variance of the distribution:
+</p>
+
+<p>
+\[\begin{aligned}
+\sigma^2&= \int_{-\infty}^{\infty} \left( x- \mu \right)^2\times f\left( x \right) \mathrm{d}x \\
+	&= \int_{-\infty}^{\infty} \left( x- \mu \right)^2\times \left( \sqrt{\frac{k}{2\pi}}e^{- \frac{k}{2}\left( x- \mu \right)^2}  \right)\mathrm{d}x \\
+&= \sqrt{\frac{k}{2\pi}} \int_{-\infty}^{\infty} \left( x- \mu \right)^2\times \left( e^{- \frac{k}{2}\left( x- \mu \right)^2}  \right)\mathrm{d}x 
+\end{aligned}\]
+</p>
+
+<p>
+Now observe that  \(\left( x- \mu \right)\) appears as an exponential and as a factor if this is redefined as \(w= x- \mu  \implies  \mathrm{d} x= \mathrm{d} w\) we have:
+</p>
+
+<p>
+\[\begin{aligned}
+\sigma^2&= \sqrt{\frac{k}{2}} \int_{-\infty}^{\infty} w^2e^{-\frac{k}{2}w^2} \mathrm{d}w 
+\end{aligned}\]
+</p>
+
+<p>
+Now the integrand is of the form \(f\left( x \right)\times g\left( x \right)\) meaning that the only strategy to potentially deal with it is integration by parts:
+</p>
+
+<p>
+\[\begin{aligned}
+    \int u \mathrm{d}v&= u\cdot  v- \int v \mathrm{d}u  
+\end{aligned}\]
+where:
+</p>
+
+<ul class="org-ul">
+<li>\(u\) is a function that simplifies with differentiation</li>
+<li>\(\mathrm{d} v\) is something that can be integrated</li>
+</ul>
+
+\begin{matrix}
+    u= w & \enspace & \mathrm{d}v = w \cdot   e^{- \frac{k}{2}w^2}\mathrm{d} w \\
+     \implies  \mathrm{d}u =  \mathrm{d}w & \enspace &  \implies  v= \int w\cdot   e^{\frac{k}{2} w^2} \mathrm{d}w \\
+     & \enspace &  \implies  v=\frac{1}{k} e^{\frac{k}{2}w^2}
+\end{matrix}
+
+
+<p>
+Hence the value of the variance may be solved:
+</p>
+
+<p>
+\[\begin{aligned}
+\sigma^2&= \sqrt{\frac{k}{2\pi}} \int_{-\infty}^{\infty} w^2e^{-\frac{k}{2}w^2} \mathrm{d}w \\
+&= \sqrt{\frac{k}{2\pi}} \left[  u\cdot  v - \int v \mathrm{d}u  \right]^{\infty}_{\infty}\\
+&= \sqrt{\frac{k}{2\pi}} \left(  \left[ \frac{-w}{k}\cdot  e^{-\frac{k}{2}w^2} \right]^{\infty}_{\infty}   - \frac{1}{k} \int^{\infty}_{-\infty}   e^{\frac{k}{2}w^2} \mathrm{d}w   \right) \\
+&=   \sqrt{\frac{k}{2\pi}} \left[ \frac{-w}{k}\cdot  e^{-\frac{k}{2}w^2} \right]^{\infty}_{\infty}   - \frac{1}{k} \left( \sqrt{\frac{k}{2\pi}} \int^{\infty}_{-\infty}   e^{\frac{k}{2}w^2} \mathrm{d}w  \right)   \\
+\end{aligned}\]
+</p>
+
+<p>
+The left term evaluates to zero and the right term is the area beneath the bell curve with mean value 0 and so evaluates to 1:
+</p>
+
+<p>
+\[\begin{aligned}
+    \sigma^2&= 0- \frac{1}{k}\\
+     \implies  k&= \frac{1}{\sigma^2}
+\end{aligned}\]
+</p>
+
+<p>
+So the function for the density curve can be simplified:
+</p>
+
+<p>
+\[\begin{aligned}
+&= - \sqrt{\frac{k}{2\pi}}  \cdot   e^{k\cdot  \frac{\left( x- \mu \right)^2}{2}}\\
+&=  \sqrt{\frac{1}{2\pi \sigma^2}}  \cdot   e^{ \frac{1}{2}\cdot  \frac{\left( x- \mu \right)^2}{\sigma^2}}
+\end{aligned}\]
+</p>
+
+<p>
+now let \(z= \frac{ x- \mu }{\sigma} \implies  \mathrm{d}z= \frac{\mathrm{d} x}{\sigma}\), this then simplifies to:
+</p>
+
+<p>
+\[\begin{aligned}
+f\left( x \right)= \sqrt{\frac{1}{2\pi}}\cdot  e^{- \frac{1}{2}z^2} 
+\end{aligned}\]
+</p>
+
+
+<p>
+Now using the power series identity from BEFORE :
+</p>
+
+<p>
+\[\begin{aligned}
+e^{- \frac{1}{2}z^2}= \sum^{\infty}_{n= 0}   \left[\frac{ \left( - \frac{1}{2}z^2 \right)^n}{n!} \right] 
+\end{aligned}\]
+</p>
+
+<p>
+We can solve the integral of \(f\left( x \right)\) (which has no elementary integral.
+</p>
+
+
+<p>
+\[\begin{aligned}
+    f\left( x \right)&= \sqrt{\frac{1}{2\pi}}\cdot  \sum^{\infty}_{n= 0}   \left[\frac{ \left( - \frac{1}{2}z^2 \right)^n}{n!} \right]  \\
+\int f\left( x \right) \mathrm{d}x &= \frac{1}{\sqrt{2\pi} }\int \sum^{\infty}_{n= 0}   \left[ \frac{\left( - \frac{1}{2}z^2 \right)^n}{n!} \right]  \mathrm{d}z \\  
+&= \frac{1}{\sqrt{2\pi} }\cdot  \sum^{\infty}_{n= 0}   \left[ \int \frac{\left( - 1 \right)^{- 1}z^{2n}}{2^n\cdot  n!} \mathrm{d}z  \right] \\
+&= \frac{1}{\sqrt{2\pi} }\cdot  \sum^{\infty}_{n= 0}   \left[ \frac{\left( - 1 \right)^n \cdot  z^{2n+ 1}}{2^n\left( 2n+  1 \right)n!} \right] 
+\end{aligned}\]
+</p>
+
+<p>
+Although this is a power series it still gives a method to solve the area beneath the curve of the density function of the normal distribution.
+</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc4cc560" class="outline-2">
+<h2 id="orgc4cc560">Understanding the p-value</h2>
+<div class="outline-text-2" id="text-orgc4cc560">
+<p>
+Let's say that I'm given 100 vials of medication and in reality only 10 of them
+are actually effective. 
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+<td class="org-left">POS</td>
+</tr>
+
+<tr>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+
+<tr>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+<td class="org-left">NEG</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+We don't know which ones are effective so It is necessary for the effective medications to be
+detected by experiment. Let:
+</p>
+
+<ul class="org-ul">
+<li>the p-value be 9% for detecting a significant effect</li>
+<li>assume the statistical power is 70%</li>
+</ul>
+
+<p>
+So this means that the corresponding errors are:
+</p>
+
+<ol class="org-ol">
+<li>Of the 90 Negative Drugs, \(\alpha \times 90 \approx 8\) will be identified as Positive ( False Positive)
+a. This means 72 will be correctly identified as negative.  (TN)</li>
+<li>Of the 10 Good drugs \(\beta \times 10 = 3\)  will be labelled as negative (False Negative)
+b. This means 8 will be correctly identified as positive (True Positive)</li>
+</ol>
+
+<p>
+These results can be summarised as:
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Really Negative</td>
+<td class="org-left">Really Positive</td>
+</tr>
+
+<tr>
+<td class="org-left">Predicted Negative</td>
+<td class="org-left">TNR; (\(1-\alpha\))</td>
+<td class="org-left">FNR; \(\beta \times 10 = 3\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Predicted Positive</td>
+<td class="org-left">FPR; \(\mathsf{FPR}= \alpha \times 90 \approx 8\)</td>
+<td class="org-left">TPR (\(1-\beta\))</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+And a table visualising the results:
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">TP</td>
+<td class="org-left">TP</td>
+<td class="org-left">TP</td>
+<td class="org-left">TP</td>
+<td class="org-left">TP</td>
+<td class="org-left">TP</td>
+<td class="org-left">TP</td>
+<td class="org-left">FN</td>
+<td class="org-left">FN</td>
+<td class="org-left">FN</td>
+</tr>
+
+<tr>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+<td class="org-left">:-:</td>
+</tr>
+
+<tr>
+<td class="org-left">FP</td>
+<td class="org-left">FP</td>
+<td class="org-left">FP</td>
+<td class="org-left">FP</td>
+<td class="org-left">FP</td>
+<td class="org-left">FP</td>
+<td class="org-left">FP</td>
+<td class="org-left">FP</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+
+<tr>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+<td class="org-left">TN</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+So looking at this table, it should be clear that:
+</p>
+<ul class="org-ul">
+<li>If the null hypothesis had been true, the probability of a False Positive</li>
+</ul>
+<p>
+would indeed have been \(\frac{8}{90}\approx 0.09\)
+</p>
+<ul class="org-ul">
+<li>The probability of incorrectly rejecting the null hypothesis though is the</li>
+</ul>
+<p>
+number of FP from anything identified as positive \(\frac{7}{7+6} \approx 0.5\)
+</p>
+</div>
+
+<div id="outline-container-org05fef9b" class="outline-3">
+<h3 id="org05fef9b">False Positive Rate</h3>
+<div class="outline-text-3" id="text-org05fef9b">
+<p>
+The False Positive Rate is expected to be \(\alpha\) it is:
+</p>
+
+<p>
+\[\begin{aligned}
+\mathrm{E}\left( \mathsf{FPR} \right) &= \alpha \mathsf{;}\\
+\mathsf{FPR}&=\frac{FP}{N}\\
+                      &= \frac{FP}{FN+TP}\\
+                      &= \frac{8}{8+72}\\
+                      &= 9\%
+\end{aligned}\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25d8c7a" class="outline-3">
+<h3 id="org25d8c7a">False Discovery Rate</h3>
+<div class="outline-text-3" id="text-org25d8c7a">
+<p>
+The False discovery Rate is the proportion of observations considered as
+positive (or significant) that are False Positives.
+If you took all the results you considered as positive and pulled one out, the
+probability that one was a false positive (and you were commiting a type I
+error) would be the FDR and could be much higher than the FPR.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4881ce2" class="outline-3">
+<h3 id="org4881ce2">Measuring Probability</h3>
+<div class="outline-text-3" id="text-org4881ce2">
+<p>
+In setting \(\alpha\) as 9% I've said that 'if the null hypothesis was true and
+every vial was negative, 9% of them would be false positives', this means that in
+practice 9% of the negative vials would be detected as false positives (I
+wouldn't count the positives because my \(\alpha\) assumption was made under the
+assumption that everything was negative, hence 9% of the negative vials will be
+false positives).
+</p>
+
+<p>
+So this measures the probability of rejecting the null hypothesis if it were
+true.
+</p>
+
+<p>
+It does not measure the probability of rejecting the null hypothesis but then
+being mistaken, because to reject the null hypothesis it is necessary to
+consider observations that are considered positive (whether or not they actually
+are), the number of those that are False Positive would represent the
+probability of committing a type 1 error in that experiment
+</p>
+
+<p>
+So the \(p\) -value measures the probability of committing a type I error under
+the assumption that the null hypothesis is true.
+</p>
+
+<p>
+The FDR represents the actual probability of committing a type I error when
+taking multiple comparisons.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4fa2a53" class="outline-3">
+<h3 id="org4fa2a53">Comparing \(\alpha\) and the p-value</h3>
+<div class="outline-text-3" id="text-org4fa2a53">
+<p>
+The distinction between \(\alpha\) and \(p\) -value is essentially that the \(\alpha\)
+value is set as a significance standard and the \(p\) -value represents the
+probability of getting a test-statistic \(\geq\) the observed value
+</p>
+
+<p>
+The \(\alpha\) value is the probability of 
+</p>
+<blockquote>
+<p>
+Rejecting the null hypothesis under the assumption that the
+null hypothesis is true.
+</p>
+</blockquote>
+<p>
+This will be the False Positive Rate:
+</p>
+<blockquote>
+<p>
+The proportion of Negative Observations misclassified as Positive will be the
+False Positive Rate.
+</p>
+</blockquote>
+<p>
+Be careful though because this is not necessarily the <i>probability of incorrectly rejecting</i>
+<i>the null hypothesis</i>  there is also the the \(\mathsf{FDR}=\frac{\mathsf{FP}}{\mathsf{TP+FP}}\):
+</p>
+<blockquote>
+<p>
+The proportion of observations classified as positive that are false positives,
+this estimates the probability of rejecting the null hypothesis and being wrong.
+(whereas the \(\alpha\) value is the probability of rejecting the null hypothesis
+under the assumption it was true this is different from the probability of rejecting \(H_0\) and being
+wrong, which is the FDR).
+</p>
+</blockquote>
+
+<p>
+The \(p\) -value is the corresponding probability of the test statistic that was
+returned, so they mean essentially the same thing, but the \(\alpha\) value is set
+before hand and the $p$-value is set after the fact:
+</p>
+
+<blockquote>
+<p>
+The $p$-value is the probability, under the assumption that there is no true
+effect or no true difference, of collecting data that shows a difference equal
+to or more extreme than what was actually observed.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgbc3b8d7" class="outline-3">
+<h3 id="orgbc3b8d7">Wikipedia Links</h3>
+<div class="outline-text-3" id="text-orgbc3b8d7">
+<p>
+Helpful Wikipedia Links
+</p>
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/False_positive_rate">False Positive Rate</a></li>
+<li><a href="https://en.wikipedia.org/wiki/False_discovery_rate">False Discovery Rate</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sensitivity_and_specificity">Sensitivity and Specificity</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC Curve</a>
+<ul class="org-ul">
+<li>This has all the TP FP calculations</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Type_I_and_type_II_errors">Type I and Type II Errors</a>
+<ul class="org-ul">
+<li>This has the useful Tables and SVG Density Curve</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga2d1547" class="outline-2">
+<h2 id="orga2d1547">Calculating Power</h2>
+<div class="outline-text-2" id="text-orga2d1547">
+<p>
+Statistical Power is the probability of rejecting the null hypothesis assuming
+that the null hypothesis is false (True Positive).
+</p>
+
+<p>
+Complementary to the <i>False Positive Rate</i> and <i>False Detection Rate</i>, the power
+is distinct from the probability of correctly rejecting the null
+hypothesis, which is the probability of selecting a True Positive from all
+observations determined to be positive (the Positive Predictive Value or the <a href="https://en.wikipedia.org/wiki/Positive_predictive_value">Precision</a>):
+</p>
+
+<p>
+\[\begin{aligned}
+PPV=\frac{TP}{TP+FP}\\
+FDR=\frac{FP}{TP+FN}\\
+\alpha = \frac{FP}{N}=\frac{TP}{TN+FP}\\
+\beta = \frac{TP}{P}=\frac{TP}{TP+FN}
+\end{aligned}\]
+</p>
+
+
+<div class="figure">
+<p><img src="file:///home/ryan/Notes/MD/University/ThinkingAboutData/media/20200223192349275_37285077.png" alt="20200223192349275_37285077.png" />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgae14de3" class="outline-3">
+<h3 id="orgae14de3">Example</h3>
+<div class="outline-text-3" id="text-orgae14de3">
+</div>
+<div id="outline-container-orge417d14" class="outline-4">
+<h4 id="orge417d14">Problem</h4>
+<div class="outline-text-4" id="text-orge417d14">
+<p>
+An ISP stated that users average 10 hours a week of internet usage, it is
+already known that the standard deviation of this population is 5.2 hours. A
+sample of \(n=100\) was taken to verify this claim with an average of \(\bar{x}\).
+</p>
+
+<p>
+A worldwide census determined that the average is in fact 12 hours a week not 10.
+</p>
+</div>
+</div>
+<div id="outline-container-org30ab5b7" class="outline-4">
+<h4 id="org30ab5b7">Solution</h4>
+<div class="outline-text-4" id="text-org30ab5b7">
+</div>
+<ul class="org-ul">
+<li><a id="org83072e8"></a>Hypotheses<br />
+<div class="outline-text-5" id="text-org83072e8">
+<ol class="org-ol">
+<li>\(H_0 \quad :\) <b>The Null Hypothesis</b> that the average internet usage is 10
+hours per week</li>
+<li>\(H_a \quad :\) <b>The Alternative Hypothesis</b> that the average internet usage
+exceeds 10 hours a week</li>
+</ol>
+</div>
+</li>
+<li><a id="orgf8b0cbc"></a>Data<br />
+<div class="outline-text-5" id="text-orgf8b0cbc">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Value</td>
+<td class="org-left">Description</td>
+</tr>
+
+<tr>
+<td class="org-left">\(n=100\)</td>
+<td class="org-left">The Sample Size</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\sigma= 5.2\)</td>
+<td class="org-left">The Standard Deviation of internet usage of the population</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\mu=10\)</td>
+<td class="org-left">The alleged average internet usage.</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\bar{x}=11\)</td>
+<td class="org-left">The average of the sample</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\mu_True=12\)</td>
+<td class="org-left">The actual average from the population</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\alpha=0.05\)</td>
+<td class="org-left">The probability of a type 1 error at which the null hypothesis is rejected</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\beta=??\)</td>
+<td class="org-left">The probability of a type 2 error</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orgc9b4f02" class="outline-4">
+<h4 id="orgc9b4f02">Step 1; Find the Critical Sample Mean (\(\bar{x}_\mathsf{crit}\))</h4>
+<div class="outline-text-4" id="text-orgc9b4f02">
+<p>
+The Central Limit Theorem provides that the mean value of a sample that is:
+</p>
+
+<ul class="org-ul">
+<li>sufficiently large, or</li>
+<li>drawn from a normally distributed population</li>
+</ul>
+
+<p>
+will be normally distributed, so if we took various samples of a population and recorded all the sample means in a set \(\overline{X}\) we would have:
+</p>
+
+<p>
+\[\overline{X} \sim \mathcal{N}\left( \mu, \left( \frac{\sigma}{\sqrt{n}  } \right)  \right)\]  
+</p>
+
+<p>
+And hence we may conclude that:
+</p>
+
+<p>
+\[\begin{aligned}
+Z&= \frac{\overline{x} -  \mu}{\left( \frac{\sigma}{\sqrt{n}  } \right) } \\
+ \implies  \overline{x}_{crit}&= \mu +  z_\alpha \cdot \left(  \frac{\sigma}{\sqrt{n}  } \right) \\
+ \overline{x}_{crit}  &= \mu +  z_{0.05} \cdot \left(  \frac{\sigma}{\sqrt{n}  } \right) \\
+ \overline{x}_{crit}&= \mu +  1.645 \cdot \left(  \frac{5.2}{\sqrt{100}  } \right) \\
+ &= 10.8554
+\end{aligned}\]
+</p>
+
+<p>
+Thus \(H_0\) is rejected for a sample mean of 10.86 hours per week at a confidence level of \(\alpha = 0.05\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga8ea00d" class="outline-4">
+<h4 id="orga8ea00d">Step 2: Find the Difference between the Critical and True Means as a Z-Value (prob of Type II)</h4>
+<div class="outline-text-4" id="text-orga8ea00d">
+<p>
+The probability of accepting the null hypothesis assuming that it is false, is
+the probability of getting a value less than the critical value given that the
+mean value is actually 12:
+</p>
+
+<p>
+\[\begin{aligned}
+z&= \frac{\overline{x}_{crit}- \mu_{true}}{\left( \frac{\sigma}{\sqrt{n}  } \right) } \\
+&= \frac{10.86 - 12}{\frac{5.2}{10}} 
+&= -2.2
+\end{aligned}\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e5299d" class="outline-4">
+<h4 id="org6e5299d">Step 3: State the value of \(\beta\)</h4>
+<div class="outline-text-4" id="text-org6e5299d">
+<p>
+\[\begin{aligned}
+\beta &= \mathrm{P}\left( \textsf{Type II Error} \right) \\
+&= \mathrm{P}\left( H_0 \textsf{ is not rejected} \mid H_0 \textsf{ is false} \right)  \\
+&= \mathrm{P} \left( \mu_{\overline{X}_{\textsf{Crit}}} < \overline{x}_{\textsf{crit}} \mid \mu = 12 \right) \\ 
+&= 0.014
+\end{aligned}\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga22fe38" class="outline-4">
+<h4 id="orga22fe38">Step 4: State the Power Value</h4>
+<div class="outline-text-4" id="text-orga22fe38">
+<p>
+\[\begin{aligned}
+\mathsf{Power} &= \left( H_0\textsf{ is not rejected} \mid H_0 \textsf{ is false} \right) \\
+&= \mathrm{P}\left( \mu_{\overline{X}_{\textsf{Crit}}} < \overline{x}_\textsf{Crit} \right) \\
+&= 1 -  \beta \\
+&= 1 - 0.14 \\
+&= 98.6\%
+\end{aligned}\]
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org00e2018" class="outline-2">
+<h2 id="org00e2018">Weekly Material</h2>
+<div class="outline-text-2" id="text-org00e2018">
+</div>
+<div id="outline-container-org3ca1ce8" class="outline-3">
+<h3 id="org3ca1ce8">Wk 3; Smoking and Birth Weight</h3>
+<div class="outline-text-3" id="text-org3ca1ce8">
+</div>
+<div id="outline-container-org32b37e1" class="outline-4">
+<h4 id="org32b37e1">Boxplots</h4>
+<div class="outline-text-4" id="text-org32b37e1">
+<p>
+The delimiting marks in box plots correspond to the median and interquarlite
+range (which is basically the median of all data below the median):
+</p>
+
+
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(<span style="color: #2d9574;">"ggplot2"</span>)
+ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
+geom_boxplot() +
+theme_bw()
+</pre>
+</div>
+
+
+
+<div class="figure">
+<p><img src="BoxPlotthinkingAboutIris.png" alt="BoxPlotthinkingAboutIris.png" width="300px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org0c1b0ce" class="outline-4">
+<h4 id="org0c1b0ce">Lecture Announcements</h4>
+<div class="outline-text-4" id="text-org0c1b0ce">
+<p>
+Everything is online now. We'll be using <i>Zoom</i> a lot.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org97268bf"></a><span class="todo TODO">TODO</span> Finish Quiz 1<br />
+<div class="outline-text-5" id="text-org97268bf">
+<p>
+30 minutes to finish it, Test your computer First.
+</p>
+</div>
+</li>
+<li><a id="org22718a7"></a>Post <code>pacman</code> on the mailing list.<br /></li>
+</ul>
+</div>
+<div id="outline-container-org5c60627" class="outline-4">
+<h4 id="org5c60627">Naming Variables</h4>
+<div class="outline-text-4" id="text-org5c60627">
+<p>
+Attribute &#x2026; Data Base
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3bdf8d4" class="outline-4">
+<h4 id="org3bdf8d4"><span class="done DONE">DONE</span> Review Chi Distribution,</h4>
+<div class="outline-text-4" id="text-org3bdf8d4">
+</div>
+<ul class="org-ul">
+<li><a id="org8c82e7c"></a>Is it in VNote?<br /></li>
+<li><a id="org4f5463d"></a>Should I put it in <code>org-mode</code>?<br /></li>
+</ul>
+</div>
+<div id="outline-container-orgf30ed43" class="outline-4">
+<h4 id="orgf30ed43"><span class="done DONE">DONE</span> Fix YAML Headers in <code>rmd</code> to play ball with Notable</h4>
+<div class="outline-text-4" id="text-orgf30ed43">
+</div>
+<ul class="org-ul">
+<li><a id="orgc675ff8"></a><span class="done DONE">DONE</span> Post this use-case to Reddit<br />
+<div class="outline-text-5" id="text-orgc675ff8">
+</div>
+</li>
+<li><a id="org9b624f5"></a><span class="done DONE">DONE</span> Fix YAMLTags and TagFilter and Post to Reddit&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bash">bash</span></span><br />
+<div class="outline-text-5" id="text-org9b624f5">
+<p>
+<a href="file:///home/ryan/DotFiles/Scripts/bin/tagFilter.sh">The Bash Script is here</a>
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgc04ea1b"></a><span class="todo TODO">TODO</span> Post an easy way to use this to the mailing list<br />
+<div class="outline-text-6" id="text-orgc04ea1b">
+<p>
+<a href="manual.html#orgfad7b80">Here</a> is a start that I've made 
+</p>
+</div>
+</li>
+<li><a id="org5d19ddf"></a>Should I have all the lists and shit in <code>/tmp</code><br />
+<div class="outline-text-6" id="text-org5d19ddf">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Pros</td>
+<td class="org-left">Cons</td>
+</tr>
+
+<tr>
+<td class="org-left">Less Mess</td>
+<td class="org-left">Harder to Directly watch what's happening</td>
+</tr>
+
+<tr>
+<td class="org-left">Easier to manage <sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+should I use <code>/tmp</code> or <code>/tmp/Notes</code> or somting?
+</p>
+</div>
+</li>
+
+<li><a id="orgc8ccb08"></a><span class="done DONE">DONE</span> Is there an easy way to pass the md off to vnote<br />
+<div class="outline-text-6" id="text-orgc8ccb08">
+<p>
+Or should I just use the <code>ln -s ~/Notes/DataSci /tmp/notes</code> trick?
+</p>
+
+<p>
+Follow the instructions <a href="file:///home/ryan/Notes/MD/NoteTaking/VNote_Tips-Tricks.md">here</a>, it has to be done manually and then symlinked
+      SCHEDULED: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-21 Sat&gt;</span></span>
+</p>
+</div>
+</li>
+<li><a id="org2b33853"></a>Should I have all the lists and shit in <code>/tmp</code><br />
+<div class="outline-text-6" id="text-org2b33853">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Pros</td>
+<td class="org-left">Cons</td>
+</tr>
+
+<tr>
+<td class="org-left">Less Mess</td>
+<td class="org-left">Harder to Directly watch what's happening</td>
+</tr>
+
+<tr>
+<td class="org-left">Easier to manage <sup><a id="fnr.5.100" class="footref" href="#fn.5">5</a></sup></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+should I use <code>/tmp</code> or <code>/tmp/Notes</code> or somting?
+</p>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="org8acfd04"></a><span class="done DONE">DONE</span> Is there a way to fix the Text Size of Code in emacs when I zoom out?<br />
+<div class="outline-text-5" id="text-org8acfd04">
+<p>
+Yeah just disable <code>M-x mixed-pitch-mode</code>
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org2fc861e" class="outline-4">
+<h4 id="org2fc861e">Calculalating mean</h4>
+<div class="outline-text-4" id="text-org2fc861e">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(tidyverse)
+bwt <span style="color: #a45bad;">&lt;-</span> c(3429, 3229, 3657, 3514, 3086, 3886)
+(bwt <span style="color: #a45bad;">&lt;-</span> sort(bwt))
+mean(bwt)
+mean(c(3429, 3514))
+median(bwt)
+max(bwt)-min(bwt)
+</pre>
+</div>
+
+<p>
+The mean value is nice in that it has good mathematical properties, so for
+predictions and classifications (like gradient descent), if the model contains
+the mean the model will be smooth and the mean will lead to a well behaved model
+with respect to the derivative.
+</p>
+
+<p>
+The Median value, however is more immune to large outliers, for example:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(tidyverse)
+x <span style="color: #a45bad;">&lt;-</span> c(rnorm(10), 9) * 10 <span style="color: #a45bad;">%&gt;%</span> round(1)
+mean(x); median(x)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3e11a36" class="outline-4">
+<h4 id="org3e11a36">Calculating Range</h4>
+<div class="outline-text-4" id="text-org3e11a36">
+<div class="org-src-container">
+<pre class="src src-R">range(bwt)
+bwt <span style="color: #a45bad;">%&gt;%</span> range <span style="color: #a45bad;">%&gt;%</span> diff
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org63fb459" class="outline-4">
+<h4 id="org63fb459">Calculating Variance</h4>
+<div class="outline-text-4" id="text-org63fb459">
+<div class="org-src-container">
+<pre class="src src-R">(var <span style="color: #a45bad;">&lt;-</span> (bwt-mean(bwt))^2 <span style="color: #a45bad;">%&gt;%</span>  mean)
+var(bwt)
+(sd <span style="color: #a45bad;">&lt;-</span> (bwt-mean(bwt))^2 <span style="color: #a45bad;">%&gt;%</span>  <span style="color: #a45bad;">%&gt;%</span> sqrt) <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Not using n-1 !!</span>
+(sd <span style="color: #a45bad;">&lt;-</span> sqrt(sum((bwt-mean(bwt))^2)/(length(bwt) -1)))
+sd(bwt)
+mean(sum((bwt-mean(bwt))^2))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga17ff48" class="outline-4">
+<h4 id="orga17ff48">InterQuartile Data</h4>
+</div>
+
+<div id="outline-container-org28a0d73" class="outline-4">
+<h4 id="org28a0d73"><span class="todo WAITING">WAITING</span> Push Quiz to Github</h4>
+<div class="outline-text-4" id="text-org28a0d73">
+<p>
+I have the Quizz in a <a href="file:///home/ryan/Notes/DataSci/.gitignore">.gitignore file here</a> Clear the bad lines
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0cfa075" class="outline-2">
+<h2 id="org0cfa075">Central Limit Theorem</h2>
+<div class="outline-text-2" id="text-org0cfa075">
+<p>
+The central Limit theorem provides us the sampling distribution of
+\(\overline{X}\) even when we don't know what the original population of \(X\) looks
+like:
+</p>
+
+<ol class="org-ol">
+<li>If the population is normal, the sample mean of that population will be</li>
+</ol>
+<p>
+normally distributed, \(\overline{X} \sim \mathcal{N}\left( \mu \left(\frac{\sigma}{\sqrt{n}} \right) \right)\)
+</p>
+<ol class="org-ol">
+<li>As sample size \(n\) increases, the distribution of sample means converges to</li>
+</ol>
+<p>
+the population mean \(\mu\)
+</p>
+<ul class="org-ul">
+<li>i.e. the <i>standard error of the mean</i></li>
+</ul>
+<p>
+\(\sigma_{\overline{x}}=\left(\frac{\sigma}{\sqrt{n}}\right)\) will become smaller
+</p>
+<ol class="org-ol">
+<li>If the sample size (of sample means) is large enough (\(n \geq 30\)) the sample</li>
+</ol>
+<p>
+means will be normally distributed even if the original population is non-normal
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+Refer to <a href="./SolvSerStrategy.md">Solving Series Strategy</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://web.sonoma.edu/users/w/wilsonst/papers/Normal/default.html">The Normal Distribution</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+<a href="http://tutorial.math.lamar.edu/Classes/CalcIII/DIPolarCoords.aspx">Calculus III - Double Integrals in Polar Coordinates</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://ltcconline.net/greenl/courses/117/doubintprob/expvalvariance.htm">Expected Value and Variance</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><p class="footpara">
+By which I mean I'm not sure if the directory that the <code>00tagmatch</code>
+directory  <code>00taglist</code> file will be made in are the wd of bash, or, if they are
+the location of <code>~/Notes</code>
+</p>
+
+<p class="footpara">
+I'm also not sure how that will be influenced by looking for <code>#tags</code> in the
+<code>~/Notes/DataSci</code> Directory
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Ryan G</p>
+<p class="date">Created: 2020-03-26 Thu 23:06</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

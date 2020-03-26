@@ -1,0 +1,113 @@
+h3 {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+table {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+table.caption {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0px;
+  margin-botton: 0px;
+}
+
+th {
+  border-width: 0px;
+}
+
+td.caption {
+  border-width: 0px;
+  width: 80%;
+  text-align: justify;
+  font-size: 0.8em;
+  margin-bottom: 0px;
+}
+
+td {
+  border-width: 0px;
+  text-align: center;
+}
+
+ul > li {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+hr.figure {
+  width: 85%;
+  margin-left: 7.5%;
+  margin-top: 0.5em;
+}
+
+
+/*  A bunch of CSS to format the navigation toolbar  */
+
+#navWrap {				/* Toolbar height so it won't... */
+  height: 30px;				/* ..collapse when floats */
+  font-size: 10pt;
+}
+
+#nav {					/* Rounded div to hold nav's ul */
+  width: 100%;
+  min-width: 925px;
+  padding: 0px;
+  border: 1px solid #c8c8c8;
+  background: #e7eefb;
+  z-index: 100;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+#nav-footer {				/* Spacer under toolbar's nav div */
+  height: 1em;
+  padding: 0px;
+  background: #ffffff;
+  z-index: 99;
+}
+
+#nav ul {				/* Nav's horizontal ul */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#nav li {				/* Nav's individual elements */
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 3px 0 3px;
+  color: #22429e;
+  list-style-type: none;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+#nav li:hover {				/* Change li's color on hover */
+  background-color: #f1faff;
+}
+
+#nav li a {				/* Links in li black, no underline */
+  text-decoration: none;
+}
+
+#nav li a:hover {			/* Restore underline on link hover */
+  text-decoration: underline;
+}
