@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-27 Fri 07:51 -->
+<!-- 2020-03-27 Fri 20:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Social Web Analytics</title>
@@ -313,6 +313,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -338,79 +360,92 @@ for the JavaScript code in this tag.
 <li><a href="#orgd34235a">The Social Web</a></li>
 <li><a href="#org8331803">Analysis of the Social Web</a></li>
 <li><a href="#org6268bfe">Data Analysis with <i><b><b>R</b></b></i></a></li>
-<li><a href="#org9590d29">Tutorial</a></li>
+<li><a href="#org14e5a2f">Tutorial</a></li>
 </ul>
 </li>
 <li><a href="#org03fede6">(Wk 2) Introduction to R</a>
 <ul>
 <li><a href="#org3e9c290">Unit Resources</a></li>
 <li><a href="#org7670894">Using Sapply</a></li>
-<li><a href="#org26864bb">Tutorial</a></li>
+<li><a href="#org4a7f431">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#org8b0694c"><span class="todo TODO">TODO</span> (wk 3) Simple Exposure Analysis</a></li>
-<li><a href="#orgb57a69e"><span class="todo TODO">TODO</span> (wk 4) Text Mining 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></a>
+<li><a href="#org8b0694c"><span class="done DONE">DONE</span> (wk 3) Simple Exposure Analysis</a>
 <ul>
-<li><a href="#orgc562eb2">Lecture</a></li>
-<li><a href="#org6ba0cfa">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org942812b"><span class="todo TODO">TODO</span> (wk 5) Visualisation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></a>
+<li><a href="#org58cbc4d">Lecture</a>
 <ul>
-<li><a href="#orgbb5f285">Lecture</a></li>
-<li><a href="#org9069afa">Tutorial</a></li>
+<li><a href="#orgb54434d">Chi Distribution</a></li>
 </ul>
 </li>
-<li><a href="#org39849f9"><span class="todo TODO">TODO</span> (wk 6) Text Mining 2 (Clustering)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></a>
+<li><a href="#org9e19ca4">Tutorial</a>
 <ul>
-<li><a href="#orgffb279a">Lecture</a></li>
-<li><a href="#orgb9ea65b">Tutorial</a></li>
+<li><a href="#org452e324">Exercise 2.3.3</a></li>
+<li><a href="#orgc5fef41">Exercise 2.4.1</a></li>
+<li><a href="#org4cdacb6">Exercise 3</a></li>
 </ul>
 </li>
-<li><a href="#orgfbb64bf"><span class="todo TODO">TODO</span> (wk 7) Graphs 1 (Definition)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></a>
+</ul>
+</li>
+<li><a href="#orgb57a69e"><span class="todo TODO">TODO</span> (wk 4) Text Mining 1</a>
 <ul>
-<li><a href="#orgb101210">Lecture</a></li>
-<li><a href="#orgce7c7a8">Tutorial</a></li>
+<li><a href="#org47198d3">Lecture</a></li>
+<li><a href="#orgc15a416">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#org0c21626"><span class="todo TODO">TODO</span> (wk 8) Graphs 2 (PageRank)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></a>
+<li><a href="#org942812b"><span class="todo TODO">TODO</span> (wk 5) Visualisation</a>
 <ul>
-<li><a href="#orgdf91b89">Lecture</a></li>
-<li><a href="#org8f7a5e8">Tutorial</a></li>
+<li><a href="#org058633f">Lecture</a></li>
+<li><a href="#orgc5c2a66">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#orgbc1e779"><span class="todo TODO">TODO</span> (wk 9) Time 1 (Trends)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk9">wk9</span></span></a>
+<li><a href="#org39849f9"><span class="todo TODO">TODO</span> (wk 6) Text Mining 2 (Clustering)</a>
 <ul>
-<li><a href="#org085fb70">Lecture</a></li>
-<li><a href="#org6503250">Tutorial</a></li>
+<li><a href="#org39a5b65">Lecture</a></li>
+<li><a href="#orgf918425">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#org3c1e03b"><span class="todo TODO">TODO</span> (wk 10) Time 2 (BACI designs)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></a>
+<li><a href="#orgfbb64bf"><span class="todo TODO">TODO</span> (wk 7) Graphs 1 (Definition)</a>
 <ul>
-<li><a href="#org092ce17">Lecture</a></li>
-<li><a href="#org578e007">Tutorial</a></li>
+<li><a href="#orgbe16fd5">Lecture</a></li>
+<li><a href="#org5b5987c">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#org3072071"><span class="todo TODO">TODO</span> (wk 11) Spatial Analysis&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></a>
+<li><a href="#org0c21626"><span class="todo TODO">TODO</span> (wk 8) Graphs 2 (PageRank)</a>
 <ul>
-<li><a href="#orgf4cc2ae">Lecture</a></li>
-<li><a href="#orgc0ba17b">Tutorial</a></li>
+<li><a href="#org3cff572">Lecture</a></li>
+<li><a href="#org52ab3cf">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#orgdf58eb9"><span class="todo TODO">TODO</span> (wk 12) Text Mining 3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></a>
+<li><a href="#orgbc1e779"><span class="todo TODO">TODO</span> (wk 9) Time 1 (Trends)</a>
 <ul>
-<li><a href="#org58cbc4d">Lecture</a></li>
-<li><a href="#org14e5a2f">Tutorial</a></li>
+<li><a href="#org2c89d40">Lecture</a></li>
+<li><a href="#org47d2241">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#org6a651cf"><span class="todo TODO">TODO</span> Assessment Due&#xa0;&#xa0;&#xa0;<span class="tag"><span class="report">report</span></span></a></li>
-<li><a href="#org4b9e517"><span class="todo TODO">TODO</span> ReEnter all to Do List items for Analytics Programming</a></li>
-<li><a href="#orgfbf2892"><span class="todo TODO">TODO</span> ReEnter all to Do Items for TAD</a></li>
-<li><a href="#orgf5a0efc"><span class="todo TODO">TODO</span> ReEnter all todo items for Visual</a></li>
+<li><a href="#org3c1e03b"><span class="todo TODO">TODO</span> (wk 10) Time 2 (BACI designs)</a>
+<ul>
+<li><a href="#org0548944">Lecture</a></li>
+<li><a href="#org754adb4">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org3072071"><span class="todo TODO">TODO</span> (wk 11) Spatial Analysis</a>
+<ul>
+<li><a href="#orgb759f7b">Lecture</a></li>
+<li><a href="#org79bc0d1">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#orgdf58eb9"><span class="todo TODO">TODO</span> (wk 12) Text Mining 3</a>
+<ul>
+<li><a href="#org4286667">Lecture</a></li>
+<li><a href="#orgaa0d199">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org6a651cf"><span class="todo TODO">TODO</span> Assessment Due</a></li>
 <li><a href="#org8e8e384">References</a></li>
 </ul>
 </div>
 </div>
+
 
 <div id="outline-container-orgff85ff6" class="outline-2">
 <h2 id="orgff85ff6">Index</h2>
@@ -444,7 +479,6 @@ The files are located thusly:
 </ul>
 </div>
 </div>
-
 <div id="outline-container-org58eee41" class="outline-3">
 <h3 id="org58eee41">Online References</h3>
 <div class="outline-text-3" id="text-org58eee41">
@@ -544,9 +578,9 @@ Maybe read these:
 <div id="outline-container-org6268bfe" class="outline-3">
 <h3 id="org6268bfe">Data Analysis with <i><b><b>R</b></b></i></h3>
 </div>
-<div id="outline-container-org9590d29" class="outline-3">
-<h3 id="org9590d29">Tutorial</h3>
-<div class="outline-text-3" id="text-org9590d29">
+<div id="outline-container-org14e5a2f" class="outline-3">
+<h3 id="org14e5a2f">Tutorial</h3>
+<div class="outline-text-3" id="text-org14e5a2f">
 <ul class="org-ul">
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Social_Web_Analytics/Practicals/Wk1_Tut_R_Prg_Basics.md">MD Working File</a></li>
 <li><a href="file:///home/ryan/Dropbox/Notes/DataSci/Social_Web_Analytics/01_Data_Structures.rmd">RMD Working File</a></li>
@@ -578,138 +612,431 @@ sapply(1:10, <span style="color: #4f97d7; font-weight: bold;">function</span>(i)
 </div>
 </div>
 
-<div id="outline-container-org26864bb" class="outline-3">
-<h3 id="org26864bb">Tutorial</h3>
+<div id="outline-container-org4a7f431" class="outline-3">
+<h3 id="org4a7f431">Tutorial</h3>
 </div>
 </div>
 <div id="outline-container-org8b0694c" class="outline-2">
-<h2 id="org8b0694c"><span class="todo TODO">TODO</span> (wk 3) Simple Exposure Analysis</h2>
+<h2 id="org8b0694c"><span class="done DONE">DONE</span> (wk 3) Simple Exposure Analysis</h2>
 <div class="outline-text-2" id="text-org8b0694c">
 <p>
 <a href="https://vuws.westernsydney.edu.au/webapps/blackboard/content/listContent.jsp?course_id=_32781_1&amp;content_id=_5222317_1&amp;mode=reset">It hasn't been released yet, keep checking</a>
+Why do we like it? because businesses can use it to see who likes what etc.
 </p>
-</div>
-</div>
-<div id="outline-container-orgb57a69e" class="outline-2">
-<h2 id="orgb57a69e"><span class="todo TODO">TODO</span> (wk 4) Text Mining 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></h2>
-<div class="outline-text-2" id="text-orgb57a69e">
-</div>
-<div id="outline-container-orgc562eb2" class="outline-3">
-<h3 id="orgc562eb2">Lecture</h3>
-</div>
-<div id="outline-container-org6ba0cfa" class="outline-3">
-<h3 id="org6ba0cfa">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org942812b" class="outline-2">
-<h2 id="org942812b"><span class="todo TODO">TODO</span> (wk 5) Visualisation&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></h2>
-<div class="outline-text-2" id="text-org942812b">
-</div>
-<div id="outline-container-orgbb5f285" class="outline-3">
-<h3 id="orgbb5f285">Lecture</h3>
-</div>
-<div id="outline-container-org9069afa" class="outline-3">
-<h3 id="org9069afa">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org39849f9" class="outline-2">
-<h2 id="org39849f9"><span class="todo TODO">TODO</span> (wk 6) Text Mining 2 (Clustering)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></h2>
-<div class="outline-text-2" id="text-org39849f9">
-</div>
-<div id="outline-container-orgffb279a" class="outline-3">
-<h3 id="orgffb279a">Lecture</h3>
-</div>
-<div id="outline-container-orgb9ea65b" class="outline-3">
-<h3 id="orgb9ea65b">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-orgfbb64bf" class="outline-2">
-<h2 id="orgfbb64bf"><span class="todo TODO">TODO</span> (wk 7) Graphs 1 (Definition)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></h2>
-<div class="outline-text-2" id="text-orgfbb64bf">
-</div>
-<div id="outline-container-orgb101210" class="outline-3">
-<h3 id="orgb101210">Lecture</h3>
-</div>
-<div id="outline-container-orgce7c7a8" class="outline-3">
-<h3 id="orgce7c7a8">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org0c21626" class="outline-2">
-<h2 id="org0c21626"><span class="todo TODO">TODO</span> (wk 8) Graphs 2 (PageRank)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></h2>
-<div class="outline-text-2" id="text-org0c21626">
-</div>
-<div id="outline-container-orgdf91b89" class="outline-3">
-<h3 id="orgdf91b89">Lecture</h3>
-</div>
-<div id="outline-container-org8f7a5e8" class="outline-3">
-<h3 id="org8f7a5e8">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-orgbc1e779" class="outline-2">
-<h2 id="orgbc1e779"><span class="todo TODO">TODO</span> (wk 9) Time 1 (Trends)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk9">wk9</span></span></h2>
-<div class="outline-text-2" id="text-orgbc1e779">
-</div>
-<div id="outline-container-org085fb70" class="outline-3">
-<h3 id="org085fb70">Lecture</h3>
-</div>
-<div id="outline-container-org6503250" class="outline-3">
-<h3 id="org6503250">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org3c1e03b" class="outline-2">
-<h2 id="org3c1e03b"><span class="todo TODO">TODO</span> (wk 10) Time 2 (BACI designs)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></h2>
-<div class="outline-text-2" id="text-org3c1e03b">
-</div>
-<div id="outline-container-org092ce17" class="outline-3">
-<h3 id="org092ce17">Lecture</h3>
-</div>
-<div id="outline-container-org578e007" class="outline-3">
-<h3 id="org578e007">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org3072071" class="outline-2">
-<h2 id="org3072071"><span class="todo TODO">TODO</span> (wk 11) Spatial Analysis&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></h2>
-<div class="outline-text-2" id="text-org3072071">
-</div>
-<div id="outline-container-orgf4cc2ae" class="outline-3">
-<h3 id="orgf4cc2ae">Lecture</h3>
-</div>
-<div id="outline-container-orgc0ba17b" class="outline-3">
-<h3 id="orgc0ba17b">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-orgdf58eb9" class="outline-2">
-<h2 id="orgdf58eb9"><span class="todo TODO">TODO</span> (wk 12) Text Mining 3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></h2>
-<div class="outline-text-2" id="text-orgdf58eb9">
 </div>
 <div id="outline-container-org58cbc4d" class="outline-3">
 <h3 id="org58cbc4d">Lecture</h3>
+<div class="outline-text-3" id="text-org58cbc4d">
+<ul class="org-ul">
+<li><a href="Attachments/Social_Web_Analytics/300958.week03.slides.pdf">Lecture Slides</a>
+<ul class="org-ul">
+<li><a href="Attachments/Social_Web_Analytics/300958.week03.notes.pdf">Lecture Notes</a></li>
+</ul></li>
+</ul>
 </div>
-<div id="outline-container-org14e5a2f" class="outline-3">
-<h3 id="org14e5a2f">Tutorial</h3>
+<div id="outline-container-orgb54434d" class="outline-4">
+<h4 id="orgb54434d">Chi Distribution</h4>
+<div class="outline-text-4" id="text-orgb54434d">
+</div>
+<ul class="org-ul">
+<li><a id="orgcda4e65"></a>Logic of the Chi Distribution<br />
+<div class="outline-text-5" id="text-orgcda4e65">
+<p>
+The expected value of any cell \(x_ij\) is:
+</p>
+
+<p>
+\[\begin{aligned}
+    e_{ij}= \frac{\sum \left[ \text{row} \right] \times \sum \left[ \text{col}  \right]   }{\sum \left[ \text{all}  \right]   }
+\end{aligned}\]
+</p>
+
+<p>
+Or More Formally:
+</p>
+
+<p>
+\[\begin{aligned}
+    e_{ij} = \frac{\sum^{\text{max} \left( s \right)}_{s=1}   \left[ x_{sj} \right] \times \sum^{\text{max} \left( t \right)}_{t= 1}   \left[ x_{it} \right]  }{\sum^{\text{max} \left( i \right)}_{i= 1}   \left[ \sum^{\text{max} \left( j \right)}_{j= 1}   \left[ x_{ij} \right]  \right] } 
+\end{aligned}\]
+</p>
+
+<p>
+The logic is best explained by way of example, say we had a hat of numbers
+between 1 and 3, on red and blue paper. A natural question is whether or not
+there is evidence to suggest that the colour of the paper and the number is
+independent, say the results are as shown in table :
+</p>
+
+
+<table id="orgb30bd4a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">Red</td>
+<td class="org-right">Blue</td>
+<td class="org-right">SUM</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">22</td>
+<td class="org-right">19</td>
+<td class="org-right">41</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">9</td>
+<td class="org-right">8</td>
+<td class="org-right">17</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">33</td>
+<td class="org-right">89</td>
+<td class="org-right">122</td>
+</tr>
+
+<tr>
+<td class="org-right">SUM</td>
+<td class="org-right">64</td>
+<td class="org-right">116</td>
+<td class="org-right">180</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+We would need to do :
+</p>
+
+<ol class="org-ol">
+<li>Compute the Expected Values</li>
+<li>Determine the average (squared) distance from expectation</li>
+<li>Determine the probability of having a value less extreme that the distance
+value observed</li>
+</ol>
+
+<p>
+Consider the expected value of a red number 2.
+</p>
+
+<ul class="org-ul">
+<li>(9+8)=17 values of 2 occured and the frequency of red values was \(\frac{22+9+33}{180}\)</li>
+<li>(22+9+33)=64 Red numbers occured and the frequency of the number 2 was \(\frac{9+8}{180}\)</li>
+</ul>
+
+<p>
+Notice how these commute?
+</p>
+</div>
+</li>
+
+<li><a id="orgf1247df"></a>Outer Product and the Chi Distribution&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Chi_Square">Chi_Square</span></span><br />
+<div class="outline-text-5" id="text-orgf1247df">
+<p>
+We did this in <a href="file:///home/ryan/Notes/DataSci/ThinkingAboutData/02_Chi_Distrubition.Rmd### (1) Enter the Data">Wk2 of Thinking About Data:</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Create Vectors</span>
+g_moringa <span style="color: #a45bad;">&lt;-</span> c(<span style="color: #2d9574;">"BoRdeR"</span> = 264,<span style="color: #2d9574;">"GraSs"</span> = 127,<span style="color: #2d9574;">"SaNd"</span> = 99)
+g_vicinus <span style="color: #a45bad;">&lt;-</span> c(<span style="color: #2d9574;">"BoRder"</span> = 161,<span style="color: #2d9574;">"GraSs"</span> = 116,<span style="color: #2d9574;">"SaNd"</span> = 67)
+    <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Capitals to emphasise change later with dimnames</span>
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Create a Matrix</span>
+eel_Mat <span style="color: #a45bad;">&lt;-</span> rbind(g_moringa, g_vicinus)
+dimnames(eel_Mat) <span style="color: #a45bad;">&lt;-</span>  list(species = c(<span style="color: #2d9574;">"G.moringa"</span>, <span style="color: #2d9574;">"G.vicinus"</span>),
+                           location = c(<span style="color: #2d9574;">"Border"</span>, <span style="color: #2d9574;">"Grass"</span>, <span style="color: #2d9574;">"Sand"</span>)
+                           )
+
+eel_Mat
+</pre>
+</div>
+
+<pre class="example">
+
+           location
+species     Border Grass Sand
+  G.moringa    264   127   99
+  G.vicinus    161   116   67
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-R">
+
+n <span style="color: #a45bad;">&lt;-</span> sum(eel_Mat)
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Determine how many species there are</span>
+(species_counts       <span style="color: #a45bad;">&lt;-</span>  rowSums(eel_Mat))
+(species_proportions <span style="color: #a45bad;">&lt;-</span>  rowSums(eel_Mat)/n)
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Determine the area proportions</span>
+(location_proportions  <span style="color: #a45bad;">&lt;-</span> colSums(eel_Mat)/sum(eel_Mat))
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Calculate the expected distribution of that number for those proportions</span>
+expected_counts <span style="color: #a45bad;">&lt;-</span> outer(species_counts, location_proportions) 
+expected_counts <span style="color: #a45bad;">&lt;-</span> species_counts <span style="color: #a45bad;">%o%</span> location_proportions
+
+species_counts <span style="color: #a45bad;">%o%</span> location_proportions
+print(list(species_counts, location_proportions, expected_counts, base::outer(location_proportions, species_counts) ))
+</pre>
+</div>
+
+<p>
+Interestingly you can write:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">outer(x, y)
+x <span style="color: #a45bad;">%o%</span> y
+</pre>
+</div>
+
+<p>
+So way simpler:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Count all cells</span>
+n <span style="color: #a45bad;">&lt;-</span> sum(eel_Mat)
+
+(feature_counts <span style="color: #a45bad;">&lt;-</span> rowSums(eel_Mat))
+(obs_counts     <span style="color: #a45bad;">&lt;-</span> colSums(eel_Mat))
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Calculate the Expected Distribution for each cell</span>
+cat(<span style="color: #2d9574;">"\n"</span>)
+print(<span style="color: #2d9574;">"Using the outer Product and dividing by all counts"</span>)
+cat(<span style="color: #2d9574;">"\n"</span>)
+
+(expected_counts <span style="color: #a45bad;">&lt;-</span> feature_counts <span style="color: #a45bad;">%o%</span> (obs_counts * 1/n))
+</pre>
 </div>
 </div>
-<div id="outline-container-org6a651cf" class="outline-2">
-<h2 id="org6a651cf"><span class="todo TODO">TODO</span> Assessment Due&#xa0;&#xa0;&#xa0;<span class="tag"><span class="report">report</span></span></h2>
-<div class="outline-text-2" id="text-org6a651cf">
-</div>
-</div>
-<div id="outline-container-org4b9e517" class="outline-2">
-<h2 id="org4b9e517"><span class="todo TODO">TODO</span> ReEnter all to Do List items for Analytics Programming</h2>
-<div class="outline-text-2" id="text-org4b9e517">
-</div>
-</div>
-<div id="outline-container-orgfbf2892" class="outline-2">
-<h2 id="orgfbf2892"><span class="todo TODO">TODO</span> ReEnter all to Do Items for TAD</h2>
-<div class="outline-text-2" id="text-orgfbf2892">
-</div>
-</div>
-<div id="outline-container-orgf5a0efc" class="outline-2">
-<h2 id="orgf5a0efc"><span class="todo TODO">TODO</span> ReEnter all todo items for Visual</h2>
-<div class="outline-text-2" id="text-orgf5a0efc">
+</li>
+</ul>
 </div>
 </div>
 
+<div id="outline-container-org9e19ca4" class="outline-3">
+<h3 id="org9e19ca4">Tutorial</h3>
+<div class="outline-text-3" id="text-org9e19ca4">
+<p>
+The Tutorial is esentially doing the problem exercises located <a href="https://vuws.westernsydney.edu.au/bbcswebdav/pid-5222747-dt-content-rid-34114959_1/courses/300958_2020_scc1/Labs/Week%203/Introduction%20to%20R.html">here</a>
+</p>
+<p>
+:DIR:      Attachments/Social<sub>Web</sub><sub>Analytics</sub>/
+</p>
+<p>
+These are the Solutions
+</p>
+<ul class="org-ul">
+<li><a target="_blank" href="wk3_Tut_3.R">Tut 233</a></li>
+<li><a target="_blank" href="wk3_Tut_2.4.1.R">Tut 241</a></li>
+<li><a target="_blank" href="wk3_Tut_3.R">Tut 3</a></li>
+<li></li>
+</ul>
+</div>
+
+<div id="outline-container-org452e324" class="outline-4">
+<h4 id="org452e324">Exercise 2.3.3</h4>
+<div class="outline-text-4" id="text-org452e324">
+<p>
+Write a for loop to convert a number to a sequence of plus signs. For example, 5
+will be converted to <code>+++++</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-R" id="org89af54d"><span style="color: #bc6ec5; font-weight: bold;">main</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(n) {
+  printPlus(n)
+}
+
+<span style="color: #bc6ec5; font-weight: bold;">printPlus</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(n) {
+  <span style="color: #4f97d7; font-weight: bold;">for</span>(i <span style="color: #4f97d7; font-weight: bold;">in</span> seq_len(n)){
+    cat(<span style="color: #2d9574;">"+"</span>)
+  }
+}
+
+main(sample(1:10, 1))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc5fef41" class="outline-4">
+<h4 id="orgc5fef41">Exercise 2.4.1</h4>
+<div class="outline-text-4" id="text-orgc5fef41">
+<p>
+Write a function <code>check.pass</code> that takes the data structure <code>past.results</code> and
+returns a vector showing if each grade was a pass or a fail.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(tidyverse)
+
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">Create Data Frame of Results</span>
+
+past.results <span style="color: #a45bad;">&lt;-</span> sample(1:7, 24, replace = <span style="color: #ce537a; font-weight: bold;">TRUE</span>)
+names(past.results) <span style="color: #a45bad;">&lt;-</span> sample(letters, length(past.results), replace = <span style="color: #ce537a; font-weight: bold;">TRUE</span>)
+
+past.results.df <span style="color: #a45bad;">&lt;-</span> data.frame(<span style="color: #2d9574;">"Unit Name"</span> = names(past.results), <span style="color: #2d9574;">"Results"</span> = past.results)
+
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">Extract Vector</span>
+past.results <span style="color: #a45bad;">&lt;-</span> past.results.df$Results
+
+
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">Create a loop to check Pass Results</span>
+<span style="color: #bc6ec5; font-weight: bold;">check.pass.loop</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(vec) {
+    <span style="color: #4f97d7; font-weight: bold;">for</span>(i <span style="color: #4f97d7; font-weight: bold;">in</span> seq_len(length(past.results))) {
+        <span style="color: #4f97d7; font-weight: bold;">if</span>(vec[i]&lt;=3){
+            paste(<span style="color: #2d9574;">"The class called"</span>, names(vec)[i], <span style="color: #2d9574;">"was failed"</span>) <span style="color: #a45bad;">%&gt;%</span> print()
+        }
+    }
+}
+check.pass.loop(past.results)
+
+<span style="color: #2aa1ae; background-color: #292e34;">## </span><span style="color: #2aa1ae; background-color: #292e34;">Create a vector of pass/fail</span>
+
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">As a Test</span>
+<span style="color: #bc6ec5; font-weight: bold;">check_pass</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(vec){
+  <span style="color: #4f97d7; font-weight: bold;">return</span>(vec&lt;3)
+  }
+
+check_pass(past.results)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4cdacb6" class="outline-4">
+<h4 id="org4cdacb6">Exercise 3</h4>
+<div class="outline-text-4" id="text-org4cdacb6">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #a45bad;">library</span>(jsonlite)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb57a69e" class="outline-2">
+<h2 id="orgb57a69e"><span class="todo TODO">TODO</span> (wk 4) Text Mining 1</h2>
+<div class="outline-text-2" id="text-orgb57a69e">
+</div>
+<div id="outline-container-org47198d3" class="outline-3">
+<h3 id="org47198d3">Lecture</h3>
+</div>
+<div id="outline-container-orgc15a416" class="outline-3">
+<h3 id="orgc15a416">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org942812b" class="outline-2">
+<h2 id="org942812b"><span class="todo TODO">TODO</span> (wk 5) Visualisation</h2>
+<div class="outline-text-2" id="text-org942812b">
+</div>
+<div id="outline-container-org058633f" class="outline-3">
+<h3 id="org058633f">Lecture</h3>
+</div>
+<div id="outline-container-orgc5c2a66" class="outline-3">
+<h3 id="orgc5c2a66">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org39849f9" class="outline-2">
+<h2 id="org39849f9"><span class="todo TODO">TODO</span> (wk 6) Text Mining 2 (Clustering)</h2>
+<div class="outline-text-2" id="text-org39849f9">
+</div>
+<div id="outline-container-org39a5b65" class="outline-3">
+<h3 id="org39a5b65">Lecture</h3>
+</div>
+<div id="outline-container-orgf918425" class="outline-3">
+<h3 id="orgf918425">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-orgfbb64bf" class="outline-2">
+<h2 id="orgfbb64bf"><span class="todo TODO">TODO</span> (wk 7) Graphs 1 (Definition)</h2>
+<div class="outline-text-2" id="text-orgfbb64bf">
+</div>
+<div id="outline-container-orgbe16fd5" class="outline-3">
+<h3 id="orgbe16fd5">Lecture</h3>
+</div>
+<div id="outline-container-org5b5987c" class="outline-3">
+<h3 id="org5b5987c">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org0c21626" class="outline-2">
+<h2 id="org0c21626"><span class="todo TODO">TODO</span> (wk 8) Graphs 2 (PageRank)</h2>
+<div class="outline-text-2" id="text-org0c21626">
+</div>
+<div id="outline-container-org3cff572" class="outline-3">
+<h3 id="org3cff572">Lecture</h3>
+</div>
+<div id="outline-container-org52ab3cf" class="outline-3">
+<h3 id="org52ab3cf">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-orgbc1e779" class="outline-2">
+<h2 id="orgbc1e779"><span class="todo TODO">TODO</span> (wk 9) Time 1 (Trends)</h2>
+<div class="outline-text-2" id="text-orgbc1e779">
+</div>
+<div id="outline-container-org2c89d40" class="outline-3">
+<h3 id="org2c89d40">Lecture</h3>
+</div>
+<div id="outline-container-org47d2241" class="outline-3">
+<h3 id="org47d2241">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org3c1e03b" class="outline-2">
+<h2 id="org3c1e03b"><span class="todo TODO">TODO</span> (wk 10) Time 2 (BACI designs)</h2>
+<div class="outline-text-2" id="text-org3c1e03b">
+</div>
+<div id="outline-container-org0548944" class="outline-3">
+<h3 id="org0548944">Lecture</h3>
+</div>
+<div id="outline-container-org754adb4" class="outline-3">
+<h3 id="org754adb4">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org3072071" class="outline-2">
+<h2 id="org3072071"><span class="todo TODO">TODO</span> (wk 11) Spatial Analysis</h2>
+<div class="outline-text-2" id="text-org3072071">
+</div>
+<div id="outline-container-orgb759f7b" class="outline-3">
+<h3 id="orgb759f7b">Lecture</h3>
+</div>
+<div id="outline-container-org79bc0d1" class="outline-3">
+<h3 id="org79bc0d1">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-orgdf58eb9" class="outline-2">
+<h2 id="orgdf58eb9"><span class="todo TODO">TODO</span> (wk 12) Text Mining 3</h2>
+<div class="outline-text-2" id="text-orgdf58eb9">
+</div>
+<div id="outline-container-org4286667" class="outline-3">
+<h3 id="org4286667">Lecture</h3>
+</div>
+<div id="outline-container-orgaa0d199" class="outline-3">
+<h3 id="orgaa0d199">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org6a651cf" class="outline-2">
+<h2 id="org6a651cf"><span class="todo TODO">TODO</span> Assessment Due</h2>
+<div class="outline-text-2" id="text-org6a651cf">
+</div>
+</div>
 <div id="outline-container-org8e8e384" class="outline-2">
 <h2 id="org8e8e384">References</h2>
 <div class="outline-text-2" id="text-org8e8e384">
@@ -733,7 +1060,7 @@ it from there if the references are not showing up properly.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ryan G</p>
-<p class="date">Created: 2020-03-27 Fri 07:51</p>
+<p class="date">Created: 2020-03-27 Fri 20:13</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

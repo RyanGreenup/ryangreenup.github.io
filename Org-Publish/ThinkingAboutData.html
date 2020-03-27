@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-27 Fri 07:48 -->
+<!-- 2020-03-27 Fri 20:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Thinking About Data</title>
@@ -195,7 +195,8 @@
 </style>
 <link rel="stylesheet"
            href="./style.css" type="text/css"/>
-
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="https://orgmode.org/org-info.js">
 /**
  *
@@ -353,6 +354,7 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 </li>
+<li><a href="#orgbb00cbf">Unit Information</a></li>
 <li><a href="#org5ce2a5e">Deriving the Normal Distribution</a>
 <ul>
 <li><a href="#power-series">Power Series&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Series">Series</span></span></a>
@@ -385,7 +387,7 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#orga2d1547">Calculating Power</a>
 <ul>
-<li><a href="#org442eb42">Example</a>
+<li><a href="#org99d182b">Example</a>
 <ul>
 <li><a href="#orge417d14">Problem</a></li>
 <li><a href="#org30ab5b7">Solution</a></li>
@@ -399,15 +401,33 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#org00e2018">Weekly Material</a>
 <ul>
-<li><a href="#orgae5ccd3">Wk 3; Comparison of Population Samples&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a>
+<li><a href="#org1a58bea">(3); Comparison of Population Samples&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a>
 <ul>
-<li><a href="#org80b0608">Lecture</a></li>
-<li><a href="#org40283e2">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#org694e148">Lecture</a></li>
+<li><a href="#orgf29fc35">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
 </ul>
 </li>
-<li><a href="#org9102f7c">Wk 4; Using Student's t-Distribution&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></a>
+<li><a href="#orgedc6db1"><span class="todo TODO">TODO</span> (4); Using Student's t-Distribution&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></a>
 <ul>
-<li><a href="#org6121618">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#org27b4167">Material</a></li>
+<li><a href="#orgf720076"><span class="done DONE">DONE</span> Lecture</a></li>
+<li><a href="#orgc7729bd"><span class="done DONE">DONE</span> Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+</ul>
+</li>
+<li><a href="#orgda6bbc5"><span class="todo TODO">TODO</span> (5) Mapping Disease&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></a></li>
+<li><a href="#org4d45956"><span class="todo TODO">TODO</span> (6) Observation or Experiment&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></a></li>
+<li><a href="#org0417cfb"><span class="todo TODO">TODO</span> (7) Do Taller People Earn More&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></a></li>
+<li><a href="#orga8ea730"><span class="todo TODO">TODO</span> (8) No Really do they Earn More?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></a></li>
+<li><a href="#org45a8447">wk9 Break&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk9">wk9</span></span></a></li>
+<li><a href="#org842786e"><span class="todo TODO">TODO</span> (9) Do redheads have a lower pain threshold?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></a></li>
+<li><a href="#org8833892"><span class="todo TODO">TODO</span> (10) What is Normal?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></a></li>
+<li><a href="#org80305cd"><span class="todo TODO">TODO</span> (11) Normality as opposed to deviant etc.&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></a></li>
+<li><a href="#org9dc2d19"><span class="todo TODO">TODO</span> (12) When it all goes Wrong&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk13">wk13</span></span></a></li>
+<li><a href="#org19581cd"><span class="todo TODO">TODO</span> (13) Exam Prep&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk14">wk14</span></span></a></li>
+<li><a href="#org9576b80">Symlinks to Material</a>
+<ul>
+<li><a href="#orgbb2f4d8">Lecture</a></li>
+<li><a href="#orgc12d0f9">Tutorial</a></li>
 </ul>
 </li>
 </ul>
@@ -416,8 +436,6 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-
-
 <div id="outline-container-org3c82afe" class="outline-2">
 <h2 id="org3c82afe"><span class="todo TODO">TODO</span> Overheads</h2>
 <div class="outline-text-2" id="text-org3c82afe">
@@ -447,6 +465,14 @@ slow to be useful in any meaningful fashion.
 <a href="https://github.com/fuxialexander/emacs-webkit-katex-render">Here is one example</a> but there was a better one I was using
 </p>
 </div>
+</div>
+</div>
+<div id="outline-container-orgbb00cbf" class="outline-2">
+<h2 id="orgbb00cbf">Unit Information</h2>
+<div class="outline-text-2" id="text-orgbb00cbf">
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/DataScience Learning Guides/Archive/ThinkingAboutData.pdf">Learning Guide</a></li>
+</ul>
 </div>
 </div>
 <div id="outline-container-org5ce2a5e" class="outline-2">
@@ -484,7 +510,7 @@ Is a <a href="./11_Series.md">Power Series</a> a and will either:
 </ul>
 </div>
 
-<div id="outline-container-orgae14de3" class="outline-4">
+<div id="outline-container-orgf777f60" class="outline-4">
 <h4 id="example">Example</h4>
 <div class="outline-text-4" id="text-example">
 <p>
@@ -1981,9 +2007,9 @@ FDR=\frac{FP}{TP+FN}\\
 </div>
 
 
-<div id="outline-container-org442eb42" class="outline-3">
-<h3 id="org442eb42">Example</h3>
-<div class="outline-text-3" id="text-org442eb42">
+<div id="outline-container-org99d182b" class="outline-3">
+<h3 id="org99d182b">Example</h3>
+<div class="outline-text-3" id="text-org99d182b">
 </div>
 <div id="outline-container-orge417d14" class="outline-4">
 <h4 id="orge417d14">Problem</h4>
@@ -2165,13 +2191,13 @@ z&= \frac{\overline{x}_{crit}- \mu_{true}}{\left( \frac{\sigma}{\sqrt{n}  } \rig
 <h2 id="org00e2018">Weekly Material</h2>
 <div class="outline-text-2" id="text-org00e2018">
 </div>
-<div id="outline-container-orgae5ccd3" class="outline-3">
-<h3 id="orgae5ccd3">Wk 3; Comparison of Population Samples&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h3>
-<div class="outline-text-3" id="text-orgae5ccd3">
+<div id="outline-container-org1a58bea" class="outline-3">
+<h3 id="org1a58bea">(3); Comparison of Population Samples&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h3>
+<div class="outline-text-3" id="text-org1a58bea">
 </div>
-<div id="outline-container-org80b0608" class="outline-4">
-<h4 id="org80b0608">Lecture</h4>
-<div class="outline-text-4" id="text-org80b0608">
+<div id="outline-container-org694e148" class="outline-4">
+<h4 id="org694e148">Lecture</h4>
+<div class="outline-text-4" id="text-org694e148">
 </div>
 <ul class="org-ul">
 <li><a id="org32b37e1"></a>Boxplots<br />
@@ -2256,8 +2282,8 @@ Attribute &#x2026; Data Base
 </p>
 </div>
 </li>
-<li><a id="org2b33853"></a>Should I have all the lists and shit in <code>/tmp</code><br />
-<div class="outline-text-7" id="text-org2b33853">
+<li><a id="org09667b6"></a>Should I have all the lists and shit in <code>/tmp</code><br />
+<div class="outline-text-7" id="text-org09667b6">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -2307,8 +2333,8 @@ Follow the instructions <a href="file:///home/ryan/Notes/MD/NoteTaking/VNote_Tip
 </p>
 </div>
 </li>
-<li><a id="org5c69a51"></a>Should I have all the lists and shit in <code>/tmp</code><br />
-<div class="outline-text-7" id="text-org5c69a51">
+<li><a id="org0f58938"></a>Should I have all the lists and shit in <code>/tmp</code><br />
+<div class="outline-text-7" id="text-org0f58938">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -2426,9 +2452,9 @@ I have the Quizz in a <a href="file:///home/ryan/Notes/DataSci/.gitignore">.giti
 </li>
 </ul>
 </div>
-<div id="outline-container-org40283e2" class="outline-4">
-<h4 id="org40283e2">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
-<div class="outline-text-4" id="text-org40283e2">
+<div id="outline-container-orgf29fc35" class="outline-4">
+<h4 id="orgf29fc35">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-orgf29fc35">
 <p>
 The tutorial work is located at <code>~/Notes/DataSci/ThinkingAboutData</code> and linked here:
 </p>
@@ -2443,17 +2469,322 @@ The tutorial work is located at <code>~/Notes/DataSci/ThinkingAboutData</code> a
 </div>
 </div>
 
-
-<div id="outline-container-org9102f7c" class="outline-3">
-<h3 id="org9102f7c">Wk 4; Using Student's t-Distribution&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></h3>
-<div class="outline-text-3" id="text-org9102f7c">
+<div id="outline-container-orgedc6db1" class="outline-3">
+<h3 id="orgedc6db1"><span class="todo TODO">TODO</span> (4); Using Student's t-Distribution&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></h3>
+<div class="outline-text-3" id="text-orgedc6db1">
+</div>
+<div id="outline-container-org27b4167" class="outline-4">
+<h4 id="org27b4167">Material</h4>
+<div class="outline-text-4" id="text-org27b4167">
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week04.slides.pdf">Lecture 04</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet04.pdf">Worksheet 04</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf720076" class="outline-4">
+<h4 id="orgf720076"><span class="done DONE">DONE</span> Lecture</h4>
+<div class="outline-text-4" id="text-orgf720076">
 </div>
 <ul class="org-ul">
-<li><a id="org99ecd25"></a>Lecture<br /></li>
+<li><a id="orgf8e41c0"></a>The Wilcoxon-Mann-Whitney Test<br />
+<div class="outline-text-5" id="text-orgf8e41c0">
+<p>
+Often used when the data is skewed and the use of the \(t\) -test is suspect.
+</p>
+<p>
+:ID:       3bcc3e01-598c-484d-859f-8ca82fe340e6
+:DIR:      Attachments/Thinking<sub>About</sub><sub>Data</sub>/
+</p>
+
+<div id="orgab90ebb" class="figure">
+<p><img src="Attachments/Thinking_About_Data/ManualWhitney.png" alt="ManualWhitney.png" width="250px" />
+</p>
+<p><span class="figure-number">Figure 6: </span>Attempt at man whitney test</p>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-r">bwt = c(3429, 2329, 3657, 3514, 3086, 3886)
+smoke = c(0, 0, 1, 0, 1, 0)
+prob = data.frame(bwt, smoke)
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">How to actually do that for the ordinary data</span>
+
+wilcox.test(bwt ~ smoke, birthwt)
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org7498f5c"></a>Standardisation<br />
+<div class="outline-text-5" id="text-org7498f5c">
+<p>
+Consider the Histograms from the birthweight data
+      SCHEDULED: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-27 Fri 14:00&gt; </span></span> DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-27 Fri 15:00&gt;</span></span>
+</p>
+<p>
+:ID:       291a093e-7f59-45d1-b6b2-bb401e04d78f
+:DIR:      Attachments/Thinking<sub>About</sub><sub>Data</sub>/
+</p>
+
+<p>
+The distribution of mean values can be shown from the birthweight data below in
+figure <a href="#org91f4d87">7</a> as generated by listing <a href="#orgd70c72e">2</a>.
+</p>
+
+<p>
+./Attachments/Thinking<sub>About</sub><sub>Data</sub>/
+</p>
+<div class="org-src-container">
+<pre class="src src-R">     <span style="color: #bc6ec5; font-weight: bold;">load.pac</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>() {
+
+       <span style="color: #4f97d7; font-weight: bold;">if</span>(<span style="color: #a45bad;">require</span>(<span style="color: #2d9574;">"pacman"</span>)){
+         <span style="color: #a45bad;">library</span>(pacman)
+       }<span style="color: #4f97d7; font-weight: bold;">else</span>{
+         install.packages(<span style="color: #2d9574;">"pacman"</span>)
+         <span style="color: #a45bad;">library</span>(pacman)
+       }
+
+       pacman::p_load(xts, sp, gstat, ggplot2, rmarkdown, reshape2, ggmap,
+                      parallel, dplyr, plotly, tidyverse, reticulate, UsingR, Rmpfr,
+                      swirl, corrplot, gridExtra, mise, latex2exp, tree, rpart,
+                      lattice,
+                      rstudioapi)
+
+     }
+
+     load.pac()
+     birthwt <span style="color: #a45bad;">&lt;-</span> read.csv(<span style="color: #2d9574;">"./Attachments/Thinking_About_Data/birthwt.csv"</span>) 
+     birthwt_pretty <span style="color: #a45bad;">&lt;-</span> birthwt
+     birthwt_pretty$smoke <span style="color: #a45bad;">&lt;-</span> ifelse(birthwt_pretty$smoke==<span style="color: #2d9574;">"yes"</span>, <span style="color: #ce537a; font-weight: bold;">TRUE</span>, <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+     birthwt_pretty$smoke <span style="color: #a45bad;">&lt;-</span> ifelse(birthwt_pretty$smoke, <span style="color: #2d9574;">"Smoking"</span>, <span style="color: #2d9574;">"non\nSmoking"</span>)
+
+    hist <span style="color: #a45bad;">&lt;-</span> ggplot(birthwt_pretty, aes(x = bwt, fill = smoke, col = <span style="color: #2d9574;">"black"</span>, y = ..density..)) +
+             theme_classic() + 
+             labs(x = <span style="color: #2d9574;">"Birth Weight"</span>, y = <span style="color: #2d9574;">"Density"</span>) +
+             geom_histogram(binwidth = 300, col = <span style="color: #2d9574;">"black"</span>) +
+             facet_grid(. ~ smoke) +
+             guides(fill = <span style="color: #ce537a; font-weight: bold;">FALSE</span>)
+hist
+</pre>
+</div>
+
+
+
+<div id="org91f4d87" class="figure">
+<p><img src="./Attachments/Thinking_About_Data/04_HistoGramBirth_both.png" alt="04_HistoGramBirth_both.png" width="300px" />
+</p>
+<p><span class="figure-number">Figure 7: </span>Both Histograms</p>
+</div>
+
+<p>
+The whole idea is that these have a similar shape and can be related by just
+standardising them relative to each other, sliding left and right (addition) and
+scaling by \(\sigma\) (multiplication).
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org79d6db0"></a>What is Standardisation<br />
+<div class="outline-text-6" id="text-org79d6db0">
+<p>
+Basically standard deviation of the mean of a sample from the population for all
+possible samples
+</p>
+</div>
+</li>
 </ul>
-<div id="outline-container-org6121618" class="outline-4">
-<h4 id="org6121618">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
-<div class="outline-text-4" id="text-org6121618">
+</li>
+
+<li><a id="orgfb88aeb"></a><span class="todo TODO">TODO</span> Explain and understand Pooled Standard Deviation<br />
+<div class="outline-text-5" id="text-orgfb88aeb">
+<p>
+\[\begin{aligned}
+s_p \cdot \sqrt{\frac{1}{n_1}+  \frac{1}{n_2}}  
+\end{aligned}\]
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org9233d2f"></a>His explanation<br />
+<div class="outline-text-6" id="text-org9233d2f">
+<p>
+\(X_1; \quad\) :mean is \(\mu_1\quad\) :sd is  \(\sigma_1\)
+\(X_2; \quad\) :mean is \(\mu_2\quad\) :sd is  \(\sigma_2\) 
+</p>
+
+
+<p>
+\(X_1+ X_2=Y\) 
+</p>
+
+<p>
+\[\begin{aligned}
+\text{var} \left( y \right)= \text{var} \left( X_1 \right)+  \text{var} \left( X_2 \right)\\
+\sigma^2_y = \sigma^2_1 + \sigma^2_2
+\end{aligned}\]
+</p>
+
+<p>
+You can think of the standard error 
+</p>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="orgbcc044c"></a><span class="todo TODO">TODO</span> Understand the sampling dist Statistic s/rt(n)<br /></li>
+<li><a id="org9ce6bab"></a><span class="todo TODO">TODO</span> What's the difference between Confidence and Prediction<br /></li>
+
+<li><a id="orgc903bd0"></a><span class="todo TODO">TODO</span> Review the Lecture<br /></li>
+<li><a id="orgc38de8d"></a>The \(t\) statistic<br />
+<div class="outline-text-5" id="text-orgc38de8d">
+<p>
+These distributions look the same because the theory says the should, so all we
+have to do is calculate the t-statistic, because
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Summary</td>
+<td class="org-right">Non-Smoking</td>
+<td class="org-right">Smoking</td>
+</tr>
+
+<tr>
+<td class="org-left">n</td>
+<td class="org-right">742</td>
+<td class="org-right">484</td>
+</tr>
+
+<tr>
+<td class="org-left">mean</td>
+<td class="org-right">3515</td>
+<td class="org-right">3260</td>
+</tr>
+
+<tr>
+<td class="org-left">SD</td>
+<td class="org-right">497</td>
+<td class="org-right">517</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+\[\begin{aligned}
+s_p = 505.09
+\end{aligned}\]
+</p>
+
+<p>
+\[\begin{aligned}
+\frac{3515.64 -  3260.29}{505.05 \times \sqrt{\frac{1}{742}+ \frac{1}{484}}  } = 8.653
+\end{aligned}\]
+</p>
+
+
+<p>
+So we've taken our problem and mapped it to another problem.
+</p>
+
+
+<p>
+\[\begin{aligned}
+t = \frac{162.7 -  154.04}{22.39 \times  22.39 \times \sqrt{\frac{1}{52}+  \frac{1}{48}}  } 
+\end{aligned}\]
+</p>
+
+<p>
+Because the \(t\) distribution is a standard 
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-R">t.test(x=birthwt$bwt[birthwt$smoke], y=birthwt$bwt[!birthwt$smoke]) 
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="04_HistoGramBirth_both.png" alt="04_HistoGramBirth_both.png" />
+</p>
+</div>
+</div>
+</li>
+
+<li><a id="orgb43a1a8"></a>Hypothesis Test<br />
+<div class="outline-text-5" id="text-orgb43a1a8">
+<p>
+First you need to define your population, which is all observations that you
+could be interested. To a degree it is somewhat arbitrary.
+</p>
+
+<p>
+If you're population is really small it's probably not very interesting
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org5e656e3"></a>Null Hypothesis<br />
+<div class="outline-text-6" id="text-org5e656e3">
+<p>
+Usually nothing happened, what we desire to refute.
+</p>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="orgbed3125"></a>Confidence Intervals<br />
+<div class="outline-text-5" id="text-orgbed3125">
+<p>
+Recall that there is a difference between confidence and prediction intervals.
+</p>
+
+<p>
+Whenever running an
+</p>
+
+<p>
+There's a distinction between 10 samples and 1 sample of 10 observations, be careful.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgb9cd752"></a><span class="todo TODO">TODO</span> Read Confidence Intervals<br />
+<div class="outline-text-6" id="text-orgb9cd752">
+</div>
+
+<ul class="org-ul">
+<li><a id="orgc8255f1"></a>What's the difference between prediction and confidence intervals<br />
+<div class="outline-text-7" id="text-orgc8255f1">
+<p>
+I think it has to do with predicting the next value not predicting the probable
+population mean value.
+</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgc7729bd" class="outline-4">
+<h4 id="orgc7729bd"><span class="done DONE">DONE</span> Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-orgc7729bd">
 <p>
 The File is <a href="file:///home/ryan/Dropbox/Notes/DataSci/ThinkingAboutData/04_t-test.Rmd">here</a>
 </p>
@@ -2464,7 +2795,102 @@ The File is <a href="file:///home/ryan/Dropbox/Notes/DataSci/ThinkingAboutData/0
 </div>
 </div>
 </div>
+
+<div id="outline-container-orgda6bbc5" class="outline-3">
+<h3 id="orgda6bbc5"><span class="todo TODO">TODO</span> (5) Mapping Disease&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></h3>
+<div class="outline-text-3" id="text-orgda6bbc5">
 </div>
+</div>
+<div id="outline-container-org4d45956" class="outline-3">
+<h3 id="org4d45956"><span class="todo TODO">TODO</span> (6) Observation or Experiment&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></h3>
+<div class="outline-text-3" id="text-org4d45956">
+</div>
+</div>
+<div id="outline-container-org0417cfb" class="outline-3">
+<h3 id="org0417cfb"><span class="todo TODO">TODO</span> (7) Do Taller People Earn More&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></h3>
+<div class="outline-text-3" id="text-org0417cfb">
+</div>
+</div>
+<div id="outline-container-orga8ea730" class="outline-3">
+<h3 id="orga8ea730"><span class="todo TODO">TODO</span> (8) No Really do they Earn More?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></h3>
+<div class="outline-text-3" id="text-orga8ea730">
+</div>
+</div>
+<div id="outline-container-org45a8447" class="outline-3">
+<h3 id="org45a8447">wk9 Break&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk9">wk9</span></span></h3>
+</div>
+<div id="outline-container-org842786e" class="outline-3">
+<h3 id="org842786e"><span class="todo TODO">TODO</span> (9) Do redheads have a lower pain threshold?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></h3>
+<div class="outline-text-3" id="text-org842786e">
+</div>
+</div>
+<div id="outline-container-org8833892" class="outline-3">
+<h3 id="org8833892"><span class="todo TODO">TODO</span> (10) What is Normal?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></h3>
+<div class="outline-text-3" id="text-org8833892">
+</div>
+</div>
+<div id="outline-container-org80305cd" class="outline-3">
+<h3 id="org80305cd"><span class="todo TODO">TODO</span> (11) Normality as opposed to deviant etc.&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></h3>
+<div class="outline-text-3" id="text-org80305cd">
+</div>
+</div>
+<div id="outline-container-org9dc2d19" class="outline-3">
+<h3 id="org9dc2d19"><span class="todo TODO">TODO</span> (12) When it all goes Wrong&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk13">wk13</span></span></h3>
+<div class="outline-text-3" id="text-org9dc2d19">
+</div>
+</div>
+<div id="outline-container-org19581cd" class="outline-3">
+<h3 id="org19581cd"><span class="todo TODO">TODO</span> (13) Exam Prep&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk14">wk14</span></span></h3>
+<div class="outline-text-3" id="text-org19581cd">
+</div>
+</div>
+
+<div id="outline-container-org9576b80" class="outline-3">
+<h3 id="org9576b80">Symlinks to Material</h3>
+<div class="outline-text-3" id="text-org9576b80">
+</div>
+<div id="outline-container-orgbb2f4d8" class="outline-4">
+<h4 id="orgbb2f4d8">Lecture</h4>
+<div class="outline-text-4" id="text-orgbb2f4d8">
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week04.slides.pdf">Lecture 04</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week05.slides.pdf">Lecture 05</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week06.slides.pdf">Lecture 06</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week07.slides.pdf">Lecture 07</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week08.slides.pdf">Lecture 08</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week09.slides.pdf">Lecture 09</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week10.slides.pdf">Lecture 10</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week11.slides.pdf">Lecture 11</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week12.slides.pdf">Lecture 12</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week13.slides.pdf">Lecture 13</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/301108.week14.slides.pdf">Lecture 14</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc12d0f9" class="outline-4">
+<h4 id="orgc12d0f9">Tutorial</h4>
+<div class="outline-text-4" id="text-orgc12d0f9">
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet01.pdf">Worksheet 01</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet02.pdf">Worksheet 02</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet03.pdf">Worksheet 03</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet04.pdf">Worksheet 04</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet05.pdf">Worksheet 05</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet06.pdf">Worksheet 06</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet07.pdf">Worksheet 07</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet08.pdf">Worksheet 08</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet09.pdf">Worksheet 09</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet10.pdf">Worksheet 10</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet11.pdf">Worksheet 11</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet12.pdf">Worksheet 12</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet13.pdf">Worksheet 13</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/ThinkingAboutData/Seperate Files/Worksheet14.pdf">Worksheet 14</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
 <div id="outline-container-org0cfa075" class="outline-2">
 <h2 id="org0cfa075">Central Limit Theorem</h2>
 <div class="outline-text-2" id="text-org0cfa075">
@@ -2536,7 +2962,7 @@ I'm also not sure how that will be influenced by looking for <code>#tags</code> 
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Ryan G</p>
-<p class="date">Created: 2020-03-27 Fri 07:48</p>
+<p class="date">Created: 2020-03-27 Fri 20:12</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
