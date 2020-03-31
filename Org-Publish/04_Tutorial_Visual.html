@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-31 Tue 20:16 -->
+<!-- 2020-03-31 Tue 21:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Visual Analytics</title>
@@ -341,44 +341,23 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org626c390">1. (Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></a>
+<li><a href="#orgd1b5406">0.1. <span class="done DONE">DONE</span> Tutorial</a>
 <ul>
-<li><a href="#orgd89f7ad">1.1. <span class="done DONE">DONE</span> Lecture</a></li>
-<li><a href="#org2e5f7bb">1.2. <span class="todo TODO">TODO</span> Tutorial</a>
-<ul>
-<li><a href="#orgfde139e">1.2.1. Question 1</a></li>
-<li><a href="#orge3531d3">1.2.2. Question 2</a></li>
-<li><a href="#org7ddee5e">1.2.3. Question 3</a></li>
-<li><a href="#orgd05e838">1.2.4. Question 4</a></li>
-<li><a href="#orgdced781">1.2.5. Question 5</a></li>
-<li><a href="#org1cf9d57">1.2.6. Question 6</a></li>
+<li><a href="#org43e8499">0.1.1. Question 1</a></li>
+<li><a href="#orgd4d0594">0.1.2. Question 2</a></li>
+<li><a href="#org3d39f73">0.1.3. Question 3</a></li>
+<li><a href="#org6e3bbc4">0.1.4. Question 4</a></li>
+<li><a href="#org8fd2010">0.1.5. Question 5</a></li>
+<li><a href="#org3c9ce5b">0.1.6. Question 6</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgfaa5b9e">2. References</a></li>
-</ul>
+<li><a href="#org179d3c2">1. References</a></div>
 </div>
-</div>
-<div id="outline-container-org626c390" class="outline-2">
-<h2 id="org626c390"><span class="section-number-2">1</span> (Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Refer to:
-</p>
-<ul class="org-ul">
-<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/04_Lecture.pdf">Lecture #4</a></li>
-<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/04_Tutorial.pdf">Tutorial 4</a></li>
-</ul>
-</div>
-<div id="outline-container-orgd89f7ad" class="outline-3">
-<h3 id="orgd89f7ad"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Lecture</h3>
-<div class="outline-text-3" id="text-1-1">
-</div>
-</div>
-<div id="outline-container-org2e5f7bb" class="outline-3">
-<h3 id="org2e5f7bb"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> Tutorial</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgd1b5406" class="outline-3">
+<h3 id="orgd1b5406"><span class="section-number-3">0.1</span> <span class="done DONE">DONE</span> Tutorial</h3>
+<div class="outline-text-3" id="text-0-1">
 <p>
 Tutorial Exercises:
 </p>
@@ -394,9 +373,9 @@ criteria is the most important for big graph visualization?</li>
 </ol>
 </div>
 
-<div id="outline-container-orgfde139e" class="outline-4">
-<h4 id="orgfde139e"><span class="section-number-4">1.2.1</span> Question 1</h4>
-<div class="outline-text-4" id="text-1-2-1">
+<div id="outline-container-org43e8499" class="outline-4">
+<h4 id="org43e8499"><span class="section-number-4">0.1.1</span> Question 1</h4>
+<div class="outline-text-4" id="text-0-1-1">
 <blockquote>
 <p>
 What is the difference between a simple graph and a general graph?
@@ -408,11 +387,11 @@ A graph \(G\) is an ordered pair of two disjoint sets, one of which is the
 node/vertex set \(V\) and the other is a set of edges \(E\), if the set is with
 direction it may be described as an ordered triple in onrder to contain a set to
 describe direction \(\phi\). The graph would usually be denoted something to the
-effect of \(G(V,E)\). (<a href="#citeproc_bib_item_1">“Graph Theory,” n.d.</a>)
+effect of \(G(V,E)\). (<a href="#citeproc_bib_item_1">“Graph Theory” 2020</a>)
 </p>
 
 <p>
-So generally a graph might be quite complicated as shown in figure <a href="#org4a4eb18">1</a>
+So generally a graph might be quite complicated as shown in figure <a href="#org21752bc">1</a>
 below.
 </p>
 
@@ -426,7 +405,7 @@ A Simple graph however:
 </ul>
 
 <p>
-A simple graph is depicted in figure 
+A simple graph is depicted in figure <a href="#org44298bc">2</a>
 </p>
 
 
@@ -435,7 +414,7 @@ A simple graph is depicted in figure
 <p>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org4a4eb18"># #+begin_src javascript :exports code
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org567c1c0"># #+begin_src javascript :exports code
 # #+begin_src javascript :exports code
 <span style="color: #4f97d7; font-weight: bold;">@startdot</span>
 strict digraph graphName {
@@ -486,9 +465,10 @@ strict digraph graphName {
 
 
 
-<div class="figure">
+<div id="org21752bc" class="figure">
 <p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Complex.png" alt="DOTGraph04q1Complex.png" />
 </p>
+<p><span class="figure-number">Figure 1: </span>Example of a graph generally, this graph is not simple because it has loops and multi-edges</p>
 </div>
 
 
@@ -496,7 +476,7 @@ strict digraph graphName {
 <p>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 2: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org4a06747"># #+begin_src javascript :exports code
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org9dbc885"># #+begin_src javascript :exports code
 # #+begin_src javascript :exports code
 <span style="color: #4f97d7; font-weight: bold;">@startdot</span>
 strict digraph graphName {
@@ -543,17 +523,17 @@ strict digraph graphName {
 </details>
 
 
-<div class="figure">
+<div id="org44298bc" class="figure">
 <p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Simp.png" alt="DOTGraph04q1Simp.png" />
 </p>
+<p><span class="figure-number">Figure 2: </span>Example of a <i>Simple Graph</i></p>
 </div>
 </div>
 </div>
 
-
-<div id="outline-container-orge3531d3" class="outline-4">
-<h4 id="orge3531d3"><span class="section-number-4">1.2.2</span> Question 2</h4>
-<div class="outline-text-4" id="text-1-2-2">
+<div id="outline-container-orgd4d0594" class="outline-4">
+<h4 id="orgd4d0594"><span class="section-number-4">0.1.2</span> Question 2</h4>
+<div class="outline-text-4" id="text-0-1-2">
 <blockquote>
 <ol class="org-ol">
 <li value="2">What type of forces can we use in force directed methods?</li>
@@ -590,9 +570,9 @@ Other types of forces may act however, for example:
 </div>
 </div>
 
-<div id="outline-container-org7ddee5e" class="outline-4">
-<h4 id="org7ddee5e"><span class="section-number-4">1.2.3</span> Question 3</h4>
-<div class="outline-text-4" id="text-1-2-3">
+<div id="outline-container-org3d39f73" class="outline-4">
+<h4 id="org3d39f73"><span class="section-number-4">0.1.3</span> Question 3</h4>
+<div class="outline-text-4" id="text-0-1-3">
 <blockquote>
 <ol class="org-ol">
 <li value="3">What are the advantages of force directed methods? Can these methods be
@@ -610,9 +590,9 @@ the visual.
 
 <p>
 Force directed Methods may improve the capacity for the intended audience to
-implement pre-attentive processing (<a href="VisualAnalytics.html#MissingReference">Wk2, Q7</a>)  when reviewing the visualisation,
+implement pre-attentive processing (<a href="VisualAnalytics.html#orgf7685b5">Wk2, Q7</a>)  when reviewing the visualisation,
 this is because force directed methods move similar nodes together into
-clusters, this grouping is a principle of the <i>Gestalt laws</i> (<a href="VisualAnalytics.html#MissingReference">Wk2, Q8</a>) known to
+clusters, this grouping is a principle of the <i>Gestalt laws</i> (<a href="VisualAnalytics.html#org51abe7d">Wk2, Q8</a>) known to
 increase the perception of discrete categories in visualisation.
 Laws/ 
 </p>
@@ -625,8 +605,8 @@ process is more or less automatic.
 </div>
 
 <ol class="org-ol">
-<li><a id="org28cfff1"></a>Using Force Directed Methods on Large Graphs<br />
-<div class="outline-text-5" id="text-1-2-3-1">
+<li><a id="org1010e32"></a>Using Force Directed Methods on Large Graphs<br />
+<div class="outline-text-5" id="text-0-1-3-1">
 <p>
 For very large graphs force directed methods can become unwieldly, slow to
 compute and generally the output can be to a degree unpredictable.
@@ -641,9 +621,9 @@ saying that, they might still give an interesting overview of the data set.
 </ol>
 </div>
 
-<div id="outline-container-orgd05e838" class="outline-4">
-<h4 id="orgd05e838"><span class="section-number-4">1.2.4</span> Question 4</h4>
-<div class="outline-text-4" id="text-1-2-4">
+<div id="outline-container-org6e3bbc4" class="outline-4">
+<h4 id="org6e3bbc4"><span class="section-number-4">0.1.4</span> Question 4</h4>
+<div class="outline-text-4" id="text-0-1-4">
 <blockquote>
 <ol class="org-ol">
 <li value="4">What are the common methods that are used to handle big graphs?</li>
@@ -669,10 +649,10 @@ they may end up being perceived as a <i>hairball</i>.
 </div>
 
 <ol class="org-ol">
-<li><a id="orgafdd9af"></a>Structural Clustering<br />
+<li><a id="org8a059e5"></a>Structural Clustering<br />
 <ol class="org-ol">
-<li><a id="org62abde2"></a>Multilevel Approaches<br />
-<div class="outline-text-6" id="text-1-2-4-1-1">
+<li><a id="orgbdc4e10"></a>Multilevel Approaches<br />
+<div class="outline-text-6" id="text-0-1-4-1-1">
 <p>
 One Method is to implement a form of dimension-reduction, this is an alorithm
 that essentially groups multiple nodes into a single cluster and then instead
@@ -689,8 +669,8 @@ becomes choosing the level that corresponds to the most effective Visualisation
 </div>
 </li>
 
-<li><a id="org52ab1a8"></a>Collapsible Nodes<br />
-<div class="outline-text-6" id="text-1-2-4-1-2">
+<li><a id="org305b947"></a>Collapsible Nodes<br />
+<div class="outline-text-6" id="text-0-1-4-1-2">
 <p>
 Collapsible Nodes leverages the interactive capacity of computing devices to
 folder multiple nodes into a common root, this is similar to the directory
@@ -706,8 +686,8 @@ tree -L 3
 </li>
 </ol>
 </li>
-<li><a id="org2c28b85"></a>Abstraction / Aggregation<br />
-<div class="outline-text-5" id="text-1-2-4-2">
+<li><a id="org854a64e"></a>Abstraction / Aggregation<br />
+<div class="outline-text-5" id="text-0-1-4-2">
 <p>
 Abstraction and aggregation involves merging nodes into common nodes by a
 similar trait, for example instead of listing every single car manufacturer as
@@ -726,10 +706,9 @@ visualisation is being used for.
 </ol>
 </div>
 
-
-<div id="outline-container-orgdced781" class="outline-4">
-<h4 id="orgdced781"><span class="section-number-4">1.2.5</span> Question 5</h4>
-<div class="outline-text-4" id="text-1-2-5">
+<div id="outline-container-org8fd2010" class="outline-4">
+<h4 id="org8fd2010"><span class="section-number-4">0.1.5</span> Question 5</h4>
+<div class="outline-text-4" id="text-0-1-5">
 <blockquote>
 <ol class="org-ol">
 <li value="5">List the 6 aesthetic criteria in graph drawing. In your opinion, which
@@ -772,10 +751,9 @@ visualisation, this is because following lines can be a mentally taxing task.
 </div>
 </div>
 
-
-<div id="outline-container-org1cf9d57" class="outline-4">
-<h4 id="org1cf9d57"><span class="section-number-4">1.2.6</span> Question 6</h4>
-<div class="outline-text-4" id="text-1-2-6">
+<div id="outline-container-org3c9ce5b" class="outline-4">
+<h4 id="org3c9ce5b"><span class="section-number-4">0.1.6</span> Question 6</h4>
+<div class="outline-text-4" id="text-0-1-6">
 <blockquote>
 <ol class="org-ol">
 <li value="6">Show the adjacency matrix for the following graphs</li>
@@ -783,7 +761,7 @@ visualisation, this is because following lines can be a mentally taxing task.
 </blockquote>
 
 <p>
-The Adjacency matrix for the graph shown in figure <a href="#org99219ad">3</a> is given by 
+The Adjacency matrix for the graph shown in figure <a href="#orga387e44">3</a> is given by 
 </p>
 
 
@@ -791,7 +769,7 @@ The Adjacency matrix for the graph shown in figure <a href="#org99219ad">3</a> i
 <p>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 3: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org99219ad"># #+begin_src javascript :exports code
+<label class="org-src-name"><span class="listing-number">Listing 3: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="orga387e44"># #+begin_src javascript :exports code
 # #+begin_src javascript :exports code
 <span style="color: #4f97d7; font-weight: bold;">@startdot</span>
 strict digraph graphName {
@@ -854,14 +832,14 @@ strict digraph graphName {
 </details>
 
 
-<div id="orgb8354bb" class="figure">
+<div id="orgd3c72ab" class="figure">
 <p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Adj.png" alt="DOTGraph04q1Adj.png" />
 </p>
 <p><span class="figure-number">Figure 3: </span>My attempt at reproducing the DOT graph from the Tutorial Sheet, this one isn't as good, but it's relationally equivalent.</p>
 </div>
 
-<table id="org35c40fc" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">Table 1:</span> Adjacency Matrix corresponding to figure <a href="#org99219ad">3</a></caption>
+<table id="org3bc7dde" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Adjacency Matrix corresponding to figure <a href="#orga387e44">3</a></caption>
 
 <colgroup>
 <col  class="org-left" />
@@ -995,8 +973,8 @@ strict digraph graphName {
 </div>
 
 <ol class="org-ol">
-<li><a id="orgc67d5f3"></a>Visualise the Adjacency Matrix<br />
-<div class="outline-text-5" id="text-1-2-6-1">
+<li><a id="orgcbf17fa"></a>Visualise the Adjacency Matrix<br />
+<div class="outline-text-5" id="text-0-1-6-1">
 <p>
 The Adjacency Matrix can be turned into vectors by using the following
 <a href="https://github.com/SirVer/ultisnips">UltiSnips</a> snippet in <a href="https://github.com/neovim/neovim">vim</a>:
@@ -1014,14 +992,14 @@ endsnippet
 </div>
 
 <p>
-Hence putting this together in <b><b><i>R</i></b></b>  in code listing <a href="#org5ced450">4</a> the following plot of the adjacency
-matrix shown in table <a href="#org35c40fc">1</a> may be produced as shown in figure <a href="#orgb7fd06a">4</a>:
+Hence putting this together in <b><b><i>R</i></b></b>  in code listing <a href="#orgc77be0b">4</a> the following plot of the adjacency
+matrix shown in table <a href="#org3bc7dde">1</a> may be produced as shown in figure <a href="#orgeae957b">4</a>:
 </p>
 
 <details><summary>Expand Code <b> Click Here </b></summary>
 <p>
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 4: </span>Using GGplot2 to produce an adjacency Matrix</label><pre class="src src-R" id="org5ced450"><span style="color: #a45bad;">library</span>(tidyverse)
+<label class="org-src-name"><span class="listing-number">Listing 4: </span>Using GGplot2 to produce an adjacency Matrix</label><pre class="src src-R" id="orgc77be0b"><span style="color: #a45bad;">library</span>(tidyverse)
 
 names <span style="color: #a45bad;">&lt;-</span> c(<span style="color: #2d9574;">"A"</span>, <span style="color: #2d9574;">"B"</span>, <span style="color: #2d9574;">"C"</span>, <span style="color: #2d9574;">"D"</span>, <span style="color: #2d9574;">"E"</span>, <span style="color: #2d9574;">"F"</span>, <span style="color: #2d9574;">"G"</span>, <span style="color: #2d9574;">"H"</span>)
 A <span style="color: #a45bad;">&lt;-</span> c(0, 1, 1, 0, 0, 0, 0, 1)
@@ -1097,43 +1075,41 @@ ggplot(data, aes(x = x, y = y, fill =z)) +
 </details>
 
 
-<div id="orgb7fd06a" class="figure">
-<p><img src="temp.png" alt="temp.png" />
+<div id="orgeae957b" class="figure">
+<p><img src="AdjacencyMatrix.png" alt="AdjacencyMatrix.png" />
 </p>
-<p><span class="figure-number">Figure 4: </span>Plot Corresponding to the Adjacency Matrix shown in table <a href="#org35c40fc">1</a>, produced by listing <a href="#org5ced450">4</a></p>
+<p><span class="figure-number">Figure 4: </span>Plot Corresponding to the Adjacency Matrix shown in table <a href="#org3bc7dde">1</a>, produced by listing <a href="#orgc77be0b">4</a></p>
 </div>
 </div>
 </li>
 </ol>
 </div>
 </div>
-</div>
 
 
-
-
-<div id="outline-container-orgfaa5b9e" class="outline-2">
-<h2 id="orgfaa5b9e"><span class="section-number-2">2</span> References</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org179d3c2" class="outline-2">
+<h2 id="org179d3c2"><span class="section-number-2">1</span> References</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-<a id="org5ba50fb"></a>
+<a id="org04a8671"></a>
 </p>
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><h2 class='citeproc-org-bib-h2'>Bibliography</h2>
 <div class="csl-bib-body">
-  <div class="csl-entry"><a name="citeproc_bib_item_1"></a>“Graph Theory.” n.d. <a href="http://www.personal.kent.edu/~rmuhamma/GraphTheory/MyGraphTheory/defEx.htm">http://www.personal.kent.edu/~rmuhamma/GraphTheory/MyGraphTheory/defEx.htm</a>.</div>
+  <div class="csl-entry"><a name="citeproc_bib_item_1"></a>“Graph Theory.” 2020.</div>
 </div>
 
 
 <p>
-<a id="orgdce960d"></a>
- </p>
+<a id="org5c14afd"></a>
+ 
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ryan G</p>
-<p class="date">Created: 2020-03-31 Tue 20:16</p>
+<p class="date">Created: 2020-03-31 Tue 21:21</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
