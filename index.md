@@ -8,14 +8,14 @@
 
 # Ryan's Class Notes
 
-[Visual Analytics](https://ryangreenup.github.io/Org-Publish/VisualAnalytics.html
-)
-
-
-[Visual Analytics Tutorial_old](https://ryangreenup.github.io/VisualAnalytics_old.html)
-
-
-[Visual Analytics Tutorial (3)](https://ryangreenup.github.io/VisualAnalyticstut3.html)
++ [Visual Analytics](https://ryangreenup.github.io/Org-Publish/VisualAnalytics.html)
++ [Thinking About Data](https://ryangreenup.github.io/Org-Publish/ThinkingAboutData.html)
++ [Analytic Programmin](https://ryangreenup.github.io/Org-Publish/analytic_programming.html)
++ [04 Tutorial Visual Analytics](https://ryangreenup.github.io/Org-Publish/04_Tutorial_Visual.html)
++ 
++ [Visual Analytics Tutorial_old](https://ryangreenup.github.io/VisualAnalytics_old.html)
++ 
++ [Visual Analytics Tutorial (3)](https://ryangreenup.github.io/VisualAnalyticstut3.html)
 
 !!! Note
 > TODO

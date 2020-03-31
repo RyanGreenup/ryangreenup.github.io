@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-31 Tue 20:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Visual Analytics</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ryan G" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="https://orgmode.org/org-info.js">
+/**
+ *
+ * @source: https://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in https://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in https://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "3");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Visual Analytics</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org626c390">1. (Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></a>
+<ul>
+<li><a href="#orgd89f7ad">1.1. <span class="done DONE">DONE</span> Lecture</a></li>
+<li><a href="#org2e5f7bb">1.2. <span class="todo TODO">TODO</span> Tutorial</a>
+<ul>
+<li><a href="#orgfde139e">1.2.1. Question 1</a></li>
+<li><a href="#orge3531d3">1.2.2. Question 2</a></li>
+<li><a href="#org7ddee5e">1.2.3. Question 3</a></li>
+<li><a href="#orgd05e838">1.2.4. Question 4</a></li>
+<li><a href="#orgdced781">1.2.5. Question 5</a></li>
+<li><a href="#org1cf9d57">1.2.6. Question 6</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfaa5b9e">2. References</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org626c390" class="outline-2">
+<h2 id="org626c390"><span class="section-number-2">1</span> (Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Refer to:
+</p>
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/04_Lecture.pdf">Lecture #4</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/04_Tutorial.pdf">Tutorial 4</a></li>
+</ul>
+</div>
+<div id="outline-container-orgd89f7ad" class="outline-3">
+<h3 id="orgd89f7ad"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Lecture</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+</div>
+<div id="outline-container-org2e5f7bb" class="outline-3">
+<h3 id="org2e5f7bb"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> Tutorial</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Tutorial Exercises:
+</p>
+<ol class="org-ol">
+<li>What is the difference between a simple graph and a general graph?</li>
+<li>What type of forces can we use in force directed methods?</li>
+<li>What are the advantages of force directed methods? Can these methods be
+effective on large graphs (e.g. &gt; 1000 nodes)?</li>
+<li>What are the common methods that are used to handle big graphs?</li>
+<li>List the 6 aesthetic criteria in graph drawing. In your opinion, which
+criteria is the most important for big graph visualization?</li>
+<li>Show the adjacency matrix for the following graphs</li>
+</ol>
+</div>
+
+<div id="outline-container-orgfde139e" class="outline-4">
+<h4 id="orgfde139e"><span class="section-number-4">1.2.1</span> Question 1</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<blockquote>
+<p>
+What is the difference between a simple graph and a general graph?
+</p>
+</blockquote>
+
+<p>
+A graph \(G\) is an ordered pair of two disjoint sets, one of which is the
+node/vertex set \(V\) and the other is a set of edges \(E\), if the set is with
+direction it may be described as an ordered triple in onrder to contain a set to
+describe direction \(\phi\). The graph would usually be denoted something to the
+effect of \(G(V,E)\). (<a href="#citeproc_bib_item_1">“Graph Theory,” n.d.</a>)
+</p>
+
+<p>
+So generally a graph might be quite complicated as shown in figure <a href="#org4a4eb18">1</a>
+below.
+</p>
+
+<p>
+A Simple graph however:
+</p>
+
+<ul class="org-ul">
+<li>has no multi-edges, it is compressed in the sense that edges don't double up</li>
+<li>Has no loops, i.e. no node is connected to itself</li>
+</ul>
+
+<p>
+A simple graph is depicted in figure 
+</p>
+
+
+
+<details><summary>Expand Code <b> Click Here </b></summary>
+<p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org4a4eb18"># #+begin_src javascript :exports code
+# #+begin_src javascript :exports code
+<span style="color: #4f97d7; font-weight: bold;">@startdot</span>
+strict digraph graphName {
+        concentrate=false # This merges edges/lines
+        fillcolor=<span style="color: #4f97d7;">green</span>
+        color=<span style="color: #4f97d7;">blue</span>
+        A [shape=box, fillcolor=<span style="color: #2d9574;">"#a31621"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+
+        edge [
+        arrowhead=<span style="color: #2d9574;">"none"</span>
+        ];
+
+<span style="color: #ce537a; font-weight: bold;">        node</span>[
+        fontname=<span style="color: #2d9574;">"Fira Code"</span>,
+        shape=<span style="color: #2d9574;">"square"</span>,
+        fixedsize=false,
+        <span style="color: #4f97d7;">style</span>=rounded
+        ];
+
+
+        # A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B [dir=<span style="color: #2d9574;">"both"</span>]
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
+        B [shape=box, fillcolor=<span style="color: #2d9574;">"#bfdbf7"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
+        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
+        C [shape=box, fillcolor=<span style="color: #2d9574;">"#053c5e"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        D [shape=box, fillcolor=<span style="color: #2d9574;">"#1f7a8c"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        E [shape=box, fillcolor=<span style="color: #2d9574;">"#eaf4d3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        F [shape=box, fillcolor=<span style="color: #2d9574;">"#0f5257"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        G [shape=box, fillcolor=<span style="color: #2d9574;">"#0b3142"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A 
+        H [shape=box, fillcolor=<span style="color: #2d9574;">"#9c92a3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>, arrowType=<span style="color: #2d9574;">"dot"</span>]
+        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E [arrowType=<span style="color: #2d9574;">"dot"</span>]
+        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+}
+<span style="color: #4f97d7; font-weight: bold;">@enddot</span>
+</pre>
+</div>
+
+</p>
+</details>
+
+
+
+<div class="figure">
+<p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Complex.png" alt="DOTGraph04q1Complex.png" />
+</p>
+</div>
+
+
+<details><summary>Expand Code <b> Click Here </b></summary>
+<p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org4a06747"># #+begin_src javascript :exports code
+# #+begin_src javascript :exports code
+<span style="color: #4f97d7; font-weight: bold;">@startdot</span>
+strict digraph graphName {
+        concentrate=false # This merges edges/lines
+        fillcolor=<span style="color: #4f97d7;">green</span>
+        color=<span style="color: #4f97d7;">blue</span>
+        A [shape=box, fillcolor=<span style="color: #2d9574;">"#a31621"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+
+        edge [
+        arrowhead=<span style="color: #2d9574;">"none"</span>
+        ];
+
+<span style="color: #ce537a; font-weight: bold;">        node</span>[
+        fontname=<span style="color: #2d9574;">"Fira Code"</span>,
+        shape=<span style="color: #2d9574;">"square"</span>,
+        fixedsize=false,
+        <span style="color: #4f97d7;">style</span>=rounded
+        ];
+
+
+        # A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B [dir=<span style="color: #2d9574;">"both"</span>]
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C 
+        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        B [shape=box, fillcolor=<span style="color: #2d9574;">"#bfdbf7"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
+        C [shape=box, fillcolor=<span style="color: #2d9574;">"#053c5e"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        D [shape=box, fillcolor=<span style="color: #2d9574;">"#1f7a8c"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        E [shape=box, fillcolor=<span style="color: #2d9574;">"#eaf4d3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        F [shape=box, fillcolor=<span style="color: #2d9574;">"#0f5257"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        G [shape=box, fillcolor=<span style="color: #2d9574;">"#0b3142"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
+        H [shape=box, fillcolor=<span style="color: #2d9574;">"#9c92a3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>, arrowType=<span style="color: #2d9574;">"dot"</span>]
+        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E [arrowType=<span style="color: #2d9574;">"dot"</span>]
+        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+}
+<span style="color: #4f97d7; font-weight: bold;">@enddot</span>
+</pre>
+</div>
+
+
+</p>
+</details>
+
+
+<div class="figure">
+<p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Simp.png" alt="DOTGraph04q1Simp.png" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge3531d3" class="outline-4">
+<h4 id="orge3531d3"><span class="section-number-4">1.2.2</span> Question 2</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<blockquote>
+<ol class="org-ol">
+<li value="2">What type of forces can we use in force directed methods?</li>
+</ol>
+</blockquote>
+
+<p>
+where force directed methods are used to visualise a graph the following forces
+may generally be used:
+</p>
+
+<ul class="org-ul">
+<li>Attractive Forces</li>
+<li>Repulsive Forces</li>
+</ul>
+
+<p>
+These forces will generally act in the direction of edges with magnitude
+proportional to the path.
+</p>
+
+<p>
+Other types of forces may act however, for example:
+</p>
+
+<ul class="org-ul">
+<li>A Centre of Gravity
+<ul class="org-ul">
+<li>This will pullnodes into the centre of the visualisation</li>
+</ul></li>
+<li>Radial, concentric or horizontal magnetic fields</li>
+<li>Repulsive forses from the boundary to penalise distant nodes</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7ddee5e" class="outline-4">
+<h4 id="org7ddee5e"><span class="section-number-4">1.2.3</span> Question 3</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<blockquote>
+<ol class="org-ol">
+<li value="3">What are the advantages of force directed methods? Can these methods be
+effective on large graphs (e.g. &gt; 1000 nodes)?</li>
+</ol>
+</blockquote>
+
+<p>
+The advantage to implementing force directed methods is that they have an
+aesthetically pleasing layout that has the potential to carry more information
+which may in turn support quicker interpretation by somebody trying to interpret
+the visual. 
+</p>
+
+
+<p>
+Force directed Methods may improve the capacity for the intended audience to
+implement pre-attentive processing (<a href="VisualAnalytics.html#MissingReference">Wk2, Q7</a>)  when reviewing the visualisation,
+this is because force directed methods move similar nodes together into
+clusters, this grouping is a principle of the <i>Gestalt laws</i> (<a href="VisualAnalytics.html#MissingReference">Wk2, Q8</a>) known to
+increase the perception of discrete categories in visualisation.
+Laws/ 
+</p>
+
+<p>
+Force Directed methods are easy to implement in the sense that some mathematical
+description of a rule set needs to be passed to a graphing utility and then the
+process is more or less automatic.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org28cfff1"></a>Using Force Directed Methods on Large Graphs<br />
+<div class="outline-text-5" id="text-1-2-3-1">
+<p>
+For very large graphs force directed methods can become unwieldly, slow to
+compute and generally the output can be to a degree unpredictable.
+</p>
+
+<p>
+So generally no, these methods are not effective for large graphs, however in
+saying that, they might still give an interesting overview of the data set.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgd05e838" class="outline-4">
+<h4 id="orgd05e838"><span class="section-number-4">1.2.4</span> Question 4</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<blockquote>
+<ol class="org-ol">
+<li value="4">What are the common methods that are used to handle big graphs?</li>
+</ol>
+</blockquote>
+
+<p>
+The common methods to preview large graphs are:
+</p>
+
+<ul class="org-ul">
+<li>Structural Clustering
+<ul class="org-ul">
+<li>Modifying the</li>
+</ul></li>
+<li>Abstraction and Aggregation</li>
+</ul>
+
+<p>
+This is because too many data points are not necessarily practical to visualise,
+they may end up being perceived as a <i>hairball</i>.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgafdd9af"></a>Structural Clustering<br />
+<ol class="org-ol">
+<li><a id="org62abde2"></a>Multilevel Approaches<br />
+<div class="outline-text-6" id="text-1-2-4-1-1">
+<p>
+One Method is to implement a form of dimension-reduction, this is an alorithm
+that essentially groups multiple nodes into a single cluster and then instead
+represents those clusters.
+</p>
+
+<p>
+This can be visualised as levels of height, similar to a pyramid, each level
+increasing in height corresponds to a reduction in the number of nodes until
+eventually there would only be one node at the top, then the question simply
+becomes choosing the level that corresponds to the most effective Visualisation
+(this is somewhat similar to a dendrogram).
+</p>
+</div>
+</li>
+
+<li><a id="org52ab1a8"></a>Collapsible Nodes<br />
+<div class="outline-text-6" id="text-1-2-4-1-2">
+<p>
+Collapsible Nodes leverages the interactive capacity of computing devices to
+folder multiple nodes into a common root, this is similar to the directory
+structure of a computer, to visualise this compare the terminal output of the following:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">tree -L 1
+tree -L 2
+tree -L 3
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org2c28b85"></a>Abstraction / Aggregation<br />
+<div class="outline-text-5" id="text-1-2-4-2">
+<p>
+Abstraction and aggregation involves merging nodes into common nodes by a
+similar trait, for example instead of listing every single car manufacturer as
+seperate nodes, maybe it makes sense to seperate the nodes by the vehicle fuel
+type or the country of origin (so <i>BMW</i>, <i>Mercedes</i>, <i>VW</i> would become 'European
+Car' and <i>Dodge</i>, <i>Chrysler</i>, <i>Ford</i> would become 'US Car').
+</p>
+
+<p>
+This (probably) requires human intervention to a degree in order to identify
+which aggregate terms are the most reasonable to the topic that the
+visualisation is being used for.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgdced781" class="outline-4">
+<h4 id="orgdced781"><span class="section-number-4">1.2.5</span> Question 5</h4>
+<div class="outline-text-4" id="text-1-2-5">
+<blockquote>
+<ol class="org-ol">
+<li value="5">List the 6 aesthetic criteria in graph drawing. In your opinion, which
+criteria is the most important for big graph visualization?</li>
+</ol>
+</blockquote>
+
+<p>
+Aesthetic criteria in graph drawings are:
+</p>
+
+<ol class="org-ol">
+<li>Minimising the intersection of edges</li>
+<li>Scaling the Edge length to make the size both effective and accurate</li>
+<li>Minimizing the Total Area used.</li>
+<li>Redusing the maximum edge length   
+<ul class="org-ul">
+<li>large discrepencies between edge lengths can make graphs look non-uniform
+which is not aesthetic and can be distracting.</li>
+</ul></li>
+<li>Uniform Edge Length
+<ul class="org-ul">
+<li>Striving to keep edges within a reasonable range of values can help 'pull</li>
+</ul></li>
+</ol>
+<p>
+the graph together' so it looks like a single uniform graph
+</p>
+<ol class="org-ol">
+<li>Minimising the number of bends can stop the graph appearing too busy which
+can be distracting and make the graph hard to interpret.</li>
+</ol>
+
+<p>
+Which criteria for an aesthetic graph is most relevant to a visualisation
+depends on the specific graph, but generally speaking minimising the
+intersection of edges can make for the most aesthetic improvement in a
+visualisation, this is because following lines can be a mentally taxing task.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1cf9d57" class="outline-4">
+<h4 id="org1cf9d57"><span class="section-number-4">1.2.6</span> Question 6</h4>
+<div class="outline-text-4" id="text-1-2-6">
+<blockquote>
+<ol class="org-ol">
+<li value="6">Show the adjacency matrix for the following graphs</li>
+</ol>
+</blockquote>
+
+<p>
+The Adjacency matrix for the graph shown in figure <a href="#org99219ad">3</a> is given by 
+</p>
+
+
+<details><summary>Expand Code <b> Click Here </b></summary>
+<p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 3: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org99219ad"># #+begin_src javascript :exports code
+# #+begin_src javascript :exports code
+<span style="color: #4f97d7; font-weight: bold;">@startdot</span>
+strict digraph graphName {
+        concentrate=true # This merges edges/lines
+        fillcolor=<span style="color: #4f97d7;">green</span>
+        color=<span style="color: #4f97d7;">blue</span>
+        A [shape=box, fillcolor=<span style="color: #2d9574;">"#a31621"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+
+        edge [
+        arrowhead=<span style="color: #2d9574;">"none"</span>
+        ];
+
+<span style="color: #ce537a; font-weight: bold;">        node</span>[
+        fontname=<span style="color: #2d9574;">"Fira Code"</span>,
+        shape=<span style="color: #2d9574;">"square"</span>,
+        fixedsize=false,
+        <span style="color: #4f97d7;">style</span>=rounded
+        ];
+
+
+        # A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B [dir=<span style="color: #2d9574;">"both"</span>]
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
+        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
+        B [shape=box, fillcolor=<span style="color: #2d9574;">"#bfdbf7"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
+        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
+        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
+        C [shape=box, fillcolor=<span style="color: #2d9574;">"#053c5e"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
+        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
+        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E
+        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
+        D [shape=box, fillcolor=<span style="color: #2d9574;">"#1f7a8c"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        D <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        D <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
+        D <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E
+        E [shape=box, fillcolor=<span style="color: #2d9574;">"#eaf4d3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        E <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
+        E <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
+        E <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
+        F [shape=box, fillcolor=<span style="color: #2d9574;">"#0f5257"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
+        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
+        G [shape=box, fillcolor=<span style="color: #2d9574;">"#0b3142"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E
+        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
+        H [shape=box, fillcolor=<span style="color: #2d9574;">"#9c92a3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>, arrowType=<span style="color: #2d9574;">"dot"</span>]
+        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
+        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
+        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
+}
+<span style="color: #4f97d7; font-weight: bold;">@enddot</span>
+</pre>
+</div>
+
+</p>
+</details>
+
+
+<div id="orgb8354bb" class="figure">
+<p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Adj.png" alt="DOTGraph04q1Adj.png" />
+</p>
+<p><span class="figure-number">Figure 3: </span>My attempt at reproducing the DOT graph from the Tutorial Sheet, this one isn't as good, but it's relationally equivalent.</p>
+</div>
+
+<table id="org35c40fc" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Adjacency Matrix corresponding to figure <a href="#org99219ad">3</a></caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">A</td>
+<td class="org-right">B</td>
+<td class="org-right">C</td>
+<td class="org-right">D</td>
+<td class="org-right">E</td>
+<td class="org-right">F</td>
+<td class="org-right">G</td>
+<td class="org-right">H</td>
+</tr>
+
+<tr>
+<td class="org-left">A</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-right">A</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">H</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">F</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">H</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc67d5f3"></a>Visualise the Adjacency Matrix<br />
+<div class="outline-text-5" id="text-1-2-6-1">
+<p>
+The Adjacency Matrix can be turned into vectors by using the following
+<a href="https://github.com/SirVer/ultisnips">UltiSnips</a> snippet in <a href="https://github.com/neovim/neovim">vim</a>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">snippet vec
+${1:var} &lt;- c(<span style="color: #2d9574;">"${0:${VISUAL:/ /"</span>,<span style="color: #2d9574;">"/g}}"</span>)
+endsnippet
+
+snippet numvec
+${1:var} &lt;- c(${0:${VISUAL:/ /, /g}})
+endsnippet
+</pre>
+</div>
+
+<p>
+Hence putting this together in <b><b><i>R</i></b></b>  in code listing <a href="#org5ced450">4</a> the following plot of the adjacency
+matrix shown in table <a href="#org35c40fc">1</a> may be produced as shown in figure <a href="#orgb7fd06a">4</a>:
+</p>
+
+<details><summary>Expand Code <b> Click Here </b></summary>
+<p>
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 4: </span>Using GGplot2 to produce an adjacency Matrix</label><pre class="src src-R" id="org5ced450"><span style="color: #a45bad;">library</span>(tidyverse)
+
+names <span style="color: #a45bad;">&lt;-</span> c(<span style="color: #2d9574;">"A"</span>, <span style="color: #2d9574;">"B"</span>, <span style="color: #2d9574;">"C"</span>, <span style="color: #2d9574;">"D"</span>, <span style="color: #2d9574;">"E"</span>, <span style="color: #2d9574;">"F"</span>, <span style="color: #2d9574;">"G"</span>, <span style="color: #2d9574;">"H"</span>)
+A <span style="color: #a45bad;">&lt;-</span> c(0, 1, 1, 0, 0, 0, 0, 1)
+B <span style="color: #a45bad;">&lt;-</span> c(1, 0, 0, 1, 0, 1, 0, 1)
+C <span style="color: #a45bad;">&lt;-</span> c(1, 0, 0, 0, 1, 0, 1, 1)
+D <span style="color: #a45bad;">&lt;-</span> c(0, 1, 0, 0, 1, 1, 0, 0)
+E <span style="color: #a45bad;">&lt;-</span> c(0, 0, 1, 1, 0, 0, 1, 0)
+Fv <span style="color: #a45bad;">&lt;-</span> c(0, 1, 0, 1, 0, 0, 1, 0)
+G <span style="color: #a45bad;">&lt;-</span> c(0, 0, 1, 0, 1, 1, 0, 0)
+H <span style="color: #a45bad;">&lt;-</span> c(1, 1, 1, 0, 0, 0, 0, 0)
+
+data <span style="color: #a45bad;">&lt;-</span> matrix(data = c(A, B, C, D, E, Fv, G, H), nrow = 8, ncol = 8, byrow = <span style="color: #ce537a; font-weight: bold;">TRUE</span>)
+rownames(data) <span style="color: #a45bad;">&lt;-</span> names
+colnames(data) <span style="color: #a45bad;">&lt;-</span> names
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Rotate matrix 90-degrees clockwise.</span>
+<span style="color: #bc6ec5; font-weight: bold;">rotate</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(x) {
+    t(apply(x, 2, rev))
+}
+
+<span style="color: #bc6ec5; font-weight: bold;">rotate_ACW</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(x) {
+    t(apply(x, 1, rev))
+}
+
+
+
+  <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Create Column Names  </span>
+<span style="color: #bc6ec5; font-weight: bold;">make_colnames</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(matrL) {
+                     factor(paste(<span style="color: #2d9574;">"col"</span>, 1:ncol(matrL)),
+                            levels = paste(<span style="color: #2d9574;">"col"</span>, 1:ncol(matrL)),
+                            ordered = <span style="color: #ce537a; font-weight: bold;">TRUE</span>)
+}
+
+ <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Create Row Names</span>
+<span style="color: #bc6ec5; font-weight: bold;">make_rownames</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(matrL) {
+                     factor(paste(<span style="color: #2d9574;">"row"</span>, 1:nrow(matrL)),
+                            levels = paste(<span style="color: #2d9574;">"row"</span>, 1:nrow(matrL)),
+                            ordered = <span style="color: #ce537a; font-weight: bold;">TRUE</span>)
+}
+
+<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">Create Row Names with reversed Order</span>
+<span style="color: #bc6ec5; font-weight: bold;">make_rownames</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(matrL) {
+                     factor(paste(<span style="color: #2d9574;">"row"</span>, nrow(matrL):1),
+                            levels = paste(<span style="color: #2d9574;">"row"</span>, nrow(matrL):1),
+                            ordered = <span style="color: #ce537a; font-weight: bold;">TRUE</span>)
+}
+
+
+<span style="color: #bc6ec5; font-weight: bold;">expand.grid_matrix</span> <span style="color: #a45bad;">&lt;-</span> <span style="color: #4f97d7; font-weight: bold;">function</span>(mat) {
+  data <span style="color: #a45bad;">&lt;-</span> expand.grid(<span style="color: #2d9574;">"x"</span> = LETTERS[1:8], <span style="color: #2d9574;">"y"</span> = rev(LETTERS[1:8]))
+  data$z <span style="color: #a45bad;">&lt;-</span> as.vector(rotate(mat))
+  data$z <span style="color: #a45bad;">&lt;-</span> as.logical(data$z)
+
+  <span style="color: #4f97d7; font-weight: bold;">return</span>(data)
+}
+
+
+data <span style="color: #a45bad;">&lt;-</span> expand.grid_matrix(data)
+
+
+
+
+
+
+
+ggplot(data, aes(x = x, y = y, fill =z)) +
+  geom_tile() +
+  labs(x = <span style="color: #2d9574;">""</span>, y = <span style="color: #2d9574;">""</span>, title = <span style="color: #2d9574;">"Adjacency Matrix"</span>, fill = <span style="color: #2d9574;">"Pair"</span>)
+</pre>
+</div>
+
+</p>
+</details>
+
+
+<div id="orgb7fd06a" class="figure">
+<p><img src="temp.png" alt="temp.png" />
+</p>
+<p><span class="figure-number">Figure 4: </span>Plot Corresponding to the Adjacency Matrix shown in table <a href="#org35c40fc">1</a>, produced by listing <a href="#org5ced450">4</a></p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgfaa5b9e" class="outline-2">
+<h2 id="orgfaa5b9e"><span class="section-number-2">2</span> References</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<a id="org5ba50fb"></a>
+</p>
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><h2 class='citeproc-org-bib-h2'>Bibliography</h2>
+<div class="csl-bib-body">
+  <div class="csl-entry"><a name="citeproc_bib_item_1"></a>“Graph Theory.” n.d. <a href="http://www.personal.kent.edu/~rmuhamma/GraphTheory/MyGraphTheory/defEx.htm">http://www.personal.kent.edu/~rmuhamma/GraphTheory/MyGraphTheory/defEx.htm</a>.</div>
+</div>
+
+
+<p>
+<a id="orgdce960d"></a>
+ </p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Ryan G</p>
+<p class="date">Created: 2020-03-31 Tue 20:16</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
