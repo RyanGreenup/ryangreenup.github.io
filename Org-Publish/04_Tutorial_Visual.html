@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-31 Tue 21:21 -->
+<!-- 2020-03-31 Tue 21:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Visual Analytics</title>
@@ -311,28 +311,6 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -341,640 +319,13 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd1b5406">0.1. <span class="done DONE">DONE</span> Tutorial</a>
-<ul>
-<li><a href="#org43e8499">0.1.1. Question 1</a></li>
-<li><a href="#orgd4d0594">0.1.2. Question 2</a></li>
-<li><a href="#org3d39f73">0.1.3. Question 3</a></li>
-<li><a href="#org6e3bbc4">0.1.4. Question 4</a></li>
-<li><a href="#org8fd2010">0.1.5. Question 5</a></li>
-<li><a href="#org3c9ce5b">0.1.6. Question 6</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org179d3c2">1. References</a></div>
-</div>
-<div id="outline-container-orgd1b5406" class="outline-3">
-<h3 id="orgd1b5406"><span class="section-number-3">0.1</span> <span class="done DONE">DONE</span> Tutorial</h3>
-<div class="outline-text-3" id="text-0-1">
-<p>
-Tutorial Exercises:
-</p>
-<ol class="org-ol">
-<li>What is the difference between a simple graph and a general graph?</li>
-<li>What type of forces can we use in force directed methods?</li>
-<li>What are the advantages of force directed methods? Can these methods be
-effective on large graphs (e.g. &gt; 1000 nodes)?</li>
-<li>What are the common methods that are used to handle big graphs?</li>
-<li>List the 6 aesthetic criteria in graph drawing. In your opinion, which
-criteria is the most important for big graph visualization?</li>
-<li>Show the adjacency matrix for the following graphs</li>
-</ol>
-</div>
-
-<div id="outline-container-org43e8499" class="outline-4">
-<h4 id="org43e8499"><span class="section-number-4">0.1.1</span> Question 1</h4>
-<div class="outline-text-4" id="text-0-1-1">
-<blockquote>
-<p>
-What is the difference between a simple graph and a general graph?
-</p>
-</blockquote>
-
-<p>
-A graph \(G\) is an ordered pair of two disjoint sets, one of which is the
-node/vertex set \(V\) and the other is a set of edges \(E\), if the set is with
-direction it may be described as an ordered triple in onrder to contain a set to
-describe direction \(\phi\). The graph would usually be denoted something to the
-effect of \(G(V,E)\). (<a href="#citeproc_bib_item_1">“Graph Theory” 2020</a>)
-</p>
-
-<p>
-So generally a graph might be quite complicated as shown in figure <a href="#org21752bc">1</a>
-below.
-</p>
-
-<p>
-A Simple graph however:
-</p>
-
-<ul class="org-ul">
-<li>has no multi-edges, it is compressed in the sense that edges don't double up</li>
-<li>Has no loops, i.e. no node is connected to itself</li>
-</ul>
-
-<p>
-A simple graph is depicted in figure <a href="#org44298bc">2</a>
-</p>
-
-
-
-<details><summary>Expand Code <b> Click Here </b></summary>
-<p>
-
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org567c1c0"># #+begin_src javascript :exports code
-# #+begin_src javascript :exports code
-<span style="color: #4f97d7; font-weight: bold;">@startdot</span>
-strict digraph graphName {
-        concentrate=false # This merges edges/lines
-        fillcolor=<span style="color: #4f97d7;">green</span>
-        color=<span style="color: #4f97d7;">blue</span>
-        A [shape=box, fillcolor=<span style="color: #2d9574;">"#a31621"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-
-        edge [
-        arrowhead=<span style="color: #2d9574;">"none"</span>
-        ];
-
-<span style="color: #ce537a; font-weight: bold;">        node</span>[
-        fontname=<span style="color: #2d9574;">"Fira Code"</span>,
-        shape=<span style="color: #2d9574;">"square"</span>,
-        fixedsize=false,
-        <span style="color: #4f97d7;">style</span>=rounded
-        ];
-
-
-        # A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B [dir=<span style="color: #2d9574;">"both"</span>]
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
-        B [shape=box, fillcolor=<span style="color: #2d9574;">"#bfdbf7"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
-        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
-        C [shape=box, fillcolor=<span style="color: #2d9574;">"#053c5e"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        D [shape=box, fillcolor=<span style="color: #2d9574;">"#1f7a8c"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        E [shape=box, fillcolor=<span style="color: #2d9574;">"#eaf4d3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        F [shape=box, fillcolor=<span style="color: #2d9574;">"#0f5257"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        G [shape=box, fillcolor=<span style="color: #2d9574;">"#0b3142"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A 
-        H [shape=box, fillcolor=<span style="color: #2d9574;">"#9c92a3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>, arrowType=<span style="color: #2d9574;">"dot"</span>]
-        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E [arrowType=<span style="color: #2d9574;">"dot"</span>]
-        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-}
-<span style="color: #4f97d7; font-weight: bold;">@enddot</span>
-</pre>
-</div>
-
-</p>
-</details>
-
-
-
-<div id="org21752bc" class="figure">
-<p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Complex.png" alt="DOTGraph04q1Complex.png" />
-</p>
-<p><span class="figure-number">Figure 1: </span>Example of a graph generally, this graph is not simple because it has loops and multi-edges</p>
-</div>
-
-
-<details><summary>Expand Code <b> Click Here </b></summary>
-<p>
-
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 2: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org9dbc885"># #+begin_src javascript :exports code
-# #+begin_src javascript :exports code
-<span style="color: #4f97d7; font-weight: bold;">@startdot</span>
-strict digraph graphName {
-        concentrate=false # This merges edges/lines
-        fillcolor=<span style="color: #4f97d7;">green</span>
-        color=<span style="color: #4f97d7;">blue</span>
-        A [shape=box, fillcolor=<span style="color: #2d9574;">"#a31621"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-
-        edge [
-        arrowhead=<span style="color: #2d9574;">"none"</span>
-        ];
-
-<span style="color: #ce537a; font-weight: bold;">        node</span>[
-        fontname=<span style="color: #2d9574;">"Fira Code"</span>,
-        shape=<span style="color: #2d9574;">"square"</span>,
-        fixedsize=false,
-        <span style="color: #4f97d7;">style</span>=rounded
-        ];
-
-
-        # A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B [dir=<span style="color: #2d9574;">"both"</span>]
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C 
-        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        B [shape=box, fillcolor=<span style="color: #2d9574;">"#bfdbf7"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
-        C [shape=box, fillcolor=<span style="color: #2d9574;">"#053c5e"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        D [shape=box, fillcolor=<span style="color: #2d9574;">"#1f7a8c"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        E [shape=box, fillcolor=<span style="color: #2d9574;">"#eaf4d3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        F [shape=box, fillcolor=<span style="color: #2d9574;">"#0f5257"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        G [shape=box, fillcolor=<span style="color: #2d9574;">"#0b3142"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
-        H [shape=box, fillcolor=<span style="color: #2d9574;">"#9c92a3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>, arrowType=<span style="color: #2d9574;">"dot"</span>]
-        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E [arrowType=<span style="color: #2d9574;">"dot"</span>]
-        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-}
-<span style="color: #4f97d7; font-weight: bold;">@enddot</span>
-</pre>
-</div>
-
-
-</p>
-</details>
-
-
-<div id="org44298bc" class="figure">
-<p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Simp.png" alt="DOTGraph04q1Simp.png" />
-</p>
-<p><span class="figure-number">Figure 2: </span>Example of a <i>Simple Graph</i></p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgd4d0594" class="outline-4">
-<h4 id="orgd4d0594"><span class="section-number-4">0.1.2</span> Question 2</h4>
-<div class="outline-text-4" id="text-0-1-2">
-<blockquote>
-<ol class="org-ol">
-<li value="2">What type of forces can we use in force directed methods?</li>
-</ol>
-</blockquote>
-
-<p>
-where force directed methods are used to visualise a graph the following forces
-may generally be used:
-</p>
-
-<ul class="org-ul">
-<li>Attractive Forces</li>
-<li>Repulsive Forces</li>
-</ul>
-
-<p>
-These forces will generally act in the direction of edges with magnitude
-proportional to the path.
-</p>
-
-<p>
-Other types of forces may act however, for example:
-</p>
-
-<ul class="org-ul">
-<li>A Centre of Gravity
-<ul class="org-ul">
-<li>This will pullnodes into the centre of the visualisation</li>
-</ul></li>
-<li>Radial, concentric or horizontal magnetic fields</li>
-<li>Repulsive forses from the boundary to penalise distant nodes</li>
+<li><a href="#org7556f49">1. References</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org3d39f73" class="outline-4">
-<h4 id="org3d39f73"><span class="section-number-4">0.1.3</span> Question 3</h4>
-<div class="outline-text-4" id="text-0-1-3">
-<blockquote>
 <ol class="org-ol">
-<li value="3">What are the advantages of force directed methods? Can these methods be
-effective on large graphs (e.g. &gt; 1000 nodes)?</li>
-</ol>
-</blockquote>
-
-<p>
-The advantage to implementing force directed methods is that they have an
-aesthetically pleasing layout that has the potential to carry more information
-which may in turn support quicker interpretation by somebody trying to interpret
-the visual. 
-</p>
-
-
-<p>
-Force directed Methods may improve the capacity for the intended audience to
-implement pre-attentive processing (<a href="VisualAnalytics.html#orgf7685b5">Wk2, Q7</a>)  when reviewing the visualisation,
-this is because force directed methods move similar nodes together into
-clusters, this grouping is a principle of the <i>Gestalt laws</i> (<a href="VisualAnalytics.html#org51abe7d">Wk2, Q8</a>) known to
-increase the perception of discrete categories in visualisation.
-Laws/ 
-</p>
-
-<p>
-Force Directed methods are easy to implement in the sense that some mathematical
-description of a rule set needs to be passed to a graphing utility and then the
-process is more or less automatic.
-</p>
-</div>
-
-<ol class="org-ol">
-<li><a id="org1010e32"></a>Using Force Directed Methods on Large Graphs<br />
-<div class="outline-text-5" id="text-0-1-3-1">
-<p>
-For very large graphs force directed methods can become unwieldly, slow to
-compute and generally the output can be to a degree unpredictable.
-</p>
-
-<p>
-So generally no, these methods are not effective for large graphs, however in
-saying that, they might still give an interesting overview of the data set.
-</p>
-</div>
-</li>
-</ol>
-</div>
-
-<div id="outline-container-org6e3bbc4" class="outline-4">
-<h4 id="org6e3bbc4"><span class="section-number-4">0.1.4</span> Question 4</h4>
-<div class="outline-text-4" id="text-0-1-4">
-<blockquote>
-<ol class="org-ol">
-<li value="4">What are the common methods that are used to handle big graphs?</li>
-</ol>
-</blockquote>
-
-<p>
-The common methods to preview large graphs are:
-</p>
-
-<ul class="org-ul">
-<li>Structural Clustering
-<ul class="org-ul">
-<li>Modifying the</li>
-</ul></li>
-<li>Abstraction and Aggregation</li>
-</ul>
-
-<p>
-This is because too many data points are not necessarily practical to visualise,
-they may end up being perceived as a <i>hairball</i>.
-</p>
-</div>
-
-<ol class="org-ol">
-<li><a id="org8a059e5"></a>Structural Clustering<br />
-<ol class="org-ol">
-<li><a id="orgbdc4e10"></a>Multilevel Approaches<br />
-<div class="outline-text-6" id="text-0-1-4-1-1">
-<p>
-One Method is to implement a form of dimension-reduction, this is an alorithm
-that essentially groups multiple nodes into a single cluster and then instead
-represents those clusters.
-</p>
-
-<p>
-This can be visualised as levels of height, similar to a pyramid, each level
-increasing in height corresponds to a reduction in the number of nodes until
-eventually there would only be one node at the top, then the question simply
-becomes choosing the level that corresponds to the most effective Visualisation
-(this is somewhat similar to a dendrogram).
-</p>
-</div>
-</li>
-
-<li><a id="org305b947"></a>Collapsible Nodes<br />
-<div class="outline-text-6" id="text-0-1-4-1-2">
-<p>
-Collapsible Nodes leverages the interactive capacity of computing devices to
-folder multiple nodes into a common root, this is similar to the directory
-structure of a computer, to visualise this compare the terminal output of the following:
-</p>
-<div class="org-src-container">
-<pre class="src src-bash">tree -L 1
-tree -L 2
-tree -L 3
-</pre>
-</div>
-</div>
-</li>
-</ol>
-</li>
-<li><a id="org854a64e"></a>Abstraction / Aggregation<br />
-<div class="outline-text-5" id="text-0-1-4-2">
-<p>
-Abstraction and aggregation involves merging nodes into common nodes by a
-similar trait, for example instead of listing every single car manufacturer as
-seperate nodes, maybe it makes sense to seperate the nodes by the vehicle fuel
-type or the country of origin (so <i>BMW</i>, <i>Mercedes</i>, <i>VW</i> would become 'European
-Car' and <i>Dodge</i>, <i>Chrysler</i>, <i>Ford</i> would become 'US Car').
-</p>
-
-<p>
-This (probably) requires human intervention to a degree in order to identify
-which aggregate terms are the most reasonable to the topic that the
-visualisation is being used for.
-</p>
-</div>
-</li>
-</ol>
-</div>
-
-<div id="outline-container-org8fd2010" class="outline-4">
-<h4 id="org8fd2010"><span class="section-number-4">0.1.5</span> Question 5</h4>
-<div class="outline-text-4" id="text-0-1-5">
-<blockquote>
-<ol class="org-ol">
-<li value="5">List the 6 aesthetic criteria in graph drawing. In your opinion, which
-criteria is the most important for big graph visualization?</li>
-</ol>
-</blockquote>
-
-<p>
-Aesthetic criteria in graph drawings are:
-</p>
-
-<ol class="org-ol">
-<li>Minimising the intersection of edges</li>
-<li>Scaling the Edge length to make the size both effective and accurate</li>
-<li>Minimizing the Total Area used.</li>
-<li>Redusing the maximum edge length   
-<ul class="org-ul">
-<li>large discrepencies between edge lengths can make graphs look non-uniform
-which is not aesthetic and can be distracting.</li>
-</ul></li>
-<li>Uniform Edge Length
-<ul class="org-ul">
-<li>Striving to keep edges within a reasonable range of values can help 'pull</li>
-</ul></li>
-</ol>
-<p>
-the graph together' so it looks like a single uniform graph
-</p>
-<ol class="org-ol">
-<li>Minimising the number of bends can stop the graph appearing too busy which
-can be distracting and make the graph hard to interpret.</li>
-</ol>
-
-<p>
-Which criteria for an aesthetic graph is most relevant to a visualisation
-depends on the specific graph, but generally speaking minimising the
-intersection of edges can make for the most aesthetic improvement in a
-visualisation, this is because following lines can be a mentally taxing task.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org3c9ce5b" class="outline-4">
-<h4 id="org3c9ce5b"><span class="section-number-4">0.1.6</span> Question 6</h4>
-<div class="outline-text-4" id="text-0-1-6">
-<blockquote>
-<ol class="org-ol">
-<li value="6">Show the adjacency matrix for the following graphs</li>
-</ol>
-</blockquote>
-
-<p>
-The Adjacency matrix for the graph shown in figure <a href="#orga387e44">3</a> is given by 
-</p>
-
-
-<details><summary>Expand Code <b> Click Here </b></summary>
-<p>
-
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 3: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="orga387e44"># #+begin_src javascript :exports code
-# #+begin_src javascript :exports code
-<span style="color: #4f97d7; font-weight: bold;">@startdot</span>
-strict digraph graphName {
-        concentrate=true # This merges edges/lines
-        fillcolor=<span style="color: #4f97d7;">green</span>
-        color=<span style="color: #4f97d7;">blue</span>
-        A [shape=box, fillcolor=<span style="color: #2d9574;">"#a31621"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-
-        edge [
-        arrowhead=<span style="color: #2d9574;">"none"</span>
-        ];
-
-<span style="color: #ce537a; font-weight: bold;">        node</span>[
-        fontname=<span style="color: #2d9574;">"Fira Code"</span>,
-        shape=<span style="color: #2d9574;">"square"</span>,
-        fixedsize=false,
-        <span style="color: #4f97d7;">style</span>=rounded
-        ];
-
-
-        # A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B [dir=<span style="color: #2d9574;">"both"</span>]
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
-        A <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
-        B [shape=box, fillcolor=<span style="color: #2d9574;">"#bfdbf7"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
-        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
-        B <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
-        C [shape=box, fillcolor=<span style="color: #2d9574;">"#053c5e"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
-        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> H
-        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E
-        C <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
-        D [shape=box, fillcolor=<span style="color: #2d9574;">"#1f7a8c"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        D <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        D <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
-        D <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E
-        E [shape=box, fillcolor=<span style="color: #2d9574;">"#eaf4d3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        E <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
-        E <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
-        E <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
-        F [shape=box, fillcolor=<span style="color: #2d9574;">"#0f5257"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> D
-        F <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> G
-        G [shape=box, fillcolor=<span style="color: #2d9574;">"#0b3142"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>]
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> E
-        G <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> F
-        H [shape=box, fillcolor=<span style="color: #2d9574;">"#9c92a3"</span>, <span style="color: #4f97d7;">style</span>=<span style="color: #2d9574;">"rounded, filled"</span>, arrowType=<span style="color: #2d9574;">"dot"</span>]
-        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> A
-        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> B
-        H <span style="color: #4f97d7; font-weight: bold;">-&gt;</span> C
-}
-<span style="color: #4f97d7; font-weight: bold;">@enddot</span>
-</pre>
-</div>
-
-</p>
-</details>
-
-
-<div id="orgd3c72ab" class="figure">
-<p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Adj.png" alt="DOTGraph04q1Adj.png" />
-</p>
-<p><span class="figure-number">Figure 3: </span>My attempt at reproducing the DOT graph from the Tutorial Sheet, this one isn't as good, but it's relationally equivalent.</p>
-</div>
-
-<table id="org3bc7dde" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">Table 1:</span> Adjacency Matrix corresponding to figure <a href="#orga387e44">3</a></caption>
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-right">A</td>
-<td class="org-right">B</td>
-<td class="org-right">C</td>
-<td class="org-right">D</td>
-<td class="org-right">E</td>
-<td class="org-right">F</td>
-<td class="org-right">G</td>
-<td class="org-right">H</td>
-</tr>
-
-<tr>
-<td class="org-left">A</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-</tr>
-
-<tr>
-<td class="org-left">B</td>
-<td class="org-right">A</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">H</td>
-</tr>
-
-<tr>
-<td class="org-left">C</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">1</td>
-</tr>
-
-<tr>
-<td class="org-left">D</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">E</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">F</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">G</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">H</td>
-<td class="org-right">1</td>
-<td class="org-right">1</td>
-<td class="org-right">1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<ol class="org-ol">
-<li><a id="orgcbf17fa"></a>Visualise the Adjacency Matrix<br />
-<div class="outline-text-5" id="text-0-1-6-1">
+<li><a id="org8b70b70"></a>Visualise the Adjacency Matrix<br />
+<div class="outline-text-5" id="text-0-0-0-1">
 <p>
 The Adjacency Matrix can be turned into vectors by using the following
 <a href="https://github.com/SirVer/ultisnips">UltiSnips</a> snippet in <a href="https://github.com/neovim/neovim">vim</a>:
@@ -992,14 +343,14 @@ endsnippet
 </div>
 
 <p>
-Hence putting this together in <b><b><i>R</i></b></b>  in code listing <a href="#orgc77be0b">4</a> the following plot of the adjacency
-matrix shown in table <a href="#org3bc7dde">1</a> may be produced as shown in figure <a href="#orgeae957b">4</a>:
+Hence putting this together in <b><b><i>R</i></b></b>  in code listing <a href="#org37134f7">1</a> the following plot of the adjacency
+matrix shown in table may be produced as shown in figure <a href="#org4e26353">1</a>:
 </p>
 
 <details><summary>Expand Code <b> Click Here </b></summary>
 <p>
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 4: </span>Using GGplot2 to produce an adjacency Matrix</label><pre class="src src-R" id="orgc77be0b"><span style="color: #a45bad;">library</span>(tidyverse)
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Using GGplot2 to produce an adjacency Matrix</label><pre class="src src-R" id="org37134f7"><span style="color: #a45bad;">library</span>(tidyverse)
 
 names <span style="color: #a45bad;">&lt;-</span> c(<span style="color: #2d9574;">"A"</span>, <span style="color: #2d9574;">"B"</span>, <span style="color: #2d9574;">"C"</span>, <span style="color: #2d9574;">"D"</span>, <span style="color: #2d9574;">"E"</span>, <span style="color: #2d9574;">"F"</span>, <span style="color: #2d9574;">"G"</span>, <span style="color: #2d9574;">"H"</span>)
 A <span style="color: #a45bad;">&lt;-</span> c(0, 1, 1, 0, 0, 0, 0, 1)
@@ -1075,41 +426,34 @@ ggplot(data, aes(x = x, y = y, fill =z)) +
 </details>
 
 
-<div id="orgeae957b" class="figure">
-<p><img src="AdjacencyMatrix.png" alt="AdjacencyMatrix.png" />
+<div id="org4e26353" class="figure">
+<p><img src="./Attachments/VisualAnalytics/AdjacencyMatrix.png" alt="AdjacencyMatrix.png" />
 </p>
-<p><span class="figure-number">Figure 4: </span>Plot Corresponding to the Adjacency Matrix shown in table <a href="#org3bc7dde">1</a>, produced by listing <a href="#orgc77be0b">4</a></p>
+<p><span class="figure-number">Figure 1: </span>Plot Corresponding to the Adjacency Matrix shown in table , produced by listing <a href="#org37134f7">1</a></p>
 </div>
 </div>
 </li>
 </ol>
-</div>
-</div>
 
 
-<div id="outline-container-org179d3c2" class="outline-2">
-<h2 id="org179d3c2"><span class="section-number-2">1</span> References</h2>
+
+<div id="outline-container-org7556f49" class="outline-2">
+<h2 id="org7556f49"><span class="section-number-2">1</span> References</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<a id="org04a8671"></a>
+<a id="orgb935e99"></a>
+<a href="/home/ryan/Dropbox/Studies/Papers/references.bib">/home/ryan/Dropbox/Studies/Papers/references.bib</a>
 </p>
-
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><h2 class='citeproc-org-bib-h2'>Bibliography</h2>
-<div class="csl-bib-body">
-  <div class="csl-entry"><a name="citeproc_bib_item_1"></a>“Graph Theory.” 2020.</div>
-</div>
-
 
 <p>
-<a id="org5c14afd"></a>
- 
-</p>
+<a id="org57aebf9"></a>
+ </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ryan G</p>
-<p class="date">Created: 2020-03-31 Tue 21:21</p>
+<p class="date">Created: 2020-03-31 Tue 21:33</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
