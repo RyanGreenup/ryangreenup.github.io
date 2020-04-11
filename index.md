@@ -8,11 +8,19 @@
 
 # Ryan's Class Notes
 
+## Autumn 2020
 + [Visual Analytics](https://ryangreenup.github.io/Org-Publish/VisualAnalytics.html)
 + [Thinking About Data](https://ryangreenup.github.io/Org-Publish/ThinkingAboutData.html)
 + [Analytic Programmin](https://ryangreenup.github.io/Org-Publish/analytic_programming.html)
+
+
+### Visualisation
+
 + [04 Tutorial Visual Analytics](https://ryangreenup.github.io/Org-Publish/04_Tutorial_Visual.html)
 + [05 Tutorial Visual Analytics](https://ryangreenup.github.io/Org-Publish/05_Multi-Dim_1.html)
++ [06 Tutorial Visual Analytics](https://ryangreenup.github.io/Org-Publish/06_Multi-Dim_2.html)
+
+
  
 + [Visual Analytics Tutorial_old](https://ryangreenup.github.io/VisualAnalytics_old.html)
 + 
@@ -37,8 +45,6 @@
 [Modelling Dosages](MModNotes/DiffEqDrugs.html) 
 
 [Assigning Solve Solutions in Mathematica](https://ryangreenup.github.io//Notable/Notable - Export 7e94/Assigning Solve Solutions in Mathematica.html) 
-
-
 
 
 
