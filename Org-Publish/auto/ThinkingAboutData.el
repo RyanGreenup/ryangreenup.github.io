@@ -5,6 +5,7 @@
                      '(("article" "11pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem")))
+<<<<<<< HEAD
    (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
    (add-to-list 'LaTeX-verbatim-environments-local "minted")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
@@ -17,6 +18,20 @@
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "lstinline")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+=======
+   (add-to-list 'LaTeX-verbatim-environments-local "minted")
+   (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "lstinline")
+>>>>>>> eed346c8514909cca04b4c3ac4ddbeb5c6afc828
    (TeX-run-style-hooks
     "latex2e"
     "article"
@@ -36,6 +51,7 @@
     "hyperref"
     "minted")
    (LaTeX-add-labels
+<<<<<<< HEAD
     "sec:org3450c3c"
     "sec:orgda181de"
     "sec:org90eb359"
@@ -164,5 +180,123 @@
     "sec:orgf25660f"
     "sec:orgfda651c"
     "sec:org889398b"))
+=======
+    "sec:org85008ea"
+    "sec:org42d6c39"
+    "sec:org2e27308"
+    "sec:org59fbad1"
+    "sec:org88e1c26"
+    "sec:org9a9ccdd"
+    "sec:org5d0d62f"
+    "org00fa718"
+    "sec:org0054d84"
+    "sec:org63e071b"
+    "sec:orga19e89e"
+    "sec:org0f7d309"
+    "sec:org93ef2b2"
+    "sec:org00f9088"
+    "sec:org91f6697"
+    "sec:orgdb1ab84"
+    "sec:orga4ab6cf"
+    "sec:orgbdc1f59"
+    "fig:org066f280"
+    "sec:orgaef39be"
+    "sec:org5065041"
+    "org282ddad"
+    "sec:org22ffe74"
+    "sec:orgeabcd88"
+    "sec:orgcb2c0b3"
+    "sec:org6da1984"
+    "sec:orgd4ca095"
+    "sec:orgcc94321"
+    "sec:orgfcea28c"
+    "sec:org33587ce"
+    "sec:orgaa23ac4"
+    "sec:org55e14b5"
+    "sec:orge952100"
+    "sec:org12791d1"
+    "sec:org5cbd797"
+    "sec:org2ef2241"
+    "sec:org3c52e2d"
+    "sec:orgae5d063"
+    "sec:org6bfc0ca"
+    "sec:orge4cd81b"
+    "sec:org0243fc6"
+    "sec:orgadf3a4f"
+    "sec:org9cb5795"
+    "sec:orgf72d5db"
+    "sec:orge96bdf0"
+    "sec:org9366b67"
+    "sec:org8049ded"
+    "sec:org76c44cd"
+    "sec:org4bfe612"
+    "fig:orgc7a64bf"
+    "sec:org76ddd2f"
+    "sec:org3838f6a"
+    "sec:org98ea4fe"
+    "sec:orgd842021"
+    "sec:org677e3cf"
+    "sec:org01a43a2"
+    "sec:orgd0e075e"
+    "sec:org1d518dc"
+    "sec:orgbd262aa"
+    "sec:orgbee2abd"
+    "sec:org43df2f0"
+    "sec:org6547914"
+    "org68f9200"
+    "sec:orga44aabe"
+    "sec:orgd113c8c"
+    "sec:org479c244"
+    "sec:org355e184"
+    "sec:org388e484"
+    "sec:orgb065ed4"
+    "sec:org3b2e2cf"
+    "sec:org0473af5"
+    "sec:org5e6bce6"
+    "sec:org9edffde"
+    "sec:org807e99d"
+    "sec:orgc29c065"
+    "sec:orgfb5df23"
+    "fig:org09a9cab"
+    "sec:org00ebc19"
+    "orgfbb1db9"
+    "sec:orga7e0a2d"
+    "sec:orgef00696"
+    "sec:orgb5a10b6"
+    "sec:org1adc2c0"
+    "orgf4f4584"
+    "fig:org3eca100"
+    "orga245991"
+    "fig:orged3d694"
+    "sec:orgf9efb4f"
+    "sec:orgd95afdc"
+    "sec:org2d87f6b"
+    "sec:org2c8be35"
+    "sec:orgb2cc9bc"
+    "sec:orgdbd0abf"
+    "sec:org9532d73"
+    "sec:org92e23fe"
+    "sec:orgab8360d"
+    "sec:org0c7cb7d"
+    "sec:org81f7e7f"
+    "sec:orgd0b904d"
+    "sec:org0bdd083"
+    "sec:org9e846f1"
+    "sec:org7e9e406"
+    "sec:org0d30157"
+    "sec:org0ebc703"
+    "sec:org1a1dd93"
+    "sec:orge20bb40"
+    "sec:org2ce0db5"
+    "sec:org59ae887"
+    "sec:org489814e"
+    "sec:org911a573"
+    "sec:org06a6955"
+    "sec:org1d6cf2d"
+    "sec:orgf7b2185"
+    "sec:orge6801b5"
+    "sec:org1115f28"
+    "sec:org19f717f"))
+>>>>>>> eed346c8514909cca04b4c3ac4ddbeb5c6afc828
  :latex)
 
