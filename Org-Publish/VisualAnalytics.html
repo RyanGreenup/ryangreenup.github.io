@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-04-21 Tue 22:48 -->
+<!-- 2020-05-06 Wed 18:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Visual Analytics</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="Ryan G" />
+<meta name="author" content="Ryan Greenup" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -271,245 +271,262 @@ org_html_manager.setup();  // activate after the parameters are set
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb0fdadc">HouseKeeping</a>
+<li><a href="#org628567c">HouseKeeping</a>
 <ul>
-<li><a href="#org8f585b4">Choosing Between Org and Markdown</a></li>
-<li><a href="#org26df4db">Class Material&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#orgd71a4f8">Choosing Between Org and Markdown</a></li>
+<li><a href="#orgc2a10da">Class Material&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
 </ul>
 </li>
-<li><a href="#org2fe86ae">Textbooks</a></li>
-<li><a href="#orgab673c5">(Wk 1) Introduction to Data Visualisation</a>
+<li><a href="#orgd13791c">Textbooks</a></li>
+<li><a href="#org9cd2095">(Wk 1) Introduction to Data Visualisation</a>
 <ul>
-<li><a href="#org81eed2f">Lecture</a>
+<li><a href="#orgf2b8edc">Lecture</a>
 <ul>
-<li><a href="#org3f31d77">Housekeeping</a></li>
-<li><a href="#org234ecee">Visualisation</a></li>
-<li><a href="#org776eea4">Nomenclature</a></li>
+<li><a href="#org06e1019">Housekeeping</a></li>
+<li><a href="#orgd461bc4">Visualisation</a></li>
+<li><a href="#org319c63f">Nomenclature</a></li>
 </ul>
 </li>
-<li><a href="#orgf1e942d">Tutorial</a>
+<li><a href="#org8275a0b">Tutorial</a>
 <ul>
-<li><a href="#orgccf6009">Using <i>Zathura</i></a></li>
-<li><a href="#org21a8bb8">Question 1</a></li>
-<li><a href="#org7577614">Question 2</a></li>
-<li><a href="#org52aa1a5">Question 3</a></li>
-<li><a href="#org9135213">Question 4</a></li>
-<li><a href="#org9cb5f02">Question 5</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgcd4e1a4">References</a></li>
-<li><a href="#orgdd9cc1f">(Wk 2) Human Visual Perception</a>
-<ul>
-<li><a href="#org0ff994f">Lecture&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a>
-<ul>
-<li><a href="#org9e077ad">Last Lecture</a></li>
-<li><a href="#orgff05eb3">Module Outline</a></li>
-<li><a href="#org7b2414e">Human Vision</a></li>
-<li><a href="#orgcb4c879">Colour Vision&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
-<li><a href="#orgc2dc38a">Preattentive Processing</a></li>
-<li><a href="#org89dc4c6">Visualisation Theory</a></li>
-<li><a href="#org5e623d8">Gestalt Principle</a></li>
-<li><a href="#orgfdda007">Visual Encoding</a></li>
-<li><a href="#org861e948">Evaluating a Visualisation</a></li>
-<li><a href="#org807cf64">Potential Assignment resources</a></li>
-</ul>
-</li>
-<li><a href="#org3ea4e15">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></a>
-<ul>
-<li><a href="#orga0f5026">All Exercises</a></li>
-<li><a href="#org41bf774">Question 1</a></li>
-<li><a href="#orgbacdd7e">Question 2</a></li>
-<li><a href="#orgbccd7ae">Question 3</a></li>
-<li><a href="#orge65dd82">Question 4</a></li>
-<li><a href="#org79e9702">Question 5</a></li>
-<li><a href="#orgcf64b18">Question 6</a></li>
-<li><a href="#org5619c07">Question 7</a></li>
-<li><a href="#org92e7967">Question 8</a></li>
-<li><a href="#orgb5e8385">Question 9</a></li>
-<li><a href="#orgfca164b">Question 10</a></li>
+<li><a href="#org35cb379">Using <i>Zathura</i></a></li>
+<li><a href="#org34376b7">Question 1</a></li>
+<li><a href="#org98c55b9">Question 2</a></li>
+<li><a href="#orgcb26cd8">Question 3</a></li>
+<li><a href="#org615c4b1">Question 4</a></li>
+<li><a href="#orgb421345">Question 5</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org9596ee2">(Wk 3) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a>
+<li><a href="#orga432505">References</a></li>
+<li><a href="#org9d2406f">(Wk 2) Human Visual Perception</a>
 <ul>
-<li><a href="#orgce424ce"><span class="done DONE">DONE</span> Lecture</a></li>
-<li><a href="#orgaf4f876">Relational Data Visualisation – Part I</a></li>
-<li><a href="#org7ac9327">Introduction to Graph Visualisation</a></li>
-<li><a href="#org01f68a3">Tree Visualisation</a>
+<li><a href="#orgcb39009">Lecture&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a>
 <ul>
-<li><a href="#org8aec07b">Connection Approach</a></li>
-<li><a href="#org7988e61">Enclosure Approach</a></li>
-<li><a href="#org8cc3cff">Connection+Enclosure Approach</a></li>
-<li><a href="#orgd19a5af">Tree Graphs</a></li>
+<li><a href="#org428901a">Last Lecture</a></li>
+<li><a href="#orgfd5896d">Module Outline</a></li>
+<li><a href="#org03a1003">Human Vision</a></li>
+<li><a href="#org753b83b">Colour Vision&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#orgb546882">Preattentive Processing</a></li>
+<li><a href="#orgc8e2224">Visualisation Theory</a></li>
+<li><a href="#org1d9dc43">Gestalt Principle</a></li>
+<li><a href="#org9e0618e">Visual Encoding</a></li>
+<li><a href="#orgcda1bdf">Evaluating a Visualisation</a></li>
+<li><a href="#orgcd1fa71">Potential Assignment resources</a></li>
 </ul>
 </li>
-<li><a href="#org375c72f">Trees in Org Mode</a>
+<li><a href="#org9895474">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></a>
 <ul>
-<li><a href="#org6d340fa">Drawing Graphics Technologies</a></li>
-<li><a href="#org72454cc">PlantUML</a></li>
-<li><a href="#org73d12b7">Mermaid</a></li>
-<li><a href="#org307146d">FlowchartJS</a></li>
-</ul>
-</li>
-<li><a href="#orgc7e10ca">Tools for making graphs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="graph_viz">graph_viz</span></span></a></li>
-<li><a href="#org0a79fdc"><span class="done DONE">DONE</span> Tutorial</a>
-<ul>
-<li><a href="#orgc3eb066">Question 1</a></li>
-<li><a href="#org14d11f2">Question 2</a></li>
-<li><a href="#orgc5297a5">Question 3</a></li>
-<li><a href="#org8422a8d">Question 4</a></li>
-<li><a href="#org2e22900">Question 5</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org1a0637e">(Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></a>
-<ul>
-<li><a href="#org7f46b40"><span class="done DONE">DONE</span> Lecture</a></li>
-<li><a href="#orga74c271"><span class="done DONE">DONE</span> Tutorial</a>
-<ul>
-<li><a href="#org955c960">Question 1</a></li>
-<li><a href="#org2e18996">Question 2</a></li>
-<li><a href="#org4147d1e">Question 3</a></li>
-<li><a href="#org1d9b818">Question 4</a></li>
-<li><a href="#org5a8ba9d">Question 5</a></li>
-<li><a href="#orgf4a7bca">Question 6</a></li>
-<li><a href="#orgb3810aa">Question 7&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ggnet">ggnet</span></span></a></li>
+<li><a href="#orgb914b7d">All Exercises</a></li>
+<li><a href="#orgbf7b69e">Question 1</a></li>
+<li><a href="#org2dc3607">Question 2</a></li>
+<li><a href="#org213bd76">Question 3</a></li>
+<li><a href="#org4cfddcd">Question 4</a></li>
+<li><a href="#orgc8e1479">Question 5</a></li>
+<li><a href="#orgebb3d44">Question 6</a></li>
+<li><a href="#org8df9fd1">Question 7</a></li>
+<li><a href="#org5936643">Question 8</a></li>
+<li><a href="#org2cec5c3">Question 9</a></li>
+<li><a href="#org6f060e7">Question 10</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org6736324"><span class="done DONE">DONE</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></a>
+<li><a href="#orgf320fc1">(Wk 3) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a>
 <ul>
-<li><a href="#org5e9acdf">Lecture</a></li>
-<li><a href="#org4795321">Tutorial</a></li>
+<li><a href="#org8636311"><span class="done DONE">DONE</span> Lecture</a></li>
+<li><a href="#org0eac541">Relational Data Visualisation – Part I</a></li>
+<li><a href="#org4aabe8b">Introduction to Graph Visualisation</a></li>
+<li><a href="#orga56b07a">Tree Visualisation</a>
+<ul>
+<li><a href="#orgf4622dc">Connection Approach</a></li>
+<li><a href="#org2bfa8c3">Enclosure Approach</a></li>
+<li><a href="#org872d943">Connection+Enclosure Approach</a></li>
+<li><a href="#orgaf3c2dd">Tree Graphs</a></li>
 </ul>
 </li>
-<li><a href="#org9d94c28"><span class="done DONE">DONE</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></a>
+<li><a href="#orga2df591">Trees in Org Mode</a>
 <ul>
-<li><a href="#org4748f1d">Lecture</a></li>
-<li><a href="#org98a8917">Tutorial</a></li>
+<li><a href="#org3355d38">Drawing Graphics Technologies</a></li>
+<li><a href="#orgc32de4c">PlantUML</a></li>
+<li><a href="#orgd9b1757">Mermaid</a></li>
+<li><a href="#org233df0b">FlowchartJS</a></li>
 </ul>
 </li>
-<li><a href="#orgd82a7eb"><span class="todo TODO">TODO</span> (6) Data Camp Data Viz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span>&#xa0;<span class="DataCamp">DataCamp</span></span></a></li>
-<li><a href="#org47f2753"><span class="done DONE">DONE</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></a>
+<li><a href="#orga67fbca">Tools for making graphs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="graph_viz">graph_viz</span></span></a></li>
+<li><a href="#org6f9cb4b"><span class="done DONE">DONE</span> Tutorial</a>
 <ul>
-<li><a href="#orgd7a2d66">Lecture</a></li>
-<li><a href="#orga513843">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#orgf5fecb0"><span class="todo TODO">TODO</span> Data Camp; Interactive Plotly&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span>&#xa0;<span class="DataCamp">DataCamp</span></span></a>
-<ul>
-<li><a href="#org6b4b92b"><span class="todo TODO">TODO</span> Lecture</a></li>
-<li><a href="#org1330272"><span class="todo TODO">TODO</span> Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org2f419de"><span class="todo TODO">TODO</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></a>
-<ul>
-<li><a href="#org0705139">Lecture</a></li>
-<li><a href="#orgfd77188">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#orgdeae161"><span class="todo TODO">TODO</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></a>
-<ul>
-<li><a href="#org1a5e696">Lecture</a></li>
-<li><a href="#orgc2c509c">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org82a6f2b"><span class="todo TODO">TODO</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></a>
-<ul>
-<li><a href="#org9bcc723">Lecture</a></li>
-<li><a href="#org309000a">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org14f92ac"><span class="todo TODO">TODO</span> (8)  Interaction&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></a>
-<ul>
-<li><a href="#org64a4e3a">Lecture</a></li>
-<li><a href="#org9285c35">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org9624f23"><span class="todo TODO">TODO</span> (Wk9) Break</a>
-<ul>
-<li><a href="#org4b23571">Lecture</a></li>
-<li><a href="#org4ff33f5">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#orgfa9782b"><span class="todo TODO">TODO</span> (9) Visual Analytics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></a>
-<ul>
-<li><a href="#orge2829d9">Lecture</a></li>
-<li><a href="#org10b6384">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org85e4cf0"><span class="todo TODO">TODO</span> (10) Using Data Vis to Analyse 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></a>
-<ul>
-<li><a href="#org0407ded">Lecture</a></li>
-<li><a href="#org767a4d1">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#orgb22223f"><span class="todo TODO">TODO</span> (11) Using Data Vis to Analyse 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></a>
-<ul>
-<li><a href="#org633345e">Lecture</a></li>
-<li><a href="#org179a186">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org61be310"><span class="todo TODO">TODO</span> (12) Using Data Vis to Analyse 3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk13">wk13</span></span></a>
-<ul>
-<li><a href="#orge295fdd">Lecture</a></li>
-<li><a href="#org81efcca">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org6d64deb"><span class="todo TODO">TODO</span> (13) Final Quiz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk14">wk14</span></span></a>
-<ul>
-<li><a href="#orgd793249">Lecture</a></li>
-<li><a href="#orgb3889f5">Tutorial</a></li>
-</ul>
-</li>
-<li><a href="#org456cb6b"><span class="done DONE">DONE</span> Assignment 1</a>
-<ul>
-<li><a href="#org673e19e">Attachments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a>
-<ul>
-<li><a href="#org9c6def2">Resources</a></li>
-<li><a href="#orgb039f82"><span class="done DONE">DONE</span> Decide on Data to Analyse</a></li>
-<li><a href="#org86887e7"><span class="done DONE">DONE</span> Submit through Vuws</a></li>
+<li><a href="#org50b52f5">Question 1</a></li>
+<li><a href="#org1d6f13f">Question 2</a></li>
+<li><a href="#orged80c1d">Question 3</a></li>
+<li><a href="#orgf32e9d9">Question 4</a></li>
+<li><a href="#org0f955bf">Question 5</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org2641efd">Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a>
+<li><a href="#org6ff2525">(Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></a>
 <ul>
-<li><a href="#orgfa64ab8"><span class="done DONE">DONE</span> Making the HTML Standalone</a>
+<li><a href="#org2c69cf5"><span class="done DONE">DONE</span> Lecture</a></li>
+<li><a href="#orgd7b062e"><span class="done DONE">DONE</span> Tutorial</a>
 <ul>
-<li><a href="#org9f9c011">Read this Reddit Post on making Blog Posts</a></li>
-<li><a href="#org048fe5d">Pandoc Workaround</a></li>
-<li><a href="#org0c2d6c2"><span class="todo TODO">TODO</span> Make Function; Embedding Images as Base 64&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Evening">Evening</span></span></a></li>
-<li><a href="#orgb04062f"><span class="todo TODO">TODO</span> Tools for self contained HTML</a></li>
-<li><a href="#org45e9948">Using JavaScript Inliner Tool</a></li>
+<li><a href="#orgc6cd355">Question 1</a></li>
+<li><a href="#orgfdf5289">Question 2</a></li>
+<li><a href="#orgd929743">Question 3</a></li>
+<li><a href="#orge271059">Question 4</a></li>
+<li><a href="#orgd60054b">Question 5</a></li>
+<li><a href="#orgb15d3fe">Question 6</a></li>
+<li><a href="#org5d20470">Question 7&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ggnet">ggnet</span></span></a></li>
 </ul>
 </li>
-<li><a href="#orge7c315f">Embedding Images my own script</a></li>
-<li><a href="#org592b096"><span class="done DONE">DONE</span> Throwing on Github</a>
+</ul>
+</li>
+<li><a href="#org5082326"><span class="done DONE">DONE</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></a>
 <ul>
-<li><a href="#org00ade66">Publishing Pathway</a></li>
-<li><a href="#org569b1bf"><span class="done DONE">DONE</span> Using Pandoc</a></li>
+<li><a href="#org766329b">Lecture</a></li>
+<li><a href="#org74ce2fe">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#org34e7562">Previewing HTML</a></li>
+<li><a href="#org3b05b6b"><span class="done DONE">DONE</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></a>
+<ul>
+<li><a href="#org4ac1af9">Lecture</a></li>
+<li><a href="#orgd226cc8">Tutorial</a></li>
 </ul>
 </li>
-<li><a href="#orgf5bdc56">References</a></li>
+<li><a href="#org46d5885"><span class="todo TODO">TODO</span> (6) Data Camp Data Viz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span>&#xa0;<span class="DataCamp">DataCamp</span></span></a></li>
+<li><a href="#orgc0fc512"><span class="done DONE">DONE</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></a>
+<ul>
+<li><a href="#org27912c9">Lecture</a></li>
+<li><a href="#org849d95e">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#orgde549d9"><span class="todo TODO">TODO</span> Data Camp; Interactive Plotly&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span>&#xa0;<span class="DataCamp">DataCamp</span></span></a>
+<ul>
+<li><a href="#orgb27654f"><span class="todo TODO">TODO</span> Lecture</a></li>
+<li><a href="#org77f5cf7"><span class="todo TODO">TODO</span> Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#orgc644295"><span class="done DONE">DONE</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></a>
+<ul>
+<li><a href="#org9feaf85">Lecture</a></li>
+<li><a href="#org79a15e5">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#orge652218"><span class="done DONE">DONE</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></a>
+<ul>
+<li><a href="#org71d22df">Lecture</a></li>
+<li><a href="#orgc4b94c3">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#orgb710fa3"><span class="done DONE">DONE</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></a>
+<ul>
+<li><a href="#org25cdecc">Lecture</a></li>
+<li><a href="#org05e264c">Tutorial (Optional)</a></li>
+</ul>
+</li>
+<li><a href="#org797642f"><span class="todo TODO">TODO</span> (8)  Interaction&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></a>
+<ul>
+<li><a href="#orgfaa12b7">Lecture</a></li>
+<li><a href="#org864c80e">Tutorial</a>
+<ul>
+<li><a href="#orgf1f7ae0">Question 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#org64597ae">Question 2</a></li>
+<li><a href="#orgf9e2ac9">Question 3</a></li>
+<li><a href="#org259fb06">Question 4</a></li>
+<li><a href="#org490b4da">Question 5</a></li>
+<li><a href="#org34c231d">Question 6</a></li>
+<li><a href="#org17f42c2">Question 7&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#orgaa519eb">Question 8&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org68f4ea8"><span class="todo TODO">TODO</span> (Wk9) Break</a>
+<ul>
+<li><a href="#org1232126">Lecture</a></li>
+<li><a href="#orgbba25e4">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org2b55735"><span class="todo TODO">TODO</span> (9) Visual Analytics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></a>
+<ul>
+<li><a href="#orged48ace">Lecture</a></li>
+<li><a href="#orgc44c11e">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org68dc89e"><span class="todo TODO">TODO</span> (10) Using Data Vis to Analyse 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></a>
+<ul>
+<li><a href="#orgdd053a2">Lecture</a></li>
+<li><a href="#org126845e">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org3739cba"><span class="todo TODO">TODO</span> (11) Using Data Vis to Analyse 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></a>
+<ul>
+<li><a href="#org01cdb2c">Lecture</a></li>
+<li><a href="#org0f6e538">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org4f15d66"><span class="todo TODO">TODO</span> (12) Using Data Vis to Analyse 3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk13">wk13</span></span></a>
+<ul>
+<li><a href="#org1e1e69f">Lecture</a></li>
+<li><a href="#org2095626">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#orgb872ddb"><span class="todo TODO">TODO</span> (13) Final Quiz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk14">wk14</span></span></a>
+<ul>
+<li><a href="#orgf710df9">Lecture</a></li>
+<li><a href="#org3b4a523">Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#org19736ac"><span class="done DONE">DONE</span> Assignment 1</a>
+<ul>
+<li><a href="#orgde6a789">Attachments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a>
+<ul>
+<li><a href="#org6c5bb8c">Resources</a></li>
+<li><a href="#orgbde94fe"><span class="done DONE">DONE</span> Decide on Data to Analyse</a></li>
+<li><a href="#org287587a"><span class="done DONE">DONE</span> Submit through Vuws</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0ddbe8a"><span class="todo TODO">TODO</span> Assignment 2</a>
+<ul>
+<li><a href="#orgd447985">Attachments</a></li>
+<li><a href="#org30efab3">Information</a></li>
+</ul>
+</li>
+<li><a href="#org9cabbfb">Final Exam</a></li>
+<li><a href="#org27ff55e">Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></a>
+<ul>
+<li><a href="#org09d2eee"><span class="done DONE">DONE</span> Making the HTML Standalone</a>
+<ul>
+<li><a href="#orgba6aeae">Read this Reddit Post on making Blog Posts</a></li>
+<li><a href="#org75bd623">Pandoc Workaround</a></li>
+<li><a href="#orgbe5aebb"><span class="todo TODO">TODO</span> Make Function; Embedding Images as Base 64&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Evening">Evening</span></span></a></li>
+<li><a href="#org3e3f89b"><span class="todo TODO">TODO</span> Tools for self contained HTML</a></li>
+<li><a href="#org255b6ac">Using JavaScript Inliner Tool</a></li>
+</ul>
+</li>
+<li><a href="#orge05990d">Embedding Images my own script</a></li>
+<li><a href="#org20ee7ab"><span class="done DONE">DONE</span> Throwing on Github</a>
+<ul>
+<li><a href="#orgfd50dea">Publishing Pathway</a></li>
+</ul>
+</li>
+<li><a href="#org63a49eb">Previewing HTML</a></li>
+</ul>
+</li>
+<li><a href="#orgcac2feb">References</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb0fdadc" class="outline-2">
-<h2 id="orgb0fdadc">HouseKeeping</h2>
-<div class="outline-text-2" id="text-orgb0fdadc">
+<div id="outline-container-org628567c" class="outline-2">
+<h2 id="org628567c">HouseKeeping</h2>
+<div class="outline-text-2" id="text-org628567c">
 </div>
-<div id="outline-container-org8f585b4" class="outline-3">
-<h3 id="org8f585b4">Choosing Between Org and Markdown</h3>
-<div class="outline-text-3" id="text-org8f585b4">
+<div id="outline-container-orgd71a4f8" class="outline-3">
+<h3 id="orgd71a4f8">Choosing Between Org and Markdown</h3>
+<div class="outline-text-3" id="text-orgd71a4f8">
 <p>
 This unit won&rsquo;t  necessarily be all inside <i><b><b>R</b></b></i> so I think the greater
 versatility of <code>org-mode</code> will keep me more organised and allow me to be more
@@ -527,24 +544,22 @@ without doing a:
 </div>
 </div>
 </div>
-<div id="outline-container-org26df4db" class="outline-3">
-<h3 id="org26df4db">Class Material&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
-<div class="outline-text-3" id="text-org26df4db">
+<div id="outline-container-orgc2a10da" class="outline-3">
+<h3 id="orgc2a10da">Class Material&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
+<div class="outline-text-3" id="text-orgc2a10da">
 <p>
 The Material for Class is located here:
 </p>
 <ul class="org-ul">
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics">file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics</a></li>
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/00_Learning_Guide.pdf">Learning Guide</a></li>
-<li><a href="Attachments/VisualAnalytics/00_Learning_Guide.pdf">Relative Link</a></li>
-<li></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org2fe86ae" class="outline-2">
-<h2 id="org2fe86ae">Textbooks</h2>
-<div class="outline-text-2" id="text-org2fe86ae">
+<div id="outline-container-orgd13791c" class="outline-2">
+<h2 id="orgd13791c">Textbooks</h2>
+<div class="outline-text-2" id="text-orgd13791c">
 <p>
 the textbooks are located in this folder:
 </p>
@@ -553,17 +568,17 @@ the textbooks are located in this folder:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgab673c5" class="outline-2">
-<h2 id="orgab673c5">(Wk 1) Introduction to Data Visualisation</h2>
-<div class="outline-text-2" id="text-orgab673c5">
+<div id="outline-container-org9cd2095" class="outline-2">
+<h2 id="org9cd2095">(Wk 1) Introduction to Data Visualisation</h2>
+<div class="outline-text-2" id="text-org9cd2095">
 </div>
-<div id="outline-container-org81eed2f" class="outline-3">
-<h3 id="org81eed2f">Lecture</h3>
-<div class="outline-text-3" id="text-org81eed2f">
+<div id="outline-container-orgf2b8edc" class="outline-3">
+<h3 id="orgf2b8edc">Lecture</h3>
+<div class="outline-text-3" id="text-orgf2b8edc">
 </div>
-<div id="outline-container-org3f31d77" class="outline-4">
-<h4 id="org3f31d77">Housekeeping</h4>
-<div class="outline-text-4" id="text-org3f31d77">
+<div id="outline-container-org06e1019" class="outline-4">
+<h4 id="org06e1019">Housekeeping</h4>
+<div class="outline-text-4" id="text-org06e1019">
 <p>
 Three will be two report
 </p>
@@ -582,15 +597,15 @@ Shouldn&rsquo;t be too hard to get a HD.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org5962c82"></a>Textbook<br />
-<div class="outline-text-5" id="text-org5962c82">
+<li><a id="orgbdfad20"></a>Textbook<br />
+<div class="outline-text-5" id="text-orgbdfad20">
 <p>
 It&rsquo;s gonna be a drip fed mess.
 </p>
 </div>
 </li>
-<li><a id="orgbe78935"></a>Assignments<br />
-<div class="outline-text-5" id="text-orgbe78935">
+<li><a id="orgb4da0e0"></a>Assignments<br />
+<div class="outline-text-5" id="text-orgb4da0e0">
 <p>
 First one is quite early, like before week 4; 2-people groups.
 </p>
@@ -607,16 +622,16 @@ This was converted from `md` to `org` using `pandoc -f gfm` at time:
 </li>
 </ul>
 </div>
-<div id="outline-container-org234ecee" class="outline-4">
-<h4 id="org234ecee">Visualisation</h4>
-<div class="outline-text-4" id="text-org234ecee">
+<div id="outline-container-orgd461bc4" class="outline-4">
+<h4 id="orgd461bc4">Visualisation</h4>
+<div class="outline-text-4" id="text-orgd461bc4">
 <p>
 Faster computers means more visuals
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org11941f5"></a>Definition<br />
-<div class="outline-text-5" id="text-org11941f5">
+<li><a id="orgeb87651"></a>Definition<br />
+<div class="outline-text-5" id="text-orgeb87651">
 <p>
 In a study it was defined as:
 </p>
@@ -633,9 +648,9 @@ It&rsquo;s all about making data quicker
 </li>
 </ul>
 </div>
-<div id="outline-container-org776eea4" class="outline-4">
-<h4 id="org776eea4">Nomenclature</h4>
-<div class="outline-text-4" id="text-org776eea4">
+<div id="outline-container-org319c63f" class="outline-4">
+<h4 id="org319c63f">Nomenclature</h4>
+<div class="outline-text-4" id="text-org319c63f">
 <ul class="org-ul">
 <li>Graphics
 <ul class="org-ul">
@@ -653,29 +668,29 @@ It&rsquo;s all about making data quicker
 </div>
 </div>
 </div>
-<div id="outline-container-orgf1e942d" class="outline-3">
-<h3 id="orgf1e942d">Tutorial</h3>
-<div class="outline-text-3" id="text-orgf1e942d">
+<div id="outline-container-org8275a0b" class="outline-3">
+<h3 id="org8275a0b">Tutorial</h3>
+<div class="outline-text-3" id="text-org8275a0b">
 <ul class="org-ul">
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/01_Tutorial.pdf">01. Tutorial Sheet</a></li>
 </ul>
 </div>
-<div id="outline-container-orgccf6009" class="outline-4">
-<h4 id="orgccf6009">Using <i>Zathura</i></h4>
-<div class="outline-text-4" id="text-orgccf6009">
+<div id="outline-container-org35cb379" class="outline-4">
+<h4 id="org35cb379">Using <i>Zathura</i></h4>
+<div class="outline-text-4" id="text-org35cb379">
 <p>
 When using <i>Zathura</i> the copied text will be placed in the primary <code>*</code> register
 not the <code>+</code> register, so paste it in with <code>" * p</code>.
 </p>
 </div>
 </div>
-<div id="outline-container-org21a8bb8" class="outline-4">
-<h4 id="org21a8bb8">Question 1</h4>
-<div class="outline-text-4" id="text-org21a8bb8">
+<div id="outline-container-org34376b7" class="outline-4">
+<h4 id="org34376b7">Question 1</h4>
+<div class="outline-text-4" id="text-org34376b7">
 </div>
 <ul class="org-ul">
-<li><a id="orgbfd2be9"></a>Problem<br />
-<div class="outline-text-5" id="text-orgbfd2be9">
+<li><a id="org9f8e59a"></a>Problem<br />
+<div class="outline-text-5" id="text-org9f8e59a">
 <p>
 Visit the website: <a href="http://www.visualcomplexity.com/vc/">http://www.visualcomplexity.com/vc/</a>. Have a close look at the
 available visualisation techniques. In your opinion, which techniques are among
@@ -684,8 +699,8 @@ justify your preference. Note: there is no right or wrong answer in this questio
 </p>
 </div>
 </li>
-<li><a id="orge7b9f2d"></a>Working<br />
-<div class="outline-text-5" id="text-orge7b9f2d">
+<li><a id="org376c1a1"></a>Working<br />
+<div class="outline-text-5" id="text-org376c1a1">
 <p>
 <a href="http://www.visualcomplexity.com/vc/project.cfm?id=970">This Visual</a> from the <i><a href="https://ai.googleblog.com/2015/07/deepdream-code-example-for-visualizing.html">Google AI</a></i> blog highlighting the important features
 detected by a neural network is a unique insight into the <i>predictive modelling</i>
@@ -719,13 +734,13 @@ vibrant colour choice:
 </li>
 </ul>
 </div>
-<div id="outline-container-org7577614" class="outline-4">
-<h4 id="org7577614">Question 2</h4>
-<div class="outline-text-4" id="text-org7577614">
+<div id="outline-container-org98c55b9" class="outline-4">
+<h4 id="org98c55b9">Question 2</h4>
+<div class="outline-text-4" id="text-org98c55b9">
 </div>
 <ul class="org-ul">
-<li><a id="orga82d5bb"></a>Problem<br />
-<div class="outline-text-5" id="text-orga82d5bb">
+<li><a id="org1fc94f0"></a>Problem<br />
+<div class="outline-text-5" id="text-org1fc94f0">
 <p>
 Explore the online demo: <a href="http://graphs.gapminder.org/world/">http://graphs.gapminder.org/world/</a>. What have you
 discovered or found from the visualization of the “Wealth and Health of Nations
@@ -733,16 +748,16 @@ data set”? E.g. is there any correlation between GDP and Life Expectancy? etc.
 </p>
 </div>
 </li>
-<li><a id="org888dde3"></a>Working<br />
-<div class="outline-text-5" id="text-org888dde3">
+<li><a id="orgb85693c"></a>Working<br />
+<div class="outline-text-5" id="text-orgb85693c">
 <p>
 There is a clear positive correlation between income and life expectancy, other
 features that are readily observable are:
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org6dd3f18"></a>Regions<br />
-<div class="outline-text-6" id="text-org6dd3f18">
+<li><a id="org8bedb4e"></a>Regions<br />
+<div class="outline-text-6" id="text-org8bedb4e">
 <p>
 It can be observed that Europe is a wealthy region (Yellow)  while Africa and
 Asia are poor regions (cyan, red))
@@ -780,8 +795,8 @@ This could be a functoin of temperature, a higher temperature may lead to :
 </ul>
 </div>
 </li>
-<li><a id="org3299d36"></a>Population<br />
-<div class="outline-text-6" id="text-org3299d36">
+<li><a id="org729af35"></a>Population<br />
+<div class="outline-text-6" id="text-org729af35">
 <p>
 It isn&rsquo;t possible to say much about the influence population has because the
 population is measured by region without taking account of size (e.g. China is
@@ -797,8 +812,8 @@ more instructive.
 </p>
 </div>
 </li>
-<li><a id="org83e3591"></a>Time Trends<br />
-<div class="outline-text-6" id="text-org83e3591">
+<li><a id="orgb95ded6"></a>Time Trends<br />
+<div class="outline-text-6" id="text-orgb95ded6">
 <p>
 It appears that Europe (and Japan) have always enjoyed a higher GDP per capita
 while asia and Africa appear to lag in this respect.
@@ -819,8 +834,8 @@ effect on this correlation, going from a linear trend to an exponential.
 </p>
 </div>
 </li>
-<li><a id="org914eca8"></a>China as an Exception<br />
-<div class="outline-text-6" id="text-org914eca8">
+<li><a id="org0cc163c"></a>China as an Exception<br />
+<div class="outline-text-6" id="text-org0cc163c">
 <p>
 China appears to not follow a correlation between GDP and Life Expectancy until
 the new milennia, life expectancy rises following the second world war despite
@@ -844,13 +859,13 @@ strongly correlated with life expectancy.
 </li>
 </ul>
 </div>
-<div id="outline-container-org52aa1a5" class="outline-4">
-<h4 id="org52aa1a5">Question 3</h4>
-<div class="outline-text-4" id="text-org52aa1a5">
+<div id="outline-container-orgcb26cd8" class="outline-4">
+<h4 id="orgcb26cd8">Question 3</h4>
+<div class="outline-text-4" id="text-orgcb26cd8">
 </div>
 <ul class="org-ul">
-<li><a id="orgca2d66a"></a>Problem<br />
-<div class="outline-text-5" id="text-orgca2d66a">
+<li><a id="orga65677e"></a>Problem<br />
+<div class="outline-text-5" id="text-orga65677e">
 <p>
 Using a search engine, explore 3 applications/projects/tools that use
 visualisations. You are required to write a short summary about the
@@ -859,13 +874,13 @@ and bad about these applications/projects/tools? Etc.
 </p>
 </div>
 </li>
-<li><a id="org2ab9da4"></a>Working<br />
+<li><a id="org3c670b3"></a>Working<br />
 <ul class="org-ul">
-<li><a id="orgb560ce6"></a>Gnome&rsquo;s Baobab / WinDirStat / KDirStat<br />
-<div class="outline-text-6" id="text-orgb560ce6">
+<li><a id="org61cad77"></a>Gnome&rsquo;s Baobab / WinDirStat / KDirStat<br />
+<div class="outline-text-6" id="text-org61cad77">
 <p>
 <a href="https://wiki.gnome.org/action/show/Apps/DiskUsageAnalyzer?action=show&amp;redirect=Apps%2FBaobab">Gnome&rsquo; <i>Baobab</i></a>, <a href="http://kdirstat.sourceforge.net/"><i>KDirStat</i></a> and <a href="https://bitbucket.org/windirstat/windirstat/src/default/"><i>WinDirStat</i></a> are disk usage analysers for <a href="https://www.gnome.org/">Gnome</a>,
-<a href="https://kde.org/">KDE</a> and <i>Windows</i> respectively. <a id="org1e81660"></a>
+<a href="https://kde.org/">KDE</a> and <i>Windows</i> respectively. <a id="orgf0a00da"></a>
 </p>
 
 
@@ -882,8 +897,8 @@ and bad about these applications/projects/tools? Etc.
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orge7364b2"></a>Significance<br />
-<div class="outline-text-7" id="text-orge7364b2">
+<li><a id="org1c947e1"></a>Significance<br />
+<div class="outline-text-7" id="text-org1c947e1">
 <p>
 All three tools use a descending list of directories with a bar chart indicating
 the proportion of disk space consumed by that directory, to the right is a
@@ -891,8 +906,8 @@ graphic shosing this distribution.
 </p>
 </div>
 </li>
-<li><a id="orga359684"></a>Good Design<br />
-<div class="outline-text-7" id="text-orga359684">
+<li><a id="org4759380"></a>Good Design<br />
+<div class="outline-text-7" id="text-org4759380">
 <p>
 All three tools have correctly implement an ordered list and bar chart, making
 it easy to understand and manage disk space on a system.
@@ -916,8 +931,8 @@ deeply nested structures to be understood easily.
 </p>
 </div>
 </li>
-<li><a id="orga4a595c"></a>Bad Design<br />
-<div class="outline-text-7" id="text-orga4a595c">
+<li><a id="org62dc729"></a>Bad Design<br />
+<div class="outline-text-7" id="text-org62dc729">
 <p>
 Unfourtunately KDirstat and Windirstat only offer treemap visualisations, this
 choice of graph is vastly inferior to a ring chart because it can only clearly
@@ -929,8 +944,8 @@ without rescanning the drive.
 </li>
 </ul>
 </li>
-<li><a id="orga8874d2"></a>GitHub Visualizer<br />
-<div class="outline-text-6" id="text-orga8874d2">
+<li><a id="orgab6516f"></a>GitHub Visualizer<br />
+<div class="outline-text-6" id="text-orgab6516f">
 <p>
 <a href="http://ghv.artzub.com/#repo=ranger-assets&amp;climit=100&amp;user=ranger">http://ghv.artzub.com/#repo=ranger-assets&amp;climit=100&amp;user=ranger</a>
 </p>
@@ -941,8 +956,8 @@ various repositiories of various projects.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org8897cd3"></a>Significance<br />
-<div class="outline-text-7" id="text-org8897cd3">
+<li><a id="org14cf670"></a>Significance<br />
+<div class="outline-text-7" id="text-org14cf670">
 <p>
 This provides a novel way to understand the:
 </p>
@@ -954,8 +969,8 @@ This provides a novel way to understand the:
 </ul>
 </div>
 </li>
-<li><a id="orgb144a15"></a>Good Design<br />
-<div class="outline-text-7" id="text-orgb144a15">
+<li><a id="org4c2ec21"></a>Good Design<br />
+<div class="outline-text-7" id="text-org4c2ec21">
 <p>
 Using Bubbles to illustrate the is the overall share of a repo in a project
 provides a quick understanding at a glance.
@@ -966,8 +981,8 @@ Using a Time Series Chart over time is an easy way to show trends.
 </p>
 </div>
 </li>
-<li><a id="org054880d"></a>Bad Design<br />
-<div class="outline-text-7" id="text-org054880d">
+<li><a id="org01584da"></a>Bad Design<br />
+<div class="outline-text-7" id="text-org01584da">
 <p>
 The visualisation is far too busy to understand what is going on, for instance
 the size of the bubbles are not made clear, are they popularity, size,
@@ -987,8 +1002,8 @@ a scaling issue.
 </li>
 </ul>
 </li>
-<li><a id="org2d62166"></a>Cancer Graphic<br />
-<div class="outline-text-6" id="text-org2d62166">
+<li><a id="orge2a63fd"></a>Cancer Graphic<br />
+<div class="outline-text-6" id="text-orge2a63fd">
 <p>
 <a href="http://web.archive.org/web/20140526084103/http://www.cancerresearchuk.org:80/cancer-info/cancerstats/causes/attributable-risk/visualisation/">http://web.archive.org/web/20140526084103/http://www.cancerresearchuk.org:80/cancer-info/cancerstats/causes/attributable-risk/visualisation/</a>
 </p>
@@ -1015,8 +1030,8 @@ pdftoppm CS_POSTER_ATTRIB.pdf  CS_POSTER_ATTRIB -png
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgb920fcb"></a>Significance<br />
-<div class="outline-text-7" id="text-orgb920fcb">
+<li><a id="orgfcb3f16"></a>Significance<br />
+<div class="outline-text-7" id="text-orgfcb3f16">
 <p>
 This visualisation is significant because it effectively describes both the magnitude
 and interaction of various risk factors and behaviours on the probability of
@@ -1029,8 +1044,8 @@ this graphic very clearly shows what to look out or
 </p>
 </div>
 </li>
-<li><a id="orgf5bf855"></a>Good Design<br />
-<div class="outline-text-7" id="text-orgf5bf855">
+<li><a id="org728220d"></a>Good Design<br />
+<div class="outline-text-7" id="text-org728220d">
 <p>
 Having a key in the centre of the graph makes it very easy to determine what the
 individual elements of the visualisation mean.
@@ -1042,16 +1057,16 @@ easy to determine risk factors for cancer.
 </p>
 </div>
 </li>
-<li><a id="org6afdeed"></a>Bad Design<br />
-<div class="outline-text-7" id="text-org6afdeed">
+<li><a id="orgbf6304a"></a>Bad Design<br />
+<div class="outline-text-7" id="text-orgbf6304a">
 <p>
 The graph unfourtunately is a little busy but this doesn&rsquo;t appear to be in a way
 that is disproportionate to the amount of information conveyed.
 </p>
 </div>
 </li>
-<li><a id="org410e41d"></a>Inferences<br />
-<div class="outline-text-7" id="text-org410e41d">
+<li><a id="org3269dce"></a>Inferences<br />
+<div class="outline-text-7" id="text-org3269dce">
 <p>
 An interesting component of this visualisation is that it clearly shows
 interactions of various items, for example the following are large to moderate
@@ -1070,10 +1085,10 @@ While HRT is a very small risk factor for all types of cancer.
 <p>
 This clearly illustrates that HRT may be medically appropriate in men despite
 the historical belive that such treamtent was correlated with prostate cancer in
-men <sup><a href="#citeproc_bib_item_1">1</a></sup> . Recent studies suggest that this might not be the case
-<sup><a href="#citeproc_bib_item_2">2</a></sup>  and HRT is (somewhat obviously) correlated with increased
-physical activity, weight loss <sup><a href="#citeproc_bib_item_3">3</a></sup> and general health metrics
-<sup><a href="#citeproc_bib_item_4">4</a></sup> .
+men <sup><a href="#citeproc_bib_item_1">1</a></sup>. Recent studies suggest that this might not be the case
+<sup><a href="#citeproc_bib_item_2">2</a></sup> and HRT is (somewhat obviously) correlated with increased
+physical activity, weight loss <sup><a href="#citeproc_bib_item_3">3</a></sup>  and general health metrics
+<sup><a href="#citeproc_bib_item_4">4</a></sup>.
 </p>
 
 <p>
@@ -1096,23 +1111,23 @@ in that area of medical science.
 </li>
 </ul>
 </div>
-<div id="outline-container-org9135213" class="outline-4">
-<h4 id="org9135213">Question 4</h4>
-<div class="outline-text-4" id="text-org9135213">
+<div id="outline-container-org615c4b1" class="outline-4">
+<h4 id="org615c4b1">Question 4</h4>
+<div class="outline-text-4" id="text-org615c4b1">
 </div>
 <ul class="org-ul">
-<li><a id="org0c4d269"></a>Problem<br />
-<div class="outline-text-5" id="text-org0c4d269">
+<li><a id="orgea4788f"></a>Problem<br />
+<div class="outline-text-5" id="text-orgea4788f">
 <p>
 For the following visualisations, in your opinion, are they good or bad; Justify
 the answer:
 </p>
 </div>
 </li>
-<li><a id="orgd17d105"></a>Working<br />
+<li><a id="org799efd0"></a>Working<br />
 <ul class="org-ul">
-<li><a id="org5ab84f0"></a>Plot A<br />
-<div class="outline-text-6" id="text-org5ab84f0">
+<li><a id="org576c9c4"></a>Plot A<br />
+<div class="outline-text-6" id="text-org576c9c4">
 
 <div class="figure">
 <p><img src="Attachments/VisualAnalytics/PlotATut1.png" alt="PlotATut1.png" width="400px" />
@@ -1156,8 +1171,8 @@ addressed however by the <i>Global Social Network penetration</i> bar chart belo
 </p>
 </div>
 </li>
-<li><a id="orgc348ded"></a>Plot B<br />
-<div class="outline-text-6" id="text-orgc348ded">
+<li><a id="org8ac6c9f"></a>Plot B<br />
+<div class="outline-text-6" id="text-org8ac6c9f">
 
 <div class="figure">
 <p><img src="Attachments/VisualAnalytics/PlotBTut1.png" alt="PlotBTut1.png" width="400px" />
@@ -1187,9 +1202,9 @@ between each other without trying to mentally visualise a cumullative summation.
 </li>
 </ul>
 </div>
-<div id="outline-container-org9cb5f02" class="outline-4">
-<h4 id="org9cb5f02">Question 5</h4>
-<div class="outline-text-4" id="text-org9cb5f02">
+<div id="outline-container-orgb421345" class="outline-4">
+<h4 id="orgb421345">Question 5</h4>
+<div class="outline-text-4" id="text-orgb421345">
 <p>
 Visualisation of the CoronaVirus:
 </p>
@@ -1198,8 +1213,8 @@ Visualisation of the CoronaVirus:
 </ul>
 </div>
 <ul class="org-ul">
-<li><a id="org37c7182"></a>Problem<br />
-<div class="outline-text-5" id="text-org37c7182">
+<li><a id="org0562b7e"></a>Problem<br />
+<div class="outline-text-5" id="text-org0562b7e">
 <p>
 Optional: If you still have time, play around this website to see how visualization
 help to find patterns: <a href="http://rocs.hu-berlin.de/viz/sgb/">http://rocs.hu-berlin.de/viz/sgb/</a> (Coronavirus Geographic
@@ -1207,16 +1222,16 @@ and Network visualisations)
 </p>
 </div>
 </li>
-<li><a id="org79f8773"></a>Working<br /></li>
+<li><a id="org53e1c82"></a>Working<br /></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcd4e1a4" class="outline-2">
-<h2 id="orgcd4e1a4">References</h2>
-<div class="outline-text-2" id="text-orgcd4e1a4">
+<div id="outline-container-orga432505" class="outline-2">
+<h2 id="orga432505">References</h2>
+<div class="outline-text-2" id="text-orga432505">
 <p>
-<a id="org2a13fca"></a>
+<a id="orgbb7e610"></a>
 </p>
 
 <style>.csl-left-margin{float: left; padding-right: 0em;} .csl-right-inline{margin: 0 0 0 1.2em;}</style><h2 class='citeproc-org-bib-h2'>Bibliography</h2>
@@ -1237,9 +1252,9 @@ and Network visualisations)
     <div class="csl-left-margin">5.</div><div class="csl-right-inline">McAuley, J. &#38; Leskovec, J. Learning to Discover Social Circles in Ego Networks. 9.</div>
   </div>
   <div class="csl-entry"><a name="citeproc_bib_item_6"></a>
-    <div class="csl-left-margin">6.</div><div class="csl-right-inline">Graph Theory. (2020).</div>
+    <div class="csl-left-margin">6.</div><div class="csl-right-inline">The Try Guys Test Who Is The Most Attractive. (2020).</div>
   </div>
-</d
+</div>
 #+BEGIN_EXPORT html
 <style>.csl-left-margin{float: left; padding-right: 0em;} .csl-right-inline{margin: 0 0 0 1.2em;}</style><h2 class='citeproc-org-bib-h2'>Bibliography</h2>
 <div class="csl-bib-body">
@@ -1259,19 +1274,19 @@ and Network visualisations)
     <div class="csl-left-margin">5.</div><div class="csl-right-inline">McAuley, J. &#38; Leskovec, J. Learning to Discover Social Circles in Ego Networks. 9.</div>
   </div>
   <div class="csl-entry"><a name="citeproc_bib_item_6"></a>
-    <div class="csl-left-margin">6.</div><div class="csl-right-inline">Graph Theory. (2020).</div>
+    <div class="csl-left-margin">6.</div><div class="csl-right-inline">The Try Guys Test Who Is The Most Attractive. (2020).</div>
   </div>
 </div>
 <p>
-yle:unsrt
+:unsrt
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-orgdd9cc1f" class="outline-2">
-<h2 id="orgdd9cc1f">(Wk 2) Human Visual Perception</h2>
-<div class="outline-text-2" id="text-orgdd9cc1f">
+<div id="outline-container-org9d2406f" class="outline-2">
+<h2 id="org9d2406f">(Wk 2) Human Visual Perception</h2>
+<div class="outline-text-2" id="text-org9d2406f">
 <p>
 Refer to:t
 </p>
@@ -1280,18 +1295,19 @@ Refer to:t
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/02_Tutorial.pdf">Tutorial #2</a></li>
 </ul>
 </div>
-<div id="outline-container-org0ff994f" class="outline-3">
-<h3 id="org0ff994f">Lecture&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
-<div class="outline-text-3" id="text-org0ff994f">
+<div id="outline-container-orgcb39009" class="outline-3">
+<h3 id="orgcb39009">Lecture&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
+<div class="outline-text-3" id="text-orgcb39009">
 <p>
 Refer to the lecture slides <a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/02_Human_Perception.pdf">Here</a> and the required readings:
 </p>
 <ul class="org-ul">
-<li>(Local File)
+<li><a href="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/visualization.html">Lucy Park - Visualisation</a> (Local File)
 <ul class="org-ul">
 <li><a href="https://www.lucypark.kr/courses/2015-dm/visualization.html">Online Link</a></li>
 </ul></li>
-<li><ul class="org-ul">
+<li><a href="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/tvcg.12a.pdf">PDF of Human Visual Perception Plot</a>
+<ul class="org-ul">
 <li><a href="Attachments/VisualAnalytics/Perception in Visualization.html">HTML of Perception in Visualisation</a></li>
 <li><a href="https://www.csc2.ncsu.edu/faculty/healey/PP/">Online Link</a></li>
 </ul></li>
@@ -1301,18 +1317,18 @@ Refer to the lecture slides <a href="file:///home/ryan/Dropbox/Studies/2020Autum
 The Tutorial is <a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/02_Human_Perception.pdf">here</a>
 </p>
 </div>
-<div id="outline-container-org9e077ad" class="outline-4">
-<h4 id="org9e077ad">Last Lecture</h4>
-<div class="outline-text-4" id="text-org9e077ad">
+<div id="outline-container-org428901a" class="outline-4">
+<h4 id="org428901a">Last Lecture</h4>
+<div class="outline-text-4" id="text-org428901a">
 <p>
 Good Visualisations are subjective to a degree, but there are basic rules that
 can be taken from psychology.
 </p>
 </div>
 </div>
-<div id="outline-container-orgff05eb3" class="outline-4">
-<h4 id="orgff05eb3">Module Outline</h4>
-<div class="outline-text-4" id="text-orgff05eb3">
+<div id="outline-container-orgfd5896d" class="outline-4">
+<h4 id="orgfd5896d">Module Outline</h4>
+<div class="outline-text-4" id="text-orgfd5896d">
 <ul class="org-ul">
 <li>Perception and Cognition</li>
 <li>Human Vision</li>
@@ -1328,9 +1344,9 @@ can be taken from psychology.
 </ul>
 </div>
 </div>
-<div id="outline-container-org7b2414e" class="outline-4">
-<h4 id="org7b2414e">Human Vision</h4>
-<div class="outline-text-4" id="text-org7b2414e">
+<div id="outline-container-org03a1003" class="outline-4">
+<h4 id="org03a1003">Human Vision</h4>
+<div class="outline-text-4" id="text-org03a1003">
 <p>
 What you see depends when you look at something you&rsquo;re looking at something
 depends on what you know about.
@@ -1343,9 +1359,9 @@ whereas computers are the opposite, our goal is to leverage those differences.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcb4c879" class="outline-4">
-<h4 id="orgcb4c879">Colour Vision&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
-<div class="outline-text-4" id="text-orgcb4c879">
+<div id="outline-container-org753b83b" class="outline-4">
+<h4 id="org753b83b">Colour Vision&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-org753b83b">
 <p>
 Humans can only identify about 8 colours on a plot, so try to use \(7\pm2\) and
 less than 10, so for example, look at the following:
@@ -1354,7 +1370,7 @@ less than 10, so for example, look at the following:
 
 
 
-<div id="org2ed7db8" class="figure">
+<div id="org2997c90" class="figure">
 <p><img src="Attachments/VisualAnalytics/Perception in Visualization_files/2020-03-11_16-33-46_screenshot.png" alt="2020-03-11_16-33-46_screenshot.png" />
 </p>
 <p><span class="figure-number">Figure 8: </span>Very Busy Plot</p>
@@ -1378,12 +1394,12 @@ There&rsquo;s just too much going on to figure out what&rsquo;s going on, wherea
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org205dbc0"></a>Colour Blindness<br /></li>
+<li><a id="org69f3717"></a>Colour Blindness<br /></li>
 </ul>
 </div>
-<div id="outline-container-orgc2dc38a" class="outline-4">
-<h4 id="orgc2dc38a">Preattentive Processing</h4>
-<div class="outline-text-4" id="text-orgc2dc38a">
+<div id="outline-container-orgb546882" class="outline-4">
+<h4 id="orgb546882">Preattentive Processing</h4>
+<div class="outline-text-4" id="text-orgb546882">
 <p>
 Humans analyse images very rapidly, on the order of 200 ms, it&rsquo;s quite accurate
 and processed &rsquo;in parallel&rsquo; by a low level form of consciousness.
@@ -1414,8 +1430,8 @@ They can be rapidly identified.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org167d825"></a>Tasks<br />
-<div class="outline-text-5" id="text-org167d825">
+<li><a id="org157fd97"></a>Tasks<br />
+<div class="outline-text-5" id="text-org157fd97">
 <p>
 People can:
 </p>
@@ -1431,8 +1447,8 @@ Whereas machine learning algorithm&rsquo;s to do that are &rsquo;cutting edge&rs
 </p>
 </div>
 </li>
-<li><a id="org9e9b2f8"></a>Animatoin<br />
-<div class="outline-text-5" id="text-org9e9b2f8">
+<li><a id="org15fcf49"></a>Animatoin<br />
+<div class="outline-text-5" id="text-org15fcf49">
 <p>
 Be careful with animation, it can be distracting
 </p>
@@ -1440,9 +1456,9 @@ Be careful with animation, it can be distracting
 </li>
 </ul>
 </div>
-<div id="outline-container-org89dc4c6" class="outline-4">
-<h4 id="org89dc4c6">Visualisation Theory</h4>
-<div class="outline-text-4" id="text-org89dc4c6">
+<div id="outline-container-orgc8e2224" class="outline-4">
+<h4 id="orgc8e2224">Visualisation Theory</h4>
+<div class="outline-text-4" id="text-orgc8e2224">
 <p>
 Read the following article for the tutorial
 </p>
@@ -1452,9 +1468,9 @@ Read the following article for the tutorial
 </ul>
 </div>
 </div>
-<div id="outline-container-org5e623d8" class="outline-4">
-<h4 id="org5e623d8">Gestalt Principle</h4>
-<div class="outline-text-4" id="text-org5e623d8">
+<div id="outline-container-org1d9dc43" class="outline-4">
+<h4 id="org1d9dc43">Gestalt Principle</h4>
+<div class="outline-text-4" id="text-org1d9dc43">
 <p>
 German psycholoogists in the early 1900&rsquo;s attempted to understand perception and
 formed the <i>Gestalt School of Psychology</i> (Gestalt is german for shape/form)
@@ -1468,16 +1484,16 @@ formed the <i>Gestalt School of Psychology</i> (Gestalt is german for shape/form
 </div>
 </div>
 </div>
-<div id="outline-container-orgfdda007" class="outline-4">
-<h4 id="orgfdda007">Visual Encoding</h4>
-<div class="outline-text-4" id="text-orgfdda007">
+<div id="outline-container-org9e0618e" class="outline-4">
+<h4 id="org9e0618e">Visual Encoding</h4>
+<div class="outline-text-4" id="text-org9e0618e">
 <p>
 Effective Encoding of Data Mackinlay 1986 will be in tutorial 2
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org859bb22"></a>Scales of Measurement<br />
-<div class="outline-text-5" id="text-org859bb22">
+<li><a id="orgc72c830"></a>Scales of Measurement<br />
+<div class="outline-text-5" id="text-orgc72c830">
 <p>
 Basically you just want to read this:
 </p>
@@ -1500,9 +1516,9 @@ And pay attention to things like this:
 </li>
 </ul>
 </div>
-<div id="outline-container-org861e948" class="outline-4">
-<h4 id="org861e948">Evaluating a Visualisation</h4>
-<div class="outline-text-4" id="text-org861e948">
+<div id="outline-container-orgcda1bdf" class="outline-4">
+<h4 id="orgcda1bdf">Evaluating a Visualisation</h4>
+<div class="outline-text-4" id="text-orgcda1bdf">
 <p>
 In order to evaluate a visualisation, consider the following (taken from <a href="https://www.lucypark.kr/courses/2015-dm/visualization.html#bivariate-data-2d">here</a>)
 </p>
@@ -1536,25 +1552,25 @@ In order to evaluate a visualisation, consider the following (taken from <a href
 </ul>
 </div>
 </div>
-<div id="outline-container-org807cf64" class="outline-4">
-<h4 id="org807cf64">Potential Assignment resources</h4>
-<div class="outline-text-4" id="text-org807cf64">
+<div id="outline-container-orgcd1fa71" class="outline-4">
+<h4 id="orgcd1fa71">Potential Assignment resources</h4>
+<div class="outline-text-4" id="text-orgcd1fa71">
 <p>
 <a href="https://observablehq.com/@mbostock/the-wealth-health-of-nations">This Visualisation</a> is potentially something that I could use for one of the assignments.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org3ea4e15" class="outline-3">
-<h3 id="org3ea4e15">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></h3>
-<div class="outline-text-3" id="text-org3ea4e15">
+<div id="outline-container-org9895474" class="outline-3">
+<h3 id="org9895474">Tutorial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></h3>
+<div class="outline-text-3" id="text-org9895474">
 <p>
 The Tutorial is <a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/02_Human_Perception.pdf">here</a>
 </p>
 </div>
-<div id="outline-container-orga0f5026" class="outline-4">
-<h4 id="orga0f5026">All Exercises</h4>
-<div class="outline-text-4" id="text-orga0f5026">
+<div id="outline-container-orgb914b7d" class="outline-4">
+<h4 id="orgb914b7d">All Exercises</h4>
+<div class="outline-text-4" id="text-orgb914b7d">
 <p>
 Tutorial Exercises:
 </p>
@@ -1582,9 +1598,9 @@ attributes or encoding should we consider?</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org41bf774" class="outline-4">
-<h4 id="org41bf774">Question 1</h4>
-<div class="outline-text-4" id="text-org41bf774">
+<div id="outline-container-orgbf7b69e" class="outline-4">
+<h4 id="orgbf7b69e">Question 1</h4>
+<div class="outline-text-4" id="text-orgbf7b69e">
 <blockquote>
 <ul class="org-ul">
 <li>1. What are the differences between perception and cognition?</li>
@@ -1598,8 +1614,8 @@ related to the understanding and processing of ideas.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org4a2a63c"></a>Perception<br />
-<div class="outline-text-5" id="text-org4a2a63c">
+<li><a id="org6c2122b"></a>Perception<br />
+<div class="outline-text-5" id="text-org6c2122b">
 <p>
 Perception is identifying and understanding a sensory input, such as perceiving:
 </p>
@@ -1625,8 +1641,8 @@ Generally perception is not something done consciously.
 </p>
 </div>
 </li>
-<li><a id="orgb9dfa57"></a>Cognition<br />
-<div class="outline-text-5" id="text-orgb9dfa57">
+<li><a id="orgb773407"></a>Cognition<br />
+<div class="outline-text-5" id="text-orgb773407">
 <p>
 Cognition is processing information in an analytical way, working through a
 problem using prior training, it is done consciously.
@@ -1654,9 +1670,9 @@ a problem in a particular way.
 </li>
 </ul>
 </div>
-<div id="outline-container-orgbacdd7e" class="outline-4">
-<h4 id="orgbacdd7e">Question 2</h4>
-<div class="outline-text-4" id="text-orgbacdd7e">
+<div id="outline-container-org2dc3607" class="outline-4">
+<h4 id="org2dc3607">Question 2</h4>
+<div class="outline-text-4" id="text-org2dc3607">
 <blockquote>
 <ul class="org-ul">
 <li>2. Why human vision is important for data analysis? What are the pros and cons
@@ -1721,32 +1737,32 @@ Looking at the raw data however:
 <tbody>
 <tr>
 <td class="org-right">1</td>
-<td class="org-right">-7.9</td>
+<td class="org-right">31.2</td>
 </tr>
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-right">-18.6</td>
+<td class="org-right">10.5</td>
 </tr>
 
 <tr>
 <td class="org-right">3</td>
-<td class="org-right">-1.2</td>
+<td class="org-right">21</td>
 </tr>
 
 <tr>
 <td class="org-right">4</td>
-<td class="org-right">33.1</td>
+<td class="org-right">34.3</td>
 </tr>
 
 <tr>
 <td class="org-right">5</td>
-<td class="org-right">10.1</td>
+<td class="org-right">18</td>
 </tr>
 
 <tr>
 <td class="org-right">6</td>
-<td class="org-right">24.4</td>
+<td class="org-right">-0.7</td>
 </tr>
 </tbody>
 </table>
@@ -1771,8 +1787,8 @@ our advantage.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org49aa74c"></a>Human Visual System and Automated Analysis<br />
-<div class="outline-text-5" id="text-org49aa74c">
+<li><a id="org2d05e44"></a>Human Visual System and Automated Analysis<br />
+<div class="outline-text-5" id="text-org2d05e44">
 <p>
 The pros and cons of Human Perception and Automated Analysis are best
 highlighted by considering the difficulties of unsupervised learning in the
@@ -1788,7 +1804,7 @@ cases resource intensive.
 
 <p>
 This is very similar to the proximity <i>Gestalt</i> law discussed in question 8
-below at <a href="#orgfdd4065">No description for this link</a>.
+below at <a href="#orgcce0cca">No description for this link</a>.
 </p>
 
 <p>
@@ -1815,8 +1831,8 @@ that don&rsquo;t significantly contribute to the variance of the response.</li>
 </ul>
 </div>
 <ul class="org-ul">
-<li><a id="org339d2a1"></a>Summary<br />
-<div class="outline-text-6" id="text-org339d2a1">
+<li><a id="org636facd"></a>Summary<br />
+<div class="outline-text-6" id="text-org636facd">
 <ul class="org-ul">
 <li>Humans can make rapid and accurate relative judgements but these judements are</li>
 </ul>
@@ -1836,9 +1852,9 @@ value judgement without human guidance.
 </li>
 </ul>
 </div>
-<div id="outline-container-orgbccd7ae" class="outline-4">
-<h4 id="orgbccd7ae">Question 3</h4>
-<div class="outline-text-4" id="text-orgbccd7ae">
+<div id="outline-container-org213bd76" class="outline-4">
+<h4 id="org213bd76">Question 3</h4>
+<div class="outline-text-4" id="text-org213bd76">
 <blockquote>
 <ul class="org-ul">
 <li>3. Why colours are important in visualisation?</li>
@@ -1852,9 +1868,9 @@ different relationships as they relate to different populations.
 </p>
 </div>
 </div>
-<div id="outline-container-orge65dd82" class="outline-4">
-<h4 id="orge65dd82">Question 4</h4>
-<div class="outline-text-4" id="text-orge65dd82">
+<div id="outline-container-org4cfddcd" class="outline-4">
+<h4 id="org4cfddcd">Question 4</h4>
+<div class="outline-text-4" id="text-org4cfddcd">
 <blockquote>
 <ul class="org-ul">
 <li>4. List at least 5 main things that we should be aware when using colours in
@@ -1863,16 +1879,16 @@ visualisation.</li>
 </blockquote>
 </div>
 <ul class="org-ul">
-<li><a id="orgabeceea"></a>(1) Number of Colours<br />
-<div class="outline-text-5" id="text-orgabeceea">
+<li><a id="org01d752b"></a>(1) Number of Colours<br />
+<div class="outline-text-5" id="text-org01d752b">
 <p>
 Humans can only identify about 8 colours on a plot, so try to use \(7\pm2\) and
 less than 10.
 </p>
 </div>
 </li>
-<li><a id="org277ff79"></a>(2) Data Type<br />
-<div class="outline-text-5" id="text-org277ff79">
+<li><a id="org9d7e3e3"></a>(2) Data Type<br />
+<div class="outline-text-5" id="text-org9d7e3e3">
 <p>
 Data may be ordered and may be continuous or discrete:
 </p>
@@ -1956,8 +1972,8 @@ display.brewer.pal(<span style="color: #da8548; font-weight: bold;">3</span>,<sp
 </div>
 </div>
 </li>
-<li><a id="orgd8fa92f"></a>(3) Viewing Medium<br />
-<div class="outline-text-5" id="text-orgd8fa92f">
+<li><a id="org94ed04e"></a>(3) Viewing Medium<br />
+<div class="outline-text-5" id="text-org94ed04e">
 <p>
 A visualisation may have different levels of perceived brightness depending on
 how it&rsquo;s viewed, for example a visualisation made on a pc with a black
@@ -1967,8 +1983,8 @@ in graph.
 </p>
 </div>
 </li>
-<li><a id="org7d0c551"></a>(4) Contrast<br />
-<div class="outline-text-5" id="text-org7d0c551">
+<li><a id="org0f90525"></a>(4) Contrast<br />
+<div class="outline-text-5" id="text-org0f90525">
 <p>
 If a plot is converted to greyscale in order to print, there may be insufficient
 contrast to perceive differences, this can be avoided if attention is paid to
@@ -1976,8 +1992,8 @@ ensure good &rsquo;seperation&rsquo; between elements regardless of contrast.
 </p>
 </div>
 </li>
-<li><a id="orgbabff27"></a>(5) edge enhancement<br />
-<div class="outline-text-5" id="text-orgbabff27">
+<li><a id="orgcdf4e73"></a>(5) edge enhancement<br />
+<div class="outline-text-5" id="text-orgcdf4e73">
 <p>
 using colours to highlight edges may make a plot harder or easier to read, for
 example consider the following histograms:
@@ -2066,9 +2082,9 @@ grid.arrange(grobs = plots, layout_matrix = layout)
 </li>
 </ul>
 </div>
-<div id="outline-container-org79e9702" class="outline-4">
-<h4 id="org79e9702">Question 5</h4>
-<div class="outline-text-4" id="text-org79e9702">
+<div id="outline-container-orgc8e1479" class="outline-4">
+<h4 id="orgc8e1479">Question 5</h4>
+<div class="outline-text-4" id="text-orgc8e1479">
 <blockquote>
 <ul class="org-ul">
 <li>5. Using a search engine, explore 3 good visualisations that use colours to
@@ -2091,8 +2107,8 @@ And many good examples can be found on the <i><a href="https://rmarkdown.rstudio
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org76e1359"></a>Pokemon dashboard<br />
-<div class="outline-text-5" id="text-org76e1359">
+<li><a id="org1ade251"></a>Pokemon dashboard<br />
+<div class="outline-text-5" id="text-org1ade251">
 <p>
 The <a href="http://jkunst.com/flexdashboard-highcharter-examples/pokemon/">Pokemon type dashboard</a> uses colours effectively because it uses discrete and
 distinct colours to represent discrete variables.
@@ -2115,8 +2131,8 @@ to frequency and for the treemap to be sufficiently distinct.
 </div>
 </div>
 </li>
-<li><a id="orgf77b423"></a>Nuclear Waste Sites<br />
-<div class="outline-text-5" id="text-orgf77b423">
+<li><a id="orgef0e84d"></a>Nuclear Waste Sites<br />
+<div class="outline-text-5" id="text-orgef0e84d">
 <p>
 The <a href="https://beta.rstudioconnect.com/jjallaire/htmlwidgets-waste-sites/htmlwidgets-waste-sites.html">Nuclear Waste Dashboard</a> uses colour effectively because it uses a different
 colour pallette for the two types of plots which represent the number of sites
@@ -2135,8 +2151,8 @@ the intended audience.
 </div>
 </div>
 </li>
-<li><a id="org701df74"></a>Neighbourhood Diversity<br />
-<div class="outline-text-5" id="text-org701df74">
+<li><a id="org7b827d7"></a>Neighbourhood Diversity<br />
+<div class="outline-text-5" id="text-org7b827d7">
 <p>
 The <a href="https://walkerke.shinyapps.io/neighborhood_diversity/">Neighbourhood Diversity</a> visualisation uses colour effectively because the
 colour choses is a continous sequential pallete increasing in saturation, this makes
@@ -2152,8 +2168,8 @@ correspondence with the density of the observation.
 </div>
 </div>
 </li>
-<li><a id="org72b3758"></a>Using Colours<br />
-<div class="outline-text-5" id="text-org72b3758">
+<li><a id="orgd628e3a"></a>Using Colours<br />
+<div class="outline-text-5" id="text-orgd628e3a">
 <p>
 The following graphic is an exemplar graphic from <i>DataQuest</i> but it shows how
 it is often desirable to restructure a visualisation based on the data as
@@ -2169,9 +2185,9 @@ opposed to overusing colours which can be difficult to interpret in high amounts
 </li>
 </ul>
 </div>
-<div id="outline-container-orgcf64b18" class="outline-4">
-<h4 id="orgcf64b18">Question 6</h4>
-<div class="outline-text-4" id="text-orgcf64b18">
+<div id="outline-container-orgebb3d44" class="outline-4">
+<h4 id="orgebb3d44">Question 6</h4>
+<div class="outline-text-4" id="text-orgebb3d44">
 <blockquote>
 <ul class="org-ul">
 <li>6. Test your eye with colours: <a href="http://enchroma.com/test/instructions/">http://enchroma.com/test/instructions/</a></li>
@@ -2191,9 +2207,9 @@ any number here:
 </div>
 </div>
 </div>
-<div id="outline-container-org5619c07" class="outline-4">
-<h4 id="org5619c07">Question 7</h4>
-<div class="outline-text-4" id="text-org5619c07">
+<div id="outline-container-org8df9fd1" class="outline-4">
+<h4 id="org8df9fd1">Question 7</h4>
+<div class="outline-text-4" id="text-org8df9fd1">
 <blockquote>
 <ul class="org-ul">
 <li>7. Why do you think pre-attentive processing is important in visualisation? Can
@@ -2215,9 +2231,9 @@ patterns may be lost in the noise of the data.
 </p>
 </div>
 </div>
-<div id="outline-container-org92e7967" class="outline-4">
-<h4 id="org92e7967">Question 8</h4>
-<div class="outline-text-4" id="text-org92e7967">
+<div id="outline-container-org5936643" class="outline-4">
+<h4 id="org5936643">Question 8</h4>
+<div class="outline-text-4" id="text-org5936643">
 <blockquote>
 <ul class="org-ul">
 <li>8. What are the main aspects of Gestalt Laws?</li>
@@ -2225,13 +2241,13 @@ patterns may be lost in the noise of the data.
 </blockquote>
 
 <p>
-<a id="orgfdd4065"></a>
+<a id="orgcce0cca"></a>
 The Gestalt Laws provide that:
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org186b22d"></a>Grouping<br />
-<div class="outline-text-5" id="text-org186b22d">
+<li><a id="orgaadc8f5"></a>Grouping<br />
+<div class="outline-text-5" id="text-orgaadc8f5">
 <ul class="org-ul">
 <li>Objects close together will be perceived as groups
 <ul class="org-ul">
@@ -2241,8 +2257,8 @@ complex for machines.</li>
 </ul>
 </div>
 </li>
-<li><a id="org532271d"></a>Like Elements<br />
-<div class="outline-text-5" id="text-org532271d">
+<li><a id="orgdf4f717"></a>Like Elements<br />
+<div class="outline-text-5" id="text-orgdf4f717">
 <ul class="org-ul">
 <li>If elements are similar in features such as shape, colour or size they will
 people are more ready to consider the data as grouped together
@@ -2254,8 +2270,8 @@ distinctions as appropriate.</li>
 </ul>
 </div>
 </li>
-<li><a id="orgf0c41de"></a>Connected Elements<br />
-<div class="outline-text-5" id="text-orgf0c41de">
+<li><a id="orgd33d11f"></a>Connected Elements<br />
+<div class="outline-text-5" id="text-orgd33d11f">
 <ul class="org-ul">
 <li>Data That is connected in some way (by a line, curve or border) will give
 the effect of creating clusters or groups in data</li>
@@ -2264,9 +2280,9 @@ the effect of creating clusters or groups in data</li>
 </li>
 </ul>
 </div>
-<div id="outline-container-orgb5e8385" class="outline-4">
-<h4 id="orgb5e8385">Question 9</h4>
-<div class="outline-text-4" id="text-orgb5e8385">
+<div id="outline-container-org2cec5c3" class="outline-4">
+<h4 id="org2cec5c3">Question 9</h4>
+<div class="outline-text-4" id="text-org2cec5c3">
 <blockquote>
 <ul class="org-ul">
 <li>9. Read the slide “Effective Encoding of Data” in Lecture Note 2
@@ -2278,8 +2294,8 @@ attributes or encoding should we consider?</li>
 </blockquote>
 </div>
 <ul class="org-ul">
-<li><a id="org2a9dcdb"></a>Quantitative Value<br />
-<div class="outline-text-5" id="text-org2a9dcdb">
+<li><a id="org65d5f67"></a>Quantitative Value<br />
+<div class="outline-text-5" id="text-org65d5f67">
 <p>
 If data has a quantitative value, the attributes that should be considered are
 </p>
@@ -2293,8 +2309,8 @@ If data has a quantitative value, the attributes that should be considered are
 </ol>
 </div>
 </li>
-<li><a id="orgb6d024c"></a>Nominal Value<br />
-<div class="outline-text-5" id="text-orgb6d024c">
+<li><a id="org54e9f14"></a>Nominal Value<br />
+<div class="outline-text-5" id="text-org54e9f14">
 <p>
 If data has a nominal value, the five most important attributes to consider are:
 </p>
@@ -2310,9 +2326,9 @@ If data has a nominal value, the five most important attributes to consider are:
 </li>
 </ul>
 </div>
-<div id="outline-container-orgfca164b" class="outline-4">
-<h4 id="orgfca164b">Question 10</h4>
-<div class="outline-text-4" id="text-orgfca164b">
+<div id="outline-container-org6f060e7" class="outline-4">
+<h4 id="org6f060e7">Question 10</h4>
+<div class="outline-text-4" id="text-org6f060e7">
 <blockquote>
 <ul class="org-ul">
 <li>10. Read the following article: <a href="http://www.csc.ncsu.edu/faculty/healey/PP/index.html">http://www.csc.ncsu.edu/faculty/healey/PP/index.html</a></li>
@@ -2322,13 +2338,13 @@ If data has a nominal value, the five most important attributes to consider are:
 </div>
 </div>
 </div>
-<div id="outline-container-org9596ee2" class="outline-2">
-<h2 id="org9596ee2">(Wk 3) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h2>
-<div class="outline-text-2" id="text-org9596ee2">
+<div id="outline-container-orgf320fc1" class="outline-2">
+<h2 id="orgf320fc1">(Wk 3) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h2>
+<div class="outline-text-2" id="text-orgf320fc1">
 </div>
-<div id="outline-container-orgce424ce" class="outline-3">
-<h3 id="orgce424ce"><span class="done DONE">DONE</span> Lecture</h3>
-<div class="outline-text-3" id="text-orgce424ce">
+<div id="outline-container-org8636311" class="outline-3">
+<h3 id="org8636311"><span class="done DONE">DONE</span> Lecture</h3>
+<div class="outline-text-3" id="text-org8636311">
 <p>
 Refer to:
 </p>
@@ -2338,28 +2354,28 @@ Refer to:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaf4f876" class="outline-3">
-<h3 id="orgaf4f876">Relational Data Visualisation – Part I</h3>
+<div id="outline-container-org0eac541" class="outline-3">
+<h3 id="org0eac541">Relational Data Visualisation – Part I</h3>
 </div>
-<div id="outline-container-org7ac9327" class="outline-3">
-<h3 id="org7ac9327">Introduction to Graph Visualisation</h3>
+<div id="outline-container-org4aabe8b" class="outline-3">
+<h3 id="org4aabe8b">Introduction to Graph Visualisation</h3>
 </div>
-<div id="outline-container-org01f68a3" class="outline-3">
-<h3 id="org01f68a3">Tree Visualisation</h3>
-<div class="outline-text-3" id="text-org01f68a3">
+<div id="outline-container-orga56b07a" class="outline-3">
+<h3 id="orga56b07a">Tree Visualisation</h3>
+<div class="outline-text-3" id="text-orga56b07a">
 </div>
-<div id="outline-container-org8aec07b" class="outline-4">
-<h4 id="org8aec07b">Connection Approach</h4>
+<div id="outline-container-orgf4622dc" class="outline-4">
+<h4 id="orgf4622dc">Connection Approach</h4>
 </div>
-<div id="outline-container-org7988e61" class="outline-4">
-<h4 id="org7988e61">Enclosure Approach</h4>
+<div id="outline-container-org2bfa8c3" class="outline-4">
+<h4 id="org2bfa8c3">Enclosure Approach</h4>
 </div>
-<div id="outline-container-org8cc3cff" class="outline-4">
-<h4 id="org8cc3cff">Connection+Enclosure Approach</h4>
+<div id="outline-container-org872d943" class="outline-4">
+<h4 id="org872d943">Connection+Enclosure Approach</h4>
 </div>
-<div id="outline-container-orgd19a5af" class="outline-4">
-<h4 id="orgd19a5af">Tree Graphs</h4>
-<div class="outline-text-4" id="text-orgd19a5af">
+<div id="outline-container-orgaf3c2dd" class="outline-4">
+<h4 id="orgaf3c2dd">Tree Graphs</h4>
+<div class="outline-text-4" id="text-orgaf3c2dd">
 <p>
 Tree graphs show heirarcy so for example:
 </p>
@@ -2370,12 +2386,12 @@ Tree graphs show heirarcy so for example:
 </ul>
 
 <p>
-Sunburst tree maps are also known as ring charts as shown before at <a href="#org1e81660">No description for this link</a>
+Sunburst tree maps are also known as ring charts as shown before at <a href="#orgf0a00da">No description for this link</a>
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="orgd651fcf"></a>Tree Maps<br />
-<div class="outline-text-5" id="text-orgd651fcf">
+<li><a id="orgf5d096a"></a>Tree Maps<br />
+<div class="outline-text-5" id="text-orgf5d096a">
 <p>
 <a href="https://www.jasondavies.com/voronoi-treemap/">Voronoi Treemaps are very nice</a>
 </p>
@@ -2384,13 +2400,13 @@ Sunburst tree maps are also known as ring charts as shown before at <a href="#or
 </ul>
 </div>
 </div>
-<div id="outline-container-org375c72f" class="outline-3">
-<h3 id="org375c72f">Trees in Org Mode</h3>
-<div class="outline-text-3" id="text-org375c72f">
+<div id="outline-container-orga2df591" class="outline-3">
+<h3 id="orga2df591">Trees in Org Mode</h3>
+<div class="outline-text-3" id="text-orga2df591">
 </div>
-<div id="outline-container-org6d340fa" class="outline-4">
-<h4 id="org6d340fa">Drawing Graphics Technologies</h4>
-<div class="outline-text-4" id="text-org6d340fa">
+<div id="outline-container-org3355d38" class="outline-4">
+<h4 id="org3355d38">Drawing Graphics Technologies</h4>
+<div class="outline-text-4" id="text-org3355d38">
 <ul class="org-ul">
 <li><a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT Graphic Description Language</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Graphviz">GraphViz</a></li>
@@ -2398,9 +2414,9 @@ Sunburst tree maps are also known as ring charts as shown before at <a href="#or
 </ul>
 </div>
 </div>
-<div id="outline-container-org72454cc" class="outline-4">
-<h4 id="org72454cc">PlantUML</h4>
-<div class="outline-text-4" id="text-org72454cc">
+<div id="outline-container-orgc32de4c" class="outline-4">
+<h4 id="orgc32de4c">PlantUML</h4>
+<div class="outline-text-4" id="text-orgc32de4c">
 <p>
 I&rsquo;m looking at <a href="https://nasseralkmim.github.io/notes/2016/08/14/using-dot-to-make-diagrams-in-org-mode/">this resource</a>, there is also <a href="https://plantuml.com/emacs">Official Documentation</a>
 </p>
@@ -2443,8 +2459,8 @@ Test the output
 </ol>
 </div>
 <ul class="org-ul">
-<li><a id="org185ebe5"></a>Examples<br />
-<div class="outline-text-5" id="text-org185ebe5">
+<li><a id="org126fbb0"></a>Examples<br />
+<div class="outline-text-5" id="text-org126fbb0">
 <p>
 There are many examples located <a href="https://real-world-plantuml.com/">here</a>
 </p>
@@ -2452,9 +2468,9 @@ There are many examples located <a href="https://real-world-plantuml.com/">here<
 </li>
 </ul>
 </div>
-<div id="outline-container-org73d12b7" class="outline-4">
-<h4 id="org73d12b7">Mermaid</h4>
-<div class="outline-text-4" id="text-org73d12b7">
+<div id="outline-container-orgd9b1757" class="outline-4">
+<h4 id="orgd9b1757">Mermaid</h4>
+<div class="outline-text-4" id="text-orgd9b1757">
 <ol class="org-ol">
 <li><p>
 Install <code>mermaid.cli</code> , refer to the <a href="https://github.com/mermaidjs/mermaid.cli">GitHub</a>:
@@ -2477,7 +2493,7 @@ Install the Spacemacs layer by cloning <a href="https://github.com/arnm/mermaid-
 <code>mermaid-mode</code> from MELPA using <code>M-x package-install</code>. as described <a href="https://github.com/arnm/ob-mermaid">here.</a>
 </p></li>
 <li><p>
-Add <code>ob-mermaid</code> to the org list 
+Add <code>ob-mermaid</code> to the org list <a href="file:///home/ryan/.emacs.d/init.el">here:</a>
 </p>
 <div class="org-src-container">
 <pre class="src src-elisp">    <span style="color: #51afef;">(</span><span style="color: #c678dd;">org-babel-do-load-languages</span>
@@ -2500,8 +2516,8 @@ Add <code>ob-mermaid</code> to the org list
 Find out where the mermaid command line tool (i.e. <code>mmdc</code>)  is installed:
 </p>
 <div class="org-src-container">
-<pre class="src src-bash">    which mmdc
-    <span style="color: #ECBE7B;">sudo</span> <span style="color: #ECBE7B;">ln</span> <span style="color: #51afef;">(</span>which mmdc<span style="color: #51afef;">)</span> /bin/mmdc
+<pre class="src src-bash">    <span style="color: #c678dd;">which</span> mmdc
+    <span style="color: #ECBE7B;">sudo</span> <span style="color: #ECBE7B;">ln</span> <span style="color: #51afef;">(</span><span style="color: #c678dd;">which</span> mmdc<span style="color: #51afef;">)</span> /bin/mmdc
 </pre>
 </div></li>
 <li><p>
@@ -2519,8 +2535,8 @@ Tell <code>org-mode</code> where  <code>mmdc</code> is installed:
 </ol>
 </div>
 <ul class="org-ul">
-<li><a id="orge2cf746"></a>Supported properties<br />
-<div class="outline-text-5" id="text-orge2cf746">
+<li><a id="org7b29e6d"></a>Supported properties<br />
+<div class="outline-text-5" id="text-org7b29e6d">
 <p>
 <code>file</code> - Output file. It should be either svg, png or pdf.
 </p>
@@ -2556,13 +2572,13 @@ Tell <code>org-mode</code> where  <code>mmdc</code> is installed:
 </li>
 </ul>
 </div>
-<div id="outline-container-org307146d" class="outline-4">
-<h4 id="org307146d">FlowchartJS</h4>
+<div id="outline-container-org233df0b" class="outline-4">
+<h4 id="org233df0b">FlowchartJS</h4>
 </div>
 </div>
-<div id="outline-container-orgc7e10ca" class="outline-3">
-<h3 id="orgc7e10ca">Tools for making graphs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="graph_viz">graph_viz</span></span></h3>
-<div class="outline-text-3" id="text-orgc7e10ca">
+<div id="outline-container-orga67fbca" class="outline-3">
+<h3 id="orga67fbca">Tools for making graphs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="graph_viz">graph_viz</span></span></h3>
+<div class="outline-text-3" id="text-orga67fbca">
 <p>
 by graphs we mean like network graphs or trees.
 </p>
@@ -2618,23 +2634,23 @@ Also checkout <a href="https://www.d3-graph-gallery.com/network.html">this d3 r 
 </p>
 </div>
 </div>
-<div id="outline-container-org0a79fdc" class="outline-3">
-<h3 id="org0a79fdc"><span class="done DONE">DONE</span> Tutorial</h3>
-<div class="outline-text-3" id="text-org0a79fdc">
+<div id="outline-container-org6f9cb4b" class="outline-3">
+<h3 id="org6f9cb4b"><span class="done DONE">DONE</span> Tutorial</h3>
+<div class="outline-text-3" id="text-org6f9cb4b">
 </div>
-<div id="outline-container-orgc3eb066" class="outline-4">
-<h4 id="orgc3eb066">Question 1</h4>
-<div class="outline-text-4" id="text-orgc3eb066">
+<div id="outline-container-org50b52f5" class="outline-4">
+<h4 id="org50b52f5">Question 1</h4>
+<div class="outline-text-4" id="text-org50b52f5">
 
-<div id="org2f3f9fe" class="figure">
+<div id="orged41244" class="figure">
 <p><img src="(Wk_3)_Relational_Data_Visualisation_(Part_I)/2020-03-25_16-53-01_screenshot.png" alt="2020-03-25_16-53-01_screenshot.png" />
 </p>
 <p><span class="figure-number">Figure 24: </span>Graph to Fix</p>
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgf2237b6"></a>Possible Improvements<br />
-<div class="outline-text-5" id="text-orgf2237b6">
+<li><a id="org684e582"></a>Possible Improvements<br />
+<div class="outline-text-5" id="text-org684e582">
 <ol class="org-ol">
 <li>minimizing the intersectoin of edges</li>
 <li>Using Colours to show the distinction between nodes</li>
@@ -2645,8 +2661,8 @@ Possible tools that can be used are:
 </p>
 </div>
 </li>
-<li><a id="org3bf584c"></a>Generated DOT Graph<br />
-<div class="outline-text-5" id="text-org3bf584c">
+<li><a id="orgb836149"></a>Generated DOT Graph<br />
+<div class="outline-text-5" id="text-orgb836149">
 <p>
 The easiest way to generate graph is to use the <a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT</a> library with <i><a href="https://plantuml.com/download">PlantUML</a></i>:
 </p>
@@ -2718,22 +2734,23 @@ H -&gt; B
 </details>
 
 
-<div id="org1fcfb1c" class="figure">
+<div id="orge42ea95" class="figure">
 <p><img src="./Attachments/VisualAnalytics/DOTGraphwk4q1.png" alt="DOTGraphwk4q1.png" width="400px" />
 </p>
 <p><span class="figure-number">Figure 25: </span>DOT graph created using PlantUML</p>
 </div>
 </div>
 </li>
-<li><a id="org833ca90"></a>Sequence Diagram<br />
-<div class="outline-text-5" id="text-org833ca90">
+<li><a id="orgd7cb575"></a>Sequence Diagram<br />
+<div class="outline-text-5" id="text-orgd7cb575">
 <p>
 Plant UML can also create a sequence diagram which is a different type of
 visualisation but is still an interesting way to visualise the relationships.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-javascript">@startuml
+<pre class="src src-plantuml">#+begin_src javascript :exports code
+@startuml
     A--&gt;B
     A--&gt;C
     A--&gt;G
@@ -2757,13 +2774,21 @@ visualisation but is still an interesting way to visualise the relationships.
 @enduml
 </pre>
 </div>
+
+
+
+<div id="orgd2fc648" class="figure">
+<p><img src="./Attachments/VisualAnalytics/pumlseqwk4q1.png" alt="pumlseqwk4q1.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 26: </span>DOT graph created using PlantUML</p>
+</div>
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org14d11f2" class="outline-4">
-<h4 id="org14d11f2">Question 2</h4>
-<div class="outline-text-4" id="text-org14d11f2">
+<div id="outline-container-org1d6f13f" class="outline-4">
+<h4 id="org1d6f13f">Question 2</h4>
+<div class="outline-text-4" id="text-org1d6f13f">
 <blockquote>
 <p>
 Explore and find 3 good and 3 bad examples of graphs on the Internet, including a
@@ -2772,12 +2797,12 @@ justification for each example.
 </blockquote>
 </div>
 <ul class="org-ul">
-<li><a id="orgd033eaf"></a>Good Examples<br />
+<li><a id="org16d6b0f"></a>Good Examples<br />
 <ul class="org-ul">
-<li><a id="orgacd9830"></a>Solar Winds<br />
-<div class="outline-text-6" id="text-orgacd9830">
+<li><a id="org7d40d6b"></a>Solar Winds<br />
+<div class="outline-text-6" id="text-org7d40d6b">
 <p>
-The proceeding image shown in figure <a href="#org2424820">26</a> is an exemplar graph from a
+The proceeding image shown in figure <a href="#orgd812351">27</a> is an exemplar graph from a
 commercial piece of software called <a href="https://www.solarwinds.com/network-performance-monitor/use-cases/network-visualization">Solar Winds</a><sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>, it is an effective plot
 because:
 </p>
@@ -2789,19 +2814,19 @@ because:
 </ul>
 
 
-<div id="org2424820" class="figure">
+<div id="orgd812351" class="figure">
 <p><img src="Tutorial/2020-03-25_18-12-49_orion-maps-summary.ashx.png" alt="2020-03-25_18-12-49_orion-maps-summary.ashx.png" width="300px" />
 </p>
-<p><span class="figure-number">Figure 26: </span>Exemplar plot for Solar Winds product</p>
+<p><span class="figure-number">Figure 27: </span>Exemplar plot for Solar Winds product</p>
 </div>
 </div>
 </li>
-<li><a id="org0b65737"></a>Standord Paper Visualisation<br />
-<div class="outline-text-6" id="text-org0b65737">
+<li><a id="org51c456a"></a>Standord Paper Visualisation<br />
+<div class="outline-text-6" id="text-org51c456a">
 <p>
-The Proceeding Plot shown in figure <a href="#org6158282">27</a>
-is a graph showing feature construction in a paper written at 
-<sup><a href="#citeproc_bib_item_5">5</a></sup>  presumably produced in TikZ, it is an effective graph because:
+The Proceeding Plot shown in figure <a href="#orgdd85e67">28</a> is a graph showing feature
+construction in a paper written at Standford University <sup><a href="#citeproc_bib_item_5">5</a></sup> presumably
+produced in TikZ, it is an effective graph because:
 </p>
 
 <ul class="org-ul">
@@ -2814,17 +2839,17 @@ is denoted by a slight bulge making it clear to delineate the edges</li>
 
 
 
-<div id="org6158282" class="figure">
+<div id="orgdd85e67" class="figure">
 <p><img src="./Attachments/VisualAnalytics/Stanford_LaTeX_Tikz.png" alt="Stanford_LaTeX_Tikz.png" width="300px" />
 </p>
-<p><span class="figure-number">Figure 27: </span>Correlation Network Diagram of <code>mtcars</code> data</p>
+<p><span class="figure-number">Figure 28: </span>Correlation Network Diagram of <code>mtcars</code> data</p>
 </div>
 </div>
 </li>
-<li><a id="org5e5dbed"></a>Unix Development<br />
-<div class="outline-text-6" id="text-org5e5dbed">
+<li><a id="org8fb8d20"></a>Unix Development<br />
+<div class="outline-text-6" id="text-org8fb8d20">
 <p>
-The proceeding plot shown in figure <a href="#org9df6aba">1</a> is a graph taken from the
+The proceeding plot shown in figure <a href="#org168c832">1</a> is a graph taken from the
 <a href="https://graphviz.readthedocs.io/en/stable/examples.html">graphviz</a> documentation created using the <a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT</a> language. It is a effective graph
 because:
 </p>
@@ -2835,40 +2860,31 @@ because:
 <li>If the edges do overlap it is to minimise the <i>cost</i> of spacing</li>
 </ul></li>
 </ul>
-
-
-
-
-<div class="figure">
-<p><object type="image/svg+xml" data="Tutorial/2020-03-25_18-45-17_unix.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
-</p>
-</div>
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orga188a44"></a>Bad Examples<br />
+<li><a id="orgfe109c6"></a>Bad Examples<br />
 <ul class="org-ul">
-<li><a id="orgaad0631"></a>igraph Library Example<br />
-<div class="outline-text-6" id="text-orgaad0631">
+<li><a id="org91e2499"></a>igraph Library Example<br />
+<div class="outline-text-6" id="text-org91e2499">
 <p>
-The following plot shown in figure <a href="#org5d4f862">29</a> from the <a href="https://www.r-graph-gallery.com/250-correlation-network-with-igraph.html"><b><i>R</i></b> graph
+The following plot shown in figure <a href="#org09bc119">29</a> from the <a href="https://www.r-graph-gallery.com/250-correlation-network-with-igraph.html"><b><i>R</i></b> graph
 gallery</a><sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> is bad example of a graph because the edges are hard to discern
 the labels are not clearly delineated, the edges cross over unnecessarily and
 the thickness of the edges is too small
 </p>
 
 
-<div id="org5d4f862" class="figure">
+<div id="org09bc119" class="figure">
 <p><img src="Tutorial/2020-03-25_18-06-26_thecode2-1.png" alt="2020-03-25_18-06-26_thecode2-1.png" width="300px" />
 </p>
 <p><span class="figure-number">Figure 29: </span>Correlation Network Diagram of <code>mtcars</code> data</p>
 </div>
 </div>
 </li>
-<li><a id="org7fa5323"></a>Research chronology<br />
-<div class="outline-text-6" id="text-org7fa5323">
+<li><a id="org37d3b7f"></a>Research chronology<br />
+<div class="outline-text-6" id="text-org37d3b7f">
 <p>
 The proceeding graph is an exemplar plot of a service known as <a href="http://www.datadreamer.com/item/research2">Research
 Chronology</a><sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>.
@@ -2886,17 +2902,17 @@ It is a poor graph because:
 
 
 
-<div id="org5ae8115" class="figure">
+<div id="orgba5674e" class="figure">
 <p><img src="Tutorial/2020-03-25_18-32-57_researchchronology.jpg" alt="2020-03-25_18-32-57_researchchronology.jpg" width="300px" />
 </p>
 <p><span class="figure-number">Figure 30: </span>Graph Depiction of research chronology</p>
 </div>
 </div>
 </li>
-<li><a id="org926dcf6"></a>Mapping the BlogoSphere<br />
-<div class="outline-text-6" id="text-org926dcf6">
+<li><a id="org69ea872"></a>Mapping the BlogoSphere<br />
+<div class="outline-text-6" id="text-org69ea872">
 <p>
-The proceeding plot shown in figure <a href="#org5ae8115">30</a> is an attempt to map the
+The proceeding plot shown in figure <a href="#orgba5674e">30</a> is an attempt to map the
 relationships between blogs, it is a poor graph simply because it is too dense,
 the graph needs to be expanded and trimmed significantly before it could be effective.
 </p>
@@ -2912,9 +2928,9 @@ the graph needs to be expanded and trimmed significantly before it could be effe
 </li>
 </ul>
 </div>
-<div id="outline-container-orgc5297a5" class="outline-4">
-<h4 id="orgc5297a5">Question 3</h4>
-<div class="outline-text-4" id="text-orgc5297a5">
+<div id="outline-container-orged80c1d" class="outline-4">
+<h4 id="orged80c1d">Question 3</h4>
+<div class="outline-text-4" id="text-orged80c1d">
 <blockquote>
 <p>
 What is a tree structure? Provide 3 examples of a tree structure in real life.
@@ -2928,8 +2944,8 @@ root vertex.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org6b72fad"></a>File System<br />
-<div class="outline-text-5" id="text-org6b72fad">
+<li><a id="org227194b"></a>File System<br />
+<div class="outline-text-5" id="text-org227194b">
 <p>
 The most natural type of tree structure is the directory structure of a a
 computer, for example the tree structure of the provided <code>DOI_Tree</code> can be visualised
@@ -2966,18 +2982,18 @@ tree
 </pre>
 </div>
 </li>
-<li><a id="org6a50732"></a>Tree Machine Learning Technique<br />
-<div class="outline-text-5" id="text-org6a50732">
+<li><a id="orgbbe5756"></a>Tree Machine Learning Technique<br />
+<div class="outline-text-5" id="text-orgbbe5756">
 <p>
 A more nuanced form of a tree structure is the machine learning technique
 whereby  input variables are seperated to correspond to binned output variables
 in an effort to model the behaviour of a system without using regression. This
 technique can be used for continuous and discrete data, so for example the
-following code returns the plot shown in figure :
+following code returns the plot shown in figure <a href="#org5da8138">1</a>:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">  <span style="color: #a9a1e1;">library</span>(tree)
+<pre class="src src-R" id="org5da8138">  <span style="color: #a9a1e1;">library</span>(tree)
   <span style="color: #a9a1e1;">library</span>(tidyverse)
 
   <span style="color: #51afef;">if</span>(<span style="color: #a9a1e1;">require</span>(<span style="color: #98be65;">'pacman'</span>)){
@@ -3002,15 +3018,21 @@ rpart.plot(CatSalesModTree.rpart, box.palette=<span style="color: #98be65;">"OrG
 </div>
 
 
-<div id="org0adf49e" class="figure">
+<div class="figure">
+<p><img src="./Attachments/VisualAnalytics/tree_rpart_example.png" alt="tree_rpart_example.png" />
+</p>
+</div>
+
+
+<div id="orgc06430b" class="figure">
 <p><img src="./Attachments/VisualAnalytics/tree_rpart_example.png" alt="tree_rpart_example.png" width="400px" />
 </p>
-<p><span class="figure-number">Figure 32: </span>Example of Tree Plot using Built in Data</p>
+<p><span class="figure-number">Figure 33: </span>Example of Tree Plot using Built in Data</p>
 </div>
 </div>
 </li>
-<li><a id="orgc4f3213"></a>Genetic Lineage<br />
-<div class="outline-text-5" id="text-orgc4f3213">
+<li><a id="orgec310ce"></a>Genetic Lineage<br />
+<div class="outline-text-5" id="text-orgec310ce">
 <p>
 Genetic Lineage is another example of a tree structure graph, for example a
 the tree of life would look something to the effect of:
@@ -3018,18 +3040,18 @@ the tree of life would look something to the effect of:
 
 
 
-<div id="orga919dc9" class="figure">
+<div id="orge252378" class="figure">
 <p><img src="Tutorial/2020-03-25_19-09-10_600px-A_Novel_Representation_Of_The_Tree_Of_Life.png" alt="2020-03-25_19-09-10_600px-A_Novel_Representation_Of_The_Tree_Of_Life.png" width="400px" />
 </p>
-<p><span class="figure-number">Figure 33: </span>Example of Tree of life</p>
+<p><span class="figure-number">Figure 34: </span>Example of Tree of life</p>
 </div>
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org8422a8d" class="outline-4">
-<h4 id="org8422a8d">Question 4</h4>
-<div class="outline-text-4" id="text-org8422a8d">
+<div id="outline-container-orgf32e9d9" class="outline-4">
+<h4 id="orgf32e9d9">Question 4</h4>
+<div class="outline-text-4" id="text-orgf32e9d9">
 <blockquote>
 <p>
 Explore the tree visualization techniques at <a href="http://treevis.net/">http://treevis.net/</a> . Identify 10
@@ -3038,8 +3060,8 @@ connection (node-linked diagram) techniques and 10 enclosure techniques.
 </blockquote>
 </div>
 <ul class="org-ul">
-<li><a id="orge7d1cf7"></a>Techniques using connections or node links are:<br />
-<div class="outline-text-5" id="text-orge7d1cf7">
+<li><a id="org9ffb8b5"></a>Techniques using connections or node links are:<br />
+<div class="outline-text-5" id="text-org9ffb8b5">
 <ol class="org-ol">
 <li>Generalized Pythagoras Trees (2014) by Fabian Beck
 <ul class="org-ul">
@@ -3057,8 +3079,8 @@ connection (node-linked diagram) techniques and 10 enclosure techniques.
 </ol>
 </div>
 </li>
-<li><a id="org35a845c"></a>Techniques using Enclosure Techniques include<br />
-<div class="outline-text-5" id="text-org35a845c">
+<li><a id="org78dc1c5"></a>Techniques using Enclosure Techniques include<br />
+<div class="outline-text-5" id="text-org78dc1c5">
 <ol class="org-ol">
 <li><a href="https://treevis.net/#Limberger2017">Mixed Projection Treemap</a></li>
 <li><a href="https://treevis.net/#Goertler2018">Bubble Treemap</a></li>
@@ -3075,9 +3097,9 @@ connection (node-linked diagram) techniques and 10 enclosure techniques.
 </li>
 </ul>
 </div>
-<div id="outline-container-org2e22900" class="outline-4">
-<h4 id="org2e22900">Question 5</h4>
-<div class="outline-text-4" id="text-org2e22900">
+<div id="outline-container-org0f955bf" class="outline-4">
+<h4 id="org0f955bf">Question 5</h4>
+<div class="outline-text-4" id="text-org0f955bf">
 <blockquote>
 <p>
 Explore the visualizations of Treemap, DOI<sub>Tree</sub> and D&amp;CTreemap from the
@@ -3091,8 +3113,8 @@ than <code>.exe</code>&rsquo;s I hate using wine and I&rsquo;m glad these are cr
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="orgd21d062"></a>Treemap<br />
-<div class="outline-text-5" id="text-orgd21d062">
+<li><a id="orgecc6bdf"></a>Treemap<br />
+<div class="outline-text-5" id="text-orgecc6bdf">
 <blockquote>
 <p>
 <a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Material/Lecture3Materials4Students/Treemap-4.0.5/Monitor.jar">file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Material/Lecture3Materials4Students/Treemap-4.0.5/Monitor.jar</a>
@@ -3111,8 +3133,8 @@ slice and dice makes it easy to manipulate.
 </p>
 </div>
 </li>
-<li><a id="orga0726d4"></a>DOI<sub>Tree</sub><br />
-<div class="outline-text-5" id="text-orga0726d4">
+<li><a id="orgb34f5af"></a>DOI<sub>Tree</sub><br />
+<div class="outline-text-5" id="text-orgb34f5af">
 <blockquote>
 <p>
 <a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Material/Lecture3Materials4Students/DOI_Tree/DOITreeVis.jar">file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Material/Lecture3Materials4Students/DOI_Tree/DOITreeVis.jar</a>
@@ -3143,8 +3165,8 @@ whatever my distro shipped with)
 </p>
 </div>
 </li>
-<li><a id="orga992878"></a>D&amp;C Treemap<br />
-<div class="outline-text-5" id="text-orga992878">
+<li><a id="org4a8a58e"></a>D&amp;C Treemap<br />
+<div class="outline-text-5" id="text-org4a8a58e">
 <blockquote>
 <p>
 <a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Material/Lecture3Materials4Students/D&amp;CTreemap/DCTreemap.jar">file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/03_Material/Lecture3Materials4Students/D&amp;CTreemap/DCTreemap.jar</a>
@@ -3152,16 +3174,15 @@ whatever my distro shipped with)
 </blockquote>
 
 <p>
-The aestheticis very pleasant as shown in figure but having to mouse
+The aestheticis very pleasant as shown in figure <a href="#org4b14ef4">35</a> but having to mouse
 over to determine the clusters is very inconvenient (and the font renders
 incorrectly on my system)
 </p>
 
 
-<div class="figure">
+<div id="org4b14ef4" class="figure">
 <p><img src="Tutorial/2020-03-25_19-34-55_screenshot.png" alt="2020-03-25_19-34-55_screenshot.png" width="300px" />
 </p>
-<p><span class="figure-number">Figure 34: </span>DCTreemap</p>
 </div>
 </div>
 </li>
@@ -3169,9 +3190,9 @@ incorrectly on my system)
 </div>
 </div>
 </div>
-<div id="outline-container-org1a0637e" class="outline-2">
-<h2 id="org1a0637e">(Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></h2>
-<div class="outline-text-2" id="text-org1a0637e">
+<div id="outline-container-org6ff2525" class="outline-2">
+<h2 id="org6ff2525">(Wk 4) Relational Data Visualisation (Part I)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk4">wk4</span></span></h2>
+<div class="outline-text-2" id="text-org6ff2525">
 <p>
 Refer to:
 </p>
@@ -3180,14 +3201,14 @@ Refer to:
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/04_Tutorial.pdf">Tutorial 4</a></li>
 </ul>
 </div>
-<div id="outline-container-org7f46b40" class="outline-3">
-<h3 id="org7f46b40"><span class="done DONE">DONE</span> Lecture</h3>
-<div class="outline-text-3" id="text-org7f46b40">
+<div id="outline-container-org2c69cf5" class="outline-3">
+<h3 id="org2c69cf5"><span class="done DONE">DONE</span> Lecture</h3>
+<div class="outline-text-3" id="text-org2c69cf5">
 </div>
 </div>
-<div id="outline-container-orga74c271" class="outline-3">
-<h3 id="orga74c271"><span class="done DONE">DONE</span> Tutorial</h3>
-<div class="outline-text-3" id="text-orga74c271">
+<div id="outline-container-orgd7b062e" class="outline-3">
+<h3 id="orgd7b062e"><span class="done DONE">DONE</span> Tutorial</h3>
+<div class="outline-text-3" id="text-orgd7b062e">
 <p>
 Tutorial Exercises:
 </p>
@@ -3202,9 +3223,9 @@ criteria is the most important for big graph visualization?</li>
 <li>Show the adjacency matrix for the following graphs</li>
 </ol>
 </div>
-<div id="outline-container-org955c960" class="outline-4">
-<h4 id="org955c960">Question 1</h4>
-<div class="outline-text-4" id="text-org955c960">
+<div id="outline-container-orgc6cd355" class="outline-4">
+<h4 id="orgc6cd355">Question 1</h4>
+<div class="outline-text-4" id="text-orgc6cd355">
 <blockquote>
 <p>
 What is the difference between a simple graph and a general graph?
@@ -3220,7 +3241,7 @@ effect of \(G(V,E)\). <sup><a href="#citeproc_bib_item_6">6</a></sup>
 </p>
 
 <p>
-So generally a graph might be quite complicated as shown in figure <a href="#org4229616">35</a>
+So generally a graph might be quite complicated as shown in figure <a href="#orga745ad3">36</a>
 below.
 </p>
 
@@ -3234,7 +3255,7 @@ A Simple graph however:
 </ul>
 
 <p>
-A simple graph is depicted in figure <a href="#org3351938">36</a>
+A simple graph is depicted in figure <a href="#org3ffc4a9">37</a>
 </p>
 
 
@@ -3243,7 +3264,7 @@ A simple graph is depicted in figure <a href="#org3351938">36</a>
 <p>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org41aa443">  # #+begin_src javascript :exports code
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="orgf27e8e4">  # #+begin_src javascript :exports code
   # #+begin_src javascript :exports code
   @startdot
   strict digraph graphName {
@@ -3294,10 +3315,10 @@ A simple graph is depicted in figure <a href="#org3351938">36</a>
 
 
 
-<div id="org4229616" class="figure">
+<div id="orga745ad3" class="figure">
 <p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Complex.png" alt="DOTGraph04q1Complex.png" width="200px" />
 </p>
-<p><span class="figure-number">Figure 35: </span>Example of a graph generally, this graph is not simple because it has loops and multi-edges</p>
+<p><span class="figure-number">Figure 36: </span>Example of a graph generally, this graph is not simple because it has loops and multi-edges</p>
 </div>
 
 
@@ -3305,7 +3326,7 @@ A simple graph is depicted in figure <a href="#org3351938">36</a>
 <p>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 2: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org7171bbf">  # #+begin_src javascript :exports code
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org6816476">  # #+begin_src javascript :exports code
   # #+begin_src javascript :exports code
   @startdot
   strict digraph graphName {
@@ -3352,16 +3373,16 @@ A simple graph is depicted in figure <a href="#org3351938">36</a>
 </details>
 
 
-<div id="org3351938" class="figure">
+<div id="org3ffc4a9" class="figure">
 <p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Simp.png" alt="DOTGraph04q1Simp.png" width="200px" />
 </p>
-<p><span class="figure-number">Figure 36: </span>Example of a <i>Simple Graph</i></p>
+<p><span class="figure-number">Figure 37: </span>Example of a <i>Simple Graph</i></p>
 </div>
 </div>
 </div>
-<div id="outline-container-org2e18996" class="outline-4">
-<h4 id="org2e18996">Question 2</h4>
-<div class="outline-text-4" id="text-org2e18996">
+<div id="outline-container-orgfdf5289" class="outline-4">
+<h4 id="orgfdf5289">Question 2</h4>
+<div class="outline-text-4" id="text-orgfdf5289">
 <blockquote>
 <ol class="org-ol">
 <li value="2">What type of forces can we use in force directed methods?</li>
@@ -3397,9 +3418,9 @@ Other types of forces may act however, for example:
 </ul>
 </div>
 </div>
-<div id="outline-container-org4147d1e" class="outline-4">
-<h4 id="org4147d1e">Question 3</h4>
-<div class="outline-text-4" id="text-org4147d1e">
+<div id="outline-container-orgd929743" class="outline-4">
+<h4 id="orgd929743">Question 3</h4>
+<div class="outline-text-4" id="text-orgd929743">
 <blockquote>
 <ol class="org-ol">
 <li value="3">What are the advantages of force directed methods? Can these methods be
@@ -3417,9 +3438,9 @@ the visual.
 
 <p>
 Force directed Methods may improve the capacity for the intended audience to
-implement pre-attentive processing (<a href="VisualAnalytics.html#org5619c07">Wk2, Q7</a>)  when reviewing the visualisation,
+implement pre-attentive processing (<a href="VisualAnalytics.html#org8df9fd1">Wk2, Q7</a>)  when reviewing the visualisation,
 this is because force directed methods move similar nodes together into
-clusters, this grouping is a principle of the <i>Gestalt laws</i> (<a href="VisualAnalytics.html#org92e7967">Wk2, Q8</a>) known to
+clusters, this grouping is a principle of the <i>Gestalt laws</i> (<a href="VisualAnalytics.html#org5936643">Wk2, Q8</a>) known to
 increase the perception of discrete categories in visualisation.
 Laws/
 </p>
@@ -3431,8 +3452,8 @@ process is more or less automatic.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org1f6abf3"></a>Using Force Directed Methods on Large Graphs<br />
-<div class="outline-text-5" id="text-org1f6abf3">
+<li><a id="org1ca4827"></a>Using Force Directed Methods on Large Graphs<br />
+<div class="outline-text-5" id="text-org1ca4827">
 <p>
 For very large graphs force directed methods can become unwieldly, slow to
 compute and generally the output can be to a degree unpredictable.
@@ -3446,9 +3467,9 @@ saying that, they might still give an interesting overview of the data set.
 </li>
 </ul>
 </div>
-<div id="outline-container-org1d9b818" class="outline-4">
-<h4 id="org1d9b818">Question 4</h4>
-<div class="outline-text-4" id="text-org1d9b818">
+<div id="outline-container-orge271059" class="outline-4">
+<h4 id="orge271059">Question 4</h4>
+<div class="outline-text-4" id="text-orge271059">
 <blockquote>
 <ol class="org-ol">
 <li value="4">What are the common methods that are used to handle big graphs?</li>
@@ -3473,10 +3494,10 @@ they may end up being perceived as a <i>hairball</i>.
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org312b333"></a>Structural Clustering<br />
+<li><a id="orgae28411"></a>Structural Clustering<br />
 <ul class="org-ul">
-<li><a id="org4afbbcb"></a>Multilevel Approaches<br />
-<div class="outline-text-6" id="text-org4afbbcb">
+<li><a id="org3777c05"></a>Multilevel Approaches<br />
+<div class="outline-text-6" id="text-org3777c05">
 <p>
 One Method is to implement a form of dimension-reduction, this is an alorithm
 that essentially groups multiple nodes into a single cluster and then instead
@@ -3492,8 +3513,8 @@ becomes choosing the level that corresponds to the most effective Visualisation
 </p>
 </div>
 </li>
-<li><a id="org4d52591"></a>Collapsible Nodes<br />
-<div class="outline-text-6" id="text-org4d52591">
+<li><a id="org4eb0b00"></a>Collapsible Nodes<br />
+<div class="outline-text-6" id="text-org4eb0b00">
 <p>
 Collapsible Nodes leverages the interactive capacity of computing devices to
 folder multiple nodes into a common root, this is similar to the directory
@@ -3509,8 +3530,8 @@ structure of a computer, to visualise this compare the terminal output of the fo
 </li>
 </ul>
 </li>
-<li><a id="org1b5947e"></a>Abstraction / Aggregation<br />
-<div class="outline-text-5" id="text-org1b5947e">
+<li><a id="org4f4a777"></a>Abstraction / Aggregation<br />
+<div class="outline-text-5" id="text-org4f4a777">
 <p>
 Abstraction and aggregation involves merging nodes into common nodes by a
 similar trait, for example instead of listing every single car manufacturer as
@@ -3528,9 +3549,9 @@ visualisation is being used for.
 </li>
 </ul>
 </div>
-<div id="outline-container-org5a8ba9d" class="outline-4">
-<h4 id="org5a8ba9d">Question 5</h4>
-<div class="outline-text-4" id="text-org5a8ba9d">
+<div id="outline-container-orgd60054b" class="outline-4">
+<h4 id="orgd60054b">Question 5</h4>
+<div class="outline-text-4" id="text-orgd60054b">
 <blockquote>
 <ol class="org-ol">
 <li value="5">List the 6 aesthetic criteria in graph drawing. In your opinion, which
@@ -3572,9 +3593,9 @@ visualisation, this is because following lines can be a mentally taxing task.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf4a7bca" class="outline-4">
-<h4 id="orgf4a7bca">Question 6</h4>
-<div class="outline-text-4" id="text-orgf4a7bca">
+<div id="outline-container-orgb15d3fe" class="outline-4">
+<h4 id="orgb15d3fe">Question 6</h4>
+<div class="outline-text-4" id="text-orgb15d3fe">
 <blockquote>
 <ol class="org-ol">
 <li value="6">Show the adjacency matrix for the following graphs</li>
@@ -3582,7 +3603,7 @@ visualisation, this is because following lines can be a mentally taxing task.
 </blockquote>
 
 <p>
-The Adjacency matrix for the graph shown in figure <a href="#org5b27472">3</a> is given by
+The Adjacency matrix for the graph shown in figure <a href="#orgf42c284">3</a> is given by
 </p>
 
 
@@ -3590,7 +3611,7 @@ The Adjacency matrix for the graph shown in figure <a href="#org5b27472">3</a> i
 <p>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 3: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="org5b27472">  # #+begin_src javascript :exports code
+<label class="org-src-name"><span class="listing-number">Listing 3: </span>Code to Generate DOT Graph</label><pre class="src src-plantuml" id="orgf42c284">  # #+begin_src javascript :exports code
   # #+begin_src javascript :exports code
   @startdot
   strict digraph graphName {
@@ -3653,14 +3674,14 @@ The Adjacency matrix for the graph shown in figure <a href="#org5b27472">3</a> i
 </details>
 
 
-<div id="org5bf1e57" class="figure">
+<div id="orgecea914" class="figure">
 <p><img src="./Attachments/VisualAnalytics/DOTGraph04q1Adj.png" alt="DOTGraph04q1Adj.png" width="200px" />
 </p>
-<p><span class="figure-number">Figure 37: </span>My attempt at reproducing the DOT graph from the Tutorial Sheet, this one isn&rsquo;t as good, but it&rsquo;s relationally equivalent.</p>
+<p><span class="figure-number">Figure 38: </span>My attempt at reproducing the DOT graph from the Tutorial Sheet, this one isn&rsquo;t as good, but it&rsquo;s relationally equivalent.</p>
 </div>
 
-<table id="orgce7e1bd" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">Table 1:</span> Adjacency Matrix corresponding to figure <a href="#org5b27472">3</a></caption>
+<table id="org0d8357f" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Adjacency Matrix corresponding to figure <a href="#orgf42c284">3</a></caption>
 
 <colgroup>
 <col  class="org-left" />
@@ -3793,8 +3814,8 @@ The Adjacency matrix for the graph shown in figure <a href="#org5b27472">3</a> i
 </table>
 </div>
 <ul class="org-ul">
-<li><a id="orgfd50cd1"></a>Visualise the Adjacency Matrix<br />
-<div class="outline-text-5" id="text-orgfd50cd1">
+<li><a id="org76b4184"></a>Visualise the Adjacency Matrix<br />
+<div class="outline-text-5" id="text-org76b4184">
 <p>
 The Adjacency Matrix can be turned into vectors by using the following
 <a href="https://github.com/SirVer/ultisnips">UltiSnips</a> snippet in <a href="https://github.com/neovim/neovim">vim</a>:
@@ -3812,14 +3833,14 @@ endsnippet
 </div>
 
 <p>
-Hence putting this together in <b><b><i>R</i></b></b>  in code listing <a href="#org6434f4f">4</a> the following plot of the adjacency
-matrix shown in table <a href="#orgce7e1bd">1</a> may be produced as shown in figure :
+Hence putting this together in <b><b><i>R</i></b></b>  in code listing <a href="#org16a21e4">4</a> the following plot of the adjacency
+matrix shown in table <a href="#org0d8357f">1</a> may be produced as shown in figure <a href="#org014ed46">1</a>:
 </p>
 
 <details><summary>Expand Code <b> Click Here </b></summary>
 <p>
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 4: </span>Using GGplot2 to produce an adjacency Matrix</label><pre class="src src-R" id="org6434f4f"><span style="color: #a9a1e1;">library</span>(tidyverse)
+<label class="org-src-name"><span class="listing-number">Listing 4: </span>Using GGplot2 to produce an adjacency Matrix</label><pre class="src src-R" id="org16a21e4"><span style="color: #a9a1e1;">library</span>(tidyverse)
 
 names <span style="color: #a9a1e1;">&lt;-</span> c(<span style="color: #98be65;">"A"</span>, <span style="color: #98be65;">"B"</span>, <span style="color: #98be65;">"C"</span>, <span style="color: #98be65;">"D"</span>, <span style="color: #98be65;">"E"</span>, <span style="color: #98be65;">"F"</span>, <span style="color: #98be65;">"G"</span>, <span style="color: #98be65;">"H"</span>)
 A <span style="color: #a9a1e1;">&lt;-</span> c(<span style="color: #da8548; font-weight: bold;">0</span>, <span style="color: #da8548; font-weight: bold;">1</span>, <span style="color: #da8548; font-weight: bold;">1</span>, <span style="color: #da8548; font-weight: bold;">0</span>, <span style="color: #da8548; font-weight: bold;">0</span>, <span style="color: #da8548; font-weight: bold;">0</span>, <span style="color: #da8548; font-weight: bold;">0</span>, <span style="color: #da8548; font-weight: bold;">1</span>)
@@ -3903,9 +3924,9 @@ ggplot(data, aes(x = x, y = y, fill =z)) +
 </li>
 </ul>
 </div>
-<div id="outline-container-orgb3810aa" class="outline-4">
-<h4 id="orgb3810aa">Question 7&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ggnet">ggnet</span></span></h4>
-<div class="outline-text-4" id="text-orgb3810aa">
+<div id="outline-container-org5d20470" class="outline-4">
+<h4 id="org5d20470">Question 7&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ggnet">ggnet</span></span></h4>
+<div class="outline-text-4" id="text-org5d20470">
 <p>
 <a href="https://briatte.github.io/ggnet/">This GitPage Has a Tutorial on using <code>ggnet</code></a>
 </p>
@@ -3916,7 +3937,7 @@ contains relationships between members of a university in the UK.
 </p>
 
 <p>
-The code in listing <a href="#orgfe98f89">5</a> produces the plot shown in figure <a href="#orgc7c637a">39</a>
+The code in listing <a href="#org9810c15">5</a> produces the plot shown in figure <a href="#orgecd74a5">40</a>
 </p>
 
 <details><summary>Expand Code <b> Click Here </b></summary>
@@ -3924,7 +3945,7 @@ The code in listing <a href="#orgfe98f89">5</a> produces the plot shown in figur
 
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 5: </span>Basic Plot of a nework graph, very rough, certainly needs some improvement</label><pre class="src src-R" id="orgfe98f89"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">Load Packages</span>
+<label class="org-src-name"><span class="listing-number">Listing 5: </span>Basic Plot of a nework graph, very rough, certainly needs some improvement</label><pre class="src src-R" id="org9810c15"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">Load Packages</span>
 <span style="color: #a9a1e1;">library</span>(plotly)
 <span style="color: #a9a1e1;">library</span>(igraph)
 <span style="color: #a9a1e1;">library</span>(igraphdata)
@@ -3987,18 +4008,18 @@ fig
 </details>
 
 
-<div id="orgc7c637a" class="figure">
+<div id="orgecd74a5" class="figure">
 <p><img src="./Attachments/VisualAnalytics/PlotlyNetwork.png" alt="PlotlyNetwork.png" width="500px" />
 </p>
-<p><span class="figure-number">Figure 39: </span>Network Graph; Needs to be spread out and improved</p>
+<p><span class="figure-number">Figure 40: </span>Network Graph; Needs to be spread out and improved</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-org6736324" class="outline-2">
-<h2 id="org6736324"><span class="done DONE">DONE</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></h2>
-<div class="outline-text-2" id="text-org6736324">
+<div id="outline-container-org5082326" class="outline-2">
+<h2 id="org5082326"><span class="done DONE">DONE</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></h2>
+<div class="outline-text-2" id="text-org5082326">
 <ul class="org-ul">
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/05_Lecture.pdf">05 Lecture</a></li>
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/05_Tutorial.pdf">05 Tutorial</a></li>
@@ -4008,16 +4029,16 @@ fig
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org5e9acdf" class="outline-3">
-<h3 id="org5e9acdf">Lecture</h3>
+<div id="outline-container-org766329b" class="outline-3">
+<h3 id="org766329b">Lecture</h3>
 </div>
-<div id="outline-container-org4795321" class="outline-3">
-<h3 id="org4795321">Tutorial</h3>
+<div id="outline-container-org74ce2fe" class="outline-3">
+<h3 id="org74ce2fe">Tutorial</h3>
 </div>
 </div>
-<div id="outline-container-org9d94c28" class="outline-2">
-<h2 id="org9d94c28"><span class="done DONE">DONE</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></h2>
-<div class="outline-text-2" id="text-org9d94c28">
+<div id="outline-container-org3b05b6b" class="outline-2">
+<h2 id="org3b05b6b"><span class="done DONE">DONE</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></h2>
+<div class="outline-text-2" id="text-org3b05b6b">
 <ul class="org-ul">
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/06_Lecture.pdf">06<sub>Lecture</sub></a></li>
 <li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/06_Tutorial.pdf">06<sub>Tutorial</sub></a>
@@ -4026,9 +4047,9 @@ fig
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org4748f1d" class="outline-3">
-<h3 id="org4748f1d">Lecture</h3>
-<div class="outline-text-3" id="text-org4748f1d">
+<div id="outline-container-org4ac1af9" class="outline-3">
+<h3 id="org4ac1af9">Lecture</h3>
+<div class="outline-text-3" id="text-org4ac1af9">
 <ul class="org-ul">
 <li>Today will focus on the heatmap and PCA Dimension Reduction.</li>
 <li>pixel based methods, data reduction</li>
@@ -4040,13 +4061,13 @@ A heatmap is a graphical representation of data.
 </p>
 </div>
 </div>
-<div id="outline-container-org98a8917" class="outline-3">
-<h3 id="org98a8917">Tutorial</h3>
+<div id="outline-container-orgd226cc8" class="outline-3">
+<h3 id="orgd226cc8">Tutorial</h3>
 </div>
 </div>
-<div id="outline-container-orgd82a7eb" class="outline-2">
-<h2 id="orgd82a7eb"><span class="todo TODO">TODO</span> (6) Data Camp Data Viz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span>&#xa0;<span class="DataCamp">DataCamp</span></span></h2>
-<div class="outline-text-2" id="text-orgd82a7eb">
+<div id="outline-container-org46d5885" class="outline-2">
+<h2 id="org46d5885"><span class="todo TODO">TODO</span> (6) Data Camp Data Viz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span>&#xa0;<span class="DataCamp">DataCamp</span></span></h2>
+<div class="outline-text-2" id="text-org46d5885">
 <p>
 Data Visualisation with <b><b><i>R</i></b></b>
 </p>
@@ -4065,28 +4086,28 @@ If time permits (Otherwise postpone):
 </ul>
 </div>
 </div>
-<div id="outline-container-org47f2753" class="outline-2">
-<h2 id="org47f2753"><span class="done DONE">DONE</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></h2>
-<div class="outline-text-2" id="text-org47f2753">
+<div id="outline-container-orgc0fc512" class="outline-2">
+<h2 id="orgc0fc512"><span class="done DONE">DONE</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></h2>
+<div class="outline-text-2" id="text-orgc0fc512">
 <p>
 SCHEDULED: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-12 Sun&gt; </span></span> DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-14 Tue&gt;</span></span>
 </p>
 </div>
-<div id="outline-container-orgd7a2d66" class="outline-3">
-<h3 id="orgd7a2d66">Lecture</h3>
+<div id="outline-container-org27912c9" class="outline-3">
+<h3 id="org27912c9">Lecture</h3>
 </div>
-<div id="outline-container-orga513843" class="outline-3">
-<h3 id="orga513843">Tutorial</h3>
-<div class="outline-text-3" id="text-orga513843">
+<div id="outline-container-org849d95e" class="outline-3">
+<h3 id="org849d95e">Tutorial</h3>
+<div class="outline-text-3" id="text-org849d95e">
 <p>
 There was no tutorial for this lecture
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf5fecb0" class="outline-2">
-<h2 id="orgf5fecb0"><span class="todo TODO">TODO</span> Data Camp; Interactive Plotly&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span>&#xa0;<span class="DataCamp">DataCamp</span></span></h2>
-<div class="outline-text-2" id="text-orgf5fecb0">
+<div id="outline-container-orgde549d9" class="outline-2">
+<h2 id="orgde549d9"><span class="todo TODO">TODO</span> Data Camp; Interactive Plotly&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span>&#xa0;<span class="DataCamp">DataCamp</span></span></h2>
+<div class="outline-text-2" id="text-orgde549d9">
 <ul class="org-ul">
 <li><a href="https://learn.datacamp.com/courses/interactive-data-visualization-with-plotly-in-r">Plotly #1</a></li>
 <li><a href="https://learn.datacamp.com/courses/intermediate-interactive-data-visualization-with-plotly-in-r">Plotly #2</a></li>
@@ -4098,154 +4119,464 @@ There was no tutorial for this lecture
 <li>Tutorial 4 not yet released.</li>
 </ul>
 </div>
-<div id="outline-container-org6b4b92b" class="outline-3">
-<h3 id="org6b4b92b"><span class="todo TODO">TODO</span> Lecture</h3>
-<div class="outline-text-3" id="text-org6b4b92b">
+<div id="outline-container-orgb27654f" class="outline-3">
+<h3 id="orgb27654f"><span class="todo TODO">TODO</span> Lecture</h3>
+<div class="outline-text-3" id="text-orgb27654f">
 </div>
 </div>
-<div id="outline-container-org1330272" class="outline-3">
-<h3 id="org1330272"><span class="todo TODO">TODO</span> Tutorial</h3>
-<div class="outline-text-3" id="text-org1330272">
+<div id="outline-container-org77f5cf7" class="outline-3">
+<h3 id="org77f5cf7"><span class="todo TODO">TODO</span> Tutorial</h3>
+<div class="outline-text-3" id="text-org77f5cf7">
 </div>
 </div>
 </div>
-<div id="outline-container-org2f419de" class="outline-2">
-<h2 id="org2f419de"><span class="todo TODO">TODO</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></h2>
-<div class="outline-text-2" id="text-org2f419de">
+<div id="outline-container-orgc644295" class="outline-2">
+<h2 id="orgc644295"><span class="done DONE">DONE</span> (5) Multi-Dimensional Data 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk5">wk5</span></span></h2>
+<div class="outline-text-2" id="text-orgc644295">
 </div>
-<div id="outline-container-org0705139" class="outline-3">
-<h3 id="org0705139">Lecture</h3>
+<div id="outline-container-org9feaf85" class="outline-3">
+<h3 id="org9feaf85">Lecture</h3>
 </div>
-<div id="outline-container-orgfd77188" class="outline-3">
-<h3 id="orgfd77188">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-orgdeae161" class="outline-2">
-<h2 id="orgdeae161"><span class="todo TODO">TODO</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></h2>
-<div class="outline-text-2" id="text-orgdeae161">
-</div>
-<div id="outline-container-org1a5e696" class="outline-3">
-<h3 id="org1a5e696">Lecture</h3>
-</div>
-<div id="outline-container-orgc2c509c" class="outline-3">
-<h3 id="orgc2c509c">Tutorial</h3>
+<div id="outline-container-org79a15e5" class="outline-3">
+<h3 id="org79a15e5">Tutorial</h3>
 </div>
 </div>
-<div id="outline-container-org82a6f2b" class="outline-2">
-<h2 id="org82a6f2b"><span class="todo TODO">TODO</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></h2>
-<div class="outline-text-2" id="text-org82a6f2b">
+<div id="outline-container-orge652218" class="outline-2">
+<h2 id="orge652218"><span class="done DONE">DONE</span> (6) Multi-dimensional Data 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk6">wk6</span></span></h2>
+<div class="outline-text-2" id="text-orge652218">
 </div>
-<div id="outline-container-org9bcc723" class="outline-3">
-<h3 id="org9bcc723">Lecture</h3>
+<div id="outline-container-org71d22df" class="outline-3">
+<h3 id="org71d22df">Lecture</h3>
 </div>
-<div id="outline-container-org309000a" class="outline-3">
-<h3 id="org309000a">Tutorial</h3>
-<div class="outline-text-3" id="text-org309000a">
+<div id="outline-container-orgc4b94c3" class="outline-3">
+<h3 id="orgc4b94c3">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-orgb710fa3" class="outline-2">
+<h2 id="orgb710fa3"><span class="done DONE">DONE</span> (7) Spatio-Temporal Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk7">wk7</span></span></h2>
+<div class="outline-text-2" id="text-orgb710fa3">
+</div>
+<div id="outline-container-org25cdecc" class="outline-3">
+<h3 id="org25cdecc">Lecture</h3>
+</div>
+
+<div id="outline-container-org05e264c" class="outline-3">
+<h3 id="org05e264c">Tutorial (Optional)</h3>
+</div>
+</div>
+<div id="outline-container-org797642f" class="outline-2">
+<h2 id="org797642f"><span class="todo TODO">TODO</span> (8)  Interaction&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></h2>
+<div class="outline-text-2" id="text-org797642f">
+</div>
+<div id="outline-container-orgfaa12b7" class="outline-3">
+<h3 id="orgfaa12b7">Lecture</h3>
+<div class="outline-text-3" id="text-orgfaa12b7">
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/08_Lecture.pdf">08 Lecture slides</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/08_Tutorial.pdf">08 Tutorial</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org864c80e" class="outline-3">
+<h3 id="org864c80e">Tutorial</h3>
+<div class="outline-text-3" id="text-org864c80e">
+</div>
+<div id="outline-container-orgf1f7ae0" class="outline-4">
+<h4 id="orgf1f7ae0">Question 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-orgf1f7ae0">
+<blockquote>
 <p>
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; eed346c8514909cca04b4c3ac4ddbeb5c6afc828
+What are the navigation strategies in information visualisation? Explain the
+difference of these strategies.
+</p>
+</blockquote>
+
+<p>
+The strategies in information visualisation are:
+</p>
+
+<ul class="org-ul">
+<li>Zooming
+<ul class="org-ul">
+<li>Zooming involves reducing the amount of context in the display of a visualisation, this can improve focus on a given proportion.</li>
+</ul></li>
+<li>Overview+Detail
+<ul class="org-ul">
+<li>The Overview / Detail strategy involves showing an overview of the information simultaneous to a detailed view, seperated by a space, an example of this might be something like a Desktop Calendar.</li>
+</ul></li>
+<li>Focus+Context
+<ul class="org-ul">
+<li>This technique involves integrating focus and context into a single display, usually by distortion. A common place example of this technique is tra</li>
+</ul></li>
+<li>Filtering
+<ul class="org-ul">
+<li>This technique involves reducing the amount of context in the display through user interaction such as providing queries, an example of this is filtering in TabuViz by way of a  query mapping.</li>
+</ul></li>
+</ul>
+
+
+
+<div id="org32708ce" class="figure">
+<p><img src="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/_20200506_173152screenshot.png" alt="_20200506_173152screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 41: </span>Desktop Calendar Client</p>
+</div>
+
+
+
+<div id="org603eb68" class="figure">
+<p><img src="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/_20200506_173322screenshot.png" alt="_20200506_173322screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 42: </span>Diagram of City rail</p>
+</div>
+
+
+<div id="org9540d4f" class="figure">
+<p><img src="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/_20200506_173415screenshot.png" alt="_20200506_173415screenshot.png" width="400px" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org14f92ac" class="outline-2">
-<h2 id="org14f92ac"><span class="todo TODO">TODO</span> (8)  Interaction&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk8">wk8</span></span></h2>
-<div class="outline-text-2" id="text-org14f92ac">
-</div>
-<div id="outline-container-org64a4e3a" class="outline-3">
-<h3 id="org64a4e3a">Lecture</h3>
-</div>
-<div id="outline-container-org9285c35" class="outline-3">
-<h3 id="org9285c35">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org9624f23" class="outline-2">
-<h2 id="org9624f23"><span class="todo TODO">TODO</span> (Wk9) Break</h2>
-<div class="outline-text-2" id="text-org9624f23">
-</div>
-<div id="outline-container-org4b23571" class="outline-3">
-<h3 id="org4b23571">Lecture</h3>
-</div>
-<div id="outline-container-org4ff33f5" class="outline-3">
-<h3 id="org4ff33f5">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-orgfa9782b" class="outline-2">
-<h2 id="orgfa9782b"><span class="todo TODO">TODO</span> (9) Visual Analytics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></h2>
-<div class="outline-text-2" id="text-orgfa9782b">
-</div>
-<div id="outline-container-orge2829d9" class="outline-3">
-<h3 id="orge2829d9">Lecture</h3>
-</div>
-<div id="outline-container-org10b6384" class="outline-3">
-<h3 id="org10b6384">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org85e4cf0" class="outline-2">
-<h2 id="org85e4cf0"><span class="todo TODO">TODO</span> (10) Using Data Vis to Analyse 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></h2>
-<div class="outline-text-2" id="text-org85e4cf0">
-</div>
-<div id="outline-container-org0407ded" class="outline-3">
-<h3 id="org0407ded">Lecture</h3>
-</div>
-<div id="outline-container-org767a4d1" class="outline-3">
-<h3 id="org767a4d1">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-orgb22223f" class="outline-2">
-<h2 id="orgb22223f"><span class="todo TODO">TODO</span> (11) Using Data Vis to Analyse 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></h2>
-<div class="outline-text-2" id="text-orgb22223f">
-</div>
-<div id="outline-container-org633345e" class="outline-3">
-<h3 id="org633345e">Lecture</h3>
-</div>
-<div id="outline-container-org179a186" class="outline-3">
-<h3 id="org179a186">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org61be310" class="outline-2">
-<h2 id="org61be310"><span class="todo TODO">TODO</span> (12) Using Data Vis to Analyse 3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk13">wk13</span></span></h2>
-<div class="outline-text-2" id="text-org61be310">
-</div>
-<div id="outline-container-orge295fdd" class="outline-3">
-<h3 id="orge295fdd">Lecture</h3>
-</div>
-<div id="outline-container-org81efcca" class="outline-3">
-<h3 id="org81efcca">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org6d64deb" class="outline-2">
-<h2 id="org6d64deb"><span class="todo TODO">TODO</span> (13) Final Quiz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk14">wk14</span></span></h2>
-<div class="outline-text-2" id="text-org6d64deb">
-</div>
-<div id="outline-container-orgd793249" class="outline-3">
-<h3 id="orgd793249">Lecture</h3>
-</div>
-<div id="outline-container-orgb3889f5" class="outline-3">
-<h3 id="orgb3889f5">Tutorial</h3>
-</div>
-</div>
-<div id="outline-container-org456cb6b" class="outline-2">
-<h2 id="org456cb6b"><span class="done DONE">DONE</span> Assignment 1</h2>
-<div class="outline-text-2" id="text-org456cb6b">
-</div>
-<div id="outline-container-org673e19e" class="outline-3">
-<h3 id="org673e19e">Attachments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
-<div class="outline-text-3" id="text-org673e19e">
-</div>
-<div id="outline-container-org9c6def2" class="outline-4">
-<h4 id="org9c6def2">Resources</h4>
-<div class="outline-text-4" id="text-org9c6def2">
+
+<div id="outline-container-org64597ae" class="outline-4">
+<h4 id="org64597ae">Question 2</h4>
+<div class="outline-text-4" id="text-org64597ae">
+<blockquote>
 <p>
+What are the different between geometric zooming and semantic zooming?
+</p>
+</blockquote>
+</div>
+
+<ul class="org-ul">
+<li><a id="org227c3c5"></a>Geometric Zooming<br />
+<div class="outline-text-5" id="text-org227c3c5">
+<p>
+Geometric zooming involves enlarging an area of the content of avisualisation
+without any modification of the presentation of the information.
+</p>
+</div>
+</li>
+<li><a id="org595fb68"></a>Semantic Zooming<br />
+<div class="outline-text-5" id="text-org595fb68">
+<p>
+Semantic Zooming enlarges the focus section but changes the way in which the visualisation is presented, for example, taking a subtree of a treemap into it&rsquo;s own visualisation would be an example of semantic zooming.
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orgf9e2ac9" class="outline-4">
+<h4 id="orgf9e2ac9">Question 3</h4>
+<div class="outline-text-4" id="text-orgf9e2ac9">
+<blockquote>
+<p>
+What are the pros and cons of zooming versus focus+context?
+</p>
+</blockquote>
+
+<p>
+The advantage to zooming is that it allows a focused view of the data without
+any distraction, this however means that it can difficult to understand the
+wider implications of a specific detail without the broader context of a
+visualisation.
+</p>
+
+<p>
+The <i>focus+context</i> approach has the advantage that detailed information can be visualised in context of the entire visualisation, this however has the disadvantage that the view can be cluttered and appear noisy which may impede the focus of a user.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org259fb06" class="outline-4">
+<h4 id="org259fb06">Question 4</h4>
+<div class="outline-text-4" id="text-org259fb06">
+<blockquote>
+<p>
+Use TabuVis tool to open a tabular data set, performing filtering and zooming on
+the data set. Write some quick notes on the discovery or property of the
+visualisation or data set.
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-org490b4da" class="outline-4">
+<h4 id="org490b4da">Question 5</h4>
+<div class="outline-text-4" id="text-org490b4da">
+<blockquote>
+<p>
+In your opinion, what are the problems of zooming methods?
+</p>
+</blockquote>
+
+<p>
+Zooming Methods don&rsquo;t provide a broader overview of the data and require user interaction in order to understand the visualiation, ideally a user should be able to take information from a visualisation without needing to &rsquo;<i>work for it</i>&rsquo;.
+</p>
+
+<p>
+When zooming is applied incorrectly, gaining information from a plot can be difficult and it may make a user feel like they are only seeing the data &rsquo;<i>through a window</i>&rsquo;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org34c231d" class="outline-4">
+<h4 id="org34c231d">Question 6</h4>
+<div class="outline-text-4" id="text-org34c231d">
+<blockquote>
+<p>
+Using the search engine to find 5 examples of visualisations with
+focus+context or overview+detail.
+</p>
+</blockquote>
+</div>
+
+<ul class="org-ul">
+<li><a id="org1979956"></a>Git Time Machine for <i>Atom</i><br />
+<div class="outline-text-5" id="text-org1979956">
+<p>
+<a href="https://atom.io/packages/git-time-machine">The Git Time Machine</a> package for the <i>Atom</i> Text editor integrates on overview of all the past changes to a file with a timeline on the bottom illustraiting those changes by way of a bubble chart, this is shown in figure <a href="#orgb0ac879">44</a>.
+</p>
+
+<p>
+This is an example of an overview+detail approach because the diff report shows the detail of the plot while the lower portion provides the context in which the changes occured.
+</p>
 
 
+<div id="orgb0ac879" class="figure">
+<p><img src="./Attachments/VisualAnalytics/Git Time Machine.png" alt="Git Time Machine.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 44: </span>Screenshot of the Git Time Machine Package for Atom</p>
+</div>
+</div>
+</li>
+
+
+<li><a id="orgede4371"></a>Flight Radar 24&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span><br />
+<div class="outline-text-5" id="text-orgede4371">
+<p>
+The <a href="https://www.flightradar24.com/blog/then-and-now-visualizing-covid-19s-impact-on-air-traffic/">Flight Radar 24 Visualisation</a> provides an image with a slider that allows a comparison between two scatterplots of aeroplane locations, as shown in figure <a href="#org166c632">45</a>.
+</p>
+
+
+<div id="org166c632" class="figure">
+<p><img src=".attach/a3/4b23fb-d467-44a8-b36d-249539d37974/_20200506_174951screenshot.png" alt="_20200506_174951screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 45: </span>Visualisation of Airline Travel</p>
+</div>
+</div>
+</li>
+
+<li><a id="org7a874ad"></a>Pandemic International&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span><br />
+<div class="outline-text-5" id="text-org7a874ad">
+<p>
+<a href="https://pandemic.internationalsos.com/2019-ncov/covid-19-data-visualisation">The pandemic international</a> <i>COVID-19</i> visualisation, shown in figure <a href="#org197b0c1">46</a> is an example of an <i>overview+detail</i> visualisation because detail regarding the specific case numbers is provided next to an overview of the total number of cases over time.
+</p>
+
+
+<div id="org197b0c1" class="figure">
+<p><img src=".attach/57/459c6f-6193-434c-af0b-94b04bfe9fd4/_20200506_175333screenshot.png" alt="_20200506_175333screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 46: </span>Daily Reported Cases of <i>COVID-19</i></p>
+</div>
+</div>
+</li>
+
+<li><a id="org9d7e755"></a>Evernote Visualiser&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span><br />
+<div class="outline-text-5" id="text-org9d7e755">
+<p>
+This <a href="https://discussion.evernote.com/topic/118437-visualize-your-evernote-notes-and-identify-the-main-topics-and-gaps-in-your-discourse/">EverNote Visualiser</a> provides an <i>overview+content</i> visualisation of a users notes in evernote by providing a snapshot of the content of a note and an overview of the interconnections of that note, this is shown in figure <a href="#org0748bd0">47</a>
+</p>
+
+
+<div id="org0748bd0" class="figure">
+<p><img src=".attach/7f/e1fe13-d6dd-47d0-8812-a274bc3a80ee/_20200506_180331screenshot.png" alt="_20200506_180331screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 47: </span>Evernote Visualiser providing Overview+Content of notes.</p>
+</div>
+</div>
+</li>
+
+
+<li><a id="org22dfb07"></a>Git Visualizer&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span><br />
+<div class="outline-text-5" id="text-org22dfb07">
+<p>
+The <a href="https://gitup.co/">GitUp git visualiser</a> provides a visualisation of the canges in a <code>git</code> repository as shown in figure <a href="#org2d55161">48</a> and is an example of an <i>overview+content</i> visualiser because it provides an detailed explanation of the changes of a commit next to a visual overlay of the overall changes.
+</p>
+
+
+<div id="org2d55161" class="figure">
+<p><img src=".attach/5d/ebca61-a491-4d96-be80-4c4be891b717/_20200506_183911screenshot.png" alt="_20200506_183911screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 48: </span>GitUp Git Visualiser</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+
+
+
+<div id="outline-container-org17f42c2" class="outline-4">
+<h4 id="org17f42c2">Question 7&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-org17f42c2">
+<blockquote>
+<p>
+Use TabuVis tool to open a tabular data set, performing multiple views on the
+data set. Write some quick notes on the discovery or property of the
+visualisation or data set.
+</p>
+</blockquote>
+<p>
+The Iris Data appears to have a positive correlation between the 4-variables across species as can bee seen in figur <a href="#orgca5e88c">49</a>.
+</p>
+
+
+<div id="orgca5e88c" class="figure">
+<p><img src=".attach/97/d3d6ae-d522-4749-8a5b-4da840937600/_20200506_181837screenshot.png" alt="_20200506_181837screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 49: </span>Plot from <i>TabuViz</i></p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgaa519eb" class="outline-4">
+<h4 id="orgaa519eb">Question 8&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-orgaa519eb">
+<blockquote>
+<p>
+Explore the Tableau software in the lab.
+</p>
+</blockquote>
+
+<p>
+I&rsquo;m familiar with <b><i>R</i></b> and a little bit of <i>Python</i> so I&rsquo;ll probably use those, I have however created an account as shown in figure <a href="#org15ec256">50</a>.
+</p>
+
+
+
+
+<div id="org15ec256" class="figure">
+<p><img src=".attach/9b/5e6b58-f622-410e-95ba-996ae268004c/_20200506_182204screenshot.png" alt="_20200506_182204screenshot.png" width="400px" />
+</p>
+<p><span class="figure-number">Figure 50: </span>Activation Screen for Tablaeu Website.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org68f4ea8" class="outline-2">
+<h2 id="org68f4ea8"><span class="todo TODO">TODO</span> (Wk9) Break</h2>
+<div class="outline-text-2" id="text-org68f4ea8">
+</div>
+<div id="outline-container-org1232126" class="outline-3">
+<h3 id="org1232126">Lecture</h3>
+</div>
+<div id="outline-container-orgbba25e4" class="outline-3">
+<h3 id="orgbba25e4">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org2b55735" class="outline-2">
+<h2 id="org2b55735"><span class="todo TODO">TODO</span> (9) Visual Analytics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk10">wk10</span></span></h2>
+<div class="outline-text-2" id="text-org2b55735">
+<ul class="org-ul">
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/09_Lecture.pdf">09 Lecture</a></li>
+<li><a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/09_Tutorial.pdf">09 Tutorial</a></li>
+</ul>
+</div>
+<div id="outline-container-orged48ace" class="outline-3">
+<h3 id="orged48ace">Lecture</h3>
+</div>
+<div id="outline-container-orgc44c11e" class="outline-3">
+<h3 id="orgc44c11e">Tutorial</h3>
+<div class="outline-text-3" id="text-orgc44c11e">
+<ul class="org-ul">
+<li>Open Source Packages for Data Viz</li>
+<li>Java Script
+<ul class="org-ul">
+<li><a href="https://d3js.org/">D3</a> is a comprehensive JS library utilising SVG HTML5 and CSS to get Data Viz on the web</li>
+</ul></li>
+<li>Revolution Analytics - R
+<ul class="org-ul">
+<li>RGL Package is good for 3d in R?</li>
+<li>HTML Widgets  allow building interactive visualisations</li>
+</ul></li>
+<li>Python</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org68dc89e" class="outline-2">
+<h2 id="org68dc89e"><span class="todo TODO">TODO</span> (10) Using Data Vis to Analyse 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk11">wk11</span></span></h2>
+<div class="outline-text-2" id="text-org68dc89e">
+</div>
+<div id="outline-container-orgdd053a2" class="outline-3">
+<h3 id="orgdd053a2">Lecture</h3>
+</div>
+<div id="outline-container-org126845e" class="outline-3">
+<h3 id="org126845e">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org3739cba" class="outline-2">
+<h2 id="org3739cba"><span class="todo TODO">TODO</span> (11) Using Data Vis to Analyse 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk12">wk12</span></span></h2>
+<div class="outline-text-2" id="text-org3739cba">
+</div>
+<div id="outline-container-org01cdb2c" class="outline-3">
+<h3 id="org01cdb2c">Lecture</h3>
+</div>
+<div id="outline-container-org0f6e538" class="outline-3">
+<h3 id="org0f6e538">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org4f15d66" class="outline-2">
+<h2 id="org4f15d66"><span class="todo TODO">TODO</span> (12) Using Data Vis to Analyse 3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk13">wk13</span></span></h2>
+<div class="outline-text-2" id="text-org4f15d66">
+</div>
+<div id="outline-container-org1e1e69f" class="outline-3">
+<h3 id="org1e1e69f">Lecture</h3>
+</div>
+<div id="outline-container-org2095626" class="outline-3">
+<h3 id="org2095626">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-orgb872ddb" class="outline-2">
+<h2 id="orgb872ddb"><span class="todo TODO">TODO</span> (13) Final Quiz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk14">wk14</span></span></h2>
+<div class="outline-text-2" id="text-orgb872ddb">
+</div>
+<div id="outline-container-orgf710df9" class="outline-3">
+<h3 id="orgf710df9">Lecture</h3>
+</div>
+<div id="outline-container-org3b4a523" class="outline-3">
+<h3 id="org3b4a523">Tutorial</h3>
+</div>
+</div>
+<div id="outline-container-org19736ac" class="outline-2">
+<h2 id="org19736ac"><span class="done DONE">DONE</span> Assignment 1</h2>
+<div class="outline-text-2" id="text-org19736ac">
+</div>
+<div id="outline-container-orgde6a789" class="outline-3">
+<h3 id="orgde6a789">Attachments&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h3>
+<div class="outline-text-3" id="text-orgde6a789">
+</div>
+<div id="outline-container-org6c5bb8c" class="outline-4">
+<h4 id="org6c5bb8c">Resources</h4>
+<div class="outline-text-4" id="text-org6c5bb8c">
+<p>
+<a href="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/1_Assignment/Assignment1_2020Au.pdf">Assignment 1</a>
+<a href="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/1_Assignment/Assignment1_2020Au.pdf">Assignment 1</a>
 </p>
 
 <ul class="org-ul">
 <li><a href="Attachments/VisualAnalytics/1_Assignment/Assignment1_2020Au.pdf">Assignment 1</a>
 <ul class="org-ul">
-<li></li>
-<li></li>
-<li></li>
+<li><a href="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/1_Assignment/sampleReport1blind(3).pdf">Sample 1</a></li>
+<li><a href="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/1_Assignment/sampleReport2blind(4).pdf">Sample 2</a></li>
+<li><a href="../../Dropbox/Notes/Org/Attachments/VisualAnalytics/1_Assignment/sampleReport3blind(3).pdf">Sample 3</a></li>
 </ul></li>
 <li><p>
 <a href="file:///home/ryan/Dropbox/Notes/DataSci/Visual_Analytics/Assessment/the-marvel-universe-social-network/long_tc_small.gephi">Current Gephi File</a>
@@ -4259,13 +4590,13 @@ There was no tutorial for this lecture
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb039f82" class="outline-4">
-<h4 id="orgb039f82"><span class="done DONE">DONE</span> Decide on Data to Analyse</h4>
-<div class="outline-text-4" id="text-orgb039f82">
+<div id="outline-container-orgbde94fe" class="outline-4">
+<h4 id="orgbde94fe"><span class="done DONE">DONE</span> Decide on Data to Analyse</h4>
+<div class="outline-text-4" id="text-orgbde94fe">
 </div>
 <ul class="org-ul">
-<li><a id="org0602dcd"></a>Potential Ideas<br />
-<div class="outline-text-5" id="text-org0602dcd">
+<li><a id="orgc05bf34"></a>Potential Ideas<br />
+<div class="outline-text-5" id="text-orgc05bf34">
 <ul class="org-ul">
 <li>Model the Corona virus is a bit obvious</li>
 <li>Modelling interlinked files in org-mode could be fun but also a bit old hat</li>
@@ -4276,8 +4607,8 @@ There was no tutorial for this lecture
 </ul>
 </div>
 </li>
-<li><a id="org3f784ee"></a>DataSets<br />
-<div class="outline-text-5" id="text-org3f784ee">
+<li><a id="org685c8de"></a>DataSets<br />
+<div class="outline-text-5" id="text-org685c8de">
 <p>
 Instead of a dendrogram or treemap lets do social data,
 </p>
@@ -4308,8 +4639,8 @@ and make a treemap.
 </ul>
 </div>
 <ul class="org-ul">
-<li><a id="orgddbfeed"></a>Org Parser<br />
-<div class="outline-text-6" id="text-orgddbfeed">
+<li><a id="org0561a8f"></a>Org Parser<br />
+<div class="outline-text-6" id="text-org0561a8f">
 <p>
 An Org parser lke <a href="https://github.com/orgapp/orgajs">Orga</a> (JS) or <a href="https://pypi.org/project/orgparse/">OrgParse.py</a> Could give interesting Info on
 links maybe?
@@ -4318,8 +4649,8 @@ links maybe?
 </li>
 </ul>
 </li>
-<li><a id="org01da35a"></a>Program<br />
-<div class="outline-text-5" id="text-org01da35a">
+<li><a id="orgdd564fd"></a>Program<br />
+<div class="outline-text-5" id="text-orgdd564fd">
 <ul class="org-ul">
 <li><a href="https://observablehq.com/@d3/gallery">D3</a>
 <ul class="org-ul">
@@ -4344,16 +4675,53 @@ links maybe?
 </li>
 </ul>
 </div>
-<div id="outline-container-org86887e7" class="outline-4">
-<h4 id="org86887e7"><span class="done DONE">DONE</span> Submit through Vuws</h4>
-<div class="outline-text-4" id="text-org86887e7">
+<div id="outline-container-org287587a" class="outline-4">
+<h4 id="org287587a"><span class="done DONE">DONE</span> Submit through Vuws</h4>
+<div class="outline-text-4" id="text-org287587a">
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-org2641efd" class="outline-2">
-<h2 id="org2641efd">Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h2>
-<div class="outline-text-2" id="text-org2641efd">
+<div id="outline-container-org0ddbe8a" class="outline-2">
+<h2 id="org0ddbe8a"><span class="todo TODO">TODO</span> Assignment 2</h2>
+<div class="outline-text-2" id="text-org0ddbe8a">
+</div>
+<div id="outline-container-orgd447985" class="outline-3">
+<h3 id="orgd447985">Attachments</h3>
+<div class="outline-text-3" id="text-orgd447985">
+<p>
+<a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/Assignment_2/Assignment2_2020.pdf">Assignment Specification</a>
+<a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/Assignment_2/Assignment_2_Sample_1.pdf">Sample 1</a>
+<a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/Assignment_2/Assignment_2_Sample_2.pdf">Sample 2</a>
+<a href="file:///home/ryan/Dropbox/Studies/2020Autumn/Visual_Analytics/Assignment_2/Assignment_Datasets/owid-covid-data.csv">Covid Data</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org30efab3" class="outline-3">
+<h3 id="org30efab3">Information</h3>
+<div class="outline-text-3" id="text-org30efab3">
+<ul class="org-ul">
+<li>maybe only choose 1 dataset?</li>
+<li>Use any tools, <b><i>R</i></b> or <i>python</i> or whatever.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9cabbfb" class="outline-2">
+<h2 id="org9cabbfb">Final Exam</h2>
+<div class="outline-text-2" id="text-org9cabbfb">
+<ul class="org-ul">
+<li>1 hour</li>
+<li>50 Questions</li>
+<li>Questions are from Lecture Notes and Tutorial</li>
+<li>100 marks, each 2 marks, \(2 \times 20\% = 0.4\), each question worth 0.4</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org27ff55e" class="outline-2">
+<h2 id="org27ff55e">Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="wk3">wk3</span></span></h2>
+<div class="outline-text-2" id="text-org27ff55e">
 <p>
 HTML Files
 When exporting HTML Files with <code>org</code> export the images won&rsquo;t be embedded,
@@ -4373,9 +4741,9 @@ mathjax or katex self-contained (or use <code>mathml</code>)
 <li>Make the HTML Stand-alone using pandoc</li>
 </ul>
 </div>
-<div id="outline-container-orgfa64ab8" class="outline-3">
-<h3 id="orgfa64ab8"><span class="done DONE">DONE</span> Making the HTML Standalone</h3>
-<div class="outline-text-3" id="text-orgfa64ab8">
+<div id="outline-container-org09d2eee" class="outline-3">
+<h3 id="org09d2eee"><span class="done DONE">DONE</span> Making the HTML Standalone</h3>
+<div class="outline-text-3" id="text-org09d2eee">
 <p>
 How do i make stand alone HTML&rsquo;s in org-mode or is there an easy way to publish
 them to a blog with gitpages.
@@ -4385,18 +4753,22 @@ them to a blog with gitpages.
 So the base64 Image method worked, definitely, but I need a more foolproof way,
 either get org-publish working or get a seperate repo
 </p>
+
+<p>
+One easy method to do this is to export the HTML, host a local python server with <code>python3 -m http.server 8923</code>, go to <code>http://0.0.0.0:8923</code> and then use the firefox <a href="https://addons.mozilla.org/en-US/firefox/addon/single-file/">SingleFile</a> extension.
+</p>
 </div>
-<div id="outline-container-org9f9c011" class="outline-4">
-<h4 id="org9f9c011">Read <a href="https://www.reddit.com/r/orgmode/comments/flibav/blogging_with_org_mode/">this Reddit Post</a> on making Blog Posts</h4>
-<div class="outline-text-4" id="text-org9f9c011">
+<div id="outline-container-orgba6aeae" class="outline-4">
+<h4 id="orgba6aeae">Read <a href="https://www.reddit.com/r/orgmode/comments/flibav/blogging_with_org_mode/">this Reddit Post</a> on making Blog Posts</h4>
+<div class="outline-text-4" id="text-orgba6aeae">
 <p>
 It refers to <a href="https://justinhj.github.io/2020/03/09/how-to-blog-with-org-mode.html">This Blog Post</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org048fe5d" class="outline-4">
-<h4 id="org048fe5d">Pandoc Workaround</h4>
-<div class="outline-text-4" id="text-org048fe5d">
+<div id="outline-container-org75bd623" class="outline-4">
+<h4 id="org75bd623">Pandoc Workaround</h4>
+<div class="outline-text-4" id="text-org75bd623">
 <p>
 Code something like the following will make the HTML self-contained, but, it will
 break the references to a degree, making the format less nice.
@@ -4408,9 +4780,9 @@ break the references to a degree, making the format less nice.
 </div>
 </div>
 </div>
-<div id="outline-container-org0c2d6c2" class="outline-4">
-<h4 id="org0c2d6c2"><span class="todo TODO">TODO</span> Make Function; Embedding Images as Base 64&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Evening">Evening</span></span></h4>
-<div class="outline-text-4" id="text-org0c2d6c2">
+<div id="outline-container-orgbe5aebb" class="outline-4">
+<h4 id="orgbe5aebb"><span class="todo TODO">TODO</span> Make Function; Embedding Images as Base 64&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Evening">Evening</span></span></h4>
+<div class="outline-text-4" id="text-orgbe5aebb">
 <p>
 So this Reddit post provides this method to embed images as base64, the code
 suggests that it should work for <code>jpg</code>, <code>png</code> and <code>svg</code>:
@@ -4440,9 +4812,9 @@ also this would require the inline CSS method that I&rsquo;m already using
 </p>
 </div>
 </div>
-<div id="outline-container-orgb04062f" class="outline-4">
-<h4 id="orgb04062f"><span class="todo TODO">TODO</span> Tools for self contained HTML</h4>
-<div class="outline-text-4" id="text-orgb04062f">
+<div id="outline-container-org3e3f89b" class="outline-4">
+<h4 id="org3e3f89b"><span class="todo TODO">TODO</span> Tools for self contained HTML</h4>
+<div class="outline-text-4" id="text-org3e3f89b">
 <p>
 The following tools can be used for self-contained html (it may be necessary to create as server using python3 -m http.server 8332):
 </p>
@@ -4463,9 +4835,9 @@ The following tools can be used for self-contained html (it may be necessary to 
 </ul>
 </div>
 </div>
-<div id="outline-container-org45e9948" class="outline-4">
-<h4 id="org45e9948">Using JavaScript Inliner Tool</h4>
-<div class="outline-text-4" id="text-org45e9948">
+<div id="outline-container-org255b6ac" class="outline-4">
+<h4 id="org255b6ac">Using JavaScript Inliner Tool</h4>
+<div class="outline-text-4" id="text-org255b6ac">
 <p>
 This might try and embed all links though, which will not be fun, the advante to
 the base 64 <code>elisp</code> solution being that it only touches images.
@@ -4516,8 +4888,8 @@ Unfourtunately this breaks the org-mode java script.
 </table>
 </div>
 <ul class="org-ul">
-<li><a id="org7179043"></a>Python Loop to do everything<br />
-<div class="outline-text-5" id="text-org7179043">
+<li><a id="orgd02711c"></a>Python Loop to do everything<br />
+<div class="outline-text-5" id="text-orgd02711c">
 <p>
 This script from <a href="https://www.reddit.com/r/orgmode/comments/c1lhb5/html_output_that_can_be_used_on_an_android_phone/erejpfz/">this reddit post</a> doesn&rsquo;t work, I could probably do it in bash,
 but for reference sake:
@@ -4543,16 +4915,16 @@ but for reference sake:
 </ul>
 </div>
 </div>
-<div id="outline-container-orge7c315f" class="outline-3">
-<h3 id="orge7c315f">Embedding Images my own script</h3>
-<div class="outline-text-3" id="text-orge7c315f">
+<div id="outline-container-orge05990d" class="outline-3">
+<h3 id="orge05990d">Embedding Images my own script</h3>
+<div class="outline-text-3" id="text-orge05990d">
 <p>
 So for svg images I use the following with TeX, I can&rsquo;t quite remember why but I
 think it was something like <code>pandoc</code> doesn&rsquo;t like <i>TikZ</i>.
 </p>
 
 <p>
-in bash you can use this to encoding of an image:
+in bash you can use this to get the BASE64 encoding of an image:
 </p>
 
 <div class="org-src-container">
@@ -4614,17 +4986,17 @@ t2h doseReport.tex github-pandoc.css &gt; t2h.log <span style="color: #da8548; f
 </div>
 </div>
 </div>
-<div id="outline-container-org592b096" class="outline-3">
-<h3 id="org592b096"><span class="done DONE">DONE</span> Throwing on Github</h3>
-<div class="outline-text-3" id="text-org592b096">
+<div id="outline-container-org20ee7ab" class="outline-3">
+<h3 id="org20ee7ab"><span class="done DONE">DONE</span> Throwing on Github</h3>
+<div class="outline-text-3" id="text-org20ee7ab">
 </div>
-<div id="outline-container-org00ade66" class="outline-4">
-<h4 id="org00ade66">Publishing Pathway</h4>
-<div class="outline-text-4" id="text-org00ade66">
+<div id="outline-container-orgfd50dea" class="outline-4">
+<h4 id="orgfd50dea">Publishing Pathway</h4>
+<div class="outline-text-4" id="text-orgfd50dea">
 </div>
 <ul class="org-ul">
-<li><a id="org9d25332"></a>New Attempt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span><br />
-<div class="outline-text-5" id="text-org9d25332">
+<li><a id="org08dafaa"></a>New Attempt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span><br />
+<div class="outline-text-5" id="text-org08dafaa">
 <p>
 The general layout for a publishing function can be found <a href="https://orgmode.org/manual/Complex-example.html#Complex-example">In the Manual</a><sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>
 but basically the idea is that regex is used to specify include and exclude, you
@@ -4690,8 +5062,8 @@ have a different <code>:publishing-function</code> for different file types.
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org57788cd"></a>Just Including Certain Notes<br />
-<div class="outline-text-6" id="text-org57788cd">
+<li><a id="orgcff194f"></a>Just Including Certain Notes<br />
+<div class="outline-text-6" id="text-orgcff194f">
 <p>
 Remember to push the github and you can test with python3 -m http.server 8003
 -bind 192.1680.0.1
@@ -4740,8 +5112,8 @@ Remember to push the github and you can test with python3 -m http.server 8003
 </div>
 </div>
 </li>
-<li><a id="org8a3d235"></a>Using include and exclude<br />
-<div class="outline-text-6" id="text-org8a3d235">
+<li><a id="org699b30f"></a>Using include and exclude<br />
+<div class="outline-text-6" id="text-org699b30f">
 <p>
 In order <code>:base-extension</code> and <code>:exclude</code> should first be specified as regex and
 then <code>:include</code> should be used as a list of the form <code>("item1" "item2")</code>
@@ -4752,8 +5124,8 @@ You definitely want to <a href="https://orgmode.org/manual/Selecting-files.html#
 </p>
 </div>
 </li>
-<li><a id="org13bde74"></a>Links and attachments<br />
-<div class="outline-text-6" id="text-org13bde74">
+<li><a id="org6b0aac7"></a>Links and attachments<br />
+<div class="outline-text-6" id="text-org6b0aac7">
 <p>
 The benefit of attaching files is that the directory of attachments can be
 browsed, manipulated and moved from within emacs which is really nice.
@@ -4772,7 +5144,7 @@ upon HTML publish, which is really annoying.</li>
 
 <li><b><code>att: file.pdf</code></b> ;
 <ul class="org-ul">
-<li>if you define as shown at code listing 1 <a href="#org246a12f">6</a> as described on the <a href="https://lists.gnu.org/archive/html/emacs-orgmode/2008-11/msg00108.html">Mailing
+<li>if you define as shown at code listing 1 <a href="#org00e56e1">6</a> as described on the <a href="https://lists.gnu.org/archive/html/emacs-orgmode/2008-11/msg00108.html">Mailing
 List</a><sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup> then the link will work upon HTML publish and it will move when
 the attachment directory is moved, but to enter it you won&rsquo;t have
 autocomplete.</li>
@@ -4786,149 +5158,45 @@ directory is moved.</li>
 </ul>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 6: </span>Code Block showing how to define custom link abbreviation</label><pre class="src src-elisp" id="org246a12f"><span style="color: #51afef;">(</span><span style="color: #51afef;">setq</span> <span style="color: #dcaeea;">org-link-abbrev-alist</span> <span style="color: #51afef;">'</span><span style="color: #c678dd;">(</span><span style="color: #98be65;">(</span><span style="color: #98be65;">"att"</span> . org-attach-expand-link<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<label class="org-src-name"><span class="listing-number">Listing 6: </span>Code Block showing how to define custom link abbreviation</label><pre class="src src-elisp" id="org00e56e1"><span style="color: #51afef;">(</span><span style="color: #51afef;">setq</span> <span style="color: #dcaeea;">org-link-abbrev-alist</span> <span style="color: #51afef;">'</span><span style="color: #c678dd;">(</span><span style="color: #98be65;">(</span><span style="color: #98be65;">"att"</span> . org-attach-expand-link<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org22b0e9e"></a>Including Relative CSS<br />
-<div class="outline-text-6" id="text-org22b0e9e">
+<li><a id="orge19dc78"></a>Including Relative CSS<br />
+<div class="outline-text-6" id="text-orge19dc78">
 <p>
 For all use cases the css more or less must be in the same directory as the org file. when you get sick of that just use org-toggle-custom-inline-style.
 </p>
 
 <p>
-I&rsquo;m also going to make one to embed .
+I&rsquo;m also going to make one to embed <a href="#orgbe5aebb">as Base 64</a>
 </p>
 </div>
 </li>
-<li><a id="orga42f981"></a>Unchanged Files<br />
-<div class="outline-text-6" id="text-orga42f981">
+<li><a id="org39e9ee4"></a>Unchanged Files<br />
+<div class="outline-text-6" id="text-org39e9ee4">
 <p>
 If a file has been removed from the publishing directory but the file has not
 changed, org-mode may not regenerate the file, in order to force the issue
 instead use a prefix command <code>C-u M-x org-publish</code>, it would also be possible to
-use the command shown in listing <a href="#orgd3dcbdd">7</a>
+use the command shown in listing <a href="#org4848b76">7</a>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-elisp" id="orgd3dcbdd"><span style="color: #51afef;">(</span><span style="color: #c678dd;">org-publish</span> <span style="color: #98be65;">"project name"</span> t<span style="color: #51afef;">)</span>
+<pre class="src src-elisp" id="org4848b76"><span style="color: #51afef;">(</span><span style="color: #c678dd;">org-publish</span> <span style="color: #98be65;">"project name"</span> t<span style="color: #51afef;">)</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgdd641f9"></a>Including Relative CSS<br />
-<div class="outline-text-6" id="text-orgdd641f9">
-<p>
-For all use cases the css more or less must be in the same directory as the org
-file. when you get sick of that just use org-toggle-custom-inline-style.
-</p>
-
-<p>
-I&rsquo;m also going to make one to .
-</p>
-
-<p>
-Trying just this buffer
-</p>
-</div>
-</li>
-<li><a id="org2799725"></a>Unchanged Files<br />
-<div class="outline-text-6" id="text-org2799725">
-<p>
-If a file has been removed from the publishing directory but the file has not
-changed, <code>org-mode</code> may not regenerate the file, in order to force the issue
-instead use a prefix command <code>C-u M-x org-publish</code> , it would also be possible
-to use the command shown in listings <a href="#orgd3dcbdd">7</a>:<sup><a id="fnr.8" class="footref" href="#fn.8">8</a></sup>
-</p>
-</div>
-</li>
 </ul>
-</li>
-<li><a id="orgbf35e5e"></a>Pros and Cons<br />
-<div class="outline-text-5" id="text-orgbf35e5e">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">Pros</td>
-<td class="org-left">Cons</td>
-</tr>
-
-<tr>
-<td class="org-left">Doesn&rsquo;t break org-JS</td>
-<td class="org-left">Doesn&rsquo;t embed CSS</td>
-</tr>
-
-<tr>
-<td class="org-left">Makes Images Stand alone</td>
-<td class="org-left">Really Slow</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">A little bit Hacky</td>
-</tr>
-</tbody>
-</table>
-</div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org569b1bf" class="outline-4">
-<h4 id="org569b1bf"><span class="done DONE">DONE</span> Using Pandoc</h4>
-<div class="outline-text-4" id="text-org569b1bf">
-<p>
-These methods often breaks the lovely javascript, let&rsquo;s instead make a seperate
-repo and give up on a self-contained HTML?
-</p>
-
-<p>
-I&rsquo;ll try this for a little longer until I give up.
-</p>
-
-<ol class="org-ol">
-<li>Clone a gitpage</li>
-<li>Use sparse tre filtering so only the tutorials show up, the regex you want
-will be something like <code>\*\ .*tuto</code></li>
-<li>move between the matches with <code>M-g n=/=M-g p</code> and expand the node fully with
-<code>Tab Tab</code></li>
-<li>Export the HTML</li>
-<li>Re-Convert the HTML with pandoc to make it self-contained
-<ol class="org-ol">
-<li>Alternatively use pandoc from the start and embed <i>MathJax</i> pointer to the
-CDN after with <code>echo "CDN/Path" &gt;&gt; file.html</code></li>
-<li><p>
-Use this code:
-</p>
-<div class="org-src-container">
-<pre class="src src-bash">pandoc ./VisualAnalytics.html --self-contained -c
-~/Templates/CSS/Org-CSS/github-pandoc.css -o ~/Documents/ryangreenup.github.io/VisualAnalytics.html
-</pre>
-</div></li>
-</ol></li>
-<li>copy the HTML into the gitpage and push it
-<ol class="org-ol">
-<li><p>
-if necessary make the link accessible via the index, the root of the file will be:
-</p>
-<pre class="example">
-     https://ryangreenup.github.io/
-</pre></li>
-</ol></li>
-</ol>
 </div>
-</div>
-</div>
-<div id="outline-container-org34e7562" class="outline-3">
-<h3 id="org34e7562">Previewing HTML</h3>
-<div class="outline-text-3" id="text-org34e7562">
+<div id="outline-container-org63a49eb" class="outline-3">
+<h3 id="org63a49eb">Previewing HTML</h3>
+<div class="outline-text-3" id="text-org63a49eb">
 <p>
 This is fairly easy, start a python server and then the index will automatically
 display:
@@ -4950,16 +5218,16 @@ then open in in firefox:
 </div>
 </div>
 </div>
-<div id="outline-container-orgf5bdc56" class="outline-2">
-<h2 id="orgf5bdc56">References</h2>
-<div class="outline-text-2" id="text-orgf5bdc56">
+<div id="outline-container-orgcac2feb" class="outline-2">
+<h2 id="orgcac2feb">References</h2>
+<div class="outline-text-2" id="text-orgcac2feb">
 <p>
-<a id="org7453d67"></a>
+<a id="org7070120"></a>
 <a href="/home/ryan/Dropbox/Studies/Papers/references.bib">/home/ryan/Dropbox/Studies/Papers/references.bib</a>
 </p>
 
 <p>
-<a id="org5bd81a9"></a>
+<a id="orgc970020"></a>
  
 </p>
 </div>
@@ -4996,16 +5264,12 @@ then open in in firefox:
 <a href="https://lists.gnu.org/archive/html/emacs-orgmode/2008-11/msg00108.html">https://lists.gnu.org/archive/html/emacs-orgmode/2008-11/msg00108.html</a>
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8">8</a></sup> <div class="footpara"><p class="footpara">
-<a href="https://stackoverflow.com/a/21259718/12843551">https://stackoverflow.com/a/21259718/12843551</a>
-</p></div></div>
-
 
 </div>
 </div></div>
 <div id="postamble" class="status">
-<p class="author">Author: Ryan G</p>
-<p class="date">Created: 2020-04-21 Tue 22:48</p>
+<p class="author">Author: Ryan Greenup</p>
+<p class="date">Created: 2020-05-06 Wed 18:40</p>
 </div>
 </body>
 </html>

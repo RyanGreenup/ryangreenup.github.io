@@ -1,0 +1,174 @@
+** Tutorial
+*** Question 1                                                                :ATTACH:
+:PROPERTIES:
+:ID:       85754cdf-f395-45d1-84c2-117a853bfb7a
+:DIR:      /home/ryan/Dropbox/Notes/Org/Attachments/VisualAnalytics/
+:END:
+#+begin_quote
+What are the navigation strategies in information visualisation? Explain the
+difference of these strategies.
+#+end_quote
+
+The strategies in information visualisation are:
+
++ Zooming
+  + Zooming involves reducing the amount of context in the display of a visualisation, this can improve focus on a given proportion.
++ Overview+Detail
+  + The Overview / Detail strategy involves showing an overview of the information simultaneous to a detailed view, seperated by a space, an example of this might be something like a Desktop Calendar.
++ Focus+Context
+  + This technique involves integrating focus and context into a single display, usually by distortion. A common place example of this technique is tra
++ Filtering
+  + This technique involves reducing the amount of context in the display through user interaction such as providing queries, an example of this is filtering in TabuViz by way of a  query mapping.
+
+
+#+NAME: 81ca
+#+CAPTION: Desktop Calendar Client
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_173152screenshot.png]]
+
+
+#+NAME: 81train
+#+CAPTION: Diagram of City rail
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_173322screenshot.png]]
+
+#+NAME: 81real
+#+CAPTION:
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_173415screenshot.png]]
+
+*** Question 2
+#+begin_quote
+What are the different between geometric zooming and semantic zooming?
+#+end_quote
+
+**** Geometric Zooming
+Geometric zooming involves enlarging an area of the content of avisualisation
+without any modification of the presentation of the information.
+**** Semantic Zooming
+Semantic Zooming enlarges the focus section but changes the way in which the visualisation is presented, for example, taking a subtree of a treemap into it's own visualisation would be an example of semantic zooming.
+
+*** Question 3
+#+begin_quote
+What are the pros and cons of zooming versus focus+context?
+#+end_quote
+
+The advantage to zooming is that it allows a focused view of the data without
+any distraction, this however means that it can difficult to understand the
+wider implications of a specific detail without the broader context of a
+visualisation.
+
+The /focus+context/ approach has the advantage that detailed information can be visualised in context of the entire visualisation, this however has the disadvantage that the view can be cluttered and appear noisy which may impede the focus of a user.
+
+*** Question 4
+#+begin_quote
+Use TabuVis tool to open a tabular data set, performing filtering and zooming on
+the data set. Write some quick notes on the discovery or property of the
+visualisation or data set.
+#+end_quote
+*** Question 5
+#+begin_quote
+In your opinion, what are the problems of zooming methods?
+#+end_quote
+
+Zooming Methods don't provide a broader overview of the data and require user interaction in order to understand the visualiation, ideally a user should be able to take information from a visualisation without needing to '/work for it/'.
+
+When zooming is applied incorrectly, gaining information from a plot can be difficult and it may make a user feel like they are only seeing the data '/through a window/'
+
+*** Question 6
+#+begin_quote
+Using the search engine to find 5 examples of visualisations with
+focus+context or overview+detail.
+#+end_quote
+
+**** Git Time Machine for /Atom/
+[[https://atom.io/packages/git-time-machine][The Git Time Machine]] package for the /Atom/ Text editor integrates on overview of all the past changes to a file with a timeline on the bottom illustraiting those changes by way of a bubble chart, this is shown in figure [[gtm]].
+
+This is an example of an overview+detail approach because the diff report shows the detail of the plot while the lower portion provides the context in which the changes occured.
+
+#+NAME: gtm
+#+CAPTION: Screenshot of the Git Time Machine Package for Atom
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[./Attachments/VisualAnalytics/Git Time Machine.png]]
+
+
+**** Flight Radar 24                                                         :ATTACH:
+:PROPERTIES:
+:ID:       a34b23fb-d467-44a8-b36d-249539d37974
+:END:
+The [[https://www.flightradar24.com/blog/then-and-now-visualizing-covid-19s-impact-on-air-traffic/][Flight Radar 24 Visualisation]] provides an image with a slider that allows a comparison between two scatterplots of aeroplane locations, as shown in figure [[ap]].
+
+#+NAME: ap
+#+CAPTION:Visualisation of Airline Travel
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_174951screenshot.png]]
+
+**** Pandemic International                                                  :ATTACH:
+:PROPERTIES:
+:ID:       57459c6f-6193-434c-af0b-94b04bfe9fd4
+:END:
+[[https://pandemic.internationalsos.com/2019-ncov/covid-19-data-visualisation][The pandemic international]] /COVID-19/ visualisation, shown in figure [[cvd]] is an example of an /overview+detail/ visualisation because detail regarding the specific case numbers is provided next to an overview of the total number of cases over time.
+
+#+NAME: cvd
+#+CAPTION: Daily Reported Cases of /COVID-19/
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_175333screenshot.png]]
+
+**** Evernote Visualiser                                                     :ATTACH:
+:PROPERTIES:
+:ID:       7fe1fe13-d6dd-47d0-8812-a274bc3a80ee
+:END:
+This [[https://discussion.evernote.com/topic/118437-visualize-your-evernote-notes-and-identify-the-main-topics-and-gaps-in-your-discourse/][EverNote Visualiser]] provides an /overview+content/ visualisation of a users notes in evernote by providing a snapshot of the content of a note and an overview of the interconnections of that note, this is shown in figure [[ev.]]
+
+#+NAME: ev
+#+CAPTION: Evernote Visualiser providing Overview+Content of notes.
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_180331screenshot.png]]
+
+
+**** Git Visualizer
+The [[https://gitup.co/][GitUp git visualiser]] provides a visualisation of the canges in a =git= repository as shown in figure [[8gt]] and is an example of an /overview+content/ visualiser because it provides an detailed explanation of the changes of a commit next to a visual overlay of the overall changes.
+
+*** Question 7                                                                :ATTACH:
+:PROPERTIES:
+:ID:       97d3d6ae-d522-4749-8a5b-4da840937600
+:END:
+#+begin_quote
+Use TabuVis tool to open a tabular data set, performing multiple views on the
+data set. Write some quick notes on the discovery or property of the
+visualisation or data set.
+#+end_quote
+The Iris Data appears to have a positive correlation between the 4-variables across species as can bee seen in figur [[tbz]].
+
+#+NAME: tbz
+#+CAPTION: Plot from /TabuViz/
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_181837screenshot.png]]
+
+
+
+*** Question 8                                                                :ATTACH:
+:PROPERTIES:
+:ID:       9b5e6b58-f622-410e-95ba-996ae268004c
+:END:
+#+begin_quote
+Explore the Tableau software in the lab.
+#+end_quote
+
+I'm familiar with */R/* and a little bit of /Python/ so I'll probably use those, I have however created an account as shown in figure [[acc]].
+
+
+
+#+NAME: acc
+#+CAPTION: Activation Screen for Tablaeu Website.
+#+attr_html: :width 400px
+#+attr_latex: :width 12cm
+[[attachment:_20200506_182204screenshot.png]]
