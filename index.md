@@ -20,6 +20,8 @@
 + [05 Tutorial Visual Analytics](https://ryangreenup.github.io/Org-Publish/05_Multi-Dim_1.html)
 + [06 Tutorial Visual Analytics](https://ryangreenup.github.io/Org-Publish/06_Multi-Dim_2.html)
 + [10 Tutorial Vis An](https://ryangreenup.github.io/10_Plotting.html)
++ [10 Tutorial Vis An](https://ryangreenup.github.io/11_Visual_Analysis.html)
++ [11 Tutorial](./11_Visual_Analysis.html)
 
 
  
